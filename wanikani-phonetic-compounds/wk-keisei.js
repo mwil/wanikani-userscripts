@@ -24,6 +24,7 @@ window.wk_keisei = {};
 (function(gobj) {
     "use strict";
 
+    /*
     // https://stackoverflow.com/a/39065147/2699475
     const Item = ({ url, img, title }) => `
         <a href="${url}" class="list-group-item">
@@ -38,14 +39,18 @@ window.wk_keisei = {};
         { url: '/foo', img: 'foo.png', title: 'Foo item' },
         { url: '/bar', img: 'bar.png', title: 'Bar item' },
     ].map(Item).join(''));
-
+    */
 
     function run()
     {
         var wki = new WKInteraction();
         wki.init();
 
-        console.log(`The kanji in this page is ${wki.getKanji()}`);
+        var curKanji = wki.getKanji();
+
+        console.log(`The kanji in this page is ${curKanji}`);
+
+        console.log("This kanji has readings ", kanji_db[curKanji].readings);
     }
 
     run();
