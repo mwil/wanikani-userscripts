@@ -6,7 +6,8 @@ var KTypeEnum = Object.freeze(
         comp_indicative: 3, // 会意: kanji made up of meaningful parts (e.g. "mountain pass" is up + down + mountain)
         comp_phonetic:   4, // 形声: kanji in which one element suggests the meaning, the other the pronunciation
         derivative:      5, // 転注: applying an extended meaning to a kanji
-        rebus:           6  // 仮借: borrowing a kanji with the same pronunciation to convey an unrelated term
+        rebus:           6, // 仮借: borrowing a kanji with the same pronunciation to convey an unrelated term
+        kokuji:          7  // kanji originating from Japan
     }
 );
 
@@ -594,7 +595,7 @@ var kanji_db = [
     },
     {
         kanji: "弟", readings: ["テイ", "ダイ", "デ"],
-        type: KTypeEnum.no_clue
+        type: KTypeEnum.hieroglyph
     },
     {
         kanji: "図", readings: ["ズ", "ト"],
@@ -1445,8 +1446,8 @@ var kanji_db = [
         type: KTypeEnum.comp_phonetic
     },
     {
-        kanji: "畑", readings: [],   //kokuji
-        type: KTypeEnum.comp_indicative
+        kanji: "畑", readings: [],
+        type: KTypeEnum.kokuji
     },
     {
         kanji: "界", readings: ["カイ"],
@@ -1485,8 +1486,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "送", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "送", readings: ["ソウ"],
+        phonetic: "关", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "追", readings: [],
@@ -1622,8 +1624,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "第", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "第", readings: ["ダイ", "テイ"],
+        phonetic: "弟", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "笛", readings: ["テキ", "ジャク"],
@@ -1691,8 +1694,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "湯", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "湯", readings: ["トウ", "ショウ"],
+        phonetic: "昜", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "登", readings: ["トウ", "ト"],
@@ -2379,8 +2383,9 @@ var kanji_db = [
         type: KTypeEnum.comp_phonetic
     },
     {
-        kanji: "笑", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "笑", readings: ["ショウ"],
+        phonetic: "关", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "粉", readings: [],
@@ -2502,8 +2507,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "博", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "博", readings: ["ハク", "バク"],
+        phonetic: "尃", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "喜", readings: [],
@@ -2592,7 +2598,7 @@ var kanji_db = [
     },
     {
         kanji: "働", readings: [],
-        type: KTypeEnum.no_clue
+        type: KTypeEnum.kokuji
     },
     {
         kanji: "塩", readings: [],
@@ -2629,8 +2635,9 @@ var kanji_db = [
         type: KTypeEnum.comp_phonetic
     },
     {
-        kanji: "腸", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "腸", readings: ["チョウ"],
+        phonetic: "昜", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "辞", readings: [],
@@ -2844,8 +2851,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "任", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "任", readings: ["ニン", "ジン"],
+        phonetic: "壬", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "因", readings: [],
@@ -4192,8 +4200,9 @@ var kanji_db = [
         type: KTypeEnum.comp_phonetic
     },
     {
-        kanji: "絹", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "絹", readings: ["ケン"],
+        phonetic: "肙", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "署", readings: ["ショ"],
@@ -4219,8 +4228,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "賃", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "賃", readings: ["チン", "ジン"],
+        phonetic: "壬", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "疑", readings: ["ギ"],
@@ -4341,8 +4351,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "鋼", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "鋼", readings: ["コウ"],
+        phonetic: "岡", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "厳", readings: [],
@@ -4433,7 +4444,7 @@ var kanji_db = [
     },
     {
         kanji: "井", readings: ["セイ", "ショウ"],
-        type: KTypeEnum.no_clue
+        type: KTypeEnum.hieroglyph
     },
     {
         kanji: "升", readings: ["ショウ"],
@@ -4448,8 +4459,8 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "匁", readings: [],  // kokuji
-        type: KTypeEnum.no_clue
+        kanji: "匁", readings: [],
+        type: KTypeEnum.kokuji
     },
     {
         kanji: "屯", readings: ["トン"],
@@ -4584,7 +4595,7 @@ var kanji_db = [
     },
     {
         kanji: "込", readings: [],
-        type: KTypeEnum.no_clue
+        type: KTypeEnum.kokuji
     },
     {
         kanji: "弐", readings: [],
@@ -4832,8 +4843,9 @@ var kanji_db = [
         type: KTypeEnum.comp_phonetic
     },
     {
-        kanji: "妊", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "妊", readings: ["ニン", "ジン"],
+        phonetic: "壬", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "妨", readings: ["ぼう"],
@@ -5070,8 +5082,8 @@ var kanji_db = [
         type: KTypeEnum.comp_phonetic
     },
     {
-        kanji: "屈", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "屈", readings: ["クツ"],
+        type: KTypeEnum.comp_indicative
     },
     {
         kanji: "岬", readings: [],
@@ -5195,7 +5207,7 @@ var kanji_db = [
     },
     {
         kanji: "枠", readings: [],
-        type: KTypeEnum.no_clue
+        type: KTypeEnum.kokuji
     },
     {
         kanji: "欧", readings: ["オウ"],
@@ -5435,8 +5447,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "咲", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "咲", readings: ["ショウ"],
+        phonetic: "关", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "垣", readings: [],
@@ -5451,8 +5464,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "孤", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "孤", readings: ["コ"],
+        phonetic: "瓜", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "封", readings: [],
@@ -5464,11 +5478,12 @@ var kanji_db = [
     },
     {
         kanji: "峠", readings: [],
-        type: KTypeEnum.no_clue
+        type: KTypeEnum.kokuji
     },
     {
-        kanji: "弧", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "弧", readings: ["コ"],
+        phonetic: "瓜", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "悔", readings: [],
@@ -5675,8 +5690,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "剛", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "剛", readings: ["ゴウ", "コウ"],
+        phonetic: "岡", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "衰", readings: [],
@@ -5884,8 +5900,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "栓", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "栓", readings: ["セン"],
+        phonetic: "全", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "桃", readings: ["トウ"],
@@ -6199,8 +6216,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "堀", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "堀", readings: ["クツ", "コツ"],
+        phonetic: "屈", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "婚", readings: [],
@@ -6268,8 +6286,9 @@ var kanji_db = [
         type: KTypeEnum.comp_phonetic
     },
     {
-        kanji: "掘", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "掘", readings: ["クツ"],
+        phonetic: "屈", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "掲", readings: [],
@@ -6621,15 +6640,16 @@ var kanji_db = [
     },
     {
         kanji: "塀", readings: [],
-        type: KTypeEnum.no_clue
+        type: KTypeEnum.kokuji
     },
     {
         kanji: "媒", readings: [],
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "婿", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "婿", readings: ["セイ"],
+        phonetic: "胥", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "掌", readings: ["ショウ"],
@@ -6706,8 +6726,9 @@ var kanji_db = [
         type: KTypeEnum.comp_phonetic
     },
     {
-        kanji: "握", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "握", readings: ["アク"],
+        phonetic: "屋", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "援", readings: ["エン"],
@@ -6823,8 +6844,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "疎", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "疎", readings: ["ソ", "ショ"],
+        phonetic: "疋", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "痘", readings: ["トウ"],
@@ -6985,8 +7007,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "雄", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "雄", readings: ["ユウ"],
+        phonetic: "厷", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "雰", readings: [],
@@ -7111,7 +7134,7 @@ var kanji_db = [
     },
     {
         kanji: "搾", readings: [],
-        type: KTypeEnum.no_clue
+        type: KTypeEnum.kokuji
     },
     {
         kanji: "摂", readings: [],
@@ -7185,8 +7208,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "痴", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "痴", readings: ["チ"],
+        phonetic: "知", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "睡", readings: [],
@@ -7349,8 +7373,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "靴", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "靴", readings: ["カ"],
+        phonetic: "化", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "頑", readings: ["ガン"],
@@ -7503,16 +7528,18 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "綱", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "綱", readings: ["コウ"],
+        phonetic: "岡", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "緒", readings: [],
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "網", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "網", readings: ["モウ", "ボウ"],
+        phonetic: "罔", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "罰", readings: [],
@@ -8035,8 +8062,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "礎", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "礎", readings: ["ソ"],
+        phonetic: "楚", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "槽", readings: [],
@@ -8168,16 +8196,18 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "薄", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "薄", readings: ["ハク"],
+        phonetic: "溥", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "爆", readings: [],
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "縛", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "縛", readings: ["バク", "ハク"],
+        phonetic: "尃", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "繁", readings: [],
@@ -8213,8 +8243,9 @@ var kanji_db = [
         type: KTypeEnum.comp_indicative
     },
     {
-        kanji: "敷", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "敷", readings: ["フ"],
+        phonetic: "尃", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "膚", readings: [],
@@ -8278,8 +8309,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "簿", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "簿", readings: ["ボ", "ホ"],
+        phonetic: "溥", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "縫", readings: [],
@@ -8457,8 +8489,9 @@ var kanji_db = [
     /* Kanji added to Joyo in 2008 */
 
     {
-        kanji: "藤", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "藤", readings: ["トウ"],
+        phonetic: "滕", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "誰", readings: [],
@@ -8469,8 +8502,8 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "岡", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "岡", readings: ["コウ"],
+        type: KTypeEnum.comp_indicative
     },
     {
         kanji: "頃", readings: [],
@@ -8562,8 +8595,8 @@ var kanji_db = [
         type: KTypeEnum.comp_phonetic
     },
     {
-        kanji: "匂", readings: [""],  // kokuji
-        type: KTypeEnum.derivative
+        kanji: "匂", readings: [""],
+        type: KTypeEnum.kokuji
     },
     {
         kanji: "沙", readings: ["サ", "シャ"],
@@ -8726,8 +8759,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "妖", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "妖", readings: ["ヨウ"],
+        phonetic: "夭", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "藍", readings: [],
@@ -8875,12 +8909,13 @@ var kanji_db = [
         type: KTypeEnum.comp_phonetic
     },
     {
-        kanji: "窟", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "窟", readings: ["クツ"],
+        phonetic: "屈", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
-        kanji: "巾", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "巾", readings: ["キン"],
+        type: KTypeEnum.hieroglyph
     },
     {
         kanji: "蜂", readings: [],
@@ -8999,7 +9034,7 @@ var kanji_db = [
     },
     {
         kanji: "丼", readings: ["タン", "トン"],
-        type: KTypeEnum.comp_indicative
+        type: KTypeEnum.kokuji
     },
     {
         kanji: "瘍", readings: ["ヨウ"],
@@ -9106,7 +9141,7 @@ var kanji_db = [
     {
         kanji: "腺", readings: ["セン"],
         phonetic: "泉", phonetic_id: -1,
-        type: KTypeEnum.comp_phonetic
+        type: KTypeEnum.kokuji
     },
     {
         kanji: "桁", readings: ["コウ"],
@@ -9246,8 +9281,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "沃", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "沃", readings: ["ヨク", "オク"],
+        phonetic: "夭", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "憬", readings: [],
@@ -9294,1913 +9330,2040 @@ var phon_db = [
     /* List of all phonetic components here ... */
     {
         phonetic: "七", readings: ["しち", "しつ"],
-        compounds: ["叱","切"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["叱","切"],
+        non_compounds: [],
         xrefs: ["七"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "十", readings: ["ジュウ", "ジッ", "シュウ"],
-        compounds: ["汁", "針"], compound_ids: [],
-        non_compounds: ["計"], non_compound_ids: [],
+        compounds: ["汁", "針"],
+        non_compounds: ["計"],
         xrefs: ["十"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "土", readings: ["ト", "ド"],
-        compounds: ["吐", "社"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["吐", "社"],
+        non_compounds: [],
         xrefs: ["土"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "大", readings: ["ダイ", "タイ"],
-        compounds: ["戻"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["戻"],
+        non_compounds: [],
         xrefs: ["大"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "子", readings: ["シ", "ス"],
-        compounds: ["字"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["字"],
+        non_compounds: [],
         xrefs: ["子"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "早", readings: ["そう"],
-        compounds: ["草"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["草"],
+        non_compounds: [],
         xrefs: ["早"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "寸", readings: ["ソン", "スン"],
-        compounds: ["村"], compound_ids: [],
-        non_compounds: ["討", "耐"], non_compound_ids: [],
+        compounds: ["村"],
+        non_compounds: ["討", "耐"],
         xrefs: ["寸"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "屯", readings: ["トン", "チュン", "ドン"],
-        compounds: ["討", "純", "春", "鈍", "頓"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["討", "純", "春", "鈍", "頓"],
+        non_compounds: [],
         xrefs: ["屯"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "丁", readings: ["チョウ", "テイ", "トウ"],
-        compounds: ["庁", "灯", "町", "亭", "頂", "訂", "打"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["庁", "灯", "町", "亭", "頂", "訂", "打"],
+        non_compounds: [],
         xrefs: ["丁"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "化", readings: ["カ", "ケ", "ゲ"],
-        compounds: ["花", "貨"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["花", "貨", "靴"],
+        non_compounds: [],
         xrefs: ["化"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "見", readings: ["ケン", "ゲン"],
-        compounds: ["現"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["現"],
+        non_compounds: [],
         xrefs: ["見"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "貝", readings: ["バイ", "マイ"],
-        compounds: ["敗"], compound_ids: [],
-        non_compounds: ["買"], non_compound_ids: [],
+        compounds: ["敗"],
+        non_compounds: ["買"],
         xrefs: ["貝"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "赤", readings: ["セキ", "シャク"],
-        compounds: ["赦"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["赦"],
+        non_compounds: [],
         xrefs: ["赤"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "足", readings: ["ソク", "ショク"],
-        compounds: ["促"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["促"],
+        non_compounds: [],
         xrefs: ["足"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "方", readings: ["ホウ", "ぼう"],   // added ぼう, no reason found
-        compounds: ["坊", "妨", "芳", "防", "放", "肪", "房", "紡", "訪"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["坊", "妨", "芳", "防", "放", "肪", "房", "紡", "訪"],
+        non_compounds: [],
         xrefs: ["方"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "古", readings: ["コ"],
-        compounds: ["苦", "固", "故", "枯"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["苦", "固", "故", "枯"],
+        non_compounds: [],
         xrefs: ["古"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "生", readings: ["セイ", "ショウ"],
-        compounds: ["姓", "性", "牲", "星", "青"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["姓", "性", "牲", "星", "青"],
+        non_compounds: [],
         xrefs: ["生"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "青", readings: ["セイ", "ショウ"],
-        compounds: ["情", "清", "精", "請", "晴"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["情", "清", "精", "請", "晴"],
+        non_compounds: [],
         xrefs: ["青", "生"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "且", readings: ["ショ", "ソ", "ショウ"],
-        compounds: ["助", "狙", "阻", "祖", "租", "組", "粗"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["助", "狙", "阻", "祖", "租", "組", "粗"],
+        non_compounds: [],
         xrefs: ["且"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "各", readings: ["かく"],
-        compounds: ["客", "格", "略", "絡", "路", "酪", "閣", "額"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["客", "格", "略", "絡", "路", "酪", "閣", "額"],
+        non_compounds: [],
         xrefs: ["各"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "主", readings: ["シュ", "ス"],
-        compounds: ["住", "注", "柱", "駐"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["住", "注", "柱", "駐"],
+        non_compounds: [],
         xrefs: ["主"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "几", readings: ["キ"],
-        compounds: ["机", "肌", "飢"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["机", "肌", "飢"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "亡", readings: ["ボウ", "モウ"],
-        compounds: ["妄", "忘", "盲", "忙", "望"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["妄", "忘", "盲", "忙", "望"],
+        non_compounds: [],
         xrefs: ["亡"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "干", readings: ["カン"],
-        compounds: ["刊", "汗", "肝", "岸", "幹"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["刊", "汗", "肝", "岸", "幹"],
+        non_compounds: [],
         xrefs: ["干"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "己", readings: ["こ", "き"],
-        compounds: ["妃", "忌", "紀", "記", "配", "改"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["妃", "忌", "紀", "記", "配", "改"],
+        non_compounds: [],
         xrefs: ["己"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "工", readings: ["コウ", "ク"],
-        compounds: ["功", "江", "紅", "虹", "空", "貢", "攻"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["功", "江", "紅", "虹", "空", "貢", "攻"],
+        non_compounds: [],
         xrefs: ["工"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "及", readings: ["キュウ"],
-        compounds: ["吸", "扱", "急", "級"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["吸", "扱", "急", "級"],
+        non_compounds: [],
         xrefs: ["及"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "中", readings: ["チュウ"],
-        compounds: ["仲", "沖", "忠", "衷"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["仲", "沖", "忠", "衷"],
+        non_compounds: [],
         xrefs: ["中"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "反", readings: ["ハン","ホン","タン"],
-        compounds: ["坂", "阪", "返", "板", "版", "販", "飯"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["坂", "阪", "返", "板", "版", "販", "飯"],
+        non_compounds: [],
         xrefs: ["反"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "白", readings: ["ハク", "ビャク"],
-        compounds: ["伯", "泊", "拍", "迫", "舶"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["伯", "泊", "拍", "迫", "舶"],
+        non_compounds: [],
         xrefs: ["白"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "皮", readings: ["ヒ"],
-        compounds: ["披", "彼", "波", "破", "疲", "被"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["披", "彼", "波", "破", "疲", "被"],
+        non_compounds: [],
         xrefs: ["皮"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "包", readings: ["ホウ"],
-        compounds: ["砲", "飽", "抱", "泡", "胞"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["砲", "飽", "抱", "泡", "胞"],
+        non_compounds: [],
         xrefs: ["包"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "可", readings: ["カ", "コク"],
-        compounds: ["何", "河", "苛"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["何", "河", "苛"],
+        non_compounds: [],
         xrefs: ["可"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "司", readings: ["し", "す"],
-        compounds: ["伺", "詞", "飼", "嗣"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["伺", "詞", "飼", "嗣"],
+        non_compounds: [],
         xrefs: ["司"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "召", readings: ["ショウ"],
-        compounds: ["招", "沼", "昭", "紹", "詔", "超"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["招", "沼", "昭", "紹", "詔", "超"],
+        non_compounds: [],
         xrefs: ["召"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "寺", readings: ["ジ"],
-        compounds: ["侍", "待", "持", "時", "特", "詩"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["侍", "待", "持", "時", "特", "詩"],
+        non_compounds: [],
         xrefs: ["寺"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "圭", readings: ["ケイ"],
-        compounds: ["街", "掛"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["街", "掛"],
+        non_compounds: [],
         xrefs: ["圭", "厓"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "交", readings: ["コウ"],
-        compounds: ["郊", "校", "絞", "較"], compound_ids: [],
-        non_compounds: ["効"], non_compound_ids: [],
+        compounds: ["郊", "校", "絞", "較"],
+        non_compounds: ["効"],
         xrefs: ["交"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "我", readings: ["ガ"],
-        compounds: ["餓"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["餓"],
+        non_compounds: [],
         xrefs: ["我"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "義", readings: ["ギ"],
-        compounds: ["儀", "犠", "議"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["儀", "犠", "議"],
+        non_compounds: [],
         xrefs: ["義"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "兪", readings: ["ユ"],
-        compounds: ["愉", "喩", "癒", "諭", "輸"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["愉", "喩", "癒", "諭", "輸"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "由", readings: ["ユ", "ユウ", "ユイ"],
-        compounds: ["油", "宙", "笛", "軸"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["油", "宙", "笛", "軸"],
+        non_compounds: [],
         xrefs: ["由"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "莫", readings: ["バク", "マク", "ボ", "モ"],
-        compounds: ["募", "墓", "幕", "漠", "慕", "模", "膜", "暮"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["募", "墓", "幕", "漠", "慕", "模", "膜", "暮"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "小", readings: ["しょう"],
-        compounds: ["肖"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["肖"],
+        non_compounds: [],
         xrefs: ["小"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "肖", readings: ["ショウ"],
-        compounds: ["削", "哨", "宵", "消", "硝"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["削", "哨", "宵", "消", "硝"],
+        non_compounds: [],
         xrefs: ["肖", "小"], xref_ids: [],
         quality: -1.0
     },
 
     {
         phonetic: "山", readings: ["サン", "セン"],
-        compounds: ["仙"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["仙"],
+        non_compounds: [],
         xrefs: ["山"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "文", readings: ["ブン", "モン"],
-        compounds: ["紋", "蚊"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["紋", "蚊"],
+        non_compounds: [],
         xrefs: ["文"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "王", readings: ["おう"],
-        compounds: [""], compound_ids: [],
-        non_compounds: ["旺"], non_compound_ids: [],
+        compounds: [""],
+        non_compounds: ["旺"],
         xrefs: ["王"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "正", readings: ["セイ", "ショウ"],
-        compounds: ["征", "定", "政", "症", "証", "整"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["征", "定", "政", "症", "証", "整"],
+        non_compounds: [],
         xrefs: ["正"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "出", readings: ["シュツ", "スイ"],
-        compounds: ["拙"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["拙"],
+        non_compounds: [],
         xrefs: ["出"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "左", readings: ["さ"],
-        compounds: ["佐", "差"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["佐", "差"],
+        non_compounds: [],
         xrefs: ["左"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "石", readings: ["セキ", "シャク", "コク", "ジャク"],
-        compounds: ["拓", "妬"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["拓", "妬"],
+        non_compounds: [],
         xrefs: ["石"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "立", readings: ["リツ", "リュウ"],
-        compounds: ["位", "拉", "泣", "粒", "翌"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["位", "拉", "泣", "粒", "翌"],
+        non_compounds: [],
         xrefs: ["立"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "先", readings: ["セン"],
-        compounds: ["洗", "銑"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["洗", "銑"],
+        non_compounds: [],
         xrefs: ["先"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "名", readings: ["メイ", "ミョウ"],
-        compounds: ["銘"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["銘"],
+        non_compounds: [],
         xrefs: ["名"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "音", readings: ["オン", "イン"],
-        compounds: ["暗", "闇"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["暗", "闇"],
+        non_compounds: [],
         xrefs: ["音"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "才", readings: ["サイ"],
-        compounds: ["材", "財"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["材", "財"],
+        non_compounds: [],
         xrefs: ["才"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "内", readings: ["ナイ", "ダイ", "ノウ", "ドウ"],
-        compounds: ["納"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["納"],
+        non_compounds: [],
         xrefs: ["内"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "午", readings: ["ゴ"],
-        compounds: ["許"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["許"],
+        non_compounds: [],
         xrefs: ["午"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "元", readings: ["ゲン", "ガン"],
-        compounds: ["玩", "頑"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["玩", "頑"],
+        non_compounds: [],
         xrefs: ["元"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "今", readings: ["コン", "キン"],
-        compounds: ["含", "吟", "念"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["含", "吟", "念"],
+        non_compounds: [],
         xrefs: ["今"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "公", readings: ["コウ", "ク"],
-        compounds: ["松", "翁", "訟"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["松", "翁", "訟"],
+        non_compounds: [],
         xrefs: ["公"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "戸", readings: ["コ"],
-        compounds: ["所", "雇"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["所", "雇"],
+        non_compounds: [],
         xrefs: ["戸"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "止", readings: ["シ"],
-        compounds: ["企", "祉", "歯"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["企", "祉", "歯"],
+        non_compounds: [],
         xrefs: ["止"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "分", readings: ["フン", "ブン", "ブ"],
-        compounds: ["盆", "貧", "粉", "紛", "雰", "頒"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["盆", "貧", "粉", "紛", "雰", "頒"],
+        non_compounds: [],
         xrefs: ["分"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "少", readings: ["しょう"],
-        compounds: ["秒"], compound_ids: [],
-        non_compounds: ["沙"], non_compound_ids: [],
+        compounds: ["秒"],
+        non_compounds: ["沙"],
         xrefs: ["少"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "半", readings: ["ハン"],
-        compounds: ["伴", "判", "畔"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["伴", "判", "畔"],
+        non_compounds: [],
         xrefs: ["半"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "北", readings: ["ホク"],
-        compounds: ["背"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["背"],
+        non_compounds: [],
         xrefs: ["北"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "兄", readings: ["ケイ", "キョウ"],
-        compounds: ["呪", "況"], compound_ids: [],
-        non_compounds: ["祝"], non_compound_ids: [],
+        compounds: ["呪", "況"],
+        non_compounds: ["祝"],
         xrefs: ["兄"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "広", readings: ["コウ"],
-        compounds: ["拡", "鉱"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["拡", "鉱"],
+        non_compounds: [],
         xrefs: ["広"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "失", readings: ["シツ", "イツ"],
-        compounds: ["迭", "秩"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["迭", "秩"],
+        non_compounds: [],
         xrefs: ["失"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "矢", readings: ["シ"],
-        compounds: ["疾"], compound_ids: [],
-        non_compounds: ["疑"], non_compound_ids: [],
+        compounds: ["疾"],
+        non_compounds: ["疑"],
         xrefs: ["矢"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "会", readings: ["カイ", "エ"],
-        compounds: ["絵"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["絵"],
+        non_compounds: [],
         xrefs: ["会"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "合", readings: ["ゴウ", "ガッ", "カッ", "コウ"],
-        compounds: ["拾", "給", "答"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["拾", "給", "答"],
+        non_compounds: [],
         xrefs: ["合"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "同", readings: ["ドウ"],
-        compounds: ["洞", "筒", "銅", "胴"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["洞", "筒", "銅", "胴"],
+        non_compounds: [],
         xrefs: ["同"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "米", readings: ["ベイ", "マイ", "メ"],
-        compounds: ["迷"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["迷"],
+        non_compounds: [],
         xrefs: ["米"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "迷", readings: ["メイ"],
-        compounds: ["謎"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["謎"],
+        non_compounds: [],
         xrefs: ["迷", "米"], xref_ids: [],
         quality: -1.0
     },
 
     {
         phonetic: "考", readings: ["コウ"],
-        compounds: ["拷"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["拷"],
+        non_compounds: [],
         xrefs: ["考"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "売", readings: ["バイ"],
-        compounds: ["続", "読"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["続", "読"],
+        non_compounds: [],
         xrefs: ["売"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "谷", readings: ["コク"],
-        compounds: ["俗", "浴", "容", "欲", "裕"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["俗", "浴", "容", "欲", "裕"],
+        non_compounds: [],
         xrefs: ["谷"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "量", readings: ["リョウ", "ロウ"],
-        compounds: ["糧"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["糧"],
+        non_compounds: [],
         xrefs: ["量"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "制", readings: ["セイ"],
-        compounds: ["製"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["製"],
+        non_compounds: [],
         xrefs: ["制"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "斤", readings: ["キン"],
-        compounds: ["近", "析", "祈"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["近", "析", "祈"],
+        non_compounds: [],
         xrefs: ["斤"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "里", readings: ["リ"],
-        compounds: ["理", "裏"], compound_ids: [],
-        non_compounds: ["厘"], non_compound_ids: [],
+        compounds: ["理", "裏"],
+        non_compounds: ["厘"],
         xrefs: ["里"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "東", readings: ["トウ"],
-        compounds: ["凍", "棟"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["凍", "棟"],
+        non_compounds: [],
         xrefs: ["東"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "京", readings: ["キョウ", "ケイ", "キン"],
-        compounds: ["景", "鯨"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["景", "鯨"],
+        non_compounds: [],
         xrefs: ["京"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "直", readings: ["チョク", "ジキ", "チ"],
-        compounds: ["値", "植", "殖", "置"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["値", "植", "殖", "置"],
+        non_compounds: [],
         xrefs: ["直"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "未", readings: ["ミ", "ビ"],
-        compounds: ["味", "妹", "昧", "魅"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["味", "妹", "昧", "魅"],
+        non_compounds: [],
         xrefs: ["未"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "占", readings: ["セン", "てん"],  // added phonetic てん, but found no reason
-        compounds: ["店", "貼", "粘", "点"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["店", "貼", "粘", "点"],
+        non_compounds: [],
         xrefs: ["占"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "明", readings: ["メイ", "ミョウ", "ミン"],
-        compounds: ["盟"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["盟"],
+        non_compounds: [],
         xrefs: ["明"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "歩", readings: ["ホ", "ブ", "フ"],
-        compounds: [], compound_ids: [],
-        non_compounds: ["頻", "渉"], non_compound_ids: [],
+        compounds: [],
+        non_compounds: ["頻", "渉"],
         xrefs: ["歩"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "長", readings: ["チョウ"],
-        compounds: ["帳", "張"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["帳", "張"],
+        non_compounds: [],
         xrefs: ["長"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "門", readings: ["モン", "ボン"],
-        compounds: ["問", "聞"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["問", "聞"],
+        non_compounds: [],
         xrefs: ["門"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "是", readings: ["ゼ", "シ", "テイ", "ダイ"], // added ダイ, テイ to readings, no source
-        compounds: ["堤", "提", "題"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["堤", "提", "題"],
+        non_compounds: [],
         xrefs: ["是"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "象", readings: ["ショウ", "ゾウ"],
-        compounds: ["像"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["像"],
+        non_compounds: [],
         xrefs: ["象"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "袁", readings: ["えん", "おん"],  // TODO: missing compound info, search!
-        compounds: ["遠, 園"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["遠, 園"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "示", readings: ["ジ", "シ"],
-        compounds: ["視"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["視"],
+        non_compounds: [],
         xrefs: ["示"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "秋", readings: ["シュウ"],
-        compounds: ["愁"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["愁"],
+        non_compounds: [],
         xrefs: ["秋"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "弱", readings: ["ジャク", "ニャク"],
-        compounds: ["溺"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["溺"],
+        non_compounds: [],
         xrefs: ["弱"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "朱", readings: ["シュ", "ス"],
-        compounds: ["株", "殊", "珠"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["株", "殊", "珠"],
+        non_compounds: [],
         xrefs: ["朱"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "甫", readings: ["ホ", "フ"],
-        compounds: ["浦", "捕", "補", "舗"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["浦", "捕", "補", "舗"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "辰", readings: ["シン"],
-        compounds: ["唇", "娠", "振", "震"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["唇", "娠", "振", "震"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "良", readings: ["リョウ", "ロウ"],
-        compounds: ["浪", "郎", "朗"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["浪", "郎", "朗"],
+        non_compounds: [],
         xrefs: ["良"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "非", readings: ["ヒ"],
-        compounds: ["俳", "排", "悲", "扉", "輩"], compound_ids: [],
-        non_compounds: ["罪"], non_compound_ids: [],
+        compounds: ["俳", "排", "悲", "扉", "輩"],
+        non_compounds: ["罪"],
         xrefs: ["非"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "其", readings: ["キ"],
-        compounds: ["期", "欺", "棋", "基", "旗"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["期", "欺", "棋", "基", "旗"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "巠", readings: ["ケイ"],
-        compounds: ["茎", "径", "経", "軽"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["茎", "径", "経", "軽"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "馬", readings: ["バ", "メ", "マ"],
-        compounds: ["罵"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["罵"],
+        non_compounds: [],
         xrefs: ["馬"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "高", readings: ["こう"],
-        compounds: ["稿"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["稿"],
+        non_compounds: [],
         xrefs: ["高"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "囟", readings: ["シン", "シ"],
-        compounds: ["細", "思"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["細", "思"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "周", readings: ["シュウ", "ス"],
-        compounds: ["彫", "週", "調"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["彫", "週", "調"],
+        non_compounds: [],
         xrefs: ["周"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "予", readings: ["よ"],
-        compounds: ["序", "野", "預"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["序", "野", "預"],
+        non_compounds: [],
         xrefs: ["予"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "昜", readings: ["ヨウ"],  // TODO: incomplete info, search!
-        compounds: ["場", "陽", "瘍"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["場", "陽", "瘍", "湯", "腸"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "道", readings: ["ドウ", "トウ"],
-        compounds: ["導"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["導"],
+        non_compounds: [],
         xrefs: ["道"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "番", readings: ["バン", "ハン", "ハ"],
-        compounds: ["翻"], compound_ids: [],
-        non_compounds: ["審"], non_compound_ids: [],
+        compounds: ["翻"],
+        non_compounds: ["審"],
         xrefs: ["番"], xref_ids: [],
         quality: -1.0
     },
     {
         // TODO: phonetic 五 theory?
         phonetic: "吾", readings: ["ゴ"],
-        compounds: ["悟", "語"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["悟", "語"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "賓", readings: ["ヒン"],  // TODO info missing, search!
-        compounds: ["浜"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["浜"],
+        non_compounds: [],
         xrefs: ["賓"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "卜", readings: ["ボク", "ホク"],
-        compounds: ["朴", "訃", "赴"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["朴", "訃", "赴"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "氾", readings: ["はん"],
-        compounds: ["範"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["範"],
+        non_compounds: [],
         xrefs: ["氾"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "奇", readings: ["キ"],
-        compounds: ["埼", "崎", "寄", "椅", "騎"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["埼", "崎", "寄", "椅", "騎"],
+        non_compounds: [],
         xrefs: ["奇"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "皆", readings: ["カイ"],
-        compounds: ["階", "諧"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["階", "諧"],
+        non_compounds: [],
         xrefs: ["皆"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "不", readings: ["フ", "ブ"],
-        compounds: ["杯"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["杯"],
+        non_compounds: [],
         xrefs: ["不"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "加", readings: ["カ"],
-        compounds: ["架", "賀"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["架", "賀"],
+        non_compounds: [],
         xrefs: ["加"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "弋", readings: ["ヨク", "イキ"],
-        compounds: ["代", "式"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["代", "式"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "代", readings: [],
-        compounds: ["袋", "貸"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["袋", "貸"],
+        non_compounds: [],
         xrefs: ["代", "弋"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "央", readings: ["オウ", "ヨウ", "エイ"],
-        compounds: ["英", "映"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["英", "映"],
+        non_compounds: [],
         xrefs: ["央"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "勺", readings: ["シャク"],
-        compounds: ["約", "酌", "釣"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["約", "酌", "釣"],
+        non_compounds: [],
         xrefs: ["勺"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "氐", readings: ["テイ", "タイ"],
-        compounds: ["低", "底", "抵", "邸"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["低", "底", "抵", "邸"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "兌", readings: ["ダ", "タイ", "エツ", "エイ"],
-        compounds: ["悦", "脱", "税", "説", "鋭"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["悦", "脱", "税", "説", "鋭"],
+        non_compounds: [],
         xrefs: ["兌"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "曽", readings: ["ソウ", "ゾ",  "ソ", "ゾウ"],  // TODO: no list, search!
-        compounds: ["贈", "僧", "増", "層", "噌", "憎"], compound_ids: [], // TODO: 噌 not in joyo!
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["贈", "僧", "増", "層", "噌", "憎"], // TODO: 噌 not in joyo!
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "菐", readings: ["ホク", "ボク"],
-        compounds: ["撲", "僕"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["撲", "僕"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "取", readings: ["シュ"],
-        compounds: ["趣"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["趣"],
+        non_compounds: [],
         xrefs: ["取"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "卓", readings: ["タク"],
-        compounds: ["悼"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["悼"],
+        non_compounds: [],
         xrefs: ["卓"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "昔", readings: ["セキ", "シャク"],
-        compounds: ["借", "措", "錯"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["借", "措", "錯"],
+        non_compounds: [],
         xrefs: ["昔"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "具", readings: ["グ", "ク"],
-        compounds: ["惧"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["惧"],
+        non_compounds: [],
         xrefs: ["具"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "台", readings: ["ダイ", "タイ"],
-        compounds: [""], compound_ids: [],
-        non_compounds: ["冶", "治", "始"], non_compound_ids: [],
+        compounds: [""],
+        non_compounds: ["冶", "治", "始"],
         xrefs: ["台"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "申", readings: ["シン"],
-        compounds: ["伸", "神", "紳", "陳"], compound_ids: [],
-        non_compounds: ["電"], non_compound_ids: [],
+        compounds: ["伸", "神", "紳", "陳"],
+        non_compounds: ["電"],
         xrefs: ["申"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "鹿", readings: ["ロク"],
-        compounds: ["麓"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["麓"],
+        non_compounds: [],
         xrefs: "鹿", xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "心", readings: ["シン"],
-        compounds: ["芯"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["芯"],
+        non_compounds: [],
         xrefs: ["心"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "全", readings: ["ゼン", "セン"],
-        compounds: ["詮"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["詮", "栓"],
+        non_compounds: [],
         xrefs: ["全"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "耳", readings: ["じ"],
-        compounds: ["餌", "恥"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["餌", "恥"],
+        non_compounds: [],
         xrefs: ["耳"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "𢦏", readings: ["サイ"],
-        compounds: ["災", "栽", "裁", "載", "戴"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["災", "栽", "裁", "載", "戴"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "原", readings: ["ゲン", "ガン", "ゴン"],
-        compounds: ["源", "願"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["源", "願"],
+        non_compounds: [],
         xrefs: ["原"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "家", readings: ["カ", "ケ"],
-        compounds: ["嫁", "稼"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["嫁", "稼"],
+        non_compounds: [],
         xrefs: ["家"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "氏", readings: ["シ"],
-        compounds: ["紙"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["紙"],
+        non_compounds: [],
         xrefs: ["氏"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "者", readings: ["シャ", "しょ"],　// added しょ, but found no reason
-        compounds: ["都", "暑", "煮", "署", "箸", "諸", "書"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["都", "暑", "煮", "署", "箸", "諸", "書"],
+        non_compounds: [],
         xrefs: ["者", "煮"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "甬", readings: ["ツウ", "ヨウ", "ユウ"],
-        compounds: ["通", "痛"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["通", "痛"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "㕣", readings: ["エン"],
-        compounds: ["船", "沿", "鉛"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["船", "沿", "鉛"],
+        non_compounds: [],
         xrefs: ["㕣", "兌"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "黄", readings: ["コウ", "オウ"],
-        compounds: ["広", "横"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["広", "横"],
+        non_compounds: [],
         xrefs: ["黄", "広"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "黒", readings: ["コク"],
-        compounds: ["墨", "黙"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["墨", "黙"],
+        non_compounds: [],
         xrefs: ["黒"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "朝", readings: ["チョウ"],
-        compounds: ["嘲", "潮"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["嘲", "潮"],
+        non_compounds: [],
         xrefs: ["朝"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "間", readings: ["カン", "ケン"],
-        compounds: ["簡"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["簡"],
+        non_compounds: [],
         xrefs: ["間"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "云", readings: ["ウン"],
-        compounds: ["芸", "雲", "魂"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["芸", "雲", "魂"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "果", readings: ["カ"],
-        compounds: ["菓", "裸", "課"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["菓", "裸", "課"],
+        non_compounds: [],
         xrefs: ["果"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "卒", readings: ["ソツ", "シュツ"],
-        compounds: ["砕", "粋"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["砕", "粋"],
+        non_compounds: [],
         xrefs: ["卒"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "列", readings: ["レツ"],
-        compounds: ["例", "烈", "裂"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["例", "烈", "裂"],
+        non_compounds: [],
         xrefs: ["列"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "参", readings: ["サン", "シン"],
-        compounds: ["惨"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["惨"],
+        non_compounds: [],
         xrefs: ["参"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "官", readings: ["カン"],
-        compounds: ["棺", "管", "館"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["棺", "管", "館"],
+        non_compounds: [],
         xrefs: ["官"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "付", readings: ["フ"],
-        compounds: ["府", "附", "符", "腐"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["府", "附", "符", "腐"],
+        non_compounds: [],
         xrefs: ["付"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "牙", readings: ["ガ", "ゲ"],
-        compounds: ["芽", "邪", "雅"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["芽", "邪", "雅"],
+        non_compounds: [],
         xrefs: ["牙"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "新", readings: ["シン"],
-        compounds: ["薪"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["薪"],
+        non_compounds: [],
         xrefs: ["新"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "楽", readings: ["ガク", "ラク", "ゴウ", "ギョウ"],
-        compounds: ["薬"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["薬"],
+        non_compounds: [],
         xrefs: ["楽"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "尞", readings: ["リョウ"],
-        compounds: ["僚", "寮", "瞭"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["僚", "寮", "瞭"],
+        non_compounds: [],
         xrefs: ["尞"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "泉", readings: ["セン"],
-        compounds: ["腺", "線"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["腺", "線"],
+        non_compounds: [],
         xrefs: ["泉"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "辛", readings: ["シン"],
-        compounds: ["亲"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["亲"],
+        non_compounds: [],
         xrefs: ["辛"], xref_ids: [],
         quality: -1.0
     },{
         phonetic: "亲", readings: ["シン"],
-        compounds: ["親"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["親"],
+        non_compounds: [],
         xrefs: ["亲", "辛"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "豆", readings: ["トウ", "ズ"],
-        compounds: ["短", "痘", "登", "頭"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["短", "痘", "登", "頭"],
+        non_compounds: [],
         xrefs: ["豆"], xref_ids: [],
         quality: -1.0
     },{
         phonetic: "彦", readings: ["ゲン"],
-        compounds: ["顔"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["顔"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "夫", readings: ["フ", "フウ", "ブ"],
-        compounds: ["扶"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["扶"],
+        non_compounds: [],
         xrefs: ["夫"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "史", readings: ["シ"],
-        compounds: ["使"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["使"],
+        non_compounds: [],
         xrefs: ["史"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "幸", readings: ["コウ"],
-        compounds: [""], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: [""],
+        non_compounds: [],
         xrefs: ["幸"], xref_ids: [],
         quality: -1.0
     },{
         phonetic: "畐", readings: ["フク", "ヒョク", "ヒキ"],  // TODO incomplete, search !
-        compounds: ["富", "福", "副", "幅"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["富", "福", "副", "幅"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "次", readings: ["ジ", "シ"],
-        compounds: ["姿", "茨", "恣", "資"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["姿", "茨", "恣", "資"],
+        non_compounds: [],
         xrefs: ["次"], xref_ids: [],
         quality: -1.0
     },{
         phonetic: "寅", readings: ["イン"],
-        compounds: ["演"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["演"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },{
         phonetic: "貫", readings: ["カン"],
-        compounds: ["慣"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["慣"],
+        non_compounds: [],
         xrefs: ["貫"], xref_ids: [],
         quality: -1.0
     },{
         phonetic: "賁", readings: ["ヒ", "ホン", "フン"], // TODO no info, search!
-        compounds: ["憤", "噴", "墳"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["憤", "噴", "墳"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },{
         phonetic: "冓", readings: ["コウ"],
-        compounds: ["溝", "構", "講", "購"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["溝", "構", "講", "購"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "雇", readings: ["コ"],
-        compounds: ["顧"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["顧"],
+        non_compounds: [],
         xrefs: ["雇", "戸"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "必", readings: ["ヒツ"],
-        compounds: ["泌", "秘"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["泌", "秘"],
+        non_compounds: [],
         xrefs: ["必"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "末", readings: ["マツ", "バツ"],
-        compounds: ["抹"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["抹"],
+        non_compounds: [],
         xrefs: ["末"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "昆", readings: ["コン"],
-        compounds: ["混"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["混"],
+        non_compounds: [],
         xrefs: ["昆"], xref_ids: [],
         quality: -1.0
     },{
         phonetic: "艮", readings: ["コン", "ゴン"],
-        compounds: ["限", "恨", "根", "眼", "痕", "銀"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["限", "恨", "根", "眼", "痕", "銀"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "多", readings: ["た"],
-        compounds: ["移"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["移"],
+        non_compounds: [],
         xrefs: ["多"], xref_ids: [],
         quality: -1.0
     },{
         phonetic: "弗", readings: ["フツ", "ホツ"],
-        compounds: ["仏", "沸", "払"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["仏", "沸", "払"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },{
         phonetic: "丩", readings: ["キュウ"],
-        compounds: ["叫、糾"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["叫、糾"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "冊", readings: ["サツ", "サク"],
-        compounds: ["柵"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["柵"],
+        non_compounds: [],
         xrefs: ["冊"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "区", readings: ["ク", "オウ"],
-        compounds: ["欧", "殴", "駆", "枢"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["欧", "殴", "駆", "枢"],
+        non_compounds: [],
         xrefs: ["区"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "平", readings: ["ヘイ", "ビョウ", "ヒョウ"],
-        compounds: ["坪", "評"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["坪", "評"],
+        non_compounds: [],
         xrefs: ["平"], xref_ids: [],
         quality: -1.0
     },{
         phonetic: "也", readings: ["ヤ"],
-        compounds: ["地", "池", "他", "施"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["地", "池", "他", "施"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "向", readings: ["コウ", "キョウ", "ショウ"],
-        compounds: ["尚"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["尚"],
+        non_compounds: [],
         xrefs: ["向"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "州", readings: ["シュウ"],
-        compounds: ["酬"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["酬"],
+        non_compounds: [],
         xrefs: ["州"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "安", readings: ["アン"],
-        compounds: ["案"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["案"],
+        non_compounds: [],
         xrefs: ["安"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "羊", readings: ["ヨウ", "ショウ", "ジョウ"],
-        compounds: ["洋", "祥", "詳", "養"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["洋", "祥", "詳", "養"],
+        non_compounds: [],
         xrefs: ["羊"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "有", readings: ["ユウ", "ウ"],
-        compounds: ["賄"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["賄"],
+        non_compounds: [],
         xrefs: ["有"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "君", readings: ["クン"],
-        compounds: ["郡", "群"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["郡", "群"],
+        non_compounds: [],
         xrefs: ["君"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "役", readings: ["ヤク", "エキ"],
-        compounds: ["疫"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["疫"],
+        non_compounds: [],
         xrefs: ["役"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "九", readings: ["きゅう", "く"],
-        compounds: ["尻", "究", "軌"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["尻", "究", "軌"],
+        non_compounds: [],
         xrefs: ["九"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "永", readings: ["エイ", "ヨウ"],
-        compounds: ["泳", "詠"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["泳", "詠"],
+        non_compounds: [],
         xrefs: ["永"], xref_ids: [],
         quality: -1.0
     },{
         phonetic: "乍", readings: ["サ", "サク", "ジャ"],
-        compounds: ["詐", "作", "昨", "酢"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["詐", "作", "昨", "酢"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "巨", readings: ["キョ", "コ"],
-        compounds: ["拒", "距"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["拒", "距"],
+        non_compounds: [],
         xrefs: ["巨"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "吉", readings: ["キチ", "キツ"],
-        compounds: ["結", "詰"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["結", "詰"],
+        non_compounds: [],
         xrefs: ["吉"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "朿", readings: ["シ"],
-        compounds: ["刺", "策", "責"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["刺", "策", "責"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "兆", readings: ["チョウ"],
-        compounds: ["挑", "逃", "桃", "眺", "跳"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["挑", "逃", "桃", "眺", "跳"],
+        non_compounds: [],
         xrefs: ["兆"], xref_ids: [],
         quality: -1.0
     },
     {
     phonetic: "僉", readings: ["ケン"],  // TODO: no list, search!
-        compounds: ["倹", "険", "験", "検", "剣"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["倹", "険", "験", "検", "剣"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "則", readings: ["ソク"],
-        compounds: ["側", "測", "賊"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["側", "測", "賊"],
+        non_compounds: [],
         xrefs: ["則"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "章", readings: ["ショウ"],
-        compounds: ["彰", "障"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["彰", "障"],
+        non_compounds: [],
         xrefs: ["章"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "呉", readings: ["ゴ"],
-        compounds: ["娯", "誤", "虞"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["娯", "誤", "虞"],
+        non_compounds: [],
         xrefs: ["呉"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "蜀", readings: ["ゾク", "ショク"],
-        compounds: ["濁", "独", "属", "触"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["濁", "独", "属", "触"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "亥", readings: ["ガイ", "カイ"],
-        compounds: ["刻", "劾", "核", "該", "骸"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["刻", "劾", "核", "該", "骸"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "臧", readings: ["ゾウ", "ソウ"],
-        compounds: ["蔵"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["蔵"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
 
     {
         phonetic: "蔵", readings: ["ゾウ", "ソウ"],
-        compounds: ["臓"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["臓"],
+        non_compounds: [],
         xrefs: ["蔵", "臧"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "䍃", readings: ["ヨウ"],
-        compounds: ["揺", "謡", "遥"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["揺", "謡", "遥"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "余", readings: ["ヨ"],
-        compounds: ["徐", "途", "除", "斜"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["徐", "途", "除", "斜"],
+        non_compounds: [],
         xrefs: ["余"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "厓", readings: ["ガイ"],
-        compounds: ["涯", "崖"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["涯", "崖"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "扁", readings: ["ヘン", "ハン"],
-        compounds: ["偏", "遍", "編"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["偏", "遍", "編"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "韋", readings: ["イ"],
-        compounds: ["偉", "囲", "違", "衛"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["偉", "囲", "違", "衛"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "戠", readings: ["ショク", "シ", "シキ"],  // TODO: no list, search!
-        compounds: ["職", "識", "織"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["職", "識", "織"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "郷", readings: ["キョウ", "ゴウ"],
-        compounds: ["響"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["響"],
+        non_compounds: [],
         xrefs: ["郷"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "疑", readings: ["ギ"],
-        compounds: ["凝", "擬"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["凝", "擬"],
+        non_compounds: [],
         xrefs: ["疑"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "爰", readings: ["エン"],
-        compounds: ["媛", "援", "緩"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["媛", "援", "緩"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "瞏", readings: ["ケイ", "セン"],
-        compounds: ["還", "環"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["還", "環"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "雚", readings: ["カン"],  // TODO: no list, search!
-        compounds: ["歓", "観"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["歓", "観"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "隺", readings: ["カク", "コク"],
-        compounds: ["鶴"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["鶴"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "堇", readings: ["キン"],
-        compounds: ["僅", "勤", "謹", "難"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["僅", "勤", "謹", "難"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "刃", readings: ["ジン", "ニン"],
-        compounds: ["忍"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["忍"],
+        non_compounds: [],
         xrefs: ["刃"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "𡈼", readings: ["イ"],
-        compounds: ["聖", "廷"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["聖", "廷"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "廷", readings: ["テイ"],
-        compounds: ["庭", "艇"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["庭", "艇"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "要", readings: ["ヨウ"],  // TODO: no list, search!
-        compounds: ["腰"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["腰"],
+        non_compounds: [],
         xrefs: ["要"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "票", readings: ["ヒョウ"],
-        compounds: ["漂", "標"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["漂", "標"],
+        non_compounds: [],
         xrefs: ["票"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "尚", readings: ["ショウ"],
-        compounds: ["堂", "常", "掌", "当", "賞", "党"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["堂", "常", "掌", "当", "賞", "党"],
+        non_compounds: [],
         xrefs: ["尚", "向"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "度", readings: ["ド", "ト", "タク"],
-        compounds: ["渡"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["渡"],
+        non_compounds: [],
         xrefs: ["度"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "于", readings: ["ウ"],
-        compounds: ["宇", "芋", "汚"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["宇", "芋", "汚"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "比", readings: ["ヒ", "ビ"],
-        compounds: ["批"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["批"],
+        non_compounds: [],
         xrefs: ["比"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "厶", readings: ["シ", "ボウ", "ム"],
-        compounds: ["私"], compound_ids: [],
-        non_compounds: ["仏", "払"], non_compound_ids: [],
+        compounds: ["私"],
+        non_compounds: ["仏", "払"],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
+        phonetic: "厷", readings: ["コウ", "ユウ"],
+        compounds: ["雄"],
+        non_compounds: [],
+        xrefs: ["厷"], xref_ids: [],
+        quality: -1.0
+    },
+
+    {
         phonetic: "共", readings: ["キョウ", "ク", "クウ", "グ"],
-        compounds: ["供", "洪", "恭"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["供", "洪", "恭"],
+        non_compounds: [],
         xrefs: ["共"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "兼", readings: ["ケン"],
-        compounds: ["嫌", "廉", "鎌", "謙"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["嫌", "廉", "鎌", "謙"],
+        non_compounds: [],
         xrefs: ["兼"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "勿", readings: ["ブツ", "モツ", "モチ"],
-        compounds: ["物"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["物"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "委", readings: ["イ"],
-        compounds: ["萎"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["萎"],
+        non_compounds: [],
         xrefs: ["委"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "行", readings: ["コウ", "ギョウ", "アン"],
-        compounds: ["衡", "桁"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["衡", "桁"],
+        non_compounds: [],
         xrefs: ["行"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "玄", readings: ["ゲン"],
-        compounds: ["弦", "舷"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["弦", "舷"],
+        non_compounds: [],
         xrefs: ["玄"], xref_ids: [],
         quality: -1.0
     },
 
     {
         phonetic: "采", readings: ["サイ"],
-        compounds: ["彩", "採", "菜"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["彩", "採", "菜"],
+        non_compounds: [],
         xrefs: ["采"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "朮", readings: ["ジュツ", "シュツ", "チュツ"],
-        compounds: ["述", "術"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["述", "術"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "受", readings: ["ジュ", "ズ"],  // TODO: incomplete, search!
-        compounds: ["授"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["授"],
+        non_compounds: [],
         xrefs: ["受"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "妾", readings: ["ショウ"],
-        compounds: ["接"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["接"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "夜", readings: ["ヤ"],  // TODO: no list, search!
-        compounds: ["液"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["液"],
+        non_compounds: [],
         xrefs: ["夜"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "敄", readings: ["ブ", "ム"],
-        compounds: ["務"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["務"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "務", readings: ["ム", "ブ"],
-        compounds: ["霧"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["霧"],
+        non_compounds: [],
         xrefs: ["務", "敄"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "熒", readings: ["エイ", "エイ", "ギョウ"],  // TODO no list, search
-        compounds: ["労", "栄", "蛍", "営"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["労", "栄", "蛍", "営"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "复", readings: ["フク", "フウ", "ブク", "ブ"],  // TODO: no list, search!
-        compounds: ["復", "腹", "複", "覆"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["復", "腹", "複", "覆"],
+        non_compounds: [],
         xrefs: ["复", "畐"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "咸", readings: ["カン", "ゲン"],  // TODO: no list, search!
-        compounds: ["減", "感"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["減", "感"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "感", readings: ["カン"],
-        compounds: ["憾"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["憾"],
+        non_compounds: [],
         xrefs: ["感", "咸"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "或", readings: ["ワク", "コク", "ヨク"],
-        compounds: ["域", "惑"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["域", "惑"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "幾", readings: ["キ"],
-        compounds: ["機", "畿"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["機", "畿"],
+        non_compounds: [],
         xrefs: ["幾"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "責", readings: ["セキ", "シャク"],  // TODO: no list, search
-        compounds: ["積", "債", "漬", "績", "跡"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["積", "債", "漬", "績", "跡"],
+        non_compounds: [],
         xrefs: ["責", "朿"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "侖", readings: ["リン"],
-        compounds: ["輪", "論", "倫"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["輪", "論", "倫"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "巽", readings: ["ソン"],
-        compounds: ["選"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["選"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "彔", readings: ["ロク"],
-        compounds: ["緑", "録"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["緑", "録"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "竟", readings: ["ケイ", "キョウ"],
-        compounds: ["鏡", "境"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["鏡", "境"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "重", readings: ["ジュウ", "チョウ"],
-        compounds: ["動", "腫", "種", "衝"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["動", "腫", "種", "衝"],
+        non_compounds: [],
         xrefs: ["重"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "童", readings: ["ドウ", "トウ", "ジュウ", "チョウ"],
-        compounds: ["憧", "鐘"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["憧", "鐘"],
+        non_compounds: [],
         xrefs: ["童", "重"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "𠬝", readings: ["フク", "フウ"],
-        compounds: ["服"], compound_ids: [],
-        non_compounds: ["報"], non_compound_ids: [],
+        compounds: ["服"],
+        non_compounds: ["報"],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "旨", readings: ["シ", "ケイ"],    // two different components with the same look, just merge
-        compounds: ["指", "脂", "詣", "稽"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["指", "脂", "詣", "稽"],
+        non_compounds: [],
         xrefs: ["旨"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "相", readings: ["ソウ", "ショウ"],
-        compounds: ["想", "箱", "霜"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["想", "箱", "霜"],
+        non_compounds: [],
         xrefs: ["相"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "介", readings: ["カイ"],
-        compounds: ["界"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["界"],
+        non_compounds: [],
         xrefs: ["介"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "幵", readings: ["ケン"],   // no list, search!
-        compounds: ["研"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["研"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "升", readings: ["ショウ"],
-        compounds: ["昇"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["昇"],
+        non_compounds: [],
         xrefs: ["升"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "尼", readings: ["ニ", "ジ"],
-        compounds: ["泥"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["泥"],
+        non_compounds: [],
         xrefs: ["尼"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "炎", readings: ["エン"],  // why often だん?
-        compounds: ["淡", "談"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["淡", "談"],
+        non_compounds: [],
         xrefs: ["炎"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "喬", readings: ["キョウ", "ギョウ"],
-        compounds: ["橋", "矯"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["橋", "矯"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "敬", readings: ["ケイ", "キョウ"],
-        compounds: ["警", "驚"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["警", "驚"],
+        non_compounds: [],
         xrefs: ["敬"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "丙", readings: ["ヘイ"],
-        compounds: ["柄", "病"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["柄", "病"],
+        non_compounds: [],
         xrefs: ["丙"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "㐬", readings: ["リュウ", "ル"],  // TODO: no list, search!
-        compounds: ["硫", "流"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["硫", "流"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "㫃", readings: ["リョ", "ロ"], // no list, search, limited info!
-        compounds: ["旅"], compound_ids: [],
-        non_compounds: ["旋", "施", "旗", "族"], non_compound_ids: [],
+        compounds: ["旅"],
+        non_compounds: ["旋", "施", "旗", "族"],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "民", readings: ["ミン"],
-        compounds: ["眠"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["眠"],
+        non_compounds: [],
         xrefs: ["民"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "栗", readings: ["リツ", "リ"],
-        compounds: ["慄"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["慄"],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
+        quality: -1.0
+    },
+    {
+        phonetic: "岡", readings: ["コウ"],     // TODO: incomplete list, search!
+        compounds: ["綱", "鋼", "剛"],
+        non_compounds: [],
+        xrefs: ["岡"], xref_ids: [],
+        quality: -1.0
+    },
+    {
+        phonetic: "罔", readings: ["モウ", "ボウ", "ム"],
+        compounds: ["網"],
+        non_compounds: [],
+        xrefs: [], xref_ids: [],
+        quality: -1.0
+    },
+    {
+        phonetic: "瓜", readings: ["カ", "コ"],
+        compounds: ["孤", "弧"],
+        non_compounds: [],
+        xrefs: [], xref_ids: [],
+        quality: -1.0
+    },
+    {
+        phonetic: "壬", readings: ["ジン", "ニン"],
+        compounds: ["任", "妊", "賃"],
+        non_compounds: [],
+        xrefs: [], xref_ids: [],
+        quality: -1.0
+    },
+    {
+        phonetic: "肙", readings: ["エン", "ケン"],
+        compounds: ["絹"],
+        non_compounds: [],
+        xrefs: [], xref_ids: [],
+        quality: -1.0
+    },
+    {
+        phonetic: "知", readings: ["チ"],
+        compounds: ["痴"],
+        non_compounds: [],
+        xrefs: ["知"], xref_ids: [],
+        quality: -1.0
+    },
+    {
+        phonetic: "弟", readings: ["テイ", "ダイ", "デ"],
+        compounds: ["第"],
+        non_compounds: [],
+        xrefs: ["弟"], xref_ids: [],
+        quality: -1.0
+    },
+    {
+        phonetic: "夭", readings: ["ヨウ"],
+        compounds: ["妖", "沃"],
+        non_compounds: [],
+        xrefs: [], xref_ids: [],
+        quality: -1.0
+    },
+    {
+        phonetic: "关", readings: ["ショウ", "ソウ"],  // TODO: incomplete, search!
+        compounds: ["送", "咲", "笑"],
+        non_compounds: [],
+        xrefs: [], xref_ids: [],
+        quality: -1.0
+    },
+    {
+        phonetic: "屈", readings: ["クツ"],
+        compounds: ["掘", "堀", "窟"],
+        non_compounds: [],
+        xrefs: ["屈"], xref_ids: [],
+        quality: -1.0
+    },
+    {
+        phonetic: "尃", readings: ["フ", "ハク"],
+        compounds: ["敷", "博", "縛"],
+        non_compounds: [],
+        xrefs: [], xref_ids: [],
+        quality: -1.0
+    },
+    {
+        phonetic: "溥", readings: ["フ", "ハク"],
+        compounds: ["薄", "簿"],
+        non_compounds: [],
+        xrefs: ["溥", "尃"], xref_ids: [],
+        quality: -1.0
+    },
+    {
+        phonetic: "滕", readings: ["トウ", "ドウ"],  // TODO: no list, search!
+        compounds: ["藤"],
+        non_compounds: [],
+        xrefs: [], xref_ids: [],
+        quality: -1.0
+    },
+    {
+        phonetic: "屋", readings: ["オク"],
+        compounds: ["握"],
+        non_compounds: [],
+        xrefs: ["屋"], xref_ids: [],
+        quality: -1.0
+    },
+    {
+        phonetic: "疋", readings: ["ショ", "ソ", "ヒキ", "ヒツ"],
+        compounds: ["疎"],
+        non_compounds: [],
+        xrefs: [], xref_ids: [],
+        quality: -1.0
+    },
+    {
+        phonetic: "楚", readings: ["ソ", "ショ"],
+        compounds: ["礎"],
+        non_compounds: [],
+        xrefs: ["楚", "疋"], xref_ids: [],
+        quality: -1.0
+    },
+    {
+        phonetic: "胥", readings: ["ショ", "ソ"],
+        compounds: ["婿"],
+        non_compounds: [],
+        xrefs: ["胥", "疋"], xref_ids: [],
         quality: -1.0
     },
 
@@ -11208,8 +11371,8 @@ var phon_db = [
     /* Template */
     {
         phonetic: "", readings: [],
-        compounds: [""], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: [""],
+        non_compounds: [],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
