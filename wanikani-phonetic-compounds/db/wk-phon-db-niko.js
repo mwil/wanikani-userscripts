@@ -3686,8 +3686,9 @@ var kanji_db = [
         type: KTypeEnum.comp_phonetic
     },
     {
-        kanji: "宅", readings: ["タク"],  // obscure phonetic 乇
-        type: KTypeEnum.no_clue
+        kanji: "宅", readings: ["タク"],
+        phonetic: "乇", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "机", readings: ["キ"],
@@ -5955,7 +5956,7 @@ var kanji_db = [
         type: KTypeEnum.comp_phonetic
     },
     {
-        kanji: "畜", readings: [],
+        kanji: "畜", readings: ["チク", "キク"],
         type: KTypeEnum.no_clue
     },
     {
@@ -6047,8 +6048,8 @@ var kanji_db = [
         type: KTypeEnum.comp_phonetic
     },
     {
-        kanji: "朕", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "朕", readings: ["チン"],
+        type: KTypeEnum.comp_indicative
     },
     {
         kanji: "胴", readings: ["ドウ", "トウ"],
@@ -6082,12 +6083,14 @@ var kanji_db = [
         type: KTypeEnum.comp_phonetic
     },
     {
-        kanji: "託", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "託", readings: ["タク"],
+        phonetic: "乇", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
-        kanji: "軒", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "軒", readings: ["ケン"],
+        phonetic: "干", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "辱", readings: ["ジョク", "ニク"],
@@ -6103,7 +6106,7 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "逐", readings: [],
+        kanji: "逐", readings: ["チク", "ジク"],
         type: KTypeEnum.no_clue
     },
     {
@@ -6171,8 +6174,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "偶", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "偶", readings: ["グウ"],
+        phonetic: "禺", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "偵", readings: [],
@@ -6964,8 +6968,9 @@ var kanji_db = [
         type: KTypeEnum.comp_phonetic
     },
     {
-        kanji: "遇", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "遇", readings: ["グウ", "グ"],
+        phonetic: "禺", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "遂", readings: [],
@@ -6995,8 +7000,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "隅", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "隅", readings: ["グウ"],
+        phonetic: "禺", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "随", readings: [],
@@ -7116,8 +7122,9 @@ var kanji_db = [
         type: KTypeEnum.no_clue
     },
     {
-        kanji: "愚", readings: [],
-        type: KTypeEnum.no_clue
+        kanji: "愚", readings: ["グ"],
+        phonetic: "禺", phonetic_id: -1,
+        type: KTypeEnum.comp_phonetic
     },
     {
         kanji: "愁", readings: ["シュウ"],
@@ -9495,7 +9502,7 @@ var phon_db = [
     },
     {
         phonetic: "干", readings: ["カン"],
-        compounds: ["刊", "汗", "肝", "岸", "幹"],
+        compounds: ["刊", "汗", "肝", "岸", "幹", "軒"],
         non_compounds: [],
         xrefs: ["干"], xref_ids: [],
         quality: -1.0
@@ -11310,7 +11317,7 @@ var phon_db = [
     {
         phonetic: "关", readings: ["ショウ", "ソウ"],  // TODO: incomplete, search!
         compounds: ["送", "咲", "笑"],
-        non_compounds: [],
+        non_compounds: ["朕"],
         xrefs: [], xref_ids: [],
         quality: -1.0
     },
@@ -11372,29 +11379,39 @@ var phon_db = [
     },
     {
         phonetic: "庶", readings: ["ショ"],
-        compounds: ["遮"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["遮"],
+        non_compounds: [],
         xrefs: ["庶"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "曹", readings: ["ソウ", "ゾウ"],  // no list, search!
-        compounds: ["遭", "槽"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["遭", "槽"],
+        non_compounds: [],
         xrefs: ["曹"], xref_ids: [],
         quality: -1.0
     },
     {
         phonetic: "農", readings: ["ノウ"],
-        compounds: ["濃"], compound_ids: [],
-        non_compounds: [], non_compound_ids: [],
+        compounds: ["濃"],
+        non_compounds: [],
         xrefs: ["農"], xref_ids: [],
         quality: -1.0
     },
-
-
-
-
+    {
+        phonetic: "乇", readings: ["タク", "チャク"],
+        compounds: ["宅", "託"],
+        non_compounds: [],
+        xrefs: [], xref_ids: [],
+        quality: -1.0
+    },
+    {
+        phonetic: "禺", readings: ["グ", "グウ"],
+        compounds: ["愚", "偶", "遇", "隅"],
+        non_compounds: [],
+        xrefs: [], xref_ids: [],
+        quality: -1.0
+    },
 
     /* Template */
     {
@@ -11405,6 +11422,16 @@ var phon_db = [
         quality: -1.0
     },
 ];
+
+phonetics = {
+    "": {
+        "readings": [],
+        "compounds": [],
+        "non_compounds": [],
+        "xrefs": [],
+        "quality": -1
+    },
+};
 
 /*
  * Notes stack
