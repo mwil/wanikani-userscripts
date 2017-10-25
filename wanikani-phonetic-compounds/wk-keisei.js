@@ -86,18 +86,23 @@ window.wk_keisei = {};
             </table>
         </span>
         <p>
-            <table id="KEISEI-curKanji-table" style="line-height:2;" align="center" width="200px"></table>
             <span style="display: block; text-align: center; cursor: pointer;">
-                Show other compounds <i class="icon-chevron-down"></i>
+                Hide compounds <i class="icon-chevron-up"></i>
             </span>
-            <table id="KEISEI-phonetic-table" style="line-height:2;" align="center" width="200px"></table>
+            <ul id="KEISEI-phonetic-grid" class="single-character-grid multi-character-grid-extra-styling-767px"></ul>
         </p>
     `;
-    const PHON_TABLE = ({kanji, dbKanji}) => `
-        <tr>
-            <td><span class="kanji-highlight" lang="ja" style="padding: 6px"> ${kanji} </span></td>
-            <td>${dbKanji.readings}</td>
-        </tr>
+    const PHON_CITEM = ({kanji, dbKanji, badge}) => `
+        <li id="kanji-123" class="character-item">
+            <span lang="ja" class="item-badge recently-unlocked-badge ${badge}">G</span>
+            <a href="">
+                <span class="character" lang="ja">${kanji}</span>
+                <ul>
+                    <li>${dbKanji.readings[0]}</li>
+                    <li>Meaning</li>
+                </ul>
+            </a>
+        </li>
     `;
 
     function injectInfoElem()
@@ -130,12 +135,12 @@ window.wk_keisei = {};
             return;
         }
 
-        var dbKanji = kanji_db[curKanji];
+        var dbCurKanji = kanji_db[curKanji];
 
 
-        if (dbKanji.type === "comp_phonetic")
+        if (dbCurKanji.type === "comp_phonetic")
         {
-            var curPhon = dbKanji.phonetic;
+            var curPhon = dbCurKanji.phonetic;
 
             if (!phonetic_db || !(curPhon in phonetic_db))
             {
@@ -149,7 +154,7 @@ window.wk_keisei = {};
 
             var dbPhon = phonetic_db[curPhon];
 
-            $("#KEISEI-compound-info").append(KTYPE_PCOMP(curKanji, dbKanji, curPhon, dbPhon));
+            $("#KEISEI-compound-info").append(KTYPE_PCOMP(curKanji, dbCurKanji, curPhon, dbPhon));
             $("#KEISEI-component-info").append(PHON_INFO(curPhon, dbPhon));
 
             var phon_list = [];
@@ -157,26 +162,65 @@ window.wk_keisei = {};
             for (var i = 0; i < dbPhon.compounds.length; i++)
             {
                 var kanji = dbPhon.compounds[i];
+                var dbKanji = kanji_db[kanji];
+
+
+                var badge = "badge-low";
+                var common_readings = dbKanji.readings.filter((n) => dbPhon.readings.includes(n));
+                console.log("Common readings of", kanji, "are", common_readings);
+
+                if (dbKanji.readings.length === common_readings.length)
+                {
+                    badge = "badge-perfect";
+                }
+                else if (common_readings.length === 0)
+                {
+                    badge = "badge-low";
+                }
+                else
+                {
+                    if (dbPhon.readings.indexOf(dbKanji.readings[0]) != -1)
+                        badge = "badge-high";
+                    else
+                        badge = "badge-middle";
+                }
 
                 if (kanji != curKanji)
-                    phon_list.push({kanji: kanji, dbKanji: kanji_db[kanji]});
+                    phon_list.push({kanji: kanji, dbKanji: dbKanji, badge: badge});
+                else
+                    phon_list.unshift({kanji: kanji, dbKanji: dbKanji, badge: badge});
             }
 
-            $('#KEISEI-curKanji-table').html([{kanji: curKanji, dbKanji: dbKanji}].map(PHON_TABLE).join(''));
-            $('#KEISEI-phonetic-table').html(phon_list.map(PHON_TABLE).join(''));
+            $('#KEISEI-phonetic-grid').html(phon_list.map(PHON_CITEM).join(''));
         }
-        else if (dbKanji.type === "no_clue")
+        else if (dbCurKanji.type === "no_clue")
         {
-            $("#KEISEI-compound-info").append(KTYPE_OTHER(curKanji, dbKanji));
+            $("#KEISEI-compound-info").append(KTYPE_OTHER(curKanji, dbCurKanji));
         }
         else
         {
-            $("#KEISEI-compound-info").append(KTYPE_UNKNOWN(curKanji, dbKanji));
+            $("#KEISEI-compound-info").append(KTYPE_UNKNOWN(curKanji, dbCurKanji));
         }
     }
 
     function run()
     {
+        $('html > head').append($(`
+            <style>
+                .badge-perfect:before {
+                    content: "天"; background-color: #0695df;
+                }
+                .badge-high:before {
+                    content: "上"; background-color: #0695df;
+                }
+                .badge-middle:before {
+                    content: "中"; background-color: #0695df;
+                }
+                .badge-low:before {
+                    content: "下"; background-color: #480130;
+                }
+            </style>
+        `));
         wki = new WKInteraction();
         wki.init();
 
