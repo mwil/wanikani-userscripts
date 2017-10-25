@@ -13,9345 +13,9345 @@ var KTypeEnum = Object.freeze(
     }
 );
 
-console.log("Doing stuff in db file");
-
-var kanji_db = JSON.parse(`{
+var kanji_db = JSON.parse(`
+{
     "一": {
 		"readings": ["いち", "いつ"],
-        "type": "KTypeEnum.indicative"
+        "type": "indicative"
     },
     "九": {
 		"readings": ["きゅう", "く"],
-        "type": "KTypeEnum.indicative"
+        "type": "indicative"
     },
     "七": {
 		"readings": ["しち", "しつ"],
-        "type": "KTypeEnum.indicative"
+        "type": "indicative"
     },
     "二": {
 		"readings": ["ニ", "ジ"],
-        "type": "KTypeEnum.indicative"
+        "type": "indicative"
     },
     "人": {
 		"readings": ["ジン", "ニン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "入": {
 		"readings": ["ニュウ", "ジュ", "ジュウ"],
-        "type": "KTypeEnum.indicative"
+        "type": "indicative"
     },
     "八": {
 		"readings": ["ハチ", "ハツ"],
-        "type": "KTypeEnum.indicative"
+        "type": "indicative"
     },
     "力": {
 		"readings": ["リョク", "リキ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "十": {
 		"readings": ["ジュウ", "ジッ"],
-        "type": "KTypeEnum.indicative"
+        "type": "indicative"
     },
     "下": {
 		"readings": ["か", "げ"],
-        "type": "KTypeEnum.indicative"
+        "type": "indicative"
     },
     "三": {
 		"readings": ["サン"],
-        "type": "KTypeEnum.indicative"
+        "type": "indicative"
     },
     "千": {
 		"readings": ["せん"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "上": {
 		"readings": ["ジョウ", "ショウ"],
-        "type": "KTypeEnum.indicative"
+        "type": "indicative"
     },
     "口": {
 		"readings": ["コウ", "ク"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "土": {
 		"readings": ["ト", "ド"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "夕": {
 		"readings": ["セキ", "シャク"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "大": {
 		"readings": ["ダイ", "タイ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "女": {
 		"readings": ["ジョ", "ニョ", "ニョウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "子": {
 		"readings": ["シ", "ス"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "小": {
 		"readings": ["ショウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "山": {
 		"readings": ["サン", "セン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "川": {
 		"readings": ["セン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "五": {
 		"readings": ["ゴ"],
-        "type": "KTypeEnum.indicative"
+        "type": "indicative"
     },
     "天": {
 		"readings": ["テン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "中": {
 		"readings": ["チュウ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "六": {
 		"readings": ["ロク", "リク"],
-        "type": "KTypeEnum.indicative"
+        "type": "indicative"
     },
     "円": {
 		"readings": ["えん"],
-        "type": "KTypeEnum.derivative"
+        "type": "derivative"
     },
     "手": {
 		"readings": ["シュ", "ズ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "文": {
 		"readings": ["ブン", "モン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "日": {
 		"readings": ["ジツ", "ニチ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "月": {
 		"readings": ["ゲツ", "ガツ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "木": {
 		"readings": ["モク", "ボク"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "水": {
 		"readings": ["スイ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "火": {
 		"readings": ["カ", "コ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "犬": {
 		"readings": ["ケン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "王": {
 		"readings": ["オウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "正": {
 		"readings": ["セイ", "ショウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "出": {
 		"readings": ["シュツ", "スイ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "本": {
 		"readings": ["ホン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "右": {
 		"readings": ["ウ", "ユウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "四": {
 		"readings": ["シ"],
-        "type": "KTypeEnum.indicative"
+        "type": "indicative"
     },
     "左": {
 		"readings": ["サ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "玉": {
 		"readings": ["ギョク"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "生": {
 		"readings": ["セイ", "ショウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "田": {
 		"readings": ["デン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "白": {
 		"readings": ["ハク", "ビャク"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "目": {
 		"readings": ["モク", "ボク"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "石": {
 		"readings": ["セキ", "シャク", "コク", "ジャク"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "立": {
 		"readings": ["リツ", "リュウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "百": {
 		"readings": ["ヒャク", "ハク"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "年": {
 		"readings": ["ネン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "休": {
 		"readings": ["キュウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "先": {
 		"readings": ["セン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "名": {
 		"readings": ["メイ", "ミョウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "字": {
 		"readings": ["ジ"],
         "phonetic": "子",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "早": {
 		"readings": ["ソウ", "サッ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "気": {
 		"readings": ["き", "け"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "竹": {
 		"readings": ["チク"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "糸": {
 		"readings": ["し"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "耳": {
 		"readings": ["じ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "虫": {
 		"readings": ["チュウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "村": {
 		"readings": ["ソン"],
         "phonetic": "寸",
-        "type": "KTypeEnum.comp_phonetic",
+        "type": "comp_phonetic",
         "comment": "Originally 屯, but looks like adapted reading."
     },
     "男": {
 		"readings": ["ダン", "ナン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "町": {
 		"readings": ["チョウ", "テイ"],
         "phonetic": "丁",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "花": {
 		"readings": ["カ", "ケ"],
         "phonetic": "化",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "見": {
 		"readings": ["ケン", "ゲン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "貝": {
 		"readings": ["バイ", "マイ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "赤": {
 		"readings": ["セキ", "シャク"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "足": {
 		"readings": ["ソク", "ショク"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "車": {
 		"readings": ["シャ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "学": {
 		"readings": ["ガク"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "林": {
 		"readings": ["リン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "空": {
 		"readings": ["クウ"],
         "phonetic": "工",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "金": {
 		"readings": ["キン", "コン"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "雨": {
 		"readings": ["ウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "青": {
 		"readings": ["セイ", "ショウ"],
         "phonetic": "生",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "草": {
 		"readings": ["そう"],
         "phonetic": "早",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "音": {
 		"readings": ["オン", "イン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "校": {
 		"readings": ["コウ", "キョウ"],
         "phonetic": "交",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "森": {
 		"readings": ["シン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
 
     "刀": {
 		"readings": ["トウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "万": {
 		"readings": ["まん", "ばん"],
-        "type": "KTypeEnum.derivative"
+        "type": "derivative"
     },
     "丸": {
 		"readings": ["ガン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "才": {
 		"readings": ["サイ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "工": {
 		"readings": ["コウ", "ク"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "弓": {
 		"readings": ["キュウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "内": {
 		"readings": ["ナイ", "ダイ", "ノウ", "ドウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "午": {
 		"readings": ["ゴ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "少": {
 		"readings": ["しょう"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "元": {
 		"readings": ["ゲン", "ガン"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "今": {
 		"readings": ["コン", "キン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "公": {
 		"readings": ["コウ", "ク"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "分": {
 		"readings": ["フン","ブン","ブ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "切": {
 		"readings": ["セツ","セイ","サイ"],
         "phonetic": "七",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "友": {
 		"readings": ["ユウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "太": {
 		"readings": ["タイ", "タ", "ダイ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "引": {
 		"readings": ["イン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "心": {
 		"readings": ["シン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "戸": {
 		"readings": ["コ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "方": {
 		"readings": ["ホウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "止": {
 		"readings": ["シ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "毛": {
 		"readings": ["モウ", "ボウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "父": {
 		"readings": ["フ", "ホ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "牛": {
 		"readings": ["ギュウ", "ゴ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "半": {
 		"readings": ["ハン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "市": {
 		"readings": ["シ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "北": {
 		"readings": ["ホク"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "古": {
 		"readings": ["コ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "台": {
 		"readings": ["ダイ", "タイ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "兄": {
 		"readings": ["ケイ", "キョウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "冬": {
 		"readings": ["トウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "外": {
 		"readings": ["ガイ", "ゲ", "ウイ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "広": {
 		"readings": ["コウ"],
         "phonetic": "黄",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "母": {
 		"readings": ["ボ", "モ", "ボウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "用": {
 		"readings": ["ヨウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "矢": {
 		"readings": ["シ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "交": {
 		"readings": ["コウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "会": {
 		"readings": ["カイ", "エ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "合": {
 		"readings": ["ゴウ", "ガッ", "カッ", "コウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "同": {
 		"readings": ["ドウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "回": {
 		"readings": ["カイ", "エ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "寺": {
 		"readings": ["ジ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "地": {
 		"readings": ["チ", "ジ"],
         "phonetic": "也",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "多": {
 		"readings": ["た"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "光": {
 		"readings": ["コウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "当": {
 		"readings": ["とう"],
         "phonetic": "尚",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "毎": {
 		"readings": ["マイ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "池": {
 		"readings": ["チ"],
         "phonetic": "也",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "米": {
 		"readings": ["ベイ", "マイ", "メ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "羽": {
 		"readings": ["ウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "考": {
 		"readings": ["コウ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "TODO: phonetic compound of 丂"
     },
     "肉": {
 		"readings": ["ニク", "ジク"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "自": {
 		"readings": ["ジ", "シ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "色": {
 		"readings": ["ショク", "シキ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "行": {
 		"readings": ["コウ", "ギョウ", "アン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "西": {
 		"readings": ["セイ", "サイ", "スイ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "来": {
 		"readings": ["ライ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "何": {
 		"readings": ["カ"],
         "phonetic": "可",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "作": {
 		"readings": ["サク", "サ"],
         "phonetic": "乍",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "体": {
 		"readings": ["タイ", "テイ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "TODO: phonetic of 豊"
     },
     "弟": {
 		"readings": ["テイ", "ダイ", "デ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "図": {
 		"readings": ["ズ", "ト"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "声": {
 		"readings": ["セイ", "ショウ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "売": {
 		"readings": ["バイ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "形": {
 		"readings": ["ケイ", "ギョウ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "TODO phonetic 开"
     },
     "汽": {
 		"readings": ["キ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "TODO phonetic 气"
     },
     "社": {
 		"readings": ["シャ", "ジャ"],
         "phonetic": "土",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "角": {
 		"readings": ["カク"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "言": {
 		"readings": ["ゲン", "ゴン"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "谷": {
 		"readings": ["コク"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "走": {
 		"readings": ["ソウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "近": {
 		"readings": ["キン", "コン"],
         "phonetic": "斤",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "里": {
 		"readings": ["リ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "麦": {
 		"readings": ["バク"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "画": {
 		"readings": ["ガ", "カク"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "東": {
 		"readings": ["トウ"],
-        "type": "KTypeEnum.borrowing"
+        "type": "borrowing"
     },
     "京": {
 		"readings": ["キョウ", "ケイ", "キン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "夜": {
 		"readings": ["ヤ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "直": {
 		"readings": ["チョク", "ジキ", "チ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "国": {
 		"readings": ["コク"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "姉": {
 		"readings": ["シ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "TODO: obscure phonetic 𠂔"
     },
     "妹": {
 		"readings": ["マイ", "バイ"],
         "phonetic": "未",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "岩": {
 		"readings": ["ガン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "店": {
 		"readings": ["テン"],
         "phonetic": "占",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "明": {
 		"readings": ["メイ", "ミョウ", "ミン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "歩": {
 		"readings": ["ホ", "ブ", "フ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "知": {
 		"readings": ["チ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "長": {
 		"readings": ["チョウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "門": {
 		"readings": ["モン", "ボン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "昼": {
 		"readings": ["チュウ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "前": {
 		"readings": ["ゼン", "セン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "南": {
 		"readings": ["ナン", "ナ", "ダン"],
-        "type": "KTypeEnum.borrowing"
+        "type": "borrowing"
     },
     "点": {
 		"readings": ["てん"],
         "phonetic": "占",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "室": {
 		"readings": ["シツ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "後": {
 		"readings": ["ゴ", "コウ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "春": {
 		"readings": ["シュン"],
         "phonetic": "屯",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "星": {
 		"readings": ["セイ", "ショウ"],
         "phonetic": "生",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "海": {
 		"readings": ["カイ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "活": {
 		"readings": ["カツ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "TODO phonetic of an obscure component"
     },
     "思": {
 		"readings": ["シ"],
         "phonetic": "囟",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "科": {
 		"readings": ["カ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "秋": {
 		"readings": ["シュウ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "TODO phonetic of an obscure component"
     },
     "茶": {
 		"readings": ["チャ", "サ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "計": {
 		"readings": ["ケイ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "風": {
 		"readings": ["フウ", "フ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "TODO: maybe phonetic of 凡"
     },
     "食": {
 		"readings": ["ショク", "ジキ", "シ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "TODO phonetic 亼? Seems strange"
     },
     "首": {
 		"readings": ["シュ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "夏": {
 		"readings": ["カ", "ゲ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "弱": {
 		"readings": ["ジャク", "ニャク"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "原": {
 		"readings": ["ゲン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "家": {
 		"readings": ["カ", "ケ"],
-        "type": "KTypeEnum.derivative"
+        "type": "derivative"
     },
     "帰": {
 		"readings": ["キ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "時": {
 		"readings": ["ジ"],
         "phonetic": "寺",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "紙": {
 		"readings": ["シ"],
         "phonetic": "氏",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "書": {
 		"readings": ["ショ"],
         "phonetic": "者",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "記": {
 		"readings": ["キ"],
         "phonetic": "己",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "通": {
 		"readings": ["ツウ", "ツ"],
         "phonetic": "甬",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "馬": {
 		"readings": ["バ", "メ", "マ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "高": {
 		"readings": ["こう"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "強": {
 		"readings": ["キョウ", "ゴウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "教": {
 		"readings": ["キョウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "理": {
 		"readings": ["リ"],
         "phonetic": "里",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "細": {
 		"readings": ["サイ"],
         "phonetic": "囟",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "組": {
 		"readings": ["そ"],
         "phonetic": "且",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "船": {
 		"readings": ["セン"],
         "phonetic": "㕣",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "週": {
 		"readings": ["シュウ"],
         "phonetic": "周",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "野": {
 		"readings": ["ヤ", "ショ"],
         "phonetic": "予",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "雪": {
 		"readings": ["セツ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "魚": {
 		"readings": ["ギョ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "鳥": {
 		"readings": ["チョウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "黄": {
 		"readings": ["コウ", "オウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "黒": {
 		"readings": ["コク"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "場": {
 		"readings": ["ジョウ"],
         "phonetic": "昜",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "晴": {
 		"readings": ["セイ"],
         "phonetic": "青",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "答": {
 		"readings": ["トウ"],
         "phonetic": "合",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "絵": {
 		"readings": ["カイ", "エ"],
         "phonetic": "会",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "買": {
 		"readings": ["バイ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "朝": {
 		"readings": ["チョウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "道": {
 		"readings": ["ドウ", "トウ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "番": {
 		"readings": ["バン", "ハン", "ハ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "間": {
 		"readings": ["カン", "ケン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "雲": {
 		"readings": ["ウン"],
         "phonetic": "云",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "園": {
 		"readings": ["エン", "オン"],
         "phonetic": "袁",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "数": {
 		"readings": ["スウ", "ス", "シュ", "サク", "ソク"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "新": {
 		"readings": ["シン"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "楽": {
 		"readings": ["ガク", "ラク", "ゴウ", "ギョウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "話": {
 		"readings": ["ワ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "obscure pcomp 䛡"
     },
     "遠": {
 		"readings": ["エン", "オン"],
         "phonetic": "袁",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "電": {
 		"readings": ["デン", "テン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "鳴": {
 		"readings": ["メイ", "ミョウ"],
-        "type": "KTypeEnum.comp_indicative",
+        "type": "comp_indicative",
         "comment": "TODO NOT phonetic 鳥"
     },
     "歌": {
 		"readings": ["カ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "phonetic mark 哥"
     },
     "算": {
 		"readings": ["サン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "語": {
 		"readings": ["ゴ"],
         "phonetic": "吾",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "読": {
 		"readings": ["ドク", "トク", "トウ"],
         "phonetic": "売",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "聞": {
 		"readings": ["ブン", "モン"],
         "phonetic": "門",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "線": {
 		"readings": ["セン"],
         "phonetic": "泉",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "親": {
 		"readings": ["シン"],
         "phonetic": "亲",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "頭": {
 		"readings": ["トウ", "ズ", "ト", "ジュウ"],
         "phonetic": "豆",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "曜": {
 		"readings": ["ヨウ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "from obscure pmark 翟"
     },
     "顔": {
 		"readings": ["ガン", "ゲン"],
         "phonetic": "彦",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
 
 
     "丁": {
 		"readings": ["チョウ", "テイ", "トウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "予": {
 		"readings": ["よ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "化": {
 		"readings": ["カ", "ケ", "ゲ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "区": {
 		"readings": ["ク"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "反": {
 		"readings": ["ハン","ホン","タン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "央": {
 		"readings": ["オウ", "ヨウ", "エイ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "平": {
 		"readings": ["ヘイ", "ビョウ", "ヒョウ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "申": {
 		"readings": ["シン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "世": {
 		"readings": ["セイ", "セ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "由": {
 		"readings": ["ユ", "ユウ", "ユイ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "氷": {
 		"readings": ["ヒョウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "主": {
 		"readings": ["シュ", "ス"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "仕": {
 		"readings": ["シ", "ジ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "他": {
 		"readings": ["タ"],
         "phonetic": "也",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "代": {
 		"readings": ["ダイ", "タイ"],
         "phonetic": "弋",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "写": {
 		"readings": ["シャ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "号": {
 		"readings": ["ゴウ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "去": {
 		"readings": ["キョ", "コ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "打": {
 		"readings": ["ダ", "チョウ", "テイ"],
         "phonetic": "丁",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "皮": {
 		"readings": ["ヒ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "皿": {
 		"readings": ["ベイ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "礼": {
 		"readings": ["レイ", "ライ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "obscure mark 豊"
     },
     "両": {
 		"readings": ["リョウ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "曲": {
 		"readings": ["キョク"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "向": {
 		"readings": ["コウ", "キョウ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "州": {
 		"readings": ["シュウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "全": {
 		"readings": ["ゼン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "次": {
 		"readings": ["ジ", "シ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "安": {
 		"readings": ["アン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "守": {
 		"readings": ["シュ", "ス"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "式": {
 		"readings": ["シキ", "ショク"],
         "phonetic": "弋",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "死": {
 		"readings": ["シ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "列": {
 		"readings": ["レツ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "羊": {
 		"readings": ["ヨウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "有": {
 		"readings": ["ユウ", "ウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "血": {
 		"readings": ["ケツ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "住": {
 		"readings": ["ジュウ"],
         "phonetic": "主",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "助": {
 		"readings": ["じょ"],
         "phonetic": "且",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "医": {
 		"readings": ["イ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "君": {
 		"readings": ["クン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "坂": {
 		"readings": ["ハン", "バン"],
         "phonetic": "反",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "局": {
 		"readings": ["キョク"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "役": {
 		"readings": ["ヤク", "エキ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "投": {
 		"readings": ["トウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "対": {
 		"readings": ["タイ", "ツイ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "決": {
 		"readings": ["ケツ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "maybe compound of 夬"
     },
     "究": {
 		"readings": ["キュウ", "ク"],
         "phonetic": "九",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "豆": {
 		"readings": ["トウ", "ズ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "身": {
 		"readings": ["シン"],
-        "type": "KTypeEnum.indicative"
+        "type": "indicative"
     },
     "返": {
 		"readings": ["ヘン", "ハン", "ホン"],
         "phonetic": "反",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "表": {
 		"readings": ["ヒョウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "事": {
 		"readings": ["ジ", "ズ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "育": {
 		"readings": ["イク"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "使": {
 		"readings": ["シ"],
         "phonetic": "史",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "命": {
 		"readings": ["メイ", "ミョウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "味": {
 		"readings": ["ミ", "ビ"],
         "phonetic": "未",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "幸": {
 		"readings": ["コウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "始": {
 		"readings": ["シ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "実": {
 		"readings": ["ジツ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "定": {
 		"readings": ["テイ", "ジョウ"],
         "phonetic": "正",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "岸": {
 		"readings": ["ガン"],
         "phonetic": "干",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "所": {
 		"readings": ["ショ", "ソ"],
         "phonetic": "戸",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "放": {
 		"readings": ["ほう"],
         "phonetic": "方",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "昔": {
 		"readings": ["セキ", "シャク"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "板": {
 		"readings": ["ハン", "バン"],
         "phonetic": "反",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "泳": {
 		"readings": ["エイ"],
         "phonetic": "永",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "注": {
 		"readings": ["チュウ"],
         "phonetic": "主",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "波": {
 		"readings": ["ハ"],
         "phonetic": "皮",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "油": {
 		"readings": ["ユ", "ユウ"],
         "phonetic": "由",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "受": {
 		"readings": ["ジュ", "ズ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "物": {
 		"readings": ["ブツ", "モツ"],
         "phonetic": "勿",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "具": {
 		"readings": ["グ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "委": {
 		"readings": ["イ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "和": {
 		"readings": ["ワ", "オ", "カ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "者": {
 		"readings": ["シャ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "取": {
 		"readings": ["シュ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "服": {
 		"readings": ["フク"],
         "phonetic": "𠬝",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "苦": {
 		"readings": ["く"],
         "phonetic": "古",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "重": {
 		"readings": ["ジュウ", "チョウ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "乗": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "係": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "品": {
 		"readings": ["ヒン", "ホン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "客": {
 		"readings": ["キャク", "カク"],
         "phonetic": "各",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "県": {
 		"readings": ["ケン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "屋": {
 		"readings": ["オク"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "炭": {
 		"readings": ["タン"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "度": {
 		"readings": ["ド", "ト", "タク"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "maybe obscure phonetic 庶"
     },
     "待": {
 		"readings": ["タイ"],
         "phonetic": "寺",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "急": {
 		"readings": ["キュウ"],
         "phonetic": "及",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "指": {
 		"readings": ["シ"],
         "phonetic": "旨",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "持": {
 		"readings": ["ジ", "チ"],
         "phonetic": "寺",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "拾": {
 		"readings": ["シュウ", "ジュウ"],
         "phonetic": "合",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "昭": {
 		"readings": ["ショウ"],
         "phonetic": "召",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "相": {
 		"readings": ["ソウ", "ショウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "柱": {
 		"readings": ["チュウ"],
         "phonetic": "主",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "洋": {
 		"readings": ["ヨウ"],
         "phonetic": "羊",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "畑": {
 		"readings": [],
-        "type": "KTypeEnum.kokuji"
+        "type": "kokuji"
     },
     "界": {
 		"readings": ["カイ"],
         "phonetic": "介",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "発": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "研": {
 		"readings": ["ケン", "ゲン"],
         "phonetic": "幵",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "神": {
 		"readings": ["シン", "ジン"],
         "phonetic": "申",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "秒": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "級": {
 		"readings": ["キュウ"],
         "phonetic": "及",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "美": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "負": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "送": {
 		"readings": ["ソウ"],
         "phonetic": "关",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "追": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "面": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "島": {
 		"readings": ["トウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "勉": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "倍": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "真": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "員": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "宮": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "庫": {
 		"readings": ["コ", "ク"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "庭": {
 		"readings": ["テイ"],
         "phonetic": "廷",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "旅": {
 		"readings": ["リョ", "ロ"],
         "phonetic": "㫃",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "根": {
 		"readings": ["コン"],
         "phonetic": "艮",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "酒": {
 		"readings": ["シュ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "消": {
 		"readings": ["ショウ"],
         "phonetic": "肖",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "流": {
 		"readings": ["リュウ・ル"],
         "phonetic": "㐬",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "病": {
 		"readings": ["ビョウ", "ヘイ"],
         "phonetic": "丙",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "息": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "荷": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "起": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "速": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "配": {
 		"readings": ["ハイ"],
         "phonetic": "己",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "院": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "悪": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "商": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "動": {
 		"readings": ["ドウ", "トウ"],
         "phonetic": "重",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "宿": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "帳": {
 		"readings": ["チョウ"],
         "phonetic": "長",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "族": {
 		"readings": ["ゾク"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "深": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "球": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "祭": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "第": {
 		"readings": ["ダイ", "テイ"],
         "phonetic": "弟",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "笛": {
 		"readings": ["テキ", "ジャク"],
         "phonetic": "由",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "終": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "習": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "転": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "進": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "都": {
 		"readings": ["ト", "ツ"],
         "phonetic": "者",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "部": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "問": {
 		"readings": ["モン", "ブン"],
         "phonetic": "門",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "章": {
 		"readings": ["ショウ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "寒": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "暑": {
 		"readings": ["ショ"],
         "phonetic": "者",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "植": {
 		"readings": ["ショク", "チ"],
         "phonetic": "直",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "温": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "湖": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "港": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "湯": {
 		"readings": ["トウ", "ショウ"],
         "phonetic": "昜",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "登": {
 		"readings": ["トウ", "ト"],
         "phonetic": "豆",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "短": {
 		"readings": ["タン"],
         "phonetic": "豆",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "童": {
 		"readings": ["ドウ", "トウ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "等": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "筆": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "着": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "期": {
 		"readings": ["キ", "ゴ"],
         "phonetic": "其",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "勝": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "葉": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "落": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "軽": {
 		"readings": ["ケイ", "キン"],
         "phonetic": "巠",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "運": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "遊": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "開": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "階": {
 		"readings": ["カイ"],
         "phonetic": "皆",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "陽": {
 		"readings": ["ヨウ"],
         "phonetic": "昜",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "集": {
 		"readings": ["シュウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "悲": {
 		"readings": ["ヒ"],
         "phonetic": "非",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "飲": {
 		"readings": ["イン", "オン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "歯": {
 		"readings": ["シ"],
         "phonetic": "止",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "業": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "感": {
 		"readings": ["カン"],
         "phonetic": "咸",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "想": {
 		"readings": ["ソウ", "ソ"],
         "phonetic": "相",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "暗": {
 		"readings": ["アン"],
         "phonetic": "音",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "漢": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "福": {
 		"readings": ["フク"],
         "phonetic": "畐",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "詩": {
 		"readings": ["シ"],
         "phonetic": "寺",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "路": {
 		"readings": ["ろ"],
         "phonetic": "各",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "農": {
 		"readings": ["ノウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "鉄": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "意": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "様": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "緑": {
 		"readings": ["リョク", "ロク"],
         "phonetic": "彔",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "練": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "銀": {
 		"readings": ["ギン"],
         "phonetic": "艮",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "駅": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "鼻": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "横": {
 		"readings": ["オウ", "コウ"],
         "phonetic": "黄",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "箱": {
 		"readings": ["ショウ", "ソウ"],
         "phonetic": "相",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "談": {
 		"readings": ["ダン", "タン"],
         "phonetic": "炎",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "調": {
 		"readings": ["チョウ"],
         "phonetic": "周",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "橋": {
 		"readings": ["キョウ"],
         "phonetic": "喬",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "整": {
 		"readings": ["セイ"],
         "phonetic": "正",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "薬": {
 		"readings": ["ヤク"],
         "phonetic": "楽",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "館": {
 		"readings": ["カン"],
         "phonetic": "官",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "題": {
 		"readings": ["ダイ", "テイ"],
         "phonetic": "是",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
 
 
     "士": {
 		"readings": ["シ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "不": {
 		"readings": ["フ", "ブ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "夫": {
 		"readings": ["フ", "フウ", "ブ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "欠": {
 		"readings": ["ケツ", "ケン"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "氏": {
 		"readings": ["シ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "民": {
 		"readings": ["ミン"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "史": {
 		"readings": ["シ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "必": {
 		"readings": ["ヒツ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "失": {
 		"readings": ["シツ", "イツ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "包": {
 		"readings": ["ホウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "末": {
 		"readings": ["マツ", "バツ"],
-        "type": "KTypeEnum.indicative"
+        "type": "indicative"
     },
     "未": {
 		"readings": ["ミ", "ビ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "以": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "付": {
 		"readings": ["フ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "令": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "加": {
 		"readings": ["カ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "司": {
 		"readings": ["し", "す"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "功": {
 		"readings": ["コウ・ク"],
         "phonetic": "工",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "札": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "辺": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "印": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "争": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "仲": {
 		"readings": ["チュウ"],
         "phonetic": "中",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "伝": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "共": {
 		"readings": ["キョウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "兆": {
 		"readings": ["チョウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "各": {
 		"readings": ["カク"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "好": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "成": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "灯": {
 		"readings": ["とう"],
         "phonetic": "丁",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "老": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "衣": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "求": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "束": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "兵": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "位": {
 		"readings": ["イ"],
         "phonetic": "立",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "低": {
 		"readings": ["テイ"],
         "phonetic": "氐",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "児": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "冷": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "別": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "努": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "労": {
 		"readings": ["ロウ"],
         "phonetic": "熒",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "告": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "囲": {
 		"readings": ["イ"],
         "phonetic": "韋",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "完": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "改": {
 		"readings": ["カイ"],
         "phonetic": "己",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "希": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "折": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "材": {
 		"readings": ["ザイ", "サイ"],
         "phonetic": "才",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "利": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "臣": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "良": {
 		"readings": ["リョウ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "芸": {
 		"readings": ["ゲイ", "ウン"],
         "phonetic": "云",
-        "type": "KTypeEnum.comp_phonetic",
+        "type": "comp_phonetic",
         "comment": "there is a different kanji looking exactly the same, add reading"
     },
     "初": {
 		"readings": ["ショ", "ソ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "果": {
 		"readings": ["カ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "刷": {
 		"readings": ["サツ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "卒": {
 		"readings": ["ソツ", "シュツ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "念": {
 		"readings": ["ネン"],
         "phonetic": "今",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "例": {
 		"readings": ["レイ"],
         "phonetic": "列",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "典": {
 		"readings": ["テン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "周": {
 		"readings": ["シュウ", "ス"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "協": {
 		"readings": ["キョウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "参": {
 		"readings": ["サン", "シン"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "固": {
 		"readings": ["こ"],
         "phonetic": "古",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "官": {
 		"readings": ["カン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "底": {
 		"readings": ["テイ"],
         "phonetic": "氐",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "府": {
 		"readings": ["フ"],
         "phonetic": "付",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "径": {
 		"readings": ["ケイ"],
         "phonetic": "巠",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "松": {
 		"readings": ["ショウ"],
         "phonetic": "公",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "毒": {
 		"readings": ["ドク"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "泣": {
 		"readings": ["キュウ"],
         "phonetic": "立",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "治": {
 		"readings": ["ジ", "チ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "TODO maybe phonetic 台=臺"
     },
     "法": {
 		"readings": ["ホウ", "ハッ", "ホッ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "牧": {
 		"readings": ["ボク", "モク"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
         "的": {
 		"readings": ["テキ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
             "comment": "TODO: phonetic 的?"
     },
     "季": {
 		"readings": ["キ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "英": {
 		"readings": ["エイ"],
         "phonetic": "央",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "芽": {
 		"readings": ["ガ"],
         "phonetic": "牙",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "単": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "省": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "変": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "信": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "便": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "軍": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "勇": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "型": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "建": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "昨": {
 		"readings": ["サク"],
         "phonetic": "乍",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "栄": {
 		"readings": ["エイ"],
         "phonetic": "熒",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "浅": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "胃": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "祝": {
 		"readings": ["シュク", "シュウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "紀": {
 		"readings": ["キ"],
         "phonetic": "己",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "約": {
 		"readings": ["ヤク"],
         "phonetic": "勺",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "要": {
 		"readings": ["ヨウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "飛": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "候": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "借": {
 		"readings": ["シャク", "シャ"],
         "phonetic": "昔",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "倉": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "孫": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "案": {
 		"readings": ["アン"],
         "phonetic": "安",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "害": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "帯": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "席": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "徒": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "挙": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "梅": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "残": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "殺": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "浴": {
 		"readings": ["ヨク"],
         "phonetic": "谷",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "特": {
 		"readings": ["トク", "ドク"],
         "phonetic": "寺",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "笑": {
 		"readings": ["ショウ"],
         "phonetic": "关",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "粉": {
 		"readings": [],
         "phonetic": "分",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "料": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "差": {
 		"readings": ["サ", "シ"],
         "phonetic": "左",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "脈": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "航": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "訓": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "連": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "郡": {
 		"readings": ["グン", "クン"],
         "phonetic": "君",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "巣": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "健": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "側": {
 		"readings": ["ソク", "ショク"],
         "phonetic": "則",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "停": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "副": {
 		"readings": ["フク"],
         "phonetic": "畐",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "唱": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "堂": {
 		"readings": ["ドウ", "トウ"],
         "phonetic": "尚",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "康": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "得": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "救": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "械": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "清": {
 		"readings": ["セイ", "ショウ", "シン"],
         "phonetic": "青",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "望": {
 		"readings": ["ボウ", "モウ"],
         "phonetic": "亡",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "産": {
 		"readings": ["サン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "菜": {
 		"readings": ["サイ"],
         "phonetic": "采",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "票": {
 		"readings": ["ヒョウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "貨": {
 		"readings": ["カ"],
         "phonetic": "化",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "敗": {
 		"readings": ["ハイ", "バイ"],
         "phonetic": "貝",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "陸": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "博": {
 		"readings": ["ハク", "バク"],
         "phonetic": "尃",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "喜": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "順": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "街": {
 		"readings": ["ガイ", "カイ"],
         "phonetic": "圭",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "散": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "景": {
 		"readings": ["ケイ", "エイ"],
         "phonetic": "京",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "最": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "量": {
 		"readings": ["リョウ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "満": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "焼": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "然": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "無": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "給": {
 		"readings": ["キュウ"],
         "phonetic": "合",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "結": {
 		"readings": ["ケツ", "ケチ", "ケイ"],
         "phonetic": "吉",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "覚": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "象": {
 		"readings": ["ショウ", "ゾウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "貯": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "費": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "達": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "隊": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "飯": {
 		"readings": ["ハン"],
         "phonetic": "反",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "働": {
 		"readings": [],
-        "type": "KTypeEnum.kokuji"
+        "type": "kokuji"
     },
     "塩": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "戦": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "極": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "照": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "愛": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "節": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "続": {
 		"readings": ["ゾク", "ショク"],
         "phonetic": "売",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "置": {
 		"readings": ["チ"],
         "phonetic": "直",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "腸": {
 		"readings": ["チョウ"],
         "phonetic": "昜",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "辞": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "試": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "歴": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "察": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "旗": {
 		"readings": ["き"],
         "phonetic": "其",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "漁": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "種": {
 		"readings": ["シュ", "ショウ"],
         "phonetic": "重",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "管": {
 		"readings": ["カン"],
         "phonetic": "官",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "説": {
 		"readings": ["セツ", "ゼイ", "エツ"],
         "phonetic": "兌",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "関": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "静": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "億": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "器": {
 		"readings": ["キ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "賞": {
 		"readings": ["ショウ"],
         "phonetic": "尚",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "標": {
 		"readings": ["ヒョウ"],
         "phonetic": "票",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "熱": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "養": {
 		"readings": ["ヨウ"],
         "phonetic": "羊",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "課": {
 		"readings": ["カ"],
         "phonetic": "果",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "輪": {
 		"readings": ["リン"],
         "phonetic": "侖",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "選": {
 		"readings": ["セン"],
         "phonetic": "巽",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "機": {
 		"readings": ["キ"],
         "phonetic": "幾",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "積": {
 		"readings": ["セキ", "シ", "シャク"],
         "phonetic": "責",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "録": {
 		"readings": ["ロク", "リョク"],
         "phonetic": "彔",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "観": {
 		"readings": ["カン"],
         "phonetic": "雚",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "類": {
 		"readings": ["ルイ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "験": {
 		"readings": ["ケン", "ゲン"],
         "phonetic": "僉",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "願": {
 		"readings": ["ガン"],
         "phonetic": "原",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "鏡": {
 		"readings": ["キョウ"],
         "phonetic": "竟",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "競": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "議": {
 		"readings": ["ギ"],
         "phonetic": "義",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
 
 
     "久": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "仏": {
 		"readings": ["ブツ", "フツ"],
         "phonetic": "弗",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "支": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "比": {
 		"readings": ["ヒ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "可": {
 		"readings": ["カ", "コク"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "旧": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "永": {
 		"readings": ["エイ", "ヨウ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "句": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "圧": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "弁": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "布": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "刊": {
 		"readings": ["カン"],
         "phonetic": "干",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "犯": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "示": {
 		"readings": ["ジ", "シ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "再": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "仮": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "件": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "任": {
 		"readings": ["ニン", "ジン"],
         "phonetic": "壬",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "因": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "団": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "在": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "舌": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "似": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "余": {
 		"readings": ["ヨ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "判": {
 		"readings": ["ハン", "バン", "ホウ"],
         "phonetic": "半",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "均": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "志": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "条": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "災": {
 		"readings": ["サイ"],
         "phonetic": "𢦏",
-        "type": "KTypeEnum.comp_phonetic",
+        "type": "comp_phonetic",
         "comment": "simplified version of 烖"
     },
     "応": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "序": {
 		"readings": ["ジョ"],
         "phonetic": "予",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "快": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "技": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "状": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "防": {
 		"readings": ["ぼう"],
         "phonetic": "方",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "武": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "承": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "価": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "舎": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "券": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "制": {
 		"readings": ["セイ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "効": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "妻": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "居": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "往": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "性": {
 		"readings": ["セイ", "ショウ"],
         "phonetic": "生",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "招": {
 		"readings": ["ショウ"],
         "phonetic": "召",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "易": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "枝": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "河": {
 		"readings": ["カ"],
         "phonetic": "可",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "版": {
 		"readings": ["ハン"],
         "phonetic": "反",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "肥": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "述": {
 		"readings": ["ジュツ"],
         "phonetic": "朮",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "非": {
 		"readings": ["ヒ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "保": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "厚": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "故": {
 		"readings": ["こ"],
         "phonetic": "古",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "政": {
 		"readings": ["セイ", "ショウ"],
         "phonetic": "正",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "査": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "独": {
 		"readings": ["ドク", "トク"],
         "phonetic": "蜀",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "祖": {
 		"readings": ["そ"],
         "phonetic": "且",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "則": {
 		"readings": ["ソク"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "逆": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "退": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "迷": {
 		"readings": ["メイ"],
         "phonetic": "米",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "限": {
 		"readings": ["ゲン"],
         "phonetic": "艮",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "師": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "個": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "修": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "俵": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "益": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "能": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "容": {
 		"readings": ["ヨウ"],
         "phonetic": "谷",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "恩": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "格": {
 		"readings": ["カク", "コウ", "キャク"],
         "phonetic": "各",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "桜": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "留": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "破": {
 		"readings": ["は"],
         "phonetic": "皮",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "素": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "耕": {
 		"readings": ["コウ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "財": {
 		"readings": ["ザイ", "サイ"],
         "phonetic": "才",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "造": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "率": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "貧": {
 		"readings": [],
         "phonetic": "分",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "基": {
 		"readings": ["キ"],
         "phonetic": "其",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "婦": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "寄": {
 		"readings": ["キ"],
         "phonetic": "奇",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "常": {
 		"readings": ["ジョウ"],
         "phonetic": "尚",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "張": {
 		"readings": ["チョウ"],
         "phonetic": "長",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "術": {
 		"readings": ["ジュツ", "シュツ", "スイ"],
         "phonetic": "朮",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "情": {
 		"readings": ["ジョウ", "セイ"],
         "phonetic": "青",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "採": {
 		"readings": ["サイ"],
         "phonetic": "采",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "授": {
 		"readings": ["ジュ"],
         "phonetic": "受",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "接": {
 		"readings": ["セツ", "ショウ"],
         "phonetic": "妾",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "断": {
 		"readings": ["ダン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "液": {
 		"readings": ["エキ"],
         "phonetic": "夜",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "混": {
 		"readings": ["コン"],
         "phonetic": "昆",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "現": {
 		"readings": ["ゲン"],
         "phonetic": "見",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "略": {
 		"readings": ["リャク"],
         "phonetic": "各",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "眼": {
 		"readings": ["ガン", "ゲン"],
         "phonetic": "艮",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "務": {
 		"readings": ["ム", "ブ"],
         "phonetic": "敄",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "移": {
 		"readings": ["イ"],
         "phonetic": "多",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "経": {
 		"readings": ["ケイ", "キョウ", "キン"],
         "phonetic": "巠",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "規": {
 		"readings": ["キ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "許": {
 		"readings": ["キョ", "コ"],
         "phonetic": "午",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "設": {
 		"readings": ["セツ", "セチ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "責": {
 		"readings": ["セキ", "シャク"],
         "phonetic": "朿",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "険": {
 		"readings": ["ケン"],
         "phonetic": "僉",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "備": {
 		"readings": ["ビ", "ヒ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "obscure 'quiver' phonetic"
     },
     "営": {
 		"readings": ["エイ"],
         "phonetic": "熒",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "報": {
 		"readings": ["ホウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "富": {
 		"readings": ["フ", "フウ"],
         "phonetic": "畐",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "属": {
 		"readings": ["ゾク", "ショク"],
         "phonetic": "蜀",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "復": {
 		"readings": ["フク"],
         "phonetic": "复",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "提": {
 		"readings": ["テイ", "ダイ", "チョウ"],
         "phonetic": "是",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "検": {
 		"readings": ["ケン"],
         "phonetic": "僉",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "減": {
 		"readings": ["ゲン"],
         "phonetic": "咸",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "測": {
 		"readings": ["ソク"],
         "phonetic": "則",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "税": {
 		"readings": ["ゼイ", "セイ"],
         "phonetic": "兌",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "程": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "絶": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "統": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "証": {
 		"readings": ["ショウ"],
         "phonetic": "正",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "評": {
 		"readings": ["ヒョウ", "ヘイ"],
         "phonetic": "平",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "賀": {
 		"readings": ["ガ"],
         "phonetic": "加",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "貸": {
 		"readings": ["タイ"],
         "phonetic":  "代",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "貿": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "過": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "勢": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "幹": {
 		"readings": ["カン"],
         "phonetic": "干",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "準": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "損": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "禁": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "罪": {
 		"readings": ["ザイ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "義": {
 		"readings": ["ギ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "群": {
 		"readings": ["グン"],
         "phonetic": "君",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "墓": {
 		"readings": ["ボ"],
         "phonetic": "莫",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "夢": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "解": {
 		"readings": ["カイ", "ゲ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "豊": {
 		"readings": ["ホウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "資": {
 		"readings": ["シ"],
         "phonetic": "次",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "鉱": {
 		"readings": ["コウ"],
         "phonetic": "広",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "預": {
 		"readings": ["ヨ"],
         "phonetic": "予",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "飼": {
 		"readings": ["シ"],
         "phonetic": "司",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "像": {
 		"readings": ["ゾウ", "ショウ"],
         "phonetic": "象",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "境": {
 		"readings": ["キョウ", "ケイ"],
         "phonetic": "竟",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "増": {
 		"readings": ["ゾウ", "ソウ"],
         "phonetic": "曽",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "徳": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "慣": {
 		"readings": ["カン"],
         "phonetic": "貫",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "態": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "構": {
 		"readings": ["コウ"],
         "phonetic": "冓",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "演": {
 		"readings": ["エン"],
         "phonetic": "寅",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "精": {
 		"readings": ["セイ", "ショウ"],
         "phonetic": "青",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "総": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "綿": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "製": {
 		"readings": ["セイ"],
         "phonetic": "制",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "複": {
 		"readings": ["フク"],
         "phonetic": "复",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "適": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "酸": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "銭": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "銅": {
 		"readings": ["ドウ"],
         "phonetic": "同",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "際": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "雑": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "領": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "導": {
 		"readings": ["ドウ"],
         "phonetic": "道",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "敵": {
 		"readings": ["テキ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "暴": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "潔": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "確": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "編": {
 		"readings": ["ヘン"],
         "phonetic": "扁",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "賛": {
 		"readings": ["サン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "質": {
 		"readings": ["シツ", "シチ", "チ", "シ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "興": {
 		"readings": ["コウ", "キョウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "衛": {
 		"readings": ["エイ", "エ"],
         "phonetic": "韋",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "燃": {
 		"readings": ["ネン", "ゼン"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "TODO: phonetic 然"
     },
     "築": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "輸": {
 		"readings": ["ユ", "シュ"],
         "phonetic": "兪",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "績": {
 		"readings": ["セキ"],
         "phonetic": "責",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "講": {
 		"readings": ["コウ"],
         "phonetic": "冓",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "謝": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "織": {
 		"readings": ["ショク", "シキ"],
         "phonetic": "戠",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "職": {
 		"readings": ["ショク", "シキ"],
         "phonetic": "戠",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "額": {
 		"readings": ["ガク"],
         "phonetic": "各",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "識": {
 		"readings": ["シキ", "シ", "ショク"],
         "phonetic": "戠",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "護": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
 
 
     "亡": {
 		"readings": ["ボウ", "モウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "寸": {
 		"readings": ["ソン", "スン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "己": {
 		"readings": ["こ", "き"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "干": {
 		"readings": ["カン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "仁": {
 		"readings": ["ジン", "ニ", "ニン"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "尺": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "片": {
 		"readings": ["ヘン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "冊": {
 		"readings": ["サツ", "サク"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "収": {
 		"readings": ["シュウ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "処": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "幼": {
 		"readings": ["ヨウ", "ユウ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "庁": {
 		"readings": ["チョウ", "テイ"],
         "phonetic": "丁",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "穴": {
 		"readings": ["ケツ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "危": {
 		"readings": ["キ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "from obscure phonetic 厃"
     },
     "后": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "灰": {
 		"readings": ["カイ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "吸": {
 		"readings": ["キュウ"],
         "phonetic": "及",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "存": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "宇": {
 		"readings": ["ウ"],
         "phonetic": "于",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "宅": {
 		"readings": ["タク"],
         "phonetic": "乇",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "机": {
 		"readings": ["キ"],
         "phonetic": "几",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "至": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "否": {
 		"readings": ["ヒ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "我": {
 		"readings": ["ガ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "系": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "卵": {
 		"readings": ["ラン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "忘": {
 		"readings": ["ボウ", "モウ"],
         "phonetic": "亡",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "孝": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "困": {
 		"readings": ["コン"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "批": {
 		"readings": ["ヒ"],
         "phonetic": "比",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "私": {
 		"readings": ["シ"],
         "phonetic": "厶",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "乱": {
 		"readings": ["ラン", "ロン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "垂": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "乳": {
 		"readings": ["ニュウ", "ジュ", "ニュ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "供": {
 		"readings": ["キョウ", "ク"],
         "phonetic": "共",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "並": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "刻": {
 		"readings": ["コク"],
         "phonetic": "蜀",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "呼": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "宗": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "宙": {
 		"readings": ["チュウ"],
         "phonetic": "由",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "宝": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "届": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "延": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "忠": {
 		"readings": ["チュウ"],
         "phonetic": "中",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "拡": {
 		"readings": ["カク"],
         "phonetic": "広",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "担": {
 		"readings": ["タン"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "TODO: phonetic 旦"
     },
     "拝": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "枚": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "沿": {
 		"readings": ["エン"],
         "phonetic": "㕣",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "若": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "看": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "城": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "奏": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "姿": {
 		"readings": ["シ"],
         "phonetic": "次",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "宣": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "専": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "巻": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "律": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "映": {
 		"readings": ["エイ"],
         "phonetic": "央",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "染": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "段": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "洗": {
 		"readings": ["セン"],
         "phonetic": "先",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "派": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "皇": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "泉": {
 		"readings": ["セン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "砂": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "紅": {
 		"readings": ["コウ", "ク中", "グ"],
         "phonetic": "工",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "背": {
 		"readings": ["ハイ"],
         "phonetic": "北",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "肺": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "革": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "蚕": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "値": {
 		"readings": ["チ", "チョク"],
         "phonetic": "直",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "俳": {
 		"readings": ["ハイ"],
         "phonetic": "非",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "党": {
 		"readings": ["トウ"],
         "phonetic": "尚",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "展": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "座": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "従": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "株": {
 		"readings": ["シュ"],
         "phonetic": "朱",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "将": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "班": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "秘": {
 		"readings": ["ヒ"],
         "phonetic": "必",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "純": {
 		"readings": ["ジュン"],
         "phonetic": "屯",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "納": {
 		"readings": ["ノウ", "ナッ", "ナ", "ナン", "トウ"],
         "phonetic": "内",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "胸": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "朗": {
 		"readings": ["ロウ"],
         "phonetic": "良",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "討": {
 		"readings": ["トウ"],
         "phonetic": "屯",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "射": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "針": {
 		"readings": ["シン"],
         "phonetic": "十",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "降": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "除": {
 		"readings": ["ジ", "ジ"],
         "phonetic": "余",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "陛": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "骨": {
 		"readings": ["コツ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "域": {
 		"readings": ["イキ"],
         "phonetic": "或",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "密": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "捨": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "推": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "探": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "済": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "異": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "盛": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "視": {
 		"readings": ["シ"],
         "phonetic": "示",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "窓": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "翌": {
 		"readings": ["ヨク"],
         "phonetic": "立",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "脳": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "著": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "訪": {
 		"readings": ["ホウ"],
         "phonetic": "方",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "訳": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "欲": {
 		"readings": ["ヨク"],
         "phonetic": "谷",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "郷": {
 		"readings": ["キョウ", "ゴウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "郵": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "閉": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "頂": {
 		"readings": ["チョウ", "テイ"],
         "phonetic": "丁",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "就": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "善": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "尊": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "割": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "創": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "勤": {
 		"readings": ["キン", "ゴン"],
         "phonetic": "堇",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "裁": {
 		"readings": ["サイ"],
         "phonetic": "𢦏",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "揮": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "敬": {
 		"readings": ["ケイ", "キョウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "晩": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "棒": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "痛": {
 		"readings": ["ツウ", "トウ"],
         "phonetic": "甬",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "筋": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "策": {
 		"readings": ["サク"],
         "phonetic": "朿",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "衆": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "装": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "補": {
 		"readings": ["ホ", "ふ"],
         "phonetic": "甫",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "詞": {
 		"readings": ["シ"],
         "phonetic": "司",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "貴": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "裏": {
 		"readings": ["リ"],
         "phonetic": "里",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "傷": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "暖": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "源": {
 		"readings": ["ゲン"],
         "phonetic": "原",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "聖": {
 		"readings": ["セイ", "ショウ"],
         "phonetic": "𡈼",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "盟": {
 		"readings": ["メイ"],
         "phonetic": "明",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "絹": {
 		"readings": ["ケン"],
         "phonetic": "肙",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "署": {
 		"readings": ["ショ"],
         "phonetic": "者",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "腹": {
 		"readings": ["フク"],
         "phonetic": "复",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "蒸": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "幕": {
 		"readings": ["マク", "バク"],
         "phonetic": "莫",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "誠": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "賃": {
 		"readings": ["チン", "ジン"],
         "phonetic": "壬",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "疑": {
 		"readings": ["ギ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "層": {
 		"readings": ["ソウ"],
         "phonetic": "曽",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "模": {
 		"readings": ["モ", "ボ"],
         "phonetic": "莫",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "穀": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "磁": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "暮": {
 		"readings": ["ボ"],
         "phonetic": "莫",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "誤": {
 		"readings": ["ゴ"],
         "phonetic": "呉",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "誌": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "認": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "閣": {
 		"readings": ["カク"],
         "phonetic": "各",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "障": {
 		"readings": ["ショウ"],
         "phonetic": "章",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "劇": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "権": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "潮": {
 		"readings": ["チョウ"],
         "phonetic": "朝",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "熟": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "蔵": {
 		"readings": ["ゾウ", "ソウ"],
         "phonetic": "臧",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "諸": {
 		"readings": ["ショ"],
         "phonetic": "者",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "誕": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "論": {
 		"readings": ["ロン"],
         "phonetic": "侖",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "遺": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "奮": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "憲": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "操": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "樹": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "激": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "糖": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "縦": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "鋼": {
 		"readings": ["コウ"],
         "phonetic": "岡",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "厳": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "優": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "縮": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "覧": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "簡": {
 		"readings": ["カン", "ケン"],
         "phonetic": "間",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "臨": {
 		"readings": ["リン"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "難": {
 		"readings": ["ナン", "ダン"],
         "phonetic": "堇",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "臓": {
 		"readings": ["ゾウ", "ソウ"],
         "phonetic": "蔵",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "警": {
 		"readings": ["ケイ", "キョウ"],
         "phonetic": "敬",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
 
 
     "乙": {
 		"readings": ["オツ", "イツ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "了": {
 		"readings": ["リョウ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "又": {
 		"readings": ["ユウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "与": {
 		"readings": ["ヨ"],
-        "type": "KTypeEnum.comp_indicative",
+        "type": "comp_indicative",
         "comment": "Looked like 與"
     },
     "及": {
 		"readings": ["キュウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "丈": {
 		"readings": ["ジョウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "刃": {
 		"readings": ["ジン", "ニン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "凡": {
 		"readings": ["ボン", "ハン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "勺": {
 		"readings": ["シャク"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "互": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "弔": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "井": {
 		"readings": ["セイ", "ショウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "升": {
 		"readings": ["ショウ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "丹": {
 		"readings": ["タン"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "乏": {
 		"readings": ["ボウ", "ホウ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "匁": {
 		"readings": [],
-        "type": "KTypeEnum.kokuji"
+        "type": "kokuji"
     },
     "屯": {
 		"readings": ["トン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "介": {
 		"readings": ["カイ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "冗": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "凶": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "刈": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "匹": {
 		"readings": ["ヒツ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "厄": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "双": {
 		"readings": ["ソウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "孔": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "幻": {
 		"readings": ["ゲン"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "斗": {
 		"readings": ["ト"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "斤": {
 		"readings": ["キン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "且": {
 		"readings": ["ショ", "ソ", "ショウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "丙": {
 		"readings": ["ヘイ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "甲": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "凸": {
 		"readings": ["トツ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "丘": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "斥": {
 		"readings": ["セキ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "TODO: strange"
     },
     "仙": {
 		"readings": ["セン"],
         "phonetic": "山",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "凹": {
 		"readings": ["オウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "召": {
 		"readings": ["ショウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "巨": {
 		"readings": ["キョ", "コ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "占": {
 		"readings": ["セン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "囚": {
 		"readings": ["シュウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "奴": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "尼": {
 		"readings": ["ニ", "ジ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "巧": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "払": {
 		"readings": ["フツ"],
         "phonetic": "弗",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "汁": {
 		"readings": ["ジュウ"],
         "phonetic": "十",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "玄": {
 		"readings": ["ゲン"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "甘": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "矛": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "込": {
 		"readings": [],
-        "type": "KTypeEnum.kokuji"
+        "type": "kokuji"
     },
     "弐": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "朱": {
 		"readings": ["シュ", "ス"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "吏": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "劣": {
 		"readings": ["レツ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "充": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "妄": {
 		"readings": ["モウ", "ボウ"],
         "phonetic": "亡",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "企": {
 		"readings": ["キ"],
         "phonetic": "止",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "仰": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "伐": {
 		"readings": ["バツ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "伏": {
 		"readings": ["フク", "ブク"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "刑": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "旬": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "旨": {
 		"readings": ["シ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "匠": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "叫": {
 		"readings": ["キョウ"],
         "phonetic": "丩",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "吐": {
 		"readings": ["と"],
         "phonetic": "土",
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "吉": {
 		"readings": ["キチ", "キツ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "如": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "妃": {
 		"readings": ["ヒ"],
         "phonetic": "己",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "尽": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "帆": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "忙": {
 		"readings": ["ボウ", "モウ"],
         "phonetic": "亡",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "扱": {
 		"readings": ["キュウ", "ソウ"],
         "phonetic": "及",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "朽": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "朴": {
 		"readings": ["ボク", "ハク"],
         "phonetic": "卜",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "汚": {
 		"readings": ["オ"],
         "phonetic": "于",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "汗": {
 		"readings": ["カン"],
         "phonetic": "干",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "江": {
 		"readings": ["コウ"],
         "phonetic": "工",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "壮": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "缶": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "肌": {
 		"readings": ["キ"],
         "phonetic": "几",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "舟": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "芋": {
 		"readings": ["ウ"],
         "phonetic": "于",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "芝": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "巡": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "迅": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "亜": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "更": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "寿": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "励": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "含": {
 		"readings": ["ガン", "カン", "ゴン"],
         "phonetic": "今",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "佐": {
 		"readings": ["サ"],
         "phonetic": "左",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "伺": {
 		"readings": ["シ"],
         "phonetic": "司",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "伸": {
 		"readings": ["シン"],
         "phonetic": "申",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "但": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "伯": {
 		"readings": ["ハク", "ハ"],
         "phonetic": "白",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "伴": {
 		"readings": ["ハン", "バン"],
         "phonetic": "半",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "呉": {
 		"readings": ["ゴ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "克": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "却": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "吟": {
 		"readings": ["ギン"],
         "phonetic": "今",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "吹": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "呈": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "壱": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "坑": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "坊": {
 		"readings": ["ぼう"],
         "phonetic": "方",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "妊": {
 		"readings": ["ニン", "ジン"],
         "phonetic": "壬",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "妨": {
 		"readings": ["ぼう"],
         "phonetic": "方",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "妙": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "肖": {
 		"readings": ["ショウ"],
         "phonetic": "小",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "尿": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "尾": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "岐": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "攻": {
 		"readings": ["コウ"],
         "phonetic": "工",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "忌": {
 		"readings": ["き"],
         "phonetic": "己",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "床": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "廷": {
 		"readings": ["テイ"],
         "phonetic": "𡈼",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "忍": {
 		"readings": ["ニン", "ジン"],
         "phonetic": "刃",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "戒": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "戻": {
 		"readings": ["れい"],
         "phonetic": "大",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "抗": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "抄": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "択": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "把": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "抜": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "扶": {
 		"readings": ["フ"],
         "phonetic": "夫",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "抑": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "杉": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "沖": {
 		"readings": ["チュウ"],
         "phonetic": "中",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "沢": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "沈": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "没": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "妥": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "狂": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "秀": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "肝": {
 		"readings": ["カン"],
         "phonetic": "干",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "即": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "芳": {
 		"readings": ["ほう"],
         "phonetic": "方",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "辛": {
 		"readings": ["シン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "迎": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "邦": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "岳": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "奉": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "享": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "盲": {
 		"readings": ["モウ", "ボウ"],
         "phonetic": "亡",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "依": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "佳": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "侍": {
 		"readings": ["ジ", "シ"],
         "phonetic": "寺",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "侮": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "併": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "免": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "刺": {
 		"readings": ["シ", "セキ"],
         "phonetic": "朿",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "劾": {
 		"readings": ["ガイ"],
         "phonetic": "蜀",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "卓": {
 		"readings": ["タク"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "叔": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "坪": {
 		"readings": ["ヘイ"],
         "phonetic": "平",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "奇": {
 		"readings": ["キ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "奔": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "姓": {
 		"readings": ["セイ", "ショウ"],
         "phonetic": "生",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "宜": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "尚": {
 		"readings": ["ショウ"],
         "phonetic": "向",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "屈": {
 		"readings": ["クツ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "岬": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "弦": {
 		"readings": ["ゲン"],
         "phonetic": "玄",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "征": {
 		"readings": ["セイ"],
         "phonetic": "正",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "彼": {
 		"readings": ["ヒ"],
         "phonetic": "皮",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "怪": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "怖": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "肩": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "房": {
 		"readings": ["ボウ"],
         "phonetic": "方",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "押": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "拐": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "拒": {
 		"readings": ["キョ"],
         "phonetic": "巨",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "拠": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "拘": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "拙": {
 		"readings": ["セツ"],
         "phonetic": "出",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "拓": {
 		"readings": ["タク"],
         "phonetic": "石",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "抽": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "抵": {
 		"readings": ["テイ", "シ"],
         "phonetic": "氐",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "拍": {
 		"readings": ["ハク", "ヒョウ"],
         "phonetic": "白",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "披": {
 		"readings": ["ヒ"],
         "phonetic": "皮",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "抱": {
 		"readings": ["ホウ"],
         "phonetic": "包",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "抹": {
 		"readings": ["マツ", "バツ"],
         "phonetic": "末",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "昆": {
 		"readings": ["コン"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "昇": {
 		"readings": ["ショウ"],
         "phonetic": "升",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "枢": {
 		"readings": ["スウ"],
         "phonetic": "区",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "析": {
 		"readings": ["セキ"],
         "phonetic": "斤",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "杯": {
 		"readings": ["ハイ"],
         "phonetic": "不",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "枠": {
 		"readings": [],
-        "type": "KTypeEnum.kokuji"
+        "type": "kokuji"
     },
     "欧": {
 		"readings": ["オウ"],
         "phonetic": "区",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "肯": {
 		"readings": ["コウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "殴": {
 		"readings": ["オウ"],
         "phonetic": "区",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "況": {
 		"readings": ["キョウ"],
         "phonetic": "兄",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "沼": {
 		"readings": ["ショウ"],
         "phonetic": "召",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "泥": {
 		"readings": ["デイ"],
         "phonetic": "尼",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "泊": {
 		"readings": ["ハク"],
         "phonetic": "白",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "泌": {
 		"readings": ["ヒツ", "ヒ"],
         "phonetic": "必",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "沸": {
 		"readings": ["フツ", "ヒ"],
         "phonetic": "弗",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "泡": {
 		"readings": ["ホウ"],
         "phonetic": "包",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "炎": {
 		"readings": ["エン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "炊": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "炉": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "邪": {
 		"readings": ["ジャ", "シャ", "ヤ"],
         "phonetic": "牙",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "祈": {
 		"readings": ["キ"],
         "phonetic": "斤",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "祉": {
 		"readings": ["シ"],
         "phonetic": "止",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "突": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "肢": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "肪": {
 		"readings": ["ぼう"],
         "phonetic": "方",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "到": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "茎": {
 		"readings": ["ケイ"],
         "phonetic": "巠",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "苗": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "茂": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "迭": {
 		"readings": ["テツ"],
         "phonetic": "失",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "迫": {
 		"readings": ["ハク"],
         "phonetic": "白",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "邸": {
 		"readings": ["テイ"],
         "phonetic": "氐",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "阻": {
 		"readings": ["そ"],
         "phonetic": "且",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "附": {
 		"readings": ["フ", "ブ"],
         "phonetic": "付",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "斉": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "甚": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "帥": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "衷": {
 		"readings": ["チュウ"],
         "phonetic": "中",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "幽": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "為": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "盾": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "卑": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "哀": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "亭": {
 		"readings": ["テイ", "チン"],
         "phonetic": "丁",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "帝": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "侯": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "俊": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "侵": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "促": {
 		"readings": ["ソク", "ショク"],
         "phonetic": "足",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "俗": {
 		"readings": ["ゾク"],
         "phonetic": "谷",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "盆": {
 		"readings": [],
         "phonetic": "分",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "冠": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "削": {
 		"readings": ["サク"],
         "phonetic": "肖",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "勅": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "貞": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "卸": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "厘": {
 		"readings": ["りん"],
-        "type": "KTypeEnum.derivative"
+        "type": "derivative"
     },
     "怠": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "叙": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "咲": {
 		"readings": ["ショウ"],
         "phonetic": "关",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "垣": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "契": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "姻": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "孤": {
 		"readings": ["コ"],
         "phonetic": "瓜",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "封": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "峡": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "峠": {
 		"readings": [],
-        "type": "KTypeEnum.kokuji"
+        "type": "kokuji"
     },
     "弧": {
 		"readings": ["コ"],
         "phonetic": "瓜",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "悔": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "恒": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "恨": {
 		"readings": ["コン"],
         "phonetic": "艮",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "怒": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "威": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "括": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "挟": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "拷": {
 		"readings": ["ゴウ", "コウ"],
         "phonetic": "考",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "挑": {
 		"readings": ["チョウ"],
         "phonetic": "兆",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "施": {
 		"readings": ["シ", "セ"],
         "phonetic": "也",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "是": {
 		"readings": ["ゼ", "シ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "冒": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "架": {
 		"readings": ["カ"],
         "phonetic": "加",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "枯": {
 		"readings": ["こ"],
         "phonetic": "古",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "柄": {
 		"readings": ["ヘイ"],
         "phonetic": "丙",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "柳": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "皆": {
 		"readings": ["カイ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "洪": {
 		"readings": ["コウ"],
         "phonetic": "共",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "浄": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "津": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "洞": {
 		"readings": ["ドウ", "トウ"],
         "phonetic": "同",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "牲": {
 		"readings": ["セイ"],
         "phonetic": "生",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "狭": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "狩": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "珍": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "某": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "疫": {
 		"readings": ["エキ", "ヤク"],
         "phonetic": "役",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "柔": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "砕": {
 		"readings": ["サイ"],
         "phonetic": "卒",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "窃": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "糾": {
 		"readings": ["キュウ"],
         "phonetic": "丩",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "耐": {
 		"readings": ["タイ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "胎": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "胆": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "胞": {
 		"readings": ["ホウ"],
         "phonetic": "包",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "臭": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "荒": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "荘": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "虐": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "訂": {
 		"readings": ["テイ", "チョウ"],
         "phonetic": "丁",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "赴": {
 		"readings": ["フ"],
         "phonetic": "卜",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "軌": {
 		"readings": ["キ"],
         "phonetic": "九",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "逃": {
 		"readings": ["トウ"],
         "phonetic": "兆",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "郊": {
 		"readings": ["コウ"],
         "phonetic": "交",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "郎": {
 		"readings": ["ロウ"],
         "phonetic": "良",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "香": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "剛": {
 		"readings": ["ゴウ", "コウ"],
         "phonetic": "岡",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "衰": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "畝": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "恋": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "倹": {
 		"readings": ["ケン"],
         "phonetic": "僉",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "倒": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "倣": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "俸": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "倫": {
 		"readings": ["リン"],
         "phonetic": "侖",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "翁": {
 		"readings": ["オウ"],
         "phonetic": "公",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "兼": {
 		"readings": ["ケン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "准": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "凍": {
 		"readings": ["トウ"],
         "phonetic": "東",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "剣": {
 		"readings": ["ケン"],
         "phonetic": "僉",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "剖": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "脅": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "匿": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "栽": {
 		"readings": ["サイ"],
         "phonetic": "𢦏",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "索": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "桑": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "唆": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "哲": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "埋": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "娯": {
 		"readings": ["ゴ"],
         "phonetic": "呉",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "娠": {
 		"readings": ["シン"],
         "phonetic": "辰",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "姫": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "娘": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "宴": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "宰": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "宵": {
 		"readings": ["ショウ"],
         "phonetic": "肖",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "峰": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "貢": {
 		"readings": ["コウ", "ク"],
         "phonetic": "工",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "唐": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "徐": {
 		"readings": ["ジョ"],
         "phonetic": "余",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "悦": {
 		"readings": ["エツ"],
         "phonetic": "兌",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "恐": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "恭": {
 		"readings": ["キョウ"],
         "phonetic": "共",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "恵": {
 		"readings": ["ケイ", "エ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "悟": {
 		"readings": ["ゴ"],
         "phonetic": "吾",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "悩": {
 		"readings": ["ノウ", "ドウ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "TODO: obscure phonetic component 𡿺?"
     },
     "扇": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "振": {
 		"readings": ["シン"],
         "phonetic": "辰",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "捜": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "挿": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "捕": {
 		"readings": ["ホ", "ブ"],
         "phonetic": "甫",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "敏": {
 		"readings": ["ビン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "核": {
 		"readings": ["カク"],
         "phonetic": "蜀",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "桟": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "栓": {
 		"readings": ["セン"],
         "phonetic": "全",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "桃": {
 		"readings": ["トウ"],
         "phonetic": "兆",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "殊": {
 		"readings": ["シュ"],
         "phonetic": "朱",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "殉": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "浦": {
 		"readings": ["ホ"],
         "phonetic": "甫",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "浸": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "泰": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "浜": {
 		"readings": ["ヒン"],
         "phonetic": "賓",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "浮": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "涙": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "浪": {
 		"readings": ["ロウ"],
         "phonetic": "良",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "烈": {
 		"readings": ["レツ"],
         "phonetic": "列",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "畜": {
 		"readings": ["チク", "キク"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "珠": {
 		"readings": ["シュ"],
         "phonetic": "朱",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "畔": {
 		"readings": ["ハン"],
         "phonetic": "半",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "疾": {
 		"readings": ["シツ"],
         "phonetic": "矢",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "症": {
 		"readings": ["ショウ"],
         "phonetic": "正",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "疲": {
 		"readings": ["ヒ"],
         "phonetic": "皮",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "眠": {
 		"readings": ["ミン", "ベン"],
         "phonetic": "民",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "砲": {
 		"readings": ["ホウ"],
         "phonetic": "包",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "祥": {
 		"readings": ["ショウ"],
         "phonetic": "羊",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "称": {
 		"readings": ["ショウ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "obscure phonetic 爯"
     },
     "租": {
 		"readings": ["そ"],
         "phonetic": "且",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "秩": {
 		"readings": ["チツ"],
         "phonetic": "失",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "粋": {
 		"readings": ["スイ"],
         "phonetic": "卒",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "紛": {
 		"readings": ["フン"],
         "phonetic": "分",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "紡": {
 		"readings": ["ボウ"],
         "phonetic": "方",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "紋": {
 		"readings": ["もん"],
         "phonetic": "文",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "耗": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "恥": {
 		"readings": ["チ"],
         "phonetic": "耳",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "脂": {
 		"readings": ["シ"],
         "phonetic": "旨",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "朕": {
 		"readings": ["チン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "胴": {
 		"readings": ["ドウ", "トウ"],
         "phonetic": "同",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "致": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "般": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "既": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "華": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "蚊": {
 		"readings": ["ブン"],
         "phonetic": "文",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "被": {
 		"readings": ["ヒ"],
         "phonetic": "皮",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "託": {
 		"readings": ["タク"],
         "phonetic": "乇",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "軒": {
 		"readings": ["ケン"],
         "phonetic": "干",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "辱": {
 		"readings": ["ジョク", "ニク"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "唇": {
 		"readings": ["シン"],
         "phonetic": "辰",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "逝": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "逐": {
 		"readings": ["チク", "ジク"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "逓": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "途": {
 		"readings": ["ト", "ズ"],
         "phonetic": "余",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "透": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "酌": {
 		"readings": ["シャク"],
         "phonetic": "勺",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "陥": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "陣": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "隻": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "飢": {
 		"readings": ["キ"],
         "phonetic": "几",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "鬼": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "剤": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "竜": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "粛": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "尉": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "彫": {
 		"readings": ["チョウ"],
         "phonetic": "周",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "偽": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "偶": {
 		"readings": ["グウ"],
         "phonetic": "禺",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "偵": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "偏": {
 		"readings": ["ヘン"],
         "phonetic": "扁",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "剰": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "勘": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "乾": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "喝": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "啓": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "唯": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "執": {
 		"readings": ["シツ", "シュウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "培": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "堀": {
 		"readings": ["クツ", "コツ"],
         "phonetic": "屈",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "婚": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "婆": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "寂": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "崎": {
 		"readings": ["キ"],
         "phonetic": "奇",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "崇": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "崩": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "庶": {
 		"readings": ["ショ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "庸": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "彩": {
 		"readings": ["サイ"],
         "phonetic": "采",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "患": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "惨": {
 		"readings": ["サン", "ザン"],
         "phonetic": "参",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "惜": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "悼": {
 		"readings": ["トウ"],
         "phonetic": "卓",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "悠": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "掛": {
 		"readings": ["カイ", "ケイ"],
         "phonetic": "圭",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "掘": {
 		"readings": ["クツ"],
         "phonetic": "屈",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "掲": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "控": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "据": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "措": {
 		"readings": ["ソ"],
         "phonetic": "昔",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "掃": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "排": {
 		"readings": ["ハイ"],
         "phonetic": "非",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "描": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "斜": {
 		"readings": ["シャ"],
         "phonetic": "余",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "旋": {
 		"readings": ["セン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "曹": {
 		"readings": ["ソウ", "ゾウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "殻": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "貫": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "涯": {
 		"readings": ["ガイ"],
         "phonetic": "厓",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "渇": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "渓": {
 		"readings": ["ケイ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "obscure phonetic 奚"
     },
     "渋": {
 		"readings": ["ジュウ", "シュウ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "maybe phonetic 歮歰"
     },
     "淑": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "渉": {
 		"readings": ["ショウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "淡": {
 		"readings": ["タン"],
         "phonetic": "炎",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "添": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "涼": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "猫": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "猛": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "猟": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "瓶": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "累": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "盗": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "眺": {
 		"readings": ["チョウ"],
         "phonetic": "兆",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "窒": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "符": {
 		"readings": ["フ"],
         "phonetic": "付",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "粗": {
 		"readings": ["そ"],
         "phonetic": "且",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "粘": {
 		"readings": ["ネン", "デン"],
         "phonetic": "占",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "粒": {
 		"readings": ["リュウ"],
         "phonetic": "立",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "紺": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "紹": {
 		"readings": ["ショウ"],
         "phonetic": "召",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "紳": {
 		"readings": ["シン"],
         "phonetic": "申",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "脚": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "脱": {
 		"readings": ["ダツ", "タツ"],
         "phonetic": "兌",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "豚": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "舶": {
 		"readings": ["ハク"],
         "phonetic": "白",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "菓": {
 		"readings": ["カ"],
         "phonetic": "果",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "菊": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "菌": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "虚": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "蛍": {
 		"readings": ["ケイ"],
         "phonetic": "熒",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "蛇": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "袋": {
 		"readings": ["タイ", "テイ"],
         "phonetic":  "代",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "訟": {
 		"readings": ["ショウ", "ジュ"],
         "phonetic": "公",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "販": {
 		"readings": ["ハン"],
         "phonetic": "反",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "赦": {
 		"readings": ["シャ"],
         "phonetic": "赤",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "軟": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "逸": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "逮": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "郭": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "酔": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "釈": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "釣": {
 		"readings": ["チョウ"],
         "phonetic": "勺",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "陰": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "陳": {
 		"readings": ["チン", "ジン"],
         "phonetic": "申",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "陶": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "陪": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "隆": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "陵": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "麻": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "斎": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "喪": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "奥": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "蛮": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "偉": {
 		"readings": ["イ"],
         "phonetic": "韋",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "傘": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "傍": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "普": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "喚": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "喫": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "圏": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "堪": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "堅": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "堕": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "塚": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "堤": {
 		"readings": ["テイ"],
         "phonetic": "是",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "塔": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "塀": {
 		"readings": [],
-        "type": "KTypeEnum.kokuji"
+        "type": "kokuji"
     },
     "媒": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "婿": {
 		"readings": ["セイ"],
         "phonetic": "胥",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "掌": {
 		"readings": ["ショウ"],
         "phonetic": "尚",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "項": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "幅": {
 		"readings": ["フク"],
         "phonetic": "畐",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "帽": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "幾": {
 		"readings": ["キ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "廃": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "廊": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "弾": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "尋": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "御": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "循": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "慌": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "惰": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "愉": {
 		"readings": ["ユ"],
         "phonetic": "兪",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "惑": {
 		"readings": ["ワク"],
         "phonetic": "或",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "雇": {
 		"readings": ["コ"],
         "phonetic": "戸",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "扉": {
 		"readings": ["ひ"],
         "phonetic": "非",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "握": {
 		"readings": ["アク"],
         "phonetic": "屋",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "援": {
 		"readings": ["エン"],
         "phonetic": "爰",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "換": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "搭": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "揚": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "揺": {
 		"readings": ["ヨウ"],
         "phonetic": "䍃",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "敢": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "暁": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "晶": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "替": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "棺": {
 		"readings": ["カン"],
         "phonetic": "官",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "棋": {
 		"readings": ["キ"],
         "phonetic": "其",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "棚": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "棟": {
 		"readings": ["トウ"],
         "phonetic": "東",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "款": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "欺": {
 		"readings": ["ギ", "キ"],
         "phonetic": "其",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "殖": {
 		"readings": ["ショク"],
         "phonetic": "直",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "渦": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "滋": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "湿": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "渡": {
 		"readings": ["ト"],
         "phonetic": "度",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "湾": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "煮": {
 		"readings": ["シャ"],
         "phonetic": "者",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "猶": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "琴": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "畳": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "塁": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "疎": {
 		"readings": ["ソ", "ショ"],
         "phonetic": "疋",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "痘": {
 		"readings": ["トウ"],
         "phonetic": "豆",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "痢": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "硬": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "硝": {
 		"readings": ["ショウ"],
         "phonetic": "肖",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "硫": {
 		"readings": ["リュウ", "ル"],
         "phonetic": "㐬",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "筒": {
 		"readings": ["トウ"],
         "phonetic": "同",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "粧": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "絞": {
 		"readings": ["コウ"],
         "phonetic": "交",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "紫": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "絡": {
 		"readings": ["らく"],
         "phonetic": "各",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "脹": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "腕": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "葬": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "募": {
 		"readings": ["ボ", "モ"],
         "phonetic": "莫",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "裕": {
 		"readings": ["ユウ"],
         "phonetic": "谷",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "裂": {
 		"readings": ["レツ"],
         "phonetic": "列",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "詠": {
 		"readings": ["エイ"],
         "phonetic": "永",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "詐": {
 		"readings": ["サ"],
         "phonetic": "乍",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "詔": {
 		"readings": ["ショウ"],
         "phonetic": "召",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "診": {
 		"readings": ["シン"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "訴": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "越": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "超": {
 		"readings": ["チョウ"],
         "phonetic": "召",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "距": {
 		"readings": ["キョ"],
         "phonetic": "巨",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "軸": {
 		"readings": ["ジク", "チク"],
         "phonetic": "由",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "遇": {
 		"readings": ["グウ", "グ"],
         "phonetic": "禺",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "遂": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "遅": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "遍": {
 		"readings": ["ヘン"],
         "phonetic": "扁",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "酢": {
 		"readings": ["サク", "ソ"],
         "phonetic": "乍",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "鈍": {
 		"readings": ["ドン"],
         "phonetic": "屯",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "閑": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "隅": {
 		"readings": ["グウ"],
         "phonetic": "禺",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "随": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "焦": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "雄": {
 		"readings": ["ユウ"],
         "phonetic": "厷",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "雰": {
 		"readings": [],
         "phonetic": "分",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "殿": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "棄": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "傾": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "傑": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "債": {
 		"readings": ["サイ"],
         "phonetic": "責",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "催": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "僧": {
 		"readings": ["ソウ"],
         "phonetic": "曽",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "慈": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "勧": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "載": {
 		"readings": ["サイ"],
         "phonetic": "𢦏",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "嗣": {
 		"readings": ["シ"],
         "phonetic": "司",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "嘆": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "塊": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "塑": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "塗": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "奨": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "嫁": {
 		"readings": ["カ"],
         "phonetic": "家",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "嫌": {
 		"readings": ["ケン", "ゲン"],
         "phonetic": "兼",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "寛": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "寝": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "廉": {
 		"readings": ["レン"],
         "phonetic": "兼",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "微": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "慨": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "愚": {
 		"readings": ["グ"],
         "phonetic": "禺",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "愁": {
 		"readings": ["シュウ"],
         "phonetic": "秋",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "慎": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "携": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "搾": {
 		"readings": [],
-        "type": "KTypeEnum.kokuji"
+        "type": "kokuji"
     },
     "摂": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "搬": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "暇": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "楼": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "歳": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "滑": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "溝": {
 		"readings": ["コウ"],
         "phonetic": "冓",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "滞": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "滝": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "漠": {
 		"readings": ["バク", "マク"],
         "phonetic": "莫",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "滅": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "溶": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "煙": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "煩": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "雅": {
 		"readings": ["ガ"],
         "phonetic": "牙",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "猿": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "献": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "痴": {
 		"readings": ["チ"],
         "phonetic": "知",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "睡": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "督": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "碁": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "禍": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "禅": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "稚": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "継": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "腰": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "艇": {
 		"readings": ["テイ"],
         "phonetic": "廷",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "蓄": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "虞": {
 		"readings": ["グ"],
         "phonetic": "呉",
-        "type": "KTypeEnum.comp_phonetic",
+        "type": "comp_phonetic",
         "comment": "related to 虞 reading?"
     },
     "虜": {
 		"readings": ["リョ", "ロ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "褐": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "裸": {
 		"readings": ["ラ"],
         "phonetic": "果",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "触": {
 		"readings": ["ショク", "ソク"],
         "phonetic": "蜀",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "該": {
 		"readings": ["ガイ", "カイ"],
         "phonetic": "蜀",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "詰": {
 		"readings": ["キツ"],
         "phonetic": "吉",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "誇": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "詳": {
 		"readings": ["ショウ"],
         "phonetic": "羊",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "誉": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "賊": {
 		"readings": ["ソク"],
         "phonetic": "則",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "賄": {
 		"readings": ["ワイ", "カイ"],
         "phonetic": "有",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "跡": {
 		"readings": ["セキ", "シャク"],
         "phonetic": "責",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "践": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "跳": {
 		"readings": ["チョウ"],
         "phonetic": "兆",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "較": {
 		"readings": ["カク", "コウ"],
         "phonetic": "交",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "違": {
 		"readings": ["イ"],
         "phonetic": "韋",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "遣": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "酬": {
 		"readings": ["シュウ"],
         "phonetic": "州",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "酪": {
 		"readings": ["らく"],
         "phonetic": "各",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "鉛": {
 		"readings": ["エン"],
         "phonetic": "㕣",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "鉢": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "鈴": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "隔": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "雷": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "零": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "靴": {
 		"readings": ["カ"],
         "phonetic": "化",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "頑": {
 		"readings": ["ガン"],
         "phonetic": "元",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "頒": {
 		"readings": [],
         "phonetic": "分",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "飾": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "飽": {
 		"readings": ["ホウ"],
         "phonetic": "包",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "鼓": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "豪": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "僕": {
 		"readings": ["ボク"],
         "phonetic": "菐",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "僚": {
 		"readings": ["リョウ"],
         "phonetic": "尞",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "暦": {
 		"readings": ["レキ", "リャク"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "TODO: tone mark 厤?"
     },
     "塾": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "奪": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "嫡": {
 		"readings": ["チャク", "テキ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "寡": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "寧": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "腐": {
 		"readings": ["フ"],
         "phonetic": "付",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "彰": {
 		"readings": ["ショウ"],
         "phonetic": "章",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "徴": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "憎": {
 		"readings": ["ゾウ", "ソウ"],
         "phonetic": "曽",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "慢": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "摘": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "概": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "雌": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "漆": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "漸": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "漬": {
 		"readings": ["シ"],
         "phonetic": "責",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "滴": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "漂": {
 		"readings": ["ヒョウ"],
         "phonetic": "票",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "漫": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "漏": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "獄": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "碑": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "稲": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "端": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "箇": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "維": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "綱": {
 		"readings": ["コウ"],
         "phonetic": "岡",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "緒": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "網": {
 		"readings": ["モウ", "ボウ"],
         "phonetic": "罔",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "罰": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "膜": {
 		"readings": ["マク", "バク"],
         "phonetic": "莫",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "慕": {
 		"readings": ["ボ"],
         "phonetic": "莫",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "誓": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "誘": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "踊": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "遮": {
 		"readings": ["シャ"],
         "phonetic": "庶",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "遭": {
 		"readings": ["ソウ"],
         "phonetic": "曹",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "酵": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "酷": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "銃": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "銑": {
 		"readings": ["セン"],
         "phonetic": "先",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "銘": {
 		"readings": ["メイ", "ミョウ"],
         "phonetic": "名",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "閥": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "隠": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "需": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "駆": {
 		"readings": ["ク"],
         "phonetic": "区",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "駄": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "髪": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "魂": {
 		"readings": ["コン"],
         "phonetic": "云",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "錬": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "緯": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "韻": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "影": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "鋭": {
 		"readings": ["エイ"],
         "phonetic": "兌",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "謁": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "閲": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "縁": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "憶": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "穏": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "稼": {
 		"readings": ["カ"],
         "phonetic": "家",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "餓": {
 		"readings": ["ガ"],
         "phonetic": "我",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "壊": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "懐": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "嚇": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "獲": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "穫": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "潟": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "轄": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "憾": {
 		"readings": ["カン"],
         "phonetic": "感",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "歓": {
 		"readings": ["カン"],
         "phonetic": "雚",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "環": {
 		"readings": ["カン"],
         "phonetic": "瞏",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "監": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "緩": {
 		"readings": ["カン"],
         "phonetic": "爰",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "艦": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "還": {
 		"readings": ["カン", "ゲン"],
         "phonetic": "瞏",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "鑑": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "輝": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "騎": {
 		"readings": ["キ"],
         "phonetic": "奇",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "儀": {
 		"readings": ["ギ"],
         "phonetic": "義",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "戯": {
 		"readings": ["ギ", "ゲ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "擬": {
 		"readings": ["ギ"],
         "phonetic": "疑",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "犠": {
 		"readings": ["ギ", "キ"],
         "phonetic": "義",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "窮": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "矯": {
 		"readings": ["キョウ"],
         "phonetic": "喬",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "響": {
 		"readings": ["キョウ"],
         "phonetic": "郷",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "驚": {
 		"readings": ["キョウ"],
         "phonetic": "敬",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "凝": {
 		"readings": ["ギョウ"],
         "phonetic": "疑",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "緊": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "襟": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "謹": {
 		"readings": ["キン"],
         "phonetic": "堇",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "繰": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "勲": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "薫": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "慶": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "憩": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "鶏": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "鯨": {
 		"readings": ["ゲイ", "ケイ"],
         "phonetic": "京",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "撃": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "懸": {
 		"readings": ["ケン", "ケ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "TODO: phonetic 縣"
     },
     "謙": {
 		"readings": ["ケン"],
         "phonetic": "兼",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "賢": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "顕": {
 		"readings": ["ケン"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "obscure phonetic 㬎?"
     },
     "顧": {
 		"readings": ["コ"],
         "phonetic": "雇",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "稿": {
 		"readings": ["コウ"],
         "phonetic": "高",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "衡": {
 		"readings": ["コウ"],
         "phonetic": "行",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "購": {
 		"readings": ["コウ"],
         "phonetic": "冓",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "墾": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "懇": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "鎖": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "錯": {
 		"readings": ["サク", "ソ"],
         "phonetic": "昔",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "撮": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "擦": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "暫": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "諮": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "賜": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "璽": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "爵": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "趣": {
 		"readings": ["シュ", "ソク"],
         "phonetic": "取",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "儒": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "襲": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "醜": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "獣": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "瞬": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "潤": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "遵": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "償": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "礁": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "衝": {
 		"readings": ["ショウ"],
         "phonetic": "重",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "鐘": {
 		"readings": ["ショウ", "シュ"],
         "phonetic": "童",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "壌": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "嬢": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "譲": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "醸": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "錠": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "嘱": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "審": {
 		"readings": ["シン"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "variant of 审"
     },
     "薪": {
 		"readings": ["シン"],
         "phonetic": "新",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "震": {
 		"readings": ["シン"],
         "phonetic": "辰",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "錘": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "髄": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "澄": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "瀬": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "請": {
 		"readings": ["セイ", "シン", "ショウ"],
         "phonetic": "青",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "籍": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "潜": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "繊": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "薦": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "遷": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "鮮": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "繕": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "礎": {
 		"readings": ["ソ"],
         "phonetic": "楚",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "槽": {
 		"readings": ["ソウ"],
         "phonetic": "曹",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "燥": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "藻": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "霜": {
 		"readings": ["ソウ"],
         "phonetic": "相",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "騒": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "贈": {
 		"readings": ["ゾウ", "ソウ"],
         "phonetic": "曽",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "濯": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "濁": {
 		"readings": ["ダク", "ジョク"],
         "phonetic": "蜀",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "諾": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "鍛": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "壇": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "鋳": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "駐": {
 		"readings": ["チュウ", "チュ"],
         "phonetic": "主",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "懲": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "聴": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "鎮": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "墜": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "締": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "徹": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "撤": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "謄": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "踏": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "騰": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "闘": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "篤": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "曇": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "縄": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "濃": {
 		"readings": ["ノウ", "ジョウ"],
         "phonetic": "農",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "覇": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "輩": {
 		"readings": ["ハイ"],
         "phonetic": "非",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "賠": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "薄": {
 		"readings": ["ハク"],
         "phonetic": "溥",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "爆": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "縛": {
 		"readings": ["バク", "ハク"],
         "phonetic": "尃",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "繁": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "藩": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "範": {
 		"readings": ["ハン"],
         "phonetic": "氾",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "盤": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "罷": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "避": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "賓": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "頻": {
 		"readings": ["ヒン", "ビン"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "敷": {
 		"readings": ["フ"],
         "phonetic": "尃",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "膚": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "譜": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "賦": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "舞": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "覆": {
 		"readings": ["フク", "フ", "フウ"],
         "phonetic": "复",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "噴": {
 		"readings": ["フン", "ホン"],
         "phonetic": "賁",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "墳": {
 		"readings": ["フン"],
         "phonetic": "賁",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "憤": {
 		"readings": ["フン"],
         "phonetic": "賁",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "幣": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "弊": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "壁": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "癖": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "舗": {
 		"readings": ["ホ", "フ"],
         "phonetic": "甫",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "穂": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "簿": {
 		"readings": ["ボ", "ホ"],
         "phonetic": "溥",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "縫": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "褒": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "膨": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "謀": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "墨": {
 		"readings": ["ボク", "モク"],
         "phonetic": "黒",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "撲": {
 		"readings": ["ボク", "ホク"],
         "phonetic": "菐",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "翻": {
 		"readings": ["ホン", "ハン"],
         "phonetic": "番",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "摩": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "磨": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "魔": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "繭": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "魅": {
 		"readings": ["ミ", "ビ"],
         "phonetic": "未",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "霧": {
 		"readings": ["ム", "ブ"],
         "phonetic": "務",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "黙": {
 		"readings": ["モク", "ボク"],
         "phonetic": "黒",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "躍": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "癒": {
 		"readings": ["ユ"],
         "phonetic": "兪",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "諭": {
 		"readings": ["ユ"],
         "phonetic": "兪",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "憂": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "融": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "慰": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "窯": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "謡": {
 		"readings": ["ヨウ"],
         "phonetic": "䍃",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "翼": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "羅": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "頼": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "欄": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "濫": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "履": {
 		"readings": ["リ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "離": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "慮": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "寮": {
 		"readings": ["リョウ"],
         "phonetic": "尞",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "療": {
 		"readings": ["リョウ"],
         "phonetic": "尞",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "糧": {
 		"readings": ["リョウ", "ロウ"],
         "phonetic": "量",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "隣": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "隷": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "霊": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "麗": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "齢": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "擁": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "露": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
 
 
     "藤": {
 		"readings": ["トウ"],
         "phonetic": "滕",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "誰": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "俺": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "岡": {
 		"readings": ["コウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "頃": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "奈": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "阪": {
 		"readings": ["ハン"],
         "phonetic": "反",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "韓": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "弥": {
 		"readings": ["ビ", "ミ"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "obscure phonetic 爾"
     },
     "那": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "鹿": {
 		"readings": ["ロク"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "斬": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "虎": {
 		"readings": ["コ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "狙": {
 		"readings": ["ソ", "ショ"],
         "phonetic": "且",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "脇": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "熊": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "尻": {
 		"readings": ["コウ"],
         "phonetic": "九",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "旦": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "闇": {
 		"readings": ["アン"],
         "phonetic": "音",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "籠": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "呂": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "亀": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "頬": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "膝": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "鶴": {
 		"readings": ["カク"],
         "phonetic": "隺",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "匂": {
 		"readings": [""],
-        "type": "KTypeEnum.kokuji"
+        "type": "kokuji"
     },
     "沙": {
 		"readings": ["サ", "シャ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "須": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "椅": {
 		"readings": ["い"],
         "phonetic": "奇",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "股": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "眉": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "挨": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "拶": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "鎌": {
 		"readings": ["レン"],
         "phonetic": "兼",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "凄": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "謎": {
 		"readings": ["メイ", "ベイ"],
         "phonetic": "迷",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "稽": {
 		"readings": ["ケイ"],
         "phonetic": "旨",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "曾": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "喉": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "拭": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "貌": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "塞": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "蹴": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "鍵": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "膳": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "袖": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "潰": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "駒": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "剥": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "鍋": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "湧": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "葛": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "梨": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "貼": {
 		"readings": ["チョウ", "テン"],
         "phonetic": "占",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "拉": {
 		"readings": ["ラ", "ラツ", "ロウ"],
         "phonetic": "立",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "枕": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "顎": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "苛": {
 		"readings": ["カ"],
         "phonetic": "可",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "蓋": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "裾": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "腫": {
 		"readings": ["シュ", "ショウ"],
         "phonetic": "重",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "爪": {
 		"readings": ["ソウ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "嵐": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "鬱": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "妖": {
 		"readings": ["ヨウ"],
         "phonetic": "夭",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "藍": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "捉": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "宛": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "崖": {
 		"readings": ["ガイ"],
         "phonetic": "厓",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "叱": {
 		"readings": ["しつ", "しち"],
         "phonetic": "七",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "瓦": {
 		"readings": ["ガ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "拳": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "乞": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "呪": {
 		"readings": ["ジュ", "シュウ"],
         "phonetic": "兄",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "汰": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "勃": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "昧": {
 		"readings": ["マイ", "バイ"],
         "phonetic": "未",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "唾": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "艶": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "痕": {
 		"readings": ["コン"],
         "phonetic": "艮",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "諦": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "餅": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "瞳": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "唄": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "隙": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "淫": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "錦": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "箸": {
 		"readings": ["チョ"],
         "phonetic": "者",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "戚": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "蒙": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "妬": {
 		"readings": ["ト"],
         "phonetic": "石",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "蔑": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "嗅": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "蜜": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "戴": {
 		"readings": ["タイ"],
         "phonetic": "𢦏",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "痩": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "怨": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "醒": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "詣": {
 		"readings": ["ケイ"],
         "phonetic": "旨",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "窟": {
 		"readings": ["クツ"],
         "phonetic": "屈",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "巾": {
 		"readings": ["キン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "蜂": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "骸": {
 		"readings": ["ガイ", "カイ"],
         "phonetic": "蜀",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "弄": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "嫉": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "罵": {
 		"readings": ["バ"],
         "phonetic": "馬",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "璧": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "阜": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "埼": {
 		"readings": ["キ"],
         "phonetic": "奇",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "伎": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "曖": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "餌": {
 		"readings": ["じ"],
         "phonetic": "耳",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "爽": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "詮": {
 		"readings": ["セン"],
         "phonetic": "全",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "芯": {
 		"readings": ["シン"],
         "phonetic": "心",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "綻": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "肘": {
 		"readings": ["チュウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "麓": {
 		"readings": ["ロク"],
         "phonetic": "鹿",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "憧": {
 		"readings": ["ショウ", "ドウ"],
         "phonetic": "童",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "頓": {
 		"readings": ["トン", "トツ"],
         "phonetic": "屯",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "牙": {
 		"readings": ["ガ", "ゲ"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "咽": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "嘲": {
 		"readings": ["チョウ", "トウ"],
         "phonetic": "朝",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "臆": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "挫": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "溺": {
 		"readings": ["デキ", "ニョウ", "ジョウ"],
         "phonetic": "弱",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "侶": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "丼": {
 		"readings": ["タン", "トン"],
-        "type": "KTypeEnum.kokuji"
+        "type": "kokuji"
     },
     "瘍": {
 		"readings": ["ヨウ"],
         "phonetic": "昜",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "僅": {
 		"readings": ["キン"],
         "phonetic": "堇",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "諜": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "柵": {
 		"readings": ["サク"],
         "phonetic": "冊",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "腎": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "梗": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "瑠": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "羨": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "酎": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "畿": {
 		"readings": ["キ"],
         "phonetic": "幾",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "畏": {
 		"readings": ["イ"],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "瞭": {
 		"readings": ["リョウ"],
         "phonetic": "尞",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "踪": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "栃": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "蔽": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "茨": {
 		"readings": ["シ"],
         "phonetic": "次",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "慄": {
 		"readings": ["リツ"],
         "phonetic": "栗",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "傲": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "虹": {
 		"readings": ["コウ"],
         "phonetic": "工",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "捻": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "臼": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "喩": {
 		"readings": ["ユ"],
         "phonetic": "兪",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "萎": {
 		"readings": ["イ"],
         "phonetic": "委",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "腺": {
 		"readings": ["セン"],
         "phonetic": "泉",
-        "type": "KTypeEnum.kokuji"
+        "type": "kokuji"
     },
     "桁": {
 		"readings": ["コウ"],
         "phonetic": "行",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "玩": {
 		"readings": ["ガン"],
         "phonetic": "元",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "冶": {
 		"readings": ["や"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "maybe 台"
     },
     "羞": {
 		"readings": ["シュウ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "惧": {
 		"readings": ["グ", "ク"],
         "phonetic": "具",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "舷": {
 		"readings": ["ゲン"],
         "phonetic": "玄",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "貪": {
 		"readings": ["ドン", "タン"],
-        "type": "KTypeEnum.no_clue",
+        "type": "no_clue",
         "comment": "phonetic 今?"
     },
     "采": {
 		"readings": ["サイ"],
-        "type": "KTypeEnum.comp_indicative"
+        "type": "comp_indicative"
     },
     "堆": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "煎": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "斑": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "冥": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "遜": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "旺": {
 		"readings": ["オウ"],
         "phonetic": "王",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "麺": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "璃": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "串": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "填": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "箋": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "脊": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "緻": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "辣": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "摯": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "汎": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "憚": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "哨": {
 		"readings": ["ショウ"],
         "phonetic": "肖",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "氾": {
 		"readings": ["ハン"],
-        "type": "KTypeEnum.hieroglyph"
+        "type": "hieroglyph"
     },
     "諧": {
 		"readings": ["カイ"],
         "phonetic": "皆",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "媛": {
 		"readings": ["エン"],
         "phonetic": "爰",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "彙": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "恣": {
 		"readings": ["シ"],
         "phonetic": "次",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "聘": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "沃": {
 		"readings": ["ヨク", "オク"],
         "phonetic": "夭",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
     "憬": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "捗": {
 		"readings": [],
-        "type": "KTypeEnum.no_clue"
+        "type": "no_clue"
     },
     "訃": {
 		"readings": ["フ"],
         "phonetic": "卜",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     },
 
     "遥": {
 		"readings": ["ヨウ"],
         "phonetic": "䍃",
-        "type": "KTypeEnum.comp_phonetic"
+        "type": "comp_phonetic"
     }
 }`);
 
 
-var phonetic_db = {
-    /* List of all phonetic components here ... */
+/* List of all phonetic components here ... */
+var phonetic_db = JSON.parse(`
+{
     "七": {
         "readings": ["しち", "しつ"],
         "compounds": ["叱","切"],
@@ -9451,11 +9451,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "方": {
-        "readings": ["ホウ", "ぼう"],   // added ぼう, no reason found
+        "readings": ["ホウ", "ぼう"],
         "compounds": ["坊", "妨", "芳", "防", "放", "肪", "房", "紡", "訪"],
         "non_compounds": [],
         "xrefs": ["方"],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "added ぼう, no reason found"
     },
     "古": {
         "readings": ["コ"],
@@ -9969,11 +9970,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "占": {
-        "readings": ["セン", "てん"],  // added phonetic てん, but found no reason
+        "readings": ["セン", "てん"],
         "compounds": ["店", "貼", "粘", "点"],
         "non_compounds": [],
         "xrefs": ["占"],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "added phonetic てん, but found no reason"
     },
     "明": {
         "readings": ["メイ", "ミョウ", "ミン"],
@@ -10004,11 +10006,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "是": {
-        "readings": ["ゼ", "シ", "テイ", "ダイ"], // added ダイ, テイ to readings, no source
+        "readings": ["ゼ", "シ", "テイ", "ダイ"],
         "compounds": ["堤", "提", "題"],
         "non_compounds": [],
         "xrefs": ["是"],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "added ダイ, テイ to readings, no source"
     },
     "象": {
         "readings": ["ショウ", "ゾウ"],
@@ -10018,11 +10021,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "袁": {
-        "readings": ["えん", "おん"],  // TODO: missing compound info, search!
+        "readings": ["えん", "おん"],
         "compounds": ["遠, 園"],
         "non_compounds": [],
         "xrefs": [],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "TODO: missing compound info, search!"
     },
     "示": {
         "readings": ["ジ", "シ"],
@@ -10130,11 +10134,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "昜": {
-        "readings": ["ヨウ"],  // TODO: incomplete info, search!
+        "readings": ["ヨウ"],
         "compounds": ["場", "陽", "瘍", "湯", "腸"],
         "non_compounds": [],
         "xrefs": [],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "TODO: incomplete info, search!"
     },
     "道": {
         "readings": ["ドウ", "トウ"],
@@ -10158,11 +10163,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "賓": {
-        "readings": ["ヒン"],  // TODO info missing, search!
+        "readings": ["ヒン"],
         "compounds": ["浜"],
         "non_compounds": [],
         "xrefs": ["賓"],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "TODO info missing, search!"
     },
     "卜": {
         "readings": ["ボク", "ホク"],
@@ -10249,11 +10255,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "曽": {
-        "readings": ["ソウ", "ゾ",  "ソ", "ゾウ"],  // TODO: no list, search!
-        "compounds": ["贈", "僧", "増", "層", "噌", "憎"], // TODO: 噌 not in joyo!
+        "readings": ["ソウ", "ゾ",  "ソ", "ゾウ"],
+        "compounds": ["贈", "僧", "増", "層", "噌", "憎"],
         "non_compounds": [],
         "xrefs": [],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "TODO: no list, search! TODO: 噌 not in joyo!"
     },
     "菐": {
         "readings": ["ホク", "ボク"],
@@ -10361,11 +10368,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "者": {
-        "readings": ["シャ", "しょ"],　// added しょ, but found no reason
+        "readings": ["シャ", "しょ"],
         "compounds": ["都", "暑", "煮", "署", "箸", "諸", "書"],
         "non_compounds": [],
         "xrefs": ["者", "煮"],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "added しょ, but found no reason"
     },
     "甬": {
         "readings": ["ツウ", "ヨウ", "ユウ"],
@@ -10543,11 +10551,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "畐": {
-        "readings": ["フク", "ヒョク", "ヒキ"],  // TODO incomplete, search !
+        "readings": ["フク", "ヒョク", "ヒキ"],
         "compounds": ["富", "福", "副", "幅"],
         "non_compounds": [],
         "xrefs": [],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "TODO incomplete, search !"
     },
     "次": {
         "readings": ["ジ", "シ"],
@@ -10571,11 +10580,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "賁": {
-        "readings": ["ヒ", "ホン", "フン"], // TODO no info, search!
+        "readings": ["ヒ", "ホン", "フン"],
         "compounds": ["憤", "噴", "墳"],
         "non_compounds": [],
         "xrefs": [],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "TODO no info, search!"
     },
     "冓": {
         "readings": ["コウ"],
@@ -10767,11 +10777,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "僉": {
-        "readings": ["ケン"],  // TODO: no list, search!
+        "readings": ["ケン"],
         "compounds": ["倹", "険", "験", "検", "剣"],
         "non_compounds": [],
         "xrefs": [],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "TODO: no list, search!"
     },
     "則": {
         "readings": ["ソク"],
@@ -10858,11 +10869,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "戠": {
-        "readings": ["ショク", "シ", "シキ"],  // TODO: no list, search!
+        "readings": ["ショク", "シ", "シキ"],
         "compounds": ["職", "識", "織"],
         "non_compounds": [],
         "xrefs": [],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "TODO: no list, search!"
     },
     "郷": {
         "readings": ["キョウ", "ゴウ"],
@@ -10893,11 +10905,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "雚": {
-        "readings": ["カン"],  // TODO: no list, search!
+        "readings": ["カン"],
         "compounds": ["歓", "観"],
         "non_compounds": [],
         "xrefs": [],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "TODO: no list, search!"
     },
     "隺": {
         "readings": ["カク", "コク"],
@@ -10935,11 +10948,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "要": {
-        "readings": ["ヨウ"],  // TODO: no list, search!
+        "readings": ["ヨウ"],
         "compounds": ["腰"],
         "non_compounds": [],
         "xrefs": ["要"],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "TODO: no list, search!"
     },
     "票": {
         "readings": ["ヒョウ"],
@@ -11047,11 +11061,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "受": {
-        "readings": ["ジュ", "ズ"],  // TODO: incomplete, search!
+        "readings": ["ジュ", "ズ"],
         "compounds": ["授"],
         "non_compounds": [],
         "xrefs": ["受"],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "TODO: incomplete, search!"
     },
     "妾": {
         "readings": ["ショウ"],
@@ -11061,11 +11076,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "夜": {
-        "readings": ["ヤ"],  // TODO: no list, search!
+        "readings": ["ヤ"],
         "compounds": ["液"],
         "non_compounds": [],
         "xrefs": ["夜"],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "TODO: no list, search!"
     },
     "敄": {
         "readings": ["ブ", "ム"],
@@ -11082,25 +11098,28 @@ var phonetic_db = {
         "quality": -1.0
     },
     "熒": {
-        "readings": ["エイ", "エイ", "ギョウ"],  // TODO no list, search
+        "readings": ["エイ", "エイ", "ギョウ"],
         "compounds": ["労", "栄", "蛍", "営"],
         "non_compounds": [],
         "xrefs": [],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "TODO no list, search"
     },
     "复": {
-        "readings": ["フク", "フウ", "ブク", "ブ"],  // TODO: no list, search!
+        "readings": ["フク", "フウ", "ブク", "ブ"],
         "compounds": ["復", "腹", "複", "覆"],
         "non_compounds": [],
         "xrefs": ["复", "畐"],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "TODO: no list, search!"
     },
     "咸": {
-        "readings": ["カン", "ゲン"],  // TODO: no list, search!
+        "readings": ["カン", "ゲン"],
         "compounds": ["減", "感"],
         "non_compounds": [],
         "xrefs": [],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "TODO: no list, search!"
     },
     "感": {
         "readings": ["カン"],
@@ -11124,11 +11143,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "責": {
-        "readings": ["セキ", "シャク"],  // TODO: no list, search
+        "readings": ["セキ", "シャク"],
         "compounds": ["積", "債", "漬", "績", "跡"],
         "non_compounds": [],
         "xrefs": ["責", "朿"],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "TODO: no list, search"
     },
     "侖": {
         "readings": ["リン"],
@@ -11180,11 +11200,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "旨": {
-        "readings": ["シ", "ケイ"],    // two different components with the same look, just merge
+        "readings": ["シ", "ケイ"],
         "compounds": ["指", "脂", "詣", "稽"],
         "non_compounds": [],
         "xrefs": ["旨"],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "two different components with the same look, just merge"
     },
     "相": {
         "readings": ["ソウ", "ショウ"],
@@ -11201,11 +11222,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "幵": {
-        "readings": ["ケン"],   // no list, search!
+        "readings": ["ケン"],
         "compounds": ["研"],
         "non_compounds": [],
         "xrefs": [],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "no list, search!"
     },
     "升": {
         "readings": ["ショウ"],
@@ -11222,11 +11244,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "炎": {
-        "readings": ["エン"],  // why often だん?
+        "readings": ["エン"],
         "compounds": ["淡", "談"],
         "non_compounds": [],
         "xrefs": ["炎"],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "why often だん?"
     },
     "喬": {
         "readings": ["キョウ", "ギョウ"],
@@ -11250,18 +11273,20 @@ var phonetic_db = {
         "quality": -1.0
     },
     "㐬": {
-        "readings": ["リュウ", "ル"],  // TODO: no list, search!
+        "readings": ["リュウ", "ル"],
         "compounds": ["硫", "流"],
         "non_compounds": [],
         "xrefs": [],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "TODO: no list, search!"
     },
     "㫃": {
-        "readings": ["リョ", "ロ"], // no list, search, limited info!
+        "readings": ["リョ", "ロ"],
         "compounds": ["旅"],
         "non_compounds": ["旋", "施", "旗", "族"],
         "xrefs": [],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "no list, search, limited info!"
     },
     "民": {
         "readings": ["ミン"],
@@ -11278,11 +11303,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "岡": {
-        "readings": ["コウ"],     // TODO: incomplete list, search!
+        "readings": ["コウ"],
         "compounds": ["綱", "鋼", "剛"],
         "non_compounds": [],
         "xrefs": ["岡"],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "TODO: incomplete list, search!"
     },
     "罔": {
         "readings": ["モウ", "ボウ", "ム"],
@@ -11334,11 +11360,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "关": {
-        "readings": ["ショウ", "ソウ"],  // TODO: incomplete, search!
+        "readings": ["ショウ", "ソウ"],
         "compounds": ["送", "咲", "笑"],
         "non_compounds": ["朕"],
         "xrefs": [],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "TODO: incomplete, search!"
     },
     "屈": {
         "readings": ["クツ"],
@@ -11362,11 +11389,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "滕": {
-        "readings": ["トウ", "ドウ"],  // TODO: no list, search!
+        "readings": ["トウ", "ドウ"],
         "compounds": ["藤"],
         "non_compounds": [],
         "xrefs": [],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "TODO: no list, search!"
     },
     "屋": {
         "readings": ["オク"],
@@ -11404,11 +11432,12 @@ var phonetic_db = {
         "quality": -1.0
     },
     "曹": {
-        "readings": ["ソウ", "ゾウ"],  // no list, search!
+        "readings": ["ソウ", "ゾウ"],
         "compounds": ["遭", "槽"],
         "non_compounds": [],
         "xrefs": ["曹"],
-        "quality": -1.0
+        "quality": -1.0,
+        "comment": "no list, search!"
     },
     "農": {
         "readings": ["ノウ"],
@@ -11430,8 +11459,8 @@ var phonetic_db = {
         "non_compounds": [],
         "xrefs": [],
         "quality": -1.0
-    },
-};
+    }
+}`);
 
 phonetics_template = {
     "": {

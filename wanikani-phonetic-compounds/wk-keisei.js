@@ -24,6 +24,8 @@ window.wk_keisei = {};
 (function(gobj) {
     "use strict";
 
+    var wki = null;
+
     /*
     // https://stackoverflow.com/a/39065147/2699475
     const Item = ({ url, img, title }) => `
@@ -41,16 +43,145 @@ window.wk_keisei = {};
     ].map(Item).join(''));
     */
 
-    function run()
+    function createInfoElem()
     {
-        var wki = new WKInteraction();
-        wki.init();
+        var $elem = $("<aside></aside>")
+                    .attr("id", "KEISEI-phonetic-info")
+                    .addClass("additional-info");
 
+        var $ound = $("<p></p>")
+                    .attr("id", "KEISEI-compound-info")
+                    .append('<h3><i class="icon-info-sign"></i> Phonetic-Semantic Composition</h3>');
+        var $nent = $("<p></p>")
+                    .attr("id", "KEISEI-component-info");
+
+        $elem.append($ound);
+        $elem.append($nent);
+
+        return $elem;
+    }
+
+    const KTYPE_UNKNOWN = (curKanji, dbKanji) => `
+        <p>The kanji ${curKanji} has an unknown origin or is not yet listed in the database, stay tuned!</p>
+    `;
+    const KTYPE_PCOMP = (curKanji, dbKanji, curPhon, dbPhon) => `
+        <p>The kanji ${curKanji} was created using semantic-phonetic composition.
+        The phonetic component is ${curPhon}.</p>
+    `;
+    const KTYPE_OTHER = (curKanji, dbKanji) => `
+        <p>The kanji ${curKanji} is not considered a semantic-phonetic composition.</p>
+    `;
+    const KTYPE_ERROR = (curKanji, msg) => `
+        <p>An error occured while processing kanji '${curKanji}'! Message was: '${msg}'</p>
+    `;
+
+    const PHON_INFO = (curPhon, dbPhon) => `
+        <span>
+            <span class="radical-icon" lang="ja">
+                <span class="japanese-font-styling-correction" style="display: margin-top: 0.1em;">${curPhon}</span>
+            </span>
+            <table style="display: inline-table;">
+                <tr><td><b>Readings</b>: ${dbPhon.readings}</td></tr>
+                <tr><td></td></tr>
+            </table>
+        </span>
+        <p>
+            <table id="KEISEI-curKanji-table" style="line-height:2;" align="center" width="200px"></table>
+            <span style="display: block; text-align: center; cursor: pointer;">
+                Show other compounds <i class="icon-chevron-down"></i>
+            </span>
+            <table id="KEISEI-phonetic-table" style="line-height:2;" align="center" width="200px"></table>
+        </p>
+    `;
+    const PHON_TABLE = ({kanji, dbKanji}) => `
+        <tr>
+            <td><span class="kanji-highlight" lang="ja" style="padding: 6px"> ${kanji} </span></td>
+            <td>${dbKanji.readings}</td>
+        </tr>
+    `;
+
+    function injectInfoElem()
+    {
+        switch(wki.curPage)
+        {
+            case wki.PageEnum.kanji:
+                $("section#note-reading").before(createInfoElem());
+                break;
+            case wki.PageEnum.reviews:
+                break;
+            case wki.PageEnum.lessons:
+                break;
+            default:
+                console.log("WKPSC: Unknown page type, cannot inject info!");
+        }
+    }
+
+    function populateInfoElem()
+    {
         var curKanji = wki.getKanji();
 
-        console.log(`The kanji in this page is ${curKanji}`);
+        if (!kanji_db || !(curKanji in kanji_db))
+        {
+            $("#KEISEI-compound-info").append(
+                KTYPE_ERROR(
+                    curKanji,
+                    "The requested kanji is not in the database (or even no db)!"
+            ));
+            return;
+        }
 
-        console.log("This kanji has readings ", kanji_db[curKanji].readings);
+        var dbKanji = kanji_db[curKanji];
+
+
+        if (dbKanji.type === "comp_phonetic")
+        {
+            var curPhon = dbKanji.phonetic;
+
+            if (!phonetic_db || !(curPhon in phonetic_db))
+            {
+                $("#KEISEI-compound-info").append(
+                    KTYPE_ERROR(
+                        curKanji,
+                        "The phonetic element of this kanji was not in the database (or even no db)!"
+                ));
+                return;
+            }
+
+            var dbPhon = phonetic_db[curPhon];
+
+            $("#KEISEI-compound-info").append(KTYPE_PCOMP(curKanji, dbKanji, curPhon, dbPhon));
+            $("#KEISEI-component-info").append(PHON_INFO(curPhon, dbPhon));
+
+            var phon_list = [];
+
+            for (var i = 0; i < dbPhon.compounds.length; i++)
+            {
+                var kanji = dbPhon.compounds[i];
+
+                if (kanji != curKanji)
+                    phon_list.push({kanji: kanji, dbKanji: kanji_db[kanji]});
+            }
+
+            $('#KEISEI-curKanji-table').html([{kanji: curKanji, dbKanji: dbKanji}].map(PHON_TABLE).join(''));
+            $('#KEISEI-phonetic-table').html(phon_list.map(PHON_TABLE).join(''));
+        }
+        else if (dbKanji.type === "no_clue")
+        {
+            $("#KEISEI-compound-info").append(KTYPE_OTHER(curKanji, dbKanji));
+        }
+        else
+        {
+            $("#KEISEI-compound-info").append(KTYPE_UNKNOWN(curKanji, dbKanji));
+        }
+    }
+
+    function run()
+    {
+        wki = new WKInteraction();
+        wki.init();
+
+        injectInfoElem();
+        populateInfoElem();
     }
 
     run();
