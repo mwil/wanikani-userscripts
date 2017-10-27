@@ -43,6 +43,7 @@ window.wk_keisei = {};
 
         $elem.append($ound);
         $elem.append($grid);
+        $elem.append("<p></p>");
         $elem.append($expl);
 
         return $elem;
@@ -52,26 +53,22 @@ window.wk_keisei = {};
     // #########################################################################
     // Template strings with es6 features
     // https://stackoverflow.com/a/39065147/2699475
-    const ktype_unknown_msg = (curKanji, dbKanji) => `
-        The kanji ${curKanji} has an unknown origin or is not yet listed in the database, stay tuned!
-    `;
-    const ktype_phonetic_msg = (curKanji, dbKanji, curPhon, dbPhon) => `
-        <p>The kanji ${curKanji} was created using semantic-phonetic composition.
+    const ktype_unknown_msg = (curKanji, dbKanji) =>
+       `<p>The kanji ${curKanji} has an unknown origin or is not yet listed in the database, stay tuned!</p>`;
+    const ktype_phonetic_msg = (curKanji, dbKanji, curPhon, dbPhon) =>
+       `<p>The kanji ${curKanji} was created using semantic-phonetic composition.
         The phonetic component is ${curPhon}.
-        More text ...</p>
-    `;
-    const ktype_other_msg = (curKanji, dbKanji) => `
-        The kanji ${curKanji} is not considered a semantic-phonetic composition.
+        More text ...</p>`;
+    const ktype_other_msg = (curKanji, dbKanji) =>
+       `<p>The kanji ${curKanji} is not considered a semantic-phonetic composition.
         It may still contain a component that is used phonetically in other kanji,
-        this information will be added in a future userscript version.
-    `;
-    const error_msg = (curKanji, msg) => `
-        An error occured while processing kanji '${curKanji}'! Message was: '${msg}'
-    `;
+        this information will be added in a future userscript version.</p>`;
+    const error_msg = (curKanji, msg) =>
+       `<p>An error occured while processing kanji '${curKanji}'! Message was: '${msg}'</p>`;
     // #########################################################################
 
-    const li_phon_char = ({kanji, dbKanji, badge, kanji_id}) => `
-        <li id="${kanji_id}" class="character-item">
+    const li_phon_char = ({kanji, dbKanji, badge, kanji_id}) =>
+       `<li id="${kanji_id}" class="character-item">
             <span lang="ja" class="${badge}"></span>
             <a href="">
                 <span class="character" lang="ja">${kanji}</span>
@@ -80,8 +77,7 @@ window.wk_keisei = {};
                     <li>Meaning</li>
                 </ul>
             </a>
-        </li>
-    `;
+        </li>`;
     // #########################################################################
 
     // #########################################################################
@@ -91,7 +87,6 @@ window.wk_keisei = {};
         {
             case wki.PageEnum.kanji:
                 $("section#note-reading").before(createInfoElem());
-                $("#KEISEI-phonetic-grid").wrap("<p></p>");
 
                 break;
             case wki.PageEnum.reviews:
