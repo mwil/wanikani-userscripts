@@ -10,9 +10,9 @@
 // @include     https://www.wanikani.com/review/session*
 // @include     http://www.wanikani.com/lesson/session*
 // @include     https://www.wanikani.com/lesson/session*
-// @require     http://localhost:8088/static/wk-phon-db-niko.js
-// @require     http://localhost:8088/static/wk-interaction.js
-// @require     http://localhost:8088/static/wk-chargrid.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/wk-phon-db-niko.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/utility/wk_interaction.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/utility/wk_chargrid.js
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
 // @grant       none
 // @run-at      document-end
