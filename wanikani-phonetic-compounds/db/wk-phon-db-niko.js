@@ -103,12 +103,12 @@ var kanji_db = JSON.parse(`
         "type": "hieroglyph"
     },
     "山": {
-		"readings": ["サン", "セン"],
+		"readings": ["サン", "せん"],
 		"phonetic": "山",
         "type": "hieroglyph"
     },
     "川": {
-		"readings": ["セン"],
+		"readings": ["せん"],
         "type": "hieroglyph"
     },
     "五": {
@@ -211,7 +211,7 @@ var kanji_db = JSON.parse(`
         "type": "hieroglyph"
     },
     "白": {
-		"readings": ["ハク", "ビャク"],
+		"readings": ["はく", "ビャク"],
 		"phonetic": "白",
         "type": "unknown"
     },
@@ -230,7 +230,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "百": {
-		"readings": ["ヒャク", "ハク"],
+		"readings": ["ヒャク", "はく"],
         "type": "comp_indicative"
     },
     "年": {
@@ -242,7 +242,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "先": {
-		"readings": ["セン"],
+		"readings": ["せん"],
 		"phonetic": "先",
         "type": "comp_indicative"
     },
@@ -368,7 +368,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "森": {
-		"readings": ["シン"],
+		"readings": ["しん"],
         "type": "comp_indicative"
     },
 
@@ -451,7 +451,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "心": {
-		"readings": ["シン"],
+		"readings": ["しん"],
 		"phonetic": "心",
         "type": "hieroglyph"
     },
@@ -475,7 +475,7 @@ var kanji_db = JSON.parse(`
         "type": "hieroglyph"
     },
     "父": {
-		"readings": ["フ", "ホ"],
+		"readings": ["ふ", "ほ"],
         "type": "comp_indicative"
     },
     "牛": {
@@ -483,7 +483,7 @@ var kanji_db = JSON.parse(`
         "type": "hieroglyph"
     },
     "半": {
-		"readings": ["ハン"],
+		"readings": ["はん"],
 		"phonetic": "半",
         "type": "comp_indicative"
     },
@@ -516,7 +516,7 @@ var kanji_db = JSON.parse(`
         "type": "hieroglyph"
     },
     "外": {
-		"readings": ["ガイ", "ゲ", "ウイ"],
+		"readings": ["がい", "ゲ", "ウイ"],
         "type": "comp_indicative"
     },
     "広": {
@@ -618,11 +618,11 @@ var kanji_db = JSON.parse(`
         "type": "hieroglyph"
     },
     "色": {
-		"readings": ["しょく", "シキ"],
+		"readings": ["しょく", "しき"],
         "type": "comp_indicative"
     },
     "行": {
-		"readings": ["こう", "ギョウ", "アン"],
+		"readings": ["こう", "ぎょう", "アン"],
 		"phonetic": "行",
         "type": "hieroglyph"
     },
@@ -668,7 +668,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "形": {
-		"readings": ["けい", "ギョウ"],
+		"readings": ["けい", "ぎょう"],
         "type": "unknown",
         "comment": "TODO phonetic 开"
     },
@@ -766,7 +766,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "歩": {
-		"readings": ["ホ", "ブ", "フ"],
+		"readings": ["ほ", "ブ", "ふ"],
 		"phonetic": "歩",
         "type": "comp_indicative"
     },
@@ -790,7 +790,7 @@ var kanji_db = JSON.parse(`
         "type": "unknown"
     },
     "前": {
-		"readings": ["ゼン", "セン"],
+		"readings": ["ゼン", "せん"],
         "type": "comp_indicative"
     },
     "南": {
@@ -853,7 +853,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "風": {
-		"readings": ["フウ", "フ"],
+		"readings": ["フウ", "ふ"],
         "type": "unknown",
         "comment": "TODO: maybe phonetic of 凡"
     },
@@ -948,7 +948,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "船": {
-		"readings": ["セン"],
+		"readings": ["せん"],
         "phonetic": "㕣",
         "type": "comp_phonetic"
     },
@@ -1019,7 +1019,7 @@ var kanji_db = JSON.parse(`
         "type": "unknown"
     },
     "番": {
-		"readings": ["バン", "ハン", "ハ"],
+		"readings": ["バン", "はん", "ハ"],
 		"phonetic": "番",
         "type": "hieroglyph"
     },
@@ -1043,12 +1043,12 @@ var kanji_db = JSON.parse(`
         "type": "unknown"
     },
     "新": {
-		"readings": ["シン"],
+		"readings": ["しん"],
 		"phonetic": "新",
         "type": "unknown"
     },
     "楽": {
-		"readings": ["ガク", "ラク", "ゴウ", "ギョウ"],
+		"readings": ["ガク", "ラク", "ゴウ", "ぎょう"],
 		"phonetic": "楽",
         "type": "hieroglyph"
     },
@@ -1086,7 +1086,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "読": {
-		"readings": ["ドク", "トク", "とう"],
+		"readings": ["どく", "とく", "とう"],
         "phonetic": "売",
         "type": "comp_phonetic"
     },
@@ -1096,12 +1096,12 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "線": {
-		"readings": ["セン"],
+		"readings": ["せん"],
         "phonetic": "泉",
         "type": "comp_phonetic"
     },
     "親": {
-		"readings": ["シン"],
+		"readings": ["しん"],
         "phonetic": "亲",
         "type": "comp_phonetic"
     },
@@ -1143,12 +1143,12 @@ var kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "反": {
-		"readings": ["ハン","ホン","タン"],
+		"readings": ["はん","ホン","タン"],
 		"phonetic": "反",
         "type": "comp_indicative"
     },
     "央": {
-		"readings": ["オウ", "よう", "エイ"],
+		"readings": ["オウ", "よう", "えい"],
 		"phonetic": "央",
         "type": "unknown"
     },
@@ -1158,7 +1158,7 @@ var kanji_db = JSON.parse(`
         "type": "unknown"
     },
     "申": {
-		"readings": ["シン"],
+		"readings": ["しん"],
 		"phonetic": "申",
         "type": "hieroglyph"
     },
@@ -1263,7 +1263,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "式": {
-		"readings": ["シキ", "しょく"],
+		"readings": ["しき", "しょく"],
         "phonetic": "弋",
         "type": "comp_phonetic"
     },
@@ -1310,7 +1310,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "坂": {
-		"readings": ["ハン", "バン"],
+		"readings": ["はん", "バン"],
         "phonetic": "反",
         "type": "comp_phonetic"
     },
@@ -1347,11 +1347,11 @@ var kanji_db = JSON.parse(`
         "type": "hieroglyph"
     },
     "身": {
-		"readings": ["シン"],
+		"readings": ["しん"],
         "type": "indicative"
     },
     "返": {
-		"readings": ["ヘン", "ハン", "ホン"],
+		"readings": ["へん", "はん", "ホン"],
         "phonetic": "反",
         "type": "comp_phonetic"
     },
@@ -1420,12 +1420,12 @@ var kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "板": {
-		"readings": ["ハン", "バン"],
+		"readings": ["はん", "バン"],
         "phonetic": "反",
         "type": "comp_phonetic"
     },
     "泳": {
-		"readings": ["エイ"],
+		"readings": ["えい"],
         "phonetic": "永",
         "type": "comp_phonetic"
     },
@@ -1494,12 +1494,13 @@ var kanji_db = JSON.parse(`
         "type": "unknown"
     },
     "乗": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["じょう", "しょう"],
+        "type": "unknown"
     },
     "係": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["けい"],
+		"phonetic": "系",
+        "type": "comp_phonetic"
     },
     "品": {
 		"readings": ["ヒン", "ホン"],
@@ -1515,7 +1516,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "屋": {
-		"readings": ["オク"],
+		"readings": ["おく"],
 		"phonetic": "屋",
         "type": "comp_indicative"
     },
@@ -1584,8 +1585,9 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "発": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["はつ", "ほつ"],
+		"phonetic": "癶",
+        "type": "comp_phonetic"
     },
     "研": {
 		"readings": ["けん", "ゲン"],
@@ -1593,13 +1595,13 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "神": {
-		"readings": ["シン", "ジン"],
+		"readings": ["しん", "ジン"],
         "phonetic": "申",
         "type": "comp_phonetic"
     },
     "秒": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["びょう"],
+        "type": "comp_indicative"
     },
     "級": {
 		"readings": ["キュウ"],
@@ -1607,8 +1609,8 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "美": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["び", "み"],
+        "type": "comp_indicative"
     },
     "負": {
 		"readings": ["ふ", "ぶ", "ふう"],
@@ -1620,12 +1622,12 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "追": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["つい"],
+        "type": "unknown"
     },
     "面": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["めん", "べん"],
+        "type": "unknown"
     },
     "島": {
 		"readings": ["とう"],
@@ -1648,8 +1650,8 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "宮": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["きゅう", "ぐう", "く"],
+        "type": "unknown"
     },
     "庫": {
 		"readings": ["こ", "く"],
@@ -1730,8 +1732,8 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "宿": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["しゅく", "すく"],
+        "type": "unknown"
     },
     "帳": {
 		"readings": ["ちょう"],
@@ -1739,7 +1741,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "族": {
-		"readings": ["ゾク"],
+		"readings": ["ぞく"],
         "type": "comp_indicative"
     },
     "深": {
@@ -1751,8 +1753,8 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "祭": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["さい"],
+        "type": "comp_indicative"
     },
     "第": {
 		"readings": ["ダイ", "テイ"],
@@ -2053,12 +2055,12 @@ var kanji_db = JSON.parse(`
         "type": "unknown"
     },
     "不": {
-		"readings": ["フ", "ブ"],
+		"readings": ["ふ", "ブ"],
 		"phonetic": "不",
         "type": "hieroglyph"
     },
     "夫": {
-		"readings": ["フ", "フウ", "ブ"],
+		"readings": ["ふ", "フウ", "ブ"],
 		"phonetic": "夫",
         "type": "hieroglyph"
     },
@@ -2082,7 +2084,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "必": {
-		"readings": ["ヒツ"],
+		"readings": ["ひつ"],
 		"phonetic": "必",
         "type": "unknown"
     },
@@ -2111,7 +2113,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "付": {
-		"readings": ["フ"],
+		"readings": ["ふ"],
 		"phonetic": "付",
         "type": "comp_indicative"
     },
@@ -2333,7 +2335,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "参": {
-		"readings": ["サン", "シン"],
+		"readings": ["サン", "しん"],
 		"phonetic": "参",
         "type": "unknown"
     },
@@ -2353,7 +2355,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "府": {
-		"readings": ["フ"],
+		"readings": ["ふ"],
         "phonetic": "付",
         "type": "comp_phonetic"
     },
@@ -2368,7 +2370,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "毒": {
-		"readings": ["ドク"],
+		"readings": ["どく"],
         "type": "comp_indicative"
     },
     "泣": {
@@ -2399,7 +2401,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "英": {
-		"readings": ["エイ"],
+		"readings": ["えい"],
         "phonetic": "央",
         "type": "comp_phonetic"
     },
@@ -2450,7 +2452,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "栄": {
-		"readings": ["エイ"],
+		"readings": ["えい"],
         "phonetic": "熒",
         "type": "comp_phonetic"
     },
@@ -2546,7 +2548,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "特": {
-		"readings": ["トク", "ドク"],
+		"readings": ["とく", "どく"],
         "phonetic": "寺",
         "type": "comp_phonetic"
     },
@@ -2638,7 +2640,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "清": {
-		"readings": ["セイ", "しょう", "シン"],
+		"readings": ["セイ", "しょう", "しん"],
         "phonetic": "青",
         "type": "comp_phonetic"
     },
@@ -2676,7 +2678,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "博": {
-		"readings": ["ハク", "バク"],
+		"readings": ["はく", "バク"],
         "phonetic": "尃",
         "type": "comp_phonetic"
     },
@@ -2689,7 +2691,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "街": {
-		"readings": ["ガイ", "カイ"],
+		"readings": ["がい", "カイ"],
         "phonetic": "圭",
         "type": "comp_phonetic"
     },
@@ -2698,13 +2700,13 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "景": {
-		"readings": ["けい", "エイ"],
+		"readings": ["けい", "えい"],
         "phonetic": "京",
         "type": "comp_phonetic"
     },
     "最": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["さい"],
+        "type": "unknown"
     },
     "量": {
 		"readings": ["りょう"],
@@ -2712,8 +2714,9 @@ var kanji_db = JSON.parse(`
         "type": "unknown"
     },
     "満": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["まん", "ばん"],
+		"phonetic": "㒼",
+        "type": "comp_phonetic"
     },
     "焼": {
 		"readings": [],
@@ -2763,7 +2766,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "飯": {
-		"readings": ["ハン"],
+		"readings": ["はん"],
         "phonetic": "反",
         "type": "comp_phonetic"
     },
@@ -2797,7 +2800,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "続": {
-		"readings": ["ゾク", "しょく"],
+		"readings": ["ぞく", "しょく"],
         "phonetic": "売",
         "type": "comp_phonetic"
     },
@@ -2898,7 +2901,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "選": {
-		"readings": ["セン"],
+		"readings": ["せん"],
         "phonetic": "巽",
         "type": "comp_phonetic"
     },
@@ -2946,7 +2949,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "議": {
-		"readings": ["ギ"],
+		"readings": ["ぎ"],
         "phonetic": "義",
         "type": "comp_phonetic"
     },
@@ -2962,8 +2965,9 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "支": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["し"],
+		"composition": ["十", "又"],
+        "type": "comp_indicative"
     },
     "比": {
 		"readings": ["ヒ"],
@@ -2980,7 +2984,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "永": {
-		"readings": ["エイ", "よう"],
+		"readings": ["えい", "よう"],
 		"phonetic": "永",
         "type": "unknown"
     },
@@ -3059,7 +3063,7 @@ var kanji_db = JSON.parse(`
         "type": "unknown"
     },
     "判": {
-		"readings": ["ハン", "バン", "ほう"],
+		"readings": ["はん", "バン", "ほう"],
         "phonetic": "半",
         "type": "comp_phonetic"
     },
@@ -3097,12 +3101,15 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "技": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["ぎ"],
+		"phonetic": "支",
+        "type": "comp_phonetic"
     },
     "状": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["じょう"],
+		"composition": ["犬", "爿"],
+		"phonetic": "爿",
+        "type": "comp_phonetic"
     },
     "防": {
 		"readings": ["ぼう"],
@@ -3135,8 +3142,9 @@ var kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "効": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["こう"],
+		"phonetic": "交",
+        "type": "comp_phonetic"
     },
     "妻": {
 		"readings": [],
@@ -3161,12 +3169,14 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "易": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["えき", "い"],
+        "type": "unknown"
     },
     "枝": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["し", "き", "ぎ"],
+		"phonetic": "支",
+        "type": "comp_phonetic",
+        "comment": "added き, ぎ, no reason found"
     },
     "河": {
 		"readings": ["か"],
@@ -3174,7 +3184,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "版": {
-		"readings": ["ハン"],
+		"readings": ["はん"],
         "phonetic": "反",
         "type": "comp_phonetic"
     },
@@ -3218,7 +3228,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "独": {
-		"readings": ["ドク", "トク"],
+		"readings": ["どく", "とく"],
         "phonetic": "蜀",
         "type": "comp_phonetic"
     },
@@ -3453,7 +3463,7 @@ var kanji_db = JSON.parse(`
         "comment": "obscure 'quiver' phonetic"
     },
     "営": {
-		"readings": ["エイ"],
+		"readings": ["えい"],
         "phonetic": "熒",
         "type": "comp_phonetic"
     },
@@ -3462,12 +3472,12 @@ var kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "富": {
-		"readings": ["フ", "フウ"],
+		"readings": ["ふ", "フウ"],
         "phonetic": "畐",
         "type": "comp_phonetic"
     },
     "属": {
-		"readings": ["ゾク", "しょく"],
+		"readings": ["ぞく", "しょく"],
         "phonetic": "蜀",
         "type": "comp_phonetic"
     },
@@ -3559,15 +3569,16 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "禁": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["きん"],
+		"composition": ["林", "示"],
+        "type": "comp_indicative"
     },
     "罪": {
 		"readings": ["ザイ"],
         "type": "comp_indicative"
     },
     "義": {
-		"readings": ["ギ"],
+		"readings": ["ぎ"],
 		"phonetic": "義",
         "type": "comp_indicative"
     },
@@ -3732,7 +3743,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "編": {
-		"readings": ["ヘン"],
+		"readings": ["へん"],
         "phonetic": "扁",
         "type": "comp_phonetic"
     },
@@ -3749,7 +3760,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "衛": {
-		"readings": ["エイ", "エ"],
+		"readings": ["えい", "エ"],
         "phonetic": "韋",
         "type": "comp_phonetic"
     },
@@ -3782,12 +3793,12 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "織": {
-		"readings": ["しょく", "シキ"],
+		"readings": ["しょく", "しき"],
         "phonetic": "戠",
         "type": "comp_phonetic"
     },
     "職": {
-		"readings": ["しょく", "シキ"],
+		"readings": ["しょく", "しき"],
         "phonetic": "戠",
         "type": "comp_phonetic"
     },
@@ -3797,7 +3808,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "識": {
-		"readings": ["シキ", "し", "しょく"],
+		"readings": ["しき", "し", "しょく"],
         "phonetic": "戠",
         "type": "comp_phonetic"
     },
@@ -3836,7 +3847,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "片": {
-		"readings": ["ヘン"],
+		"readings": ["へん"],
         "type": "hieroglyph"
     },
     "冊": {
@@ -3916,8 +3927,8 @@ var kanji_db = JSON.parse(`
         "type": "unknown"
     },
     "系": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["けい"],
+        "type": "comp_indicative"
     },
     "卵": {
 		"readings": ["ラン"],
@@ -4065,7 +4076,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "映": {
-		"readings": ["エイ"],
+		"readings": ["えい"],
         "phonetic": "央",
         "type": "comp_phonetic"
     },
@@ -4078,7 +4089,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "洗": {
-		"readings": ["セン"],
+		"readings": ["せん"],
         "phonetic": "先",
         "type": "comp_phonetic"
     },
@@ -4091,7 +4102,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "泉": {
-		"readings": ["セン"],
+		"readings": ["せん"],
 		"phonetic": "泉",
         "type": "hieroglyph"
     },
@@ -4195,7 +4206,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "針": {
-		"readings": ["シン"],
+		"readings": ["しん"],
         "phonetic": "十",
         "type": "comp_phonetic"
     },
@@ -4374,7 +4385,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "補": {
-		"readings": ["ホ", "ふ"],
+		"readings": ["ほ", "ふ"],
         "phonetic": "甫",
         "type": "comp_phonetic"
     },
@@ -4449,7 +4460,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "疑": {
-		"readings": ["ギ"],
+		"readings": ["ぎ"],
 		"phonetic": "疑",
         "type": "comp_indicative"
     },
@@ -4650,7 +4661,7 @@ var kanji_db = JSON.parse(`
         "type": "hieroglyph"
     },
     "凡": {
-		"readings": ["ボン", "ハン"],
+		"readings": ["ボン", "はん"],
         "type": "hieroglyph"
     },
     "勺": {
@@ -4710,7 +4721,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "匹": {
-		"readings": ["ヒツ"],
+		"readings": ["ひつ"],
         "type": "unknown"
     },
     "厄": {
@@ -4766,7 +4777,7 @@ var kanji_db = JSON.parse(`
         "comment": "TODO: strange"
     },
     "仙": {
-		"readings": ["セン"],
+		"readings": ["せん"],
         "phonetic": "山",
         "type": "comp_phonetic"
     },
@@ -4785,7 +4796,7 @@ var kanji_db = JSON.parse(`
         "type": "hieroglyph"
     },
     "占": {
-		"readings": ["セン"],
+		"readings": ["せん"],
 		"phonetic": "占",
         "type": "comp_indicative"
     },
@@ -4941,7 +4952,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "朴": {
-		"readings": ["ボク", "ハク"],
+		"readings": ["ボク", "はく"],
         "phonetic": "卜",
         "type": "comp_phonetic"
     },
@@ -4991,8 +5002,9 @@ var kanji_db = JSON.parse(`
         "type": "unknown"
     },
     "迅": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["じん"],
+		"phonetic": "卂",
+        "type": "comp_phonetic"
     },
     "亜": {
 		"readings": ["あ"],
@@ -5026,7 +5038,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "伸": {
-		"readings": ["シン"],
+		"readings": ["しん"],
         "phonetic": "申",
         "type": "comp_phonetic"
     },
@@ -5036,12 +5048,12 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "伯": {
-		"readings": ["ハク", "ハ"],
+		"readings": ["はく", "ハ"],
         "phonetic": "白",
         "type": "comp_phonetic"
     },
     "伴": {
-		"readings": ["ハン", "バン"],
+		"readings": ["はん", "バン"],
         "phonetic": "半",
         "type": "comp_phonetic"
     },
@@ -5171,7 +5183,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "扶": {
-		"readings": ["フ"],
+		"readings": ["ふ"],
         "phonetic": "夫",
         "type": "comp_phonetic"
     },
@@ -5205,12 +5217,13 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "狂": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["きょう"],
+        "type": "unknown",
+        "comment": "obsucre tone mark 㞷"
     },
     "秀": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["しゅう"],
+        "type": "unknown"
     },
     "肝": {
 		"readings": ["かん"],
@@ -5218,8 +5231,8 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "即": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["そく", "しゅく"],
+        "type": "comp_indicative"
     },
     "芳": {
 		"readings": ["ほう"],
@@ -5227,13 +5240,14 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "辛": {
-		"readings": ["シン"],
+		"readings": ["しん"],
 		"phonetic": "辛",
         "type": "hieroglyph"
     },
     "迎": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["げい", "きょう", "ごう"],
+		"phonetic": "卬",
+        "type": "comp_phonetic"
     },
     "邦": {
 		"readings": [],
@@ -5287,7 +5301,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "劾": {
-		"readings": ["ガイ"],
+		"readings": ["がい"],
         "phonetic": "蜀",
         "type": "comp_phonetic"
     },
@@ -5411,7 +5425,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "拍": {
-		"readings": ["ハク", "ヒョウ"],
+		"readings": ["はく", "ヒョウ"],
         "phonetic": "白",
         "type": "comp_phonetic"
     },
@@ -5489,12 +5503,12 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "泊": {
-		"readings": ["ハク"],
+		"readings": ["はく"],
         "phonetic": "白",
         "type": "comp_phonetic"
     },
     "泌": {
-		"readings": ["ヒツ", "ヒ"],
+		"readings": ["ひつ", "ヒ"],
         "phonetic": "必",
         "type": "comp_phonetic"
     },
@@ -5572,7 +5586,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "迫": {
-		"readings": ["ハク"],
+		"readings": ["はく"],
         "phonetic": "白",
         "type": "comp_phonetic"
     },
@@ -5587,7 +5601,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "附": {
-		"readings": ["フ", "ブ"],
+		"readings": ["ふ", "ブ"],
         "phonetic": "付",
         "type": "comp_phonetic"
     },
@@ -5656,7 +5670,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "俗": {
-		"readings": ["ゾク"],
+		"readings": ["ぞく"],
         "phonetic": "谷",
         "type": "comp_phonetic"
     },
@@ -5916,7 +5930,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "赴": {
-		"readings": ["フ"],
+		"readings": ["ふ"],
         "phonetic": "卜",
         "type": "comp_phonetic"
     },
@@ -6052,7 +6066,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "娠": {
-		"readings": ["シン"],
+		"readings": ["しん"],
         "phonetic": "辰",
         "type": "comp_phonetic"
     },
@@ -6111,7 +6125,7 @@ var kanji_db = JSON.parse(`
     },
     "恵": {
 		"readings": ["けい", "エ"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "悟": {
 		"readings": ["ご"],
@@ -6120,7 +6134,7 @@ var kanji_db = JSON.parse(`
     },
     "悩": {
 		"readings": ["ノウ", "どう"],
-        "type": "unprocessed",
+        "type": "unknown",
         "comment": "TODO: obscure phonetic component 𡿺?"
     },
     "扇": {
@@ -6128,20 +6142,20 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "振": {
-		"readings": ["シン"],
+		"readings": ["しん"],
         "phonetic": "辰",
         "type": "comp_phonetic"
     },
     "捜": {
 		"readings": ["そう"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "挿": {
 		"readings": [],
         "type": "unprocessed"
     },
     "捕": {
-		"readings": ["ホ", "ブ"],
+		"readings": ["ほ", "ブ"],
         "phonetic": "甫",
         "type": "comp_phonetic"
     },
@@ -6159,7 +6173,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "栓": {
-		"readings": ["セン"],
+		"readings": ["せん"],
         "phonetic": "全",
         "type": "comp_phonetic"
     },
@@ -6178,7 +6192,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "浦": {
-		"readings": ["ホ"],
+		"readings": ["ほ"],
         "phonetic": "甫",
         "type": "comp_phonetic"
     },
@@ -6215,7 +6229,7 @@ var kanji_db = JSON.parse(`
     },
     "畜": {
 		"readings": ["チク", "キク"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "珠": {
 		"readings": ["しゅ"],
@@ -6223,7 +6237,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "畔": {
-		"readings": ["ハン"],
+		"readings": ["はん"],
         "phonetic": "半",
         "type": "comp_phonetic"
     },
@@ -6259,7 +6273,7 @@ var kanji_db = JSON.parse(`
     },
     "称": {
 		"readings": ["しょう"],
-        "type": "unprocessed",
+        "type": "unknown",
         "comment": "obscure phonetic 爯"
     },
     "租": {
@@ -6352,11 +6366,11 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "辱": {
-		"readings": ["ジョク", "ニク"],
-        "type": "unprocessed"
+		"readings": ["じょく", "ニク"],
+        "type": "unknown"
     },
     "唇": {
-		"readings": ["シン"],
+		"readings": ["しん"],
         "phonetic": "辰",
         "type": "comp_phonetic"
     },
@@ -6367,7 +6381,7 @@ var kanji_db = JSON.parse(`
     },
     "逐": {
 		"readings": ["チク", "ジク"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "逓": {
 		"readings": [],
@@ -6393,7 +6407,7 @@ var kanji_db = JSON.parse(`
     },
     "陣": {
 		"readings": ["じん", "ちん"],
-        "type": "unprocessed",
+        "type": "unknown",
         "comment": "modified version of 陳"
     },
     "隻": {
@@ -6444,13 +6458,14 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "偏": {
-		"readings": ["ヘン"],
+		"readings": ["へん"],
         "phonetic": "扁",
         "type": "comp_phonetic"
     },
     "剰": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["じょう"],
+        "type": "unknown",
+        "comment": "maybe related to 乗"
     },
     "勘": {
 		"readings": [],
@@ -6594,7 +6609,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "旋": {
-		"readings": ["セン"],
+		"readings": ["せん"],
         "type": "comp_indicative"
     },
     "曹": {
@@ -6607,12 +6622,11 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "貫": {
-		"readings": [],
-		"phonetic": "貫",
-        "type": "unprocessed"
+		"readings": ["かん", "うん"],
+        "type": "unknown"
     },
     "涯": {
-		"readings": ["ガイ"],
+		"readings": ["がい"],
         "phonetic": "厓",
         "type": "comp_phonetic"
     },
@@ -6685,7 +6699,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "符": {
-		"readings": ["フ"],
+		"readings": ["ふ"],
         "phonetic": "付",
         "type": "comp_phonetic"
     },
@@ -6714,7 +6728,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "紳": {
-		"readings": ["シン"],
+		"readings": ["しん"],
         "phonetic": "申",
         "type": "comp_phonetic"
     },
@@ -6732,7 +6746,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "舶": {
-		"readings": ["ハク"],
+		"readings": ["はく"],
         "phonetic": "白",
         "type": "comp_phonetic"
     },
@@ -6773,7 +6787,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "販": {
-		"readings": ["ハン"],
+		"readings": ["はん"],
         "phonetic": "反",
         "type": "comp_phonetic"
     },
@@ -6890,8 +6904,9 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "堅": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["けん"],
+		"phonetic": "臤",
+        "type": "comp_phonetic"
     },
     "堕": {
 		"readings": [],
@@ -7066,7 +7081,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "欺": {
-		"readings": ["ギ", "き"],
+		"readings": ["ぎ", "き"],
         "phonetic": "其",
         "type": "comp_phonetic"
     },
@@ -7152,11 +7167,14 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "粧": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["しょう", "そう"],
+		"decomposition": ["米", "庄"],
+		"phonetic": "庄",
+        "type": "comp_phonetic"
     },
     "絞": {
 		"readings": ["こう"],
+		"decomposition": ["糸", "交"],
         "phonetic": "交",
         "type": "comp_phonetic"
     },
@@ -7198,7 +7216,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "詠": {
-		"readings": ["エイ"],
+		"readings": ["えい"],
         "phonetic": "永",
         "type": "comp_phonetic"
     },
@@ -7213,7 +7231,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "診": {
-		"readings": ["シン"],
+		"readings": ["しん"],
         "type": "unprocessed"
     },
     "訴": {
@@ -7254,7 +7272,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "遍": {
-		"readings": ["ヘン"],
+		"readings": ["へん"],
         "phonetic": "扁",
         "type": "comp_phonetic"
     },
@@ -7566,7 +7584,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "該": {
-		"readings": ["ガイ", "カイ"],
+		"readings": ["がい", "カイ"],
         "phonetic": "蜀",
         "type": "comp_phonetic"
     },
@@ -7615,6 +7633,7 @@ var kanji_db = JSON.parse(`
     },
     "較": {
 		"readings": ["かく", "こう"],
+		"decomposition": ["車", "交"],
         "phonetic": "交",
         "type": "comp_phonetic"
     },
@@ -7736,7 +7755,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "腐": {
-		"readings": ["フ"],
+		"readings": ["ふ"],
         "phonetic": "付",
         "type": "comp_phonetic"
     },
@@ -7894,7 +7913,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "銑": {
-		"readings": ["セン"],
+		"readings": ["せん"],
         "phonetic": "先",
         "type": "comp_phonetic"
     },
@@ -7947,11 +7966,13 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "影": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["えい", "よう"],
+		"decomposition: ["彡", "景"],
+		"phonetic": "景",
+        "type": "comp_phonetic"
     },
     "鋭": {
-		"readings": ["エイ"],
+		"readings": ["えい"],
         "phonetic": "兌",
         "type": "comp_phonetic"
     },
@@ -8062,21 +8083,21 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "儀": {
-		"readings": ["ギ"],
+		"readings": ["ぎ"],
         "phonetic": "義",
         "type": "comp_phonetic"
     },
     "戯": {
-		"readings": ["ギ", "ゲ"],
+		"readings": ["ぎ", "ゲ"],
         "type": "unprocessed"
     },
     "擬": {
-		"readings": ["ギ"],
+		"readings": ["ぎ"],
         "phonetic": "疑",
         "type": "comp_phonetic"
     },
     "犠": {
-		"readings": ["ギ", "き"],
+		"readings": ["ぎ", "き"],
         "phonetic": "義",
         "type": "comp_phonetic"
     },
@@ -8100,17 +8121,19 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "凝": {
-		"readings": ["ギョウ"],
+		"readings": ["ぎょう"],
         "phonetic": "疑",
         "type": "comp_phonetic"
     },
     "緊": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["きん"],
+		"phonetic": "臤",
+        "type": "comp_phonetic"
     },
     "襟": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["きん"],
+		"phonetic": "禁",
+        "type": "comp_phonetic"
     },
     "謹": {
 		"readings": ["きん"],
@@ -8122,16 +8145,18 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "勲": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["くん"],
+		"phonetic": "熏",
+        "type": "comp_phonetic"
     },
     "薫": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["くん"],
+		"phonetic": "熏",
+        "type": "comp_phonetic"
     },
     "慶": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["けい", "きょう"],
+        "type": "unknown"
     },
     "憩": {
 		"readings": [],
@@ -8190,16 +8215,16 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "墾": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["こん"],
+        "type": "unknown"
     },
     "懇": {
 		"readings": [],
         "type": "unprocessed"
     },
     "鎖": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["さ"],
+        "type": "unknown"
     },
     "錯": {
 		"readings": ["さく", "そ"],
@@ -8223,8 +8248,9 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "賜": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["し"],
+		"phonetic": "易",
+        "type": "comp_phonetic"
     },
     "璽": {
 		"readings": [],
@@ -8311,17 +8337,17 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "審": {
-		"readings": ["シン"],
+		"readings": ["しん"],
         "type": "unprocessed",
         "comment": "variant of 审"
     },
     "薪": {
-		"readings": ["シン"],
+		"readings": ["しん"],
         "phonetic": "新",
         "type": "comp_phonetic"
     },
     "震": {
-		"readings": ["シン"],
+		"readings": ["しん"],
         "phonetic": "辰",
         "type": "comp_phonetic"
     },
@@ -8342,7 +8368,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "請": {
-		"readings": ["セイ", "シン", "しょう"],
+		"readings": ["セイ", "しん", "しょう"],
         "phonetic": "青",
         "type": "comp_phonetic"
     },
@@ -8398,8 +8424,9 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "騒": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["そう"],
+		"phonetic": "蚤",
+        "type": "comp_phonetic"
     },
     "贈": {
 		"readings": ["ぞう", "そう"],
@@ -8412,7 +8439,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "濁": {
-		"readings": ["ダク", "ジョク"],
+		"readings": ["だく", "じょく"],
         "phonetic": "蜀",
         "type": "comp_phonetic"
     },
@@ -8425,7 +8452,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "壇": {
-		"readings": [],
+		"readings": ["だん", "たん"],
         "type": "unprocessed"
     },
     "鋳": {
@@ -8512,7 +8539,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "薄": {
-		"readings": ["ハク"],
+		"readings": ["はく"],
         "phonetic": "溥",
         "type": "comp_phonetic"
     },
@@ -8521,7 +8548,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "縛": {
-		"readings": ["バク", "ハク"],
+		"readings": ["バク", "はく"],
         "phonetic": "尃",
         "type": "comp_phonetic"
     },
@@ -8534,7 +8561,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "範": {
-		"readings": ["ハン"],
+		"readings": ["はん"],
         "phonetic": "氾",
         "type": "comp_phonetic"
     },
@@ -8561,7 +8588,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "敷": {
-		"readings": ["フ"],
+		"readings": ["ふ"],
         "phonetic": "尃",
         "type": "comp_phonetic"
     },
@@ -8583,7 +8610,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "覆": {
-		"readings": ["ふく", "フ", "フウ"],
+		"readings": ["ふく", "ふ", "フウ"],
         "phonetic": "复",
         "type": "comp_phonetic"
     },
@@ -8619,7 +8646,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "舗": {
-		"readings": ["ホ", "フ"],
+		"readings": ["ほ", "ふ"],
         "phonetic": "甫",
         "type": "comp_phonetic"
     },
@@ -8628,7 +8655,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "簿": {
-		"readings": ["ボ", "ホ"],
+		"readings": ["ボ", "ほ"],
         "phonetic": "溥",
         "type": "comp_phonetic"
     },
@@ -8659,7 +8686,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "翻": {
-		"readings": ["ホン", "ハン"],
+		"readings": ["ホン", "はん"],
         "phonetic": "番",
         "type": "comp_phonetic"
     },
@@ -8838,7 +8865,7 @@ var kanji_db = JSON.parse(`
         "comment": "TODO: using phonetic 示?"
     },
     "阪": {
-		"readings": ["ハン"],
+		"readings": ["はん"],
         "phonetic": "反",
         "type": "comp_phonetic"
     },
@@ -9104,7 +9131,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "崖": {
-		"readings": ["ガイ"],
+		"readings": ["がい"],
         "phonetic": "厓",
         "type": "comp_phonetic"
     },
@@ -9250,7 +9277,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "骸": {
-		"readings": ["ガイ", "カイ"],
+		"readings": ["がい", "カイ"],
         "phonetic": "蜀",
         "type": "comp_phonetic"
     },
@@ -9281,8 +9308,9 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "伎": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["き", "ぎ"],
+		"phonetic": "支",
+        "type": "comp_phonetic"
     },
     "曖": {
 		"readings": [],
@@ -9298,12 +9326,12 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "詮": {
-		"readings": ["セン"],
+		"readings": ["せん"],
         "phonetic": "全",
         "type": "comp_phonetic"
     },
     "芯": {
-		"readings": ["シン"],
+		"readings": ["しん"],
         "phonetic": "心",
         "type": "comp_phonetic"
     },
@@ -9385,8 +9413,9 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "腎": {
-		"readings": [],
-        "type": "unprocessed"
+		"readings": ["じん", "しん"],
+		"phonetic": "臤",
+        "type": "comp_phonetic"
     },
     "梗": {
 		"readings": ["こう", "きょう"],
@@ -9469,7 +9498,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "腺": {
-		"readings": ["セン"],
+		"readings": ["せん"],
         "phonetic": "泉",
         "type": "kokuji"
     },
@@ -9590,7 +9619,7 @@ var kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "氾": {
-		"readings": ["ハン"],
+		"readings": ["はん"],
 		"phonetic": "氾",
         "type": "hieroglyph"
     },
@@ -9618,7 +9647,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "沃": {
-		"readings": ["ヨク", "オク"],
+		"readings": ["ヨク", "おく"],
         "phonetic": "夭",
         "type": "comp_phonetic"
     },
@@ -9631,7 +9660,7 @@ var kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "訃": {
-		"readings": ["フ"],
+		"readings": ["ふ"],
         "phonetic": "卜",
         "type": "comp_phonetic"
     },
@@ -9829,13 +9858,13 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "反": {
-        "readings": ["ハン","ホン","タン"],
+        "readings": ["はん","ホン","タン"],
         "compounds": ["反", "坂", "阪", "返", "板", "版", "販", "飯"],
         "non_compounds": [],
         "xrefs": []
     },
     "白": {
-        "readings": ["ハク", "ビャク"],
+        "readings": ["はく", "ビャク"],
         "compounds": ["白", "伯", "泊", "拍", "迫", "舶"],
         "non_compounds": [],
         "xrefs": []
@@ -9884,8 +9913,8 @@ var phonetic_db = JSON.parse(`
     },
     "交": {
         "readings": ["こう"],
-        "compounds": ["交", "郊", "校", "絞", "較"],
-        "non_compounds": ["効"],
+        "compounds": ["交", "郊", "校", "絞", "較", "効"],
+        "non_compounds": [],
         "xrefs": []
     },
     "我": {
@@ -9895,7 +9924,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "義": {
-        "readings": ["ギ"],
+        "readings": ["ぎ"],
         "compounds": ["義", "儀", "犠", "議"],
         "non_compounds": [],
         "xrefs": []
@@ -9931,7 +9960,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": ["小"]
     },
     "山": {
-        "readings": ["サン", "セン"],
+        "readings": ["サン", "せん"],
         "compounds": ["山", "仙"],
         "non_compounds": [],
         "xrefs": []
@@ -9979,7 +10008,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "先": {
-        "readings": ["セン"],
+        "readings": ["せん"],
         "compounds": ["先", "洗", "銑"],
         "non_compounds": [],
         "xrefs": []
@@ -10057,7 +10086,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "半": {
-        "readings": ["ハン"],
+        "readings": ["はん"],
         "compounds": ["半", "伴", "判", "畔"],
         "non_compounds": [],
         "xrefs": []
@@ -10189,7 +10218,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "占": {
-        "readings": ["セン", "てん"],
+        "readings": ["せん", "てん"],
         "compounds": ["占", "店", "貼", "粘", "点"],
         "non_compounds": [],
         "xrefs": [],
@@ -10202,7 +10231,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "歩": {
-        "readings": ["ホ", "ブ", "フ"],
+        "readings": ["ほ", "ブ", "ふ"],
         "compounds": ["歩"],
         "non_compounds": ["頻", "渉"],
         "xrefs": []
@@ -10264,13 +10293,13 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "甫": {
-        "readings": ["ホ", "フ"],
+        "readings": ["ほ", "ふ"],
         "compounds": ["浦", "捕", "補", "舗"],
         "non_compounds": [],
         "xrefs": []
     },
     "辰": {
-        "readings": ["シン"],
+        "readings": ["しん"],
         "compounds": ["唇", "娠", "振", "震"],
         "non_compounds": [],
         "xrefs": []
@@ -10312,7 +10341,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "囟": {
-        "readings": ["シン", "し"],
+        "readings": ["しん", "し"],
         "compounds": ["細", "思"],
         "non_compounds": [],
         "xrefs": []
@@ -10343,7 +10372,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "番": {
-        "readings": ["バン", "ハン", "ハ"],
+        "readings": ["バン", "はん", "ハ"],
         "compounds": ["番", "翻"],
         "non_compounds": ["審"],
         "xrefs": []
@@ -10386,7 +10415,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "不": {
-        "readings": ["フ", "ブ"],
+        "readings": ["ふ", "ブ"],
         "compounds": ["不", "杯"],
         "non_compounds": [],
         "xrefs": []
@@ -10410,7 +10439,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": ["弋"]
     },
     "央": {
-        "readings": ["オウ", "よう", "エイ"],
+        "readings": ["オウ", "よう", "えい"],
         "compounds": ["央", "英", "映"],
         "non_compounds": [],
         "xrefs": []
@@ -10428,7 +10457,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "兌": {
-        "readings": ["ダ", "タイ", "エツ", "エイ"],
+        "readings": ["ダ", "タイ", "エツ", "えい"],
         "compounds": ["悦", "脱", "税", "説", "鋭"],
         "non_compounds": [],
         "xrefs": []
@@ -10477,7 +10506,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "申": {
-        "readings": ["シン"],
+        "readings": ["しん"],
         "compounds": ["申", "伸", "神", "紳"],
         "non_compounds": ["電"],
         "xrefs": []
@@ -10489,13 +10518,13 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "心": {
-        "readings": ["シン"],
+        "readings": ["しん"],
         "compounds": ["心", "芯"],
         "non_compounds": [],
         "xrefs": []
     },
     "全": {
-        "readings": ["ゼン", "セン"],
+        "readings": ["ゼン", "せん"],
         "compounds": ["全", "詮", "栓"],
         "non_compounds": [],
         "xrefs": []
@@ -10598,7 +10627,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "参": {
-        "readings": ["サン", "シン"],
+        "readings": ["サン", "しん"],
         "compounds": ["参", "惨"],
         "non_compounds": [],
         "xrefs": []
@@ -10610,7 +10639,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "付": {
-        "readings": ["フ"],
+        "readings": ["ふ"],
         "compounds": ["付", "府", "附", "符", "腐"],
         "non_compounds": [],
         "xrefs": []
@@ -10622,13 +10651,13 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "新": {
-        "readings": ["シン"],
+        "readings": ["しん"],
         "compounds": ["新", "薪"],
         "non_compounds": [],
         "xrefs": []
     },
     "楽": {
-        "readings": ["ガク", "ラク", "ゴウ", "ギョウ"],
+        "readings": ["ガク", "ラク", "ゴウ", "ぎょう"],
         "compounds": ["楽", "薬"],
         "non_compounds": [],
         "xrefs": []
@@ -10640,19 +10669,19 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "泉": {
-        "readings": ["セン"],
+        "readings": ["せん"],
         "compounds": ["泉", "腺", "線"],
         "non_compounds": [],
         "xrefs": []
     },
     "辛": {
-        "readings": ["シン"],
+        "readings": ["しん"],
         "compounds": ["辛", "亲"],
         "non_compounds": [],
         "xrefs": []
     },
     "亲": {
-        "readings": ["シン"],
+        "readings": ["しん"],
         "compounds": ["親"],
         "non_compounds": [],
         "xrefs": ["辛"]
@@ -10670,7 +10699,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "夫": {
-        "readings": ["フ", "フウ", "ブ"],
+        "readings": ["ふ", "フウ", "ブ"],
         "compounds": ["夫", "扶"],
         "non_compounds": [],
         "xrefs": []
@@ -10688,7 +10717,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "畐": {
-        "readings": ["ふく", "ヒョク", "ヒキ"],
+        "readings": ["ふく", "ヒョク", "ひき"],
         "compounds": ["富", "福", "副", "幅"],
         "non_compounds": [],
         "xrefs": [],
@@ -10707,8 +10736,8 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "貫": {
-        "readings": ["かん"],
-        "compounds": ["貫", "慣"],
+        "readings": ["かん", "うん"],
+        "compounds": ["慣"],
         "non_compounds": [],
         "xrefs": []
     },
@@ -10732,7 +10761,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": ["戸"]
     },
     "必": {
-        "readings": ["ヒツ"],
+        "readings": ["ひつ"],
         "compounds": ["必", "泌", "秘"],
         "non_compounds": [],
         "xrefs": []
@@ -10846,7 +10875,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "永": {
-        "readings": ["エイ", "よう"],
+        "readings": ["えい", "よう"],
         "compounds": ["永", "泳", "詠"],
         "non_compounds": [],
         "xrefs": []
@@ -10913,7 +10942,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "亥": {
-        "readings": ["ガイ", "カイ"],
+        "readings": ["がい", "カイ"],
         "compounds": ["刻", "劾", "核", "該", "骸"],
         "non_compounds": [],
         "xrefs": []
@@ -10943,13 +10972,13 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "厓": {
-        "readings": ["ガイ"],
+        "readings": ["がい"],
         "compounds": ["涯", "崖"],
         "non_compounds": [],
         "xrefs": []
     },
     "扁": {
-        "readings": ["ヘン", "ハン"],
+        "readings": ["へん", "はん"],
         "compounds": ["偏", "遍", "編"],
         "non_compounds": [],
         "xrefs": []
@@ -10961,7 +10990,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "戠": {
-        "readings": ["しょく", "し", "シキ"],
+        "readings": ["しょく", "し", "しき"],
         "compounds": ["職", "識", "織"],
         "non_compounds": [],
         "xrefs": [],
@@ -10974,7 +11003,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "疑": {
-        "readings": ["ギ"],
+        "readings": ["ぎ"],
         "compounds": ["疑", "凝", "擬"],
         "non_compounds": [],
         "xrefs": []
@@ -10986,7 +11015,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "瞏": {
-        "readings": ["けい", "セン"],
+        "readings": ["けい", "せん"],
         "compounds": ["還", "環"],
         "non_compounds": [],
         "xrefs": []
@@ -11090,7 +11119,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "行": {
-        "readings": ["こう", "ギョウ", "アン"],
+        "readings": ["こう", "ぎょう", "アン"],
         "compounds": ["行", "衡", "桁"],
         "non_compounds": [],
         "xrefs": []
@@ -11146,7 +11175,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": ["敄"]
     },
     "熒": {
-        "readings": ["エイ", "エイ", "ギョウ"],
+        "readings": ["えい", "えい", "ぎょう"],
         "compounds": ["労", "栄", "蛍", "営"],
         "non_compounds": [],
         "xrefs": [],
@@ -11278,7 +11307,7 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "喬": {
-        "readings": ["きょう", "ギョウ"],
+        "readings": ["きょう", "ぎょう"],
         "compounds": ["橋", "矯"],
         "non_compounds": [],
         "xrefs": []
@@ -11384,13 +11413,13 @@ var phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "尃": {
-        "readings": ["フ", "ハク"],
+        "readings": ["ふ", "はく"],
         "compounds": ["敷", "博", "縛"],
         "non_compounds": [],
         "xrefs": []
     },
     "溥": {
-        "readings": ["フ", "ハク"],
+        "readings": ["ふ", "はく"],
         "compounds": ["薄", "簿"],
         "non_compounds": [],
         "xrefs": ["尃"]
@@ -11403,13 +11432,13 @@ var phonetic_db = JSON.parse(`
         "comment": "TODO: no list, search!"
     },
     "屋": {
-        "readings": ["オク"],
+        "readings": ["おく"],
         "compounds": ["屋", "握"],
         "non_compounds": [],
         "xrefs": []
     },
     "疋": {
-        "readings": ["しょ", "そ", "ヒキ", "ヒツ"],
+        "readings": ["しょ", "そ", "ひき", "ひつ"],
         "compounds": ["疎"],
         "non_compounds": [],
         "xrefs": []
@@ -11688,6 +11717,90 @@ var phonetic_db = JSON.parse(`
         "readings": ["はつ"],
         "compounds": ["抜", "髪"],
         "non_compounds": [],
+        "xrefs": []
+    },
+    "景": {
+        "readings": ["けい", "えい"],
+        "compounds": ["影"],
+        "non_compounds": [],
+        "xrefs": ["京"]
+    },
+    "庄": {
+        "readings": ["しょう", "そう"],
+        "compounds": ["粧"],
+        "non_compounds": [],
+        "xrefs": []
+    },
+    "㒼": {
+        "readings": ["まん", "ばん"],
+        "compounds": [満],
+        "non_compounds": [],
+        "xrefs": []
+    },
+    "爿": {
+        "readings": ["しょう"],
+        "compounds": ["状"],
+        "non_compounds": [],
+        "xrefs": []
+    },
+    "支": {
+        "readings": ["し"],
+        "compounds": ["伎", "技", "枝"],
+        "non_compounds": [],
+        "xrefs": []
+    },
+    "易": {
+        "readings": ["えき", "い"],
+        "compounds": ["賜"],
+        "non_compounds": ["場", "陽", "瘍", "湯", "腸"],
+        "xrefs": []
+    },
+    "臤": {
+        "readings": ["けん", "かん"],
+        "compounds": ["堅", "腎", "緊", "賢"],
+        "non_compounds": [],
+        "xrefs": []
+    },
+    "禁": {
+        "readings": ["きん"],
+        "compounds": ["襟"],
+        "non_compounds": [],
+        "xrefs": []
+    },
+    "熏": {
+        "readings": ["くん"],
+        "compounds": ["薫", "勲"],
+        "non_compounds": [],
+        "xrefs": []
+    },
+    "蚤": {
+        "readings": ["そう"],
+        "compounds": ["騒"],
+        "non_compounds": [],
+        "xrefs": []
+    },
+    "卂": {
+        "readings": ["じん", "しん"],
+        "compounds": ["迅"],
+        "non_compounds": [],
+        "xrefs": []
+    },
+    "卬": {
+        "readings": ["きょう", "ごう"],
+        "compounds": ["迎"],
+        "non_compounds": [],
+        "xrefs": []
+    },
+    "系": {
+        "readings": ["けい"],
+        "compounds": ["係"],
+        "non_compounds": [],
+        "xrefs": []
+    },
+    "癶": {
+        "readings": ["はつ"],
+        "compounds": ["発"],
+        "non_compounds": ["登"],
         "xrefs": []
     },
 

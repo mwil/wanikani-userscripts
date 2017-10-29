@@ -6,8 +6,12 @@ function injectWKStyles()
     $("html > head").append($(`
 <style>
 
-ul,ol{font-size: 14px; padding:0;margin:0 0 10px 25px}
+ul, ol{font-size: 14px; padding:0;margin:0 0 10px 25px}
 a{color:#08c;text-decoration:none}
+
+ul.radical {
+    font-size: 16px;
+}
 
 ul.single-character-grid li[id|=kanji],ul.single-character-grid tr[id|=kanji],ul.multi-character-grid li[id|=kanji],ul.multi-character-grid tr[id|=kanji],.kotoba-table-list li[id|=kanji],.kotoba-table-list tr[id|=kanji]{background-color:#f100a1;background-image:-moz-linear-gradient(top, #f0a, #dd0093);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#f0a), to(#dd0093));background-image:-webkit-linear-gradient(top, #f0a, #dd0093);background-image:-o-linear-gradient(top, #f0a, #dd0093);background-image:linear-gradient(to bottom, #f0a, #dd0093);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFF00AA', endColorstr='#FFDD0093', GradientType=0);border-top:1px solid #f6c;border-bottom:1px solid #cc0088;border-left:1px solid #f6c}
 ul.single-character-grid li[id|=radical],ul.single-character-grid tr[id|=radical],ul.multi-character-grid li[id|=radical],ul.multi-character-grid tr[id|=radical],.kotoba-table-list li[id|=radical],.kotoba-table-list tr[id|=radical]{background-color:#00a1f1;background-image:-moz-linear-gradient(top, #0af, #0093dd);background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#0af), to(#0093dd));background-image:-webkit-linear-gradient(top, #0af, #0093dd);background-image:-o-linear-gradient(top, #0af, #0093dd);background-image:linear-gradient(to bottom, #0af, #0093dd);background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF00AAFF', endColorstr='#FF0093DD', GradientType=0);border-top:1px solid #88d7ff;border-bottom:1px solid #069;border-left:1px solid #88d7ff}
