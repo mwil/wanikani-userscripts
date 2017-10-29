@@ -14,31 +14,52 @@ function WKInteraction()
     this.PageEnum = Object.freeze({ unknown:0, kanji:1, reviews:2, lessons:3 });
 
     this.curPage = this.PageEnum.unknown;
+    this.lesson_observer = new MutationObserver(this.lessonCallback);
+    this.review_observer = new MutationObserver(this.reviewCallback);
 }
 
 (function() {
    "use strict";
 
     WKInteraction.prototype = {
-        init: function()
+        init: function(wk_app_callback)
         {
-            this.curPage = this.getCurPage();
+            window.wk_app_callback = wk_app_callback;
+            this.getCurPage();
         },
 
         getCurPage: function()
         {
-            var curPage;
-
             if (/\/kanji\/./.test(document.URL))    /* Kanji Pages */
-                curPage = this.PageEnum.kanji;
+            {
+                this.curPage = this.PageEnum.kanji;
+                window.wk_app_callback();
+            }
             else if (/\/review/.test(document.URL)) /* Reviews Pages */
-                curPage = this.PageEnum.reviews;
+            {
+                this.curPage = this.PageEnum.reviews;
+                this.review_observer.observe(document.getElementById("item-info"), {attributes: true});
+            }
             else if (/\/lesson/.test(document.URL)) /* Lessons Pages */
-                curPage = this.PageEnum.lessons;
+            {
+                this.curPage = this.PageEnum.lessons;
+                this.lesson_observer.observe(document.getElementById("supplement-kan"), {attributes: true});
+            }
             else
-                curPage = this.PageEnum.unknown;
+                this.curPage = this.PageEnum.unknown;
+        },
 
-            return curPage;
+        reviewCallback: function(mutations)
+        {
+            if (mutations.length != 2)
+                return;
+
+            window.wk_app_callback();
+        },
+
+        lessonCallback: function(mutations)
+        {
+            window.wk_app_callback();
         },
 
         getKanji: function()

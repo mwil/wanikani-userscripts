@@ -12,6 +12,7 @@
 // @include     https://www.wanikani.com/lesson/session*
 // @require     http://localhost:8088/static/wk-phon-db-niko.js
 // @require     http://localhost:8088/static/wk-interaction.js
+// @require     http://localhost:8088/static/wk-chargrid.js
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
 // @grant       none
 // @run-at      document-end
@@ -27,44 +28,47 @@ window.wk_keisei = {};
     var wki = null;
 
     // #########################################################################
-    function createInfoElem()
+    function createKeiseiSection()
     {
-        var $elem = $("<section></section>")
-                    .attr("id", "KEISEI-section");
-        var $ound = $('<h2>Phonetic-Semantic Composition</h2>');
+        var $section = $("<section></section>")
+                       .attr("id", "keisei-section");
+
         var $grid = $("<ul></ul>")
-                    .attr("id", "KEISEI-phonetic-grid")
-                    .addClass("single-character-grid")
-                    .addClass("multi-character-grid-extra-styling-767px");
-        var $expl = $("<aside></aside>")
-                    .attr("id", "KEISEI-explanation")
-                    .addClass("additional-info")
-                    .append('<h3><i class="icon-info-sign"></i> Phonetic-Semantic Composition</h3>');
+                    .attr("id", "keisei-phonetic-grid")
+                    .addClass("single-character-grid");
 
-        $elem.append($ound);
-        $elem.append($grid);
-        $elem.append("<p></p>");
-        $elem.append($expl);
+        // var $expl = $("<aside></aside>")
+                    // .attr("id", "keisei-explanation")
+                    // .addClass("additional-info")
+                    // .append('<h3><i class="icon-info-sign"></i> Phonetic-Semantic Composition</h3>');
 
-        return $elem;
+        $section.append('<h2>Phonetic-Semantic Composition</h2>');
+        $section.append($('<p></p>').attr("id", "keisei-explanation"));
+        $section.append($grid);
+        // $section.append($expl);
+
+        return $section;
     }
     // #########################################################################
 
     // #########################################################################
     // Template strings with es6 features
     // https://stackoverflow.com/a/39065147/2699475
-    const ktype_unknown_msg = (curKanji, dbKanji) =>
-       `<p>The kanji ${curKanji} has an unknown origin or is not yet listed in the database, stay tuned!</p>`;
-    const ktype_phonetic_msg = (curKanji, dbKanji, curPhon, dbPhon) =>
-       `<p>The kanji ${curKanji} was created using semantic-phonetic composition.
+    const explanation_unknown = (curKanji, dbKanji) =>
+       `The kanji ${curKanji} has an unknown origin or is not yet listed in the database, stay tuned!`;
+
+    const explanation_phonetic = (curKanji, dbKanji, curPhon, dbPhon) =>
+       `The kanji ${curKanji} was created using semantic-phonetic composition.
         The phonetic component is ${curPhon}.
-        More text ...</p>`;
-    const ktype_other_msg = (curKanji, dbKanji) =>
-       `<p>The kanji ${curKanji} is not considered a semantic-phonetic composition.
+        More text ...`;
+
+    const explanation_other = (curKanji, dbKanji) =>
+       `The kanji ${curKanji} is not considered a semantic-phonetic composition.
         It may still contain a component that is used phonetically in other kanji,
-        this information will be added in a future userscript version.</p>`;
+        this information will be added in a future userscript version.`;
+
     const error_msg = (curKanji, msg) =>
-       `<p>An error occured while processing kanji '${curKanji}'! Message was: '${msg}'</p>`;
+       `An error occured while processing kanji '${curKanji}'! Message was: '${msg}'`;
     // #########################################################################
 
     const li_phon_char = ({kanji, dbKanji, badge, kanji_id}) =>
@@ -81,21 +85,35 @@ window.wk_keisei = {};
     // #########################################################################
 
     // #########################################################################
-    function injectInfoElem()
+    function injectKeiseiSection()
     {
         switch(wki.curPage)
         {
             case wki.PageEnum.kanji:
-                $("section#note-reading").before(createInfoElem());
-
+                $("section#note-reading").before(createKeiseiSection());
                 break;
             case wki.PageEnum.reviews:
+                injectWKStyles();
+
+                $("section#item-info-reading-mnemonic").after(createKeiseiSection());
+
+                if ($("section#item-info-reading-mnemonic").is(":hidden"))
+                    $("#keisei-section").hide();
+
                 break;
             case wki.PageEnum.lessons:
+                if ($("#keisei-section").length === 0)
+                    injectWKStyles();
+                else
+                    $("#keisei-section").remove();
+
+                $('div#supplement-kan-reading div:contains("Reading Mnemonic") blockquote:last').after(createKeiseiSection());
                 break;
             default:
-                console.log("WKPSC: Unknown page type, cannot inject info!");
+                console.log("KEISEI: Unknown page type, cannot inject info!");
         }
+
+        populateKeiseiSection();
     }
     // #########################################################################
 
@@ -108,14 +126,46 @@ window.wk_keisei = {};
     }
     // #########################################################################
 
+    function populateCharGrid()
+    {
+    }
+
+    function toggleMoreInfoFold()
+    {
+        var $button = $('#keisei-more-button');
+        var $fold = $('#keisei-more-info');
+
+        if ($fold.is(":visible"))
+            $button.html('<i class="icon-chevron-down"></i>Show More Information');
+        else
+            $button.html('<i class="icon-chevron-up"></i>Show Less Information');
+
+        $('#keisei-more-info').slideToggle();
+    }
+
+    function createMoreInfoFold()
+    {
+        var $infofold = $('<div id="keisei-more-fold"></div>');
+
+        var $button = $('<div id="keisei-more-button"><i class="icon-chevron-down"></i>Show More Information</div>');
+        var $info = $('<div id="keisei-more-info"><p>Toller test etxt blibu</p></div>');
+
+        $infofold.append($button);
+        $infofold.append($info);
+
+        $button.on("click", toggleMoreInfoFold);
+
+        return $infofold;
+    }
+
     // #########################################################################
-    function populateInfoElem()
+    function populateKeiseiSection()
     {
         var curKanji = wki.getKanji();
 
         if (!kanji_db || !(curKanji in kanji_db))
         {
-            $("#KEISEI-compound-info").append(
+            $("#keisei-compound-info").append(
                 error_msg(
                     curKanji,
                     "The requested kanji is not in the database (or even no db)!"
@@ -131,7 +181,7 @@ window.wk_keisei = {};
 
             if (!phonetic_db || !(curPhon in phonetic_db))
             {
-                $("#KEISEI-compound-info").append(
+                $("#keisei-compound-info").append(
                     error_msg(
                         curKanji,
                         "The phonetic element of this kanji was not in the database (or even no db)!"
@@ -141,14 +191,13 @@ window.wk_keisei = {};
 
             var dbCurPhon = phonetic_db[curPhon];
 
-            $("#KEISEI-explanation").append(ktype_phonetic_msg(curKanji, dbCurKanji, curPhon, dbCurPhon));
+            $("#keisei-explanation").append(explanation_phonetic(curKanji, dbCurKanji, curPhon, dbCurPhon));
 
             var phon_list = [];
 
             for (var i = 0; i < dbCurPhon.compounds.length; i++)
             {
                 var kanji = dbCurPhon.compounds[i];
-                console.log("phoncompounds are", dbCurPhon);
 
                 if (!(kanji in kanji_db))
                 {
@@ -179,17 +228,19 @@ window.wk_keisei = {};
             }
 
             phon_list.unshift({kanji: curPhon, dbKanji: dbCurPhon, badge: "", kanji_id: "radical-1"});
-            $('#KEISEI-phonetic-grid').html(phon_list.map(li_phon_char).join(''));
+            $('#keisei-phonetic-grid').html(phon_list.map(li_phon_char).join(''));
         }
         else if (dbCurKanji.type !== "no_clue")
-            $("#KEISEI-explanation").append(ktype_other_msg(curKanji, dbCurKanji));
+            $("#keisei-explanation").append(explanation_other(curKanji, dbCurKanji));
         else
-            $("#KEISEI-explanation").append(ktype_unknown_msg(curKanji, dbCurKanji));
+            $("#keisei-explanation").append(explanation_unknown(curKanji, dbCurKanji));
+
+        $("#keisei-section").append(createMoreInfoFold());
     }
     // #########################################################################
 
     // #########################################################################
-    function run()
+    function injectStyles()
     {
         $('html > head').append($(`
             <style>
@@ -205,13 +256,28 @@ window.wk_keisei = {};
                 .badge-low:before {
                     content: "下"; background-color: #a80571;
                 }
+                #keisei-more-button {
+                    cursor: pointer;
+                    margin-top: 20px;
+                    padding: 10px;
+                    text-align: center;
+                }
+                #keisei-more-info {
+                    display: none;
+                }
             </style>
         `));
-        wki = new WKInteraction();
-        wki.init();
+    }
+    // #########################################################################
 
-        injectInfoElem();
-        populateInfoElem();
+
+    // #########################################################################
+    function run()
+    {
+        injectStyles();
+
+        wki = new WKInteraction();
+        wki.init(injectKeiseiSection);
     }
     // #########################################################################
 
