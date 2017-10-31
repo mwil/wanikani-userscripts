@@ -95,7 +95,7 @@ window.wk_keisei = {};
 
     // #########################################################################
     // Template strings with es6 features for the various explanations (first
-    // paragraph for every information field.
+    // paragraph for every information field).
     //
     // Inspired from https://stackoverflow.com/a/39065147/2699475
     const explanation_unknown = (curKanji) =>
@@ -106,7 +106,7 @@ window.wk_keisei = {};
 
     const explanation_phonetic = (curKanji, curPhon) =>
        `<p>The kanji ${curKanji} was created using semantic-phonetic composition.</p>
-        <p>The ON readings ${kdb.getKReadings(curKanji).join(", ")} are listed for this kanji, including rare ones.</p>
+        <p>The ON reading(s) ${kdb.getPReadings(curPhon).join(", ")} are listed for this tone mark, including rare ones.</p>
         <span id="keisei-explanation-quality"></span>`;
 
     const explanation_pmark = (curPhon) =>
@@ -133,6 +133,13 @@ window.wk_keisei = {};
     const pmark_low = (curKanji) =>
        `<p>Information on mutual readings and the regularity of the composition here ...</p>`;
     // #########################################################################
+
+    // #########################################################################
+    const explanation_xref = (curKanji, curPhon) =>
+       `<p>The phonetic component ${curPhon} is related to another component, the readings may be similar.</p>`;
+    const explanation_non_compound = (curKanji, curPhon) =>
+       `<p>The phonetic component ${curPhon} also has kanji that are either phonetic compounds of another tone mark,
+       or are considered a different type of composition. The readings are likely to differ.</p>`;
 
     // Character item to be included in a character grid
     //
@@ -170,17 +177,17 @@ window.wk_keisei = {};
         if (kdb.checkPhonetic(curKanji))
         {
             $("#keisei-explanation").append(explanation_pmark(curKanji));
-            populateCharGrid(curKanji, curKanji);
+            populateCharGrid("#keisei-phonetic-grid", curKanji, curKanji);
             return;
         }
 
         switch (kdb.getKType(curKanji))
         {
-            case kdb.KTypeEnum.unknown:
-                $("#keisei-explanation").append(explanation_unknown(curKanji));
-                break;
             case kdb.KTypeEnum.unprocessed:
                 $("#keisei-explanation").append(explanation_unprocessed(curKanji));
+                return;
+            case kdb.KTypeEnum.unknown:
+                $("#keisei-explanation").append(explanation_unknown(curKanji));
                 break;
             case kdb.KTypeEnum.hieroglyph:
             case kdb.KTypeEnum.indicative:
@@ -202,14 +209,19 @@ window.wk_keisei = {};
                 }
 
                 $("#keisei-explanation").append(explanation_phonetic(curKanji, curPhon));
-                populateCharGrid(curKanji, curPhon);
+                populateCharGrid("#keisei-phonetic-grid", curKanji, curPhon);
+
+                if (kdb.getPXRefs(curPhon).length > 0 || kdb.getPNonCompounds(curPhon).length > 0)
+                {
+                    $("#keisei-section").append(createMoreInfoFold());
+                    populateMoreInfoFold(curKanji, curPhon);
+                }
+
                 break;
             default:
                 $("#keisei-explanation").append(
                     error_msg(curKanji, "The requested kanji is not in the database!"));
         }
-
-        $("#keisei-section").append(createMoreInfoFold());
     }
     // #########################################################################
 
@@ -226,7 +238,7 @@ window.wk_keisei = {};
 
     // Create character items for all compounds, sort them, and add them all.
     // #########################################################################
-    function populateCharGrid(curKanji, curPhon)
+    function populateCharGrid(selector, curKanji, curPhon)
     {
         var char_list = [];
         var char_list_lo = [];
@@ -280,11 +292,10 @@ window.wk_keisei = {};
         if (kdb.checkKanji(curPhon))
             char_list.push({kanji: curPhon, badge: "", kanji_id: "kanji-1"});
 
-
         char_list = char_list.concat(char_list_hi);
         char_list = char_list.concat(char_list_lo);
 
-        $("#keisei-phonetic-grid").html(char_list.map(li_phon_char).join(""));
+        $(selector).html(char_list.map(li_phon_char).join(""));
     }
     // #########################################################################
 
@@ -296,7 +307,7 @@ window.wk_keisei = {};
         var $infofold = $('<div id="keisei-more-fold"></div>');
 
         var $button = $('<div id="keisei-more-button"><i class="icon-chevron-down"></i>Show More Information</div>');
-        var $info = $('<div id="keisei-more-info"><p>Toller test etxt blibu</p></div>');
+        var $info = $('<div id="keisei-more-info"></div>');
 
         $infofold.append($button);
         $infofold.append($info);
@@ -304,6 +315,48 @@ window.wk_keisei = {};
         $button.on("click", toggleMoreInfoFold);
 
         return $infofold;
+    }
+    // #########################################################################
+
+    // #########################################################################
+    function populateMoreInfoFold(kanji, phon)
+    {
+        var i;
+
+        for (i = 0; i < kdb.getPXRefs(phon).length; i++)
+        {
+            var curPhon = kdb.getPXRefs(phon)[i];
+
+            $("#keisei-more-info").append($('<span></span>').attr("id", "keisei-more-expl-"+i));
+            $("#keisei-more-expl-"+i).append(explanation_xref(kanji, curPhon));
+            var $gridx = $("<ul></ul>")
+                        .attr("id", "keisei-xref-grid-"+i)
+                        .addClass("single-character-grid");
+            $("#keisei-more-info").append($gridx);
+            populateCharGrid("#keisei-xref-grid-"+i, kanji, curPhon);
+        }
+
+        if (kdb.getPNonCompounds(phon).length > 0)
+        {
+            $("#keisei-more-info").append($('<span></span>').attr("id", "keisei-more-non-comp"));
+            $("#keisei-more-non-comp").append(explanation_non_compound(kanji, phon));
+            var $gridn = $("<ul></ul>")
+                        .attr("id", "keisei-non-comp-grid")
+                        .addClass("single-character-grid");
+            $("#keisei-more-info").append($gridn);
+
+            var char_list = [];
+            char_list.push({kanji: phon, badge: "", kanji_id: "radical-"});
+
+            for (i = 0; i < kdb.getPNonCompounds(phon).length; i++)
+            {
+                var curKanji = kdb.getPNonCompounds(phon)[i];
+
+                char_list.push({kanji: curKanji, badge: "", kanji_id: "kanji-"+i});
+            }
+
+            $("#keisei-non-comp-grid").html(char_list.map(li_phon_char).join(""));
+        }
     }
     // #########################################################################
 
