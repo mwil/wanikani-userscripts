@@ -25,84 +25,17 @@ window.wk_keisei = {};
 (function(gobj) {
     "use strict";
 
+    // WKInteraction, an object to interact with the WaniKani site
     var wki = null;
+    // KeiseiDB, the database including all kanji and their tone marks
     var kdb = null;
 
-    // #########################################################################
-    function createKeiseiSection()
-    {
-        var $section = $("<section></section>")
-                       .attr("id", "keisei-section");
-
-        var $grid = $("<ul></ul>")
-                    .attr("id", "keisei-phonetic-grid")
-                    .addClass("single-character-grid");
-
-        // var $expl = $("<aside></aside>")
-                    // .attr("id", "keisei-explanation")
-                    // .addClass("additional-info")
-                    // .append('<h3><i class="icon-info-sign"></i> Phonetic-Semantic Composition</h3>');
-
-        $section.append('<h2>Phonetic-Semantic Composition</h2>');
-        $section.append($('<span></span>').attr("id", "keisei-explanation"));
-        $section.append($grid);
-        // $section.append($expl);
-
-        return $section;
-    }
-    // #########################################################################
-
-    // #########################################################################
-    // Template strings with es6 features
-    // https://stackoverflow.com/a/39065147/2699475
-    const explanation_unknown = (curKanji) =>
-       `<p>The kanji ${curKanji} has an unknown or contested origin. Stay tuned for more information in future versions.</p>`;
-
-    const explanation_unprocessed = (curKanji) =>
-       `<p>The kanji ${curKanji} was not yet added to the DB, please wait for a future version.</p>`;
-
-    const explanation_phonetic = (curKanji, curPhon) =>
-       `<p>The kanji ${curKanji} was created using semantic-phonetic composition.</p>
-        <p>The ON readings ${kdb.getKReadings(curKanji).join(", ")} are listed for this kanji, including rare ones.</p>
-        <span id="keisei-explanation-quality"></span>`;
-
-    const explanation_pmark = (curPhon) =>
-       `<p>The kanji ${curPhon} is used as a phonetic mark in other compounds!</p>
-        <p>The ON readings ${kdb.getPReadings(curPhon).join(", ")} are listed for this tone mark.
-        Note that these can include historical readings that may not apply to this kanji itself anymore, but still do to its compounds.</p>`;
-
-    const explanation_other = (curKanji) =>
-       `<p>The kanji ${curKanji} is not considered a semantic-phonetic composition.</p>`;
-
-    const error_msg = (curKanji, msg) =>
-       `<p>An error occured while processing kanji '${curKanji}'! Message was: '${msg}'</p>`;
-    // #########################################################################
-
-    // #########################################################################
-    const pmark_perfect = (curKanji) =>
-       `<p>Information on mutual readings and the regularity of the composition here ...</p>`;
-    const pmark_high = (curKanji) =>
-       `<p>Information on mutual readings and the regularity of the composition here ...</p>`;
-    const pmark_middle = (curKanji) =>
-       `<p>Information on mutual readings and the regularity of the composition here ...</p>`;
-    const pmark_low = (curKanji) =>
-       `<p>Information on mutual readings and the regularity of the composition here ...</p>`;
-    // #########################################################################
-
-    // #########################################################################
-    const li_phon_char = ({kanji, badge, kanji_id}) =>
-       `<li id="${kanji_id}" class="character-item">
-            <span lang="ja" class="${badge}"></span>
-            <a href="">
-                <span class="character" lang="ja">${kanji}</span>
-                <ul>
-                    <li>${kdb.getKReadings(kanji)[0]}</li>
-                    <li>Meaning</li>
-                </ul>
-            </a>
-        </li>`;
-    // #########################################################################
-
+    // Callback for the WKInteraction, this is called directly at the beginning
+    // when the required WK content is available.
+    //
+    // Note: on the reviews and lessons page we inject some styles lifted from
+    // WK to include the nice 'character grids', this might cause some ugly
+    // interactions with these pages (seems fine though)!
     // #########################################################################
     function injectKeiseiSection()
     {
@@ -134,10 +67,156 @@ window.wk_keisei = {};
 
         populateKeiseiSection();
     }
+
+    // #########################################################################
+    // Insert stubs for all information fields to be filled later by
+    // populateKeiseiSection().
+    //
+    // Some section may stay empty, for example when a kanji is not related to
+    // phonetic compounds.
+    // #########################################################################
+    function createKeiseiSection()
+    {
+        var $section = $("<section></section>")
+                       .attr("id", "keisei-section");
+
+        var $grid = $("<ul></ul>")
+                    .attr("id", "keisei-phonetic-grid")
+                    .addClass("single-character-grid");
+
+        $section.append('<h2>Phonetic-Semantic Composition</h2>');
+        $section.append($('<span></span>').attr("id", "keisei-explanation"));
+        $section.append($grid);
+        // $section.append($expl);
+
+        return $section;
+    }
     // #########################################################################
 
     // #########################################################################
-    // https://stackoverflow.com/a/16227294/2699475
+    // Template strings with es6 features for the various explanations (first
+    // paragraph for every information field.
+    //
+    // Inspired from https://stackoverflow.com/a/39065147/2699475
+    const explanation_unknown = (curKanji) =>
+       `<p>The kanji ${curKanji} has an unknown or contested origin. Stay tuned for more information in future versions.</p>`;
+
+    const explanation_unprocessed = (curKanji) =>
+       `<p>The kanji ${curKanji} was not yet added to the DB, please wait for a future version.</p>`;
+
+    const explanation_phonetic = (curKanji, curPhon) =>
+       `<p>The kanji ${curKanji} was created using semantic-phonetic composition.</p>
+        <p>The ON readings ${kdb.getKReadings(curKanji).join(", ")} are listed for this kanji, including rare ones.</p>
+        <span id="keisei-explanation-quality"></span>`;
+
+    const explanation_pmark = (curPhon) =>
+       `<p>The kanji ${curPhon} is used as a phonetic mark in other compounds!</p>
+        <p>The ON readings ${kdb.getPReadings(curPhon).join(", ")} are listed for this tone mark.
+        Note that these can include historical readings that may not apply to this kanji itself anymore, but still do to its compounds.</p>`;
+
+    const explanation_other = (curKanji) =>
+       `<p>The kanji ${curKanji} is not considered a semantic-phonetic composition.</p>`;
+
+    const error_msg = (curKanji, msg) =>
+       `<p>An error occured while processing kanji '${curKanji}'! Message was: '${msg}'</p>`;
+    // #########################################################################
+
+    // Different paragraphs describing how well the current kanji is matched
+    // by its corresponding tone mark.
+    // #########################################################################
+    const pmark_perfect = (curKanji) =>
+       `<p>Information on mutual readings and the regularity of the composition here ...</p>`;
+    const pmark_high = (curKanji) =>
+       `<p>Information on mutual readings and the regularity of the composition here ...</p>`;
+    const pmark_middle = (curKanji) =>
+       `<p>Information on mutual readings and the regularity of the composition here ...</p>`;
+    const pmark_low = (curKanji) =>
+       `<p>Information on mutual readings and the regularity of the composition here ...</p>`;
+    // #########################################################################
+
+    // Character item to be included in a character grid
+    //
+    // TODO: we might get this directly from WK later ...
+    // #########################################################################
+    const li_phon_char = ({kanji, badge, kanji_id}) =>
+       `<li id="${kanji_id}" class="character-item">
+            <span lang="ja" class="${badge}"></span>
+            <a href="">
+                <span class="character" lang="ja">${kanji}</span>
+                <ul>
+                    <li>${kdb.getKReadings(kanji)[0]}</li>
+                    <li>Meaning</li>
+                </ul>
+            </a>
+        </li>`;
+    // #########################################################################
+
+    // Fill the various field in the section, depending on the information in
+    // the kanji and phonetic databases.
+    // #########################################################################
+    function populateKeiseiSection()
+    {
+        var curKanji = wki.getKanji();
+
+        if (!kdb.checkKanji(curKanji))
+        {
+            $("#keisei-explanation").append(
+                error_msg(curKanji,
+                          "The requested kanji is not in the database!"));
+            return;
+        }
+
+        // The kanji could be a phonetic element itself, show full info ...
+        if (kdb.checkPhonetic(curKanji))
+        {
+            $("#keisei-explanation").append(explanation_pmark(curKanji));
+            populateCharGrid(curKanji, curKanji);
+            return;
+        }
+
+        switch (kdb.getKType(curKanji))
+        {
+            case kdb.KTypeEnum.unknown:
+                $("#keisei-explanation").append(explanation_unknown(curKanji));
+                break;
+            case kdb.KTypeEnum.unprocessed:
+                $("#keisei-explanation").append(explanation_unprocessed(curKanji));
+                break;
+            case kdb.KTypeEnum.hieroglyph:
+            case kdb.KTypeEnum.indicative:
+            case kdb.KTypeEnum.comp_indicative:
+            case kdb.KTypeEnum.derivative:
+            case kdb.KTypeEnum.rebus:
+            case kdb.KTypeEnum.kokuji:
+                $("#keisei-explanation").append(explanation_other(curKanji));
+                break;
+            case kdb.KTypeEnum.comp_phonetic:
+                var curPhon = kdb.getKPhonetic(curKanji);
+
+                if (!curPhon)
+                {
+                    $("#keisei-explanation").append(
+                        error_msg(curKanji,
+                                  "The phonetic element of this kanji was not in the database (or even no db)!"));
+                    return;
+                }
+
+                $("#keisei-explanation").append(explanation_phonetic(curKanji, curPhon));
+                populateCharGrid(curKanji, curPhon);
+                break;
+            default:
+                $("#keisei-explanation").append(
+                    error_msg(curKanji, "The requested kanji is not in the database!"));
+        }
+
+        $("#keisei-section").append(createMoreInfoFold());
+    }
+    // #########################################################################
+
+    // Find common items in two arrays.
+    //
+    // From https://stackoverflow.com/a/16227294/2699475
+    // #########################################################################
     function intersect(a, b) {
         return a.filter(function (e) {
             return b.indexOf(e) > -1;
@@ -145,6 +224,7 @@ window.wk_keisei = {};
     }
     // #########################################################################
 
+    // Create character items for all compounds, sort them, and add them all.
     // #########################################################################
     function populateCharGrid(curKanji, curPhon)
     {
@@ -206,20 +286,11 @@ window.wk_keisei = {};
 
         $("#keisei-phonetic-grid").html(char_list.map(li_phon_char).join(""));
     }
+    // #########################################################################
 
-    function toggleMoreInfoFold()
-    {
-        var $button = $('#keisei-more-button');
-        var $fold = $('#keisei-more-info');
-
-        if ($fold.is(":visible"))
-            $button.html('<i class="icon-chevron-down"></i>Show More Information');
-        else
-            $button.html('<i class="icon-chevron-up"></i>Show Less Information');
-
-        $('#keisei-more-info').slideToggle();
-    }
-
+    // Sometimes we want to include even more chargrids with related tone marks
+    // or kanji that are not considered a result of phonetic composition.
+    // #########################################################################
     function createMoreInfoFold()
     {
         var $infofold = $('<div id="keisei-more-fold"></div>');
@@ -234,71 +305,30 @@ window.wk_keisei = {};
 
         return $infofold;
     }
-
     // #########################################################################
-    function populateKeiseiSection()
+
+    // Callback function for click events on more info button.
+    // #########################################################################
+    function toggleMoreInfoFold()
     {
-        var curKanji = wki.getKanji();
+        var $button = $('#keisei-more-button');
+        var $fold = $('#keisei-more-info');
 
-        if (!kdb.checkKanji(curKanji))
-        {
-            $("#keisei-explanation").append(
-                error_msg(curKanji,
-                          "The requested kanji is not in the database!"));
-            return;
-        }
+        if ($fold.is(":visible"))
+            $button.html('<i class="icon-chevron-down"></i>Show More Information');
+        else
+            $button.html('<i class="icon-chevron-up"></i>Show Less Information');
 
-        // The kanji could be a phonetic element itself, show full info ...
-        if (kdb.checkPhonetic(curKanji))
-        {
-            $("#keisei-explanation").append(explanation_pmark(curKanji));
-            populateCharGrid(curKanji, curKanji);
-            return;
-        }
-
-        switch (kdb.getKType(curKanji))
-        {
-            case kdb.KTypeEnum.unknown:
-                $("#keisei-explanation").append(explanation_unknown(curKanji));
-                break;
-            case kdb.KTypeEnum.unprocessed:
-                $("#keisei-explanation").append(explanation_unprocessed(curKanji));
-                break;
-            case kdb.KTypeEnum.hieroglyph:
-            case kdb.KTypeEnum.indicative:
-            case kdb.KTypeEnum.comp_indicative:
-            case kdb.KTypeEnum.derivative:
-            case kdb.KTypeEnum.rebus:
-            case kdb.KTypeEnum.kokuji:
-                $("#keisei-explanation").append(explanation_other(curKanji));
-                break;
-            case kdb.KTypeEnum.comp_phonetic:
-                var curPhon = kdb.getKPhonetic(curKanji);
-
-                if (!curPhon)
-                {
-                    $("#keisei-explanation").append(
-                        error_msg(curKanji,
-                                  "The phonetic element of this kanji was not in the database (or even no db)!"));
-                    return;
-                }
-
-                $("#keisei-explanation").append(explanation_phonetic(curKanji, curPhon));
-                populateCharGrid(curKanji, curPhon);
-                break;
-            default:
-                $("#keisei-explanation").append(
-                    error_msg(curKanji, "The requested kanji is not in the database!"));
-        }
-
-        $("#keisei-section").append(createMoreInfoFold());
+        $('#keisei-more-info').slideToggle();
     }
     // #########################################################################
 
+    // Inject our own styles, this is done last so existing styles will be
+    // superceded here.
     // #########################################################################
     function injectStyles()
     {
-        $('html > head').append($(`
+        $("html > head").append($(`
             <style>
                 .badge-perfect:before {
                     content: "天"; background-color: #0695df;
@@ -330,6 +360,7 @@ window.wk_keisei = {};
     // #########################################################################
 
 
+    // Just do it!
     // #########################################################################
     function run()
     {

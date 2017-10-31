@@ -1,6 +1,7 @@
 /* jshint esversion: 6 */
 
-
+// Wrapper object for Keisei database interactions
+// #############################################################################
 function KeiseiDB()
 {
     this.KTypeEnum = Object.freeze(  {
@@ -18,7 +19,9 @@ function KeiseiDB()
 
     this.curKanji = null;
 }
+// #############################################################################
 
+// #############################################################################
 (function() {
    "use strict";
 
@@ -68,7 +71,9 @@ function KeiseiDB()
         }
     };
 }());
+// #############################################################################
 
+// #############################################################################
 KeiseiDB.prototype.kanji_db = JSON.parse(`
 {
     "一": {
@@ -9723,9 +9728,11 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     }
 }
 `);
+// #############################################################################
 
 
-/* List of all phonetic components here ... */
+// List of all phonetic components here ...
+// #############################################################################
 KeiseiDB.prototype.phonetic_db = JSON.parse(`
 {
     "七": {
@@ -11873,6 +11880,7 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
     }
 }
 `);
+// #############################################################################
 
 
 /*
