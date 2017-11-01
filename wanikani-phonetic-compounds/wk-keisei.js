@@ -39,6 +39,9 @@ window.wk_keisei = {};
     // #########################################################################
     function injectKeiseiSection()
     {
+        if (!wki.getKanji())
+            return;
+
         switch(wki.curPage)
         {
             case wki.PageEnum.kanji:
