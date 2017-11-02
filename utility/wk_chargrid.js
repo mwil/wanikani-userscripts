@@ -65,6 +65,7 @@ ul.multi-character-grid-extra-styling-767px{-webkit-border-radius:3px;-moz-borde
 ul.multi-character-grid-extra-styling-767px li.character-item:first-child{-webkit-border-top-left-radius:3px;-moz-border-radius-topleft:3px;border-top-left-radius:3px;-webkit-border-top-right-radius:3px;-moz-border-radius-topright:3px;border-top-right-radius:3px}
 ul.multi-character-grid-extra-styling-767px li.character-item:last-child{-webkit-border-bottom-left-radius:3px;-moz-border-radius-bottomleft:3px;border-bottom-left-radius:3px;-webkit-border-bottom-right-radius:3px;-moz-border-radius-bottomright:3px;border-bottom-right-radius:3px}
 }
+
 </style>
     `));
 }

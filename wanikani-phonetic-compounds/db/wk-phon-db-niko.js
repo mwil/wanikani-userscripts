@@ -180,7 +180,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "indicative"
     },
     "天": {
-        "readings": ["テン"],
+        "readings": ["てん"],
         "type": "hieroglyph"
     },
     "中": {
@@ -205,11 +205,11 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "hieroglyph"
     },
     "日": {
-        "readings": ["ジツ", "ニチ"],
+        "readings": ["じつ", "にち"],
         "type": "hieroglyph"
     },
     "月": {
-        "readings": ["ゲツ", "ガツ"],
+        "readings": ["げつ", "がつ"],
         "type": "hieroglyph"
     },
     "木": {
@@ -230,7 +230,6 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "王": {
         "readings": ["おう"],
-        "phonetic": "王",
         "type": "hieroglyph"
     },
     "正": {
@@ -325,7 +324,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unknown"
     },
     "竹": {
-        "readings": ["チク"],
+        "readings": ["ちく"],
         "type": "hieroglyph"
     },
     "糸": {
@@ -334,7 +333,6 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "耳": {
         "readings": ["じ"],
-        "phonetic": "耳",
         "type": "hieroglyph"
     },
     "虫": {
@@ -488,7 +486,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "切": {
-        "readings": ["セツ","せい","さい"],
+        "readings": ["せつ","せい","さい"],
         "phonetic": "七",
         "type": "comp_phonetic"
     },
@@ -506,7 +504,6 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "心": {
         "readings": ["しん"],
-        "phonetic": "心",
         "type": "hieroglyph"
     },
     "戸": {
@@ -555,7 +552,6 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "台": {
         "readings": ["だい", "たい"],
-        "phonetic": "台",
         "type": "comp_indicative"
     },
     "兄": {
@@ -661,7 +657,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "comment": "TODO: phonetic compound of 丂"
     },
     "肉": {
-        "readings": ["ニク", "ジク"],
+        "readings": ["ニク", "じく"],
         "type": "hieroglyph"
     },
     "自": {
@@ -807,7 +803,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "店": {
-        "readings": ["テン"],
+        "readings": ["てん"],
         "phonetic": "占",
         "type": "comp_phonetic"
     },
@@ -928,12 +924,10 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "原": {
         "readings": ["げん"],
-        "phonetic": "原",
         "type": "comp_indicative"
     },
     "家": {
         "readings": ["か", "け"],
-        "phonetic": "家",
         "type": "derivative"
     },
     "帰": {
@@ -1014,7 +1008,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "雪": {
-        "readings": ["セツ"],
+        "readings": ["せつ"],
         "type": "comp_indicative"
     },
     "魚": {
@@ -1113,7 +1107,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "電": {
-        "readings": ["でん", "テン"],
+        "readings": ["でん", "てん"],
         "type": "comp_indicative"
     },
     "鳴": {
@@ -1206,7 +1200,6 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "申": {
         "readings": ["しん"],
-        "phonetic": "申",
         "type": "hieroglyph"
     },
     "世": {
@@ -1249,7 +1242,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unknown"
     },
     "去": {
-        "readings": ["キョ", "こ"],
+        "readings": ["きょ", "こ"],
         "type": "unknown"
     },
     "打": {
@@ -1266,7 +1259,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "hieroglyph"
     },
     "礼": {
-        "readings": ["レイ", "ライ"],
+        "readings": ["れい", "ライ"],
         "type": "unknown",
         "comment": "obscure mark 豊"
     },
@@ -1417,7 +1410,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "味": {
-        "readings": ["ミ", "び"],
+        "readings": ["み", "び"],
         "phonetic": "未",
         "type": "comp_phonetic"
     },
@@ -1431,7 +1424,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unknown"
     },
     "実": {
-        "readings": ["ジツ"],
+        "readings": ["じつ"],
         "type": "comp_indicative"
     },
     "定": {
@@ -1496,7 +1489,6 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "具": {
         "readings": ["ぐ"],
-        "phonetic": "具",
         "type": "comp_indicative"
     },
     "委": {
@@ -1510,7 +1502,6 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "者": {
         "readings": ["しゃ"],
-        "phonetic": "者",
         "type": "unknown"
     },
     "取": {
@@ -1703,7 +1694,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "旅": {
-        "readings": ["リョ", "ろ"],
+        "readings": ["りょ", "ろ"],
         "phonetic": "㫃",
         "type": "comp_phonetic"
     },
@@ -1787,12 +1778,14 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "深": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["しん"],
+        "type": "unknown",
+        "comment": "obscure phonetic 罙 (TODO search)"
     },
     "球": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["きゅう"],
+        "phonetic": "求",
+        "type": "comp_phonetic"
     },
     "祭": {
         "readings": ["さい"],
@@ -1986,8 +1979,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "漢": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["かん"],
+        "phonetic": "𦰩",
+        "type": "comp_phonetic"
     },
     "福": {
         "readings": ["ふく"],
@@ -2112,7 +2106,6 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "氏": {
         "readings": ["し"],
-        "phonetic": "氏",
         "type": "unknown"
     },
     "民": {
@@ -2145,13 +2138,13 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "indicative"
     },
     "未": {
-        "readings": ["ミ", "び"],
+        "readings": ["み", "び"],
         "phonetic": "未",
         "type": "hieroglyph"
     },
     "以": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["い"],
+        "type": "unknown"
     },
     "付": {
         "readings": ["ふ"],
@@ -2173,13 +2166,13 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "功": {
-        "readings": ["コウ・ク"],
+        "readings": ["こう", "く"],
         "phonetic": "工",
         "type": "comp_phonetic"
     },
     "札": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["さつ"],
+        "type": "unknown"
     },
     "辺": {
         "readings": ["へん"],
@@ -2187,8 +2180,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "comment": "simplified obscure tone mark 臱"
     },
     "印": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["いん"],
+        "type": "comp_indicative"
     },
     "争": {
         "readings": ["そう"],
@@ -2200,8 +2193,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "伝": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["でん"],
+        "type": "unknown"
     },
     "共": {
         "readings": ["きょう"],
@@ -2218,8 +2211,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "好": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["こう"],
+        "type": "comp_indicative"
     },
     "成": {
         "readings": ["せい", "じょう"],
@@ -2231,16 +2224,16 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "老": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["ろう"],
+        "type": "hieroglyph"
     },
     "衣": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["い", "え"],
+        "type": "hieroglyph"
     },
     "求": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["きゅう", "ぐ"],
+        "type": "hieroglyph"
     },
     "束": {
         "readings": ["そく"],
@@ -2358,12 +2351,12 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "例": {
-        "readings": ["レイ"],
+        "readings": ["れい"],
         "phonetic": "列",
         "type": "comp_phonetic"
     },
     "典": {
-        "readings": ["テン"],
+        "readings": ["てん"],
         "type": "comp_indicative"
     },
     "周": {
@@ -2540,8 +2533,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "倉": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["そう"],
+        "type": "unknown"
     },
     "孫": {
         "readings": [],
@@ -2674,8 +2667,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "救": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["きゅう", "ぐ", "く"],
+        "phonetic": "求",
+        "type": "comp_phonetic"
     },
     "械": {
         "readings": [],
@@ -2792,8 +2786,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "hieroglyph"
     },
     "貯": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["ちょ"],
+        "type": "unknown",
+        "comment": "obscure tone mark 宁"
     },
     "費": {
         "readings": [],
@@ -2805,8 +2800,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "隊": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["たい", "つい"],
+        "phonetic": "㒸",
+        "type": "comp_phonetic"
     },
     "飯": {
         "readings": ["はん"],
@@ -2893,7 +2889,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "説": {
-        "readings": ["セツ", "ゼイ", "えつ"],
+        "readings": ["せつ", "ゼイ", "えつ"],
         "phonetic": "兌",
         "type": "comp_phonetic"
     },
@@ -3063,8 +3059,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unknown"
     },
     "再": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["さい", "さ"],
+        "type": "indicative"
     },
     "仮": {
         "readings": ["か"],
@@ -3200,8 +3196,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "往": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["おう"],
+        "phonetic": "王",
+        "type": "comp_phonetic"
     },
     "性": {
         "readings": ["せい", "しょう"],
@@ -3431,7 +3428,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "接": {
-        "readings": ["セツ", "しょう"],
+        "readings": ["せつ", "しょう"],
         "phonetic": "妾",
         "type": "comp_phonetic"
     },
@@ -3455,7 +3452,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "略": {
-        "readings": ["リャク"],
+        "readings": ["りゃく"],
         "phonetic": "各",
         "type": "comp_phonetic"
     },
@@ -3484,12 +3481,12 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "許": {
-        "readings": ["キョ", "こ"],
+        "readings": ["きょ", "こ"],
         "phonetic": "午",
         "type": "comp_phonetic"
     },
     "設": {
-        "readings": ["セツ", "セチ"],
+        "readings": ["せつ", "せち"],
         "type": "comp_indicative"
     },
     "責": {
@@ -4203,8 +4200,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "従": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["じゅう", "しょう", "じゅ"],
+        "type": "comp_indicative"
     },
     "株": {
         "readings": ["しゅ"],
@@ -4245,8 +4242,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "討": {
         "readings": ["とう"],
-        "phonetic": "屯",
-        "type": "comp_phonetic"
+        "type": "unknown"
     },
     "射": {
         "readings": [],
@@ -4382,8 +4378,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "創": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["そう"],
+        "phonetic": "倉",
+        "type": "comp_phonetic"
     },
     "勤": {
         "readings": ["きん", "ごん"],
@@ -4623,16 +4620,18 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "激": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["げき"],
+        "type": "unknown",
+        "comment": "obscure tone mark 敫"
     },
     "糖": {
         "readings": [],
         "type": "unprocessed"
     },
     "縦": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["じゅう", "しょう"],
+        "phonetic": "従",
+        "type": "comp_phonetic"
     },
     "鋼": {
         "readings": ["こう"],
@@ -4666,7 +4665,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "難": {
         "readings": ["なん", "だん"],
-        "phonetic": "堇",
+        "phonetic": "𦰩",
         "type": "comp_phonetic"
     },
     "臓": {
@@ -4840,7 +4839,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "巨": {
-        "readings": ["キョ", "こ"],
+        "readings": ["きょ", "こ"],
         "phonetic": "巨",
         "type": "hieroglyph"
     },
@@ -4934,7 +4933,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_indicative"
     },
     "伏": {
-        "readings": ["ふく", "ブク"],
+        "readings": ["ふく", "ぶく"],
         "type": "unknown"
     },
     "刑": {
@@ -5415,8 +5414,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "怪": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["かい", "け"],
+        "phonetic": "巠",
+        "type": "comp_phonetic"
     },
     "怖": {
         "readings": [],
@@ -5440,7 +5440,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "拒": {
-        "readings": ["キョ"],
+        "readings": ["きょ"],
         "phonetic": "巨",
         "type": "comp_phonetic"
     },
@@ -5454,7 +5454,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "拙": {
-        "readings": ["セツ"],
+        "readings": ["せつ"],
         "phonetic": "出",
         "type": "comp_phonetic"
     },
@@ -5599,8 +5599,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "突": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["とつ"],
+        "type": "comp_indicative"
     },
     "肢": {
         "readings": [],
@@ -6286,7 +6286,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "畜": {
-        "readings": ["チク", "キク"],
+        "readings": ["ちく", "キク"],
         "type": "unknown"
     },
     "珠": {
@@ -6439,7 +6439,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "逐": {
-        "readings": ["チク", "ジク"],
+        "readings": ["ちく", "じく"],
         "type": "unknown"
     },
     "逓": {
@@ -6696,12 +6696,12 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "渓": {
         "readings": ["けい"],
-        "type": "unprocessed",
+        "type": "unknown",
         "comment": "obscure phonetic 奚"
     },
     "渋": {
         "readings": ["じゅう", "しゅう"],
-        "type": "unprocessed",
+        "type": "unknown",
         "comment": "maybe phonetic 歮歰"
     },
     "淑": {
@@ -6804,8 +6804,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "豚": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["とん"],
+        "type": "comp_indicative"
     },
     "舶": {
         "readings": ["はく"],
@@ -6827,7 +6827,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "虚": {
         "readings": ["きょ", "こ"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "蛍": {
         "readings": ["けい"],
@@ -6860,7 +6860,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "軟": {
         "readings": ["なん", "ぜん", "ねん"],
-        "type": "unprocessed",
+        "type": "unknown",
         "comment": "obscure tone mark 耎"
     },
     "逸": {
@@ -7031,7 +7031,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "廊": {
         "readings": ["ろう"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "弾": {
         "readings": ["だん"],
@@ -7132,8 +7132,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "棚": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["おう"],
+        "type": "unknown"
     },
     "棟": {
         "readings": ["とう"],
@@ -7183,7 +7183,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "猶": {
         "readings": ["ゆう"],
-        "type": "unprocessed",
+        "type": "unknown",
         "comment": "TODO: related to 酋?"
     },
     "琴": {
@@ -7299,7 +7299,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "診": {
         "readings": ["しん"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "訴": {
         "readings": ["そ"],
@@ -7307,8 +7307,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "越": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["えつ", "おち", "おつ"],
+        "type": "unknown",
+        "cooment": "obscure tone mark 戉"
     },
     "超": {
         "readings": ["ちょう"],
@@ -7316,12 +7317,12 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "距": {
-        "readings": ["キョ"],
+        "readings": ["きょ"],
         "phonetic": "巨",
         "type": "comp_phonetic"
     },
     "軸": {
-        "readings": ["ジク", "チク"],
+        "readings": ["じく", "ちく"],
         "phonetic": "由",
         "type": "comp_phonetic"
     },
@@ -7331,12 +7332,14 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "遂": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["すい"],
+        "phonetic": "㒸",
+        "type": "comp_phonetic"
     },
     "遅": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["さい"],
+        "type": "unknown",
+        "comment": "obscure tone mark 犀 (rhinoceros)"
     },
     "遍": {
         "readings": ["へん"],
@@ -7497,7 +7500,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "携": {
         "readings": ["けい"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "搾": {
         "readings": [],
@@ -7610,7 +7613,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "継": {
         "readings": ["けい"],
-        "type": "unprocessed",
+        "type": "unknown",
         "comment": "related to 断"
     },
     "腰": {
@@ -7634,15 +7637,15 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "comment": "related to 虞 reading?"
     },
     "虜": {
-        "readings": ["リョ", "ろ"],
-        "type": "unprocessed"
+        "readings": ["りょ", "ろ"],
+        "type": "unknown"
     },
     "褐": {
         "readings": [],
         "type": "unprocessed"
     },
     "裸": {
-        "readings": ["ラ"],
+        "readings": ["ら"],
         "phonetic": "果",
         "type": "comp_phonetic"
     },
@@ -7691,7 +7694,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "践": {
         "readings": ["せん"],
-        "type": "unprocessed",
+        "type": "unknown",
         "comment": "rare phonetic mark 戔, simplified"
     },
     "跳": {
@@ -7712,7 +7715,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "遣": {
         "readings": ["けん"],
-        "type": "unprocessed",
+        "type": "unknown",
         "comment": "very obscure phonetic mark, doesn't even display"
     },
     "酬": {
@@ -7732,7 +7735,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "鉢": {
         "readings": ["はち", "はつ"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "鈴": {
         "readings": ["れい", "りん"],
@@ -7745,7 +7748,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "雷": {
         "readings": ["らい"],
-        "type": "unprocessed",
+        "type": "unknown",
         "comment": "obscure phonetic mark 畾"
     },
     "零": {
@@ -7796,8 +7799,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "暦": {
-        "readings": ["レキ", "リャク"],
-        "type": "unprocessed",
+        "readings": ["れき", "りゃく"],
+        "type": "unknown",
         "comment": "TODO: tone mark 厤?"
     },
     "塾": {
@@ -7833,8 +7836,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "徴": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["ちょう", "ち"],
+        "type": "unknown"
     },
     "憎": {
         "readings": ["ぞう", "そう"],
@@ -7921,8 +7924,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "緒": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["しょ", "ちょ"],
+        "phonetic": "者",
+        "type": "comp_phonetic"
     },
     "網": {
         "readings": ["もう", "ぼう"],
@@ -8248,7 +8252,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "懸": {
         "readings": ["けん", "け"],
-        "type": "unprocessed",
+        "type": "unknown",
         "comment": "TODO: phonetic 縣"
     },
     "謙": {
@@ -8262,7 +8266,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "顕": {
         "readings": ["けん"],
-        "type": "unprocessed",
+        "type": "unknown",
         "comment": "obscure phonetic 㬎?"
     },
     "顧": {
@@ -8350,7 +8354,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "獣": {
         "readings": ["じゅう"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "瞬": {
         "readings": [],
@@ -8409,7 +8413,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "審": {
         "readings": ["しん"],
-        "type": "unprocessed",
+        "type": "unknown",
         "comment": "variant of 审"
     },
     "薪": {
@@ -8653,9 +8657,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "賓": {
-        "readings": [],
-        "phonetic": "賓",
-        "type": "unprocessed"
+        "readings": ["ひん"],
+        "type": "unknown"
     },
     "頻": {
         "readings": ["ひん", "びん"],
@@ -8787,7 +8790,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "魅": {
-        "readings": ["ミ", "び"],
+        "readings": ["み", "び"],
         "phonetic": "未",
         "type": "comp_phonetic"
     },
@@ -8909,7 +8912,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "擁": {
         "readings": ["よう"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "露": {
         "readings": [],
@@ -8942,7 +8945,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "奈": {
         "readings": ["な", "ない", "だい"],
-        "type": "unprocessed",
+        "type": "unknown",
         "comment": "TODO: using phonetic 示?"
     },
     "阪": {
@@ -8952,11 +8955,11 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "韓": {
         "readings": ["かん"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "弥": {
-        "readings": ["び", "ミ"],
-        "type": "unprocessed",
+        "readings": ["び", "み"],
+        "type": "unknown",
         "comment": "obscure phonetic 爾"
     },
     "那": {
@@ -8965,7 +8968,6 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "鹿": {
         "readings": ["ろく"],
-        "phonetic": "鹿",
         "type": "hieroglyph"
     },
     "斬": {
@@ -9153,12 +9155,12 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "貼": {
-        "readings": ["ちょう", "テン"],
+        "readings": ["ちょう", "てん"],
         "phonetic": "占",
         "type": "comp_phonetic"
     },
     "拉": {
-        "readings": ["ラ", "ラツ", "ろう"],
+        "readings": ["ら", "らつ", "ろう"],
         "phonetic": "立",
         "type": "comp_phonetic"
     },
@@ -9300,7 +9302,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "箸": {
-        "readings": ["チョ"],
+        "readings": ["ちょ"],
         "phonetic": "者",
         "type": "comp_phonetic"
     },
@@ -9770,8 +9772,11 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "readings": ["せん"],
         "phonetic": "西",
         "type": "comp_phonetic"
+    },
+    "賭": {
+        "readings": ["と"],
+        "type": "unprocessed"
     }
-
 }
 `);
 // #############################################################################
@@ -9825,15 +9830,16 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
     },
     "屯": {
         "readings": ["とん", "どん"],
-        "compounds": ["討", "純", "春", "鈍", "頓"],
+        "compounds": ["純", "春", "鈍", "頓"],
         "non_compounds": [],
         "xrefs": []
     },
     "丁": {
         "readings": ["ちょう", "てい", "とう"],
         "compounds": ["庁", "灯", "町", "亭", "頂", "訂", "打"],
-        "non_compounds": [],
-        "xrefs": []
+        "non_compounds": ["貯"],
+        "xrefs": [],
+        "comment": "phonetic xref 宁?"
     },
     "化": {
         "readings": ["か", "け", "げ"],
@@ -9911,6 +9917,12 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
     "主": {
         "readings": ["しゅ", "す"],
         "compounds": ["住", "注", "柱", "駐"],
+        "non_compounds": ["往"],
+        "xrefs": []
+    },
+    "王": {
+        "readings": ["おう"],
+        "compounds": ["往", "旺"],
         "non_compounds": [],
         "xrefs": []
     },
@@ -10068,12 +10080,6 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
         "readings": ["ぶん", "もん"],
         "compounds": ["文", "紋", "蚊"],
         "non_compounds": [],
-        "xrefs": []
-    },
-    "王": {
-        "readings": ["おう"],
-        "compounds": ["王"],
-        "non_compounds": ["旺"],
         "xrefs": []
     },
     "正": {
@@ -10317,7 +10323,7 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "未": {
-        "readings": ["ミ", "び"],
+        "readings": ["み", "び"],
         "compounds": ["未", "味", "妹", "昧", "魅"],
         "non_compounds": [],
         "xrefs": []
@@ -10421,6 +10427,12 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
         "non_compounds": [],
         "xrefs": ["良"]
     },
+    "倉": {
+        "readings": ["そう"],
+        "compounds": ["創"],
+        "non_compounds": [],
+        "xrefs": []
+    },
     "非": {
         "readings": ["ひ"],
         "compounds": ["非", "俳", "排", "悲", "扉", "輩"],
@@ -10435,9 +10447,10 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
     },
     "巠": {
         "readings": ["けい"],
-        "compounds": ["茎", "径", "経", "軽"],
+        "compounds": ["茎", "径", "経", "軽", "怪"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "comment": "simplified version is 圣"
     },
     "馬": {
         "readings": ["ば", "め", "ま"],
@@ -10496,7 +10509,7 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
     },
     "賓": {
         "readings": ["ひん"],
-        "compounds": ["賓", "浜"],
+        "compounds": ["浜"],
         "non_compounds": [],
         "xrefs": [],
         "comment": "TODO info missing, search!"
@@ -10606,31 +10619,32 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
     },
     "具": {
         "readings": ["ぐ", "く"],
-        "compounds": ["具", "惧"],
+        "compounds": ["惧"],
         "non_compounds": [],
         "xrefs": []
     },
     "台": {
         "readings": ["だい", "たい"],
-        "compounds": ["台"],
+        "compounds": [],
         "non_compounds": ["冶", "治", "始"],
-        "xrefs": []
+        "xrefs": [],
+        "comment": "TODO: this doesn't have compounds, maybe problems."
     },
     "申": {
         "readings": ["しん"],
-        "compounds": ["申", "伸", "神", "紳"],
+        "compounds": ["伸", "神", "紳"],
         "non_compounds": ["電"],
         "xrefs": []
     },
     "鹿": {
         "readings": ["ろく"],
-        "compounds": ["鹿", "麓"],
+        "compounds": ["麓"],
         "non_compounds": [],
         "xrefs": []
     },
     "心": {
         "readings": ["しん"],
-        "compounds": ["心", "芯"],
+        "compounds": ["芯"],
         "non_compounds": [],
         "xrefs": []
     },
@@ -10642,7 +10656,7 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
     },
     "耳": {
         "readings": ["じ"],
-        "compounds": ["耳", "餌", "恥"],
+        "compounds": ["餌", "恥"],
         "non_compounds": [],
         "xrefs": []
     },
@@ -10654,26 +10668,26 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
     },
     "原": {
         "readings": ["げん", "がん", "ごん"],
-        "compounds": ["原", "源", "願"],
+        "compounds": ["源", "願"],
         "non_compounds": [],
         "xrefs": []
     },
     "家": {
         "readings": ["か", "け"],
-        "compounds": ["家", "嫁", "稼"],
+        "compounds": ["嫁", "稼"],
         "non_compounds": [],
         "xrefs": []
     },
     "氏": {
         "readings": ["し"],
-        "compounds": ["氏", "紙"],
+        "compounds": ["紙"],
         "non_compounds": [],
         "xrefs": []
     },
     "者": {
         "readings": ["しゃ", "しょ"],
-        "compounds": ["者", "都", "暑", "煮", "署", "箸", "諸", "書"],
-        "non_compounds": [],
+        "compounds": ["都", "暑", "煮", "署", "箸", "諸", "書", "緒"],
+        "non_compounds": ["賭"],
         "xrefs": [],
         "comment": "added しょ, but found no reason"
     },
@@ -11004,7 +11018,7 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
         "xrefs": []
     },
     "巨": {
-        "readings": ["キョ", "こ"],
+        "readings": ["きょ", "こ"],
         "compounds": ["巨", "拒", "距"],
         "non_compounds": [],
         "xrefs": []
@@ -11139,7 +11153,13 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
     },
     "堇": {
         "readings": ["きん"],
-        "compounds": ["僅", "勤", "謹", "難"],
+        "compounds": ["僅", "勤", "謹"],
+        "non_compounds": ["難", "漢"],
+        "xrefs": []
+    },
+    "𦰩": {
+        "readings": ["かん", "なん"],
+        "compounds": ["難", "漢"],
         "non_compounds": [],
         "xrefs": []
     },
@@ -11299,7 +11319,7 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
         "comment": "TODO no list, search"
     },
     "复": {
-        "readings": ["ふく", "ふう", "ブク", "ぶ"],
+        "readings": ["ふく", "ふう", "ぶく", "ぶ"],
         "compounds": ["復", "腹", "複", "覆"],
         "non_compounds": [],
         "xrefs": ["畐"],
@@ -11449,7 +11469,7 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
         "comment": "TODO: no list, search!"
     },
     "㫃": {
-        "readings": ["リョ", "ろ"],
+        "readings": ["りょ", "ろ"],
         "compounds": ["旅"],
         "non_compounds": ["旋", "施", "旗", "族"],
         "xrefs": [],
@@ -12076,6 +12096,24 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
     "坐": {
         "readings": ["ざ", "さ"],
         "compounds": ["挫", "座"],
+        "non_compounds": [],
+        "xrefs": []
+    },
+    "従": {
+        "readings": ["じゅう", "しょう", "じゅ"],
+        "compounds": ["縦"],
+        "non_compounds": [],
+        "xrefs": []
+    },
+    "㒸": {
+        "readings": ["たい", "すい"],
+        "compounds": ["隊", "遂"],
+        "non_compounds": [],
+        "xrefs": []
+    },
+    "求": {
+        "readings": ["きゅう", "ぐ"],
+        "compounds": ["救", "球"],
         "non_compounds": [],
         "xrefs": []
     },
