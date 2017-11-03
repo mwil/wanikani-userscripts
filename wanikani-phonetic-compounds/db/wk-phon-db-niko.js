@@ -3009,7 +3009,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     "団": {
         "readings": ["だん", "とん", "たん"],
         "phonetic": "専",
-        "type": "comp_phonetic",
+        "type": "comp_phonetic"
     },
     "在": {
         "readings": [],
