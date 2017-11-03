@@ -1,6 +1,48 @@
 /* jshint esversion: 6 */
 
-var wk_kanji_db = JSON.parse(`
+
+function WKKanjiDB()
+{
+}
+
+(function() {
+   "use strict";
+
+    WKKanjiDB.prototype = {
+        // #####################################################################
+        init: function() {},
+        // #####################################################################
+
+        // #####################################################################
+        upper: function(string)
+        {
+            return string.charAt(0).toUpperCase() + string.slice(1);
+        },
+        // #####################################################################
+
+
+        // #####################################################################
+        checkKanji: function(kanji)
+        {
+            return this.wk_kanji_db && (kanji in this.wk_kanji_db);
+        },
+        // #####################################################################
+
+        // #####################################################################
+        getKMeaning: function(kanji)
+        {
+            if (this.checkKanji(kanji))
+            {
+                return this.wk_kanji_db[kanji].meaning.split(",").map(this.upper);
+            }
+            else
+                return ["*Not in WK!*"];
+        }
+        // #####################################################################
+    };
+}());
+
+WKKanjiDB.prototype.wk_kanji_db = JSON.parse(`
 {
   "一": {
     "level": 1,

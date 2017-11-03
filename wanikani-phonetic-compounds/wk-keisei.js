@@ -29,6 +29,8 @@ window.wk_keisei = {};
     var wki = null;
     // KeiseiDB, the database including all kanji and their tone marks
     var kdb = null;
+    // WKKanjiDB, a dump from WK to fill in the meanings
+    var wkdb = null;
 
     // Callback for the WKInteraction, this is called directly at the beginning
     // when the required WK content is available.
@@ -247,18 +249,10 @@ window.wk_keisei = {};
     }
     // #########################################################################
 
-    // #########################################################################
-    function upper(string)
-    {
-        return string.charAt(0).toUpperCase() + string.slice(1);
-    }
-    // #########################################################################
-
     // Create character items for all compounds, sort them, and add them all.
     // #########################################################################
     function populateCharGrid(selector, curKanji, curPhon)
     {
-        var wk_meaning = [];
         var char_list = [];
         var char_list_lo = [];
         var char_list_hi = [];
@@ -268,13 +262,11 @@ window.wk_keisei = {};
             var kanji = kdb.getPCompounds(curPhon)[i];
             var badge = ["item-badge", "recently-unlocked-badge"];
 
-            wk_meaning = upper(wk_kanji_db[kanji].meaning.split(",")[0]);
-
-            if (!kanji || kanji === curKanji)
+            if (!kanji)
                 continue;
 
             var common_readings = intersect(kdb.getKReadings(kanji), kdb.getPReadings(curPhon));
-            var li_template = {kanji: kanji, badge: "", meaning: wk_meaning, kanji_id: "kanji-"+i};
+            var li_template = {kanji: kanji, badge: "", meaning: wkdb.getKMeaning(kanji)[0], kanji_id: "kanji-"+i};
 
             if (kdb.getKReadings(kanji).length === common_readings.length)
             {
@@ -313,8 +305,7 @@ window.wk_keisei = {};
         // char_list.push({kanji: curPhon, badge: "", kanji_id: "radical-1"});  // TODO: WK radical
         if (kdb.checkKanji(curPhon))
         {
-            wk_meaning = upper(wk_kanji_db[curPhon].meaning.split(",")[0]);
-            char_list.push({kanji: curPhon, badge: "", meaning: wk_meaning, kanji_id: "kanji-1"});
+            char_list.push({kanji: curPhon, badge: "", meaning: wkdb.getKMeaning(curPhon)[0], kanji_id: "kanji-1"});
         }
 
         char_list = char_list.concat(char_list_hi);
@@ -376,9 +367,7 @@ window.wk_keisei = {};
             for (i = 0; i < kdb.getPNonCompounds(phon).length; i++)
             {
                 var curKanji = kdb.getPNonCompounds(phon)[i];
-                var wk_meaning = upper(wk_kanji_db[curKanji].meaning.split(",")[0]);
-
-                char_list.push({kanji: curKanji, meaning: wk_meaning, badge: "", kanji_id: "kanji-"+i});
+                char_list.push({kanji: curKanji, meaning: wkdb.getKMeaning(curKanji)[0], badge: "", kanji_id: "kanji-"+i});
             }
 
             $("#keisei-non-comp-grid").html(char_list.map(li_phon_char).join(""));
@@ -483,6 +472,9 @@ window.wk_keisei = {};
 
         kdb = new KeiseiDB();
         kdb.init();
+
+        wkdb = new WKKanjiDB();
+        wkdb.init();
 
         wki = new WKInteraction();
         wki.init(injectKeiseiSection);
