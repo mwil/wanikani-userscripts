@@ -1,9 +1,11 @@
 // ==UserScript==
-// @name        WaniKani Phonetic-Semantic Composition Rebirth
-// @version     2.0.0
+// @name        WaniKani Keisei Phonetic-Semantic Composition
+// @version     0.8.0
 // @author      acm
 // @description Adds information to Wanikani about kanji that use Phonetic-Semantic Composition.
 // @namespace   wk_keisei
+// @include     http://www.wanikani.com/radicals/*
+// @include     https://www.wanikani.com/radicals/*
 // @include     http://www.wanikani.com/kanji/*
 // @include     https://www.wanikani.com/kanji/*
 // @include     http://www.wanikani.com/review/session*
