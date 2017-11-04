@@ -1,0 +1,58 @@
+
+.badge-perfect:before {
+    content: "天"; background-color: #092;
+}
+.badge-high:before {
+    content: "上"; background-color: #092;
+}
+.badge-middle:before {
+    content: "中"; background-color: #f04;
+}
+.badge-low:before {
+    content: "下"; background-color: #f04;
+}
+.badge-current:before {
+    background-color: #0695df !important;
+}
+#keisei-more-button {
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+#keisei-more-info {
+    display: none;
+}
+
+/* #f0a -> 0c4, #dd0093 -> 092 */
+ul.single-character-grid li[id|=phonetic],
+ul.single-character-grid tr[id|=phonetic]
+{
+    background-color:#0a2;
+    background-image:-moz-linear-gradient(top, #0c4, #092);
+    background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#0c4), to(#092));
+    background-image:-webkit-linear-gradient(top, #0c4, #092);
+    background-image:-o-linear-gradient(top, #0c4, #092);
+    background-image:linear-gradient(to bottom, #0c4, #092);
+    background-repeat:repeat-x;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF00CC44', endColorstr='#FF009922', GradientType=0);
+    border-top:1px solid #0c4;
+    border-bottom:1px solid #092;
+    border-left:1px solid #0c4
+}
+
+ul.single-character-grid li[id|=nonphonetic],
+ul.single-character-grid tr[id|=nonphonetic]
+{
+    background-color:#f04;
+    background-image:-moz-linear-gradient(top, #f04, #c04);
+    background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#f04), to(#c04));
+    background-image:-webkit-linear-gradient(top, #f04, #c04);
+    background-image:-o-linear-gradient(top, #f04, #c04);
+    background-image:linear-gradient(to bottom, #f04, #c04);
+    background-repeat:repeat-x;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFF0044', endColorstr='#FFCC0044', GradientType=0);
+    border-top:1px solid #f04;
+    border-bottom:1px solid #c04;
+    border-left:1px solid #f04
+}

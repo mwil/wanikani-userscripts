@@ -1,9 +1,11 @@
 // ==UserScript==
 // @name        WaniKani Keisei Phonetic-Semantic Composition
-// @version     0.8.0
+// @version     0.8.2
 // @author      acm
 // @description Adds information to Wanikani about kanji that use Phonetic-Semantic Composition.
+// @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
 // @namespace   wk_keisei
+//
 // @include     http://www.wanikani.com/radicals/*
 // @include     https://www.wanikani.com/radicals/*
 // @include     http://www.wanikani.com/kanji/*
@@ -12,12 +14,21 @@
 // @include     https://www.wanikani.com/review/session*
 // @include     http://www.wanikani.com/lesson/session*
 // @include     https://www.wanikani.com/lesson/session*
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/b7c4202cb88530bc77a57fcaacdee5293818927f/wanikani-phonetic-compounds/db/wk-phon-db-niko.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/dc48abc6def97eb84e75d2036a01ad27ad898455/wanikani-phonetic-compounds/db/wk_kanji.js
+//
+// @resource    kanji     https://kanji.json
+// @resource    phonetic  https://phonetic.json
+// @resource    wk_kanji  https://wk_kanji.json
+// @resource    style     https://keisei.css
+// @resource    chargrid  https://chargrid.css
+//
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/b7c4202cb88530bc77a57fcaacdee5293818927f/wanikani-phonetic-compounds/db/phonetic_db.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/dc48abc6def97eb84e75d2036a01ad27ad898455/wanikani-phonetic-compounds/db/wk_kanji_db.js
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/b7c4202cb88530bc77a57fcaacdee5293818927f/utility/wk_interaction.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/3ec236c08160adb180b0847a68cee044ec3ba878/utility/wk_chargrid.js
-// @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
-// @grant       none
+//
+// @grant       GM_addStyle
+// @grant       GM_getResourceText
+// @grant       GM_notification
+//
 // @run-at      document-end
 // ==/UserScript==
 
@@ -34,96 +45,6 @@ window.wk_keisei = {};
     var kdb = null;
     // WKKanjiDB, a dump from WK to fill in the meanings
     var wkdb = null;
-
-    // Callback for the WKInteraction, this is called directly at the beginning
-    // when the required WK content is available.
-    //
-    // Note: on the reviews and lessons page we inject some styles lifted from
-    // WK to include the nice 'character grids', this might cause some ugly
-    // interactions with these pages (seems fine though)!
-    // #########################################################################
-    function injectKeiseiSection()
-    {
-        var subject = wki.getSubject();
-        var curKanji = null;
-        var curPhon = null;
-
-        if (!subject)
-            return;
-
-        switch(wki.curPage)
-        {
-            case wki.PageEnum.radicals:
-                curPhon = kdb.mapWKRadicalToPhon(subject);
-                $("section#note-meaning").after(createKeiseiSection());
-
-                break;
-            case wki.PageEnum.kanji:
-                curKanji = subject;
-                $("section#note-reading").before(createKeiseiSection());
-
-                break;
-            case wki.PageEnum.reviews:
-                curKanji = subject;
-
-                injectWKStyles();
-
-                $("section#item-info-reading-mnemonic").after(createKeiseiSection());
-
-                if ($("section#item-info-reading-mnemonic").is(":hidden"))
-                    $("#keisei-section").hide();
-
-                break;
-            case wki.PageEnum.lessons:
-                curKanji = subject;
-
-                if ($("#keisei-section").length === 0)
-                    injectWKStyles();
-                else
-                    $("#keisei-section").remove();
-
-                $('div#supplement-kan-reading div:contains("Reading Mnemonic") blockquote:last').after(createKeiseiSection());
-
-                break;
-            default:
-                console.log("KEISEI: Unknown page type", wki.curPage, ", cannot inject info!");
-                return;
-        }
-
-        if (!curPhon)
-            curPhon = kdb.checkPhonetic(curKanji) ? curKanji : kdb.getKPhonetic(curKanji);
-
-        // TODO: extract curPhon from here, options of cK, cP are (cK, cP), (cK, cK), (cK, null), (null, null), (null, cP) <- rad page
-        populateKeiseiSection(curKanji, curPhon);
-
-        if (wki.curPage === wki.PageEnum.reviews || wki.curPage === wki.PageEnum.lessons)
-            $(".keisei-kanji-link").attr("target", "_blank");
-    }
-
-    // #########################################################################
-    // Insert stubs for all information fields to be filled later by
-    // populateKeiseiSection().
-    //
-    // Some section may stay empty, for example when a kanji is not related to
-    // phonetic compounds.
-    // #########################################################################
-    function createKeiseiSection()
-    {
-        var $section = $("<section></section>")
-                       .attr("id", "keisei-section");
-
-        var $grid = $("<ul></ul>")
-                    .attr("id", "keisei-phonetic-grid")
-                    .addClass("single-character-grid");
-
-        $section.append('<h2>Phonetic-Semantic Composition</h2>');
-        $section.append($('<span></span>').attr("id", "keisei-explanation"));
-        $section.append($grid);
-        // $section.append($expl);
-
-        return $section;
-    }
-    // #########################################################################
 
     // #########################################################################
     // Template strings with es6 features for the various explanations (first
@@ -186,8 +107,6 @@ window.wk_keisei = {};
         or are considered a different type of composition. The readings are likely to differ.</p>`;
 
     // Character item to be included in a character grid
-    //
-    // TODO: new tab in reviews and lessons, same in kanji and radicals
     // #########################################################################
     const li_phon_char = ({kanji, meaning, badge, href, kanji_id}) =>
        `<li id="${kanji_id}" class="character-item">
@@ -200,6 +119,95 @@ window.wk_keisei = {};
                 </ul>
             </a>
         </li>`;
+    // #########################################################################
+
+
+    // Callback for the WKInteraction, this is called directly at the beginning
+    // when the required WK content is available.
+    //
+    // Note: on the reviews and lessons page we inject some styles lifted from
+    // WK to include the nice 'character grids', this might cause some ugly
+    // interactions with these pages (seems fine though)!
+    // #########################################################################
+    function injectKeiseiSection()
+    {
+        var subject = wki.getSubject();
+        var curKanji = null;
+        var curPhon = null;
+
+        if (!subject)
+            return;
+
+        switch(wki.curPage)
+        {
+            case wki.PageEnum.radicals:
+                curPhon = kdb.mapWKRadicalToPhon(subject);
+                $("section#note-meaning").after(createKeiseiSection());
+
+                break;
+            case wki.PageEnum.kanji:
+                curKanji = subject;
+                $("section#note-reading").before(createKeiseiSection());
+
+                break;
+            case wki.PageEnum.reviews:
+                curKanji = subject;
+
+                GM_addStyle(GM_getResourceText("chargrid"));
+
+                $("section#item-info-reading-mnemonic").after(createKeiseiSection());
+
+                if ($("section#item-info-reading-mnemonic").is(":hidden"))
+                    $("#keisei-section").hide();
+
+                break;
+            case wki.PageEnum.lessons:
+                curKanji = subject;
+
+                if ($("#keisei-section").length === 0)
+                    GM_addStyle(GM_getResourceText("chargrid"));
+                else
+                    $("#keisei-section").remove();
+
+                $('div#supplement-kan-reading div:contains("Reading Mnemonic") blockquote:last').after(createKeiseiSection());
+
+                break;
+            default:
+                console.log("KEISEI: Unknown page type", wki.curPage, ", cannot inject info!");
+                return;
+        }
+
+        if (!curPhon)
+            curPhon = kdb.checkPhonetic(curKanji) ? curKanji : kdb.getKPhonetic(curKanji);
+
+        populateKeiseiSection(curKanji, curPhon);
+
+        if (wki.curPage === wki.PageEnum.reviews || wki.curPage === wki.PageEnum.lessons)
+            $(".keisei-kanji-link").attr("target", "_blank");
+    }
+
+    // #########################################################################
+    // Insert stubs for all information fields to be filled later by
+    // populateKeiseiSection().
+    //
+    // Some section may stay empty, for example when a kanji is not related to
+    // phonetic compounds.
+    // #########################################################################
+    function createKeiseiSection()
+    {
+        var $section = $("<section></section>")
+                       .attr("id", "keisei-section");
+
+        var $grid = $("<ul></ul>")
+                    .attr("id", "keisei-phonetic-grid")
+                    .addClass("single-character-grid");
+
+        $section.append('<h2>Phonetic-Semantic Composition</h2>');
+        $section.append($('<span></span>').attr("id", "keisei-explanation"));
+        $section.append($grid);
+
+        return $section;
+    }
     // #########################################################################
 
     // Fill the various field in the section, depending on the information in
@@ -268,6 +276,7 @@ window.wk_keisei = {};
             }
         }
 
+        // Maybe we have additional information to display, add an additional fold
         if (kdb.getPXRefs(curPhon).length > 0 || kdb.getPNonCompounds(curPhon).length > 0)
         {
             $("#keisei-section").append(createMoreInfoFold());
@@ -440,84 +449,14 @@ window.wk_keisei = {};
     }
     // #########################################################################
 
-    // Inject our own styles, this is done last so existing styles will be
-    // superceded here.
-    // #########################################################################
-    function injectStyles()
-    {
-        $("html > head").append($(`
-            <style type="text/css">
-                .badge-perfect:before {
-                    content: "天"; background-color: #092;
-                }
-                .badge-high:before {
-                    content: "上"; background-color: #092;
-                }
-                .badge-middle:before {
-                    content: "中"; background-color: #f04;
-                }
-                .badge-low:before {
-                    content: "下"; background-color: #f04;
-                }
-                .badge-current:before {
-                    background-color: #0695df !important;
-                }
-                #keisei-more-button {
-                    cursor: pointer;
-                    margin-top: 20px;
-                    padding: 10px;
-                    text-align: center;
-                }
-                #keisei-more-info {
-                    display: none;
-                }
-
-                /* #f0a -> 0c4
-                 * #dd0093 -> 092
-                 */
-                ul.single-character-grid li[id|=phonetic],
-                ul.single-character-grid tr[id|=phonetic]
-                {
-                    background-color:#0a2;
-                    background-image:-moz-linear-gradient(top, #0c4, #092);
-                    background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#0c4), to(#092));
-                    background-image:-webkit-linear-gradient(top, #0c4, #092);
-                    background-image:-o-linear-gradient(top, #0c4, #092);
-                    background-image:linear-gradient(to bottom, #0c4, #092);
-                    background-repeat:repeat-x;
-                    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF00CC44', endColorstr='#FF009922', GradientType=0);
-                    border-top:1px solid #0c4;
-                    border-bottom:1px solid #092;
-                    border-left:1px solid #0c4
-                }
-
-                ul.single-character-grid li[id|=nonphonetic],
-                ul.single-character-grid tr[id|=nonphonetic]
-                {
-                    background-color:#f04;
-                    background-image:-moz-linear-gradient(top, #f04, #c04);
-                    background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#f04), to(#c04));
-                    background-image:-webkit-linear-gradient(top, #f04, #c04);
-                    background-image:-o-linear-gradient(top, #f04, #c04);
-                    background-image:linear-gradient(to bottom, #f04, #c04);
-                    background-repeat:repeat-x;
-                    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFF0044', endColorstr='#FFCC0044', GradientType=0);
-                    border-top:1px solid #f04;
-                    border-bottom:1px solid #c04;
-                    border-left:1px solid #f04
-                }
-
-            </style>
-        `));
-    }
-    // #########################################################################
-
 
     // Just do it!
     // #########################################################################
     function run()
     {
-        injectStyles();
+        GM_addStyle(GM_getResourceText("style"));
+
+        GM_notification({title:"Shit just got real.", text:"there is even some text included ..."});
 
         kdb = new KeiseiDB();
         kdb.init();
