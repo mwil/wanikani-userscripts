@@ -16,6 +16,8 @@ function KeiseiDB()
         unprocessed:     8  // not yet visited
         }
     );
+
+    this.wkradical_to_phon = {};
 }
 // #############################################################################
 
@@ -25,7 +27,9 @@ function KeiseiDB()
 
     KeiseiDB.prototype = {
         // #####################################################################
-        init: function() {},
+        init: function() {
+            this.genWKRadicalToPhon();
+        },
         // #####################################################################
 
         // #####################################################################
@@ -58,7 +62,10 @@ function KeiseiDB()
         // #####################################################################
         getKPhonetic: function(kanji)
         {
-            return this.kanji_db[kanji].phonetic;
+            if (kanji in this.kanji_db)
+                return this.kanji_db[kanji].phonetic;
+            else
+                return null;
         },
         // #####################################################################
 
@@ -79,19 +86,46 @@ function KeiseiDB()
         // #####################################################################
         getPReadings: function(phon)
         {
-            return this.phonetic_db[phon].readings;
+            if (phon in this.phonetic_db)
+                return this.phonetic_db[phon].readings;
+            else
+                return [];
         },
         // #####################################################################
         // #####################################################################
         getPXRefs: function(phon)
         {
-            return this.phonetic_db[phon].xrefs;
+            if (phon in this.phonetic_db)
+                return this.phonetic_db[phon].xrefs;
+            else
+                return [];
         },
         // #####################################################################
         // #####################################################################
         getPNonCompounds: function(phon)
         {
-            return this.phonetic_db[phon].non_compounds;
+            if (phon in this.phonetic_db)
+                return this.phonetic_db[phon].non_compounds;
+            else
+                return [];
+        },
+        // #####################################################################
+
+        genWKRadicalToPhon: function()
+        {
+            Object.keys(this.phonetic_db).forEach( function(phon) {
+                var data = this.phonetic_db[phon];
+
+                this.wkradical_to_phon[data["wk-radical"]] = phon;
+            }, this);
+        },
+        // #####################################################################
+        mapWKRadicalToPhon: function(radical)
+        {
+            if (this.wkradical_to_phon && radical in this.wkradical_to_phon)
+                return this.wkradical_to_phon[radical];
+            else
+                return null;
         }
         // #####################################################################
     };
@@ -170,7 +204,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "hieroglyph"
     },
     "女": {
-        "readings": ["ジョ", "ニョ", "ニョウ"],
+        "readings": ["じょ", "にょ", "にょう"],
         "type": "hieroglyph"
     },
     "子": {
@@ -1698,8 +1732,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "院": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["いん"],
+        "type": "unknown",
+        "comment": "obscure tone mark 奐"
     },
     "悪": {
         "readings": ["あく", "お"],
@@ -1707,8 +1742,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "商": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["しょう"],
+        "phonetic": "章",
+        "type": "comp_phonetic"
     },
     "動": {
         "readings": ["どう", "とう"],
@@ -1753,12 +1789,13 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "終": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["しゅう"],
+        "type": "unknown",
+        "comment": "obscure and not fitting tone mark 冬"
     },
     "習": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["しゅう", "じゅう"],
+        "type": "unknown"
     },
     "転": {
         "readings": ["てん"],
@@ -1790,8 +1827,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unknown"
     },
     "寒": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["かん"],
+        "type": "comp_indicative"
     },
     "暑": {
         "readings": ["しょ"],
@@ -1804,16 +1841,19 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "温": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["おん", "うん"],
+        "type": "unknown",
+        "comment": "obscure tone mark 昷 or 𥁕"
     },
     "湖": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["こ"],
+        "type": "unknown",
+        "comment": "obscure tone mark 胡"
     },
     "港": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["こう"],
+        "type": "unknown",
+        "comment": "obscure tone mark 巷"
     },
     "湯": {
         "readings": ["とう", "しょう"],
@@ -1867,7 +1907,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "軽": {
         "readings": ["けい", "きん"],
-        "phonetic": "巠",
+        "phonetic": "圣",
         "type": "comp_phonetic"
     },
     "運": {
@@ -1982,8 +2022,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "駅": {
         "readings": ["えき"],
-        "type": "unknown",
-        "comment": "simplification of kanji with phonetic 睪"
+        "phonetic": "尺",
+        "type": "comp_phonetic"
     },
     "鼻": {
         "readings": ["び"],
@@ -2327,7 +2367,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "径": {
         "readings": ["けい"],
-        "phonetic": "巠",
+        "phonetic": "圣",
         "type": "comp_phonetic"
     },
     "松": {
@@ -2389,8 +2429,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "信": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["しん"],
+        "type": "unknown"
     },
     "便": {
         "readings": ["ベン", "びん"],
@@ -2594,8 +2634,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "得": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["とく"],
+        "type": "unknown"
     },
     "救": {
         "readings": ["きゅう", "ぐ", "く"],
@@ -2751,8 +2791,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "極": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["きょく", "ごく"],
+        "type": "unknown",
+        "comment": "obscure tone mark 亟"
     },
     "照": {
         "readings": [],
@@ -2819,7 +2860,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "説": {
         "readings": ["せつ", "ゼイ", "えつ"],
-        "phonetic": "兌",
+        "phonetic": "兑",
         "type": "comp_phonetic"
     },
     "関": {
@@ -2960,16 +3001,18 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "圧": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["あつ", "おう"],
+        "type": "unknown",
+        "comment": "possbibly obscure tone mark 厭"
     },
     "弁": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["べん"],
+        "type": "hieroglyph"
     },
     "布": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["ふ", "ほ"],
+        "type": "unknown",
+        "comment": "obscure tone mark 父"
     },
     "刊": {
         "readings": ["かん"],
@@ -2977,8 +3020,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "犯": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["はん", "ぼん"],
+        "type": "unknown"
     },
     "示": {
         "readings": ["じ", "し"],
@@ -2994,8 +3037,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "件": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["けん"],
+        "type": "comp_indicative"
     },
     "任": {
         "readings": ["にん", "じん"],
@@ -3003,8 +3046,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "因": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["いん"],
+        "type": "comp_indicative"
     },
     "団": {
         "readings": ["だん", "とん", "たん"],
@@ -3016,8 +3059,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "舌": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["ぜつ", "せつ"],
+        "type": "hieroglyph"
     },
     "似": {
         "readings": [],
@@ -3057,7 +3100,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "comment": "simplified version of obscure tone mark 䧹"
     },
     "序": {
-        "readings": ["ジョ"],
+        "readings": ["じょ"],
         "phonetic": "予",
         "type": "comp_phonetic"
     },
@@ -3245,8 +3288,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "益": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["えき", "やく"],
+        "type": "comp_indicative"
     },
     "能": {
         "readings": ["のう"],
@@ -3258,8 +3301,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "恩": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["おん"],
+        "phonetic": "因",
+        "type": "comp_phonetic"
     },
     "格": {
         "readings": ["かく", "こう", "キャク"],
@@ -3267,8 +3311,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "桜": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["おう"],
+        "type": "unknown",
+        "comment": "obscure tone mark 嬰"
     },
     "留": {
         "readings": ["りゅう", "る"],
@@ -3396,7 +3441,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "経": {
         "readings": ["けい", "きょう", "きん"],
-        "phonetic": "巠",
+        "phonetic": "圣",
         "type": "comp_phonetic"
     },
     "規": {
@@ -3473,7 +3518,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "税": {
         "readings": ["ゼイ", "せい"],
-        "phonetic": "兌",
+        "phonetic": "兑",
         "type": "comp_phonetic"
     },
     "程": {
@@ -3528,8 +3573,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "準": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["しゅん", "じゅん", "せつ"],
+        "phonetic": "隼",
+        "type": "comp_phonetic"
     },
     "損": {
         "readings": ["そん"],
@@ -3560,8 +3606,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "夢": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["む", "ぼう"],
+        "type": "unknown"
     },
     "解": {
         "readings": ["かい", "げ"],
@@ -3637,8 +3683,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "総": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["そう"],
+        "phonetic": "悤",
+        "type": "comp_phonetic"
     },
     "綿": {
         "readings": [],
@@ -3664,8 +3711,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "銭": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["せん", "ぜん"],
+        "phonetic": "戔",
+        "type": "comp_phonetic"
     },
     "銅": {
         "readings": ["どう"],
@@ -3806,8 +3854,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unknown"
     },
     "尺": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["しゃく", "せき"],
+        "type": "hieroglyph"
     },
     "片": {
         "readings": ["へん"],
@@ -4231,8 +4279,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "窓": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["そう"],
+        "phonetic": "悤",
+        "type": "comp_phonetic"
     },
     "翌": {
         "readings": ["よく"],
@@ -4254,8 +4303,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "訳": {
         "readings": ["やく", "えき"],
-        "type": "unknown",
-        "comment": "simplification of kanji with phonetic 睪"
+        "phonetic": "尺",
+        "type": "comp_phonetic"
     },
     "欲": {
         "readings": ["よく"],
@@ -4881,8 +4930,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "尽": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["じん"],
+        "type": "unknown",
+        "comment": "obscure tone mark 盡"
     },
     "帆": {
         "readings": [],
@@ -5119,8 +5169,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "択": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["たく"],
+        "phonetic": "尺",
+        "type": "comp_phonetic"
     },
     "把": {
         "readings": [],
@@ -5151,8 +5202,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "沢": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["たく"],
+        "phonetic": "尺",
+        "type": "comp_phonetic"
     },
     "沈": {
         "readings": [],
@@ -5314,7 +5366,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "怪": {
         "readings": ["かい", "け"],
-        "phonetic": "巠",
+        "phonetic": "圣",
         "type": "comp_phonetic"
     },
     "怖": {
@@ -5514,7 +5566,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "茎": {
         "readings": ["けい"],
-        "phonetic": "巠",
+        "phonetic": "圣",
         "type": "comp_phonetic"
     },
     "苗": {
@@ -5672,8 +5724,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "姻": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["いん"],
+        "phonetic": "因",
+        "type": "comp_phonetic"
     },
     "孤": {
         "readings": ["こ"],
@@ -5957,8 +6010,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "准": {
         "readings": ["じゅん", "しゅん"],
-        "type": "unprocessed",
-        "comment": "actually simplified form of 準"
+        "phonetic": "隼",
+        "type": "comp_phonetic"
     },
     "凍": {
         "readings": ["とう"],
@@ -6057,13 +6110,13 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unknown"
     },
     "徐": {
-        "readings": ["ジョ"],
+        "readings": ["じょ"],
         "phonetic": "余",
         "type": "comp_phonetic"
     },
     "悦": {
         "readings": ["えつ"],
-        "phonetic": "兌",
+        "phonetic": "兑",
         "type": "comp_phonetic"
     },
     "恐": {
@@ -6693,7 +6746,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "脱": {
         "readings": ["ダツ", "タツ"],
-        "phonetic": "兌",
+        "phonetic": "兑",
         "type": "comp_phonetic"
     },
     "豚": {
@@ -6774,8 +6827,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "unprocessed"
     },
     "釈": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["しゃく", "せき"],
+        "phonetic": "尺",
+        "type": "comp_phonetic"
     },
     "釣": {
         "readings": ["ちょう"],
@@ -7587,8 +7641,8 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "践": {
         "readings": ["せん"],
-        "type": "unknown",
-        "comment": "rare phonetic mark 戔, simplified"
+        "phonetic": "戔",
+        "type": "comp_phonetic"
     },
     "跳": {
         "readings": ["ちょう"],
@@ -7941,7 +7995,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "鋭": {
         "readings": ["えい"],
-        "phonetic": "兌",
+        "phonetic": "兑",
         "type": "comp_phonetic"
     },
     "謁": {
@@ -8057,7 +8111,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "戯": {
         "readings": ["ぎ", "げ"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "擬": {
         "readings": ["ぎ"],
@@ -8930,7 +8984,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "沙": {
         "readings": ["さ", "しゃ"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "須": {
         "readings": [],
@@ -9346,8 +9400,9 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "hieroglyph"
     },
     "咽": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["いん", "えつ", "えん"],
+        "phonetic": "因",
+        "type": "comp_phonetic"
     },
     "嘲": {
         "readings": ["ちょう", "とう"],
@@ -9364,7 +9419,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "type": "comp_phonetic"
     },
     "溺": {
-        "readings": ["デキ", "ニョウ", "じょう"],
+        "readings": ["でき", "にょう", "じょう"],
         "phonetic": "弱",
         "type": "comp_phonetic"
     },
@@ -9425,7 +9480,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "畏": {
         "readings": ["い"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "瞭": {
         "readings": ["りょう"],
@@ -9498,7 +9553,7 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
     },
     "冶": {
         "readings": ["や"],
-        "type": "unprocessed",
+        "type": "unknown",
         "comment": "maybe 台"
     },
     "羞": {
@@ -9662,9 +9717,18 @@ KeiseiDB.prototype.kanji_db = JSON.parse(`
         "phonetic": "西",
         "type": "comp_phonetic"
     },
+    "吾": {
+        "readings": ["ご"],
+        "type": "unknown",
+        "comment": "TODO: tone mark 五?"
+    },
+    "贅": {
+        "readings": ["ぜい", "せい"],
+        "type": "unknown"
+    },
     "賭": {
         "readings": ["と"],
-        "type": "unprocessed"
+        "type": "unknown"
     }
 }
 `);
@@ -9679,978 +9743,1139 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
         "readings": ["しち", "しつ"],
         "compounds": ["叱", "切"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "seven"
     },
     "十": {
         "readings": ["じゅう", "しゅう"],
         "compounds": ["汁", "針"],
         "non_compounds": ["計"],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "cross"
     },
     "土": {
         "readings": ["と", "ど"],
         "compounds": ["吐", "社"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "grave"
     },
     "大": {
         "readings": ["だい", "たい"],
         "compounds": ["戻"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "big"
     },
     "子": {
         "readings": ["し", "す"],
         "compounds": ["字"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "child"
     },
     "早": {
         "readings": ["そう"],
         "compounds": ["草"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "early"
     },
     "寸": {
         "readings": ["そん", "すん"],
         "compounds": ["村"],
         "non_compounds": ["討", "耐"],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "measurement"
     },
     "屯": {
         "readings": ["とん", "どん"],
         "compounds": ["純", "春", "鈍", "頓"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "thorn"
     },
     "丁": {
         "readings": ["ちょう", "てい", "とう"],
         "compounds": ["庁", "灯", "町", "亭", "頂", "訂", "打"],
         "non_compounds": ["貯"],
         "xrefs": [],
+        "wk-radical": "nail",
         "comment": "phonetic xref 宁?"
     },
     "化": {
         "readings": ["か", "け", "げ"],
         "compounds": ["花", "貨", "靴"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "change"
     },
     "見": {
         "readings": ["けん", "げん"],
         "compounds": ["現"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "see"
     },
     "貝": {
         "readings": ["ばい", "まい"],
         "compounds": ["敗"],
         "non_compounds": ["買"],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "clam"
     },
     "赤": {
         "readings": ["せき", "しゃく"],
         "compounds": ["赦"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "red"
     },
     "足": {
         "readings": ["そく", "しょく"],
         "compounds": ["促"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "foot"
     },
     "方": {
         "readings": ["ほう", "ぼう"],
         "compounds": ["坊", "妨", "芳", "防", "放", "肪", "房", "紡", "訪"],
         "non_compounds": [],
         "xrefs": [],
+        "wk-radical": "direction",
         "comment": "added ぼう, no reason found"
     },
     "古": {
         "readings": ["こ"],
         "compounds": ["苦", "固", "故", "枯"],
         "non_compounds": [],
-        "xrefs": ["固"]
+        "xrefs": ["固"],
+        "wk-radical": "old"
     },
     "固": {
         "readings": ["こ"],
         "compounds": ["箇", "個"],
         "non_compounds": [],
-        "xrefs": ["古"]
+        "xrefs": ["古"],
+        "wk-radical": null
     },
     "生": {
         "readings": ["せい", "しょう"],
         "compounds": ["姓", "性", "牲", "星", "青"],
         "non_compounds": [],
-        "xrefs": ["青"]
+        "xrefs": ["青"],
+        "wk-radical": "life"
     },
     "青": {
         "readings": ["せい", "しょう"],
         "compounds": ["情", "清", "精", "請", "晴", "静"],
         "non_compounds": [],
-        "xrefs": ["生"]
+        "xrefs": ["生"],
+        "wk-radical": "blue"
     },
     "且": {
         "readings": ["しょ", "そ", "しょう"],
         "compounds": ["助", "狙", "阻", "祖", "租", "組", "粗", "査"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "top-hat"
     },
     "各": {
         "readings": ["かく"],
         "compounds": ["客", "格", "略", "絡", "路", "酪", "閣", "額"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "kiss"
     },
     "主": {
         "readings": ["しゅ", "す"],
         "compounds": ["住", "注", "柱", "駐"],
         "non_compounds": ["往"],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "master"
     },
     "王": {
         "readings": ["おう"],
         "compounds": ["往", "旺"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "king"
     },
     "几": {
         "readings": ["き"],
         "compounds": ["机", "肌", "飢"],
         "non_compounds": ["処"],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "table"
     },
     "亡": {
         "readings": ["ぼう", "もう"],
         "compounds": ["妄", "忘", "盲", "忙", "望"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "death"
     },
     "干": {
         "readings": ["かん"],
         "compounds": ["刊", "汗", "肝", "岸", "幹", "軒"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "antenna"
     },
     "己": {
         "readings": ["こ", "き"],
         "compounds": ["妃", "忌", "紀", "記", "配", "改"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "cobra"
     },
     "工": {
         "readings": ["こう", "く"],
         "compounds": ["功", "江", "紅", "虹", "空", "貢", "攻"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "construction"
     },
     "及": {
         "readings": ["きゅう"],
         "compounds": ["吸", "扱", "急", "級"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "escalator"
     },
     "中": {
         "readings": ["ちゅう"],
         "compounds": ["仲", "沖", "忠", "衷"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "middle"
     },
     "反": {
         "readings": ["はん", "ほん", "たん"],
         "compounds": ["坂", "阪", "返", "板", "版", "販", "飯"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "devil"
     },
     "白": {
         "readings": ["はく", "びゃく"],
         "compounds": ["伯", "泊", "拍", "迫", "舶"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "white"
     },
     "皮": {
         "readings": ["ひ"],
         "compounds": ["披", "彼", "波", "破", "疲", "被"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "skin"
     },
     "包": {
         "readings": ["ほう"],
         "compounds": ["砲", "飽", "抱", "泡", "胞"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "wrap"
     },
     "可": {
         "readings": ["か", "こく"],
         "compounds": ["何", "河", "苛"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "lip-ring"
     },
     "司": {
         "readings": ["し", "す"],
         "compounds": ["伺", "詞", "飼", "嗣"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "director"
     },
     "召": {
         "readings": ["しょう"],
         "compounds": ["招", "沼", "昭", "紹", "詔", "超"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "joker"
     },
     "寺": {
         "readings": ["じ"],
         "compounds": ["侍", "待", "持", "時", "特", "詩", "等"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "temple"
     },
     "圭": {
         "readings": ["けい"],
         "compounds": ["街", "掛"],
         "non_compounds": ["厓"],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "交": {
         "readings": ["こう"],
         "compounds": ["郊", "校", "絞", "較", "効"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "mix"
     },
     "我": {
         "readings": ["が"],
         "compounds": ["餓"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "ego"
     },
     "義": {
         "readings": ["ぎ"],
         "compounds": ["儀", "犠", "議"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "righteousness"
     },
     "兪": {
         "readings": ["ゆ"],
         "compounds": ["愉", "喩", "癒", "諭", "輸"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "death-star"
     },
     "由": {
         "readings": ["ゆ", "ゆう", "ゆい"],
         "compounds": ["油", "宙", "笛", "軸", "袖"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "reason"
     },
     "莫": {
         "readings": ["ばく", "まく", "ぼ", "も"],
         "compounds": ["募", "墓", "幕", "漠", "慕", "模", "膜", "暮"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "greenhouse"
     },
     "小": {
         "readings": ["しょう"],
         "compounds": ["肖"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "small"
     },
     "肖": {
         "readings": ["しょう"],
         "compounds": ["削", "哨", "宵", "消", "硝"],
         "non_compounds": [],
-        "xrefs": ["小"]
+        "xrefs": ["小"],
+        "wk-radical": null
     },
     "山": {
         "readings": ["さん", "せん"],
         "compounds": ["仙"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "mountain"
     },
     "文": {
         "readings": ["ぶん", "もん"],
         "compounds": ["紋", "蚊"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "doll"
     },
     "正": {
         "readings": ["せい", "しょう"],
         "compounds": ["征", "定", "政", "症", "証", "整"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "correct"
     },
     "出": {
         "readings": ["しゅつ", "すい"],
         "compounds": ["拙"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "exit"
     },
     "左": {
         "readings": ["さ"],
         "compounds": ["佐", "差"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "石": {
         "readings": ["せき", "しゃく", "こく", "じゃく"],
         "compounds": ["拓", "妬"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "stone"
     },
     "立": {
         "readings": ["りつ", "りゅう"],
         "compounds": ["位", "拉", "泣", "粒", "翌"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "stand"
     },
     "先": {
         "readings": ["せん"],
         "compounds": ["洗", "銑"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "previous"
     },
     "名": {
         "readings": ["めい", "みょう"],
         "compounds": ["銘"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "name"
     },
     "音": {
         "readings": ["おん", "いん"],
         "compounds": ["暗", "闇"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "sound"
     },
     "才": {
         "readings": ["さい"],
         "compounds": ["材", "財"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "genius"
     },
     "内": {
         "readings": ["ない", "だい", "のう", "どう"],
         "compounds": ["納"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "inside"
     },
     "午": {
         "readings": ["ご"],
         "compounds": ["許"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "noon"
     },
     "元": {
         "readings": ["げん", "がん"],
         "compounds": ["玩", "頑"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "origin"
     },
     "完": {
         "readings": ["かん"],
         "compounds": ["院"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "今": {
         "readings": ["こん", "きん"],
         "compounds": ["含", "吟", "念"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "now"
     },
     "公": {
         "readings": ["こう", "く"],
         "compounds": ["松", "翁", "訟"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "public"
     },
     "戸": {
         "readings": ["こ"],
         "compounds": ["所", "雇"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "door"
     },
     "止": {
         "readings": ["し"],
         "compounds": ["企", "祉", "歯"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "stop"
     },
     "分": {
         "readings": ["ふん", "ぶん", "ぶ"],
         "compounds": ["盆", "貧", "粉", "紛", "雰", "頒"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "part"
     },
     "少": {
         "readings": ["しょう"],
         "compounds": ["秒"],
         "non_compounds": ["沙"],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "few"
     },
     "半": {
         "readings": ["はん"],
         "compounds": ["伴", "判", "畔"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "half"
     },
     "北": {
         "readings": ["ほく"],
         "compounds": ["背"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "north"
     },
     "兄": {
         "readings": ["けい", "きょう"],
         "compounds": [ "呪", "況"],
         "non_compounds": ["祝"],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "older-brother"
     },
     "広": {
         "readings": ["こう"],
         "compounds": ["拡", "鉱"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "wide"
     },
     "失": {
         "readings": ["しつ", "いつ"],
         "compounds": ["失", "迭", "秩"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "fault"
     },
     "矢": {
         "readings": ["し"],
         "compounds": ["矢", "疾"],
         "non_compounds": ["疑"],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "arrow"
     },
     "会": {
         "readings": ["かい", "え"],
         "compounds": ["会", "絵"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "meet"
     },
     "合": {
         "readings": ["ごう", "こう"],
         "compounds": ["合", "拾", "給", "答"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "suit"
     },
     "同": {
         "readings": ["どう"],
         "compounds": ["同", "洞", "筒", "銅", "胴"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "same"
     },
     "米": {
         "readings": ["べい", "まい", "め"],
         "compounds": ["米", "迷"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "rice"
     },
     "迷": {
         "readings": ["めい"],
         "compounds": ["迷", "謎"],
         "non_compounds": [],
-        "xrefs": ["米"]
+        "xrefs": ["米"],
+        "wk-radical": null
     },
     "考": {
         "readings": ["こう"],
         "compounds": ["考", "拷"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "売": {
         "readings": ["ばい"],
         "compounds": ["続", "読"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "sell"
     },
     "谷": {
         "readings": ["こく"],
         "compounds": ["俗", "浴", "容", "欲", "裕"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "valley"
     },
     "量": {
         "readings": ["りょう", "ろう"],
         "compounds": ["糧"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "制": {
         "readings": ["せい"],
         "compounds": ["製"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "control"
     },
     "斤": {
         "readings": ["きん"],
         "compounds": ["近", "析", "祈"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "axe"
     },
     "里": {
         "readings": ["り"],
         "compounds": ["理", "裏"],
         "non_compounds": ["厘"],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "sunflower"
     },
     "東": {
         "readings": ["とう"],
         "compounds": ["凍", "棟"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "east"
     },
     "京": {
         "readings": ["きょう", "けい", "きん"],
         "compounds": ["景", "鯨"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "capital"
     },
     "直": {
         "readings": ["ちょく", "じき", "ち"],
         "compounds": ["値", "植", "殖", "置"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "未": {
         "readings": ["み", "び"],
         "compounds": ["味", "妹", "昧", "魅"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "jet"
     },
     "占": {
         "readings": ["せん", "てん"],
         "compounds": ["店", "貼", "粘", "点"],
         "non_compounds": [],
         "xrefs": [],
+        "wk-radical": "fortune",
         "comment": "added phonetic てん, but found no reason"
     },
     "明": {
         "readings": ["めい", "みょう", "みん"],
         "compounds": ["盟"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "bright"
     },
     "歩": {
         "readings": ["ほ", "ぶ", "ふ"],
         "compounds": [],
         "non_compounds": ["頻", "渉"],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "walk"
     },
     "長": {
         "readings": ["ちょう"],
         "compounds": ["帳", "張"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "long"
     },
     "門": {
         "readings": ["もん", "ぼん"],
         "compounds": ["問", "聞"],
         "non_compounds": ["閉"],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "gate"
     },
     "是": {
         "readings": ["ぜ", "し", "てい", "だい"],
         "compounds": ["是", "堤", "提", "題"],
         "non_compounds": [],
         "xrefs": [],
+        "wk-radical": null,
         "comment": "added だい, てい to readings, no source"
     },
     "象": {
         "readings": ["しょう", "ぞう"],
         "compounds": ["像"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "袁": {
         "readings": ["えん", "おん"],
         "compounds": ["遠", "園"],
         "non_compounds": [],
         "xrefs": [],
+        "wk-radical": null,
         "comment": "TODO: missing compound info, search!"
     },
     "示": {
         "readings": ["じ", "し"],
         "compounds": ["視"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "jackhammer"
     },
     "秋": {
         "readings": ["しゅう"],
         "compounds": ["愁"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "弱": {
         "readings": ["じゃく", "にゃく"],
         "compounds": ["溺"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "朱": {
         "readings": ["しゅ", "す"],
         "compounds": ["株", "殊", "珠"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "甫": {
         "readings": ["ほ", "ふ"],
         "compounds": ["浦", "捕", "補", "舗"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "wedding"
     },
     "辰": {
         "readings": ["しん"],
         "compounds": ["唇", "娠", "振", "震"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "superman"
     },
     "良": {
         "readings": ["りょう", "ろう"],
         "compounds": ["浪", "郎", "朗", "娘"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "郎": {
         "readings": ["ろう"],
         "compounds": [],
         "non_compounds": [],
-        "xrefs": ["良"]
+        "xrefs": ["良"],
+        "wk-radical": null
     },
     "倉": {
         "readings": ["そう"],
         "compounds": ["創"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "非": {
         "readings": ["ひ"],
         "compounds": ["俳", "排", "悲", "扉", "輩"],
         "non_compounds": ["罪"],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "injustice"
     },
     "其": {
         "readings": ["き"],
         "compounds": ["期", "欺", "棋", "基", "旗"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "crab"
     },
-    "巠": {
+    "圣": {
         "readings": ["けい"],
         "compounds": ["茎", "径", "経", "軽", "怪"],
         "non_compounds": [],
         "xrefs": [],
-        "comment": "simplified version is 圣"
+        "wk-radical": "tombstone"
     },
     "馬": {
         "readings": ["ば", "め", "ま"],
         "compounds": ["罵"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "horse"
     },
     "高": {
         "readings": ["こう"],
         "compounds": ["稿"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "tall"
     },
     "囟": {
         "readings": ["しん", "し"],
         "compounds": ["細", "思"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "周": {
         "readings": ["しゅう", "す"],
         "compounds": ["彫", "週", "調"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "ghost"
     },
     "予": {
         "readings": ["よ"],
         "compounds": ["序", "野", "預"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "beforehand"
     },
     "昜": {
         "readings": ["よう"],
         "compounds": ["場", "陽", "瘍", "湯", "腸"],
         "non_compounds": [],
         "xrefs": [],
+        "wk-radical": "gravity",
         "comment": "TODO: incomplete info, search!"
     },
     "道": {
         "readings": ["どう", "とう"],
         "compounds": ["導"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "road"
     },
     "番": {
         "readings": ["ばん", "はん", "は"],
         "compounds": ["翻"],
         "non_compounds": ["審"],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "number"
     },
     "吾": {
         "readings": ["ご"],
         "compounds": ["悟", "語"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "賓": {
         "readings": ["ひん"],
         "compounds": ["浜"],
         "non_compounds": [],
         "xrefs": [],
+        "wk-radical": null,
         "comment": "TODO info missing, search!"
     },
     "卜": {
         "readings": ["ぼく", "ほく"],
         "compounds": ["朴", "訃", "赴"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "toe"
     },
     "氾": {
         "readings": ["はん"],
         "compounds": ["範"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "奇": {
         "readings": ["き"],
         "compounds": ["埼", "崎", "寄", "椅", "騎"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "odd"
     },
     "皆": {
         "readings": ["かい"],
         "compounds": ["階", "諧"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "不": {
         "readings": ["ふ", "ぶ"],
         "compounds": ["杯"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "not"
     },
     "加": {
         "readings": ["か"],
         "compounds": ["架", "賀"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "弋": {
         "readings": ["よく", "いき"],
         "compounds": ["代", "式"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "ceremony"
     },
     "代": {
         "readings": [],
         "compounds": ["袋", "貸"],
         "non_compounds": [],
-        "xrefs": ["弋"]
+        "xrefs": ["弋"],
+        "wk-radical": "substitute"
     },
     "央": {
         "readings": ["おう", "よう", "えい"],
         "compounds": ["英", "映"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "central"
     },
     "勺": {
         "readings": ["しゃく"],
         "compounds": ["約", "酌", "釣"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "pool"
     },
     "氐": {
         "readings": ["てい", "たい"],
         "compounds": ["低", "底", "抵", "邸"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
-    "兌": {
+    "兑": {
         "readings": ["だ", "たい", "えつ", "えい"],
         "compounds": ["悦", "脱", "税", "説", "鋭"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "guard"
     },
     "曽": {
         "readings": ["そう", "そ", "ぞう"],
         "compounds": ["贈", "僧", "増", "層", "噌", "憎"],
         "non_compounds": [],
         "xrefs": [],
+        "wk-radical": "mask",
         "comment": "TODO: no list, search! TODO: 噌 not in joyo!"
     },
     "菐": {
         "readings": ["ほく", "ぼく"],
         "compounds": ["撲", "僕"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "business",
+        "comment": "WK uses the wrong radical here ..."
     },
     "取": {
         "readings": ["しゅ"],
         "compounds": ["趣"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "卓": {
         "readings": ["たく"],
         "compounds": ["悼"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "昔": {
         "readings": ["せき", "しゃく"],
         "compounds": ["借", "措", "錯"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "long-ago"
     },
     "具": {
         "readings": ["ぐ", "く"],
         "compounds": ["惧"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "台": {
         "readings": ["だい", "たい"],
         "compounds": [],
         "non_compounds": ["冶", "治", "始"],
         "xrefs": [],
+        "wk-radical": "machine",
         "comment": "TODO: this doesn't have compounds, maybe problems."
     },
     "申": {
         "readings": ["しん"],
         "compounds": ["伸", "神", "紳"],
         "non_compounds": ["電"],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "say-humbly"
     },
     "鹿": {
         "readings": ["ろく"],
         "compounds": ["麓"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "心": {
         "readings": ["しん"],
         "compounds": ["芯"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "heart"
     },
     "全": {
         "readings": ["ぜん", "せん"],
         "compounds": ["詮", "栓"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "耳": {
         "readings": ["じ"],
         "compounds": ["餌", "恥"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "ear"
     },
     "𢦏": {
         "readings": ["さい"],
         "compounds": ["災", "栽", "裁", "載", "戴"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "原": {
         "readings": ["げん", "がん", "ごん"],
         "compounds": ["源", "願"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "diamond"
     },
     "家": {
         "readings": ["か", "け"],
         "compounds": ["嫁", "稼"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "house"
     },
     "氏": {
         "readings": ["し"],
         "compounds": ["紙"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "duck"
     },
     "者": {
         "readings": ["しゃ", "しょ", "と"],
         "compounds": ["都", "暑", "煮", "署", "箸", "諸", "書", "緒"],
         "non_compounds": ["賭"],
-        "xrefs": [],
+        "xrefs": [],,
+        "wk-radical": "someone"
         "comment": "added しょ, but found no reason"
     },
     "甬": {
         "readings": ["つう", "よう", "ゆう"],
         "compounds": ["通", "痛", "踊", "勇"],
         "non_compounds": [],
-        "xrefs": ["勇"]
+        "xrefs": ["勇"],
+        "wk-radical": null
     },
     "勇": {
         "readings": ["ゆう", "よう"],
         "compounds": ["湧"],
         "non_compounds": [],
-        "xrefs": ["甬"]
+        "xrefs": ["甬"],
+        "wk-radical": "courage"
     },
     "㕣": {
         "readings": ["えん"],
         "compounds": ["船", "沿", "鉛"],
         "non_compounds": [],
-        "xrefs": ["兌"]
+        "xrefs": ["兑"],
+        "wk-radical": null
     },
     "黄": {
         "readings": ["こう", "おう"],
         "compounds": ["広", "横"],
         "non_compounds": [],
-        "xrefs": ["広"]
+        "xrefs": ["広"],
+        "wk-radical": "yellow"
     },
     "黒": {
         "readings": ["こく"],
         "compounds": ["墨", "黙"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "black"
     },
     "朝": {
         "readings": ["ちょう"],
         "compounds": ["嘲", "潮"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "間": {
         "readings": ["かん", "けん"],
         "compounds": ["簡"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "interval"
     },
     "云": {
         "readings": ["うん"],
         "compounds": ["芸", "雲", "魂"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "boobs"
     },
     "果": {
         "readings": ["か"],
         "compounds": ["菓", "裸", "課"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "fruit"
     },
     "卒": {
         "readings": ["そつ", "しゅつ"],
         "compounds": ["砕", "粋"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "列": {
         "readings": ["れつ"],
         "compounds": ["例", "烈", "裂"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "参": {
         "readings": ["さん", "しん"],
         "compounds": ["惨"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": null
     },
     "官": {
         "readings": ["かん"],
@@ -10886,7 +11111,8 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
         "readings": ["きゅう", "く"],
         "compounds": ["尻", "究", "軌"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "nine"
     },
     "永": {
         "readings": ["えい", "よう"],
@@ -10898,7 +11124,8 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
         "readings": ["さ", "さく", "じゃ"],
         "compounds": ["詐", "作", "昨", "酢"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "key"
     },
     "巨": {
         "readings": ["きょ", "こ"],
@@ -10939,7 +11166,7 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
     },
     "章": {
         "readings": ["しょう"],
-        "compounds": ["彰", "障"],
+        "compounds": ["彰", "障", "商"],
         "non_compounds": [],
         "xrefs": []
     },
@@ -11435,7 +11662,7 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
         "readings": ["ふ", "はく"],
         "compounds": ["敷", "博", "縛"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": ["溥"]
     },
     "溥": {
         "readings": ["ふ", "はく"],
@@ -11576,7 +11803,7 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
         "readings": ["たん"],
         "compounds": ["但", "胆", "担"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": ["亘"]
     },
     "延": {
         "readings": ["えん"],
@@ -11716,7 +11943,8 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
         "readings": ["あ"],
         "compounds": ["悪"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": [],
+        "wk-radical": "tie-fighter"
     },
     "能": {
         "readings": ["のう", "の", "どう", "たい", "だい", "ない"],
@@ -11906,7 +12134,7 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
         "readings": ["こう", "せん"],
         "compounds": ["宣", "恒", "垣"],
         "non_compounds": [],
-        "xrefs": []
+        "xrefs": ["旦"]
     },
     "夬": {
         "readings": ["かい", "けつ"],
@@ -12009,6 +12237,30 @@ KeiseiDB.prototype.phonetic_db = JSON.parse(`
         "readings": ["れき", "りゃく"],
         "compounds": ["暦", "歴"],
         "non_compounds": [],
+        "xrefs": []
+    },
+    "因": {
+        "readings": ["いん"],
+        "compounds": ["咽", "姻", "恩"],
+        "non_compounds": [],
+        "xrefs": []
+    },
+    "悤": {
+        "readings": ["そう"],
+        "compounds": ["窓", "総"],
+        "non_compounds": [],
+        "xrefs": []
+    },
+    "戔": {
+        "readings": ["せん", "ぜん", "さん"],
+        "compounds": ["銭", "践"],
+        "non_compounds": [],
+        "xrefs": []
+    },
+    "尺": {
+        "readings": ["しゃく", "せき"],
+        "compounds": ["沢", "駅", "択", "訳", "釈"],
+        "non_compounds": ["昼"],
         "xrefs": []
     },
 

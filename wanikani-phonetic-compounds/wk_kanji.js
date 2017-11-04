@@ -29,6 +29,7 @@ function WKKanjiDB()
         // #####################################################################
 
         // #####################################################################
+        // TODO: correctly upper meanings with multiple words
         getKMeaning: function(kanji)
         {
             if (this.checkKanji(kanji))
@@ -7631,6 +7632,24 @@ WKKanjiDB.prototype.wk_kanji_db = JSON.parse(`
     "important_reading": "onyomi",
     "nanori": null
   },
+  "授": {
+    "level":26,
+    "character":"授",
+    "meaning":"instruct",
+    "onyomi":"じゅ",
+    "kunyomi":"さず",
+    "important_reading":"onyomi",
+    "nanori":null
+  },
+  "創": {
+    "level":26,
+    "character":"創",
+    "meaning":"create",
+    "onyomi":"そう",
+    "kunyomi":"None",
+    "important_reading":"onyomi",
+    "nanori":null
+  },
   "印": {
     "level": 26,
     "character": "印",
@@ -7685,6 +7704,7 @@ WKKanjiDB.prototype.wk_kanji_db = JSON.parse(`
     "important_reading": "onyomi",
     "nanori": null
   },
+  "討": {"level":26,"character":"討","meaning":"chastise","onyomi":"とう","kunyomi":"None","important_reading":"onyomi","nanori":null},
   "貯": {
     "level": 26,
     "character": "貯",
@@ -18059,6 +18079,204 @@ WKKanjiDB.prototype.wk_kanji_db = JSON.parse(`
     "meaning": "pit, hole",
     "onyomi": "こう",
     "kunyomi": null,
+    "important_reading": "onyomi",
+    "nanori": null
+  },
+  "藍": {
+    "level": 60,
+    "character": "藍",
+    "meaning": "indigo",
+    "onyomi": "らん",
+    "kunyomi": "あい",
+    "important_reading": "kunyomi",
+    "nanori": null
+  },
+  "畔": {
+    "level": 60,
+    "character": "畔",
+    "meaning": "shore",
+    "onyomi": "はん",
+    "kunyomi": "あぜ, くろ, ほとり",
+    "important_reading": "onyomi",
+    "nanori": null
+  },
+  "唄": {
+    "level": 60,
+    "character": "唄",
+    "meaning": "shamisen song, song",
+    "onyomi": "ばい",
+    "kunyomi": "うた",
+    "important_reading": "kunyomi",
+    "nanori": null
+  },
+  "拷": {
+    "level": 60,
+    "character": "拷",
+    "meaning": "torture",
+    "onyomi": "ごう",
+    "kunyomi": null,
+    "important_reading": "onyomi",
+    "nanori": null
+  },
+  "渓": {
+    "level": 60,
+    "character": "渓",
+    "meaning": "valley",
+    "onyomi": "けい",
+    "kunyomi": "たに, たにがわ",
+    "important_reading": "onyomi",
+    "nanori": null
+  },
+  "廉": {
+    "level": 60,
+    "character": "廉",
+    "meaning": "bargain",
+    "onyomi": "れん",
+    "kunyomi": null,
+    "important_reading": "onyomi",
+    "nanori": null
+  },
+  "謹": {
+    "level": 60,
+    "character": "謹",
+    "meaning": "humble, discreet",
+    "onyomi": "きん",
+    "kunyomi": "つつし",
+    "important_reading": "onyomi",
+    "nanori": null
+  },
+  "湧": {
+    "level": 60,
+    "character": "湧",
+    "meaning": "well, boil",
+    "onyomi": "ゆう, ゆ, よう",
+    "kunyomi": "わ",
+    "important_reading": "onyomi",
+    "nanori": null
+  },
+  "醜": {
+    "level": 60,
+    "character": "醜",
+    "meaning": "ugly",
+    "onyomi": "しゅう",
+    "kunyomi": "しこ, みにく",
+    "important_reading": "onyomi",
+    "nanori": null
+  },
+  "升": {
+    "level": 60,
+    "character": "升",
+    "meaning": "grid, measure",
+    "onyomi": "しょう",
+    "kunyomi": "ます",
+    "important_reading": "kunyomi",
+    "nanori": null
+  },
+  "殉": {
+    "level": 60,
+    "character": "殉",
+    "meaning": "martyr",
+    "onyomi": "じゅん",
+    "kunyomi": null,
+    "important_reading": "onyomi",
+    "nanori": null
+  },
+  "煩": {
+    "level": 60,
+    "character": "煩",
+    "meaning": "annoy, annoying",
+    "onyomi": "はん, ぼん",
+    "kunyomi": "うるさ, わずら",
+    "important_reading": "onyomi",
+    "nanori": null
+  },
+  "劾": {
+    "level": 60,
+    "character": "劾",
+    "meaning": "censure",
+    "onyomi": "がい",
+    "kunyomi": null,
+    "important_reading": "onyomi",
+    "nanori": null
+  },
+  "桟": {
+    "level": 60,
+    "character": "桟",
+    "meaning": "jetty, pier",
+    "onyomi": "さん, せん",
+    "kunyomi": "かけはし",
+    "important_reading": "onyomi",
+    "nanori": null
+  },
+  "婿": {
+    "level": 60,
+    "character": "婿",
+    "meaning": "groom",
+    "onyomi": "せい",
+    "kunyomi": "むこ",
+    "important_reading": "kunyomi",
+    "nanori": null
+  },
+  "慕": {
+    "level": 60,
+    "character": "慕",
+    "meaning": "yearn for, adore",
+    "onyomi": "ぼ",
+    "kunyomi": "した",
+    "important_reading": "onyomi",
+    "nanori": null
+  },
+  "罷": {
+    "level": 60,
+    "character": "罷",
+    "meaning": "quit, leave",
+    "onyomi": "ひ",
+    "kunyomi": "や",
+    "important_reading": "onyomi",
+    "nanori": null
+  },
+  "矯": {
+    "level": 60,
+    "character": "矯",
+    "meaning": "correct, straighten",
+    "onyomi": "きょう",
+    "kunyomi": "た",
+    "important_reading": "onyomi",
+    "nanori": null
+  },
+  "囚": {
+    "level": 60,
+    "character": "囚",
+    "meaning": "criminal",
+    "onyomi": "しゅう",
+    "kunyomi": "とら",
+    "important_reading": "onyomi",
+    "nanori": null
+  },
+  "某": {
+    "level": 60,
+    "character": "某",
+    "meaning": "certain, one, that person",
+    "onyomi": "ぼう",
+    "kunyomi": "それがし, なにがし",
+    "important_reading": "onyomi",
+    "nanori": null
+  },
+  "泌": {
+    "level": 60,
+    "character": "泌",
+    "meaning": "secrete",
+    "onyomi": "ひ, ひつ",
+    "kunyomi": null,
+    "important_reading": "onyomi",
+    "nanori": null
+  },
+  "蛮": {
+    "level": 60,
+    "character": "蛮",
+    "meaning": "barbarian",
+    "onyomi": "ばん",
+    "kunyomi": "えびす",
     "important_reading": "onyomi",
     "nanori": null
   }
