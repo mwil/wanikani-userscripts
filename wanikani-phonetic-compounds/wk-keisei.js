@@ -50,7 +50,7 @@ window.wk_keisei = {};
 
         switch(wki.curPage)
         {
-            case wki.PageEnum.radical:
+            case wki.PageEnum.radicals:
                 curPhon = kdb.mapWKRadicalToPhon(subject);
                 $("section#note-meaning").after(createKeiseiSection());
 
@@ -83,7 +83,7 @@ window.wk_keisei = {};
 
                 break;
             default:
-                console.log("KEISEI: Unknown page type, cannot inject info!");
+                console.log("KEISEI: Unknown page type", wki.curPage, ", cannot inject info!");
                 return;
         }
 
@@ -133,7 +133,8 @@ window.wk_keisei = {};
         Note that these can include historical readings that may not apply to this kanji itself anymore, but still do to its compounds.</p>`;
 
     const explanation_unknown = (curKanji) =>
-       `<p>The kanji 「${curKanji}」 has an unknown or contested origin. Stay tuned for more information in future versions.</p>`;
+       `<p>The kanji 「${curKanji}」 has an unknown or contested origin, or its tone mark is too obscure to be useful.
+        Stay tuned for more information in future versions.</p>`;
 
     const explanation_unprocessed = (curKanji) =>
        `<p>The kanji 「${curKanji}」 was not yet added to the DB, please wait for a future version.</p>`;
@@ -185,10 +186,10 @@ window.wk_keisei = {};
     //
     // TODO: new tab in reviews and lessons, same in kanji and radicals
     // #########################################################################
-    const li_phon_char = ({kanji, meaning, badge, kanji_id}) =>
+    const li_phon_char = ({kanji, meaning, badge, href, kanji_id}) =>
        `<li id="${kanji_id}" class="character-item">
             <span lang="ja" class="${badge}"></span>
-            <a class="keisei-kanji-link" href="/kanji/${kanji}">
+            <a class="keisei-kanji-link" href="${href}">
                 <span class="character" lang="ja">${kanji}</span>
                 <ul>
                     <li>${kdb.getKReadings(kanji)[0]}</li>
@@ -203,7 +204,7 @@ window.wk_keisei = {};
     // #########################################################################
     function populateKeiseiSection(curKanji, curPhon)
     {
-        if ((!curKanji && !curPhon) || !kdb.checkKanji(curKanji))
+        if ((!curKanji && !curPhon) || (curKanji && !kdb.checkKanji(curKanji)))
         {
             $("#keisei-explanation").append(explanation_missing(curPhon));
             return;
@@ -301,7 +302,8 @@ window.wk_keisei = {};
                 continue;
 
             var common_readings = intersect(kdb.getKReadings(kanji), kdb.getPReadings(curPhon));
-            var li_template = {kanji: kanji, badge: "", meaning: wkdb.getKMeaning(kanji)[0], kanji_id: "kanji-"+i};
+            var li_template = {kanji: kanji, badge: "", meaning: wkdb.getKMeaning(kanji)[0],
+                href:"/kanji/"+kanji, kanji_id: "kanji-"+i};
 
             if (kdb.getKReadings(kanji).length === common_readings.length)
             {
@@ -340,12 +342,16 @@ window.wk_keisei = {};
 
         // Order: Phonetic//WK Radical?//Base Kanji?//Perfect PComp//High//Middle/Low
         // curKanji is mixed in, gets special badge
-        char_list.push({kanji: curPhon, badge: "", meaning: "Phonetic", kanji_id: "phonetic-1"});
-        // char_list.push({kanji: curPhon, badge: "", kanji_id: "radical-1"});  // TODO: WK radical
+        char_list.push({kanji: curPhon, badge: "", meaning: "Phonetic",
+            href:"", kanji_id: "phonetic-1"});
+
+        if (kdb.checkRadical(curPhon))
+            char_list.push({kanji: curPhon, badge: "", meaning: kdb.getWKRadicalPP(curPhon),
+                href:"/radicals/"+kdb.getWKRadical(curPhon), kanji_id: "radical-1"});
+
         if (kdb.checkKanji(curPhon))
-        {
-            char_list.push({kanji: curPhon, badge: "", meaning: wkdb.getKMeaning(curPhon)[0], kanji_id: "kanji-1"});
-        }
+            char_list.push({kanji: curPhon, badge: "", meaning: wkdb.getKMeaning(curPhon)[0],
+                href:"/kanji/"+curPhon, kanji_id: "kanji-1"});
 
         char_list = char_list.concat(char_list_hi);
         char_list = char_list.concat(char_list_lo);
@@ -401,12 +407,13 @@ window.wk_keisei = {};
             $("#keisei-more-info").append($gridn);
 
             var char_list = [];
-            char_list.push({kanji: phon, meaning: "Non-Phonetic", badge: "", kanji_id: "nonphonetic-1"});
+            char_list.push({kanji: phon, meaning: "Non-Phonetic", badge: "", href:"", kanji_id: "nonphonetic-1"});
 
             for (i = 0; i < kdb.getPNonCompounds(phon).length; i++)
             {
                 var curKanji = kdb.getPNonCompounds(phon)[i];
-                char_list.push({kanji: curKanji, meaning: wkdb.getKMeaning(curKanji)[0], badge: "", kanji_id: "kanji-"+i});
+                char_list.push({kanji: curKanji, meaning: wkdb.getKMeaning(curKanji)[0], badge: "",
+                    href:"/kanji/"+curKanji, kanji_id: "kanji-"+i});
             }
 
             $("#keisei-non-comp-grid").html(char_list.map(li_phon_char).join(""));

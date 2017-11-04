@@ -11,7 +11,7 @@
 
 function WKInteraction()
 {
-    this.PageEnum = Object.freeze({ unknown:0, radical:1, kanji:2, reviews:3, lessons:4 });
+    this.PageEnum = Object.freeze({ unknown:0, radicals:1, kanji:2, reviews:3, lessons:4 });
 
     this.curPage = this.PageEnum.unknown;
     this.lesson_observer = new MutationObserver(this.lessonCallback);
@@ -32,7 +32,7 @@ function WKInteraction()
         {
             if (/\/radicals\/./.test(document.URL))    /* Radical Pages */
             {
-                this.curPage = this.PageEnum.radical;
+                this.curPage = this.PageEnum.radicals;
                 window.wk_app_callback();
             }
             else if (/\/kanji\/./.test(document.URL)) /* Kanji Pages */
@@ -73,7 +73,7 @@ function WKInteraction()
 
             switch(this.curPage)
             {
-                case this.PageEnum.radical:
+                case this.PageEnum.radicals:
                     result = document.URL.split("/").slice(-1)[0];
                     break;
                 case this.PageEnum.kanji:

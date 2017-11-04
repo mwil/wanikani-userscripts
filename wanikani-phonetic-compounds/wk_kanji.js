@@ -16,7 +16,13 @@ function WKKanjiDB()
         // #####################################################################
         upper: function(string)
         {
-            return string.charAt(0).toUpperCase() + string.slice(1);
+            var tmp = string.split(" ");
+            var result = [];
+
+            for (var i = 0; i < tmp.length; i++)
+                result.push(tmp[i].charAt(0).toUpperCase() + tmp[i].slice(1));
+
+            return result.join(" ");
         },
         // #####################################################################
 
