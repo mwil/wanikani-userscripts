@@ -24,7 +24,7 @@ function WKKanjiDB()
 
             result = result.join(" ");
 
-            if (result.length > 10)
+            if (result.length > 12)
                 return result.slice(0, 9) + "...";
             else
                 return result;
