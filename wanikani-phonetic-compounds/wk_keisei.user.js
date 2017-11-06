@@ -15,15 +15,15 @@
 // @include     http://www.wanikani.com/lesson/session*
 // @include     https://www.wanikani.com/lesson/session*
 //
-// @resource    kanji     https://kanji.json
-// @resource    phonetic  https://phonetic.json
-// @resource    wk_kanji  https://wk_kanji.json
-// @resource    style     https://keisei.css
-// @resource    chargrid  https://chargrid.css
+// @resource    kanji     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/kanji.json
+// @resource    phonetic  https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/phonetic.json
+// @resource    wk_kanji  https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/wk_kanji.json
+// @resource    style     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/keisei.css
+// @resource    chargrid  https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/chargrid.css
 //
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/b7c4202cb88530bc77a57fcaacdee5293818927f/wanikani-phonetic-compounds/db/phonetic_db.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/dc48abc6def97eb84e75d2036a01ad27ad898455/wanikani-phonetic-compounds/db/wk_kanji_db.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/b7c4202cb88530bc77a57fcaacdee5293818927f/utility/wk_interaction.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/dc3ad13c6b5abebaaa6b9e366fa7577c313f9ed6/wanikani-phonetic-compounds/db/phonetic_db.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/dc3ad13c6b5abebaaa6b9e366fa7577c313f9ed6/wanikani-phonetic-compounds/db/wk_kanji_db.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/dc3ad13c6b5abebaaa6b9e366fa7577c313f9ed6/utility/wk_interaction.js
 //
 // @grant       GM_log
 // @grant       GM_addStyle
