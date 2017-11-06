@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        WaniKani Keisei Phonetic-Semantic Composition
-// @version     0.9.1
+// @version     0.9.2
 // @author      acm
 // @description Adds information to Wanikani about kanji that use Phonetic-Semantic Composition.
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
@@ -112,7 +112,7 @@ wk_keisei.log = wk_keisei.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0],
         but the prevalent reading(s) are different.</p>`;
     const pmark_low = (subject) =>
        `<p>The tone mark is no indicator at all（下）for the readings of this kanji,
-        they may have changed over time or the construction of this character is different after all.</p>`;
+        they may have changed over time or the composition of this character is different after all.</p>`;
     // #########################################################################
 
     // #########################################################################

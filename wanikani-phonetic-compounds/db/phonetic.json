@@ -2196,8 +2196,15 @@
         "readings": ["いつ", "いち"],
         "compounds": ["律", "筆"],
         "non_compounds": ["書", "建"],
-        "xrefs": [],
+        "xrefs": ["建"],
         "wk-radical": "brush"
+    },
+    "建": {
+        "readings": ["けん", "こん"],
+        "compounds": ["健", "鍵"],
+        "non_compounds": [],
+        "xrefs": ["聿"],
+        "wk-radical": null
     },
     "叚": {
         "readings": ["か", "け"],
@@ -2819,6 +2826,20 @@
         "xrefs": [],
         "wk-radical": null
     },
+    "帝": {
+        "readings": ["てい", "たい"],
+        "compounds": ["締", "諦"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "垂": {
+        "readings": ["すい"],
+        "compounds": ["睡"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    }
 
 
     "": {

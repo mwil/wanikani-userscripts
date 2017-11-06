@@ -2476,8 +2476,9 @@
         "type": "unprocessed"
     },
     "健": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["けん"],
+        "phonetic": "建",
+        "type": "comp_phonetic"
     },
     "側": {
         "readings": ["そく", "しょく"],
@@ -2503,8 +2504,8 @@
         "type": "comp_phonetic"
     },
     "康": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["ゆう"],
+        "type": "unknown"
     },
     "得": {
         "readings": ["とく"],
@@ -4205,8 +4206,8 @@
         "type": "comp_phonetic"
     },
     "就": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["しゅう", "じゅ"],
+        "type": "comp_indicative"
     },
     "善": {
         "readings": ["ぜん", "せん"],
@@ -5527,8 +5528,8 @@
         "type": "comp_phonetic"
     },
     "帝": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["てい", "たい"],
+        "type": "unknown"
     },
     "侯": {
         "readings": ["こう"],
@@ -7419,8 +7420,9 @@
         "type": "comp_phonetic"
     },
     "睡": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["すい"],
+        "phonetic": "垂",
+        "type": "comp_phonetic"
     },
     "督": {
         "readings": [],
@@ -8393,8 +8395,9 @@
         "type": "unprocessed"
     },
     "締": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["てい"],
+        "phonetic": "帝",
+        "type": "comp_phonetic"
     },
     "徹": {
         "readings": [],
@@ -8946,8 +8949,9 @@
         "type": "unprocessed"
     },
     "鍵": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["けん"],
+        "phonetic": "建",
+        "type": "comp_phonetic"
     },
     "膳": {
         "readings": [],
@@ -9110,8 +9114,9 @@
         "type": "comp_phonetic"
     },
     "諦": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["てい", "たい"],
+        "phonetic": "帝",
+        "type": "comp_phonetic"
     },
     "餅": {
         "readings": [],
