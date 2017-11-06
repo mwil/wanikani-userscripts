@@ -903,7 +903,7 @@
         "wk-radical": "ceremony"
     },
     "代": {
-        "readings": [],
+        "readings": ["だい", "たい"],
         "compounds": ["袋", "貸"],
         "non_compounds": [],
         "xrefs": ["弋"],

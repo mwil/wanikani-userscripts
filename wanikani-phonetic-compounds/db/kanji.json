@@ -6283,8 +6283,9 @@
         "type": "comp_phonetic"
     },
     "透": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["とう"],
+        "phonetic": "秀",
+        "type": "comp_phonetic"
     },
     "酌": {
         "readings": ["しゃく"],
@@ -7786,8 +7787,9 @@
         "type": "comp_phonetic"
     },
     "誘": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["ゆう"],
+        "phonetic": "秀",
+        "type": "comp_phonetic"
     },
     "踊": {
         "readings": ["よう"],

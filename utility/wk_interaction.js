@@ -48,6 +48,7 @@ function WKInteraction()
             else if (/\/lesson/.test(document.URL)) /* Lessons Pages */
             {
                 this.curPage = this.PageEnum.lessons;
+                this.lesson_observer.observe(document.getElementById("supplement-rad"), {attributes: true});
                 this.lesson_observer.observe(document.getElementById("supplement-kan"), {attributes: true});
             }
             else
@@ -88,7 +89,7 @@ function WKInteraction()
                         result.kan = curItem.kan.trim();
                     else if ("rad" in curItem)
                     {
-                        if ("custom_font_name" in curItem)
+                        if (curItem.custom_font_name)
                             result.rad = curItem.custom_font_name.trim();
                         else
                             result.rad = curItem.rad.trim();
@@ -99,7 +100,12 @@ function WKInteraction()
                     // TODO: handle radical lesson case
                     var kanjiNode = $("#character");
 
-                    if (kanjiNode.length === 1)
+                    if ($("#main-info").hasClass("radical"))
+                    {
+                        if (!$("#character > i").length)
+                            result.rad = kanjiNode.text().trim();
+                    }
+                    else if ($("#main-info").hasClass("kanji"))
                         result.kan = kanjiNode.text().trim();
                     break;
                 default:

@@ -174,7 +174,7 @@ wk_keisei.log = wk_keisei.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0],
                 $("section#note-reading").before(createKeiseiSection());
                 break;
             case wki.PageEnum.reviews:
-                if ($("section#item-info-reading-mnemonic").length > 0)
+                if ($("section#item-info-reading-mnemonic").length)
                 {
                     $("section#item-info-reading-mnemonic").after(createKeiseiSection());
 
@@ -182,14 +182,17 @@ wk_keisei.log = wk_keisei.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0],
                         $("#keisei-section").hide();
                 }
                 else
-                    $("div#item-info-col2").append(createKeiseiSection());
+                    $("section#note-meaning").before(createKeiseiSection());
 
                 break;
             case wki.PageEnum.lessons:
                 $("#keisei-section").remove();
 
-                $('div#supplement-kan-reading div:contains("Reading Mnemonic") blockquote:last')
-                .after(createKeiseiSection());
+                if ($("div#main-info").hasClass("radical"))
+                    $("div#supplement-rad-name-mne").after(createKeiseiSection("margin-top: 12px;"));
+                else
+                    $('div#supplement-kan-reading div:contains("Reading Mnemonic") blockquote:last')
+                    .after(createKeiseiSection());
 
                 break;
             default:
@@ -210,16 +213,17 @@ wk_keisei.log = wk_keisei.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0],
     // Some section may stay empty, for example when a kanji is not related to
     // phonetic compounds.
     // #########################################################################
-    function createKeiseiSection()
+    function createKeiseiSection(style)
     {
         var $section = $("<section></section>")
-                       .attr("id", "keisei-section");
+                       .attr("id", "keisei-section")
+                       .addClass("col1");
 
         var $grid = $("<ul></ul>")
                     .attr("id", "keisei-phonetic-grid")
                     .addClass("single-character-grid");
 
-        $section.append('<h2>Phonetic-Semantic Composition</h2>');
+        $section.append(`<h2 style="${style}">Phonetic-Semantic Composition</h2>`);
         $section.append($('<span></span>').attr("id", "keisei-explanation"));
         $section.append($grid);
 
@@ -307,7 +311,7 @@ wk_keisei.log = wk_keisei.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0],
         }
 
         // Maybe we have additional information to display, add an additional fold
-        if (kdb.getPXRefs(subject.phon).length > 0 || kdb.getPNonCompounds(subject.phon).length > 0)
+        if (kdb.getPXRefs(subject.phon).length || kdb.getPNonCompounds(subject.phon).length)
         {
             $("#keisei-section").append(createMoreInfoFold());
             populateMoreInfoFold(subject);
@@ -354,7 +358,7 @@ wk_keisei.log = wk_keisei.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0],
                     $("#keisei-explanation-quality").html(pmark_perfect(subject));
                 char_list_hi.unshift(li_template);
             }
-            else if (common_readings.length === 0)
+            else if (!common_readings.length)
             {
                 badge.push("badge-low");
                 if (kanji === subject.kan)
@@ -431,7 +435,7 @@ wk_keisei.log = wk_keisei.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0],
             var curPhon = kdb.getPXRefs(subject.phon)[i];
 
             $("#keisei-more-info").append($('<span></span>').attr("id", "keisei-more-expl-"+i));
-            $("#keisei-more-expl-"+i).append(explanation_xref(subject));
+            $("#keisei-more-expl-"+i).append(explanation_xref({"phon": curPhon}));
             var $gridx = $("<ul></ul>")
                         .attr("id", "keisei-xref-grid-"+i)
                         .addClass("single-character-grid");
@@ -439,7 +443,7 @@ wk_keisei.log = wk_keisei.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0],
             populateCharGrid("#keisei-xref-grid-"+i, {"kan": subject.kan, "phon": curPhon});
         }
 
-        if (kdb.getPNonCompounds(subject.phon).length > 0)
+        if (kdb.getPNonCompounds(subject.phon).length)
         {
             $("#keisei-more-info").append($('<span></span>').attr("id", "keisei-more-non-comp"));
             $("#keisei-more-non-comp").append(explanation_non_compound(subject));
