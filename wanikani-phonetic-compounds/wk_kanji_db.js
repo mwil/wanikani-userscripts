@@ -22,7 +22,10 @@ function WKKanjiDB()
             for (var i = 0; i < tmp.length; i++)
                 result.push(tmp[i].charAt(0).toUpperCase() + tmp[i].slice(1));
 
-            return result.join(" ");
+            if (result.join(" ").length > 10)
+                return result[0] + "...";
+            else
+                return result.join(" ");
         },
         // #####################################################################
 
