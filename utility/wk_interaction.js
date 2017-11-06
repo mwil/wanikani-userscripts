@@ -25,12 +25,12 @@ function WKInteraction()
         init: function(wk_app_callback)
         {
             window.wk_app_callback = wk_app_callback;
-            this.getCurPage();
+            this.setCurPage();
         },
 
-        getCurPage: function()
+        setCurPage: function()
         {
-            if (/\/radicals\/./.test(document.URL))    /* Radical Pages */
+            if (/\/radicals\/./.test(document.URL))   /* Radical Pages */
             {
                 this.curPage = this.PageEnum.radicals;
                 window.wk_app_callback();
@@ -43,7 +43,7 @@ function WKInteraction()
             else if (/\/review/.test(document.URL)) /* Reviews Pages */
             {
                 this.curPage = this.PageEnum.reviews;
-                this.review_observer.observe(document.getElementById("item-info"), {attributes: true});
+                this.review_observer.observe(document.getElementById("item-info-col2"), {childList: true});
             }
             else if (/\/lesson/.test(document.URL)) /* Lessons Pages */
             {
@@ -56,10 +56,11 @@ function WKInteraction()
 
         reviewCallback: function(mutations)
         {
-            if (mutations.length != 2)
-                return;
-
-            window.wk_app_callback();
+            mutations.forEach( function(mutation) {
+                // Length 2 for radical page, 4 for kanji page (vocab is 5)
+                if (mutation.addedNodes.length === 2 || mutation.addedNodes.length === 4)
+                    window.wk_app_callback();
+            });
         },
 
         lessonCallback: function(mutations)
@@ -69,34 +70,55 @@ function WKInteraction()
 
         getSubject: function()
         {
-            var result = null;
+            var result = {"rad": null, "kan": null, "voc": null};
 
             switch(this.curPage)
             {
                 case this.PageEnum.radicals:
-                    result = document.URL.split("/").slice(-1)[0];
+                    result.rad = document.URL.split("/").slice(-1)[0];
                     break;
                 case this.PageEnum.kanji:
-                    result = document.title[document.title.length - 1];
+                    result.kan = document.title[document.title.length - 1];
                     break;
-
                 case this.PageEnum.reviews:
                     var curItem = $.jStorage.get("currentItem");
+                    wk_keisei.log("Getting the subject of this page, from storage:", curItem);
 
                     if ("kan" in curItem)
-                        result = curItem.kan.trim();
+                        result.kan = curItem.kan.trim();
+                    else if ("rad" in curItem)
+                    {
+                        if ("custom_font_name" in curItem)
+                            result.rad = curItem.custom_font_name.trim();
+                        else
+                            result.rad = curItem.rad.trim();
+                    }
                     break;
 
                 case this.PageEnum.lessons:
+                    // TODO: handle radical lesson case
                     var kanjiNode = $("#character");
 
                     if (kanjiNode.length === 1)
-                        result = kanjiNode.text().trim();
+                        result.kan = kanjiNode.text().trim();
+                    break;
+                default:
+                    result = null;
                     break;
             }
+
+            return result;
+        },
+        checkSubject: function(subject)
+        {
+            var result = false;
+
+            Object.keys(subject).forEach( function(key) {
+                if (subject[key])
+                    result = true;
+            });
 
             return result;
         }
     };
 }());
-

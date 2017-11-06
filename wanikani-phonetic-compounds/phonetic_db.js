@@ -4,7 +4,7 @@
 // #############################################################################
 function KeiseiDB()
 {
-    this.KTypeEnum = Object.freeze(  {
+    this.KTypeEnum = Object.freeze({
         unknown:         0,
         hieroglyph:      1, // 象形: type of character representing pictures
         indicative:      2, // 指事: indicative (kanji whose shape is based on logical representation of an abstract idea)
@@ -97,7 +97,7 @@ function KeiseiDB()
                 return this.phonetic_db[phon].compounds;
             else
             {
-                console.log("KEISEI: the following phonetic is not in the DB!", phon);
+                GM_log("The following phonetic is not in the DB!", phon);
                 return null;
             }
         },
@@ -136,6 +136,7 @@ function KeiseiDB()
                 var data = this.phonetic_db[phon];
 
                 this.wkradical_to_phon[data["wk-radical"]] = phon;
+                this.wkradical_to_phon[phon] = phon;
             }, this);
         },
         // #####################################################################
