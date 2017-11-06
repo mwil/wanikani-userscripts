@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        WaniKani Keisei Phonetic-Semantic Composition
-// @version     0.8.3
+// @version     0.8.4
 // @author      acm
 // @description Adds information to Wanikani about kanji that use Phonetic-Semantic Composition.
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
@@ -15,14 +15,17 @@
 // @include     http://www.wanikani.com/lesson/session*
 // @include     https://www.wanikani.com/lesson/session*
 //
+// @updateURL   https://github.com/mwil/wanikani-userscripts/raw/master/wanikani-phonetic-compounds/wk_keisei.user.js
+// @downloadURL https://github.com/mwil/wanikani-userscripts/raw/master/wanikani-phonetic-compounds/wk_keisei.user.js
+//
 // @resource    kanji     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/kanji.json
 // @resource    phonetic  https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/phonetic.json
 // @resource    wk_kanji  https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/wk_kanji.json
 // @resource    style     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/keisei.css
 // @resource    chargrid  https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/chargrid.css
 //
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/dc3ad13c6b5abebaaa6b9e366fa7577c313f9ed6/wanikani-phonetic-compounds/db/phonetic_db.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/dc3ad13c6b5abebaaa6b9e366fa7577c313f9ed6/wanikani-phonetic-compounds/db/wk_kanji_db.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/dc3ad13c6b5abebaaa6b9e366fa7577c313f9ed6/wanikani-phonetic-compounds/phonetic_db.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/dc3ad13c6b5abebaaa6b9e366fa7577c313f9ed6/wanikani-phonetic-compounds/wk_kanji_db.js
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/dc3ad13c6b5abebaaa6b9e366fa7577c313f9ed6/utility/wk_interaction.js
 //
 // @grant       GM_log
