@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        WaniKani Keisei Phonetic-Semantic Composition
-// @version     0.9.2
+// @version     0.9.3
 // @author      acm
 // @description Adds information to Wanikani about kanji that use Phonetic-Semantic Composition.
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
@@ -47,7 +47,7 @@
 
 window.wk_keisei = {};
 
-wk_keisei.debug = true;
+wk_keisei.debug = false;
 wk_keisei.log = wk_keisei.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0], msg.slice(1));} : function() {};
 
 (function(gobj) {
