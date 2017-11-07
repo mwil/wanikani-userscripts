@@ -117,10 +117,10 @@ wk_keisei.log = wk_keisei.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0],
 
     // #########################################################################
     const explanation_xref = (subject) =>
-       `<p>The phonetic component ${subject.phon} is related to another component, the readings may be similar.
+       `<p>The phonetic component 「${subject.phon}」 is related to another component, the readings may be similar.
         The ON reading(s) 「${kdb.getPReadings(subject.phon).join("・")}」 are listed for this tone mark.</p>`;
     const explanation_non_compound = (subject) =>
-       `<p>The phonetic component ${subject.phon} also has kanji that are either phonetic compounds of another tone mark,
+       `<p>The phonetic component 「${subject.phon}」 also has kanji that are either phonetic compounds of another tone mark,
         or are considered a different type of composition. The readings are likely to differ.</p>`;
 
     // Character item to be included in a character grid

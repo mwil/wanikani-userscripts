@@ -739,11 +739,18 @@
         "xrefs": [],
         "wk-radical": "superman"
     },
+    "艮": {
+        "readings": ["こん", "ごん"],
+        "compounds": ["限", "恨", "根", "眼", "痕", "銀"],
+        "non_compounds": ["退"],
+        "xrefs": ["良"],
+        "wk-radical": "good"
+    },
     "良": {
         "readings": ["りょう", "ろう"],
         "compounds": ["浪", "郎", "朗", "娘"],
         "non_compounds": [],
-        "xrefs": ["郎"],
+        "xrefs": ["艮", "郎"],
         "wk-radical": null
     },
     "郎": {
@@ -1306,13 +1313,6 @@
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
-    },
-    "艮": {
-        "readings": ["こん", "ごん"],
-        "compounds": ["限", "恨", "根", "眼", "痕", "銀"],
-        "non_compounds": [],
-        "xrefs": [],
-        "wk-radical": "good"
     },
     "多": {
         "readings": ["た"],
@@ -2839,7 +2839,7 @@
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
-    }
+    },
 
 
     "": {
