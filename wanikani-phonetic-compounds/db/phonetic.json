@@ -514,49 +514,49 @@
     },
     "矢": {
         "readings": ["し"],
-        "compounds": ["矢", "疾"],
+        "compounds": ["疾"],
         "non_compounds": ["疑"],
         "xrefs": [],
         "wk-radical": "arrow"
     },
     "会": {
         "readings": ["かい", "え"],
-        "compounds": ["会", "絵"],
+        "compounds": ["絵"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "meet"
     },
     "合": {
         "readings": ["ごう", "こう"],
-        "compounds": ["合", "拾", "給", "答"],
+        "compounds": ["拾", "給", "答"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "suit"
     },
     "同": {
         "readings": ["どう"],
-        "compounds": ["同", "洞", "筒", "銅", "胴"],
+        "compounds": ["洞", "筒", "銅", "胴"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "same"
     },
     "米": {
         "readings": ["べい", "まい", "め"],
-        "compounds": ["米", "迷"],
+        "compounds": ["迷"],
         "non_compounds": [],
         "xrefs": ["迷"],
         "wk-radical": "rice"
     },
     "迷": {
         "readings": ["めい"],
-        "compounds": ["迷", "謎"],
+        "compounds": ["謎"],
         "non_compounds": [],
         "xrefs": ["米"],
         "wk-radical": null
     },
     "考": {
         "readings": ["こう"],
-        "compounds": ["考", "拷"],
+        "compounds": ["拷"],
         "non_compounds": [],
         "xrefs": ["丂"],
         "wk-radical": null
@@ -676,7 +676,7 @@
     },
     "是": {
         "readings": ["ぜ", "し", "てい", "だい"],
-        "compounds": ["是", "堤", "提", "題"],
+        "compounds": ["堤", "提", "題"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null,

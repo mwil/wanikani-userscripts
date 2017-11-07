@@ -475,7 +475,6 @@
     },
     "矢": {
         "readings": ["し"],
-        "phonetic": "矢",
         "type": "hieroglyph"
     },
     "交": {
@@ -484,17 +483,14 @@
     },
     "会": {
         "readings": ["かい", "え"],
-        "phonetic": "会",
         "type": "comp_indicative"
     },
     "合": {
         "readings": ["ごう", "こう"],
-        "phonetic": "合",
         "type": "comp_indicative"
     },
     "同": {
         "readings": ["どう"],
-        "phonetic": "同",
         "type": "comp_indicative"
     },
     "回": {
@@ -534,7 +530,6 @@
     },
     "米": {
         "readings": ["べい", "まい", "め"],
-        "phonetic": "米",
         "type": "hieroglyph"
     },
     "羽": {
@@ -5534,7 +5529,7 @@
     "侯": {
         "readings": ["こう"],
         "type": "unknown",
-        "comment": "obscure phonetic marker"
+        "comment": "obscure phonetic marker 矦"
     },
     "俊": {
         "readings": [],
