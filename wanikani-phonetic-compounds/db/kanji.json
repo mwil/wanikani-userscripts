@@ -2481,8 +2481,9 @@
         "type": "comp_phonetic"
     },
     "停": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["てい"],
+        "phonetic": "亭",
+        "type": "comp_phonetic"
     },
     "副": {
         "readings": ["ふく"],
@@ -4160,7 +4161,8 @@
     },
     "脳": {
         "readings": ["のう", "どう"],
-        "type": "unknown"
+        "phonetic": "𡿺",
+        "type": "comp_phonetic"
     },
     "著": {
         "readings": ["ちょ", "ちゃく", "じゃく"],
@@ -4561,8 +4563,8 @@
         "type": "unprocessed"
     },
     "弔": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["ちょう"],
+        "type": "hieroglyph"
     },
     "井": {
         "readings": ["せい", "しょう"],
@@ -4593,32 +4595,33 @@
         "type": "unknown"
     },
     "冗": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["じょう"],
+        "type": "comp_indicative"
     },
     "凶": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["きょう"],
+        "type": "indicative"
     },
     "刈": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["がい", "かい"],
+        "type": "unknown",
+        "comment": "obscure tone mark 乂"
     },
     "匹": {
         "readings": ["ひつ"],
         "type": "unknown"
     },
     "厄": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["やく"],
+        "type": "unknown"
     },
     "双": {
         "readings": ["そう"],
         "type": "comp_indicative"
     },
     "孔": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["こう", "く"],
+        "type": "unknown"
     },
     "幻": {
         "readings": ["げん"],
@@ -4714,8 +4717,8 @@
         "type": "unknown"
     },
     "矛": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["む", "ぼう"],
+        "type": "hieroglyph"
     },
     "込": {
         "readings": [],
@@ -5754,8 +5757,8 @@
         "type": "comp_phonetic"
     },
     "柔": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["じゅう", "にゅう"],
+        "type": "comp_indicative"
     },
     "砕": {
         "readings": ["さい"],
@@ -6019,8 +6022,8 @@
     },
     "悩": {
         "readings": ["のう", "どう"],
-        "type": "unknown",
-        "comment": "TODO: obscure phonetic component 𡿺?"
+        "phonetic": "𡿺",
+        "type": "comp_phonetic"
     },
     "扇": {
         "readings": [],

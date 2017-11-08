@@ -18,17 +18,21 @@
 // @updateURL   https://github.com/mwil/wanikani-userscripts/raw/master/wanikani-phonetic-compounds/wk_keisei.user.js
 // @downloadURL https://github.com/mwil/wanikani-userscripts/raw/master/wanikani-phonetic-compounds/wk_keisei.user.js
 //
-// @resource    kanji     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/kanji.json
-// @resource    phonetic  https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/phonetic.json
-// @resource    wk_kanji  https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/wk_kanji.json
-// @resource    style     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/css/keisei.css
-// @resource    chargrid  https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/css/chargrid.css
+// @resource    kanji        https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/kanji.json
+// @resource    phonetic     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/phonetic.json
+// @resource    wk_kanji     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/wk_kanji.json
+// @resource    style        https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/css/keisei.css
+// @resource    chargrid     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/css/chargrid.css
+// @resource    bootstrapcss https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/bootstrap/css/bootstrap.crop.css
+// @resource    bootstrapjs  https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/bootstrap/js/bootstrap.min.js
 //
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/dc3ad13c6b5abebaaa6b9e366fa7577c313f9ed6/wanikani-phonetic-compounds/phonetic_db.js
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/37efd760d11457007af222602e5307d8d5ff8443/wanikani-phonetic-compounds/wk_kanji_db.js
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/23e32d84f44d06413e77b63533253c47abcce7c2/utility/wk_interaction.js
 //
 // @grant       GM_log
+// @grant       GM_getValue
+// @grant       GM_setValue
 // @grant       GM_addStyle
 // @grant       GM_getResourceText
 // @grant       GM_notification
@@ -37,6 +41,7 @@
 // ==/UserScript==
 
 /* jshint esversion: 6 */
+/* jshint scripturl:true */
 
 // TODO: ideas
 //       - menu to get info
@@ -47,8 +52,6 @@
 
 window.wk_keisei = {};
 
-wk_keisei.debug = false;
-wk_keisei.log = wk_keisei.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0], msg.slice(1));} : function() {};
 
 (function(gobj) {
     "use strict";
@@ -192,7 +195,7 @@ wk_keisei.log = wk_keisei.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0],
                     $("div#supplement-rad-name-mne").after(createKeiseiSection("margin-top: 12px;"));
                 else
                     $('div#supplement-kan-reading div:contains("Reading Mnemonic") blockquote:last')
-                    .after(createKeiseiSection());
+                    .after(createKeiseiSection("margin-top: 12px;"));
 
                 break;
             default:
@@ -204,6 +207,14 @@ wk_keisei.log = wk_keisei.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0],
 
         if (wki.curPage === wki.PageEnum.reviews || wki.curPage === wki.PageEnum.lessons)
             $(".keisei-kanji-link").attr("target", "_blank");
+
+        $("#keisei-head-visibility").on("click", toggleMainFold);
+
+        if (gobj.minify)
+        {
+            $("#keisei-main-fold").hide();
+            $("#keisei-head-visibility i").attr("class", "icon-eye-close");
+        }
     }
 
     // #########################################################################
@@ -219,15 +230,33 @@ wk_keisei.log = wk_keisei.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0],
                        .attr("id", "keisei-section")
                        .addClass("col1");
 
+        var $mini_fold = $("<div></div>")
+                         .attr("id", "keisei-main-fold");
+
         var $grid = $("<ul></ul>")
                     .attr("id", "keisei-phonetic-grid")
                     .addClass("single-character-grid");
 
-        $section.append(`<h2 style="${style}">Phonetic-Semantic Composition</h2>`);
+        var $head_btn = $('<div class="btn-group pull-right"></div>')
+                        .append('<a class="btn" id="keisei-head-visibility"><i class="icon-eye-open"></i></a>')
+                        .append('<a class="btn" id="keisei-head-settings" data-toggle="modal" data-target="#keisei-modal-settings"><i class="icon-gear"></i></a>')
+                        .append('<a class="btn" id="keisei-head-info" data-toggle="modal" data-target="#keisei-modal-info"><i class="icon-question"></i></a>');
+
+        var $head = $('<h2>Phonetic-Semantic Composition</h2>')
+                    .attr("style", style)
+                    .append($head_btn);
+
+        $section.append($head);
         $section.append($('<span></span>').attr("id", "keisei-explanation"));
-        $section.append($grid);
+        $section.append($mini_fold);
+
+        $mini_fold.append($grid);
 
         gobj.log("Created the Keisei section, append!");
+
+        // if (wki.curPage !== wki.PageEnum.reviews && wki.curPage !== wki.PageEnum.lessons)
+        if (!$("#keisei-modal-settings").length)
+            injectModals();
 
         return $section;
     }
@@ -313,7 +342,7 @@ wk_keisei.log = wk_keisei.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0],
         // Maybe we have additional information to display, add an additional fold
         if (kdb.getPXRefs(subject.phon).length || kdb.getPNonCompounds(subject.phon).length)
         {
-            $("#keisei-section").append(createMoreInfoFold());
+            $("#keisei-main-fold").append(createMoreInfoFold());
             populateMoreInfoFold(subject);
         }
 
@@ -393,7 +422,7 @@ wk_keisei.log = wk_keisei.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0],
         }
 
         char_list.push({kanji: subject.phon, badge: "", meaning: "Phonetic",
-            href:"", kanji_id: "phonetic-1"});
+            href:"javascript:;", kanji_id: "phonetic-1"});
 
         if (kdb.checkRadical(subject.phon))
             char_list.push({kanji: subject.phon, badge: "", meaning: kdb.getWKRadicalPP(subject.phon),
@@ -419,7 +448,7 @@ wk_keisei.log = wk_keisei.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0],
                         .attr("id", "keisei-more-fold");
 
         var $button = $('<div id="keisei-more-button"><i class="icon-chevron-down"></i>Show More Information</div>');
-        var $info = $('<div ></div>')
+        var $info = $('<div></div>')
                     .attr("id", "keisei-more-info");
 
         $infofold.append($button);
@@ -460,7 +489,7 @@ wk_keisei.log = wk_keisei.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0],
             $("#keisei-more-info").append($gridn);
 
             var char_list = [];
-            char_list.push({kanji: subject.phon, meaning: "Non-Phonetic", badge: "", href:"", kanji_id: "nonphonetic-1"});
+            char_list.push({kanji: subject.phon, meaning: "Non-Phonetic", badge: "", href:"javascript:void(0);", kanji_id: "nonphonetic-1"});
 
             for (i = 0; i < kdb.getPNonCompounds(subject.phon).length; i++)
             {
@@ -474,6 +503,14 @@ wk_keisei.log = wk_keisei.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0],
     }
     // #########################################################################
 
+    function toggleMainFold()
+    {
+        $("#keisei-main-fold").toggle();
+
+        $("#keisei-head-visibility i").toggleClass("icon-eye-open");
+        $("#keisei-head-visibility i").toggleClass("icon-eye-close");
+    }
+
     // Callback function for click events on more info button.
     // #########################################################################
     function toggleMoreInfoFold()
@@ -486,17 +523,124 @@ wk_keisei.log = wk_keisei.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0],
         else
             $button.html('<i class="icon-chevron-up"></i>Show Less Information');
 
-        $("#keisei-more-info").slideToggle();
+        $("#keisei-more-info").toggle();
     }
     // #########################################################################
 
+    // #########################################################################
+    function injectModals()
+    {
+        var $settings_modal = $('<div></div>')
+                              .attr("id", "keisei-modal-settings")
+                              .attr("role", "dialog")
+                              .addClass("modal fade")
+                              .hide();
+
+        var $info_modal = $('<div></div>')
+                          .attr("id", "keisei-modal-info")
+                          .attr("role", "dialog")
+                          .addClass("modal fade")
+                          .hide();
+
+        $("body").append($settings_modal);
+        $("body").append($info_modal);
+
+        $settings_modal.html(`
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title">Keisei Settings Menu</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some nice texts go here ...</p>
+                        <div class="btn-group-lg">
+                            <a class="btn" id="keisei-settings-btn-debug"><i class="icon-gear"></i> Toggle Debug Mode</a>
+                            <a class="btn" id="keisei-settings-btn-minify"><i class="icon-eye-open"></i> Toggle Mini Mode</a>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>`
+        );
+
+        if (gobj.debug)
+            $("#keisei-settings-btn-debug").addClass("active");
+
+        $info_modal.html(`
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h3 class="modal-title">Keisei Information</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p>Some nice texts go here ...</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>`
+        );
+
+        if (gobj.minify) {
+            $("#keisei-settings-btn-minify").addClass("active");
+            $("#keisei-settings-btn-minify i").removeClass("icon-eye-open");
+            $("#keisei-settings-btn-minify i").addClass("icon-eye-close");
+        }
+
+        $("#keisei-settings-btn-debug").on("click", toggleDebug);
+        $("#keisei-settings-btn-minify").on("click", toggleMinify);
+    }
+    // #########################################################################
+
+    // #########################################################################
+    function toggleDebug()
+    {
+        gobj.debug = !gobj.debug;
+        gobj.log = gobj.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0], msg.slice(1));} : function() {};
+
+        $("#keisei-settings-btn-debug").toggleClass("active");
+        GM_setValue("debug", gobj.debug);
+    }
+    // #########################################################################
+
+    // #########################################################################
+    function toggleMinify()
+    {
+        gobj.minify = !gobj.minify;
+
+        $("#keisei-settings-btn-minify").toggleClass("active");
+        $("#keisei-settings-btn-minify i").toggleClass("icon-eye-open");
+        $("#keisei-settings-btn-minify i").toggleClass("icon-eye-close");
+
+        if ($("#keisei-main-fold").is(":visible"))
+            toggleMainFold();
+
+        GM_setValue("minify", gobj.minify);
+    }
+    // #########################################################################
+
+    // #########################################################################
+    function init()
+    {
+        GM_addStyle(GM_getResourceText("style"));
+
+        gobj.debug = GM_getValue("debug") || false;
+        gobj.log = gobj.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0], msg.slice(1));} : function() {};
+
+        gobj.minify = GM_getValue("minify") || false;
+    }
+    // #########################################################################
 
     // Just do it!
     // #########################################################################
     function run()
     {
-        GM_addStyle(GM_getResourceText("style"));
-
+        init();
         // GM_notification({title:"WK Keisei", text:"There is even some text included ..."});
 
         kdb = new KeiseiDB();
@@ -510,7 +654,15 @@ wk_keisei.log = wk_keisei.debug ? function(...msg) {GM_log("WK_Keisei: "+msg[0],
 
         // add the fake chargrid styles to pages that normally don't have them
         if (wki.curPage === wki.PageEnum.reviews || wki.curPage === wki.PageEnum.lessons)
+        {
             GM_addStyle(GM_getResourceText("chargrid"));
+            GM_addStyle(GM_getResourceText("bootstrapcss"));
+
+            $("<script></script>")
+            .attr('type', 'text/javascript')
+            .text(GM_getResourceText("bootstrapjs"))
+            .appendTo('head');
+        }
     }
     // #########################################################################
 
