@@ -16,16 +16,16 @@ function WKKanjiDB()
         // #####################################################################
         upper: function(string)
         {
-            var tmp = string.split(" ");
+            var tmp = string.split(` `);
             var result = [];
 
             for (var i = 0; i < tmp.length; i++)
                 result.push(tmp[i].charAt(0).toUpperCase() + tmp[i].slice(1));
 
-            result = result.join(" ");
+            result = result.join(` `);
 
             if (result.length > 12)
-                return result.slice(0, 9) + "...";
+                return result.slice(0, 9) + `...`;
             else
                 return result;
         },
@@ -45,13 +45,13 @@ function WKKanjiDB()
         {
             if (this.checkKanji(kanji))
             {
-                return this.wk_kanji_db[kanji].meaning.split(",").map(this.upper);
+                return this.wk_kanji_db[kanji].meaning.split(`,`).map(this.upper);
             }
             else
-                return ["*Not in WK!*"];
+                return [`*Not in WK!*`];
         }
         // #####################################################################
     };
 }());
 
-WKKanjiDB.prototype.wk_kanji_db = JSON.parse(GM_getResourceText("wk_kanji"));
+WKKanjiDB.prototype.wk_kanji_db = JSON.parse(GM_getResourceText(`wk_kanji`));

@@ -35,13 +35,13 @@ function KeiseiDB()
         // #####################################################################
         upper: function(string)
         {
-            var tmp = string.split("-");
+            var tmp = string.split(`-`);
             var result = [];
 
             for (var i = 0; i < tmp.length; i++)
                 result.push(tmp[i].charAt(0).toUpperCase() + tmp[i].slice(1));
 
-            return result.join(" ");
+            return result.join(` `);
         },
         // #####################################################################
 
@@ -60,7 +60,7 @@ function KeiseiDB()
         // #####################################################################
         checkRadical: function(phon)
         {
-            return this.phonetic_db && this.phonetic_db[phon]["wk-radical"];
+            return this.phonetic_db && this.phonetic_db[phon][`wk-radical`];
         },
         // #####################################################################
         // #####################################################################
@@ -97,7 +97,7 @@ function KeiseiDB()
                 return this.phonetic_db[phon].compounds;
             else
             {
-                GM_log("The following phonetic is not in the DB!", phon);
+                GM_log(`The following phonetic is not in the DB!`, phon);
                 return null;
             }
         },
@@ -135,7 +135,7 @@ function KeiseiDB()
             Object.keys(this.phonetic_db).forEach( function(phon) {
                 var data = this.phonetic_db[phon];
 
-                this.wkradical_to_phon[data["wk-radical"]] = phon;
+                this.wkradical_to_phon[data[`wk-radical`]] = phon;
                 this.wkradical_to_phon[phon] = phon;
             }, this);
         },
@@ -150,15 +150,15 @@ function KeiseiDB()
         // #####################################################################
         getWKRadical: function(phon)
         {
-            return this.phonetic_db[phon]["wk-radical"];
+            return this.phonetic_db[phon][`wk-radical`];
         },
         // #####################################################################
         getWKRadicalPP: function(phon)
         {
-            if (this.phonetic_db && this.phonetic_db[phon]["wk-radical"])
-                return this.upper(this.phonetic_db[phon]["wk-radical"]);
+            if (this.phonetic_db && this.phonetic_db[phon][`wk-radical`])
+                return this.upper(this.phonetic_db[phon][`wk-radical`]);
             else
-                return "*Not in WK!*";
+                return `*Not in WK!*`;
         }
         // #####################################################################
     };
@@ -166,6 +166,6 @@ function KeiseiDB()
 // #############################################################################
 
 // #############################################################################
-KeiseiDB.prototype.kanji_db = JSON.parse(GM_getResourceText("kanji"));
-KeiseiDB.prototype.phonetic_db = JSON.parse(GM_getResourceText("phonetic"));
+KeiseiDB.prototype.kanji_db = JSON.parse(GM_getResourceText(`kanji`));
+KeiseiDB.prototype.phonetic_db = JSON.parse(GM_getResourceText(`phonetic`));
 // #############################################################################
