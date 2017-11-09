@@ -472,7 +472,7 @@
     },
     "少": {
         "readings": ["しょう"],
-        "compounds": ["秒"],
+        "compounds": ["秒", "妙"],
         "non_compounds": ["沙"],
         "xrefs": [],
         "wk-radical": "few"
@@ -2448,7 +2448,7 @@
     },
     "支": {
         "readings": ["し"],
-        "compounds": ["伎", "技", "枝"],
+        "compounds": ["伎", "技", "枝", "岐"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "frog"
@@ -2751,10 +2751,10 @@
     },
     "戔": {
         "readings": ["せん", "ぜん", "さん"],
-        "compounds": ["銭", "践", "浅"],
+        "compounds": ["銭", "践", "浅", "残", "桟"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": null
+        "wk-radical": "bar"
     },
     "尺": {
         "readings": ["しゃく", "せき"],
@@ -2853,6 +2853,48 @@
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "nailgun"
+    },
+    "刑": {
+        "readings": ["けい", "ぎょう"],
+        "compounds": ["型"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "帯": {
+        "readings": ["たい"],
+        "compounds": ["滞"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": "belt"
+    },
+    "骨": {
+        "readings": ["こつ"],
+        "compounds": ["滑"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "竜": {
+        "readings": ["りゅう", "ろう"],
+        "compounds": ["滝", "籠"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": "dragon"
+    },
+    "毎": {
+        "readings": ["まい"],
+        "compounds": ["梅"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "毛": {
+        "readings": ["もう", "ぼう"],
+        "compounds": ["耗"],
+        "non_compounds": ["尾"],
+        "xrefs": [],
+        "wk-radical": "fur"
     },
 
 
