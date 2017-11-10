@@ -27,8 +27,10 @@ function KeiseiDB()
 
     KeiseiDB.prototype = {
         // #####################################################################
-        init: function() {
+        init: function(wkdb)
+        {
             this.genWKRadicalToPhon();
+            this.wkdb = wkdb;
         },
         // #####################################################################
 
@@ -72,10 +74,17 @@ function KeiseiDB()
         // #####################################################################
         getKReadings: function(kanji)
         {
+            var result = [];
+
             if (!(kanji in this.kanji_db))
-                return this.phonetic_db[kanji].readings;
+                result = this.phonetic_db[kanji].readings;
             else
-                return this.kanji_db[kanji].readings;
+                result = this.kanji_db[kanji].readings;
+
+            if (!result.length)
+                return this.wkdb.getOnyomi(kanji);
+            else
+                return result;
         },
         // #####################################################################
         // #####################################################################

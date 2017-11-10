@@ -55,9 +55,9 @@
 
 function WK_Keisei()
 {
-    this.wki = null;
-    this.kdb = null;
-    this.wkdb = null;
+    this.kdb = new KeiseiDB();
+    this.wkdb = new WKKanjiDB();
+    this.wki = new WKInteraction();
 
     this.settings = {"debug": false, "minify": false};
 }
@@ -348,7 +348,7 @@ function WK_Keisei()
                 "readings": this.kdb.getKReadings(kanji),
                 "badge": ``,
                 "meaning": this.wkdb.getKMeaning(kanji)[0],
-                "href": `/kanji/${kanji}`,
+                "href": this.wkdb.isKanjiInWK(kanji) ? `/kanji/${kanji}` : `javascript:;`,
                 "kanji_id": `kanji-${i}`
             };
 
@@ -416,7 +416,7 @@ function WK_Keisei()
                 "readings": this.kdb.getKReadings(subject.phon),
                 "badge": ``,
                 "meaning": this.wkdb.getKMeaning(subject.phon)[0],
-                "href": `/kanji/${subject.phon}`,
+                "href": this.wkdb.isKanjiInWK(subject.phon) ? `/kanji/${subject.phon}`: `javascript:;`,
                 "kanji_id": `kanji-1`
             });
 
@@ -493,7 +493,7 @@ function WK_Keisei()
                 "readings": this.kdb.getKReadings(subject.phon),
                 "meaning": `Non-Phonetic`,
                 "badge": ``,
-                "href": `javascript:void(0);`,
+                "href": `javascript:;`,
                 "kanji_id": `nonphonetic-1`
             });
 
@@ -505,7 +505,7 @@ function WK_Keisei()
                     "readings": this.kdb.getKReadings(curKanji),
                     "meaning": this.wkdb.getKMeaning(curKanji)[0],
                     "badge": ``,
-                    "href": `/kanji/${curKanji}`,
+                    "href": this.wkdb.isKanjiInWK(curKanji) ? `/kanji/${curKanji}` : `javascript:;`,
                     "kanji_id": `kanji-${i}`
                 });
             }
@@ -554,13 +554,8 @@ function WK_Keisei()
 
         // GM_notification({title:"WK Keisei", text:"There is even some text included ..."});
 
-        this.kdb = new KeiseiDB();
-        this.kdb.init();
-
-        this.wkdb = new WKKanjiDB();
         this.wkdb.init();
-
-        this.wki = new WKInteraction();
+        this.kdb.init(this.wkdb);
         this.wki.init(this.injectKeiseiSection.bind(this));
 
     };
