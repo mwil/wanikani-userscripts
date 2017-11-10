@@ -388,7 +388,7 @@
     },
     "立": {
         "readings": ["りつ", "りゅう"],
-        "compounds": ["位", "拉", "泣", "粒", "翌"],
+        "compounds": ["位", "拉", "泣", "粒", "翌", "笠"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "stand"
@@ -783,7 +783,7 @@
     },
     "非": {
         "readings": ["ひ", "はい"],
-        "compounds": ["俳", "排", "悲", "扉", "輩", "緋"],
+        "compounds": ["俳", "排", "悲", "扉", "輩", "緋", "斐"],
         "non_compounds": ["罪"],
         "xrefs": [],
         "wk-radical": "injustice"
@@ -2050,7 +2050,7 @@
     },
     "知": {
         "readings": ["ち"],
-        "compounds": ["痴"],
+        "compounds": ["痴", "智"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
@@ -2385,7 +2385,7 @@
     },
     "此": {
         "readings": ["し"],
-        "compounds": ["紫", "雌"],
+        "compounds": ["紫", "雌", "柴"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
@@ -2448,7 +2448,7 @@
     },
     "景": {
         "readings": ["けい", "えい"],
-        "compounds": ["影"],
+        "compounds": ["影", "憬"],
         "non_compounds": [],
         "xrefs": ["京"],
         "wk-radical": null
@@ -2786,7 +2786,7 @@
     },
     "戔": {
         "readings": ["せん", "ぜん", "さん"],
-        "compounds": ["銭", "践", "浅", "残", "桟"],
+        "compounds": ["銭", "践", "浅", "残", "桟", "箋"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "bar"
@@ -2849,7 +2849,7 @@
     },
     "凡": {
         "readings": ["ぼん", "はん"],
-        "compounds": ["帆"],
+        "compounds": ["帆", "汎"],
         "non_compounds": ["風"],
         "xrefs": [],
         "wk-radical": null
@@ -2990,6 +2990,34 @@
     "耑": {
         "readings": ["たん", "せん"],
         "compounds": ["段", "端", "瑞"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "連": {
+        "readings": ["れん"],
+        "compounds": ["漣", "蓮"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "夌": {
+        "readings": ["りょう"],
+        "compounds": ["凌", "陵", "綾"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": "frostbite"
+    },
+    "串": {
+        "readings": ["せん", "かん"],
+        "compounds": ["患"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": "skewer"
+    },
+    "朋": {
+        "readings": ["ほう"],
+        "compounds": ["棚", "崩"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
