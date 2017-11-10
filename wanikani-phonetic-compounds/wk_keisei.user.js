@@ -99,6 +99,8 @@ function WK_Keisei()
     // #########################################################################
     WK_Keisei.prototype.injectKeiseiSection = function()
     {
+        $(`#keisei-section`).remove();
+
         var subject = this.wki.getSubject();
 
         this.log(`Injecting phonetic section (callback works).`);
@@ -111,7 +113,7 @@ function WK_Keisei()
         else
             subject.phon = this.kdb.getKPhonetic(subject.kan) || subject.kan;
 
-        this.log(`Working with the following input: ${subject}.`);
+        this.log(`Working with the following input:`, subject);
 
 
         switch(this.wki.curPage)
@@ -135,8 +137,6 @@ function WK_Keisei()
 
                 break;
             case this.wki.PageEnum.lessons:
-                $(`#keisei-section`).remove();
-
                 if ($(`div#main-info`).hasClass(`radical`))
                     $(`div#supplement-rad-name-mne`).after(this.createKeiseiSection(`margin-top: 12px;`));
                 else
@@ -155,7 +155,7 @@ function WK_Keisei()
             this.wki.curPage === this.wki.PageEnum.lessons)
             $(`.keisei-kanji-link`).attr(`target`, `_blank`);
 
-        $(`#keisei-head-visibility`).on(`click`, this.toggleMainFold);
+        $(`#keisei-head-visibility`).on(`click`, this.toggleMainFold.bind(this));
 
         if (this.settings.minify)
         {
@@ -182,12 +182,18 @@ function WK_Keisei()
 
         var $grid = $(`<ul></ul>`)
                     .attr(`id`, `keisei-phonetic-grid`)
+                    .attr(`style`, `margin-bottom: 10px;`)
                     .addClass(`single-character-grid`);
 
-        var $head_btn = $(`<div class="btn-group pull-right"></div>`)
+        var $view_btn = $(`<div class="btn-group pull-right"></div>`)
+                        .append(`<a class="btn disabled" id="keisei-head-moreinfo">
+                                    <i class="icon-collapse-top"></i>
+                                 </a>`)
                         .append(`<a class="btn" id="keisei-head-visibility">
                                     <i class="icon-eye-open"></i>
-                                 </a>`)
+                                 </a>`);
+
+        var $head_btn = $(`<div class="btn-group pull-right"></div>`)
                         .append(`<a class="btn" id="keisei-head-settings" data-toggle="modal" data-target="#keisei-modal-settings">
                                     <i class="icon-gear"></i>
                                  </a>`)
@@ -197,7 +203,8 @@ function WK_Keisei()
 
         var $head = $(`<h2>Phonetic-Semantic Composition</h2>`)
                     .attr(`style`, style)
-                    .append($head_btn);
+                    .append($head_btn)
+                    .append($view_btn);
 
         $section.append($head);
         $section.append($(`<span></span>`).attr(`id`, `keisei-explanation`));
@@ -301,7 +308,10 @@ function WK_Keisei()
         {
             $(`#keisei-main-fold`).append(this.createMoreInfoFold());
             this.populateMoreInfoFold(subject);
+            $(`#keisei-more-fold`).hide();
         }
+        else
+            $(`#keisei-head-moreinfo`).addClass(`disabled`);
     };
     // #########################################################################
 
@@ -435,18 +445,13 @@ function WK_Keisei()
         var $infofold = $(`<div></div>`)
                         .attr(`id`, `keisei-more-fold`);
 
-        var $button = $(`<div id="keisei-more-button">
-                            <i class="icon-chevron-down"></i>
-                            Show More Information
-                         </div>`);
-
         var $info = $(`<div></div>`)
-                    .attr(`id`, `keisei-more-info`);
+                    .attr(`id`, `keisei-more-fold`);
 
-        $infofold.append($button);
         $infofold.append($info);
 
-        $button.on(`click`, this.toggleMoreInfoFold);
+        $(`#keisei-head-moreinfo`).removeClass(`disabled`);
+        $(`#keisei-head-moreinfo`).on(`click`, this.toggleMoreInfoFold.bind(this));
 
         return $infofold;
     };
@@ -461,7 +466,7 @@ function WK_Keisei()
         {
             var curPhon = this.kdb.getPXRefs(subject.phon)[i];
 
-            $(`#keisei-more-info`).append($(`<span></span>`)
+            $(`#keisei-more-fold`).append($(`<span></span>`)
                                   .attr(`id`, `keisei-more-expl-${i}`));
 
             $(`#keisei-more-expl-${i}`).append(this.explanation_xref(curPhon, this.kdb.getPReadings(curPhon)));
@@ -470,13 +475,13 @@ function WK_Keisei()
                         .attr(`id`, `keisei-xref-grid-${i}`)
                         .addClass(`single-character-grid`);
 
-            $(`#keisei-more-info`).append($gridx);
+            $(`#keisei-more-fold`).append($gridx);
             this.populateCharGrid(`#keisei-xref-grid-${i}`, {"kan": subject.kan, "phon": curPhon});
         }
 
         if (this.kdb.getPNonCompounds(subject.phon).length)
         {
-            $(`#keisei-more-info`).append($(`<span></span>`)
+            $(`#keisei-more-fold`).append($(`<span></span>`)
                                   .attr(`id`, `keisei-more-non-comp`));
 
             $(`#keisei-more-non-comp`).append(this.explanation_non_compound(subject));
@@ -485,7 +490,7 @@ function WK_Keisei()
                         .attr(`id`, `keisei-non-comp-grid`)
                         .addClass(`single-character-grid`);
 
-            $(`#keisei-more-info`).append($gridn);
+            $(`#keisei-more-fold`).append($gridn);
 
             var char_list = [];
             char_list.push({
@@ -521,21 +526,24 @@ function WK_Keisei()
 
         $(`#keisei-head-visibility i`).toggleClass(`icon-eye-open`);
         $(`#keisei-head-visibility i`).toggleClass(`icon-eye-close`);
+
+        if (!$(`#keisei-main-fold`).is(`:visible`) &&
+            !$(`#keisei-head-moreinfo i`).hasClass(`icon-collapse-top`))
+            this.toggleMoreInfoFold();
     };
 
     // Callback function for click events on more info button.
     // #########################################################################
     WK_Keisei.prototype.toggleMoreInfoFold = function()
     {
-        var $button = $(`#keisei-more-button`);
-        var $fold = $(`#keisei-more-info`);
+        $(`#keisei-more-fold`).toggle();
 
-        if ($fold.is(`:visible`))
-            $button.html(`<i class="icon-chevron-down"></i>Show More Information`);
-        else
-            $button.html(`<i class="icon-chevron-up"></i>Show Less Information`);
+        $(`#keisei-head-moreinfo i`).toggleClass(`icon-collapse`);
+        $(`#keisei-head-moreinfo i`).toggleClass(`icon-collapse-top`);
 
-        $(`#keisei-more-info`).toggle();
+        if (!$(`#keisei-main-fold`).is(`:visible`) &&
+            !$(`#keisei-head-moreinfo i`).hasClass(`icon-collapse-top`))
+            this.toggleMainFold();
     };
     // #########################################################################
 
@@ -547,7 +555,7 @@ function WK_Keisei()
         this.settings.debug = GM_getValue(`debug`) || false;
 
         this.log = this.settings.debug ?
-            function(msg) {GM_log(`WK_Keisei: ${msg}`);} :
+            function(msg, ...args) {GM_log(`WK_Keisei:`, msg, args);} :
             function() {};
 
         this.settings.minify = GM_getValue(`minify`) || false;
@@ -558,6 +566,7 @@ function WK_Keisei()
         this.kdb.init(this.wkdb);
         this.wki.init(this.injectKeiseiSection.bind(this));
 
+        this.log(GM_info);
     };
     // #########################################################################
 

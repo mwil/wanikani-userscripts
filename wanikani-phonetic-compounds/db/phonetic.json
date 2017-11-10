@@ -52,7 +52,7 @@
         "readings": ["とん", "どん"],
         "compounds": ["純", "春", "鈍", "頓"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["屰"],
         "wk-radical": "thorn"
     },
     "丁": {
@@ -108,7 +108,7 @@
     },
     "古": {
         "readings": ["こ"],
-        "compounds": ["苦", "固", "故", "枯"],
+        "compounds": ["苦", "固", "故", "枯", "胡"],
         "non_compounds": [],
         "xrefs": ["固"],
         "wk-radical": "old"
@@ -129,7 +129,7 @@
     },
     "青": {
         "readings": ["せい", "しょう"],
-        "compounds": ["情", "清", "精", "請", "晴", "静"],
+        "compounds": ["情", "清", "精", "請", "晴", "静", "靖"],
         "non_compounds": [],
         "xrefs": ["生"],
         "wk-radical": "blue"
@@ -221,7 +221,7 @@
     "反": {
         "readings": ["はん", "ほん", "たん"],
         "compounds": ["坂", "阪", "返", "板", "版", "販", "飯"],
-        "non_compounds": [],
+        "non_compounds": ["仮"],
         "xrefs": [],
         "wk-radical": "devil"
     },
@@ -248,7 +248,7 @@
     },
     "可": {
         "readings": ["か", "こく"],
-        "compounds": ["何", "河", "苛"],
+        "compounds": ["何", "河", "苛", "阿"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "lip-ring"
@@ -360,7 +360,7 @@
     },
     "定": {
         "readings": ["てい", "じょう"],
-        "compounds": ["錠"],
+        "compounds": ["錠", "淀"],
         "non_compounds": [],
         "xrefs": ["正"],
         "wk-radical": null
@@ -612,7 +612,7 @@
     },
     "里": {
         "readings": ["り"],
-        "compounds": ["理", "裏"],
+        "compounds": ["理", "裏", "鯉"],
         "non_compounds": ["厘"],
         "xrefs": [],
         "wk-radical": "sunflower"
@@ -633,7 +633,7 @@
     },
     "京": {
         "readings": ["きょう", "けい", "きん"],
-        "compounds": ["景", "鯨"],
+        "compounds": ["景", "鯨", "諒"],
         "non_compounds": [],
         "xrefs": ["景"],
         "wk-radical": "capital"
@@ -662,7 +662,7 @@
     },
     "明": {
         "readings": ["めい", "みょう", "みん"],
-        "compounds": ["盟"],
+        "compounds": ["盟", "萌"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "bright"
@@ -741,7 +741,7 @@
     },
     "甫": {
         "readings": ["ほ", "ふ"],
-        "compounds": ["浦", "捕", "補", "舗"],
+        "compounds": ["浦", "捕", "補", "舗", "輔", "哺"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "wedding"
@@ -776,14 +776,14 @@
     },
     "倉": {
         "readings": ["そう"],
-        "compounds": ["創"],
+        "compounds": ["創", "蒼"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
     },
     "非": {
         "readings": ["ひ", "はい"],
-        "compounds": ["俳", "排", "悲", "扉", "輩"],
+        "compounds": ["俳", "排", "悲", "扉", "輩", "緋"],
         "non_compounds": ["罪"],
         "xrefs": [],
         "wk-radical": "injustice"
@@ -890,7 +890,7 @@
     },
     "奇": {
         "readings": ["き"],
-        "compounds": ["埼", "崎", "寄", "椅", "騎"],
+        "compounds": ["埼", "崎", "寄", "椅", "騎", "綺"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "odd"
@@ -1047,7 +1047,7 @@
     },
     "𢦏": {
         "readings": ["さい"],
-        "compounds": ["災", "栽", "裁", "載", "戴"],
+        "compounds": ["災", "栽", "裁", "載", "戴", "哉"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
@@ -1075,11 +1075,18 @@
     },
     "者": {
         "readings": ["しゃ", "しょ", "と"],
-        "compounds": ["都", "暑", "煮", "署", "箸", "諸", "書", "緒", "著", "着"],
+        "compounds": ["都", "暑", "煮", "署", "箸", "諸", "書", "緒", "著", "着", "賭"],
         "non_compounds": ["賭"],
-        "xrefs": [],
+        "xrefs": ["署"],
         "wk-radical": "someone",
         "comment": "added しょ, but found no reason"
+    },
+    "署": {
+        "readings": ["しょ"],
+        "compounds": ["曙"],
+        "non_compounds": [],
+        "xrefs": ["者"],
+        "wk-radical": null
     },
     "甬": {
         "readings": ["つう", "よう", "ゆう"],
@@ -1167,7 +1174,7 @@
     },
     "官": {
         "readings": ["かん"],
-        "compounds": ["棺", "管", "館"],
+        "compounds": ["棺", "管", "館", "菅"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
@@ -1400,7 +1407,7 @@
     },
     "羊": {
         "readings": ["よう", "しょう", "じょう"],
-        "compounds": ["洋", "祥", "詳", "養"],
+        "compounds": ["洋", "祥", "詳", "養", "翔"],
         "non_compounds": [],
         "xrefs": ["羔"],
         "wk-radical": "sheep"
@@ -2022,7 +2029,7 @@
     },
     "瓜": {
         "readings": ["か", "こ"],
-        "compounds": ["孤", "弧"],
+        "compounds": ["孤", "弧", "狐"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "melon"
@@ -2295,11 +2302,11 @@
         "readings": ["ぎゃく"],
         "compounds": ["逆"],
         "non_compounds": [],
-        "xrefs": [],
-        "wk-radical": "thorn"
+        "xrefs": ["屯"],
+        "wk-radical": null
     },
     "呆": {
-        "readings": ["ほ", "ほう"],
+        "readings": ["ほ", "ほう", "たい"],
         "compounds": ["保"],
         "non_compounds": [],
         "xrefs": [],
@@ -2576,7 +2583,7 @@
     },
     "利": {
         "readings": ["り"],
-        "compounds": ["梨", "痢"],
+        "compounds": ["梨", "痢", "莉"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
@@ -2847,6 +2854,13 @@
         "xrefs": [],
         "wk-radical": null
     },
+    "風": {
+        "readings": ["ふう", "ふ"],
+        "compounds": ["楓"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": "wind"
+    },
     "秀": {
         "readings": ["しゅう"],
         "compounds": ["透", "誘"],
@@ -2905,7 +2919,7 @@
     },
     "竜": {
         "readings": ["りゅう", "ろう"],
-        "compounds": ["滝", "籠"],
+        "compounds": ["滝", "籠", "龍"],
         "non_compounds": ["襲"],
         "xrefs": [],
         "wk-radical": "dragon"
@@ -2975,7 +2989,7 @@
     },
     "耑": {
         "readings": ["たん", "せん"],
-        "compounds": ["段", "端"],
+        "compounds": ["段", "端", "瑞"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null

@@ -7342,8 +7342,9 @@
         "type": "comp_phonetic"
     },
     "微": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["び", "み"],
+        "type": "unknown",
+        "comment": "obscure tone mark 𣁋"
     },
     "慨": {
         "readings": [],
@@ -9671,8 +9672,279 @@
         "readings": ["ぜい", "せい"],
         "type": "unknown"
     },
+    "綺": {
+        "readings": ["き"],
+        "phonetic": "奇",
+        "type": "comp_phonetic"
+    },
+    "々": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "噌": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "醤": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "賂": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "斐": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "墟": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "笠": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "也": {
+        "readings": ["や"],
+        "type": "hieroglyph"
+    },
+    "翔": {
+        "readings": ["しょう"],
+        "phonetic": "羊",
+        "type": "comp_phonetic"
+    },
+    "鳩": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "庄": {
+        "readings": ["しょう", "そう"],
+        "type": "unknown"
+    },
+    "伊": {
+        "readings": ["い"],
+        "type": "unknown",
+        "comment": "TODO: search phonetic 尹"
+    },
+    "鰐": {
+        "readings": ["がく"],
+        "type": "unknown",
+        "comment": "obscure phonetic 咢"
+    },
+    "蟹": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "堰": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "淀": {
+        "readings": ["てん", "でん"],
+        "phonetic": "定",
+        "type": "comp_phonetic"
+    },
+    "蓮": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "亮": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "聡": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "乃": {
+        "readings": ["だい", "ない"],
+        "type": "hieroglyph"
+    },
+    "綾": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "颯": {
+        "readings": ["さつ", "そう"],
+        "type": "comp_indicative"
+    },
+    "隼": {
+        "readings": ["しゅう", "じゅう"],
+        "type": "unknown"
+    },
+    "輔": {
+        "readings": ["ほ", "ふ"],
+        "phonetic": "甫",
+        "type": "comp_phonetic"
+    },
+    "瓜": {
+        "readings": ["か"],
+        "type": "hieroglyph"
+    },
+    "鯉": {
+        "readings": ["り"],
+        "phonetic": "里",
+        "type": "comp_phonetic"
+    },
+    "緋": {
+        "readings": ["ひ"],
+        "phonetic": "非",
+        "type": "comp_phonetic"
+    },
+    "曙": {
+        "readings": ["しょ"],
+        "phonetic": "署",
+        "type": "comp_phonetic"
+    },
+    "胡": {
+        "readings": ["こ", "ご", "う"],
+        "phonetic": "古",
+        "type": "comp_phonetic"
+    },
+    "葵": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "駿": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "諒": {
+        "readings": ["りょう"],
+        "phonetic": "京",
+        "type": "comp_phonetic"
+    },
+    "莉": {
+        "readings": ["り"],
+        "phonetic": "利",
+        "type": "comp_phonetic"
+    },
+    "呆": {
+        "readings": ["ほ", "ほう", "たい"],
+        "type": "unprocessed"
+    },
+    "哺": {
+        "readings": ["ほ"],
+        "phonetic": "甫",
+        "type": "comp_phonetic"
+    },
+    "阿": {
+        "readings": ["あ"],
+        "phonetic": "可",
+        "type": "comp_phonetic"
+    },
+    "杏": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "栞": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "昌": {
+        "readings": ["しょう"],
+        "type": "unknown"
+    },
+    "之": {
+        "readings": ["し"],
+        "type": "hieroglyph"
+    },
+    "龍": {
+        "readings": ["りゅう", "りょう", "りん"],
+        "type": "hieroglyph"
+    },
+    "遼": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "瑛": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "靖": {
+        "readings": ["せい"],
+        "phonetic": "青",
+        "type": "comp_phonetic"
+    },
+    "嘉": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "蝶": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "凛": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "智": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "柴": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "楓": {
+        "readings": ["ふう"],
+        "phonetic": "風",
+        "type": "comp_phonetic"
+    },
+    "萌": {
+        "readings": ["ぼう", "ほう"],
+        "phonetic": "明",
+        "type": "comp_phonetic"
+    },
+    "烏": {
+        "readings": ["う", "お"],
+        "type": "hieroglyph"
+    },
+    "哉": {
+        "readings": ["さい"],
+        "phonetic": "𢦏",
+        "type": "comp_phonetic"
+    },
+    "蒼": {
+        "readings": ["そう"],
+        "phonetic": "倉",
+        "type": "comp_phonetic"
+    },
+    "凌": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "瑞": {
+        "readings": ["ずい"],
+        "phonetic": "耑",
+        "type": "comp_phonetic"
+    },
+    "菅": {
+        "readings": ["かん"],
+        "phonetic": "官",
+        "type": "comp_phonetic"
+    },
+    "漣": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "梓": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "睦": {
+        "readings": [],
+        "type": "unprocessed"
+    },
+    "狐": {
+        "readings": ["こ"],
+        "phonetic": "瓜",
+        "type": "comp_phonetic"
+    },
     "賭": {
         "readings": ["と"],
-        "type": "unknown"
+        "phonetic": "者",
+        "type": "comp_phonetic"
     }
 }
