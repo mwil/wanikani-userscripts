@@ -137,7 +137,7 @@
     "且": {
         "readings": ["しょ", "そ", "しょう"],
         "compounds": ["助", "狙", "阻", "祖", "租", "組", "粗", "査"],
-        "non_compounds": [],
+        "non_compounds": ["宜"],
         "xrefs": [],
         "wk-radical": "top-hat"
     },
@@ -264,8 +264,15 @@
         "readings": ["しょう"],
         "compounds": ["招", "沼", "昭", "紹", "詔", "超"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["昭"],
         "wk-radical": "joker"
+    },
+    "昭": {
+        "readings": ["しょう"],
+        "compounds": ["照"],
+        "non_compounds": [],
+        "xrefs": ["召"],
+        "wk-radical": null
     },
     "寺": {
         "readings": ["じ"],
@@ -416,7 +423,7 @@
     },
     "才": {
         "readings": ["さい"],
-        "compounds": ["材", "財"],
+        "compounds": ["材", "財", "在"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "genius"
@@ -486,7 +493,7 @@
     },
     "少": {
         "readings": ["しょう"],
-        "compounds": ["秒", "妙", "砂"],
+        "compounds": ["秒", "妙", "砂", "抄"],
         "non_compounds": ["沙"],
         "xrefs": [],
         "wk-radical": "few"
@@ -583,7 +590,7 @@
         "wk-radical": "sell"
     },
     "谷": {
-        "readings": ["こく"],
+        "readings": ["こく", "よく"],
         "compounds": ["俗", "浴", "容", "欲", "裕"],
         "non_compounds": [],
         "xrefs": [],
@@ -613,7 +620,7 @@
     "里": {
         "readings": ["り"],
         "compounds": ["理", "裏", "鯉"],
-        "non_compounds": ["厘"],
+        "non_compounds": ["厘", "埋"],
         "xrefs": [],
         "wk-radical": "sunflower"
     },
@@ -920,8 +927,15 @@
         "readings": ["よく", "いき"],
         "compounds": ["代", "式"],
         "non_compounds": [],
-        "xrefs": ["代"],
+        "xrefs": ["代", "式"],
         "wk-radical": "ceremony"
+    },
+    "式": {
+        "readings": ["しき", "しょく"],
+        "compounds": ["試"],
+        "non_compounds": [],
+        "xrefs": ["弋"],
+        "wk-radical": null
     },
     "代": {
         "readings": ["だい", "たい"],
@@ -1344,7 +1358,7 @@
     },
     "弗": {
         "readings": ["ふつ"],
-        "compounds": ["仏", "沸", "払"],
+        "compounds": ["仏", "沸", "払", "費"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "slinky"
@@ -2835,7 +2849,7 @@
     },
     "軍": {
         "readings": ["ぐん", "くん"],
-        "compounds": ["運"],
+        "compounds": ["運", "輝"],
         "non_compounds": ["揮"],
         "xrefs": [],
         "wk-radical": null
@@ -2926,8 +2940,8 @@
     },
     "毎": {
         "readings": ["まい"],
-        "compounds": ["梅"],
-        "non_compounds": [],
+        "compounds": ["梅", "悔"],
+        "non_compounds": ["侮"],
         "xrefs": [],
         "wk-radical": null
     },
@@ -3021,6 +3035,146 @@
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
+    },
+    "舎": {
+        "readings": ["しゃ"],
+        "compounds": ["捨"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": "cottage"
+    },
+    "貴": {
+        "readings": ["き"],
+        "compounds": ["遺"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": "valuable"
+    },
+    "它": {
+        "readings": ["た"],
+        "compounds": ["蛇"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "巻": {
+        "readings": ["かん", "けん"],
+        "compounds": ["圏"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": "scroll"
+    },
+    "甚": {
+        "readings": ["じん", "かん"],
+        "compounds": ["勘", "堪"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "某": {
+        "readings": ["ぼう"],
+        "compounds": ["媒", "謀"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "坴": {
+        "readings": ["りく", "ろく"],
+        "compounds": ["陸", "睦"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": "womb"
+    },
+    "埶": {
+        "readings": ["げい", "せい"],
+        "compounds": ["勢", "熱"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "監": {
+        "readings": ["かん", "けん", "らん"],
+        "compounds": ["濫", "藍", "鑑", "艦", "塩"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": "oversee"
+    },
+    "即": {
+        "readings": ["そく", "しゅく"],
+        "compounds": ["節"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "祭": {
+        "readings": ["さい"],
+        "compounds": ["察", "際"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "魚": {
+        "readings": ["ぎょ"],
+        "compounds": ["漁"],
+        "non_compounds": ["鯨", "鯉", "鰐", "鮮"],
+        "xrefs": [],
+        "wk-radical": "fish"
+    },
+    "以": {
+        "readings": ["い"],
+        "compounds": ["似"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "之": {
+        "readings": ["し"],
+        "compounds": ["志"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "表": {
+        "readings": ["ひょう"],
+        "compounds": ["俵"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "射": {
+        "readings": ["しゃ", "せき", "や"],
+        "compounds": ["謝"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "宗": {
+        "readings": ["しゅう", "そう"],
+        "compounds": ["崇"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "夅": {
+        "readings": ["こう", "ご"],
+        "compounds": ["降"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "罙": {
+        "readings": ["しん", "たん"],
+        "compounds": ["深", "探"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "斉": {
+        "readings": ["せい", "さい"],
+        "compounds": ["剤", "済"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": "stilts"
     },
 
 
