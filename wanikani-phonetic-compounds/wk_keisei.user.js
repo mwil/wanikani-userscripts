@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        WaniKani Keisei Phonetic-Semantic Composition
-// @version     0.9.8
+// @version     1.0.0
 // @author      acm
 // @description Adds information to Wanikani about kanji that use Phonetic-Semantic Composition.
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
@@ -29,10 +29,10 @@
 // @resource    bootstrapjs  https://raw.githubusercontent.com/mwil/wanikani-userscripts/ea922c774c72c5d308be0a71a5100b9f9988f082/wanikani-phonetic-compounds/bootstrap/js/bootstrap.js
 //
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/dfd7e8c304824fa44593addbb4f5d3713495a11a/wanikani-phonetic-compounds/wk_keisei.strings.en.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/58c9c97ee42d374c1ffeb6df0ad333861dc65b7a/wanikani-phonetic-compounds/wk_keisei.modal.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/7bee5252a861925f9af3572a913b09bc622e7a1c/wanikani-phonetic-compounds/phonetic_db.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/7bee5252a861925f9af3572a913b09bc622e7a1c/wanikani-phonetic-compounds/wk_kanji_db.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/dfd7e8c304824fa44593addbb4f5d3713495a11a/utility/wk_interaction.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/35225681eb32f798ff8c5c7a0a352e8f6480135c/wanikani-phonetic-compounds/wk_keisei.modal.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/35225681eb32f798ff8c5c7a0a352e8f6480135c/wanikani-phonetic-compounds/phonetic_db.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/35225681eb32f798ff8c5c7a0a352e8f6480135c/wanikani-phonetic-compounds/wk_kanji_db.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/35225681eb32f798ff8c5c7a0a352e8f6480135c/utility/wk_interaction.js
 //
 // @grant       GM_log
 // @grant       GM_getValue
