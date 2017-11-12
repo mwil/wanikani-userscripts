@@ -5840,8 +5840,9 @@
         "type": "comp_phonetic"
     },
     "狩": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["しゅ"],
+        "phonetic": "守",
+        "type": "comp_phonetic"
     },
     "珍": {
         "readings": ["ちん"],
@@ -6513,8 +6514,9 @@
         "type": "unprocessed"
     },
     "婆": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["ば"],
+        "phonetic": "波",
+        "type": "comp_phonetic"
     },
     "寂": {
         "readings": [],
@@ -8726,13 +8728,14 @@
         "type": "comp_phonetic"
     },
     "幣": {
-        "readings": [],
-        "type": "unprocessed"
+        "readings": ["へい"],
+        "phonetic": "敝",
+        "type": "comp_phonetic"
     },
     "弊": {
         "readings": ["へい"],
-        "type": "unknown",
-        "comment": "obscure tone mark 敝"
+        "phonetic": "敝",
+        "type": "comp_phonetic"
     },
     "壁": {
         "readings": ["へき"],

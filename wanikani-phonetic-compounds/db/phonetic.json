@@ -250,8 +250,15 @@
         "readings": ["ひ"],
         "compounds": ["披", "彼", "波", "破", "疲", "被"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["波"],
         "wk-radical": "skin"
+    },
+    "波": {
+        "readings": ["は"],
+        "compounds": [],
+        "non_compounds": [],
+        "xrefs": ["皮"],
+        "wk-radical": "wave"
     },
     "包": {
         "readings": ["ほう"],
@@ -1802,7 +1809,7 @@
     "玄": {
         "readings": ["げん"],
         "compounds": ["弦", "舷"],
-        "non_compounds": [],
+        "non_compounds": ["畜"],
         "xrefs": [],
         "wk-radical": "mysterious"
     },
@@ -3370,7 +3377,7 @@
         "compounds": ["邦", "奉"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": null
+        "wk-radical": "signpost"
     },
     "并": {
         "readings": ["へい", "ひょう"],
@@ -3405,14 +3412,28 @@
         "compounds": ["酒", "醜"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": null
+        "wk-radical": "alcohol"
     },
     "劦": {
         "readings": ["きょう"],
-        "compounds": ["脇"],
+        "compounds": ["脇", "協"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
+    },
+    "守": {
+        "readings": ["しゅ", "す"],
+        "compounds": ["狩"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "敝": {
+        "readings": ["へい"],
+        "compounds": ["弊", "幣"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": "demolition-man"
     },
 
 
