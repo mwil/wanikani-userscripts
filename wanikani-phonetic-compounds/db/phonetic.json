@@ -102,9 +102,16 @@
         "readings": ["ほう", "ぼう"],
         "compounds": ["坊", "妨", "芳", "防", "放", "肪", "房", "紡", "訪"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["放"],
         "wk-radical": "direction",
         "comment": "added ぼう, no reason found"
+    },
+    "放": {
+        "readings": ["ほう"],
+        "compounds": ["倣"],
+        "non_compounds": [],
+        "xrefs": ["方"],
+        "wk-radical": null
     },
     "古": {
         "readings": ["こ"],
@@ -318,7 +325,7 @@
     },
     "由": {
         "readings": ["ゆ", "ゆう", "ゆい"],
-        "compounds": ["油", "宙", "笛", "軸", "袖"],
+        "compounds": ["油", "宙", "笛", "軸", "袖", "抽"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "reason"
@@ -683,7 +690,7 @@
     },
     "長": {
         "readings": ["ちょう"],
-        "compounds": ["帳", "張"],
+        "compounds": ["帳", "張", "脹"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "long"
@@ -691,7 +698,7 @@
     "門": {
         "readings": ["もん", "ぼん"],
         "compounds": ["問", "聞"],
-        "non_compounds": ["閉"],
+        "non_compounds": ["閉", "閑"],
         "xrefs": [],
         "wk-radical": "gate"
     },
@@ -832,7 +839,7 @@
     },
     "周": {
         "readings": ["しゅう", "す"],
-        "compounds": ["彫", "週", "調"],
+        "compounds": ["彫", "週", "調", "彫"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "ghost"
@@ -932,7 +939,7 @@
     },
     "式": {
         "readings": ["しき", "しょく"],
-        "compounds": ["試"],
+        "compounds": ["試", "拭"],
         "non_compounds": [],
         "xrefs": ["弋"],
         "wk-radical": null
@@ -1155,8 +1162,15 @@
         "readings": ["うん"],
         "compounds": ["芸", "雲", "魂"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["雲"],
         "wk-radical": "boobs"
+    },
+    "雲": {
+        "readings": ["うん"],
+        "compounds": ["曇"],
+        "non_compounds": [],
+        "xrefs": ["云"],
+        "wk-radical": null
     },
     "果": {
         "readings": ["か"],
@@ -1612,7 +1626,7 @@
     },
     "爰": {
         "readings": ["えん"],
-        "compounds": ["媛", "援", "緩"],
+        "compounds": ["媛", "援", "緩", "暖"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "football"
@@ -1642,8 +1656,15 @@
         "readings": ["じん", "にん"],
         "compounds": ["忍"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["忍"],
         "wk-radical": "blade"
+    },
+    "忍": {
+        "readings": ["にん", "じん"],
+        "compounds": ["認"],
+        "non_compounds": [],
+        "xrefs": ["刃"],
+        "wk-radical": null
     },
     "𡈼": {
         "readings": ["い"],
@@ -1948,7 +1969,7 @@
     },
     "开": {
         "readings": ["けん"],
-        "compounds": ["研"],
+        "compounds": ["研", "形"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "lantern",
@@ -2127,6 +2148,13 @@
         "xrefs": [],
         "wk-radical": "boob-grave"
     },
+    "到": {
+        "readings": ["とう"],
+        "compounds": ["倒"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
     "屋": {
         "readings": ["おく"],
         "compounds": ["握"],
@@ -2257,7 +2285,7 @@
     },
     "侯": {
         "readings": ["こう"],
-        "compounds": ["候"],
+        "compounds": ["候", "喉"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
@@ -2497,7 +2525,7 @@
     },
     "支": {
         "readings": ["し"],
-        "compounds": ["伎", "技", "枝", "岐"],
+        "compounds": ["伎", "技", "枝", "岐", "肢"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "frog"
@@ -2546,7 +2574,7 @@
     },
     "卬": {
         "readings": ["きょう", "ごう"],
-        "compounds": ["迎"],
+        "compounds": ["迎", "仰"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "cat-pirate"
@@ -2835,7 +2863,7 @@
     },
     "丂": {
         "readings": ["こう"],
-        "compounds": ["考", "巧"],
+        "compounds": ["考", "巧", "朽"],
         "non_compounds": [],
         "xrefs": ["考"],
         "wk-radical": "beggar"
@@ -3045,7 +3073,7 @@
     },
     "貴": {
         "readings": ["き"],
-        "compounds": ["遺"],
+        "compounds": ["遺", "潰"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "valuable"
@@ -3129,9 +3157,16 @@
     },
     "之": {
         "readings": ["し"],
-        "compounds": ["志"],
+        "compounds": ["志", "芝"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["志"],
+        "wk-radical": null
+    },
+    "志": {
+        "readings": ["し"],
+        "compounds": ["誌"],
+        "non_compounds": [],
+        "xrefs": ["之"],
         "wk-radical": null
     },
     "表": {
@@ -3175,6 +3210,139 @@
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "stilts"
+    },
+    "荅": {
+        "readings": ["とう"],
+        "compounds": ["塔", "搭"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "害": {
+        "readings": ["がい", "かい", "かつ"],
+        "compounds": ["轄", "割"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "奉": {
+        "readings": ["ほう", "ぶ"],
+        "compounds": ["俸", "棒"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "喿": {
+        "readings": ["そう", "しょう"],
+        "compounds": ["繰", "操"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "唐": {
+        "readings": ["とう"],
+        "compounds": ["糖"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "憂": {
+        "readings": ["ゆう"],
+        "compounds": ["優"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "宿": {
+        "readings": ["しゅく", "すく"],
+        "compounds": ["縮"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "甲": {
+        "readings": ["こう", "かん"],
+        "compounds": ["押"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "豦": {
+        "readings": ["きょ", "ご"],
+        "compounds": ["劇", "拠"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "吹": {
+        "readings": ["すい"],
+        "compounds": ["炊"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "女": {
+        "readings": ["じょ", "にょ", "にょう"],
+        "compounds": ["如"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": "woman"
+    },
+    "寿": {
+        "readings": ["じゅ", "す"],
+        "compounds": ["鋳"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "辟": {
+        "readings": ["へき"],
+        "compounds": ["壁", "癖", "避"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": "propaganda"
+    },
+    "尉": {
+        "readings": ["い"],
+        "compounds": ["慰"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "就": {
+        "readings": ["しゅう", "じゅ"],
+        "compounds": ["蹴"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "善": {
+        "readings": ["ぜん", "せん"],
+        "compounds": ["膳"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "巴": {
+        "readings": ["は"],
+        "compounds": ["把"],
+        "non_compounds": ["肥"],
+        "xrefs": [],
+        "wk-radical": "bed"
+    },
+    "彡": {
+        "readings": ["さん", "せん"],
+        "compounds": ["杉"],
+        "non_compounds": ["影", "形", "彫", "彩", "彰", "須"],
+        "xrefs": [],
+        "wk-radical": "hair"
+    },
+    "㐱": {
+        "readings": ["しん"],
+        "compounds": ["珍", "診"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
     },
 
 

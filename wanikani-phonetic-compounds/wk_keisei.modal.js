@@ -101,17 +101,18 @@
 
         $(`#keisei-stats`).html(`
             <p>${proc_kanji_cnt} kanji covered out of ${all_kanji_cnt} in database</p>
-            <p>${compound_cnt} phonetic compounds using ${phonetic_cnt} tone marks</p>`);
+            <p>${compound_cnt} phonetic compounds using ${phonetic_cnt} tone marks</p>`
+        );
     };
     // #########################################################################
 
     // #########################################################################
-    WK_Keisei.prototype.toggleDebug = function()
+    WK_Keisei.prototype.toggleDebug = function(event)
     {
         this.settings.debug = !this.settings.debug;
 
         this.log = this.settings.debug ?
-            function(msg, ...args) {GM_log(`WK_Keisei:`, msg, args);} :
+            function(msg, ...args) {GM_log(`WK_Keisei:`, msg, ...args);} :
             function() {};
 
         $(`#keisei-settings-btn-debug`).toggleClass(`active`);
@@ -120,7 +121,7 @@
     // #########################################################################
 
     // #########################################################################
-    WK_Keisei.prototype.toggleMinify = function()
+    WK_Keisei.prototype.toggleMinify = function(event)
     {
         this.settings.minify = !this.settings.minify;
 

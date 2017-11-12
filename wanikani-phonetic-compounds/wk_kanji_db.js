@@ -9,6 +9,8 @@ function WKKanjiDB()
    "use strict";
 
     WKKanjiDB.prototype = {
+        constructor: WKKanjiDB,
+
         // #####################################################################
         init: function() {},
         // #####################################################################

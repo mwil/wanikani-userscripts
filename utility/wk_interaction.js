@@ -1,38 +1,39 @@
 /* jshint esversion: 6 */
 
 
+// #############################################################################
 function WKInteraction()
 {
     this.PageEnum = Object.freeze({ unknown:0, radicals:1, kanji:2, reviews:3, lessons:4 });
-
     this.curPage = this.PageEnum.unknown;
-    this.lesson_observer = new MutationObserver(this.lessonCallback);
-    this.review_observer = new MutationObserver(this.reviewCallback);
-}
 
+    this.lesson_observer = new MutationObserver(this.lessonCallback.bind(this));
+    this.review_observer = new MutationObserver(this.reviewCallback.bind(this));
+}
+// #############################################################################
+
+// #############################################################################
 (function() {
    "use strict";
 
+    // #########################################################################
     WKInteraction.prototype = {
-        init: function(wk_app_callback)
-        {
-            this.wk_app_callback = wk_app_callback;
+        constructor: WKInteraction,
 
-            this.lesson_observer.wk_app_callback = wk_app_callback;
-            this.review_observer.wk_app_callback = wk_app_callback;
-        },
+        init: function() {},
 
+        // #####################################################################
         detectCurPage: function()
         {
             if (/\/radicals\/./.test(document.URL))   /* Radical Pages */
             {
                 this.curPage = this.PageEnum.radicals;
-                this.wk_app_callback();
+                $(document).triggerHandler(`keisei-wk-page-ready`, [this.PageEnum.radicals]);
             }
             else if (/\/kanji\/./.test(document.URL)) /* Kanji Pages */
             {
                 this.curPage = this.PageEnum.kanji;
-                this.wk_app_callback();
+                $(document).trigger(`keisei-wk-page-ready`, [this.PageEnum.kanji]);
             }
             else if (/\/review/.test(document.URL)) /* Reviews Pages */
             {
@@ -48,21 +49,27 @@ function WKInteraction()
             else
                 this.curPage = this.PageEnum.unknown;
         },
+        // #####################################################################
 
+        // #####################################################################
         reviewCallback: function(mutations)
         {
             mutations.forEach( function(mutation) {
                 // Length 2 for radical page, 4 for kanji page (vocab is 5)
                 if (mutation.addedNodes.length === 2 || mutation.addedNodes.length === 4)
-                    this.wk_app_callback();
+                    $(document).triggerHandler(`keisei-wk-page-ready`, [this.PageEnum.reviews]);
             }, this);
         },
+        // #####################################################################
 
+        // #####################################################################
         lessonCallback: function(mutations)
         {
-            this.wk_app_callback();
+            $(document).triggerHandler(`keisei-wk-page-ready`, [this.PageEnum.lessons]);
         },
+        // #####################################################################
 
+        // #####################################################################
         getSubject: function()
         {
             var result = {"rad": null, "kan": null, "voc": null};
@@ -109,7 +116,9 @@ function WKInteraction()
 
             return result;
         },
+        // #####################################################################
 
+        // #####################################################################
         checkSubject: function(subject)
         {
             var result = false;
@@ -121,5 +130,8 @@ function WKInteraction()
 
             return result;
         }
+        // #####################################################################
     };
+    // #########################################################################
 }());
+// #############################################################################

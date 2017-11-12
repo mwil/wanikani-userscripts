@@ -26,6 +26,8 @@ function KeiseiDB()
    "use strict";
 
     KeiseiDB.prototype = {
+        constructor: KeiseiDB,
+
         // #####################################################################
         init: function(wkdb)
         {
