@@ -27,7 +27,7 @@
     WK_Keisei.prototype.explanation_phonetic = (subject, preadings) =>
        `<p>The kanji 「${subject.kan}」 was created using semantic-phonetic composition,
         the tone mark is 「${subject.phon}」 with the ON reading(s) 「${preadings.join("・")}」 (including rare ones).</p>
-        <span id="keisei-explanation-quality"></span>`;
+        <span id="keisei_explanation_quality"></span>`;
 
     WK_Keisei.prototype.explanation_pmark = (subject, preadings) =>
        `<p>The kanji 「${subject.phon}」 is used as a phonetic mark in other compounds!
