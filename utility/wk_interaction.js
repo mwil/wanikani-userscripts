@@ -16,6 +16,11 @@
 //
 // During a review a new question is visible, i.e., a review session started
 // with the first review or another question was answered previously.
+//
+// wk_review_answered
+//
+// A review question was answered and not ignored.
+//
 
 // #############################################################################
 function WKInteraction()
@@ -23,16 +28,11 @@ function WKInteraction()
     this.PageEnum = Object.freeze({ "unknown":0, "radicals":1, "kanji":2, "reviews":3, "reviews_summary":4, "lessons":5, "lessons_reviews":6 });
     this.curPage = this.PageEnum.unknown;
 
-    this.lessonInfoObserver = new MutationObserver(this.lessonInfoCallback.bind(this));
-    this.reviewInfoObserver = new MutationObserver(this.reviewInfoCallback.bind(this));
-
     this.lastQuestionCount = 0;
     this.lastQuestionAnswered = false;
     this.lastItem = null;
     this.lastQType = null; // meaning, reading
 
-    $.jStorage.listenKeyChange(`currentItem`,   this.newReviewItemCallback.bind(this));
-    $.jStorage.listenKeyChange(`questionCount`, this.questionCountCallback.bind(this));
     // Monitor review sessions
     // -- item completed: activeQueue updated
 }
@@ -46,7 +46,36 @@ function WKInteraction()
     WKInteraction.prototype = {
         constructor: WKInteraction,
 
-        init: function() {},
+        init: function()
+        {
+            this.lessonInfoObserver = new MutationObserver(this.lessonInfoCallback.bind(this));
+            this.reviewInfoObserver = new MutationObserver(this.reviewInfoCallback.bind(this));
+
+            this.bound_currentItem =   this.newReviewItemCallback.bind(this);
+            this.bound_questionCount = this.questionCountCallback.bind(this);
+            $.jStorage.listenKeyChange(`currentItem`,   this.bound_currentItem);
+            $.jStorage.listenKeyChange(`questionCount`, this.bound_questionCount);
+
+            $(document).trigger(`wk_interaction_init`);
+            $(document).on(`wk_interaction_init`, this.deactiveEvents.bind(this));
+        },
+        // #####################################################################
+
+        // If multiple instances of WKInteraction are present the events are
+        // duplicated, just deactivate all events from existing interactions.
+        // #####################################################################
+        deactiveEvents: function(event)
+        {
+            console.log("Deactivating one WK Interaction instance to prevent interference.");
+            this.lessonInfoObserver.disconnect();
+            this.reviewInfoObserver.disconnect();
+
+            $.jStorage.stopListening(`currentItem`,   this.bound_currentItem);
+            $.jStorage.stopListening(`questionCount`, this.bound_questionCount);
+
+            return true;
+        },
+        // #####################################################################
 
         // #####################################################################
         detectCurPage: function()

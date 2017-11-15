@@ -34,11 +34,14 @@ function WK_Jikan()
     this.wki = new WKInteraction();
 
     this.measurement_db = null;
+    this.session_measurements = null;
 
     this.date_reviews_start = null;
     this.date_start_time = null;
 
     this.estimated_time = 0;
+
+    this.settings = {"debug": false};
 }
 // #############################################################################
 
@@ -128,6 +131,14 @@ function WK_Jikan()
     // #########################################################################
     WK_Jikan.prototype.handleReviewsSummary = function()
     {
+        // TODO: do this only if another script didn't add it already!
+        GM_addStyle(GM_getResourceText(`bootstrapcss`));
+
+        $(`<script></script>`)
+        .attr(`type`, `text/javascript`)
+        .text(GM_getResourceText(`bootstrapjs`))
+        .appendTo(`head`);
+
         // TODO: how to handle this after the last review question?
         var fmt_elapsed_time   = GM_getValue(`reviews_fmt_elapsed_time`);
         var fmt_estimated_time = GM_getValue(`reviews_fmt_first_estimate`) || `not stored yet`;
@@ -146,7 +157,19 @@ function WK_Jikan()
 
         $(`div#review-stats`).parent().after($jikan_summary);
 
-        $(`#jikan`).append(`<h2><strong class="icon-time"></strong> Jikan Timer Summary</h2>`);
+        var $head_btn = $(`<div class="btn-group pull-right"></div>`)
+                        .append(`<a class="btn" id="jikan_head_settings" data-toggle="modal" data-target="#jikan_modal_settings">
+                                    <i class="icon-gear"></i>
+                                 </a>`)
+                        .append(`<a class="btn" id="jikan_head_info" data-toggle="modal" data-target="#jikan_modal_info">
+                                    <i class="icon-question"></i>
+                                 </a>`);
+
+        var $header = $(`<h2></h2>`)
+                      .append(`<span><strong class="icon-time"></strong> Jikan Timer Summary</span>`)
+                      .append($head_btn);
+
+        $(`#jikan`).append($header);
         $(`#jikan`).append(
            `<div>
                 <p>Your last review session was finished in ${fmt_elapsed_time}.</p>
@@ -161,9 +184,16 @@ function WK_Jikan()
     {
         GM_addStyle(GM_getResourceText(`jikan_style`));
 
-        this.measurement_db = JSON.parse(GM_getValue(`measurement_db`)) || {"rad": {}, "kan": {}, "voc": {}};
-        console.log("the current measurement db is", this.measurement_db);
-        // this.measurement_db = {"rad": {}, "kan": {}, "voc": {}};
+        try {
+            this.measurement_db = JSON.parse(GM_getValue(`measurement_db`)) || {"rad": {}, "kan": {}, "voc": {}};
+        } catch(e) {
+            GM_log(`Error while parsing the measurement_db! String was`, GM_getValue(`measurement_db`));
+            this.measurement_db = {"rad": {}, "kan": {}, "voc": {}};
+        }
+
+        this.session_measurements = [];
+
+        console.log("The current measurement db is", this.measurement_db);
 
         this.wki.init();
 
@@ -177,6 +207,8 @@ function WK_Jikan()
     WK_Jikan.prototype.run = function()
     {
         this.wki.detectCurPage.call(this.wki);
+
+        this.injectModals();
     };
     // #########################################################################
 }
