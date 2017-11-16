@@ -51,6 +51,8 @@ function WKInteraction()
             this.lessonInfoObserver = new MutationObserver(this.lessonInfoCallback.bind(this));
             this.reviewInfoObserver = new MutationObserver(this.reviewInfoCallback.bind(this));
 
+            this.reviewStartObserver = new MutationObserver(this.reviewStartCallback.bind(this));
+
             this.bound_currentItem =   this.newReviewItemCallback.bind(this);
             this.bound_questionCount = this.questionCountCallback.bind(this);
             $.jStorage.listenKeyChange(`currentItem`,   this.bound_currentItem);
@@ -69,6 +71,7 @@ function WKInteraction()
             console.log("Deactivating one WK Interaction instance to prevent interference.");
             this.lessonInfoObserver.disconnect();
             this.reviewInfoObserver.disconnect();
+            this.reviewStartObserver.disconnect();
 
             $.jStorage.stopListening(`currentItem`,   this.bound_currentItem);
             $.jStorage.stopListening(`questionCount`, this.bound_questionCount);
@@ -81,37 +84,65 @@ function WKInteraction()
         detectCurPage: function()
         {
             if (/\/radicals\/./.test(document.URL))   /* Radical Pages */
-            {
                 this.curPage = this.PageEnum.radicals;
-                $(document).triggerHandler(`keisei_wk_subject_ready`, [this.PageEnum.radicals]);
-            }
             else if (/\/kanji\/./.test(document.URL)) /* Kanji Pages */
-            {
                 this.curPage = this.PageEnum.kanji;
-                $(document).triggerHandler(`keisei_wk_subject_ready`, [this.PageEnum.kanji]);
-            }
             else if (/\/review\/session/.test(document.URL)) /* Reviews Pages */
-            {
                 this.curPage = this.PageEnum.reviews;
-                this.reviewInfoObserver.observe(document.getElementById(`item-info-col2`), {childList: true});
-            }
             else if (/\/review/.test(document.URL)) /* Reviews Summary Page then? */
-            {
                 this.curPage = this.PageEnum.reviews_summary;
-            }
             else if (/\/lesson/.test(document.URL)) /* Lessons Pages */
-            {
                 this.curPage = this.PageEnum.lessons;
-                this.lessonInfoObserver.observe(document.getElementById(`supplement-rad`), {attributes: true});
-                this.lessonInfoObserver.observe(document.getElementById(`supplement-kan`), {attributes: true});
-                // Observer for the reviews after lessons, thankfully equal to normal reviews!
-                this.lessonInfoObserver.observe(document.getElementById(`item-info-col2`), {childList: true});
-            }
             else
                 this.curPage = this.PageEnum.unknown;
 
-            if (this.curPage !== this.PageEnum.unknown)
+            return this.curPage;
+        },
+        // #####################################################################
+
+        // #####################################################################
+        startInteraction: function()
+        {
+            this.detectCurPage();
+
+            switch(this.curPage)
+            {
+                case this.PageEnum.radicals:
+                    $(document).triggerHandler(`keisei_wk_subject_ready`, [this.PageEnum.radicals]);
+                    break;
+                case this.PageEnum.kanji:
+                    $(document).triggerHandler(`keisei_wk_subject_ready`, [this.PageEnum.kanji]);
+                    break;
+                case this.PageEnum.reviews:
+                    this.reviewInfoObserver.observe(document.getElementById(`item-info-col2`), {childList: true});
+                    // reviews are not ready after load, wait until the WK animation finishes.
+                    this.reviewStartObserver.observe(document.getElementById(`loading`), {attributes: true});
+                    break;
+                case this.PageEnum.reviews_summary:
+                    break;
+                case this.PageEnum.lessons:
+                    this.lessonInfoObserver.observe(document.getElementById(`supplement-rad`), {attributes: true});
+                    this.lessonInfoObserver.observe(document.getElementById(`supplement-kan`), {attributes: true});
+                    // Observer for the reviews after lessons, thankfully equal to normal reviews!
+                    this.lessonInfoObserver.observe(document.getElementById(`item-info-col2`), {childList: true});
+                    break;
+                default:
+                    break;
+            }
+
+            if (this.curPage !== this.PageEnum.unknown &&
+                this.curPage !== this.PageEnum.reviews)
                 $(document).trigger(`wk_page_ready`, [this.curPage]);
+        },
+        // #####################################################################
+
+        // #####################################################################
+        reviewStartCallback: function(mutations)
+        {
+            if (mutations.length !== 3)
+                return;
+
+            $(document).trigger(`wk_page_ready`, [this.curPage]);
         },
         // #####################################################################
 

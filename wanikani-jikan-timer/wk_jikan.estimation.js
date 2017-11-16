@@ -3,6 +3,8 @@
 // #############################################################################
 (function()
 {
+    "use strict";
+
     // #########################################################################
     WK_Jikan.prototype.newItemCallback = function(event)
     {
@@ -17,36 +19,38 @@
     WK_Jikan.prototype.answeredCallback = function(event, qtype, item)
     {
         var timeDiff = new Date() - this.date_start_time;
-        console.log("timediff is ", timeDiff);
-
         var type = this.wki.getItemType(item);
-        console.log("got in answered callback", item);
 
-        var meas = {"item": item};
+        var meas = {
+            "item": item,
+            "timeReading": [],
+            "timeMeaning": [],
+        };
 
-        // TODO: store the results of the current session seperately so that
-        //       we can generate some session stats in the summary
-        if (!(item.id in this.measurement_db[type]))
-            this.measurement_db[type][item.id] = {"timeReading": [], "timeMeaning": []};
+        var sess_meas = {
+            "index": this.session_measurements.length+1,
+            "item": item,
+            "time": timeDiff/1000
+        };
+
+        if (item.id in this.measurement_db[type])
+            meas = this.measurement_db[type][item.id];
+        else
+            this.measurement_db[type][item.id] = meas;
 
         if (qtype === `reading`)
-        {
-            meas.timeReading = timeDiff;
-            this.measurement_db[type][item.id].timeReading.push(timeDiff);
-        }
+            meas.timeReading.push(timeDiff);
         else if (qtype === `meaning`)
-        {
-            meas.timeMeaning = timeDiff;
-            this.measurement_db[type][item.id].timeMeaning.push(timeDiff);
-        }
+            meas.timeMeaning.push(timeDiff);
 
         console.log(this.measurement_db);
 
         // TODO: only write on finish?
         GM_setValue(`measurement_db`, JSON.stringify(this.measurement_db));
 
-        this.session_measurements.push(meas);
-        console.log("Session measurements:", this.session_measurements);
+        this.session_measurements.push(sess_meas);
+        GM_setValue(`last_session_measurements`, JSON.stringify(this.session_measurements));
+        this.redrawChart();
 
         return false;
     };

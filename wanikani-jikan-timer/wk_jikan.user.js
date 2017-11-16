@@ -6,6 +6,8 @@
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
 // @namespace   WK_Jikan
 //
+// @include     http://www.wanikani.com/*
+// @include     https://www.wanikani.com/*
 // @include     http://www.wanikani.com/review
 // @include     https://www.wanikani.com/review
 // @include     http://www.wanikani.com/review/session*
@@ -34,7 +36,10 @@ function WK_Jikan()
     this.wki = new WKInteraction();
 
     this.measurement_db = null;
-    this.session_measurements = null;
+
+    this.chart = null;
+
+    this.session_measurements = [];
 
     this.date_reviews_start = null;
     this.date_start_time = null;
@@ -78,52 +83,21 @@ function WK_Jikan()
     // #########################################################################
 
     // #########################################################################
-    WK_Jikan.prototype.updateWidget = function()
-    {
-        var date_reviews_end  = new Date();
-        var date_elapsed_time = new Date(date_reviews_end - this.date_reviews_start);
-        var fmt_elapsed_time = date_elapsed_time.toISOString().substr(11, 8);
-
-        this.estimated_time = Math.max(0, this.estimated_time - 1000);
-        var fmt_estimated_time = new Date(this.estimated_time).toISOString().substr(11, 8);
-
-        $(`#jikan_elapsed`).text(` ${fmt_elapsed_time}`);
-        $(`#jikan_estimate`).text(` ${fmt_estimated_time}`);
-
-        GM_setValue(`reviews_fmt_elapsed_time`, fmt_elapsed_time);
-    };
-    // #########################################################################
-
-    // #########################################################################
     WK_Jikan.prototype.handleReviews = function()
     {
+        this.injectReviewHTML();
+
         this.estimated_time = this.getCompletionEstimate();
-        var fmt_estimated_time = new Date(this.estimated_time).toISOString().substr(11, 8);
+        this.date_reviews_start = new Date();
+        this.date_start_time    = new Date();
+
+        var fmt_estimated_time  = new Date(this.estimated_time).toISOString().substr(11, 8);
         GM_setValue(`reviews_fmt_first_estimate`, fmt_estimated_time);
 
-        var $widget = $(`<span></span>`)
-                      .attr(`id`, `jikan_widget`)
-                      .append(`<div><i class="icon-time"></i><span id="jikan_elapsed"></span></div>`)
-                      .append(`<div><i class="icon-fast-forward"></i><span id="jikan_estimate"></span></div>`);
 
-        $(`div#question`).append($widget);
-        $(`#jikan_widget`)[0].drag();
+        this.initWidgetChart();
+        this.updateWidget();
 
-        var widget_left = GM_getValue(`widget_left`) || `20px`;
-        var widget_top  = GM_getValue(`widget_top`)  || `35px`;
-
-        // Reset the widget in case it got "lost"
-        if (parseInt(widget_left) < 0 || parseInt(widget_left) > (document.body.clientWidth  - 100) ||
-            parseInt(widget_top)  < 0 || parseInt(widget_top)  > (document.body.clientHeight - 100))
-        {
-            widget_left = `20px`;
-            widget_top  = `35px`;
-        }
-
-        $widget.css({top: widget_top, left: widget_left, position: "absolute"});
-
-        this.date_reviews_start = new Date();
-        this.date_start_time = new Date();
         setInterval(this.updateWidget.bind(this), 1000);
     };
     // #########################################################################
@@ -131,84 +105,59 @@ function WK_Jikan()
     // #########################################################################
     WK_Jikan.prototype.handleReviewsSummary = function()
     {
-        // TODO: do this only if another script didn't add it already!
-        GM_addStyle(GM_getResourceText(`bootstrapcss`));
+        try {
+            this.session_measurements = JSON.parse(GM_getValue(`last_session_measurements`)) || null;
+        } catch(e) {
+            this.session_measurements = null;
+        }
 
-        $(`<script></script>`)
-        .attr(`type`, `text/javascript`)
-        .text(GM_getResourceText(`bootstrapjs`))
-        .appendTo(`head`);
+        console.log("JikanUser: the last session measurements were", this.session_measurements);
 
-        // TODO: how to handle this after the last review question?
-        var fmt_elapsed_time   = GM_getValue(`reviews_fmt_elapsed_time`);
-        var fmt_estimated_time = GM_getValue(`reviews_fmt_first_estimate`) || `not stored yet`;
+        this.injectReviewSummaryHTML();
 
-        if (!fmt_elapsed_time || !fmt_estimated_time)
-            return;
-
-        var $jikan_summary = $(`<div></div>`)
-                             .addClass(`pure-g-r`);
-
-        var $jikan_result = $(`<div></div>`)
-                            .attr(`id`, `jikan`)
-                            .addClass(`pure-u-1`);
-
-        $jikan_summary = $jikan_summary.append($jikan_result);
-
-        $(`div#review-stats`).parent().after($jikan_summary);
-
-        var $head_btn = $(`<div class="btn-group pull-right"></div>`)
-                        .append(`<a class="btn" id="jikan_head_settings" data-toggle="modal" data-target="#jikan_modal_settings">
-                                    <i class="icon-gear"></i>
-                                 </a>`)
-                        .append(`<a class="btn" id="jikan_head_info" data-toggle="modal" data-target="#jikan_modal_info">
-                                    <i class="icon-question"></i>
-                                 </a>`);
-
-        var $header = $(`<h2></h2>`)
-                      .append(`<span><strong class="icon-time"></strong> Jikan Timer Summary</span>`)
-                      .append($head_btn);
-
-        $(`#jikan`).append($header);
-        $(`#jikan`).append(
-           `<div>
-                <p>Your last review session was finished in ${fmt_elapsed_time}.</p>
-                <p>The first time estimate for that session was ${fmt_estimated_time}.</p>
-            </div>`
-        );
+        if ($(`#jikan_last_session_chart`).length)
+            this.drawSummaryChart();
     };
     // #########################################################################
 
     // #########################################################################
     WK_Jikan.prototype.init = function()
     {
-        GM_addStyle(GM_getResourceText(`jikan_style`));
-
-        try {
-            this.measurement_db = JSON.parse(GM_getValue(`measurement_db`)) || {"rad": {}, "kan": {}, "voc": {}};
-        } catch(e) {
-            GM_log(`Error while parsing the measurement_db! String was`, GM_getValue(`measurement_db`));
-            this.measurement_db = {"rad": {}, "kan": {}, "voc": {}};
-        }
-
-        this.session_measurements = [];
-
-        console.log("The current measurement db is", this.measurement_db);
-
         this.wki.init();
 
-        $(document).on(`wk_page_ready`, this.readyCallback.bind(this));
-        $(document).on(`wk_new_review_item_ready`, this.newItemCallback.bind(this));
-        $(document).on(`wk_review_answered`, this.answeredCallback.bind(this));
+        var curPage = this.wki.detectCurPage.call(this.wki);
+
+        if (curPage === this.wki.PageEnum.reviews ||
+            curPage === this.wki.PageEnum.reviews_summary)
+        {
+            try {
+                this.measurement_db = JSON.parse(GM_getValue(`measurement_db`)) || {"rad": {}, "kan": {}, "voc": {}};
+            } catch(e) {
+                GM_log(`Error while parsing the measurement_db! String was`, GM_getValue(`measurement_db`));
+                this.measurement_db = {"rad": {}, "kan": {}, "voc": {}};
+            }
+
+            console.log("The current measurement db is", this.measurement_db);
+            $(document).on(`wk_page_ready`, this.readyCallback.bind(this));
+            $(document).on(`wk_new_review_item_ready`, this.newItemCallback.bind(this));
+            $(document).on(`wk_review_answered`, this.answeredCallback.bind(this));
+        }
     };
     // #########################################################################
 
     // #########################################################################
     WK_Jikan.prototype.run = function()
     {
-        this.wki.detectCurPage.call(this.wki);
+        var curPage = this.wki.detectCurPage.call(this.wki);
 
-        this.injectModals();
+        if (curPage === this.wki.PageEnum.reviews ||
+            curPage === this.wki.PageEnum.reviews_summary)
+        {
+            GM_addStyle(GM_getResourceText(`jikan_style`));
+            this.injectModals();
+
+            this.wki.startInteraction.call(this.wki);
+        }
     };
     // #########################################################################
 }
