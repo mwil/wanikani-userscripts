@@ -50,7 +50,7 @@
 
         this.session_measurements.push(sess_meas);
         GM_setValue(`last_session_measurements`, JSON.stringify(this.session_measurements));
-        this.redrawChart();
+        this.redrawWidgetChart();
 
         return false;
     };

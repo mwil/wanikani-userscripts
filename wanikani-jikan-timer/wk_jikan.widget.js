@@ -69,14 +69,17 @@
 
         // #####################################################################
         // #####################################################################
-        WK_Jikan.prototype.redrawChart = function()
+        WK_Jikan.prototype.redrawWidgetChart = function()
         {
             var rect = this.chart.selectAll("rect")
                     .data(this.session_measurements.slice(-nbars), function(d) { return d.index; });
 
+            // only shift elements in from the right when all 20 bars are there
+            var xoffset = (this.session_measurements.length >= 20) ? 1 : 0;
+
             rect.enter().insert("svg:rect", "line")
                 .attr("transform", "translate(2,0)")
-                .attr("x", function(d, i) { return xScale(i+1) - 0.5; })
+                .attr("x", function(d, i) { return xScale(i+xoffset) - 0.5; })
                 .attr("y", h)
                 .attr("width", w)
                 .attr("height", 0)

@@ -68,12 +68,15 @@
     user-select: none;
 }
 
-.axis {
+.xaxis,
+.yaxis {
 	font: 12px sans-serif;
 }
 
-.axis path,
-.axis line {
+.xaxis path,
+.yaxis path,
+.xaxis line,
+.yaxis line {
 	fill: none;
 	stroke: #000;
 	shape-rendering: crispEdges;
