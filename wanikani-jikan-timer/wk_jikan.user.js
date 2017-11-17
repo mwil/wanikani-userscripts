@@ -1,24 +1,29 @@
 // ==UserScript==
 // @name        WaniKani Jikan Timer
-// @version     0.1.0
+// @version     0.3.0
 // @author      acm
 // @description Time your reviews in various ways
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
-// @namespace   WK_Jikan
+// @namespace   wk_jikan
 //
-// @include     http://www.wanikani.com/*
-// @include     https://www.wanikani.com/*
-// @include     http://www.wanikani.com/review
-// @include     https://www.wanikani.com/review
-// @include     http://www.wanikani.com/review/session*
-// @include     https://www.wanikani.com/review/session*
+// @include     *://www.wanikani.com/*
 //
-// @resource    jikan_style https://raw.githubusercontent.com/mwil/wanikani-userscripts/wanikani-jikan-timer/css/jikan.css
+// @resource    jikan_style   http://localhost:8088/static/jikan.css
+// @resource    bootstrapcss  http://localhost:8088/static/bootstrap.crop.css
+// @resource    bootstrapjs   http://localhost:8088/static/bootstrap.js
 //
 // @require     http://localhost:8088/static/draggable.js
 // @require     http://localhost:8088/static/wk_interaction.js
+// @require     http://localhost:8088/static/wk_jikan.widget.js
+// @require     http://localhost:8088/static/wk_jikan.chart.js
+// @require     http://localhost:8088/static/wk_jikan.html.js
 // @require     http://localhost:8088/static/wk_jikan.estimation.js
-
+// @require     http://localhost:8088/static/wk_jikan.modal.js
+// @require     http://localhost:8088/static/wk_jikan.user.js
+//
+// @require     https://d3js.org/d3.v4.min.js
+// @require     https://raw.githubusercontent.com/VACLab/d3-tip/master/d3-tip.js
+//
 // @grant       GM_log
 // @grant       GM_getValue
 // @grant       GM_setValue
@@ -33,7 +38,7 @@
 // #############################################################################
 function WK_Jikan()
 {
-    this.wki = new WKInteraction();
+    this.wki = new WKInteraction(GM_info.script.namespace);
 
     this.measurement_db = null;
 
@@ -138,9 +143,9 @@ function WK_Jikan()
             }
 
             console.log("The current measurement db is", this.measurement_db);
-            $(document).on(`wk_page_ready`, this.readyCallback.bind(this));
-            $(document).on(`wk_new_review_item_ready`, this.newItemCallback.bind(this));
-            $(document).on(`wk_review_answered`, this.answeredCallback.bind(this));
+            $(document).on(`${GM_info.script.namespace}_wk_page_ready`, this.readyCallback.bind(this));
+            $(document).on(`${GM_info.script.namespace}_wk_new_review_item_ready`, this.newItemCallback.bind(this));
+            $(document).on(`${GM_info.script.namespace}_wk_review_answered`, this.answeredCallback.bind(this));
         }
     };
     // #########################################################################
@@ -153,7 +158,7 @@ function WK_Jikan()
         if (curPage === this.wki.PageEnum.reviews ||
             curPage === this.wki.PageEnum.reviews_summary)
         {
-            GM_addStyle(GM_getResourceText(`jikan_style`));
+            GM_addStyle(GM_getResourceText(`jikan_style`).replace(/wk_namespace/g, GM_info.script.namespace));
             this.injectModals();
 
             this.wki.startInteraction.call(this.wki);

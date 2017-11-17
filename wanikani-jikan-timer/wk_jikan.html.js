@@ -10,6 +10,7 @@
     {
         var $widget = $(`<span></span>`)
                       .attr(`id`, `jikan_widget`)
+                      .addClass(GM_info.script.namespace)
                       .append(`<div><i class="icon-time"></i><span id="jikan_elapsed"></span></div>`)
                       .append(`<div><i class="icon-fast-forward"></i><span id="jikan_estimate"></span></div>`);
 
@@ -37,7 +38,7 @@
     WK_Jikan.prototype.injectReviewSummaryHTML = function()
     {
         // TODO: do this only if another script didn't add it already!
-        GM_addStyle(GM_getResourceText(`bootstrapcss`));
+        GM_addStyle(GM_getResourceText(`bootstrapcss`).replace(/wk_namespace/g, GM_info.script.namespace));
 
         $(`<script></script>`)
         .attr(`type`, `text/javascript`)
@@ -52,7 +53,7 @@
             return;
 
         var $jikan_summary = $(`<div></div>`)
-                             .addClass(`pure-g-r`);
+                             .addClass(`${GM_info.script.namespace} pure-g-r`);
 
         var $jikan_result = $(`<div></div>`)
                             .attr(`id`, `jikan`)
@@ -73,6 +74,7 @@
         var $header = $(`<h2></h2>`)
                       .append(`<span><strong class="icon-time"></strong> Jikan Timer Summary</span>`)
                       .append($head_btn);
+
 
         $(`#jikan`).append($header);
         $(`#jikan`).append(

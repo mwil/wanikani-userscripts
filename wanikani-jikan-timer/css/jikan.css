@@ -1,4 +1,4 @@
-#jikan_widget
+ #jikan_widget
 {
     padding: 4px;
     opacity: 0.5;
@@ -58,7 +58,7 @@
     }
 }
 
-.draggable-move
+.wk_namespace .draggable-move
 {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
@@ -68,31 +68,50 @@
     user-select: none;
 }
 
-.xaxis,
-.yaxis {
+.wk_namespace .xaxis,
+.wk_namespace .yaxis {
 	font: 12px sans-serif;
 }
 
-.xaxis path,
-.yaxis path,
-.xaxis line,
-.yaxis line {
+.wk_namespace .xaxis path,
+.wk_namespace .yaxis path,
+.wk_namespace .xaxis line,
+.wk_namespace .yaxis line {
 	fill: none;
 	stroke: #000;
 	shape-rendering: crispEdges;
 }
 
-.chart rect {
+.wk_namespace .bar.rad {
     stroke: white;
-    fill: steelblue;
+    fill: #a0f;
 }
 
-.chart rect:hover {
+.wk_namespace .bar.rad:hover {
+    fill: #c655ff;
+}
+.wk_namespace .bar.kan {
     stroke: white;
-    fill: lightblue;
+    fill: #0093dd;
 }
 
-.d3-tip {
+.wk_namespace .bar.kan:hover {
+    fill: #00a1f1;
+}
+.wk_namespace .bar.voc {
+    stroke: white;
+    fill: #a0f;
+}
+
+.wk_namespace .bar.voc:hover {
+    fill: #c655ff;
+}
+
+.wk_namespace .capitalize {
+    text-transform: capitalize;
+}
+
+.wk_namespace.d3-tip {
     line-height: 1;
     font: 14px sans-serif;
     font-weight: bold;
@@ -103,7 +122,7 @@
 }
 
 /* Creates a small triangle extender for the tooltip */
-.d3-tip:after {
+.wk_namespace.d3-tip:after {
     box-sizing: border-box;
     display: inline;
     font-size: 10px;
@@ -116,13 +135,13 @@
 }
 
 /* Style northward tooltips differently */
-.d3-tip.n:after {
+.wk_namespace.d3-tip.n:after {
     margin: -1px 0 0 0;
     top: 100%;
     left: 0;
 }
 
-.svg-container {
+.wk_namespace .svg-container {
     display: inline-block;
     position: relative;
     width: 95%;
@@ -130,7 +149,7 @@
     vertical-align: top;
     overflow: hidden;
 }
-.svg-content-responsive {
+.wk_namespace .svg-content-responsive {
     display: inline-block;
     position: relative;
     top: 10px;

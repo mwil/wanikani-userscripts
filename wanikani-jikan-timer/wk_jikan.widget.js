@@ -24,9 +24,23 @@
     // #########################################################################
     WK_Jikan.prototype.initWidgetChart = function()
     {
+        this.getTimes = function(db) {
+            var result = [];
+
+            [`rad`, `kan`, `voc`].forEach( function(type) {
+                 Object.keys(db[type]).forEach( function(key) {
+                    result = result.concat(db[type][key].timeMeaning/1000);
+                    result = result.concat(db[type][key].timeReading/1000);
+                 }, this);
+            }, this);
+
+            return result.sort((a,b) => (a-b));
+        };
+
         var w = 6, h = 60;
         var nbars = 20;
-        var maxTime = 20;
+        var maxTime = Math.max(20, d3.quantile(this.getTimes(this.measurement_db), 0.99) || 0);
+        console.log("The q99 was", d3.quantile(this.getTimes(this.measurement_db), 0.99));
 
         // #####################################################################
         this.chart = d3.select("#jikan_chart")
@@ -52,14 +66,19 @@
               .enter().append("svg:rect")
                   .attr("transform", "translate(2,0)")
                   .attr("x", function(d, i) { return xScale(i) - 0.5; })
-                  .attr("y", function(d) { return yScale(d.time) - 0.5; })
+                  .attr("y", function(d) {
+                      return yScale(Math.min(maxTime, d.time)) - 0.5;
+                  })
                   .attr("width", w)
-                  .attr("height", function(d) { return h - yScale(d.time); });
+                  .attr("height", function(d) {
+                      return h - yScale(Math.min(maxTime, d.time));
+                  });
         // #####################################################################
 
         // Underline all bars
         // #####################################################################
         this.chart.append("svg:line")
+                  .attr("transform", "translate(2,0)")
                   .attr("x1", 0)
                   .attr("x2", w * nbars)
                   .attr("y1", h-0.5)
@@ -86,8 +105,12 @@
             .transition()
                 .duration(1000)
                 .attr("x", function(d, i) { return xScale(i) - 0.5; })
-                .attr("y", function(d) { return yScale(d.time) - 0.5; })
-                .attr("height", function(d) { return h - yScale(d.time); });
+                .attr("y", function(d) {
+                    return yScale(Math.min(maxTime, d.time)) - 0.5;
+                })
+                .attr("height", function(d) {
+                    return h - yScale(Math.min(maxTime, d.time));
+                });
 
             rect.transition()
                 .duration(1000)

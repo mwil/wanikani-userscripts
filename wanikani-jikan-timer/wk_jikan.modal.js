@@ -10,13 +10,13 @@
         var $settings_modal = $(`<div></div>`)
                               .attr(`id`, `jikan_modal_settings`)
                               .attr(`role`, `dialog`)
-                              .addClass(`modal fade`)
+                              .addClass(`${GM_info.script.namespace} modal fade`)
                               .hide();
 
         var $info_modal = $(`<div></div>`)
                           .attr(`id`, `jikan_modal_info`)
                           .attr(`role`, `dialog`)
-                          .addClass(`modal fade`)
+                          .addClass(`${GM_info.script.namespace} modal fade`)
                           .hide();
 
         $(`body`).append($settings_modal);

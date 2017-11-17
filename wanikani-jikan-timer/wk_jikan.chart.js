@@ -1,4 +1,3 @@
-
 /* jshint esversion: 6 */
 
 (function()
@@ -9,9 +8,9 @@
     WK_Jikan.prototype.drawSummaryChart = function()
     {
         var width = $(`#jikan_last_session_chart`).width();
-        var barWidth = Math.floor(Math.min(64, Math.max(6, (width-40)/nbars))); // 16
+        var barWidth = Math.floor(Math.min(64, Math.max(3, (width-40)/nbars))); // 16
         var h = 128;
-        var maxTime = 20;
+        var maxTime = Math.max(20, d3.quantile(this.session_measurements.map(a=>a.time).sort((a,b) => (a-b)), 0.99) || 0);
         var nbars = this.session_measurements.length;
 
         // #####################################################################
@@ -25,12 +24,13 @@
         // Tooltip code: http://bl.ocks.org/Caged/6476579
         // #####################################################################
         var tip = d3.tip()
-                .attr('class', 'd3-tip')
+                .attr('class', `${GM_info.script.namespace} d3-tip`)
                 .offset([-10, 0])
                 .html(function(d) {
                     return `<span>
                                 <strong>Item:</strong>
                                 <span>${d.item.rad||d.item.kan||d.item.voc}</span><br>
+                                <strong class="capitalize">${d.qtype}</strong><br>
                                 <strong>Time:</strong>
                                 <span style='color:red'> ${d.time}s</span>
                             </span>`;
@@ -61,19 +61,23 @@
         this.redrawSummaryChart = function()
         {
             var width = $(`#jikan_last_session_chart`).width();
-            var barWidth = Math.floor(Math.min(64, Math.max(6, (width-40)/nbars))); // 16
+            var barWidth = Math.floor(Math.min(64, Math.max(3, (width-40)/nbars))); // 16
 
             xScale.range([0, barWidth*nbars]);
             d3.select(".xaxis").call(xAxis);
 
             // #####################################################################
             this.chart.selectAll("rect")
-                    .attr("class", "bar")
+                    .attr("class", function(d) { return `bar ${d.type}`;})
                     .attr("transform", "translate(42,4)")
                     .attr("x", function(d, i) { return xScale(i) - 0.5; })
-                    .attr("y", function(d) { return yScale(d.time) - 0.5; })
+                    .attr("y", function(d) {
+                        return yScale(Math.min(maxTime, d.time)) - 0.5;
+                    })
                     .attr("width", barWidth)
-                    .attr("height", function(d) { return h - yScale(d.time); })
+                    .attr("height", function(d) {
+                        return h - yScale(Math.min(maxTime, d.time));
+                    })
                     .on('mouseover', tip.show)
                     .on('mouseout', tip.hide);
             // #####################################################################
