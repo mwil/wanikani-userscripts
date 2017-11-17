@@ -61,7 +61,7 @@
 
     // #########################################################################
     WK_Keisei.prototype.explanation_xref = (xref, preadings) =>
-       `<p>The phonetic component 「${xref}」 is related to another component, the readings may be similar.
+       `<p>The phonetic component 「${xref}」 is related to the above component, the readings may be similar.
         The ON reading(s) 「${preadings.join("・")}」 are listed for this tone mark.</p>`;
     WK_Keisei.prototype.explanation_non_compound = (subject) =>
        `<p>The phonetic component 「${subject.phon}」 also has kanji that are either phonetic compounds of another tone mark,

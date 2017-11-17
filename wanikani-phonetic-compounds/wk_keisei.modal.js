@@ -10,13 +10,13 @@
         var $settings_modal = $(`<div></div>`)
                               .attr(`id`, `keisei_modal_settings`)
                               .attr(`role`, `dialog`)
-                              .addClass(`modal fade`)
+                              .addClass(`${GM_info.script.namespace} modal fade`)
                               .hide();
 
         var $info_modal = $(`<div></div>`)
                           .attr(`id`, `keisei_modal_info`)
                           .attr(`role`, `dialog`)
-                          .addClass(`modal fade`)
+                          .addClass(`${GM_info.script.namespace} modal fade`)
                           .hide();
 
         $(`body`).append($settings_modal);
@@ -121,7 +121,9 @@
         this.settings.debug = !this.settings.debug;
 
         this.log = this.settings.debug ?
-            function(msg, ...args) {GM_log(`WK_Keisei:`, msg, ...args);} :
+            function(msg, ...args) {
+                GM_log(`${GM_info.script.namespace}:`, msg, ...args);
+            } :
             function() {};
 
         $(`#keisei_settings_btn_debug`).toggleClass(`active`);

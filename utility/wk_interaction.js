@@ -1,5 +1,6 @@
 /* jshint esversion: 6 */
 
+// TODO: info on namespacing
 // You can listen to the following custom events from this module:
 //
 // keisei_wk_subject_ready   args: (curPage)
@@ -23,18 +24,22 @@
 //
 
 // #############################################################################
-function WKInteraction()
+function WKInteraction(namespace)
 {
+    this.namespace = namespace;
+
     this.PageEnum = Object.freeze({ "unknown":0, "radicals":1, "kanji":2, "reviews":3, "reviews_summary":4, "lessons":5, "lessons_reviews":6 });
     this.curPage = this.PageEnum.unknown;
 
     this.lastQuestionCount = 0;
+    this.lastWrongCount = 0;
+
     this.lastQuestionAnswered = false;
+
     this.lastItem = null;
     this.lastQType = null; // meaning, reading
 
     // Monitor review sessions
-    // -- item completed: activeQueue updated
 }
 // #############################################################################
 
@@ -50,33 +55,14 @@ function WKInteraction()
         {
             this.lessonInfoObserver = new MutationObserver(this.lessonInfoCallback.bind(this));
             this.reviewInfoObserver = new MutationObserver(this.reviewInfoCallback.bind(this));
-
             this.reviewStartObserver = new MutationObserver(this.reviewStartCallback.bind(this));
 
+
+            // TODO: removal didn't work, store the functions for now ...
             this.bound_currentItem =   this.newReviewItemCallback.bind(this);
             this.bound_questionCount = this.questionCountCallback.bind(this);
             $.jStorage.listenKeyChange(`currentItem`,   this.bound_currentItem);
             $.jStorage.listenKeyChange(`questionCount`, this.bound_questionCount);
-
-            $(document).trigger(`wk_interaction_init`);
-            $(document).on(`wk_interaction_init`, this.deactiveEvents.bind(this));
-        },
-        // #####################################################################
-
-        // If multiple instances of WKInteraction are present the events are
-        // duplicated, just deactivate all events from existing interactions.
-        // #####################################################################
-        deactiveEvents: function(event)
-        {
-            console.log("Deactivating one WK Interaction instance to prevent interference.");
-            this.lessonInfoObserver.disconnect();
-            this.reviewInfoObserver.disconnect();
-            this.reviewStartObserver.disconnect();
-
-            $.jStorage.stopListening(`currentItem`,   this.bound_currentItem);
-            $.jStorage.stopListening(`questionCount`, this.bound_questionCount);
-
-            return true;
         },
         // #####################################################################
 
@@ -108,15 +94,18 @@ function WKInteraction()
             switch(this.curPage)
             {
                 case this.PageEnum.radicals:
-                    $(document).triggerHandler(`keisei_wk_subject_ready`, [this.PageEnum.radicals]);
+                    $(document).triggerHandler(`${this.namespace}_wk_subject_ready`, [this.PageEnum.radicals]);
                     break;
                 case this.PageEnum.kanji:
-                    $(document).triggerHandler(`keisei_wk_subject_ready`, [this.PageEnum.kanji]);
+                    $(document).triggerHandler(`${this.namespace}_wk_subject_ready`, [this.PageEnum.kanji]);
                     break;
                 case this.PageEnum.reviews:
                     this.reviewInfoObserver.observe(document.getElementById(`item-info-col2`), {childList: true});
                     // reviews are not ready after load, wait until the WK animation finishes.
                     this.reviewStartObserver.observe(document.getElementById(`loading`), {attributes: true});
+
+                    // TODO: do something after the last review was finished!
+                    $(window).on(`beforeunload`, this.reviewEndCallback.bind(this));
                     break;
                 case this.PageEnum.reviews_summary:
                     break;
@@ -132,17 +121,28 @@ function WKInteraction()
 
             if (this.curPage !== this.PageEnum.unknown &&
                 this.curPage !== this.PageEnum.reviews)
-                $(document).trigger(`wk_page_ready`, [this.curPage]);
+                $(document).trigger(`${this.namespace}_wk_page_ready`, [this.curPage]);
         },
         // #####################################################################
 
         // #####################################################################
         reviewStartCallback: function(mutations)
         {
+            // The last change has three elements, use that for now
             if (mutations.length !== 3)
                 return;
 
-            $(document).trigger(`wk_page_ready`, [this.curPage]);
+            $(document).trigger(`${this.namespace}_wk_page_ready`, [this.curPage]);
+        },
+        // #####################################################################
+
+        // #####################################################################
+        reviewEndCallback: function(event)
+        {
+            var wasWrongAnswer = this.lastWrongCount < $.jStorage.get(`wrongCount`);
+
+            if (this.lastQuestionAnswered)
+                $(document).trigger(`${this.namespace}_wk_review_answered`, [wasWrongAnswer, this.lastQType, this.lastItem]);
         },
         // #####################################################################
 
@@ -158,7 +158,7 @@ function WKInteraction()
             }, this);
 
             if (doTrigger)
-                $(document).triggerHandler(`keisei_wk_subject_ready`, [this.PageEnum.reviews]);
+                $(document).triggerHandler(`${this.namespace}_wk_subject_ready`, [this.PageEnum.reviews]);
         },
         // #####################################################################
 
@@ -166,7 +166,7 @@ function WKInteraction()
         lessonInfoCallback: function(mutations)
         {
             if (mutations[0].type === `attributes`)
-                $(document).triggerHandler(`keisei_wk_subject_ready`, [this.PageEnum.lessons]);
+                $(document).triggerHandler(`${this.namespace}_wk_subject_ready`, [this.PageEnum.lessons]);
             else if (mutations[0].type === `childList`)
             {
                 var doTrigger = false;
@@ -178,7 +178,7 @@ function WKInteraction()
                 }, this);
 
                 if (doTrigger)
-                    $(document).triggerHandler(`keisei_wk_subject_ready`, [this.PageEnum.lessons_reviews]);
+                    $(document).triggerHandler(`${this.namespace}_wk_subject_ready`, [this.PageEnum.lessons_reviews]);
             }
         },
         // #####################################################################
@@ -186,17 +186,23 @@ function WKInteraction()
         // #####################################################################
         newReviewItemCallback: function(key, action)
         {
+            var wasWrongAnswer = this.lastWrongCount < $.jStorage.get(`wrongCount`);
+            this.lastWrongCount = $.jStorage.get(`wrongCount`);
+
             if (this.lastQuestionAnswered)
             {
-                $(document).trigger(`wk_review_answered`, [this.lastQType, this.lastItem]);
+                $(document).trigger(`${this.namespace}_wk_review_answered`, [wasWrongAnswer, this.lastQType, this.lastItem]);
 
                 this.lastQuestionAnswered = false;
             }
 
-            $(document).trigger(`wk_new_review_item_ready`);
+            $(document).trigger(`${this.namespace}_wk_new_review_item_ready`);
         },
         // #####################################################################
 
+        // The questionCount is changed once a question is answered. However,
+        // this value might also me decreased by the ignore script, so we
+        // keep track if the last change was an increase.
         // #####################################################################
         questionCountCallback: function(key, action)
         {
@@ -257,7 +263,6 @@ function WKInteraction()
                     break;
 
                 case this.PageEnum.lessons:
-                    // TODO: handle radical lesson case
                     var kanjiNode = $(`#character`);
 
                     if ($(`#main-info`).hasClass(`radical`))

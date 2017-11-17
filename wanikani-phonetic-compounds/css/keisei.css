@@ -1,32 +1,31 @@
 
-.badge-perfect:before {
+.wk_namespace .badge-perfect:before {
     content: "天"; background-color: #092;
 }
-.badge-high:before {
+.wk_namespace .badge-high:before {
     content: "上"; background-color: #092;
 }
-.badge-middle:before {
+.wk_namespace .badge-middle:before {
     content: "中"; background-color: #f04;
 }
-.badge-low:before {
+.wk_namespace .badge-low:before {
     content: "下"; background-color: #f04;
 }
-.badge-current:before {
+.wk_namespace .badge-current:before {
     background-color: #0695df !important;
 }
-#keisei-more-button {
+.wk_namespace #keisei-more-button {
     cursor: pointer;
     margin-top: 20px;
     padding: 10px;
     text-align: center;
 }
-#keisei-more-info {
+.wk_namespace #keisei-more-info {
     display: none;
 }
 
 /* #f0a -> 0c4, #dd0093 -> 092 */
-ul.single-character-grid li[id|=phonetic],
-ul.single-character-grid tr[id|=phonetic]
+.wk_namespace ul.single-character-grid li[id|=phonetic]
 {
     background-color:#0a2;
     background-image:-moz-linear-gradient(top, #0c4, #092);
@@ -41,8 +40,7 @@ ul.single-character-grid tr[id|=phonetic]
     border-left:1px solid #0c4
 }
 
-ul.single-character-grid li[id|=nonphonetic],
-ul.single-character-grid tr[id|=nonphonetic]
+.wk_namespace ul.single-character-grid li[id|=nonphonetic]
 {
     background-color:#f04;
     background-image:-moz-linear-gradient(top, #f04, #c04);

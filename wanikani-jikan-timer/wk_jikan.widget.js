@@ -63,7 +63,9 @@
         // #####################################################################
         this.chart.selectAll("rect")
                   .data(this.session_measurements)
-              .enter().append("svg:rect")
+              .enter()
+                  .append("svg:rect")
+                  .attr("class", function(d) { return `bar ${d.type}`;})
                   .attr("transform", "translate(2,0)")
                   .attr("x", function(d, i) { return xScale(i) - 0.5; })
                   .attr("y", function(d) {
@@ -91,12 +93,16 @@
         WK_Jikan.prototype.redrawWidgetChart = function()
         {
             var rect = this.chart.selectAll("rect")
-                    .data(this.session_measurements.slice(-nbars), function(d) { return d.index; });
+                       .data(this.session_measurements.slice(-nbars),
+                            function(d) { return d.index; })
+                       .attr("class", function(d) { return `bar ${d.type}`;});
 
             // only shift elements in from the right when all 20 bars are there
             var xoffset = (this.session_measurements.length >= 20) ? 1 : 0;
 
-            rect.enter().insert("svg:rect", "line")
+            rect
+            .enter()
+                .insert("svg:rect", "line")
                 .attr("transform", "translate(2,0)")
                 .attr("x", function(d, i) { return xScale(i+xoffset) - 0.5; })
                 .attr("y", h)
@@ -117,7 +123,9 @@
                 .attr("x", function(d, i) { return xScale(i) - 0.5; })
                 .attr("width", w);
 
-            rect.exit().transition()
+            rect
+            .exit()
+                .transition()
                 .duration(1000)
                 .attr("x", function(d, i) { return xScale(i - 1) - 0.5; })
             .remove();

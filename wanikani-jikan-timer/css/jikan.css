@@ -111,6 +111,8 @@
     text-transform: capitalize;
 }
 
+/* The tooltips are appended to the end of the bbody, add your namespace there! */
+
 .wk_namespace.d3-tip {
     line-height: 1;
     font: 14px sans-serif;

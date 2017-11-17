@@ -57,7 +57,7 @@
                         <p>Userscript version: ${GM_info.script.version}</p>
                         <p>Last modified: ${new Date(GM_info.script.lastModified).toTimeString()}</p>
 
-                        <h3>Database Information</h3>
+                        <h3>Measurement Database Information</h3>
                         <span id="jikan_stats"></span>
                     </div>
                     <div class="modal-footer">
@@ -67,8 +67,38 @@
             </div>`
         );
 
+        // TODO: measurement_db stats: number of rad, kan, voc, and number of measurements
+        this.fillStats();
+
         $(`#jikan_settings_btn_debug`).on(`click`, this.toggleDebug.bind(this));
         $(`#jikan_settings_btn_clearDB`).on(`click`, this.toggleClearDB.bind(this));
+    };
+    // #########################################################################
+
+    // #########################################################################
+    WK_Jikan.prototype.fillStats = function()
+    {
+        var db = this.measurement_db;
+
+        var nrad = Object.keys(db[`rad`]).length;
+        var nkan = Object.keys(db[`kan`]).length;
+        var nvoc = Object.keys(db[`voc`]).length;
+
+        var n_read = {"rad": 0, "kan": 0, "voc": 0};
+        var n_mean = {"rad": 0, "kan": 0, "voc": 0};
+
+        [`rad`, `kan`, `voc`].forEach( function(type) {
+                Object.keys(db[type]).forEach( function(key) {
+                    n_read[type] += db[type][key].timeReading.length;
+                    n_mean[type] += db[type][key].timeMeaning.length;
+                }, this);
+        }, this);
+
+        $(`#jikan_stats`).html(
+           `<p><b>Radicals</b>: ${nrad} items, time measurements: meaning ${n_mean.rad}</p>
+            <p><b>Kanji</b>: ${nkan} items, time measurements: meaning ${n_mean.kan}, reading ${n_read.kan}</p>
+            <p><b>Vocab</b>: ${nvoc} items, time measurements: meaning ${n_mean.voc}, reading ${n_read.voc}</p>`
+        );
     };
     // #########################################################################
 
