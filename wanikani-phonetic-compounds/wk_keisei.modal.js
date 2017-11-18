@@ -33,6 +33,7 @@
                         <div class="btn-group-lg text-center">
                             <a class="btn" id="keisei_settings_btn_debug"><i class="icon-gear"></i> Toggle Debug Mode</a>
                             <a class="btn" id="keisei_settings_btn_minify"><i class="icon-eye-open"></i> Toggle Mini Mode</a>
+                            <a class="btn" id="keisei_settings_btn_fullinfo"><i class="icon-collapse"></i> Toggle Full Info Mode</a>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -75,8 +76,15 @@
             $(`#keisei_settings_btn_minify i`).addClass(`icon-eye-close`);
         }
 
+        if (this.settings.fullinfo) {
+            $(`#keisei_settings_btn_fullinfo`).addClass(`active`);
+            $(`#keisei_settings_btn_fullinfo i`).removeClass(`icon-collapse`);
+            $(`#keisei_settings_btn_fullinfo i`).addClass(`icon-collapse-top`);
+        }
+
         $(`#keisei_settings_btn_debug`).on(`click`, this.toggleDebug.bind(this));
         $(`#keisei_settings_btn_minify`).on(`click`, this.toggleMinify.bind(this));
+        $(`#keisei_settings_btn_fullinfo`).on(`click`, this.toggleFullInfo.bind(this));
     };
     // #########################################################################
 
@@ -144,6 +152,22 @@
             this.toggleMainFold();
 
         GM_setValue(`minify`, this.settings.minify);
+    };
+    // #########################################################################
+
+    // #########################################################################
+    WK_Keisei.prototype.toggleFullInfo = function(event)
+    {
+        this.settings.fullinfo = !this.settings.fullinfo;
+
+        $(`#keisei_settings_btn_fullinfo`).toggleClass(`active`);
+        $(`#keisei_settings_btn_fullinfo i`).toggleClass(`icon-collapse-top`);
+        $(`#keisei_settings_btn_fullinfo i`).toggleClass(`icon-collapse`);
+
+        if ($(`#keisei_more_fold`).is(`:visible`) !== this.settings.fullinfo)
+            this.toggleMoreInfoFold();
+
+        GM_setValue(`fullinfo`, this.settings.fullinfo);
     };
     // #########################################################################
 })();

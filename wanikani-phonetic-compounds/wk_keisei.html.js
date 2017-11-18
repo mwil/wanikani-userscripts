@@ -7,8 +7,8 @@
     "use strict";
     // Character item to be included in a character grid
     // #########################################################################
-    WK_Keisei.prototype.gen_item_chargrid = ({kanji, readings, meaning, badge=``, href=`javascript:;`, kanji_id=``}) =>
-       `<li id="${kanji_id}" class="character-item">
+    WK_Keisei.prototype.gen_item_chargrid = ({kanji, readings, meaning, notInWK=``, badge=``, href=`javascript:;`, kanji_id=``}) =>
+       `<li id="${kanji_id}" class="${notInWK} character-item">
             <span lang="ja" class="${badge}"></span>
             <a class="keisei_kanji_link" href="${href}">
                 <span class="character" lang="ja">${kanji}</span>
@@ -111,9 +111,9 @@
         $(`#keisei_head_visibility i`).toggleClass(`icon-eye-open`);
         $(`#keisei_head_visibility i`).toggleClass(`icon-eye-close`);
 
-        if (!$(`#keisei_main_fold`).is(`:visible`) &&
-            !$(`#keisei_head_moreinfo i`).hasClass(`icon-collapse-top`))
-            this.toggleMoreInfoFold();
+        // if (!$(`#keisei_main_fold`).is(`:visible`) &&
+            // !$(`#keisei_head_moreinfo i`).hasClass(`icon-collapse`))
+            // this.toggleMoreInfoFold();
     };
     // #########################################################################
 
@@ -126,9 +126,9 @@
         $(`#keisei_head_moreinfo i`).toggleClass(`icon-collapse`);
         $(`#keisei_head_moreinfo i`).toggleClass(`icon-collapse-top`);
 
-        if (!$(`#keisei_main_fold`).is(`:visible`) &&
-            !$(`#keisei_head_moreinfo i`).hasClass(`icon-collapse-top`))
-            this.toggleMainFold();
+        // if ((!$(`#keisei_main_fold`).is(`:visible`) &&
+            // !$(`#keisei_head_moreinfo i`).hasClass(`icon-collapse`)))
+            // this.toggleMainFold();
     };
     // #########################################################################
 }

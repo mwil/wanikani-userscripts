@@ -265,3 +265,6 @@
 
 .wk_namespace .modal-footer .btn-block+.btn-block{margin-left:0}
 
+.wk_namespace .text-center {
+    text-align: center;
+}

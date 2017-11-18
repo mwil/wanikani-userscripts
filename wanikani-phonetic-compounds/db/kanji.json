@@ -4058,6 +4058,7 @@
     },
     "蚕": {
         "readings": ["さん"],
+        "meaning": ["silkworm"],
         "type": "unknown",
         "comment": "obscure tone mark 朁"
     },
@@ -4627,6 +4628,7 @@
     },
     "勺": {
         "readings": ["しゃく"],
+        "meaning": ["ladle"],
         "type": "hieroglyph"
     },
     "互": {
@@ -4655,6 +4657,7 @@
     },
     "匁": {
         "readings": [],
+        "meaning": ["monme"],
         "type": "kokuji"
     },
     "屯": {
@@ -4704,6 +4707,7 @@
     },
     "斤": {
         "readings": ["きん"],
+        "meaning": ["axe"],
         "type": "hieroglyph"
     },
     "且": {
@@ -4712,6 +4716,7 @@
     },
     "丙": {
         "readings": ["へい"],
+        "meaning": ["third class"],
         "type": "hieroglyph"
     },
     "甲": {
@@ -4728,6 +4733,7 @@
     },
     "斥": {
         "readings": ["せき"],
+        "meaning": ["reject"],
         "type": "unknown",
         "comment": "TODO: strange"
     },
@@ -4797,6 +4803,7 @@
     },
     "弐": {
         "readings": ["に", "じ"],
+        "meaning": ["two"],
         "type": "unknown"
     },
     "朱": {
@@ -4805,6 +4812,7 @@
     },
     "吏": {
         "readings": ["り"],
+        "meaning": ["officer"],
         "type": "comp_indicative"
     },
     "劣": {
@@ -5004,6 +5012,7 @@
     },
     "但": {
         "readings": ["たん", "だん"],
+        "meaning": ["however"],
         "phonetic": "旦",
         "type": "comp_phonetic"
     },
@@ -5045,6 +5054,7 @@
     },
     "壱": {
         "readings": ["いち", "いつ"],
+        "meaning": ["one"],
         "type": "unknown"
     },
     "坑": {
@@ -5130,6 +5140,7 @@
     },
     "抄": {
         "readings": ["しょう", "そう"],
+        "meaning": ["extract"],
         "phonetic": "少",
         "type": "comp_phonetic"
     },
@@ -5537,6 +5548,7 @@
     },
     "肢": {
         "readings": ["し"],
+        "meaning": ["limb"],
         "phonetic": "支",
         "type": "comp_phonetic"
     },
@@ -5585,6 +5597,7 @@
     },
     "附": {
         "readings": ["ふ", "ぶ"],
+        "meaning": ["affixed"],
         "phonetic": "付",
         "type": "comp_phonetic"
     },
@@ -5603,6 +5616,7 @@
     },
     "衷": {
         "readings": ["ちゅう"],
+        "meaning": ["inmost"],
         "phonetic": "中",
         "type": "comp_phonetic"
     },
@@ -5638,6 +5652,7 @@
     },
     "侯": {
         "readings": ["こう"],
+        "meaning": ["marquis"],
         "type": "unknown",
         "comment": "obscure phonetic marker 矦"
     },
@@ -5677,6 +5692,7 @@
     },
     "勅": {
         "readings": ["ちょく"],
+        "meaning": ["imperial order"],
         "type": "unknown"
     },
     "貞": {
@@ -5690,6 +5706,7 @@
     },
     "厘": {
         "readings": ["りん"],
+        "meaning": ["rin"],
         "type": "derivative"
     },
     "怠": {
@@ -5973,6 +5990,7 @@
     },
     "畝": {
         "readings": ["ほう", "ぼ"],
+        "meaning": ["furrow"],
         "type": "unknown"
     },
     "恋": {
@@ -5992,6 +6010,7 @@
     },
     "倣": {
         "readings": ["ほう"],
+        "meaning": ["emulate"],
         "phonetic": "放",
         "type": "comp_phonetic"
     },
@@ -6007,6 +6026,7 @@
     },
     "翁": {
         "readings": ["おう"],
+        "meaning": ["venerable old man"],
         "phonetic": "公",
         "type": "comp_phonetic"
     },
@@ -6102,6 +6122,7 @@
     },
     "宵": {
         "readings": ["しょう"],
+        "meaning": ["wee hours"],
         "phonetic": "肖",
         "type": "comp_phonetic"
     },
@@ -6329,6 +6350,7 @@
     },
     "耗": {
         "readings": ["もう", "こう"],
+        "meaning": ["decrease"],
         "phonetic": "毛",
         "type": "comp_phonetic"
     },
@@ -6344,6 +6366,7 @@
     },
     "朕": {
         "readings": ["ちん"],
+        "meaning": ["majestic plural"],
         "type": "comp_indicative"
     },
     "胴": {
@@ -6405,10 +6428,12 @@
     },
     "逐": {
         "readings": ["ちく", "じく"],
+        "meaning": ["pursue"],
         "type": "unknown"
     },
     "逓": {
         "readings": ["てい"],
+        "meaning": ["relay"],
         "type": "unknown",
         "comment": "obscure tone mark 虒"
     },
@@ -7069,6 +7094,7 @@
     },
     "慌": {
         "readings": ["こう"],
+        "meaning": ["disconcerted"],
         "phonetic": "荒",
         "type": "comp_phonetic"
     },
@@ -7145,6 +7171,7 @@
     },
     "棺": {
         "readings": ["かん"],
+        "meaning": ["coffin"],
         "phonetic": "官",
         "type": "comp_phonetic"
     },
@@ -7230,6 +7257,7 @@
     },
     "痘": {
         "readings": ["とう"],
+        "meaning": ["pox"],
         "phonetic": "豆",
         "type": "comp_phonetic"
     },
@@ -7245,6 +7273,7 @@
     },
     "硝": {
         "readings": ["しょう"],
+        "meaning": ["nitrate"],
         "phonetic": "肖",
         "type": "comp_phonetic"
     },
@@ -7282,6 +7311,7 @@
     },
     "脹": {
         "readings": ["ちょう"],
+        "meaning": ["dilate"],
         "phonetic": "長",
         "type": "comp_phonetic"
     },
@@ -7321,6 +7351,7 @@
     },
     "詔": {
         "readings": ["しょう"],
+        "meaning": ["imperial edict"],
         "phonetic": "召",
         "type": "comp_phonetic"
     },
@@ -7462,6 +7493,7 @@
     },
     "嗣": {
         "readings": ["し"],
+        "meaning": ["heir"],
         "phonetic": "司",
         "type": "comp_phonetic"
     },
@@ -7477,6 +7509,7 @@
     },
     "塑": {
         "readings": ["そ"],
+        "meaning": ["model"],
         "type": "unknown",
         "comment": "obscure tone mark 朔"
     },
@@ -7531,6 +7564,7 @@
     },
     "愁": {
         "readings": ["しゅう"],
+        "meaning": ["distress"],
         "phonetic": "秋",
         "type": "comp_phonetic"
     },
@@ -7563,6 +7597,7 @@
     },
     "楼": {
         "readings": ["ろう"],
+        "meaning": ["watchtower"],
         "type": "unknown"
     },
     "歳": {
@@ -7684,6 +7719,7 @@
     },
     "虞": {
         "readings": ["ぐ"],
+        "meaning": ["fear"],
         "phonetic": "呉",
         "type": "comp_phonetic",
         "comment": "related to 虞 reading?"
@@ -7694,6 +7730,7 @@
     },
     "褐": {
         "readings": ["かつ"],
+        "meaning": ["brown"],
         "phonetic": "曷",
         "type": "comp_phonetic"
     },
@@ -7823,6 +7860,7 @@
     },
     "頒": {
         "readings": ["はん"],
+        "meaning": ["distribute"],
         "phonetic": "分",
         "type": "comp_phonetic"
     },
@@ -7871,6 +7909,7 @@
     },
     "嫡": {
         "readings": ["ちゃく", "てき"],
+        "meaning": ["legitimate wife"],
         "phonetic": "啇",
         "type": "comp_phonetic"
     },
@@ -7976,6 +8015,7 @@
     },
     "箇": {
         "readings": ["か", "こ"],
+        "meaning": ["counter for articles"],
         "phonetic": "固",
         "type": "comp_phonetic"
     },
@@ -8054,6 +8094,7 @@
     },
     "銑": {
         "readings": ["せん"],
+        "meaning": ["pig iron"],
         "phonetic": "先",
         "type": "comp_phonetic"
     },
@@ -8107,6 +8148,7 @@
     },
     "韻": {
         "readings": ["いん"],
+        "meaning": ["rhyme"],
         "phonetic": "員",
         "type": "comp_phonetic"
     },
@@ -8123,6 +8165,7 @@
     },
     "謁": {
         "readings": ["えつ"],
+        "meaning": ["audience"],
         "phonetic": "曷",
         "type": "comp_phonetic"
     },
@@ -8166,6 +8209,7 @@
     },
     "嚇": {
         "readings": ["かく"],
+        "meaning": ["menacing"],
         "type": "unknown",
         "comment": "obscure phonetic 赫"
     },
@@ -8309,6 +8353,7 @@
     },
     "薫": {
         "readings": ["くん"],
+        "meaning": ["fragrant"],
         "phonetic": "熏",
         "type": "comp_phonetic"
     },
@@ -8376,6 +8421,7 @@
     },
     "墾": {
         "readings": ["こん"],
+        "meaning": ["open up farmland"],
         "type": "unknown"
     },
     "懇": {
@@ -8413,16 +8459,19 @@
     },
     "賜": {
         "readings": ["し"],
+        "meaning": ["grant"],
         "phonetic": "易",
         "type": "comp_phonetic"
     },
     "璽": {
         "readings": ["じ"],
+        "meaning": ["emperor's seal"],
         "phonetic": "爾",
         "type": "comp_phonetic"
     },
     "爵": {
         "readings": ["しゃく"],
+        "meaning": ["baron"],
         "type": "unknown"
     },
     "趣": {
@@ -8432,6 +8481,7 @@
     },
     "儒": {
         "readings": ["じゅ"],
+        "meaning": ["Confucian"],
         "phonetic": "需",
         "type": "comp_phonetic"
     },
@@ -8460,6 +8510,7 @@
     },
     "遵": {
         "readings": ["そん"],
+        "meaning": ["abide by"],
         "phonetic": "尊",
         "type": "comp_phonetic"
     },
@@ -8520,6 +8571,7 @@
     },
     "薪": {
         "readings": ["しん"],
+        "meaning": ["fuel"],
         "phonetic": "新",
         "type": "comp_phonetic"
     },
@@ -8530,6 +8582,7 @@
     },
     "錘": {
         "readings": ["すい"],
+        "meaning": ["weight"],
         "phonetic": "垂",
         "type": "comp_phonetic"
     },
@@ -8579,6 +8632,7 @@
     },
     "繕": {
         "readings": ["ぜん", "せん"],
+        "meaning": ["darning"],
         "phonetic": "善",
         "type": "comp_phonetic"
     },
@@ -8686,6 +8740,7 @@
     },
     "謄": {
         "readings": ["とう"],
+        "meaning": ["mimeograph"],
         "type": "unknown"
     },
     "踏": {
@@ -8804,6 +8859,7 @@
     },
     "賦": {
         "readings": ["ふ"],
+        "meaning": ["levy"],
         "phonetic": "武",
         "type": "comp_phonetic"
     },
@@ -8917,6 +8973,7 @@
     },
     "繭": {
         "readings": ["けん"],
+        "meaning": ["cocoon"],
         "type": "comp_indicative"
     },
     "魅": {
@@ -8964,6 +9021,7 @@
     },
     "窯": {
         "readings": ["よう"],
+        "meaning": ["kiln"],
         "phonetic": "羔",
         "type": "comp_phonetic"
     },
@@ -8992,6 +9050,7 @@
     },
     "濫": {
         "readings": ["らん"],
+        "meaning": ["excessive"],
         "phonetic": "監",
         "type": "comp_phonetic"
     },
@@ -9150,6 +9209,7 @@
     },
     "籠": {
         "readings": ["ろう", "る"],
+        "meaning": ["basket"],
         "phonetic": "竜",
         "type": "comp_phonetic"
     },
@@ -9163,11 +9223,13 @@
     },
     "頬": {
         "readings": ["きょう"],
+        "meaning": ["cheeks"],
         "phonetic": "夾",
         "type": "comp_phonetic"
     },
     "膝": {
         "readings": ["ひざ"],
+        "meaning": ["knee"],
         "phonetic": "桼",
         "type": "comp_phonetic"
     },
@@ -9178,6 +9240,7 @@
     },
     "匂": {
         "readings": [""],
+        "meaning": ["fragrant"],
         "type": "kokuji"
     },
     "沙": {
@@ -9195,20 +9258,24 @@
     },
     "股": {
         "readings": ["こ"],
+        "meaning": ["thigh"],
         "type": "unknown",
         "comment": "obscure tone mark 羖"
     },
     "眉": {
         "readings": ["び", "み"],
+        "meaning": ["eyebrow"],
         "type": "hieroglyph"
     },
     "挨": {
         "readings": ["あい"],
+        "meaning": ["approach"],
         "type": "unknown",
         "comment": "obscure tone mark 矣"
     },
     "拶": {
         "readings": ["さつ"],
+        "meaning": ["be imminent"],
         "type": "unknown",
         "comment": "obscure phonetic, can't show"
     },
@@ -9219,6 +9286,7 @@
     },
     "凄": {
         "readings": ["せい"],
+        "meaning": ["uncanny"],
         "phonetic": "妻",
         "type": "comp_phonetic"
     },
@@ -9229,34 +9297,41 @@
     },
     "稽": {
         "readings": ["けい"],
+        "meaning": ["think"],
         "phonetic": "旨",
         "type": "comp_phonetic"
     },
     "曾": {
         "readings": ["そう", "ぞ", "そ", "ぞう"],
+        "meaning": ["once"],
         "type": "hieroglyph"
     },
     "喉": {
         "readings": ["こう"],
+        "meaning": ["throat"],
         "phonetic": "侯",
         "type": "comp_phonetic"
     },
     "拭": {
         "readings": ["しょく", "しき"],
+        "meaning": ["wipe"],
         "phonetic": "式",
         "type": "comp_phonetic"
     },
     "貌": {
         "readings": ["ぼう"],
+        "meaning": ["form"],
         "type": "unknown",
         "comment": "obscure tone mark 皃"
     },
     "塞": {
         "readings": ["さい", "そく"],
+        "meaning": ["close"],
         "type": "unknown"
     },
     "蹴": {
         "readings": ["しゅう", "しゅく"],
+        "meaning": ["kick"],
         "phonetic": "就",
         "type": "comp_phonetic"
     },
@@ -9267,16 +9342,19 @@
     },
     "膳": {
         "readings": ["ぜん", "せん"],
+        "meaning": ["small low table"],
         "phonetic": "善",
         "type": "comp_phonetic"
     },
     "袖": {
         "readings": ["しゅう"],
+        "meaning": ["sleeve"],
         "phonetic": "由",
         "type": "comp_phonetic"
     },
     "潰": {
         "readings": ["かい"],
+        "meaning": ["crush"],
         "phonetic": "貴",
         "type": "comp_phonetic"
     },
@@ -9287,6 +9365,7 @@
     },
     "剥": {
         "readings": ["はく", "ほく"],
+        "meaning": ["come off"],
         "phonetic": "彔",
         "type": "comp_phonetic"
     },
@@ -9302,6 +9381,7 @@
     },
     "葛": {
         "readings": ["かつ"],
+        "meaning": ["arrowroot"],
         "phonetic": "曷",
         "type": "comp_phonetic"
     },
@@ -9317,6 +9397,7 @@
     },
     "拉": {
         "readings": ["ら", "らつ", "ろう"],
+        "meaning": ["Latin"],
         "phonetic": "立",
         "type": "comp_phonetic"
     },
@@ -9327,26 +9408,31 @@
     },
     "顎": {
         "readings": ["がく"],
+        "meaning": ["jaw"],
         "phonetic": "咢",
         "type": "comp_phonetic"
     },
     "苛": {
         "readings": ["か"],
+        "meaning": ["torment"],
         "phonetic": "可",
         "type": "comp_phonetic"
     },
     "蓋": {
         "readings": ["がい", "こう"],
+        "meaning": ["cover"],
         "type": "unknown",
         "comment": "obscure phonetic 盍"
     },
     "裾": {
         "readings": ["きょ", "こ"],
+        "meaning": ["cuff"],
         "phonetic": "居",
         "type": "comp_phonetic"
     },
     "腫": {
         "readings": ["しゅ", "しょう"],
+        "meaning": ["tumor"],
         "phonetic": "重",
         "type": "comp_phonetic"
     },
@@ -9364,6 +9450,7 @@
     },
     "妖": {
         "readings": ["よう"],
+        "meaning": ["attractive"],
         "phonetic": "夭",
         "type": "comp_phonetic"
     },
@@ -9374,11 +9461,13 @@
     },
     "捉": {
         "readings": ["そく"],
+        "meaning": ["catch"],
         "phonetic": "足",
         "type": "comp_phonetic"
     },
     "宛": {
         "readings": ["えん"],
+        "meaning": ["address"],
         "phonetic": "夗",
         "type": "comp_phonetic"
     },
@@ -9394,6 +9483,7 @@
     },
     "瓦": {
         "readings": ["が"],
+        "meaning": ["tile"],
         "type": "hieroglyph"
     },
     "拳": {
@@ -9403,6 +9493,7 @@
     },
     "乞": {
         "readings": ["きつ", "こつ"],
+        "meaning": ["beg"],
         "type": "hieroglyph"
     },
     "呪": {
@@ -9417,35 +9508,42 @@
     },
     "勃": {
         "readings": ["ぼつ", "ほつ"],
+        "meaning": ["suddenness"],
         "type": "unknown",
         "comment": "obscure phonetic 孛"
     },
     "昧": {
         "readings": ["まい", "ばい"],
+        "meaning": ["dark"],
         "phonetic": "未",
         "type": "comp_phonetic"
     },
     "唾": {
         "readings": ["だ"],
+        "meaning": ["saliva"],
         "phonetic": "垂",
         "type": "comp_phonetic"
     },
     "艶": {
         "readings": ["えん"],
+        "meaning": ["glossy"],
         "type": "unknown"
     },
     "痕": {
         "readings": ["こん"],
+        "meaning": ["mark"],
         "phonetic": "艮",
         "type": "comp_phonetic"
     },
     "諦": {
         "readings": ["てい", "たい"],
+        "meaning": ["truth"],
         "phonetic": "帝",
         "type": "comp_phonetic"
     },
     "餅": {
         "readings": ["へい"],
+        "meaning": ["mochi rice cake"],
         "phonetic": "并",
         "type": "comp_phonetic"
     },
@@ -9466,6 +9564,7 @@
     },
     "淫": {
         "readings": ["いん"],
+        "meaning": ["lewdness"],
         "type": "unknown",
         "comment": "obscure phonetic 㸒"
     },
@@ -9481,6 +9580,7 @@
     },
     "戚": {
         "readings": ["せき"],
+        "meaning": ["grieve"],
         "phonetic": "尗",
         "type": "comp_phonetic"
     },
@@ -9490,6 +9590,7 @@
     },
     "妬": {
         "readings": ["と"],
+        "meaning": ["jealous"],
         "phonetic": "石",
         "type": "comp_phonetic"
     },
@@ -9499,6 +9600,7 @@
     },
     "嗅": {
         "readings": ["きゅう"],
+        "meaning": ["smell"],
         "phonetic": "臭",
         "type": "comp_phonetic"
     },
@@ -9514,25 +9616,30 @@
     },
     "痩": {
         "readings": ["そう", "しゅう"],
+        "meaning": ["get thin"],
         "type": "unknown"
     },
     "怨": {
         "readings": ["えん", "おん"],
+        "meaning": ["grudge"],
         "phonetic": "夗",
         "type": "comp_phonetic"
     },
     "醒": {
         "readings": ["せい"],
+        "meaning": ["awake"],
         "phonetic": "星",
         "type": "comp_phonetic"
     },
     "詣": {
         "readings": ["けい"],
+        "meaning": ["visit a temple"],
         "phonetic": "旨",
         "type": "comp_phonetic"
     },
     "窟": {
         "readings": ["くつ"],
+        "meaning": ["cavern"],
         "phonetic": "屈",
         "type": "comp_phonetic"
     },
@@ -9547,25 +9654,30 @@
     },
     "骸": {
         "readings": ["がい", "かい"],
+        "meaning": ["bone"],
         "phonetic": "蜀",
         "type": "comp_phonetic"
     },
     "弄": {
         "readings": ["ろう"],
+        "meaning": ["play with"],
         "type": "comp_indicative"
     },
     "嫉": {
         "readings": ["しつ"],
+        "meaning": ["jealous"],
         "phonetic": "疾",
         "type": "comp_phonetic"
     },
     "罵": {
         "readings": ["ば"],
+        "meaning": ["abuse"],
         "phonetic": "馬",
         "type": "comp_phonetic"
     },
     "璧": {
         "readings": ["へき"],
+        "meaning": ["sphere"],
         "phonetic": "辟",
         "type": "comp_phonetic"
     },
@@ -9585,11 +9697,13 @@
     },
     "曖": {
         "readings": ["あい"],
+        "meaning": ["dark"],
         "phonetic": "愛",
         "type": "comp_phonetic"
     },
     "餌": {
         "readings": ["じ"],
+        "meaning": ["food"],
         "phonetic": "耳",
         "type": "comp_phonetic"
     },
@@ -9599,6 +9713,7 @@
     },
     "詮": {
         "readings": ["せん"],
+        "meaning": ["discussion"],
         "phonetic": "全",
         "type": "comp_phonetic"
     },
@@ -9609,15 +9724,18 @@
     },
     "綻": {
         "readings": ["たん"],
+        "meaning": ["ripped"],
         "phonetic": "定",
         "type": "comp_phonetic"
     },
     "肘": {
         "readings": ["ちゅう"],
+        "meaning": ["elbow"],
         "type": "comp_indicative"
     },
     "麓": {
         "readings": ["ろく"],
+        "meaning": ["foot of a mountain"],
         "phonetic": "鹿",
         "type": "comp_phonetic"
     },
@@ -9628,6 +9746,7 @@
     },
     "頓": {
         "readings": ["とん", "とつ"],
+        "meaning": ["suddenly"],
         "phonetic": "屯",
         "type": "comp_phonetic"
     },
@@ -9637,31 +9756,37 @@
     },
     "咽": {
         "readings": ["いん", "えつ", "えん"],
+        "meaning": ["throat"],
         "phonetic": "因",
         "type": "comp_phonetic"
     },
     "嘲": {
         "readings": ["ちょう", "とう"],
+        "meaning": ["ridicule"],
         "phonetic": "朝",
         "type": "comp_phonetic"
     },
     "臆": {
         "readings": ["おく"],
+        "meaning": ["timidity"],
         "phonetic": "意",
         "type": "comp_phonetic"
     },
     "挫": {
         "readings": ["ざ"],
+        "meaning": ["crush"],
         "phonetic": "坐",
         "type": "comp_phonetic"
     },
     "溺": {
         "readings": ["でき", "にょう", "じょう"],
+        "meaning": ["drown"],
         "phonetic": "弱",
         "type": "comp_phonetic"
     },
     "侶": {
         "readings": ["りょ", "ろ"],
+        "meaning": ["companion"],
         "phonetic": "呂",
         "type": "comp_phonetic"
     },
@@ -9671,31 +9796,37 @@
     },
     "瘍": {
         "readings": ["よう"],
+        "meaning": ["swelling"],
         "phonetic": "昜",
         "type": "comp_phonetic"
     },
     "僅": {
         "readings": ["きん"],
+        "meaning": ["a wee bit"],
         "phonetic": "堇",
         "type": "comp_phonetic"
     },
     "諜": {
         "readings": ["ちょう"],
+        "meaning": ["spy out"],
         "phonetic": "枼",
         "type": "comp_phonetic"
     },
     "柵": {
         "readings": ["さく"],
+        "meaning": ["stockade"],
         "phonetic": "冊",
         "type": "comp_phonetic"
     },
     "腎": {
         "readings": ["じん", "しん"],
+        "meaning": ["kidney"],
         "phonetic": "臤",
         "type": "comp_phonetic"
     },
     "梗": {
         "readings": ["こう", "きょう"],
+        "meaning": ["close up"],
         "phonetic": "更",
         "type": "comp_phonetic"
     },
@@ -9705,6 +9836,7 @@
     },
     "羨": {
         "readings": ["せん", "ぜん", "えん"],
+        "meaning": ["envious"],
         "type": "unknown",
         "comment": "obscure phonetic 涎"
     },
@@ -9715,11 +9847,13 @@
     },
     "畿": {
         "readings": ["き"],
+        "meaning": ["capital"],
         "phonetic": "幾",
         "type": "comp_phonetic"
     },
     "畏": {
         "readings": ["い"],
+        "meaning": ["fear"],
         "type": "unknown"
     },
     "瞭": {
@@ -9729,6 +9863,7 @@
     },
     "踪": {
         "readings": ["そう"],
+        "meaning": ["remains"],
         "phonetic": "宗",
         "type": "comp_phonetic"
     },
@@ -9738,6 +9873,7 @@
     },
     "蔽": {
         "readings": ["へい"],
+        "meaning": ["cover"],
         "phonetic": "敝",
         "type": "comp_phonetic"
     },
@@ -9748,6 +9884,7 @@
     },
     "慄": {
         "readings": ["りつ"],
+        "meaning": ["fear"],
         "phonetic": "栗",
         "type": "comp_phonetic"
     },
@@ -9763,82 +9900,99 @@
     },
     "捻": {
         "readings": ["ねん", "でん"],
+        "meaning": ["twirl"],
         "phonetic": "念",
         "type": "comp_phonetic"
     },
     "臼": {
         "readings": ["きゅう"],
+        "meaning": "臼",
         "type": "hieroglyph"
     },
     "喩": {
         "readings": ["ゆ"],
+        "meaning": ["metaphor"],
         "phonetic": "兪",
         "type": "comp_phonetic"
     },
     "萎": {
         "readings": ["い"],
+        "meaning": ["wither"],
         "phonetic": "委",
         "type": "comp_phonetic"
     },
     "腺": {
         "readings": ["せん"],
+        "meaning": ["gland"],
         "phonetic": "泉",
         "type": "kokuji"
     },
     "桁": {
         "readings": ["こう"],
+        "meaning": ["beam"],
         "phonetic": "行",
         "type": "comp_phonetic"
     },
     "玩": {
         "readings": ["がん"],
+        "meaning": ["play"],
         "phonetic": "元",
         "type": "comp_phonetic"
     },
     "冶": {
         "readings": ["や"],
+        "meaning": ["melting"],
         "type": "unknown",
         "comment": "maybe 台"
     },
     "羞": {
         "readings": ["しゅう"],
+        "meaning": ["feel ashamed"],
         "type": "comp_indicative"
     },
     "惧": {
         "readings": ["ぐ", "く"],
+        "meaning": ["fear"],
         "phonetic": "具",
         "type": "comp_phonetic"
     },
     "舷": {
         "readings": ["げん"],
+        "meaning": ["gunwale"],
         "phonetic": "玄",
         "type": "comp_phonetic"
     },
     "貪": {
         "readings": ["どん", "たん"],
+        "meaning": ["covet"],
         "type": "unknown",
         "comment": "phonetic 今?"
     },
     "采": {
         "readings": ["さい"],
+        "meaning": ["dice"],
         "type": "comp_indicative"
     },
     "堆": {
         "readings": ["たい", "つい"],
+        "meaning": ["piled high"],
         "phonetic": "隹",
         "type": "comp_phonetic"
     },
     "煎": {
         "readings": ["せん"],
+        "meaning": ["broil"],
         "phonetic": "前",
         "type": "comp_phonetic"
     },
     "斑": {
         "readings": ["はん"],
+        "meaning": ["spot"],
         "type": "unknown"
     },
     "冥": {
         "readings": ["めい", "にょう"],
+        "meaning": ["dark"],
         "type": "unknown"
     },
     "遜": {
@@ -9848,11 +10002,13 @@
     },
     "旺": {
         "readings": ["おう"],
+        "meaning": ["flourishing"],
         "phonetic": "王",
         "type": "comp_phonetic"
     },
     "麺": {
         "readings": ["めん", "べん"],
+        "meaning": ["noodles"],
         "phonetic": "面",
         "type": "comp_phonetic"
     },
@@ -9863,14 +10019,17 @@
     },
     "串": {
         "readings": ["せん", "かん"],
+        "meaning": ["skewer"],
         "type": "hieroglyph"
     },
     "填": {
         "readings": ["てん"],
+        "meaning": ["fill in"],
         "type": "unknown"
     },
     "箋": {
         "readings": ["せん"],
+        "meaning": ["paper"],
         "phonetic": "戔",
         "type": "comp_phonetic"
     },
@@ -9880,39 +10039,47 @@
     },
     "緻": {
         "readings": ["ち"],
+        "meaning": ["fine"],
         "phonetic": "致",
         "type": "comp_phonetic"
     },
     "辣": {
         "readings": ["らつ"],
+        "meaning": ["pungent"],
         "phonetic": "剌",
         "type": "comp_phonetic"
     },
     "摯": {
         "readings": ["し"],
+        "meaning": ["gift"],
         "type": "unknown"
     },
     "汎": {
         "readings": ["はん", "ふう", "ほう"],
+        "meaning": ["pan"],
         "phonetic": "凡",
         "type": "comp_phonetic"
     },
     "憚": {
         "readings": ["たん"],
+        "meaning": ["hesitate"],
         "phonetic": "単",
         "type": "comp_phonetic"
     },
     "哨": {
         "readings": ["しょう"],
+        "meaning": ["scout"],
         "phonetic": "肖",
         "type": "comp_phonetic"
     },
     "氾": {
         "readings": ["はん"],
+        "meaning": ["spread out"],
         "type": "hieroglyph"
     },
     "諧": {
         "readings": ["かい"],
+        "meaning": ["harmony"],
         "phonetic": "皆",
         "type": "comp_phonetic"
     },
@@ -9923,36 +10090,43 @@
     },
     "彙": {
         "readings": ["い"],
+        "meaning": ["same kind"],
         "type": "unknown",
         "comment": "obscure phonetic 胃, not that useful"
     },
     "恣": {
         "readings": ["し"],
+        "meaning": ["selfish"],
         "phonetic": "次",
         "type": "comp_phonetic"
     },
     "聘": {
         "readings": ["へい"],
+        "meaning": ["invite"],
         "type": "unknown",
         "comment": "obscure phonetic 甹"
     },
     "沃": {
         "readings": ["よく", "おく"],
+        "meaning": ["fertility"],
         "phonetic": "夭",
         "type": "comp_phonetic"
     },
     "憬": {
         "readings": ["けい"],
+        "meaning": ["yearn for"],
         "phonetic": "景",
         "type": "comp_phonetic"
     },
     "捗": {
         "readings": ["ちょく"],
+        "meaning": ["make progress"],
         "type": "unknown",
         "comment": "obscure tone mark 步"
     },
     "訃": {
         "readings": ["ふ"],
+        "meaning": ["obituary"],
         "phonetic": "卜",
         "type": "comp_phonetic"
     },

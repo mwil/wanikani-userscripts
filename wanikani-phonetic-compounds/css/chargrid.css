@@ -66,13 +66,15 @@
     margin:0
 }
 
-.wk_namespace ul.single-character-grid li.character-item.locked
+.wk_namespace ul.single-character-grid li.character-item.locked,
+.wk_namespace ul.single-character-grid li.character-item.notInWK
 {
     background-image:url("https://cdn-staging.wanikani.com/assets/default-v2/stripes-5e8494366c1615da046bd0f587cfeef6786e7ba17863df1329767ca3b89140e0.png");
     background-repeat:repeat
 }
 
-.wk_namespace ul.single-character-grid li.character-item.locked.kanji
+.wk_namespace ul.single-character-grid li.character-item.locked.kanji,
+.wk_namespace ul.single-character-grid li.character-item.notInWK.kanji
 {
     background-color:#f0a;
     background-image:none;

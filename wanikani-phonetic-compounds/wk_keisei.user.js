@@ -25,7 +25,6 @@
 // @resource    bootstrapjs  https://raw.githubusercontent.com/mwil/wanikani-userscripts/ea922c774c72c5d308be0a71a5100b9f9988f082/wanikani-phonetic-compounds/bootstrap/js/bootstrap.js
 //
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/35225681eb32f798ff8c5c7a0a352e8f6480135c/wanikani-phonetic-compounds/phonetic_db.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/35225681eb32f798ff8c5c7a0a352e8f6480135c/wanikani-phonetic-compounds/wk_kanji_db.js
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/bd703085246115abc88f9dade51748ec24cfc162/wanikani-phonetic-compounds/wk_keisei.strings.en.js
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/bd703085246115abc88f9dade51748ec24cfc162/wanikani-phonetic-compounds/wk_keisei.modal.js
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/bd703085246115abc88f9dade51748ec24cfc162/wanikani-phonetic-compounds/wk_keisei.html.js
@@ -47,10 +46,9 @@
 function WK_Keisei()
 {
     this.kdb = new KeiseiDB();
-    this.wkdb = new WKKanjiDB();
     this.wki = new WKInteraction(GM_info.script.namespace);
 
-    this.settings = {"debug": false, "minify": false};
+    this.settings = {"debug": false, "minify": false, "fullinfo": false};
 }
 // #############################################################################
 
@@ -127,6 +125,8 @@ function WK_Keisei()
         if (curPage === this.wki.PageEnum.reviews ||
             curPage === this.wki.PageEnum.lessons)
             $(`.keisei_kanji_link`).attr(`target`, `_blank`);
+
+        $(`li.notInWK a`).attr(`target`, `_blank`);
 
         // #####################################################################
         $(`#keisei_head_visibility`).on(`click`, this.toggleMainFold.bind(this));
@@ -227,10 +227,23 @@ function WK_Keisei()
         {
             $(`#keisei_main_fold`).append(this.createMoreInfoFold());
             this.populateMoreInfoFold(subject);
-            $(`#keisei_more_fold`).hide();
+
+            if (this.settings.fullinfo)
+            {
+                $(`#keisei_more_fold`).show();
+                $(`#keisei_head_moreinfo i`).attr(`class`, `icon-collapse-top`);
+            }
+            else
+            {
+                $(`#keisei_more_fold`).hide();
+                $(`#keisei_head_moreinfo i`).attr(`class`, `icon-collapse`);
+            }
         }
         else
+        {
             $(`#keisei_head_moreinfo`).addClass(`disabled`);
+            $(`#keisei_head_moreinfo i`).attr(`class`, `icon-collapse`);
+        }
     };
     // #########################################################################
 
@@ -275,8 +288,9 @@ function WK_Keisei()
             var li_template = {
                 "kanji": kanji,
                 "readings": this.kdb.getKReadings(kanji),
-                "meaning": this.wkdb.getKMeaning(kanji)[0],
-                "href": this.wkdb.isKanjiInWK(kanji) ? `/kanji/${kanji}` : `javascript:;`,
+                "meaning": this.kdb.getWKKMeaning(kanji)[0],
+                "notInWK": this.kdb.isKanjiInWK(kanji) ? `` : `notInWK`,
+                "href": this.kdb.isKanjiInWK(kanji) ? `/kanji/${kanji}` : `https://jisho.org/search/${kanji}%20%23kanji`,
                 "kanji_id": `kanji-${i+2}`
             };
 
@@ -341,8 +355,9 @@ function WK_Keisei()
             char_list.push({
                 "kanji": subject.phon,
                 "readings": this.kdb.getKReadings(subject.phon),
-                "meaning": this.wkdb.getKMeaning(subject.phon)[0],
-                "href": this.wkdb.isKanjiInWK(subject.phon) ? `/kanji/${subject.phon}`: `javascript:;`,
+                "meaning": this.kdb.getWKKMeaning(subject.phon)[0],
+                "notInWK": this.kdb.isKanjiInWK(subject.phon) ? `` : `notInWK`,
+                "href": this.kdb.isKanjiInWK(subject.phon) ? `/kanji/${subject.phon}`: `https://jisho.org/search/${subject.phon}%20%23kanji`,
                 "kanji_id": `kanji-1`
             });
 
@@ -411,8 +426,9 @@ function WK_Keisei()
                 char_list.push({
                     "kanji": curKanji,
                     "readings": this.kdb.getKReadings(curKanji),
-                    "meaning": this.wkdb.getKMeaning(curKanji)[0],
-                    "href": this.wkdb.isKanjiInWK(curKanji) ? `/kanji/${curKanji}` : `javascript:;`,
+                    "meaning": this.kdb.getWKKMeaning(curKanji)[0],
+                    "notInWK": this.kdb.isKanjiInWK(curKanji) ? `` : `notInWK`,
+                    "href": this.kdb.isKanjiInWK(curKanji) ? `/kanji/${curKanji}` : `https://jisho.org/search/${curKanji}%20%23kanji`,
                     "kanji_id": `kanji-${i+101}`
                 });
             }
@@ -430,6 +446,7 @@ function WK_Keisei()
 
         this.settings.debug = GM_getValue(`debug`) || false;
         this.settings.minify = GM_getValue(`minify`) || false;
+        this.settings.fullinfo = GM_getValue(`fullinfo`) || false;
 
         this.log = this.settings.debug ?
             function(msg, ...args) {
@@ -437,8 +454,7 @@ function WK_Keisei()
             } :
             function() {};
 
-        this.wkdb.init();
-        this.kdb.init(this.wkdb);
+        this.kdb.init();
         this.wki.init();
 
         this.log(`The script element is: `, GM_info);
