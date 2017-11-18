@@ -68,16 +68,12 @@
 
             // #####################################################################
             this.chart.selectAll("rect")
-                    .attr("class", function(d) { return `bar ${d.type}`;})
+                    .attr("class", (d) => `bar ${d.type}`)
                     .attr("transform", "translate(42,4)")
-                    .attr("x", function(d, i) { return xScale(i) - 0.5; })
-                    .attr("y", function(d) {
-                        return yScale(Math.min(maxTime, d.time)) - 0.5;
-                    })
+                    .attr("x", (d,i) => xScale(i) - 0.5)
+                    .attr("y", (d) => yScale(Math.min(maxTime, d.time)) - 0.5)
                     .attr("width", barWidth)
-                    .attr("height", function(d) {
-                        return h - yScale(Math.min(maxTime, d.time));
-                    })
+                    .attr("height", (d) => h - yScale(Math.min(maxTime, d.time)))
                     .on('mouseover', tip.show)
                     .on('mouseout', tip.hide);
             // #####################################################################
@@ -95,7 +91,7 @@
                 .call(yAxis);
 
 
-        this.chart.selectAll("rect").on("click", function(a){
+        this.chart.selectAll("rect").on("click", function(a) {
             if (`rad` in a.item)
                 window.open(`/radicals/${a.item.rad}`, "_blank");
             else if (`kan` in a.item)

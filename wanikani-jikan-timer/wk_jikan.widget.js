@@ -67,14 +67,10 @@
                   .append("svg:rect")
                   .attr("class", (d) => `bar ${d.type}`)
                   .attr("transform", "translate(2,0)")
-                  .attr("x", function(d, i) { return xScale(i) - 0.5; })
-                  .attr("y", function(d) {
-                      return yScale(Math.min(maxTime, d.time)) - 0.5;
-                  })
+                  .attr("x", (d, i) => xScale(i) - 0.5)
+                  .attr("y", (d) => yScale(Math.min(maxTime, d.time)) - 0.5)
                   .attr("width", w)
-                  .attr("height", function(d) {
-                      return h - yScale(Math.min(maxTime, d.time));
-                  });
+                  .attr("height", (d) => h - yScale(Math.min(maxTime, d.time)));
         // #####################################################################
 
         // Underline all bars
@@ -105,30 +101,26 @@
                 .insert("svg:rect", "line")
                 .attr("class", (d) => `bar ${d.type}`)
                 .attr("transform", "translate(2,0)")
-                .attr("x", function(d, i) { return xScale(i+xoffset) - 0.5; })
+                .attr("x", (d,i) => xScale(i+xoffset) - 0.5)
                 .attr("y", h)
                 .attr("width", w)
                 .attr("height", 0)
             .transition()
                 .duration(1000)
-                .attr("x", function(d, i) { return xScale(i) - 0.5; })
-                .attr("y", function(d) {
-                    return yScale(Math.min(maxTime, d.time)) - 0.5;
-                })
-                .attr("height", function(d) {
-                    return h - yScale(Math.min(maxTime, d.time));
-                });
+                .attr("x", (d,i) => xScale(i) - 0.5)
+                .attr("y", (d) => yScale(Math.min(maxTime, d.time)) - 0.5)
+                .attr("height", (d) => h - yScale(Math.min(maxTime, d.time)));
 
             rect.transition()
                 .duration(1000)
-                .attr("x", function(d, i) { return xScale(i) - 0.5; })
+                .attr("x", (d,i) => xScale(i) - 0.5)
                 .attr("width", w);
 
             rect
             .exit()
                 .transition()
                 .duration(1000)
-                .attr("x", function(d, i) { return xScale(i - 1) - 0.5; })
+                .attr("x", (d,i) => xScale(i - 1) - 0.5)
             .remove();
         };
         // #####################################################################
