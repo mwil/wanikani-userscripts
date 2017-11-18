@@ -30,7 +30,8 @@
                     return `<span>
                                 <strong>Item:</strong>
                                 <span>${d.item.rad||d.item.kan||d.item.voc}</span><br>
-                                <strong class="capitalize">${d.qtype}</strong><br>
+                                <strong class="capitalize">Q: ${d.qtype}</strong><br>
+                                <span>${d.wasWrong?"Wrong Answer":"Correct Answer"}</span><br>
                                 <strong>Time:</strong>
                                 <span style='color:red'> ${d.time}s</span>
                             </span>`;
