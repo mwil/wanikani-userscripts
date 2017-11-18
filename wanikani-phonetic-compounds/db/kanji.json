@@ -7430,8 +7430,8 @@
     },
     "焦": {
         "readings": ["しょう"],
-        "phonetic": "焦",
-        "type": "comp_phonetic"
+        "type": "unknown",
+        "comment": "obscure phonetic 雥"
     },
     "雄": {
         "readings": ["ゆう"],

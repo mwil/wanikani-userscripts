@@ -175,7 +175,15 @@ function WK_Keisei()
             // The kanji could be a phonetic element itself, show full info ...
             else if (this.kdb.checkPhonetic(subject.kan))
             {
-                $(`#keisei_explanation`).append(this.explanation_pmark(subject, this.kdb.getPReadings(subject.phon)));
+                $(`#keisei_explanation`).append(this.explanation_pmark(subject, this.kdb.getPReadings(subject.kan)));
+
+                // v1.1.1 Fixed bug where kanji that are tone marks but also have their own tone mark
+                if (subject.kan !== subject.phon)
+                {
+                    this.log(`Tone hierarchy detected, adjusting the tone mark from ${subject.phon} to ${subject.kan}.`);
+                    subject.phon = subject.kan;
+                }
+
                 this.populateCharGrid(`#keisei_phonetic_grid`, subject);
             }
             else

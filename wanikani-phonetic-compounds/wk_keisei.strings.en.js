@@ -30,7 +30,7 @@
         <span id="keisei_explanation_quality"></span>`;
 
     WK_Keisei.prototype.explanation_pmark = (subject, preadings) =>
-       `<p>The kanji 「${subject.phon}」 is used as a phonetic mark in other compounds!
+       `<p>The kanji 「${subject.kan}」 is used as a phonetic mark in other compounds!
         Its ON reading(s) are 「${preadings.join("・")}」.
         Note that these can include historical readings that may not apply to this kanji itself anymore, but still do to its compounds.</p>`;
 
