@@ -34,32 +34,6 @@ function WKKanjiDB()
         // #####################################################################
 
 
-        // #####################################################################
-        isKanjiInWK: function(kanji)
-        {
-            return this.wk_kanji_db && (kanji in this.wk_kanji_db);
-        },
-        // #####################################################################
-
-        getOnyomi: function(kanji)
-        {
-            if (this.isKanjiInWK(kanji))
-                return this.wk_kanji_db[kanji].onyomi.split(`,`);
-            else
-                return [`*DB Error*`];
-        },
-        // #####################################################################
-        // TODO: correctly upper meanings with multiple words
-        getKMeaning: function(kanji)
-        {
-            if (this.isKanjiInWK(kanji))
-            {
-                return this.wk_kanji_db[kanji].meaning.split(`,`).map(this.upper);
-            }
-            else
-                return [`*Not in WK!*`];
-        }
-        // #####################################################################
     };
 }());
 
