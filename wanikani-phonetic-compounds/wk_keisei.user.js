@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        WaniKani Keisei Phonetic-Semantic Composition
-// @version     1.1.0
+// @version     1.1.1
 // @author      acm
 // @description Adds information to Wanikani about kanji that use Phonetic-Semantic Composition.
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
@@ -14,7 +14,7 @@
 // @updateURL   https://github.com/mwil/wanikani-userscripts/raw/master/wanikani-phonetic-compounds/wk_keisei.user.js
 // @downloadURL https://github.com/mwil/wanikani-userscripts/raw/master/wanikani-phonetic-compounds/wk_keisei.user.js
 //
-// @resource    kanji        https://raw.githubusercontent.com/mwil/wanikani-userscripts/4fc05739f26921ab52da421f5f37b78bd10ca644/wanikani-phonetic-compounds/db/kanji.json
+// @resource    kanji        https://raw.githubusercontent.com/mwil/wanikani-userscripts/59b32dcc26d8aec934248100b25f81d455e56c9e/wanikani-phonetic-compounds/db/kanji.json
 // @resource    phonetic     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/phonetic.json
 // @resource    wk_kanji     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/wk_kanji.json
 //
@@ -25,7 +25,7 @@
 // @resource    bootstrapjs  https://raw.githubusercontent.com/mwil/wanikani-userscripts/ea922c774c72c5d308be0a71a5100b9f9988f082/wanikani-phonetic-compounds/bootstrap/js/bootstrap.js
 //
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/4fc05739f26921ab52da421f5f37b78bd10ca644/wanikani-phonetic-compounds/phonetic_db.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/bd703085246115abc88f9dade51748ec24cfc162/wanikani-phonetic-compounds/wk_keisei.strings.en.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/59b32dcc26d8aec934248100b25f81d455e56c9e/wanikani-phonetic-compounds/wk_keisei.strings.en.js
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/4fc05739f26921ab52da421f5f37b78bd10ca644/wanikani-phonetic-compounds/wk_keisei.modal.js
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/4fc05739f26921ab52da421f5f37b78bd10ca644/wanikani-phonetic-compounds/wk_keisei.html.js
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/bd703085246115abc88f9dade51748ec24cfc162/utility/wk_interaction.js
