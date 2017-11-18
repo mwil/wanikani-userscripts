@@ -181,6 +181,7 @@ function WK_Keisei()
                 if (subject.kan !== subject.phon)
                 {
                     this.log(`Tone hierarchy detected, adjusting the tone mark from ${subject.phon} to ${subject.kan}.`);
+                    subject.base_phon = subject.phon;
                     subject.phon = subject.kan;
                 }
 
@@ -214,9 +215,7 @@ function WK_Keisei()
                         }
 
                         $(`#keisei_explanation`).append(
-                            this.explanation_phonetic(
-                                subject,
-                                this.kdb.getPReadings(subject.phon)));
+                            this.explanation_phonetic(subject, this.kdb.getPReadings(subject.phon)));
 
                         this.populateCharGrid(`#keisei_phonetic_grid`, subject);
 
@@ -392,7 +391,11 @@ function WK_Keisei()
             $(`#keisei_more_fold`).append($(`<span></span>`)
                                   .attr(`id`, `keisei_more_expl_${i}`));
 
-            $(`#keisei_more_expl_${i}`).append(this.explanation_xref(curPhon, this.kdb.getPReadings(curPhon)));
+            if (`base_phon` in subject && subject.base_phon === curPhon)
+                $(`#keisei_more_expl_${i}`).append(
+                    this.explanation_phonetic(subject, this.kdb.getPReadings(curPhon)));
+            else
+                $(`#keisei_more_expl_${i}`).append(this.explanation_xref(curPhon, this.kdb.getPReadings(curPhon)));
 
             var $gridx = $(`<ul></ul>`)
                         .attr(`id`, `keisei_xref_grid_${i}`)
