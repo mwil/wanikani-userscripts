@@ -128,6 +128,8 @@
             GM_log("WK_Jikan: Measurement database cleared!");
             this.measurement_db = {"rad": {}, "kan": {}, "voc": {}};
             GM_setValue(`measurement_db`, JSON.stringify(this.measurement_db));
+
+            this.fillStats();
         }
     };
     // #########################################################################

@@ -65,7 +65,7 @@
                   .data(this.session_measurements)
               .enter()
                   .append("svg:rect")
-                  .attr("class", function(d) { return `bar ${d.type}`;})
+                  .attr("class", (d) => `bar ${d.type}`)
                   .attr("transform", "translate(2,0)")
                   .attr("x", function(d, i) { return xScale(i) - 0.5; })
                   .attr("y", function(d) {
@@ -94,8 +94,8 @@
         {
             var rect = this.chart.selectAll("rect")
                        .data(this.session_measurements.slice(-nbars),
-                            function(d) { return d.index; })
-                       .attr("class", function(d) { return `bar ${d.type}`;});
+                             (d) => d.index)
+                       .attr("class", (d) => `bar ${d.type}`);
 
             // only shift elements in from the right when all 20 bars are there
             var xoffset = (this.session_measurements.length >= 20) ? 1 : 0;
@@ -103,6 +103,7 @@
             rect
             .enter()
                 .insert("svg:rect", "line")
+                .attr("class", (d) => `bar ${d.type}`)
                 .attr("transform", "translate(2,0)")
                 .attr("x", function(d, i) { return xScale(i+xoffset) - 0.5; })
                 .attr("y", h)
