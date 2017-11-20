@@ -81,7 +81,7 @@
             var rect = this.chart.selectAll("rect")
                        .data(this.session_db.answers.slice(start_id).slice(-nbars),
                              (d) => d.index)
-                       .attr("class", (d) => `data-bar ${d.type}`);
+                       .attr("class", (d) => `answer-type ${d.type}`);
 
             // only shift elements in from the right when all 20 bars are there
             var xoffset = (this.session_db.answers.slice(start_id).length >= 20) ? 1 : 0;
@@ -89,7 +89,7 @@
             rect
             .enter()
                 .insert("rect", "line")
-                .attr("class", (d) => `data-bar ${d.type}`)
+                .attr("class", (d) => `answer-type ${d.type}`)
                 .attr("transform", "translate(2,0)")
                 .attr("x", (d,i) => xScale(i+xoffset) - 0.5)
                 .attr("y", h)

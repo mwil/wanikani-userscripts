@@ -108,7 +108,6 @@ function ItemMeasurements(item)
     this.item = item;
     this.timeReading = [];
     this.timeMeaning = [];
-
 }
 
 ItemMeasurements.prototype.addTime = function(time, type)

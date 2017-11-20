@@ -10,7 +10,7 @@
     var margin = {top: 10, right: 10, bottom: 20, left: 40};
     var height = 128 - margin.top - margin.bottom;
     var barWidth = 12; //Math.floor(Math.min(64, Math.max(3, (width)/nbars)));
-    var scrollableWidth = 100*barWidth;
+    var scrollableWidth = 200*barWidth;
     var maxTime = 20;
 
     var xScale = d3.scaleLinear().range([0, scrollableWidth]);
@@ -29,7 +29,6 @@
                             <strong>Item:</strong>
                             <span>${d.item.rad||d.item.kan||d.item.voc}</span><br>
                             <strong class="capitalize">Q: ${d.qtype}</strong><br>
-                            <span>${d.wasWrong?"Wrong Answer":"Correct Answer"}</span><br>
                             <strong>Time:</strong>
                             <span style='color:red'> ${d.time}s</span>
                         </span>`;
@@ -46,10 +45,25 @@
         xScale.domain([start, end]);
     }
 
-    function drawAxis()
+    function drawAxis(sessions)
     {
+        xAxis
+            .tickValues(sessions.map((d)=>d.start_index))
+            .tickFormat( function(d,i) {
+                var format;
+
+                if (new Date().toDateString() === new Date(sessions[i].date).toDateString())
+                    format = d3.utcFormat("%H:%M:%S");
+                else
+                    format = d3.utcFormat("%Y-%m-%d");
+
+                return format(sessions[i].date);
+            });
+
         svg.select('.xaxis').call(xAxis);
         svg.select('.yaxis').call(yAxis);
+
+        svg.select('.xaxis').attr(`text-anchor`, `start`);
     }
 
     function drawFill()
@@ -79,18 +93,32 @@
         // #####################################################################
         var data_bar = g.selectAll(".data-bar")
                         .data(data)
-                        .enter()
-                            .append("rect")
-                            .attr("class", (d) => `data-bar ${d.type}`);
+                        .enter().append(`g`)
+                            .attr(`class`, `bar-group`)
+                            .each( function(d,i) {
+                                d3.select(this).selectAll(`.data-bar`)
+                                    .data([d])
+                                    .enter().append("rect")
+                                        .attr("class", (d) => `bar answer-type ${d.type}`);
+                                d3.select(this).selectAll(`.data-bar`)
+                                    .data([d])
+                                    .enter().append("rect")
+                                        .attr("class", (d) => `bar answer-qtype ${d.qtype}`);
+                                d3.select(this).selectAll(`.data-hatch`)
+                                    .data([d])
+                                    .enter().append("rect")
+                                        .attr("class", (d) => `bar answer-hatch ${d.wasWrong?"wk_jikan_incorrect":"wk_jikan_correct"}`);
+                            });
 
-        data_bar.attr("x", (d,i) => xScale(i) - 0.5)
+        data_bar.selectAll(`.bar`)
+                .attr("x", (d) => xScale(d.index) - 0.5)
                 .attr("y", (d) => yScale(Math.min(maxTime, d.time)) - 0.5)
                 .attr("width", barWidth)
                 .attr("height", (d) => height - yScale(Math.min(maxTime, d.time)))
                 .on('mouseover', tip.show)
                 .on('mouseout', tip.hide);
 
-        data_bar.selectAll(".data-bar").exit().remove();
+        data_bar.selectAll(".bar").exit().remove();
 
         // this.svg.selectAll("rect").on("click", function(a) {
             // if (`rad` in a.item)
@@ -153,6 +181,26 @@
                     .attr('width', width)
                     .attr('height', height + margin.bottom + margin.top);
 
+        svg.append(`pattern`)
+                    .attr(`id`, `diagonalHatch`)
+                    .attr(`width`, 10)
+                    .attr(`height`, 10)
+                    .attr(`patternUnits`, `userSpaceOnUse`)
+                .append(`path`)
+                    .attr(`d`, `M-1,1 l2,-2 M0,10 l10,-10 M9,11 l2,-2`)
+                    .attr(`style`, `stroke: red; stroke-width: 1;`);
+
+        svg.append(`pattern`)
+                    .attr(`id`, `dotted`)
+                    .attr(`width`, 2)
+                    .attr(`height`, 2)
+                    .attr(`patternUnits`, `userSpaceOnUse`)
+                .append(`circle`)
+                    .attr(`cx`, 1)
+                    .attr(`cy`, 1)
+                    .attr(`r`, 0.5)
+                    .attr(`style`, `fill: white; fill-opacity: 0.5;`);
+
         svg
         .append('g')
             .attr('class', 'yaxis')
@@ -170,7 +218,7 @@
         scrollable
             .append('g')
                 .attr('class', 'xaxis')
-                .attr('transform', `translate(0,${height})`);
+                .attr('transform', `translate(${this.session_db.sessions.slice(-1)[0].start_index}, ${height})`);
 
         svg.call(tip);
 
@@ -190,8 +238,8 @@
     // #########################################################################
     WK_Jikan.prototype.drawSummaryChart = function()
     {
-        updateScales(0, 100);
-        drawAxis();
+        updateScales(0, 200);
+        drawAxis(this.session_db.sessions);
         drawFill();
         drawBars(this.session_db.answers);
     };
