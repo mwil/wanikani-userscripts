@@ -21,38 +21,19 @@
         var timeDiff = new Date() - this.date_start_time;
         var type = this.wki.getItemType(item);
 
-        var meas = {
-            "item": item,
-            "timeReading": [],
-            "timeMeaning": [],
-        };
+        var answer = new SessionAnswer(this.session_db[`answers`].length, item, type, qtype, wasWrong, timeDiff/1000);
 
-        var sess_meas = {
-            "index": this.session_measurements.length+1,
-            "item": item,
-            "type": type,
-            "qtype": qtype,
-            "wasWrong": wasWrong,
-            "time": timeDiff/1000
-        };
+        if (!(item.id in this.measurement_db[type]))
+            this.measurement_db[type][item.id] = new ItemMeasurements(item);
 
-        if (item.id in this.measurement_db[type])
-            meas = this.measurement_db[type][item.id];
-        else
-            this.measurement_db[type][item.id] = meas;
-
-        if (qtype === `reading`)
-            meas.timeReading.push(timeDiff);
-        else if (qtype === `meaning`)
-            meas.timeMeaning.push(timeDiff);
+        this.measurement_db[type][item.id].addTime(timeDiff, qtype);
 
         console.log(this.measurement_db);
-
         // TODO: only write on finish?
         GM_setValue(`measurement_db`, JSON.stringify(this.measurement_db));
 
-        this.session_measurements.push(sess_meas);
-        GM_setValue(`last_session_measurements`, JSON.stringify(this.session_measurements));
+        this.session_db[`answers`].push(answer);
+        GM_setValue(`session_db`, JSON.stringify(this.session_db));
         this.redrawWidgetChart();
 
         return false;
@@ -105,45 +86,36 @@
         return estimated_time;
     };
     // #########################################################################
-    // #########################################################################
-    // The estimate depends on:
-    // -- elements in the activaQueue (up to 10 items)
-    // -- elements in the reviewQueue (the rest)
-    // -- elements could be answered partially ({r,k,v}+id in jStorage)
-    WK_Jikan.prototype.getCompletionEstimate = function()
-    {
-        var activeQueue = $.jStorage.get(`activeQueue`);
-        var reviewQueue = $.jStorage.get(`reviewQueue`);
-
-        var estimated_time = 0;
-
-        [activeQueue, reviewQueue].forEach( function(queue) {
-            queue.forEach( function(item) {
-                if (`voc` in item)
-                {
-                    if (!$.jStorage.get(`v${item.id}`))
-                        estimated_time += 10000;
-
-                    estimated_time += 10000;
-                }
-                else if (`kan` in item)
-                {
-                    if (!$.jStorage.get(`k${item.id}`))
-                        estimated_time += 10000;
-
-                    estimated_time += 10000;
-                }
-                else if (`rad` in item)
-                {
-                    estimated_time += 10000;
-                }
-            }, this);
-        }, this);
-
-        return estimated_time;
-    };
-    // #########################################################################
-
 }
 )();
+// #############################################################################
+
+// #############################################################################
+function SessionAnswer(index, item, type, qtype, wasWrong, timeDiff)
+{
+    this.index = index;
+    this.item = item;
+    this.type = type;
+    this.qtype = qtype;
+    this.wasWrong = wasWrong;
+    this.time = timeDiff;
+}
+// #############################################################################
+
+// #############################################################################
+function ItemMeasurements(item)
+{
+    this.item = item;
+    this.timeReading = [];
+    this.timeMeaning = [];
+
+}
+
+ItemMeasurements.prototype.addTime = function(time, type)
+{
+    if (type === `reading`)
+        this.timeReading.push(time);
+    else if (type === `meaning`)
+        this.timeMeaning.push(time);
+};
 // #############################################################################

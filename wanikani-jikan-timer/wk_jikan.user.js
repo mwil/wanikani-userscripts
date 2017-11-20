@@ -41,10 +41,9 @@ function WK_Jikan()
     this.wki = new WKInteraction(GM_info.script.namespace);
 
     this.measurement_db = null;
+    this.session_db = null;
 
     this.chart = null;
-
-    this.session_measurements = [];
 
     this.date_reviews_start = null;
     this.date_start_time = null;
@@ -92,13 +91,15 @@ function WK_Jikan()
     {
         this.injectReviewHTML();
 
-        this.estimated_time = this.getCompletionEstimate();
+        this.estimated_time = this.getCompletionEstimateDB();
         this.date_reviews_start = new Date();
         this.date_start_time    = new Date();
 
-        var fmt_estimated_time  = new Date(this.estimated_time).toISOString().substr(11, 8);
-        GM_setValue(`reviews_fmt_first_estimate`, fmt_estimated_time);
-
+        this.session_db.sessions.push({
+            "start_index": this.session_db.answers.length,
+            "date": Date.now(),
+            "estimate": new Date(this.estimated_time).toISOString().substr(11, 8)
+        });
 
         this.initWidgetChart();
         this.updateWidget();
@@ -110,17 +111,10 @@ function WK_Jikan()
     // #########################################################################
     WK_Jikan.prototype.handleReviewsSummary = function()
     {
-        try {
-            this.session_measurements = JSON.parse(GM_getValue(`last_session_measurements`)) || null;
-        } catch(e) {
-            this.session_measurements = null;
-        }
-
-        console.log("JikanUser: the last session measurements were", this.session_measurements);
-
         this.injectReviewSummaryHTML();
 
-        if ($(`#jikan_last_session_chart`).length)
+        if ($(`#jikan_session_chart`).length)
+            this.createSummaryChart(`#jikan_session_chart`);
             this.drawSummaryChart();
     };
     // #########################################################################
@@ -143,6 +137,16 @@ function WK_Jikan()
             }
 
             console.log("The current measurement db is", this.measurement_db);
+
+            try {
+                this.session_db = JSON.parse(GM_getValue(`session_db`)) || {"sessions": [], "answers": []};
+            } catch(e) {
+                GM_log(`Error while parsing the session_db! String was`, GM_getValue(`session_db`));
+                this.session_db = {"sessions": [], "answers": []};
+            }
+
+            console.log("The current session db is", this.session_db);
+
             $(document).on(`${GM_info.script.namespace}_wk_page_ready`, this.readyCallback.bind(this));
             $(document).on(`${GM_info.script.namespace}_wk_new_review_item_ready`, this.newItemCallback.bind(this));
             $(document).on(`${GM_info.script.namespace}_wk_review_answered`, this.answeredCallback.bind(this));

@@ -125,9 +125,13 @@
 
         if (!$(`#jikan_settings_btn_clearDB`).hasClass(`active`))
         {
-            GM_log("WK_Jikan: Measurement database cleared!");
+            GM_log("WK_Jikan: Measurement+Session database cleared!");
+
             this.measurement_db = {"rad": {}, "kan": {}, "voc": {}};
+            this.session_db = {"sessions": [], "answers": []};
+
             GM_setValue(`measurement_db`, JSON.stringify(this.measurement_db));
+            GM_setValue(`session_db`, JSON.stringify(this.session_db));
 
             this.fillStats();
         }

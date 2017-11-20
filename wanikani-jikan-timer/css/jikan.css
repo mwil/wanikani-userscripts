@@ -4,6 +4,18 @@
     opacity: 0.5;
 }
 
+#jikan_chart
+{
+    background-color: lightgray;
+    opacity: 0.75;
+    padding: 4px 2px 0 2px;
+}
+
+#jikan_summary_txt
+{
+    overflow: auto;
+}
+
 #reviews-summary #jikan
 {
     background-color: #fff;
@@ -82,28 +94,28 @@
 	shape-rendering: crispEdges;
 }
 
-.wk_namespace .bar.rad {
+.wk_namespace .data-bar.rad {
     stroke: white;
     fill: #a0f;
 }
 
-.wk_namespace .bar.rad:hover {
+.wk_namespace .data-bar.rad:hover {
     fill: #c655ff;
 }
-.wk_namespace .bar.kan {
+.wk_namespace .data-bar.kan {
     stroke: white;
     fill: #0093dd;
 }
 
-.wk_namespace .bar.kan:hover {
+.wk_namespace .data-bar.kan:hover {
     fill: #00a1f1;
 }
-.wk_namespace .bar.voc {
+.wk_namespace .data-bar.voc {
     stroke: white;
     fill: #a0f;
 }
 
-.wk_namespace .bar.voc:hover {
+.wk_namespace .data-bar.voc:hover {
     fill: #c655ff;
 }
 
@@ -156,4 +168,8 @@
     position: relative;
     top: 10px;
     left: 0;
+}
+
+.fill {
+    fill: #F2F4F6;
 }

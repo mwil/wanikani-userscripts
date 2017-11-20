@@ -39,12 +39,12 @@
 
         var w = 6, h = 60;
         var nbars = 20;
-        var maxTime = Math.max(20, d3.quantile(this.getTimes(this.measurement_db), 0.99) || 0);
-        console.log("The q99 was", d3.quantile(this.getTimes(this.measurement_db), 0.99));
+        var maxTime = Math.max(20, d3.quantile(this.getTimes(this.measurement_db), 0.95) || 0);
+        console.log("The q95 was", d3.quantile(this.getTimes(this.measurement_db), 0.95));
 
         // #####################################################################
         this.chart = d3.select("#jikan_chart")
-                     .append("svg:svg")
+                     .append("svg")
                      .attr("class", "chart")
                      .attr("width", w * nbars + 3)
                      .attr("height", h);
@@ -60,22 +60,9 @@
                      .rangeRound([h, 0]);
         // #####################################################################
 
-        // #####################################################################
-        this.chart.selectAll("rect")
-                  .data(this.session_measurements)
-              .enter()
-                  .append("svg:rect")
-                  .attr("class", (d) => `bar ${d.type}`)
-                  .attr("transform", "translate(2,0)")
-                  .attr("x", (d, i) => xScale(i) - 0.5)
-                  .attr("y", (d) => yScale(Math.min(maxTime, d.time)) - 0.5)
-                  .attr("width", w)
-                  .attr("height", (d) => h - yScale(Math.min(maxTime, d.time)));
-        // #####################################################################
-
         // Underline all bars
         // #####################################################################
-        this.chart.append("svg:line")
+        this.chart.append("line")
                   .attr("transform", "translate(2,0)")
                   .attr("x1", 0)
                   .attr("x2", w * nbars)
@@ -88,18 +75,21 @@
         // #####################################################################
         WK_Jikan.prototype.redrawWidgetChart = function()
         {
+            // get the starting ID of the current session
+            var start_id = this.session_db.sessions.slice(-1)[0].start_index || 0;
+
             var rect = this.chart.selectAll("rect")
-                       .data(this.session_measurements.slice(-nbars),
+                       .data(this.session_db.answers.slice(start_id).slice(-nbars),
                              (d) => d.index)
-                       .attr("class", (d) => `bar ${d.type}`);
+                       .attr("class", (d) => `data-bar ${d.type}`);
 
             // only shift elements in from the right when all 20 bars are there
-            var xoffset = (this.session_measurements.length >= 20) ? 1 : 0;
+            var xoffset = (this.session_db.answers.slice(start_id).length >= 20) ? 1 : 0;
 
             rect
             .enter()
-                .insert("svg:rect", "line")
-                .attr("class", (d) => `bar ${d.type}`)
+                .insert("rect", "line")
+                .attr("class", (d) => `data-bar ${d.type}`)
                 .attr("transform", "translate(2,0)")
                 .attr("x", (d,i) => xScale(i+xoffset) - 0.5)
                 .attr("y", h)
@@ -125,6 +115,8 @@
         };
         // #####################################################################
         // #####################################################################
+
+        this.redrawWidgetChart();
     };
 }
 )();

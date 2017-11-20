@@ -47,7 +47,7 @@
 
         // TODO: how to handle this after the last review question?
         var fmt_elapsed_time   = GM_getValue(`reviews_fmt_elapsed_time`);
-        var fmt_estimated_time = GM_getValue(`reviews_fmt_first_estimate`) || `not stored yet`;
+        var fmt_estimated_time = this.session_db.sessions.slice(-1)[0].estimate || `not stored yet`;
 
         if (!fmt_elapsed_time)
             return;
@@ -78,14 +78,14 @@
 
         $(`#jikan`).append($header);
         $(`#jikan`).append(
-           `<div>
+           `<div id="jikan_summary_txt">
                 <p>Your last review session was finished in ${fmt_elapsed_time}.
-                The first time estimate for that session was ${fmt_estimated_time}.</p>
+                The initial time estimate for that session was ${fmt_estimated_time}.</p>
             </div>`
         );
 
-        if (this.session_measurements)
-            $(`#jikan`).append(`<div id="jikan_last_session_chart" class="svg-container"></div>`);
+        if (this.session_db.answers.length)
+            $(`#jikan`).append(`<div id="jikan_session_chart" class="svg-container"></div>`);
     };
     // #########################################################################
 }
