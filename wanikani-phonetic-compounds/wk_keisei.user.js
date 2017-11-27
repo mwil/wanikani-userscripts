@@ -130,6 +130,7 @@ function WK_Keisei()
 
         // #####################################################################
         $(`#keisei_head_visibility`).on(`click`, this.toggleMainFold.bind(this));
+        $(`.${GM_info.script.namespace} .item-badge`).on(`click`, this.toggleBadgeMarker.bind(this));
         // #####################################################################
 
         if (this.settings.minify)
@@ -283,7 +284,7 @@ function WK_Keisei()
         for (var i = 0; i < this.kdb.getPCompounds(subject.phon).length; i++)
         {
             var kanji = this.kdb.getPCompounds(subject.phon)[i];
-            var badge = [`item-badge`, `recently-unlocked-badge`];
+            var badges = [`item-badge`, `recently-unlocked-badge`];
 
             if (!kanji)
                 continue;
@@ -303,7 +304,7 @@ function WK_Keisei()
 
             if (this.kdb.getKReadings(kanji).length === common_readings.length)
             {
-                badge.push(`badge-perfect`);
+                badges.push(`badge-perfect`);
                 char_list_hi.unshift(li_template);
 
                 if (kanji === subject.kan)
@@ -311,7 +312,7 @@ function WK_Keisei()
             }
             else if (!common_readings.length)
             {
-                badge.push(`badge-low`);
+                badges.push(`badge-low`);
                 char_list_lo.push(li_template);
 
                 if (kanji === subject.kan)
@@ -321,7 +322,7 @@ function WK_Keisei()
             {
                 if (this.kdb.getPReadings(subject.phon).indexOf(this.kdb.getKReadings(kanji)[0]) !== -1)
                 {
-                    badge.push(`badge-high`);
+                    badges.push(`badge-high`);
                     char_list_hi.push(li_template);
 
                     if (kanji === subject.kan)
@@ -329,7 +330,7 @@ function WK_Keisei()
                 }
                 else
                 {
-                    badge.push(`badge-middle`);
+                    badges.push(`badge-middle`);
                     char_list_lo.unshift(li_template);
 
                     if (kanji === subject.kan)
@@ -337,11 +338,18 @@ function WK_Keisei()
                 }
             }
 
-            li_template.badge = badge.join(` `);
+            // mimic XOR to override already marked ones
+            // https://stackoverflow.com/a/4540443/2699475
+            if ((kanji in this.override_db && this.override_db[kanji].marked) !=
+                this.kdb.isPObscure(kanji))
+                badges.push(`badge-marked`);
+
+            li_template.badge = badges.join(` `);
         }
         // #####################################################################
 
         // #####################################################################
+        // Push green phonetic character
         char_list.push({
             "kanji": subject.phon,
             "readings": this.kdb.getKReadings(subject.phon),
@@ -349,6 +357,7 @@ function WK_Keisei()
             "kanji_id": `phonetic-1`
         });
 
+        // If available, push blue WK Radical
         if (this.kdb.checkRadical(subject.phon))
             char_list.push({
                 "kanji": subject.phon,
@@ -358,6 +367,7 @@ function WK_Keisei()
                 "kanji_id": `radical-1`
             });
 
+        // If phonetic is also kanji in WK, push it!
         if (this.kdb.checkKanji(subject.phon))
             char_list.push({
                 "kanji": subject.phon,
@@ -368,6 +378,7 @@ function WK_Keisei()
                 "kanji_id": `kanji-1`
             });
 
+        // Push sorted list of all phonetic compounds
         char_list = char_list.concat(char_list_hi);
         char_list = char_list.concat(char_list_lo);
 
@@ -459,6 +470,8 @@ function WK_Keisei()
         this.settings.minify = GM_getValue(`minify`) || false;
         this.settings.fullinfo = GM_getValue(`fullinfo`) || false;
 
+        this.override_db = JSON.parse(GM_getValue(`override_db`) || `{}`);
+
         this.log = this.settings.debug ?
             function(msg, ...args) {
                 GM_log(`${GM_info.script.namespace}:`, msg, ...args);
@@ -468,7 +481,8 @@ function WK_Keisei()
         this.kdb.init();
         this.wki.init();
 
-        this.log(`The script element is: `, GM_info);
+        this.log(`The script element is:`, GM_info);
+        this.log("The override db is", this.override_db);
 
         // #####################################################################
         // Main hook, WK Interaction will kick off this script once the page

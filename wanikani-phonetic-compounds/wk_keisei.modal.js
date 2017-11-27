@@ -30,11 +30,18 @@
                         <h3 class="modal-title">Settings &mdash; Keisei Phonetic-Semantic Composition</h3>
                     </div>
                     <div class="modal-body">
-                        <div class="btn-group-lg text-center">
-                            <a class="btn" id="keisei_settings_btn_debug"><i class="icon-gear"></i> Toggle Debug Mode</a>
-                            <a class="btn" id="keisei_settings_btn_minify"><i class="icon-eye-open"></i> Toggle Mini Mode</a>
-                            <a class="btn" id="keisei_settings_btn_fullinfo"><i class="icon-collapse"></i> Toggle Full Info Mode</a>
-                        </div>
+                        <p>
+                            <div class="btn-group-lg text-center">
+                                <a class="btn" id="keisei_settings_btn_debug"><i class="icon-gear"></i> Toggle Debug Mode</a>
+                                <a class="btn" id="keisei_settings_btn_clearDB"><i class="icon-signout"></i> Reset Markers</a>
+                            </div>
+                        </p>
+                        <p>
+                            <div class="btn-group-lg text-center">
+                                <a class="btn" id="keisei_settings_btn_minify"><i class="icon-eye-open"></i> Toggle Mini Mode</a>
+                                <a class="btn" id="keisei_settings_btn_fullinfo"><i class="icon-collapse"></i> Toggle Full Info Mode</a>
+                            </div>
+                        </p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -85,6 +92,7 @@
         $(`#keisei_settings_btn_debug`).on(`click`, this.toggleDebug.bind(this));
         $(`#keisei_settings_btn_minify`).on(`click`, this.toggleMinify.bind(this));
         $(`#keisei_settings_btn_fullinfo`).on(`click`, this.toggleFullInfo.bind(this));
+        $(`#keisei_settings_btn_clearDB`).on(`click`, this.toggleClearDB.bind(this));
     };
     // #########################################################################
 
@@ -136,6 +144,8 @@
 
         $(`#keisei_settings_btn_debug`).toggleClass(`active`);
         GM_setValue(`debug`, this.settings.debug);
+
+        return false;
     };
     // #########################################################################
 
@@ -152,6 +162,8 @@
             this.toggleMainFold();
 
         GM_setValue(`minify`, this.settings.minify);
+
+        return false;
     };
     // #########################################################################
 
@@ -168,6 +180,28 @@
             this.toggleMoreInfoFold();
 
         GM_setValue(`fullinfo`, this.settings.fullinfo);
+
+        return false;
+    };
+    // #########################################################################
+
+    // #########################################################################
+    WK_Keisei.prototype.toggleClearDB = function(event)
+    {
+        $(`#keisei_settings_btn_clearDB`).toggleClass(`active`);
+        $(`#keisei_settings_btn_clearDB i`).toggleClass(`icon-warning-sign`);
+        $(`#keisei_settings_btn_clearDB i`).toggleClass(`icon-signout`);
+
+        if (!$(`#keisei_settings_btn_clearDB`).hasClass(`active`))
+        {
+            GM_log("WK_Keisei: Override database cleared!");
+
+            this.override_db = {};
+
+            GM_setValue(`override_db`, JSON.stringify(this.override_db));
+        }
+
+        return false;
     };
     // #########################################################################
 })();

@@ -9,7 +9,7 @@
     // #########################################################################
     WK_Keisei.prototype.gen_item_chargrid = ({kanji, readings, meaning, notInWK=``, badge=``, href=`javascript:;`, kanji_id=``}) =>
        `<li id="${kanji_id}" class="${notInWK} character-item">
-            <span lang="ja" class="${badge}"></span>
+            <span lang="ja" class="${badge}" data-kanji="${kanji}"></span>
             <a class="keisei_kanji_link" href="${href}">
                 <span class="character" lang="ja">${kanji}</span>
                 <ul>
@@ -76,7 +76,7 @@
 
         $mini_fold.append($grid);
 
-        this.log(`Created the Keisei section, append!`);
+        this.log(`Created the Keisei section, appending to the page!`);
 
         if (!$(`#keisei_modal_settings`).length)
             this.injectModals();
@@ -114,6 +114,8 @@
         // if (!$(`#keisei_main_fold`).is(`:visible`) &&
             // !$(`#keisei_head_moreinfo i`).hasClass(`icon-collapse`))
             // this.toggleMoreInfoFold();
+
+        return false;
     };
     // #########################################################################
 
@@ -129,6 +131,28 @@
         // if ((!$(`#keisei_main_fold`).is(`:visible`) &&
             // !$(`#keisei_head_moreinfo i`).hasClass(`icon-collapse`)))
             // this.toggleMainFold();
+        //
+        return false;
+    };
+    // #########################################################################
+
+    // #########################################################################
+    WK_Keisei.prototype.toggleBadgeMarker = function(event)
+    {
+        var kanji = event.currentTarget.dataset.kanji;
+
+        if (!kanji)
+            return;
+
+        if (kanji in this.override_db)
+            this.override_db[kanji].marked = !this.override_db[kanji].marked;
+        else
+            this.override_db[kanji] = {"marked": true};
+
+        $(event.currentTarget).toggleClass(`badge-marked`);
+        GM_setValue(`override_db`, JSON.stringify(this.override_db));
+
+        return false;
     };
     // #########################################################################
 }

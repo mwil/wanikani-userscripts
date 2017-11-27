@@ -463,7 +463,8 @@
     "広": {
         "readings": ["こう"],
         "phonetic": "黄",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "母": {
         "readings": ["ぼ", "も", "ぼう"],
@@ -517,7 +518,8 @@
     "当": {
         "readings": ["とう"],
         "phonetic": "尚",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "毎": {
         "readings": ["まい"],
@@ -731,7 +733,8 @@
     "春": {
         "readings": ["しゅん"],
         "phonetic": "屯",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "星": {
         "readings": ["せい", "しょう"],
@@ -815,7 +818,8 @@
     "書": {
         "readings": ["しょ"],
         "phonetic": "者",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "記": {
         "readings": ["き"],
@@ -1410,7 +1414,8 @@
     "急": {
         "readings": ["きゅう"],
         "phonetic": "及",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "指": {
         "readings": ["し"],
@@ -1592,7 +1597,8 @@
     "院": {
         "readings": ["いん"],
         "phonetic": "奐",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "悪": {
         "readings": ["あく", "お"],
@@ -1658,7 +1664,8 @@
     "転": {
         "readings": ["てん"],
         "phonetic": "専",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "進": {
         "readings": ["しん"],
@@ -2127,7 +2134,8 @@
     "囲": {
         "readings": ["い"],
         "phonetic": "韋",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "完": {
         "readings": ["かん"],
@@ -2290,7 +2298,8 @@
     "省": {
         "readings": ["せい", "しょう"],
         "phonetic": "生",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "変": {
         "readings": ["へん"],
@@ -2671,7 +2680,8 @@
     "塩": {
         "readings": ["えん", "あん"],
         "phonetic": "監",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "戦": {
         "readings": ["せん"],
@@ -2868,7 +2878,8 @@
     "仏": {
         "readings": ["ぶつ", "ふつ"],
         "phonetic": "弗",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "支": {
         "readings": ["し"],
@@ -2931,7 +2942,8 @@
     "仮": {
         "readings": ["か"],
         "phonetic": "叚",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "件": {
         "readings": ["けん"],
@@ -2949,12 +2961,14 @@
     "団": {
         "readings": ["だん", "とん", "たん"],
         "phonetic": "専",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "在": {
         "readings": ["ざい"],
         "phonetic": "才",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "舌": {
         "readings": ["ぜつ", "せつ"],
@@ -2982,18 +2996,21 @@
     "志": {
         "readings": ["し"],
         "phonetic": "之",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "条": {
         "readings": ["じょう"],
         "phonetic": "攸",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "災": {
         "readings": ["さい"],
         "phonetic": "𢦏",
         "type": "comp_phonetic",
-        "comment": "simplified version of 烖"
+        "comment": "simplified version of 烖",
+        "obscure": true
     },
     "応": {
         "readings": ["おう"],
@@ -3037,7 +3054,8 @@
     "価": {
         "readings": ["か"],
         "phonetic": "賈",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "舎": {
         "readings": ["しゃ"],
@@ -3068,7 +3086,8 @@
     "往": {
         "readings": ["おう"],
         "phonetic": "王",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "性": {
         "readings": ["せい", "しょう"],
@@ -3141,7 +3160,8 @@
     "独": {
         "readings": ["どく", "とく"],
         "phonetic": "蜀",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "祖": {
         "readings": ["そ"],
@@ -3362,7 +3382,8 @@
     "責": {
         "readings": ["せき", "しゃく"],
         "phonetic": "朿",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "険": {
         "readings": ["けん"],
@@ -4012,7 +4033,8 @@
     "段": {
         "readings": ["だん", "たん"],
         "phonetic": "耑",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "洗": {
         "readings": ["せん"],
@@ -4203,7 +4225,8 @@
     "視": {
         "readings": ["し"],
         "phonetic": "示",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "窓": {
         "readings": ["そう"],
@@ -4778,7 +4801,8 @@
     "払": {
         "readings": ["ふつ"],
         "phonetic": "弗",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "汁": {
         "readings": ["じゅう"],
@@ -4921,7 +4945,8 @@
     "汚": {
         "readings": ["お"],
         "phonetic": "于",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "汗": {
         "readings": ["かん"],
@@ -5243,7 +5268,8 @@
     "奉": {
         "readings": ["ほう", "ぶ"],
         "phonetic": "丰",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "享": {
         "readings": ["きゅう"],
@@ -5390,7 +5416,8 @@
     "拠": {
         "readings": ["きょ", "こ"],
         "phonetic": "豦",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "拘": {
         "readings": ["こう"],
@@ -5521,7 +5548,8 @@
     "炊": {
         "readings": ["すい"],
         "phonetic": "吹",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "炉": {
         "readings": ["ろ"],
@@ -6247,7 +6275,8 @@
     "浜": {
         "readings": ["ひん"],
         "phonetic": "賓",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "浮": {
         "readings": ["ふ", "ふう", "ぶ"],
@@ -6613,7 +6642,8 @@
     "惨": {
         "readings": ["さん", "ざん"],
         "phonetic": "参",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "惜": {
         "readings": ["せき", "しゃく"],
@@ -6763,7 +6793,8 @@
     "累": {
         "readings": ["るい"],
         "phonetic": "畾",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "盗": {
         "readings": ["とう"],
@@ -7742,7 +7773,8 @@
     "触": {
         "readings": ["しょく", "そく"],
         "phonetic": "蜀",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "該": {
         "readings": ["がい", "かい"],
@@ -7781,7 +7813,8 @@
     "跡": {
         "readings": ["せき", "しゃく"],
         "phonetic": "責",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "践": {
         "readings": ["せん"],
@@ -7841,7 +7874,8 @@
     "雷": {
         "readings": ["らい"],
         "phonetic": "畾",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "零": {
         "readings": ["れい"],
@@ -8349,7 +8383,8 @@
     "勲": {
         "readings": ["くん"],
         "phonetic": "熏",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "薫": {
         "readings": ["くん"],
@@ -9041,7 +9076,9 @@
     },
     "頼": {
         "readings": ["らい"],
-        "type": "unknown"
+        "phonetic": "剌",
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "欄": {
         "readings": ["らん"],
@@ -9158,7 +9195,8 @@
     "弥": {
         "readings": ["び", "み"],
         "phonetic": "爾",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "那": {
         "readings": ["な", "だ"],
@@ -10047,7 +10085,8 @@
         "readings": ["らつ"],
         "meaning": ["pungent"],
         "phonetic": "剌",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "摯": {
         "readings": ["し"],

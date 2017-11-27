@@ -1,27 +1,26 @@
 
 .wk_namespace .badge-perfect:before {
-    content: "天"; background-color: #092;
+    content: "天";
+    background-color: #092;
 }
+
 .wk_namespace .badge-high:before {
-    content: "上"; background-color: #092;
+    content: "上";
+    background-color: #092;
 }
+
 .wk_namespace .badge-middle:before {
-    content: "中"; background-color: #f04;
+    content: "中";
+    background-color: #f04;
 }
+
 .wk_namespace .badge-low:before {
-    content: "下"; background-color: #f04;
+    content: "下";
+    background-color: #f04;
 }
-.wk_namespace .badge-current:before {
-    background-color: #0695df !important;
-}
-.wk_namespace #keisei-more-button {
-    cursor: pointer;
-    margin-top: 20px;
-    padding: 10px;
-    text-align: center;
-}
-.wk_namespace #keisei-more-info {
-    display: none;
+
+.wk_namespace .badge-marked:before {
+    background-color: #fb1 !important;
 }
 
 /* #f0a -> 0c4, #dd0093 -> 092 */

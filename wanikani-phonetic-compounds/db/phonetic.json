@@ -87,7 +87,7 @@
     "赤": {
         "readings": ["せき", "しゃく"],
         "compounds": ["赦"],
-        "non_compounds": [],
+        "non_compounds": ["跡"],
         "xrefs": [],
         "wk-radical": "red"
     },
@@ -483,13 +483,6 @@
         "xrefs": [],
         "wk-radical": "origin"
     },
-    "完": {
-        "readings": ["かん"],
-        "compounds": ["院"],
-        "non_compounds": [],
-        "xrefs": [],
-        "wk-radical": null
-    },
     "今": {
         "readings": ["こん", "きん"],
         "compounds": ["含", "吟", "念"],
@@ -535,7 +528,7 @@
     "少": {
         "readings": ["しょう"],
         "compounds": ["秒", "妙", "砂", "抄"],
-        "non_compounds": ["沙"],
+        "non_compounds": ["沙", "省"],
         "xrefs": [],
         "wk-radical": "few"
     },
@@ -776,7 +769,7 @@
     "示": {
         "readings": ["じ", "し"],
         "compounds": ["視"],
-        "non_compounds": [],
+        "non_compounds": ["宗"],
         "xrefs": [],
         "wk-radical": "jackhammer"
     },

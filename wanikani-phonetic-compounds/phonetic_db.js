@@ -57,19 +57,19 @@ function KeiseiDB()
         // #####################################################################
         checkKanji: function(kanji)
         {
-            return this.kanji_db && (kanji in this.kanji_db);
+            return Boolean(this.kanji_db && (kanji in this.kanji_db));
         },
         // #####################################################################
         // #####################################################################
         checkPhonetic: function(phon)
         {
-            return this.phonetic_db && (phon in this.phonetic_db);
+            return Boolean(this.phonetic_db && (phon in this.phonetic_db));
         },
         // #####################################################################
         // #####################################################################
         checkRadical: function(phon)
         {
-            return this.phonetic_db && this.phonetic_db[phon][`wk-radical`];
+            return Boolean(this.phonetic_db && this.phonetic_db[phon][`wk-radical`]);
         },
         // #####################################################################
         // #####################################################################
@@ -181,7 +181,16 @@ function KeiseiDB()
         // #####################################################################
         isKanjiInWK: function(kanji)
         {
-            return this.wk_kanji_db && (kanji in this.wk_kanji_db);
+            return Boolean(this.wk_kanji_db && (kanji in this.wk_kanji_db));
+        },
+        // #####################################################################
+
+        // Check if a kanji is considered obscure in regard to its phonetic,
+        // ie, the kanji doesn't look like it has the phonetic at all.
+        // #####################################################################
+        isPObscure: function(kanji)
+        {
+            return Boolean(this.kanji_db && (`obscure` in this.kanji_db[kanji]));
         },
         // #####################################################################
 

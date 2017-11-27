@@ -22,6 +22,8 @@
 //
 // A review question was answered and not ignored.
 //
+// wk_review_session_finshed
+//
 
 // #############################################################################
 function WKInteraction(namespace)
@@ -143,6 +145,8 @@ function WKInteraction(namespace)
 
             if (this.lastQuestionAnswered)
                 $(document).trigger(`${this.namespace}_wk_review_answered`, [wasWrongAnswer, this.lastQType, this.lastItem]);
+
+            $(document).trigger(`${this.namespace}_wk_review_session_finshed`);
         },
         // #####################################################################
 
@@ -269,6 +273,8 @@ function WKInteraction(namespace)
                     {
                         if (!$(`#character > i`).length)
                             result.rad = kanjiNode.text().trim();
+                        else
+                            result.rad = $(`#character > i`).attr(`class`).slice(8);
                     }
                     else if ($(`#main-info`).hasClass(`kanji`))
                         result.kan = kanjiNode.text().trim();
