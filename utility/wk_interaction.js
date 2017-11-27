@@ -22,7 +22,7 @@
 //
 // A review question was answered and not ignored.
 //
-// wk_review_session_finshed
+// wk_review_session_finished
 //
 
 // #############################################################################
@@ -146,7 +146,7 @@ function WKInteraction(namespace)
             if (this.lastQuestionAnswered)
                 $(document).trigger(`${this.namespace}_wk_review_answered`, [wasWrongAnswer, this.lastQType, this.lastItem]);
 
-            $(document).trigger(`${this.namespace}_wk_review_session_finshed`);
+            $(document).trigger(`${this.namespace}_wk_review_session_finished`);
         },
         // #####################################################################
 
