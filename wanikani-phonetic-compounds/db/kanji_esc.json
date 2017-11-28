@@ -1516,7 +1516,7 @@
         "type": "comp_phonetic"
     },
     "\u523b": {
-        "phonetic": "\u8700",
+        "phonetic": "\u4ea5",
         "readings": [
             "\u3053\u304f"
         ],
@@ -8694,11 +8694,11 @@
         "type": "comp_phonetic"
     },
     "\u6f54": {
-        "comment": "obscure tone mark \u7d5c",
+        "phonetic": "\u7d5c",
         "readings": [
             "\u3051\u3064"
         ],
-        "type": "unknown"
+        "type": "comp_phonetic"
     },
     "\u6f5c": {
         "readings": [
@@ -8963,12 +8963,12 @@
         "type": "comp_phonetic"
     },
     "\u71c3": {
-        "comment": "TODO: phonetic \u7136",
+        "phonetic": "\u7136",
         "readings": [
             "\u306d\u3093",
             "\u305c\u3093"
         ],
-        "type": "unknown"
+        "type": "comp_phonetic"
     },
     "\u71e5": {
         "phonetic": "\u55bf",
@@ -12310,11 +12310,11 @@
         "type": "unknown"
     },
     "\u84b8": {
-        "comment": "obscure tone mark \u70dd",
+        "phonetic": "\u70dd",
         "readings": [
             "\u3058\u3087\u3046"
         ],
-        "type": "unknown"
+        "type": "comp_phonetic"
     },
     "\u84bc": {
         "phonetic": "\u5009",
@@ -15195,11 +15195,11 @@
         "type": "unknown"
     },
     "\u9694": {
-        "comment": "obscure tone mark \u9b32",
+        "phonetic": "\u9b32",
         "readings": [
             "\u304b\u304f"
         ],
-        "type": "unknown"
+        "type": "comp_phonetic"
     },
     "\u9699": {
         "comment": "obscure phonetic, no show",

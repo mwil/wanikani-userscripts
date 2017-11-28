@@ -59,7 +59,7 @@
         "readings": ["ちょう", "てい", "とう"],
         "compounds": ["庁", "灯", "町", "亭", "頂", "訂", "打"],
         "non_compounds": ["貯"],
-        "xrefs": [],
+        "xrefs": ["亭"],
         "wk-radical": "nail",
         "comment": "phonetic xref 宁?"
     },
@@ -229,7 +229,7 @@
         "compounds": ["控"],
         "non_compounds": [],
         "xrefs": ["工"],
-        "wk-radical": null
+        "wk-radical": "sky"
     },
     "及": {
         "readings": ["きゅう"],
@@ -1592,7 +1592,7 @@
         "compounds": ["濁", "独", "属", "触"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": null
+        "wk-radical": "mantis"
     },
     "亥": {
         "readings": ["がい", "かい"],
@@ -1761,7 +1761,7 @@
         "compounds": ["償"],
         "non_compounds": [],
         "xrefs": ["向", "尚"],
-        "wk-radical": null
+        "wk-radical": "prize"
     },
     "度": {
         "readings": ["ど", "と", "たく"],
@@ -2562,7 +2562,7 @@
         "compounds": ["満"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": null
+        "wk-radical": "both"
     },
     "爿": {
         "readings": ["しょう"],
@@ -3004,7 +3004,7 @@
         "readings": ["てい"],
         "compounds": ["停"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["丁"],
         "wk-radical": "nailgun"
     },
     "刑": {
@@ -3040,7 +3040,7 @@
         "compounds": ["梅", "悔"],
         "non_compounds": ["侮"],
         "xrefs": [],
-        "wk-radical": null
+        "wk-radical": "every"
     },
     "毛": {
         "readings": ["もう", "ぼう"],
@@ -3180,7 +3180,7 @@
         "compounds": ["勘", "堪"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": null
+        "wk-radical": "crab-trap"
     },
     "某": {
         "readings": ["ぼう"],
@@ -3523,7 +3523,7 @@
         "compounds": ["哀", "依"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": null
+        "wk-radical": "clothes"
     },
     "夋": {
         "readings": ["しゅん", "さん"],
@@ -3768,7 +3768,7 @@
         "compounds": ["爆"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": null
+        "wk-radical": "violence"
     },
     "敏": {
         "readings": ["びん"],
@@ -3839,6 +3839,34 @@
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
+    },
+    "鬲": {
+        "readings": ["かく", "れき"],
+        "compounds": ["隔"],
+        "non_compounds": ["融"],
+        "xrefs": [],
+        "wk-radical": "chester"
+    },
+    "烝": {
+        "readings": ["じょう"],
+        "compounds": ["蒸"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": "shark"
+    },
+    "然": {
+        "readings": ["ぜん", "ねん"],
+        "compounds": ["燃"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": "nature"
+    },
+    "絜": {
+        "readings": ["けつ"],
+        "compounds": ["潔"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": "hercules"
     },
 
 

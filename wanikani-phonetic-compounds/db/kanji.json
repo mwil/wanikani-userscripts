@@ -3679,8 +3679,8 @@
     },
     "潔": {
         "readings": ["けつ"],
-        "type": "unknown",
-        "comment": "obscure tone mark 絜"
+        "phonetic": "絜",
+        "type": "comp_phonetic"
     },
     "確": {
         "readings": ["かく"],
@@ -3711,8 +3711,8 @@
     },
     "燃": {
         "readings": ["ねん", "ぜん"],
-        "type": "unknown",
-        "comment": "TODO: phonetic 然"
+        "phonetic": "然",
+        "type": "comp_phonetic"
     },
     "築": {
         "readings": ["ちく"],
@@ -3920,7 +3920,7 @@
     },
     "刻": {
         "readings": ["こく"],
-        "phonetic": "蜀",
+        "phonetic": "亥",
         "type": "comp_phonetic"
     },
     "呼": {
@@ -4415,8 +4415,8 @@
     },
     "蒸": {
         "readings": ["じょう"],
-        "type": "unknown",
-        "comment": "obscure tone mark 烝"
+        "phonetic": "烝",
+        "type": "comp_phonetic"
     },
     "幕": {
         "readings": ["まく", "ばく"],
@@ -7868,8 +7868,8 @@
     },
     "隔": {
         "readings": ["かく"],
-        "type": "unknown",
-        "comment": "obscure tone mark 鬲"
+        "phonetic": "鬲",
+        "type": "comp_phonetic"
     },
     "雷": {
         "readings": ["らい"],

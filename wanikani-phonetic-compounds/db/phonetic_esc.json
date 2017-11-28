@@ -70,7 +70,7 @@
             "\u307e\u3093",
             "\u3070\u3093"
         ],
-        "wk-radical": null,
+        "wk-radical": "both",
         "xrefs": []
     },
     "\u3563": {
@@ -139,7 +139,9 @@
             "\u3068\u3046"
         ],
         "wk-radical": "nail",
-        "xrefs": []
+        "xrefs": [
+            "\u4ead"
+        ]
     },
     "\u4e02": {
         "compounds": [
@@ -525,7 +527,9 @@
             "\u3066\u3044"
         ],
         "wk-radical": "nailgun",
-        "xrefs": []
+        "xrefs": [
+            "\u4e01"
+        ]
     },
     "\u4eb2": {
         "compounds": [
@@ -4396,7 +4400,7 @@
             "\u307c\u3046",
             "\u3070\u304f"
         ],
-        "wk-radical": null,
+        "wk-radical": "violence",
         "xrefs": []
     },
     "\u66f4": {
@@ -4838,7 +4842,7 @@
         "readings": [
             "\u307e\u3044"
         ],
-        "wk-radical": null,
+        "wk-radical": "every",
         "xrefs": []
     },
     "\u6bd4": {
@@ -5016,6 +5020,17 @@
         "wk-radical": "sake",
         "xrefs": []
     },
+    "\u70dd": {
+        "compounds": [
+            "\u84b8"
+        ],
+        "non_compounds": [],
+        "readings": [
+            "\u3058\u3087\u3046"
+        ],
+        "wk-radical": "shark",
+        "xrefs": []
+    },
     "\u7121": {
         "compounds": [
             "\u821e"
@@ -5040,6 +5055,18 @@
         "xrefs": [
             "\u96b9"
         ]
+    },
+    "\u7136": {
+        "compounds": [
+            "\u71c3"
+        ],
+        "non_compounds": [],
+        "readings": [
+            "\u305c\u3093",
+            "\u306d\u3093"
+        ],
+        "wk-radical": "nature",
+        "xrefs": []
     },
     "\u718f": {
         "compounds": [
@@ -5197,7 +5224,7 @@
             "\u3058\u3093",
             "\u304b\u3093"
         ],
-        "wk-radical": null,
+        "wk-radical": "crab-trap",
         "xrefs": []
     },
     "\u751f": {
@@ -5718,7 +5745,7 @@
         "readings": [
             "\u304f\u3046"
         ],
-        "wk-radical": null,
+        "wk-radical": "sky",
         "xrefs": [
             "\u5de5"
         ]
@@ -5824,6 +5851,17 @@
             "\u3051\u3044"
         ],
         "wk-radical": "lineage",
+        "xrefs": []
+    },
+    "\u7d5c": {
+        "compounds": [
+            "\u6f54"
+        ],
+        "non_compounds": [],
+        "readings": [
+            "\u3051\u3064"
+        ],
+        "wk-radical": "hercules",
         "xrefs": []
     },
     "\u7f54": {
@@ -6417,7 +6455,7 @@
             "\u305e\u304f",
             "\u3057\u3087\u304f"
         ],
-        "wk-radical": null,
+        "wk-radical": "mantis",
         "xrefs": []
     },
     "\u884c": {
@@ -6444,7 +6482,7 @@
             "\u3044",
             "\u3048"
         ],
-        "wk-radical": null,
+        "wk-radical": "clothes",
         "xrefs": []
     },
     "\u8868": {
@@ -6717,7 +6755,7 @@
         "readings": [
             "\u3057\u3087\u3046"
         ],
-        "wk-radical": null,
+        "wk-radical": "prize",
         "xrefs": [
             "\u5411",
             "\u5c1a"
@@ -7330,6 +7368,20 @@
             "\u3053\u3046"
         ],
         "wk-radical": "tall",
+        "xrefs": []
+    },
+    "\u9b32": {
+        "compounds": [
+            "\u9694"
+        ],
+        "non_compounds": [
+            "\u878d"
+        ],
+        "readings": [
+            "\u304b\u304f",
+            "\u308c\u304d"
+        ],
+        "wk-radical": "chester",
         "xrefs": []
     },
     "\u9b3c": {
