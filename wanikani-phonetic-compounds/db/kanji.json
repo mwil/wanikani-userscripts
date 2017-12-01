@@ -748,7 +748,7 @@
     "活": {
         "readings": ["かつ"],
         "type": "unknown",
-        "comment": "TODO phonetic of an obscure component"
+        "comment": "phonetic of an obscure component"
     },
     "思": {
         "readings": ["し"],
@@ -762,7 +762,7 @@
     "秋": {
         "readings": ["しゅう"],
         "type": "unknown",
-        "comment": "TODO phonetic of an obscure component"
+        "comment": "phonetic of an obscure component"
     },
     "茶": {
         "readings": ["ちゃ", "さ"],
@@ -976,7 +976,7 @@
     "鳴": {
         "readings": ["めい", "みょう"],
         "type": "comp_indicative",
-        "comment": "TODO NOT phonetic 鳥"
+        "comment": "NOT phonetic 鳥"
     },
     "歌": {
         "readings": ["か"],
@@ -1576,8 +1576,8 @@
     },
     "荷": {
         "readings": ["か"],
-        "type": "unknown",
-        "comment": "TODO: phonetic mark 何"
+        "phonetic": "何",
+        "type": "comp_phonetic"
     },
     "起": {
         "readings": ["き"],
@@ -2272,10 +2272,10 @@
         "readings": ["ぼく", "もく"],
         "type": "comp_indicative"
     },
-        "的": {
+    "的": {
         "readings": ["てき"],
-        "type": "unknown",
-            "comment": "TODO: phonetic 的?"
+        "phonetic": "勺",
+        "type": "comp_phonetic"
     },
     "季": {
         "readings": ["き"],
@@ -6798,6 +6798,7 @@
     },
     "盗": {
         "readings": ["とう"],
+        "decomposition": ["皿", "㳄"],
         "type": "comp_indicative"
     },
     "眺": {
@@ -10476,8 +10477,8 @@
     },
     "梓": {
         "readings": ["し"],
-        "type": "unknown",
-        "comment": "tone mark 宰"
+        "phonetic": "宰",
+        "type": "comp_phonetic"
     },
     "睦": {
         "readings": ["ぼく", "もく"],

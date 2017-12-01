@@ -7,7 +7,6 @@
         "xrefs": []
     },
     "\u342c": {
-        "comment": "TODO: no list, search!",
         "compounds": [
             "\u786b",
             "\u6d41"
@@ -89,7 +88,6 @@
         ]
     },
     "\u3ac3": {
-        "comment": "no list, search, limited info!",
         "compounds": [
             "\u65c5"
         ],
@@ -651,6 +649,19 @@
         "wk-radical": "meet",
         "xrefs": []
     },
+    "\u4f55": {
+        "compounds": [
+            "\u8377"
+        ],
+        "non_compounds": [],
+        "readings": [
+            "\u304b"
+        ],
+        "wk-radical": null,
+        "xrefs": [
+            "\u53ef"
+        ]
+    },
     "\u4f59": {
         "compounds": [
             "\u5f90",
@@ -715,7 +726,6 @@
         "xrefs": []
     },
     "\u50c9": {
-        "comment": "TODO: no list, search!",
         "compounds": [
             "\u5039",
             "\u967a",
@@ -895,7 +905,6 @@
         "xrefs": []
     },
     "\u5173": {
-        "comment": "TODO: incomplete, search!",
         "compounds": [
             "\u9001",
             "\u54b2",
@@ -1254,11 +1263,13 @@
         "compounds": [
             "\u7d04",
             "\u914c",
-            "\u91e3"
+            "\u91e3",
+            "\u7684"
         ],
         "non_compounds": [],
         "readings": [
-            "\u3057\u3083\u304f"
+            "\u3057\u3083\u304f",
+            "\u3066\u304d"
         ],
         "wk-radical": "pool",
         "xrefs": []
@@ -1659,7 +1670,6 @@
         "xrefs": []
     },
     "\u53d7": {
-        "comment": "TODO: incomplete, search!",
         "compounds": [
             "\u6388"
         ],
@@ -1761,7 +1771,9 @@
             "\u3053\u304f"
         ],
         "wk-radical": "lip-ring",
-        "xrefs": []
+        "xrefs": [
+            "\u4f55"
+        ]
     },
     "\u53f0": {
         "compounds": [
@@ -2041,7 +2053,6 @@
         "xrefs": []
     },
     "\u54b8": {
-        "comment": "TODO: no list, search!",
         "compounds": [
             "\u6e1b",
             "\u611f"
@@ -2410,7 +2421,6 @@
         "xrefs": []
     },
     "\u590d": {
-        "comment": "TODO: no list, search!",
         "compounds": [
             "\u5fa9",
             "\u8179",
@@ -2454,7 +2464,6 @@
         "xrefs": []
     },
     "\u591c": {
-        "comment": "TODO: no list, search!",
         "compounds": [
             "\u6db2"
         ],
@@ -2839,6 +2848,17 @@
             "\u6b63"
         ]
     },
+    "\u5bb0": {
+        "compounds": [
+            "\u6893"
+        ],
+        "non_compounds": [],
+        "readings": [
+            "\u3055\u3044"
+        ],
+        "wk-radical": null,
+        "xrefs": []
+    },
     "\u5bb3": {
         "compounds": [
             "\u8f44",
@@ -3219,7 +3239,6 @@
         "xrefs": []
     },
     "\u5ca1": {
-        "comment": "TODO: incomplete list, search!",
         "compounds": [
             "\u7db1",
             "\u92fc",
@@ -3932,7 +3951,6 @@
         "xrefs": []
     },
     "\u6220": {
-        "comment": "TODO: no list, search!",
         "compounds": [
             "\u8077",
             "\u8b58",
@@ -4018,7 +4036,7 @@
         "xrefs": []
     },
     "\u6538": {
-        "comment": "TODO: Maybe compounds also lost readings during simplifications.",
+        "comment": "Maybe compounds also lost readings during simplifications.",
         "compounds": [
             "\u4fee",
             "\u60a0",
@@ -4316,7 +4334,6 @@
         "xrefs": []
     },
     "\u661c": {
-        "comment": "TODO: incomplete info, search!",
         "compounds": [
             "\u5834",
             "\u967d",
@@ -4404,7 +4421,6 @@
         "xrefs": []
     },
     "\u66f4": {
-        "comment": "TODO: no list, search!",
         "compounds": [
             "\u6897",
             "\u786c"
@@ -4462,7 +4478,6 @@
         "xrefs": []
     },
     "\u66fd": {
-        "comment": "TODO: no list, search!",
         "compounds": [
             "\u8d08",
             "\u50e7",
@@ -4984,7 +4999,6 @@
         ]
     },
     "\u6ed5": {
-        "comment": "TODO: no list, search!",
         "compounds": [
             "\u85e4"
         ],
@@ -5081,7 +5095,6 @@
         "xrefs": []
     },
     "\u7192": {
-        "comment": "TODO no list, search",
         "compounds": [
             "\u52b4",
             "\u6804",
@@ -5340,7 +5353,6 @@
         "xrefs": []
     },
     "\u7550": {
-        "comment": "TODO incomplete, search!",
         "compounds": [
             "\u5bcc",
             "\u798f",
@@ -5846,7 +5858,9 @@
         "compounds": [
             "\u4fc2"
         ],
-        "non_compounds": [],
+        "non_compounds": [
+            "\u5b6b"
+        ],
         "readings": [
             "\u3051\u3044"
         ],
@@ -5923,7 +5937,6 @@
         ]
     },
     "\u7f8d": {
-        "comment": "TODO: incomplete list, search!",
         "compounds": [
             "\u9054"
         ],
@@ -6497,7 +6510,6 @@
         "xrefs": []
     },
     "\u8881": {
-        "comment": "TODO: missing compound info, search!",
         "compounds": [
             "\u9060",
             "\u5712",
@@ -6541,7 +6553,6 @@
         ]
     },
     "\u8981": {
-        "comment": "TODO: no list, search!",
         "compounds": [
             "\u8170"
         ],
@@ -6674,7 +6685,6 @@
         "xrefs": []
     },
     "\u8cac": {
-        "comment": "TODO: no list, search",
         "compounds": [
             "\u7a4d",
             "\u50b5",
@@ -6705,7 +6715,6 @@
         "xrefs": []
     },
     "\u8cc1": {
-        "comment": "TODO no info, search!",
         "compounds": [
             "\u61a4",
             "\u5674",
@@ -6721,7 +6730,6 @@
         "xrefs": []
     },
     "\u8cc8": {
-        "comment": "TODO: incomplete list, search!",
         "compounds": [
             "\u4fa1"
         ],
@@ -6736,7 +6744,6 @@
         "xrefs": []
     },
     "\u8cd3": {
-        "comment": "TODO info missing, search!",
         "compounds": [
             "\u6d5c"
         ],
@@ -7184,7 +7191,6 @@
         ]
     },
     "\u96da": {
-        "comment": "TODO: no list, search!",
         "compounds": [
             "\u6b53",
             "\u89b3",

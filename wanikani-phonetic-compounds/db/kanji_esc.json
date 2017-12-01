@@ -7432,11 +7432,11 @@
         "type": "comp_phonetic"
     },
     "\u6893": {
-        "comment": "tone mark \u5bb0",
+        "phonetic": "\u5bb0",
         "readings": [
             "\u3057"
         ],
-        "type": "unknown"
+        "type": "comp_phonetic"
     },
     "\u6897": {
         "meaning": [
@@ -8221,7 +8221,7 @@
         "type": "comp_phonetic"
     },
     "\u6d3b": {
-        "comment": "TODO phonetic of an obscure component",
+        "comment": "phonetic of an obscure component",
         "readings": [
             "\u304b\u3064"
         ],
@@ -9708,11 +9708,11 @@
         "type": "comp_indicative"
     },
     "\u7684": {
-        "comment": "TODO: phonetic \u7684?",
+        "phonetic": "\u52fa",
         "readings": [
             "\u3066\u304d"
         ],
-        "type": "unknown"
+        "type": "comp_phonetic"
     },
     "\u7686": {
         "readings": [
@@ -9755,6 +9755,10 @@
         "type": "comp_indicative"
     },
     "\u76d7": {
+        "decomposition": [
+            "\u76bf",
+            "\u3cc4"
+        ],
         "readings": [
             "\u3068\u3046"
         ],
@@ -10217,7 +10221,7 @@
         "type": "comp_phonetic"
     },
     "\u79cb": {
-        "comment": "TODO phonetic of an obscure component",
+        "comment": "phonetic of an obscure component",
         "readings": [
             "\u3057\u3085\u3046"
         ],
@@ -12182,11 +12186,11 @@
         "type": "comp_phonetic"
     },
     "\u8377": {
-        "comment": "TODO: phonetic mark \u4f55",
+        "phonetic": "\u4f55",
         "readings": [
             "\u304b"
         ],
-        "type": "unknown"
+        "type": "comp_phonetic"
     },
     "\u8389": {
         "phonetic": "\u5229",
@@ -15991,7 +15995,7 @@
         "type": "comp_phonetic"
     },
     "\u9cf4": {
-        "comment": "TODO NOT phonetic \u9ce5",
+        "comment": "NOT phonetic \u9ce5",
         "readings": [
             "\u3081\u3044",
             "\u307f\u3087\u3046"
