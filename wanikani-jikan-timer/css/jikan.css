@@ -81,7 +81,7 @@
 }
 
 .wk_namespace .xaxis {
-	font: 8px sans-serif;
+	font: 10px sans-serif;
 }
 
 .wk_namespace .yaxis {
@@ -103,6 +103,7 @@
 }
 
 .wk_namespace .bar-group:hover .answer-type.rad {
+    stroke: white;
     fill: #c655ff;
 }
 .wk_namespace .answer-type.kan {
@@ -111,6 +112,7 @@
 }
 
 .wk_namespace .bar-group:hover .answer-type.kan {
+    stroke: white;
     fill: #00a1f1;
 }
 .wk_namespace .answer-type.voc {
@@ -119,6 +121,7 @@
 }
 
 .wk_namespace .bar-group:hover .answer-type.voc {
+    stroke: white;
     fill: #c655ff;
 }
 
@@ -127,6 +130,7 @@
 }
 
 .meaning {
+    stroke: white;
     fill-opacity: 0;
 }
 
@@ -136,6 +140,7 @@
 }
 
 .wk_jikan_correct {
+    stroke: white;
     fill-opacity: 0;
 }
 
@@ -148,8 +153,7 @@
 
 .wk_namespace.d3-tip {
     line-height: 1;
-    font: 14px sans-serif;
-    font-weight: bold;
+    font: 12px sans-serif;
     padding: 12px;
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
@@ -160,7 +164,7 @@
 .wk_namespace.d3-tip:after {
     box-sizing: border-box;
     display: inline;
-    font-size: 10px;
+    font-size: 12px;
     width: 100%;
     line-height: 1;
     color: rgba(0, 0, 0, 0.8);
@@ -192,5 +196,5 @@
 }
 
 .wk_namespace .fill {
-    fill: #F2F4F6;
+    fill: #F8F8F8;
 }

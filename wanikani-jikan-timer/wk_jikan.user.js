@@ -40,16 +40,6 @@ function WK_Jikan()
 {
     this.wki = new WKInteraction(GM_info.script.namespace);
 
-    this.measurement_db = null;
-    this.session_db = null;
-
-    this.chart = null;
-
-    this.date_reviews_start = null;
-    this.date_start_time = null;
-
-    this.estimated_time = 0;
-
     this.settings = {"debug": false};
 }
 // #############################################################################
@@ -81,7 +71,7 @@ function WK_Jikan()
                 this.handleReviewsSummary();
                 break;
             default:
-                console.log("Unknown page type!");
+                console.log(`Unknown page type!`);
         }
     };
     // #########################################################################
@@ -92,19 +82,18 @@ function WK_Jikan()
         this.injectReviewHTML();
 
         this.estimated_time = this.getCompletionEstimateDB();
-        this.date_reviews_start = new Date();
-        this.date_start_time    = new Date();
-
-        this.session_db.sessions.push({
-            "start_index": this.session_db.answers.length,
-            "date": Date.now(),
-            "estimate": new Date(this.estimated_time).toISOString().substr(11, 8)
-        });
+        this.initial_estimate = this.estimated_time;
+        this.reviews_start_time = new Date();
+        this.answer_start_time  = new Date();
 
         this.initWidgetChart();
         this.updateWidget();
 
         setInterval(this.updateWidget.bind(this), 1000);
+
+        $(document).on(`${GM_info.script.namespace}_wk_new_review_item_ready`, this.newItemCallback.bind(this));
+        $(document).on(`${GM_info.script.namespace}_wk_review_answered`, this.answeredCallback.bind(this));
+        $(document).on(`${GM_info.script.namespace}_wk_review_session_finished`, this.sessionFinishedCallback.bind(this));
     };
     // #########################################################################
 
@@ -114,8 +103,21 @@ function WK_Jikan()
         this.injectReviewSummaryHTML();
 
         if ($(`#jikan_session_chart`).length)
+        {
             this.createSummaryChart(`#jikan_session_chart`);
             this.drawSummaryChart();
+        }
+    };
+    // #########################################################################
+
+    // #########################################################################
+    WK_Jikan.prototype.loadDatabases = function()
+    {
+        this.measurement_db = JSON.parse(GM_getValue(`measurement_db`) || `{"rad": {}, "kan": {}, "voc": {}}`);
+        this.session_db = JSON.parse(GM_getValue(`session_db`) || `{"sessions": [], "answers": []}`);
+
+        console.log(`The current measurement db is changed to`, this.measurement_db);
+        console.log(`The current session db is changed to`, this.session_db);
     };
     // #########################################################################
 
@@ -124,32 +126,16 @@ function WK_Jikan()
     {
         this.wki.init();
 
+        this.settings.debug = GM_getValue(`debug`) || false;
+
         var curPage = this.wki.detectCurPage.call(this.wki);
 
         if (curPage === this.wki.PageEnum.reviews ||
             curPage === this.wki.PageEnum.reviews_summary)
         {
-            try {
-                this.measurement_db = JSON.parse(GM_getValue(`measurement_db`)) || {"rad": {}, "kan": {}, "voc": {}};
-            } catch(e) {
-                GM_log(`Error while parsing the measurement_db! String was`, GM_getValue(`measurement_db`));
-                this.measurement_db = {"rad": {}, "kan": {}, "voc": {}};
-            }
-
-            console.log("The current measurement db is", this.measurement_db);
-
-            try {
-                this.session_db = JSON.parse(GM_getValue(`session_db`)) || {"sessions": [], "answers": []};
-            } catch(e) {
-                GM_log(`Error while parsing the session_db! String was`, GM_getValue(`session_db`));
-                this.session_db = {"sessions": [], "answers": []};
-            }
-
-            console.log("The current session db is", this.session_db);
+            this.loadDatabases();
 
             $(document).on(`${GM_info.script.namespace}_wk_page_ready`, this.readyCallback.bind(this));
-            $(document).on(`${GM_info.script.namespace}_wk_new_review_item_ready`, this.newItemCallback.bind(this));
-            $(document).on(`${GM_info.script.namespace}_wk_review_answered`, this.answeredCallback.bind(this));
         }
     };
     // #########################################################################

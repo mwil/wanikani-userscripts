@@ -7,8 +7,8 @@
     // #########################################################################
     WK_Jikan.prototype.updateWidget = function()
     {
-        var date_reviews_end  = new Date();
-        var date_elapsed_time = new Date(date_reviews_end - this.date_reviews_start);
+        var reviews_now_time  = new Date();
+        var date_elapsed_time = new Date(reviews_now_time - this.reviews_start_time);
         var fmt_elapsed_time = date_elapsed_time.toISOString().substr(11, 8);
 
         this.estimated_time = Math.max(0, this.estimated_time - 1000);
@@ -16,8 +16,6 @@
 
         $(`#jikan_elapsed`).text(` ${fmt_elapsed_time}`);
         $(`#jikan_estimate`).text(` ${fmt_estimated_time}`);
-
-        GM_setValue(`reviews_fmt_elapsed_time`, fmt_elapsed_time);
     };
     // #########################################################################
 
@@ -29,35 +27,35 @@
 
             [`rad`, `kan`, `voc`].forEach( function(type) {
                  Object.keys(db[type]).forEach( function(key) {
-                    result = result.concat(db[type][key].timeMeaning/1000);
-                    result = result.concat(db[type][key].timeReading/1000);
+                    result = result.concat(db[type][key].timeMeaning);
+                    result = result.concat(db[type][key].timeReading);
                  }, this);
             }, this);
 
             return result.sort((a,b) => (a-b));
         };
 
-        var w = 6, h = 60;
+        var width = 6, height = 60;
         var nbars = 20;
-        var maxTime = Math.max(20, d3.quantile(this.getTimes(this.measurement_db), 0.95) || 0);
-        console.log("The q95 was", d3.quantile(this.getTimes(this.measurement_db), 0.95));
+        var maxTime = Math.max(20, d3.quantile(this.getTimes(this.measurement_db), 0.9)/1000 || 20);
+        console.log("The q90 was", d3.quantile(this.getTimes(this.measurement_db), 0.9)/1000);
 
         // #####################################################################
         this.chart = d3.select("#jikan_chart")
                      .append("svg")
                      .attr("class", "chart")
-                     .attr("width", w * nbars + 3)
-                     .attr("height", h);
+                     .attr("width", width * nbars + 3)
+                     .attr("height", height);
         // #####################################################################
 
         // #####################################################################
         var xScale = d3.scaleLinear()
                      .domain([0, 1])
-                     .range([0, w]);
+                     .range([0, width]);
 
         var yScale = d3.scaleLinear()
                      .domain([0, maxTime])
-                     .rangeRound([h, 0]);
+                     .rangeRound([height, 0]);
         // #####################################################################
 
         // Underline all bars
@@ -65,9 +63,9 @@
         this.chart.append("line")
                   .attr("transform", "translate(2,0)")
                   .attr("x1", 0)
-                  .attr("x2", w * nbars)
-                  .attr("y1", h-0.5)
-                  .attr("y2", h-0.5)
+                  .attr("x2", width * nbars)
+                  .attr("y1", height-0.5)
+                  .attr("y2", height-0.5)
                   .attr("stroke", "#000");
         // #####################################################################
 
@@ -76,7 +74,13 @@
         WK_Jikan.prototype.redrawWidgetChart = function()
         {
             // get the starting ID of the current session
-            var start_id = this.session_db.sessions.slice(-1)[0].start_index || 0;
+            var start_id;
+
+            if (this.session_db.sessions.length)
+                start_id = this.session_db.sessions.slice(-1)[0].start_index +
+                           this.session_db.sessions.slice(-1)[0].answer_cnt;
+            else
+                start_id = 0;
 
             var rect = this.chart.selectAll("rect")
                        .data(this.session_db.answers.slice(start_id).slice(-nbars),
@@ -92,19 +96,18 @@
                 .attr("class", (d) => `answer-type ${d.type}`)
                 .attr("transform", "translate(2,0)")
                 .attr("x", (d,i) => xScale(i+xoffset) - 0.5)
-                .attr("y", h)
-                .attr("width", w)
+                .attr("y", height)
+                .attr("width", width)
                 .attr("height", 0)
             .transition()
                 .duration(1000)
                 .attr("x", (d,i) => xScale(i) - 0.5)
                 .attr("y", (d) => yScale(Math.min(maxTime, d.time)) - 0.5)
-                .attr("height", (d) => h - yScale(Math.min(maxTime, d.time)));
+                .attr("height", (d) => height - yScale(Math.min(maxTime, d.time)));
 
             rect.transition()
                 .duration(1000)
-                .attr("x", (d,i) => xScale(i) - 0.5)
-                .attr("width", w);
+                .attr("x", (d,i) => xScale(i) - 0.5);
 
             rect
             .exit()

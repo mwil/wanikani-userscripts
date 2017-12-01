@@ -30,10 +30,18 @@
                         <h3 class="modal-title">Settings &mdash; Jikan Timer</h3>
                     </div>
                     <div class="modal-body">
+                        <p>
                         <div class="btn-group-lg text-center">
                             <a class="btn" id="jikan_settings_btn_debug"><i class="icon-gear"></i> Toggle Debug Mode</a>
-                            <a class="btn" id="jikan_settings_btn_clearDB"><i class="icon-signout"></i> Clear Measurement DB</a>
                         </div>
+                        </p>
+                        <p>
+                        <div class="btn-group-lg text-center">
+                            <a class="btn" id="jikan_settings_btn_clearDB"><i class="icon-signout"></i> Clear Databases</a>
+                            <a class="btn" id="jikan_settings_btn_backupDB"><i class="icon-cloud-upload"></i> Backup Databases</a>
+                            <a class="btn" id="jikan_settings_btn_restoreDB"><i class="icon-cloud-download"></i> Restore Databases</a>
+                        </div>
+                        </p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -72,6 +80,8 @@
 
         $(`#jikan_settings_btn_debug`).on(`click`, this.toggleDebug.bind(this));
         $(`#jikan_settings_btn_clearDB`).on(`click`, this.toggleClearDB.bind(this));
+        $(`#jikan_settings_btn_backupDB`).on(`click`, this.doBackupDB.bind(this));
+        $(`#jikan_settings_btn_restoreDB`).on(`click`, this.doRestoreDB.bind(this));
     };
     // #########################################################################
 
@@ -135,6 +145,26 @@
 
             this.fillStats();
         }
+    };
+    // #########################################################################
+
+    // #########################################################################
+    WK_Jikan.prototype.doBackupDB = function()
+    {
+        GM_setValue(`backup_measurement_db`, JSON.stringify(this.measurement_db));
+        GM_setValue(`backup_session_db`, JSON.stringify(this.session_db));
+
+        console.log("Backup of databases competed!");
+    };
+    // #########################################################################
+
+    // #########################################################################
+    WK_Jikan.prototype.doRestoreDB = function()
+    {
+        this.loadDatabases();
+
+        GM_setValue(`measurement_db`, JSON.stringify(this.measurement_db));
+        GM_setValue(`session_db`, JSON.stringify(this.session_db));
     };
     // #########################################################################
 })();
