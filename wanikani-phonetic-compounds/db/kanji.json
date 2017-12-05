@@ -4454,8 +4454,8 @@
     },
     "磁": {
         "readings": ["じ", "し"],
-        "type": "unknown",
-        "comment": "obscure tone mark 玆"
+        "phonetic": "茲",
+        "type": "comp_phonetic"
     },
     "暮": {
         "readings": ["ぼ"],

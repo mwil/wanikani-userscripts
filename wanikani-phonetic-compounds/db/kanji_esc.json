@@ -10069,12 +10069,12 @@
         "type": "comp_phonetic"
     },
     "\u78c1": {
-        "comment": "obscure tone mark \u7386",
+        "phonetic": "\u8332",
         "readings": [
             "\u3058",
             "\u3057"
         ],
-        "type": "unknown"
+        "type": "comp_phonetic"
     },
     "\u78e8": {
         "phonetic": "\u9ebb",
