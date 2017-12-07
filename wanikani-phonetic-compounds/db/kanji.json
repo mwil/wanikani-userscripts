@@ -3760,7 +3760,8 @@
     },
     "護": {
         "readings": ["ご"],
-        "type": "unknown"
+        "phonetic": "蒦",
+        "type": "comp_phonetic"
     },
 
 
