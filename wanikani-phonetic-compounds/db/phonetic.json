@@ -830,8 +830,8 @@
     },
     "郎": {
         "readings": ["ろう"],
-        "compounds": [],
-        "non_compounds": [],
+        "compounds": ["廊"],
+        "non_compounds": ["郷"],
         "xrefs": ["良"],
         "wk-radical": null
     },

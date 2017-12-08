@@ -7104,7 +7104,8 @@
     },
     "廊": {
         "readings": ["ろう"],
-        "type": "unknown"
+        "phonetic": "郎",
+        "type": "comp_phonetic"
     },
     "弾": {
         "readings": ["だん"],

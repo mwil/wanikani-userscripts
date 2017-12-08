@@ -4629,10 +4629,11 @@
         "type": "comp_phonetic"
     },
     "\u5eca": {
+        "phonetic": "\u90ce",
         "readings": [
             "\u308d\u3046"
         ],
-        "type": "unknown"
+        "type": "comp_phonetic"
     },
     "\u5ef6": {
         "comment": "maybe phonetic mark \u389f",

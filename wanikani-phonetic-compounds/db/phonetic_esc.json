@@ -6915,8 +6915,12 @@
         "xrefs": []
     },
     "\u90ce": {
-        "compounds": [],
-        "non_compounds": [],
+        "compounds": [
+            "\u5eca"
+        ],
+        "non_compounds": [
+            "\u90f7"
+        ],
         "readings": [
             "\u308d\u3046"
         ],
