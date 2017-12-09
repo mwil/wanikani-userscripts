@@ -644,6 +644,13 @@
         "xrefs": ["容"],
         "wk-radical": "valley"
     },
+    "容": {
+        "readings": ["よう"],
+        "compounds": ["溶"],
+        "non_compounds": [],
+        "xrefs": ["谷"],
+        "wk-radical": null
+    },
     "量": {
         "readings": ["りょう", "ろう"],
         "compounds": ["糧"],
