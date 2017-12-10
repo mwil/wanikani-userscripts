@@ -1,0 +1,3791 @@
+---
+distractors:
+- "一"
+- "与"
+- "二"
+- "五"
+- "工"
+- "王"
+participant_id: 18
+pivot: "三"
+selected:
+- "二"
+---
+distractors:
+- "一"
+- "下"
+- "土"
+- "峠"
+- "止"
+- "正"
+participant_id: 18
+pivot: "上"
+selected:
+- "下"
+- "土"
+---
+distractors:
+- "七"
+- "万"
+- "也"
+- "可"
+- "目"
+- "葉"
+participant_id: 18
+pivot: "世"
+selected:
+- "也"
+---
+distractors:
+- "住"
+- "全"
+- "玉"
+- "王"
+- "生"
+participant_id: 18
+pivot: "主"
+selected:
+- "王"
+- "生"
+---
+distractors:
+- "万"
+- "供"
+- "剰"
+- "朱"
+- "東"
+- "果"
+- "重"
+participant_id: 18
+pivot: "乗"
+selected:
+- "東"
+- "重"
+---
+distractors:
+- "上"
+- "丸"
+- "乙"
+- "人"
+- "力"
+- "軌"
+- "雑"
+participant_id: 18
+pivot: "九"
+selected:
+- "力"
+---
+distractors:
+- "三"
+- "互"
+- "亜"
+- "悟"
+- "正"
+- "玉"
+participant_id: 18
+pivot: "五"
+selected:
+- "三"
+---
+distractors:
+- "任"
+- "佳"
+- "俵"
+- "在"
+- "士"
+- "壮"
+participant_id: 18
+pivot: "仕"
+selected:
+- "任"
+- "壮"
+---
+distractors:
+- "人"
+- "似"
+- "北"
+- "口"
+- "立"
+participant_id: 18
+pivot: "以"
+selected:
+- "人"
+---
+distractors:
+- "主"
+- "任"
+- "往"
+- "柱"
+participant_id: 18
+pivot: "住"
+selected:
+- "任"
+- "往"
+---
+distractors:
+- "元"
+- "先"
+- "光"
+- "克"
+- "史"
+- "況"
+- "見"
+participant_id: 18
+pivot: "兄"
+selected:
+- "元"
+---
+distractors:
+- "交"
+- "元"
+- "八"
+- "大"
+- "恋"
+- "文"
+- "水"
+- "穴"
+participant_id: 18
+pivot: "六"
+selected:
+- "文"
+---
+distractors:
+- "一"
+- "与"
+- "再"
+- "安"
+- "朽"
+participant_id: 18
+pivot: "写"
+selected:
+- "与"
+---
+distractors:
+- "丸"
+- "久"
+- "各"
+- "名"
+- "尽"
+- "終"
+participant_id: 18
+pivot: "冬"
+selected:
+- "久"
+- "各"
+---
+distractors:
+- "凸"
+- "凹"
+- "山"
+- "市"
+- "拙"
+participant_id: 18
+pivot: "出"
+selected:
+- "山"
+---
+distractors:
+- "七"
+- "万"
+- "刀"
+- "初"
+- "功"
+- "坊"
+- "虐"
+participant_id: 18
+pivot: "切"
+selected:
+- "刀"
+- "功"
+---
+distractors:
+- "万"
+- "刀"
+- "功"
+- "加"
+- "勉"
+- "大"
+participant_id: 18
+pivot: "力"
+selected:
+- "刀"
+---
+distractors:
+- "免"
+- "力"
+- "勲"
+- "逸"
+participant_id: 18
+pivot: "勉"
+selected:
+- "免"
+---
+distractors:
+- "千"
+- "年"
+- "牛"
+- "許"
+participant_id: 18
+pivot: "午"
+selected:
+- "牛"
+---
+distractors:
+- "口"
+- "否"
+- "左"
+- "石"
+- "舌"
+- "若"
+participant_id: 18
+pivot: "右"
+selected:
+- "石"
+---
+distractors:
+- "冬"
+- "口"
+- "右"
+- "各"
+- "銘"
+participant_id: 18
+pivot: "名"
+selected:
+- "各"
+---
+distractors:
+- "凸"
+- "口"
+- "官"
+- "操"
+- "晶"
+participant_id: 18
+pivot: "品"
+selected:
+- "口"
+---
+distractors:
+- "偵"
+- "損"
+- "貝"
+- "責"
+- "貴"
+- "買"
+- "賀"
+participant_id: 18
+pivot: "員"
+selected:
+- "貝"
+- "買"
+---
+distractors:
+- "口"
+- "聞"
+- "門"
+- "間"
+- "閣"
+participant_id: 18
+pivot: "問"
+selected:
+- "門"
+- "間"
+---
+distractors:
+- "一"
+- "大"
+- "夫"
+- "央"
+- "火"
+- "矢"
+- "蚕"
+participant_id: 18
+pivot: "天"
+selected:
+- "夫"
+---
+distractors:
+- "人"
+- "伏"
+- "公"
+- "大"
+- "犬"
+- "駄"
+participant_id: 18
+pivot: "太"
+selected:
+- "大"
+- "犬"
+---
+distractors:
+- "女"
+- "奴"
+- "妊"
+- "妹"
+- "子"
+- "存"
+participant_id: 18
+pivot: "好"
+selected:
+- "女"
+- "子"
+---
+distractors:
+- "味"
+- "姉"
+- "未"
+- "朱"
+- "殊"
+participant_id: 18
+pivot: "妹"
+selected:
+- "味"
+---
+distractors:
+- "塚"
+- "嫁"
+- "安"
+- "屋"
+- "東"
+participant_id: 18
+pivot: "家"
+selected:
+- "安"
+---
+distractors:
+- "人"
+- "千"
+- "小"
+- "山"
+- "引"
+- "訓"
+- "髪"
+participant_id: 18
+pivot: "川"
+selected:
+- "小"
+---
+distractors:
+- "侵"
+- "婦"
+- "帝"
+- "帯"
+- "掃"
+- "損"
+- "滞"
+participant_id: 18
+pivot: "帰"
+selected:
+- "侵"
+---
+distractors:
+- "丹"
+- "局"
+- "弓"
+- "引"
+- "弥"
+- "強"
+- "沸"
+participant_id: 18
+pivot: "弱"
+selected:
+- "弓"
+- "引"
+---
+distractors:
+- "仮"
+- "俊"
+- "役"
+- "彼"
+- "復"
+participant_id: 18
+pivot: "後"
+selected:
+- "俊"
+---
+distractors:
+- "千"
+- "印"
+- "宇"
+- "我"
+- "挙"
+- "毛"
+- "牛"
+participant_id: 18
+pivot: "手"
+selected:
+- "毛"
+---
+distractors:
+- "孝"
+- "放"
+- "数"
+- "致"
+- "赦"
+participant_id: 18
+pivot: "教"
+selected:
+- "孝"
+- "放"
+---
+distractors:
+- "丈"
+- "交"
+- "夫"
+- "斉"
+- "紋"
+- "蚊"
+- "衣"
+participant_id: 18
+pivot: "文"
+selected:
+- "丈"
+---
+distractors:
+- "斗"
+- "斜"
+- "断"
+- "科"
+- "米"
+- "粋"
+- "糾"
+participant_id: 18
+pivot: "料"
+selected:
+- "科"
+---
+distractors:
+- "放"
+- "方"
+- "施"
+- "旋"
+- "族"
+participant_id: 18
+pivot: "旅"
+selected:
+- "族"
+---
+distractors:
+- "方"
+- "旅"
+- "旋"
+- "矢"
+participant_id: 18
+pivot: "族"
+selected:
+- "旅"
+---
+distractors:
+- "但"
+- "尺"
+- "尽"
+- "局"
+- "届"
+- "甲"
+- "駅"
+participant_id: 18
+pivot: "昼"
+selected:
+- "尺"
+---
+distractors:
+- "侍"
+- "寺"
+- "封"
+- "待"
+- "持"
+- "特"
+- "里"
+participant_id: 18
+pivot: "時"
+selected:
+- "寺"
+---
+distractors:
+- "崩"
+- "日"
+- "用"
+- "目"
+- "骨"
+participant_id: 18
+pivot: "月"
+selected:
+- "日"
+- "目"
+---
+distractors:
+- "右"
+- "月"
+- "肩"
+- "賄"
+- "随"
+- "首"
+- "髪"
+participant_id: 18
+pivot: "有"
+selected:
+- "右"
+---
+distractors:
+- "乗"
+- "更"
+- "束"
+- "棟"
+- "槽"
+- "車"
+participant_id: 18
+pivot: "東"
+selected:
+- "束"
+- "車"
+---
+distractors:
+- "止"
+- "王"
+- "症"
+- "証"
+participant_id: 18
+pivot: "正"
+selected:
+- "止"
+- "王"
+---
+distractors:
+- "士"
+- "妙"
+- "少"
+- "渉"
+- "走"
+participant_id: 18
+pivot: "歩"
+selected:
+- "少"
+- "走"
+---
+distractors:
+- "久"
+- "侮"
+- "待"
+- "有"
+- "母"
+- "海"
+participant_id: 18
+pivot: "毎"
+selected:
+- "母"
+---
+distractors:
+- "一"
+- "氏"
+- "眠"
+- "貝"
+participant_id: 18
+pivot: "民"
+selected:
+- "氏"
+---
+distractors:
+- "丈"
+- "人"
+- "尿"
+- "木"
+- "氷"
+participant_id: 18
+pivot: "水"
+selected:
+- "木"
+---
+distractors:
+- "侮"
+- "悔"
+- "母"
+- "毎"
+participant_id: 18
+pivot: "海"
+selected:
+- "毎"
+---
+distractors:
+- "場"
+- "易"
+- "杉"
+- "牛"
+- "牧"
+- "牲"
+- "特"
+participant_id: 18
+pivot: "物"
+selected:
+- "特"
+---
+distractors:
+- "主"
+- "姓"
+- "玉"
+- "王"
+participant_id: 18
+pivot: "生"
+selected:
+- "王"
+---
+distractors:
+- "備"
+- "周"
+- "月"
+- "甲"
+- "男"
+- "角"
+- "通"
+participant_id: 18
+pivot: "用"
+selected:
+- "月"
+- "甲"
+---
+distractors:
+- "丁"
+- "可"
+- "唯"
+- "打"
+- "灯"
+- "男"
+participant_id: 18
+pivot: "町"
+selected:
+- "打"
+- "灯"
+- "男"
+---
+distractors:
+- "伯"
+- "日"
+- "旨"
+- "由"
+- "百"
+- "自"
+participant_id: 18
+pivot: "白"
+selected:
+- "日"
+- "自"
+---
+distractors:
+- "一"
+- "宿"
+- "白"
+- "目"
+- "頁"
+participant_id: 18
+pivot: "百"
+selected:
+- "白"
+---
+distractors:
+- "児"
+- "具"
+- "目"
+- "直"
+- "省"
+- "茶"
+- "貝"
+participant_id: 18
+pivot: "県"
+selected:
+- "具"
+- "貝"
+---
+distractors:
+- "善"
+- "差"
+- "看"
+- "美"
+- "者"
+- "首"
+participant_id: 18
+pivot: "着"
+selected:
+- "差"
+---
+distractors:
+- "加"
+- "却"
+- "和"
+- "痴"
+- "矩"
+- "短"
+participant_id: 18
+pivot: "知"
+selected:
+- "加"
+- "和"
+---
+distractors:
+- "冊"
+- "刑"
+- "呼"
+- "砂"
+- "砕"
+- "開"
+participant_id: 18
+pivot: "研"
+selected:
+- "刑"
+---
+distractors:
+- "合"
+- "符"
+- "筒"
+- "給"
+- "茶"
+participant_id: 18
+pivot: "答"
+selected:
+- "合"
+---
+distractors:
+- "泊"
+- "白"
+- "皆"
+- "羽"
+- "翌"
+participant_id: 18
+pivot: "習"
+selected:
+- "羽"
+---
+distractors:
+- "孝"
+- "拷"
+- "老"
+- "者"
+participant_id: 18
+pivot: "考"
+selected:
+- "孝"
+---
+distractors:
+- "問"
+- "耳"
+- "門"
+- "間"
+participant_id: 18
+pivot: "聞"
+selected:
+- "問"
+- "門"
+- "間"
+---
+distractors:
+- "免"
+- "勺"
+- "絶"
+- "芭"
+- "角"
+- "邑"
+participant_id: 18
+pivot: "色"
+selected:
+- "免"
+---
+distractors:
+- "凍"
+- "楽"
+- "模"
+- "白"
+- "菓"
+- "菜"
+- "葉"
+participant_id: 18
+pivot: "薬"
+selected:
+- "楽"
+---
+distractors:
+- "両"
+- "価"
+- "匹"
+- "四"
+- "田"
+- "要"
+- "酒"
+participant_id: 18
+pivot: "西"
+selected:
+- "四"
+---
+distractors:
+- "児"
+- "昆"
+- "眺"
+- "視"
+- "貝"
+participant_id: 18
+pivot: "見"
+selected:
+- "貝"
+---
+distractors:
+- "舌"
+- "詔"
+- "詞"
+- "詰"
+- "語"
+participant_id: 18
+pivot: "話"
+selected:
+- "語"
+---
+distractors:
+- "悟"
+- "言"
+- "詞"
+- "詰"
+- "話"
+- "諮"
+participant_id: 18
+pivot: "語"
+selected:
+- "言"
+- "話"
+---
+distractors:
+- "砲"
+- "走"
+- "赴"
+- "超"
+participant_id: 18
+pivot: "起"
+selected:
+- "赴"
+---
+distractors:
+- "促"
+- "口"
+- "史"
+- "定"
+- "臣"
+- "走"
+- "路"
+- "跳"
+participant_id: 18
+pivot: "足"
+selected:
+- "定"
+- "走"
+---
+distractors:
+- "斤"
+- "辺"
+- "込"
+- "迎"
+- "返"
+- "述"
+- "逝"
+participant_id: 18
+pivot: "近"
+selected:
+- "斤"
+- "返"
+---
+distractors:
+- "周"
+- "彫"
+- "調"
+- "通"
+- "造"
+- "過"
+participant_id: 18
+pivot: "週"
+selected:
+- "周"
+---
+distractors:
+- "揮"
+- "通"
+- "連"
+- "週"
+participant_id: 18
+pivot: "運"
+selected:
+- "揮"
+- "連"
+---
+distractors:
+- "便"
+- "動"
+- "厘"
+- "垂"
+- "車"
+- "里"
+- "雪"
+participant_id: 18
+pivot: "重"
+selected:
+- "車"
+---
+distractors:
+- "予"
+- "理"
+- "矛"
+- "里"
+- "針"
+- "黒"
+participant_id: 18
+pivot: "野"
+selected:
+- "予"
+- "里"
+---
+distractors:
+- "根"
+- "金"
+- "針"
+- "鉃"
+- "銭"
+- "錬"
+- "鎖"
+participant_id: 18
+pivot: "銀"
+selected:
+- "根"
+- "錬"
+---
+distractors:
+- "冒"
+- "問"
+- "明"
+- "聞"
+- "開"
+- "閑"
+- "間"
+participant_id: 18
+pivot: "門"
+selected:
+- "問"
+- "間"
+---
+distractors:
+- "元"
+- "冠"
+- "完"
+- "晩"
+- "腕"
+- "防"
+participant_id: 18
+pivot: "院"
+selected:
+- "完"
+---
+distractors:
+- "権"
+- "焦"
+- "菓"
+- "隻"
+- "隼"
+- "雑"
+participant_id: 18
+pivot: "集"
+selected:
+- "隼"
+---
+distractors:
+- "昔"
+- "暗"
+- "竜"
+- "章"
+participant_id: 18
+pivot: "音"
+selected:
+- "昔"
+---
+distractors:
+- "倉"
+- "含"
+- "娘"
+- "良"
+- "飢"
+- "養"
+participant_id: 18
+pivot: "食"
+selected:
+- "良"
+---
+distractors:
+- "仮"
+- "反"
+- "版"
+- "飢"
+- "飲"
+participant_id: 18
+pivot: "飯"
+selected:
+- "飲"
+---
+distractors:
+- "欠"
+- "欺"
+- "欽"
+- "食"
+- "飢"
+- "飯"
+- "飾"
+participant_id: 18
+pivot: "飲"
+selected:
+- "飯"
+---
+distractors:
+- "検"
+- "険"
+- "駐"
+- "騎"
+- "騒"
+participant_id: 18
+pivot: "験"
+selected:
+- "検"
+- "騒"
+---
+distractors:
+- "丁"
+- "万"
+- "二"
+- "互"
+- "十"
+participant_id: 21
+pivot: "一"
+selected:
+- "二"
+---
+distractors:
+- "一"
+- "与"
+- "二"
+- "五"
+- "工"
+- "王"
+participant_id: 21
+pivot: "三"
+selected:
+- "王"
+---
+distractors:
+- "一"
+- "下"
+- "土"
+- "峠"
+- "止"
+- "正"
+participant_id: 21
+pivot: "上"
+selected:
+- "土"
+- "止"
+---
+distractors:
+- "七"
+- "万"
+- "也"
+- "可"
+- "目"
+- "葉"
+participant_id: 21
+pivot: "世"
+selected:
+- "也"
+---
+distractors:
+- "住"
+- "全"
+- "玉"
+- "王"
+- "生"
+participant_id: 21
+pivot: "主"
+selected:
+- "住"
+- "玉"
+- "王"
+---
+distractors:
+- "万"
+- "供"
+- "剰"
+- "朱"
+- "東"
+- "果"
+- "重"
+participant_id: 21
+pivot: "乗"
+selected:
+- "東"
+- "果"
+---
+distractors:
+- "上"
+- "丸"
+- "乙"
+- "人"
+- "力"
+- "軌"
+- "雑"
+participant_id: 21
+pivot: "九"
+selected:
+- "丸"
+---
+distractors:
+- "三"
+- "互"
+- "亜"
+- "悟"
+- "正"
+- "玉"
+participant_id: 21
+pivot: "五"
+selected:
+- "正"
+---
+distractors:
+- "任"
+- "佳"
+- "俵"
+- "在"
+- "士"
+- "壮"
+participant_id: 21
+pivot: "仕"
+selected:
+- "任"
+- "佳"
+---
+distractors:
+- "人"
+- "似"
+- "北"
+- "口"
+- "立"
+participant_id: 21
+pivot: "以"
+selected:
+- "似"
+---
+distractors:
+- "主"
+- "任"
+- "往"
+- "柱"
+participant_id: 21
+pivot: "住"
+selected:
+- "任"
+- "往"
+---
+distractors:
+- "元"
+- "先"
+- "光"
+- "克"
+- "史"
+- "況"
+- "見"
+participant_id: 21
+pivot: "兄"
+selected:
+- "克"
+---
+distractors:
+- "元"
+- "光"
+- "売"
+- "夫"
+- "洗"
+- "銑"
+participant_id: 21
+pivot: "先"
+selected:
+- "光"
+---
+distractors:
+- "交"
+- "元"
+- "八"
+- "大"
+- "恋"
+- "文"
+- "水"
+- "穴"
+participant_id: 21
+pivot: "六"
+selected:
+- "大"
+- "穴"
+---
+distractors:
+- "一"
+- "与"
+- "再"
+- "安"
+- "朽"
+participant_id: 21
+pivot: "写"
+selected:
+- "与"
+---
+distractors:
+- "丸"
+- "久"
+- "各"
+- "名"
+- "尽"
+- "終"
+participant_id: 21
+pivot: "冬"
+selected:
+- "各"
+- "尽"
+---
+distractors:
+- "凸"
+- "凹"
+- "山"
+- "市"
+- "拙"
+participant_id: 21
+pivot: "出"
+selected:
+- "拙"
+---
+distractors:
+- "七"
+- "万"
+- "刀"
+- "初"
+- "功"
+- "坊"
+- "虐"
+participant_id: 21
+pivot: "切"
+selected:
+- "功"
+---
+distractors:
+- "万"
+- "刀"
+- "功"
+- "加"
+- "勉"
+- "大"
+participant_id: 21
+pivot: "力"
+selected:
+- "万"
+- "刀"
+---
+distractors:
+- "免"
+- "力"
+- "勲"
+- "逸"
+participant_id: 21
+pivot: "勉"
+selected:
+- "逸"
+---
+distractors:
+- "千"
+- "年"
+- "牛"
+- "許"
+participant_id: 21
+pivot: "午"
+selected:
+- "千"
+- "年"
+- "牛"
+---
+distractors:
+- "夫"
+- "寺"
+- "法"
+- "玉"
+- "至"
+- "虫"
+participant_id: 21
+pivot: "去"
+selected:
+- "至"
+---
+distractors:
+- "中"
+- "二"
+- "加"
+- "右"
+- "回"
+- "困"
+- "田"
+participant_id: 21
+pivot: "口"
+selected:
+- "回"
+---
+distractors:
+- "口"
+- "否"
+- "左"
+- "石"
+- "舌"
+- "若"
+participant_id: 21
+pivot: "右"
+selected:
+- "石"
+---
+distractors:
+- "冬"
+- "口"
+- "右"
+- "各"
+- "銘"
+participant_id: 21
+pivot: "名"
+selected:
+- "冬"
+- "各"
+---
+distractors:
+- "凸"
+- "口"
+- "官"
+- "操"
+- "晶"
+participant_id: 21
+pivot: "品"
+selected:
+- "晶"
+---
+distractors:
+- "偵"
+- "損"
+- "貝"
+- "責"
+- "貴"
+- "買"
+- "賀"
+participant_id: 21
+pivot: "員"
+selected:
+- "貝"
+- "貴"
+- "買"
+---
+distractors:
+- "口"
+- "聞"
+- "門"
+- "間"
+- "閣"
+participant_id: 21
+pivot: "問"
+selected:
+- "門"
+- "間"
+---
+distractors:
+- "一"
+- "大"
+- "夫"
+- "央"
+- "火"
+- "矢"
+- "蚕"
+participant_id: 21
+pivot: "天"
+selected:
+- "大"
+- "夫"
+- "矢"
+---
+distractors:
+- "人"
+- "伏"
+- "公"
+- "大"
+- "犬"
+- "駄"
+participant_id: 21
+pivot: "太"
+selected:
+- "大"
+- "犬"
+---
+distractors:
+- "女"
+- "奴"
+- "妊"
+- "妹"
+- "子"
+- "存"
+participant_id: 21
+pivot: "好"
+selected:
+- "妊"
+---
+distractors:
+- "味"
+- "姉"
+- "未"
+- "朱"
+- "殊"
+participant_id: 21
+pivot: "妹"
+selected:
+- "姉"
+- "殊"
+---
+distractors:
+- "塚"
+- "嫁"
+- "安"
+- "屋"
+- "東"
+participant_id: 21
+pivot: "家"
+selected:
+- "塚"
+---
+distractors:
+- "六"
+- "布"
+- "帝"
+- "申"
+- "肺"
+participant_id: 21
+pivot: "市"
+selected:
+- "布"
+---
+distractors:
+- "侵"
+- "婦"
+- "帝"
+- "帯"
+- "掃"
+- "損"
+- "滞"
+participant_id: 21
+pivot: "帰"
+selected:
+- "婦"
+- "掃"
+---
+distractors:
+- "丹"
+- "局"
+- "弓"
+- "引"
+- "弥"
+- "強"
+- "沸"
+participant_id: 21
+pivot: "弱"
+selected:
+- "弥"
+---
+distractors:
+- "仮"
+- "俊"
+- "役"
+- "彼"
+- "復"
+participant_id: 21
+pivot: "後"
+selected:
+- "俊"
+---
+distractors:
+- "夕"
+- "必"
+- "忌"
+- "悪"
+- "火"
+participant_id: 21
+pivot: "心"
+selected:
+- "必"
+---
+distractors:
+- "千"
+- "印"
+- "宇"
+- "我"
+- "挙"
+- "毛"
+- "牛"
+participant_id: 21
+pivot: "手"
+selected:
+- "宇"
+- "毛"
+---
+distractors:
+- "孝"
+- "放"
+- "数"
+- "致"
+- "赦"
+participant_id: 21
+pivot: "教"
+selected:
+- "数"
+- "致"
+---
+distractors:
+- "丈"
+- "交"
+- "夫"
+- "斉"
+- "紋"
+- "蚊"
+- "衣"
+participant_id: 21
+pivot: "文"
+selected:
+- "丈"
+- "交"
+---
+distractors:
+- "斗"
+- "斜"
+- "断"
+- "科"
+- "米"
+- "粋"
+- "糾"
+participant_id: 21
+pivot: "料"
+selected:
+- "斜"
+- "科"
+---
+distractors:
+- "断"
+- "析"
+- "粋"
+- "薪"
+- "親"
+participant_id: 21
+pivot: "新"
+selected:
+- "親"
+---
+distractors:
+- "放"
+- "方"
+- "施"
+- "旋"
+- "族"
+participant_id: 21
+pivot: "旅"
+selected:
+- "放"
+- "族"
+---
+distractors:
+- "方"
+- "旅"
+- "旋"
+- "矢"
+participant_id: 21
+pivot: "族"
+selected:
+- "旅"
+- "旋"
+---
+distractors:
+- "但"
+- "尺"
+- "尽"
+- "局"
+- "届"
+- "甲"
+- "駅"
+participant_id: 21
+pivot: "昼"
+selected:
+- "尽"
+---
+distractors:
+- "侍"
+- "寺"
+- "封"
+- "待"
+- "持"
+- "特"
+- "里"
+participant_id: 21
+pivot: "時"
+selected:
+- "侍"
+- "待"
+- "特"
+---
+distractors:
+- "唯"
+- "晶"
+- "暇"
+- "濯"
+- "羅"
+- "躍"
+participant_id: 21
+pivot: "曜"
+selected:
+- "濯"
+- "躍"
+---
+distractors:
+- "崩"
+- "日"
+- "用"
+- "目"
+- "骨"
+participant_id: 21
+pivot: "月"
+selected:
+- "用"
+- "目"
+---
+distractors:
+- "右"
+- "月"
+- "肩"
+- "賄"
+- "随"
+- "首"
+- "髪"
+participant_id: 21
+pivot: "有"
+selected:
+- "右"
+- "肩"
+---
+distractors:
+- "乗"
+- "更"
+- "束"
+- "棟"
+- "槽"
+- "車"
+participant_id: 21
+pivot: "東"
+selected:
+- "乗"
+- "束"
+- "車"
+---
+distractors:
+- "止"
+- "王"
+- "症"
+- "証"
+participant_id: 21
+pivot: "正"
+selected:
+- "止"
+- "王"
+---
+distractors:
+- "士"
+- "妙"
+- "少"
+- "渉"
+- "走"
+participant_id: 21
+pivot: "歩"
+selected:
+- "少"
+- "渉"
+---
+distractors:
+- "一"
+- "丹"
+- "日"
+- "毎"
+- "田"
+- "髪"
+participant_id: 21
+pivot: "母"
+selected:
+- "毎"
+---
+distractors:
+- "久"
+- "侮"
+- "待"
+- "有"
+- "母"
+- "海"
+participant_id: 21
+pivot: "毎"
+selected:
+- "侮"
+- "海"
+---
+distractors:
+- "一"
+- "氏"
+- "眠"
+- "貝"
+participant_id: 21
+pivot: "民"
+selected:
+- "氏"
+---
+distractors:
+- "丈"
+- "人"
+- "尿"
+- "木"
+- "氷"
+participant_id: 21
+pivot: "水"
+selected:
+- "丈"
+- "木"
+- "氷"
+---
+distractors:
+- "侮"
+- "悔"
+- "母"
+- "毎"
+participant_id: 21
+pivot: "海"
+selected:
+- "侮"
+- "悔"
+---
+distractors:
+- "場"
+- "易"
+- "杉"
+- "牛"
+- "牧"
+- "牲"
+- "特"
+participant_id: 21
+pivot: "物"
+selected:
+- "特"
+---
+distractors:
+- "主"
+- "姓"
+- "玉"
+- "王"
+participant_id: 21
+pivot: "生"
+selected:
+- "主"
+- "王"
+---
+distractors:
+- "備"
+- "周"
+- "月"
+- "甲"
+- "男"
+- "角"
+- "通"
+participant_id: 21
+pivot: "用"
+selected:
+- "周"
+- "月"
+---
+distractors:
+- "丁"
+- "可"
+- "唯"
+- "打"
+- "灯"
+- "男"
+participant_id: 21
+pivot: "町"
+selected:
+- "男"
+---
+distractors:
+- "今"
+- "介"
+- "卑"
+- "男"
+- "畏"
+participant_id: 21
+pivot: "界"
+selected:
+- "畏"
+---
+distractors:
+- "伯"
+- "日"
+- "旨"
+- "由"
+- "百"
+- "自"
+participant_id: 21
+pivot: "白"
+selected:
+- "日"
+- "自"
+---
+distractors:
+- "一"
+- "宿"
+- "白"
+- "目"
+- "頁"
+participant_id: 21
+pivot: "百"
+selected:
+- "白"
+- "頁"
+---
+distractors:
+- "児"
+- "具"
+- "目"
+- "直"
+- "省"
+- "茶"
+- "貝"
+participant_id: 21
+pivot: "県"
+selected:
+- "具"
+- "貝"
+---
+distractors:
+- "善"
+- "差"
+- "看"
+- "美"
+- "者"
+- "首"
+participant_id: 21
+pivot: "着"
+selected:
+- "差"
+- "看"
+- "首"
+---
+distractors:
+- "加"
+- "却"
+- "和"
+- "痴"
+- "矩"
+- "短"
+participant_id: 21
+pivot: "知"
+selected:
+- "和"
+---
+distractors:
+- "冊"
+- "刑"
+- "呼"
+- "砂"
+- "砕"
+- "開"
+participant_id: 21
+pivot: "研"
+selected:
+- "砕"
+---
+distractors:
+- "合"
+- "符"
+- "筒"
+- "給"
+- "茶"
+participant_id: 21
+pivot: "答"
+selected:
+- "合"
+- "符"
+- "茶"
+---
+distractors:
+- "泊"
+- "白"
+- "皆"
+- "羽"
+- "翌"
+participant_id: 21
+pivot: "習"
+selected:
+- "皆"
+- "翌"
+---
+distractors:
+- "孝"
+- "拷"
+- "老"
+- "者"
+participant_id: 21
+pivot: "考"
+selected:
+- "孝"
+- "老"
+---
+distractors:
+- "問"
+- "耳"
+- "門"
+- "間"
+participant_id: 21
+pivot: "聞"
+selected:
+- "間"
+---
+distractors:
+- "免"
+- "勺"
+- "絶"
+- "芭"
+- "角"
+- "邑"
+participant_id: 21
+pivot: "色"
+selected:
+- "芭"
+- "邑"
+---
+distractors:
+- "凍"
+- "楽"
+- "模"
+- "白"
+- "菓"
+- "菜"
+- "葉"
+participant_id: 21
+pivot: "薬"
+selected:
+- "楽"
+- "菓"
+---
+distractors:
+- "両"
+- "価"
+- "匹"
+- "四"
+- "田"
+- "要"
+- "酒"
+participant_id: 21
+pivot: "西"
+selected:
+- "両"
+- "匹"
+---
+distractors:
+- "児"
+- "昆"
+- "眺"
+- "視"
+- "貝"
+participant_id: 21
+pivot: "見"
+selected:
+- "貝"
+---
+distractors:
+- "舌"
+- "詔"
+- "詞"
+- "詰"
+- "語"
+participant_id: 21
+pivot: "話"
+selected:
+- "詔"
+- "詞"
+- "詰"
+- "語"
+---
+distractors:
+- "悟"
+- "言"
+- "詞"
+- "詰"
+- "話"
+- "諮"
+participant_id: 21
+pivot: "語"
+selected:
+- "詞"
+- "詰"
+- "話"
+- "諮"
+---
+distractors:
+- "嚇"
+- "寺"
+- "恭"
+- "赦"
+- "走"
+participant_id: 21
+pivot: "赤"
+selected:
+- "恭"
+---
+distractors:
+- "砲"
+- "走"
+- "赴"
+- "超"
+participant_id: 21
+pivot: "起"
+selected:
+- "赴"
+- "超"
+---
+distractors:
+- "促"
+- "口"
+- "史"
+- "定"
+- "臣"
+- "走"
+- "路"
+- "跳"
+participant_id: 21
+pivot: "足"
+selected:
+- "史"
+- "定"
+---
+distractors:
+- "斤"
+- "辺"
+- "込"
+- "迎"
+- "返"
+- "述"
+- "逝"
+participant_id: 21
+pivot: "近"
+selected:
+- "返"
+---
+distractors:
+- "周"
+- "彫"
+- "調"
+- "通"
+- "造"
+- "過"
+participant_id: 21
+pivot: "週"
+selected:
+- "過"
+---
+distractors:
+- "揮"
+- "通"
+- "連"
+- "週"
+participant_id: 21
+pivot: "運"
+selected:
+- "通"
+- "連"
+---
+distractors:
+- "便"
+- "動"
+- "厘"
+- "垂"
+- "車"
+- "里"
+- "雪"
+participant_id: 21
+pivot: "重"
+selected:
+- "垂"
+- "里"
+---
+distractors:
+- "予"
+- "理"
+- "矛"
+- "里"
+- "針"
+- "黒"
+participant_id: 21
+pivot: "野"
+selected:
+- "理"
+---
+distractors:
+- "根"
+- "金"
+- "針"
+- "鉃"
+- "銭"
+- "錬"
+- "鎖"
+participant_id: 21
+pivot: "銀"
+selected:
+- "根"
+- "鎖"
+---
+distractors:
+- "冒"
+- "問"
+- "明"
+- "聞"
+- "開"
+- "閑"
+- "間"
+participant_id: 21
+pivot: "門"
+selected:
+- "問"
+- "間"
+---
+distractors:
+- "元"
+- "冠"
+- "完"
+- "晩"
+- "腕"
+- "防"
+participant_id: 21
+pivot: "院"
+selected:
+- "晩"
+- "防"
+---
+distractors:
+- "権"
+- "焦"
+- "菓"
+- "隻"
+- "隼"
+- "雑"
+participant_id: 21
+pivot: "集"
+selected:
+- "焦"
+- "隻"
+- "隼"
+---
+distractors:
+- "昔"
+- "暗"
+- "竜"
+- "章"
+participant_id: 21
+pivot: "音"
+selected:
+- "昔"
+- "竜"
+---
+distractors:
+- "堤"
+- "関"
+- "順"
+- "頼"
+- "顆"
+- "顕"
+participant_id: 21
+pivot: "題"
+selected:
+- "頼"
+- "顆"
+---
+distractors:
+- "向"
+- "周"
+- "独"
+- "盾"
+- "繭"
+- "虫"
+participant_id: 21
+pivot: "風"
+selected:
+- "周"
+---
+distractors:
+- "倉"
+- "含"
+- "娘"
+- "良"
+- "飢"
+- "養"
+participant_id: 21
+pivot: "食"
+selected:
+- "倉"
+---
+distractors:
+- "仮"
+- "反"
+- "版"
+- "飢"
+- "飲"
+participant_id: 21
+pivot: "飯"
+selected:
+- "飢"
+- "飲"
+---
+distractors:
+- "欠"
+- "欺"
+- "欽"
+- "食"
+- "飢"
+- "飯"
+- "飾"
+participant_id: 21
+pivot: "飲"
+selected:
+- "欺"
+- "欽"
+- "飾"
+---
+distractors:
+- "検"
+- "険"
+- "駐"
+- "騎"
+- "騒"
+participant_id: 21
+pivot: "験"
+selected:
+- "険"
+- "騎"
+- "騒"
+---
+distractors:
+- "一"
+- "与"
+- "二"
+- "五"
+- "工"
+- "王"
+participant_id: 24
+pivot: "三"
+selected:
+- "王"
+---
+distractors:
+- "一"
+- "下"
+- "土"
+- "峠"
+- "止"
+- "正"
+participant_id: 24
+pivot: "上"
+selected:
+- "下"
+---
+distractors:
+- "七"
+- "万"
+- "也"
+- "可"
+- "目"
+- "葉"
+participant_id: 24
+pivot: "世"
+selected:
+- "七"
+---
+distractors:
+- "住"
+- "全"
+- "玉"
+- "王"
+- "生"
+participant_id: 24
+pivot: "主"
+selected:
+- "王"
+---
+distractors:
+- "万"
+- "供"
+- "剰"
+- "朱"
+- "東"
+- "果"
+- "重"
+participant_id: 24
+pivot: "乗"
+selected:
+- "重"
+---
+distractors:
+- "上"
+- "丸"
+- "乙"
+- "人"
+- "力"
+- "軌"
+- "雑"
+participant_id: 24
+pivot: "九"
+selected:
+- "丸"
+---
+distractors:
+- "三"
+- "互"
+- "亜"
+- "悟"
+- "正"
+- "玉"
+participant_id: 24
+pivot: "五"
+selected:
+- "互"
+---
+distractors:
+- "任"
+- "佳"
+- "俵"
+- "在"
+- "士"
+- "壮"
+participant_id: 24
+pivot: "仕"
+selected:
+- "任"
+---
+distractors:
+- "人"
+- "似"
+- "北"
+- "口"
+- "立"
+participant_id: 24
+pivot: "以"
+selected:
+- "似"
+---
+distractors:
+- "主"
+- "任"
+- "往"
+- "柱"
+participant_id: 24
+pivot: "住"
+selected:
+- "往"
+- "柱"
+---
+distractors:
+- "元"
+- "光"
+- "売"
+- "夫"
+- "洗"
+- "銑"
+participant_id: 24
+pivot: "先"
+selected:
+- "洗"
+---
+distractors:
+- "交"
+- "元"
+- "八"
+- "大"
+- "恋"
+- "文"
+- "水"
+- "穴"
+participant_id: 24
+pivot: "六"
+selected:
+- "穴"
+---
+distractors:
+- "一"
+- "与"
+- "再"
+- "安"
+- "朽"
+participant_id: 24
+pivot: "写"
+selected:
+- "与"
+---
+distractors:
+- "丸"
+- "久"
+- "各"
+- "名"
+- "尽"
+- "終"
+participant_id: 24
+pivot: "冬"
+selected:
+- "各"
+---
+distractors:
+- "凸"
+- "凹"
+- "山"
+- "市"
+- "拙"
+participant_id: 24
+pivot: "出"
+selected:
+- "拙"
+---
+distractors:
+- "七"
+- "万"
+- "刀"
+- "初"
+- "功"
+- "坊"
+- "虐"
+participant_id: 24
+pivot: "切"
+selected:
+- "功"
+---
+distractors:
+- "万"
+- "刀"
+- "功"
+- "加"
+- "勉"
+- "大"
+participant_id: 24
+pivot: "力"
+selected:
+- "刀"
+---
+distractors:
+- "免"
+- "力"
+- "勲"
+- "逸"
+participant_id: 24
+pivot: "勉"
+selected:
+- "免"
+---
+distractors:
+- "千"
+- "年"
+- "牛"
+- "許"
+participant_id: 24
+pivot: "午"
+selected:
+- "牛"
+---
+distractors:
+- "夫"
+- "寺"
+- "法"
+- "玉"
+- "至"
+- "虫"
+participant_id: 24
+pivot: "去"
+selected:
+- "法"
+---
+distractors:
+- "中"
+- "二"
+- "加"
+- "右"
+- "回"
+- "困"
+- "田"
+participant_id: 24
+pivot: "口"
+selected:
+- "回"
+---
+distractors:
+- "口"
+- "否"
+- "左"
+- "石"
+- "舌"
+- "若"
+participant_id: 24
+pivot: "右"
+selected:
+- "左"
+- "石"
+---
+distractors:
+- "冬"
+- "口"
+- "右"
+- "各"
+- "銘"
+participant_id: 24
+pivot: "名"
+selected:
+- "各"
+---
+distractors:
+- "偵"
+- "損"
+- "貝"
+- "責"
+- "貴"
+- "買"
+- "賀"
+participant_id: 24
+pivot: "員"
+selected:
+- "買"
+---
+distractors:
+- "口"
+- "聞"
+- "門"
+- "間"
+- "閣"
+participant_id: 24
+pivot: "問"
+selected:
+- "門"
+- "間"
+---
+distractors:
+- "一"
+- "大"
+- "夫"
+- "央"
+- "火"
+- "矢"
+- "蚕"
+participant_id: 24
+pivot: "天"
+selected:
+- "大"
+- "夫"
+---
+distractors:
+- "人"
+- "伏"
+- "公"
+- "大"
+- "犬"
+- "駄"
+participant_id: 24
+pivot: "太"
+selected:
+- "大"
+- "犬"
+---
+distractors:
+- "女"
+- "奴"
+- "妊"
+- "妹"
+- "子"
+- "存"
+participant_id: 24
+pivot: "好"
+selected:
+- "妊"
+---
+distractors:
+- "味"
+- "姉"
+- "未"
+- "朱"
+- "殊"
+participant_id: 24
+pivot: "妹"
+selected:
+- "姉"
+---
+distractors:
+- "人"
+- "千"
+- "小"
+- "山"
+- "引"
+- "訓"
+- "髪"
+participant_id: 24
+pivot: "川"
+selected:
+- "山"
+---
+distractors:
+- "六"
+- "布"
+- "帝"
+- "申"
+- "肺"
+participant_id: 24
+pivot: "市"
+selected:
+- "帝"
+---
+distractors:
+- "侵"
+- "婦"
+- "帝"
+- "帯"
+- "掃"
+- "損"
+- "滞"
+participant_id: 24
+pivot: "帰"
+selected:
+- "掃"
+---
+distractors:
+- "工"
+- "庄"
+- "床"
+- "拡"
+- "玄"
+- "鉱"
+participant_id: 24
+pivot: "広"
+selected:
+- "庄"
+---
+distractors:
+- "丹"
+- "局"
+- "弓"
+- "引"
+- "弥"
+- "強"
+- "沸"
+participant_id: 24
+pivot: "弱"
+selected:
+- "引"
+---
+distractors:
+- "夕"
+- "必"
+- "忌"
+- "悪"
+- "火"
+participant_id: 24
+pivot: "心"
+selected:
+- "必"
+---
+distractors:
+- "千"
+- "印"
+- "宇"
+- "我"
+- "挙"
+- "毛"
+- "牛"
+participant_id: 24
+pivot: "手"
+selected:
+- "毛"
+---
+distractors:
+- "孝"
+- "放"
+- "数"
+- "致"
+- "赦"
+participant_id: 24
+pivot: "教"
+selected:
+- "数"
+---
+distractors:
+- "丈"
+- "交"
+- "夫"
+- "斉"
+- "紋"
+- "蚊"
+- "衣"
+participant_id: 24
+pivot: "文"
+selected:
+- "丈"
+---
+distractors:
+- "斗"
+- "斜"
+- "断"
+- "科"
+- "米"
+- "粋"
+- "糾"
+participant_id: 24
+pivot: "料"
+selected:
+- "科"
+---
+distractors:
+- "断"
+- "析"
+- "粋"
+- "薪"
+- "親"
+participant_id: 24
+pivot: "新"
+selected:
+- "親"
+---
+distractors:
+- "放"
+- "方"
+- "施"
+- "旋"
+- "族"
+participant_id: 24
+pivot: "旅"
+selected:
+- "放"
+- "族"
+---
+distractors:
+- "方"
+- "旅"
+- "旋"
+- "矢"
+participant_id: 24
+pivot: "族"
+selected:
+- "旅"
+---
+distractors:
+- "但"
+- "尺"
+- "尽"
+- "局"
+- "届"
+- "甲"
+- "駅"
+participant_id: 24
+pivot: "昼"
+selected:
+- "尽"
+---
+distractors:
+- "侍"
+- "寺"
+- "封"
+- "待"
+- "持"
+- "特"
+- "里"
+participant_id: 24
+pivot: "時"
+selected:
+- "侍"
+- "待"
+- "持"
+- "特"
+---
+distractors:
+- "唯"
+- "晶"
+- "暇"
+- "濯"
+- "羅"
+- "躍"
+participant_id: 24
+pivot: "曜"
+selected:
+- "濯"
+---
+distractors:
+- "崩"
+- "日"
+- "用"
+- "目"
+- "骨"
+participant_id: 24
+pivot: "月"
+selected:
+- "用"
+---
+distractors:
+- "右"
+- "月"
+- "肩"
+- "賄"
+- "随"
+- "首"
+- "髪"
+participant_id: 24
+pivot: "有"
+selected:
+- "月"
+---
+distractors:
+- "乗"
+- "更"
+- "束"
+- "棟"
+- "槽"
+- "車"
+participant_id: 24
+pivot: "東"
+selected:
+- "車"
+---
+distractors:
+- "止"
+- "王"
+- "症"
+- "証"
+participant_id: 24
+pivot: "正"
+selected:
+- "王"
+---
+distractors:
+- "士"
+- "妙"
+- "少"
+- "渉"
+- "走"
+participant_id: 24
+pivot: "歩"
+selected:
+- "走"
+---
+distractors:
+- "一"
+- "丹"
+- "日"
+- "毎"
+- "田"
+- "髪"
+participant_id: 24
+pivot: "母"
+selected:
+- "毎"
+---
+distractors:
+- "久"
+- "侮"
+- "待"
+- "有"
+- "母"
+- "海"
+participant_id: 24
+pivot: "毎"
+selected:
+- "母"
+---
+distractors:
+- "一"
+- "氏"
+- "眠"
+- "貝"
+participant_id: 24
+pivot: "民"
+selected:
+- "眠"
+---
+distractors:
+- "侮"
+- "悔"
+- "母"
+- "毎"
+participant_id: 24
+pivot: "海"
+selected:
+- "毎"
+---
+distractors:
+- "場"
+- "易"
+- "杉"
+- "牛"
+- "牧"
+- "牲"
+- "特"
+participant_id: 24
+pivot: "物"
+selected:
+- "特"
+---
+distractors:
+- "主"
+- "姓"
+- "玉"
+- "王"
+participant_id: 24
+pivot: "生"
+selected:
+- "主"
+---
+distractors:
+- "備"
+- "周"
+- "月"
+- "甲"
+- "男"
+- "角"
+- "通"
+participant_id: 24
+pivot: "用"
+selected:
+- "月"
+---
+distractors:
+- "今"
+- "介"
+- "卑"
+- "男"
+- "畏"
+participant_id: 24
+pivot: "界"
+selected:
+- "男"
+---
+distractors:
+- "伯"
+- "日"
+- "旨"
+- "由"
+- "百"
+- "自"
+participant_id: 24
+pivot: "白"
+selected:
+- "日"
+- "自"
+---
+distractors:
+- "一"
+- "宿"
+- "白"
+- "目"
+- "頁"
+participant_id: 24
+pivot: "百"
+selected:
+- "白"
+---
+distractors:
+- "児"
+- "具"
+- "目"
+- "直"
+- "省"
+- "茶"
+- "貝"
+participant_id: 24
+pivot: "県"
+selected:
+- "具"
+---
+distractors:
+- "善"
+- "差"
+- "看"
+- "美"
+- "者"
+- "首"
+participant_id: 24
+pivot: "着"
+selected:
+- "看"
+---
+distractors:
+- "加"
+- "却"
+- "和"
+- "痴"
+- "矩"
+- "短"
+participant_id: 24
+pivot: "知"
+selected:
+- "加"
+- "和"
+---
+distractors:
+- "冊"
+- "刑"
+- "呼"
+- "砂"
+- "砕"
+- "開"
+participant_id: 24
+pivot: "研"
+selected:
+- "刑"
+- "砂"
+---
+distractors:
+- "泊"
+- "白"
+- "皆"
+- "羽"
+- "翌"
+participant_id: 24
+pivot: "習"
+selected:
+- "翌"
+---
+distractors:
+- "孝"
+- "拷"
+- "老"
+- "者"
+participant_id: 24
+pivot: "考"
+selected:
+- "孝"
+---
+distractors:
+- "問"
+- "耳"
+- "門"
+- "間"
+participant_id: 24
+pivot: "聞"
+selected:
+- "問"
+- "門"
+- "間"
+---
+distractors:
+- "免"
+- "勺"
+- "絶"
+- "芭"
+- "角"
+- "邑"
+participant_id: 24
+pivot: "色"
+selected:
+- "芭"
+---
+distractors:
+- "凍"
+- "楽"
+- "模"
+- "白"
+- "菓"
+- "菜"
+- "葉"
+participant_id: 24
+pivot: "薬"
+selected:
+- "楽"
+---
+distractors:
+- "両"
+- "価"
+- "匹"
+- "四"
+- "田"
+- "要"
+- "酒"
+participant_id: 24
+pivot: "西"
+selected:
+- "四"
+---
+distractors:
+- "児"
+- "昆"
+- "眺"
+- "視"
+- "貝"
+participant_id: 24
+pivot: "見"
+selected:
+- "貝"
+---
+distractors:
+- "舌"
+- "詔"
+- "詞"
+- "詰"
+- "語"
+participant_id: 24
+pivot: "話"
+selected:
+- "語"
+---
+distractors:
+- "悟"
+- "言"
+- "詞"
+- "詰"
+- "話"
+- "諮"
+participant_id: 24
+pivot: "語"
+selected:
+- "話"
+---
+distractors:
+- "嚇"
+- "寺"
+- "恭"
+- "赦"
+- "走"
+participant_id: 24
+pivot: "赤"
+selected:
+- "恭"
+---
+distractors:
+- "砲"
+- "走"
+- "赴"
+- "超"
+participant_id: 24
+pivot: "起"
+selected:
+- "超"
+---
+distractors:
+- "促"
+- "口"
+- "史"
+- "定"
+- "臣"
+- "走"
+- "路"
+- "跳"
+participant_id: 24
+pivot: "足"
+selected:
+- "走"
+---
+distractors:
+- "斤"
+- "辺"
+- "込"
+- "迎"
+- "返"
+- "述"
+- "逝"
+participant_id: 24
+pivot: "近"
+selected:
+- "込"
+---
+distractors:
+- "周"
+- "彫"
+- "調"
+- "通"
+- "造"
+- "過"
+participant_id: 24
+pivot: "週"
+selected:
+- "調"
+---
+distractors:
+- "揮"
+- "通"
+- "連"
+- "週"
+participant_id: 24
+pivot: "運"
+selected:
+- "揮"
+---
+distractors:
+- "予"
+- "理"
+- "矛"
+- "里"
+- "針"
+- "黒"
+participant_id: 24
+pivot: "野"
+selected:
+- "理"
+---
+distractors:
+- "根"
+- "金"
+- "針"
+- "鉃"
+- "銭"
+- "錬"
+- "鎖"
+participant_id: 24
+pivot: "銀"
+selected:
+- "鉃"
+---
+distractors:
+- "冒"
+- "問"
+- "明"
+- "聞"
+- "開"
+- "閑"
+- "間"
+participant_id: 24
+pivot: "門"
+selected:
+- "問"
+- "聞"
+- "間"
+---
+distractors:
+- "元"
+- "冠"
+- "完"
+- "晩"
+- "腕"
+- "防"
+participant_id: 24
+pivot: "院"
+selected:
+- "防"
+---
+distractors:
+- "権"
+- "焦"
+- "菓"
+- "隻"
+- "隼"
+- "雑"
+participant_id: 24
+pivot: "集"
+selected:
+- "焦"
+---
+distractors:
+- "昔"
+- "暗"
+- "竜"
+- "章"
+participant_id: 24
+pivot: "音"
+selected:
+- "昔"
+---
+distractors:
+- "向"
+- "周"
+- "独"
+- "盾"
+- "繭"
+- "虫"
+participant_id: 24
+pivot: "風"
+selected:
+- "周"
+---
+distractors:
+- "仮"
+- "反"
+- "版"
+- "飢"
+- "飲"
+participant_id: 24
+pivot: "飯"
+selected:
+- "飲"
+---
+distractors:
+- "欠"
+- "欺"
+- "欽"
+- "食"
+- "飢"
+- "飯"
+- "飾"
+participant_id: 24
+pivot: "飲"
+selected:
+- "飯"
+---
+distractors:
+- "検"
+- "険"
+- "駐"
+- "騎"
+- "騒"
+participant_id: 24
+pivot: "験"
+selected:
+- "険"
+---
+distractors:
+- "丁"
+- "万"
+- "二"
+- "互"
+- "十"
+participant_id: 25
+pivot: "一"
+selected:
+- "二"
+---
+distractors:
+- "一"
+- "下"
+- "土"
+- "峠"
+- "止"
+- "正"
+participant_id: 25
+pivot: "上"
+selected:
+- "下"
+---
+distractors:
+- "七"
+- "万"
+- "也"
+- "可"
+- "目"
+- "葉"
+participant_id: 25
+pivot: "世"
+selected:
+- "万"
+---
+distractors:
+- "万"
+- "供"
+- "剰"
+- "朱"
+- "東"
+- "果"
+- "重"
+participant_id: 25
+pivot: "乗"
+selected:
+- "重"
+---
+distractors:
+- "任"
+- "佳"
+- "俵"
+- "在"
+- "士"
+- "壮"
+participant_id: 25
+pivot: "仕"
+selected:
+- "佳"
+---
+distractors:
+- "主"
+- "任"
+- "往"
+- "柱"
+participant_id: 25
+pivot: "住"
+selected:
+- "任"
+---
+distractors:
+- "交"
+- "元"
+- "八"
+- "大"
+- "恋"
+- "文"
+- "水"
+- "穴"
+participant_id: 25
+pivot: "六"
+selected:
+- "大"
+---
+distractors:
+- "七"
+- "万"
+- "刀"
+- "初"
+- "功"
+- "坊"
+- "虐"
+participant_id: 25
+pivot: "切"
+selected:
+- "刀"
+---
+distractors:
+- "万"
+- "刀"
+- "功"
+- "加"
+- "勉"
+- "大"
+participant_id: 25
+pivot: "力"
+selected:
+- "加"
+---
+distractors:
+- "千"
+- "年"
+- "牛"
+- "許"
+participant_id: 25
+pivot: "午"
+selected:
+- "年"
+---
+distractors:
+- "口"
+- "聞"
+- "門"
+- "間"
+- "閣"
+participant_id: 25
+pivot: "問"
+selected:
+- "門"
+---
+distractors:
+- "味"
+- "姉"
+- "未"
+- "朱"
+- "殊"
+participant_id: 25
+pivot: "妹"
+selected:
+- "殊"
+---
+distractors:
+- "孝"
+- "放"
+- "数"
+- "致"
+- "赦"
+participant_id: 25
+pivot: "教"
+selected:
+- "赦"
+---
+distractors:
+- "丈"
+- "交"
+- "夫"
+- "斉"
+- "紋"
+- "蚊"
+- "衣"
+participant_id: 25
+pivot: "文"
+selected:
+- "紋"
+---
+distractors:
+- "断"
+- "析"
+- "粋"
+- "薪"
+- "親"
+participant_id: 25
+pivot: "新"
+selected:
+- "粋"
+---
+distractors:
+- "放"
+- "方"
+- "施"
+- "旋"
+- "族"
+participant_id: 25
+pivot: "旅"
+selected:
+- "族"
+---
+distractors:
+- "方"
+- "旅"
+- "旋"
+- "矢"
+participant_id: 25
+pivot: "族"
+selected:
+- "旋"
+---
+distractors:
+- "但"
+- "尺"
+- "尽"
+- "局"
+- "届"
+- "甲"
+- "駅"
+participant_id: 25
+pivot: "昼"
+selected:
+- "尽"
+---
+distractors:
+- "乗"
+- "更"
+- "束"
+- "棟"
+- "槽"
+- "車"
+participant_id: 25
+pivot: "東"
+selected:
+- "更"
+---
+distractors:
+- "士"
+- "妙"
+- "少"
+- "渉"
+- "走"
+participant_id: 25
+pivot: "歩"
+selected:
+- "士"
+---
+distractors:
+- "一"
+- "丹"
+- "日"
+- "毎"
+- "田"
+- "髪"
+participant_id: 25
+pivot: "母"
+selected:
+- "一"
+---
+distractors:
+- "丈"
+- "人"
+- "尿"
+- "木"
+- "氷"
+participant_id: 25
+pivot: "水"
+selected:
+- "丈"
+---
+distractors:
+- "場"
+- "易"
+- "杉"
+- "牛"
+- "牧"
+- "牲"
+- "特"
+participant_id: 25
+pivot: "物"
+selected:
+- "特"
+---
+distractors:
+- "主"
+- "姓"
+- "玉"
+- "王"
+participant_id: 25
+pivot: "生"
+selected:
+- "姓"
+---
+distractors:
+- "備"
+- "周"
+- "月"
+- "甲"
+- "男"
+- "角"
+- "通"
+participant_id: 25
+pivot: "用"
+selected:
+- "男"
+---
+distractors:
+- "丁"
+- "可"
+- "唯"
+- "打"
+- "灯"
+- "男"
+participant_id: 25
+pivot: "町"
+selected:
+- "可"
+---
+distractors:
+- "一"
+- "宿"
+- "白"
+- "目"
+- "頁"
+participant_id: 25
+pivot: "百"
+selected:
+- "目"
+---
+distractors:
+- "児"
+- "具"
+- "目"
+- "直"
+- "省"
+- "茶"
+- "貝"
+participant_id: 25
+pivot: "県"
+selected:
+- "児"
+---
+distractors:
+- "善"
+- "差"
+- "看"
+- "美"
+- "者"
+- "首"
+participant_id: 25
+pivot: "着"
+selected:
+- "差"
+---
+distractors:
+- "合"
+- "符"
+- "筒"
+- "給"
+- "茶"
+participant_id: 25
+pivot: "答"
+selected:
+- "茶"
+---
+distractors:
+- "問"
+- "耳"
+- "門"
+- "間"
+participant_id: 25
+pivot: "聞"
+selected:
+- "門"
+---
+distractors:
+- "免"
+- "勺"
+- "絶"
+- "芭"
+- "角"
+- "邑"
+participant_id: 25
+pivot: "色"
+selected:
+- "絶"
+---
+distractors:
+- "両"
+- "価"
+- "匹"
+- "四"
+- "田"
+- "要"
+- "酒"
+participant_id: 25
+pivot: "西"
+selected:
+- "田"
+---
+distractors:
+- "児"
+- "昆"
+- "眺"
+- "視"
+- "貝"
+participant_id: 25
+pivot: "見"
+selected:
+- "眺"
+---
+distractors:
+- "舌"
+- "詔"
+- "詞"
+- "詰"
+- "語"
+participant_id: 25
+pivot: "話"
+selected:
+- "詰"
+---
+distractors:
+- "根"
+- "金"
+- "針"
+- "鉃"
+- "銭"
+- "錬"
+- "鎖"
+participant_id: 25
+pivot: "銀"
+selected:
+- "銭"
+---
+distractors:
+- "元"
+- "冠"
+- "完"
+- "晩"
+- "腕"
+- "防"
+participant_id: 25
+pivot: "院"
+selected:
+- "腕"
+---
+distractors:
+- "昔"
+- "暗"
+- "竜"
+- "章"
+participant_id: 25
+pivot: "音"
+selected:
+- "竜"
+---
+distractors:
+- "向"
+- "周"
+- "独"
+- "盾"
+- "繭"
+- "虫"
+participant_id: 25
+pivot: "風"
+selected:
+- "盾"

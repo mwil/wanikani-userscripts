@@ -1,0 +1,21 @@
+Licenses
+
+
+The following files were provided by Lars Yencken as supplemental material to his PhD thesis.
+
+jyouyou__strokeEditDistance.csv
+jyouyou__yehAndLiRadical.csv
+poolexp_judgements.yaml
+
+
+URL: http://lars.yencken.org/datasets/phd/
+
+Original Notice:
+This page describes a number of data sets released as part of my PhD work.
+All data sets on this page are released under the Creative Commons Attribution 3.0 Unported license.
+Unless otherwise specified, the appropriate academic citation for any of these datasets is:
+
+Yencken, Lars (2010) Orthographic support for passing the reading hurdle in Japanese. PhD Thesis, University of Melbourne, Melbourne, Australia.
+
+
+A list of similar kanji was extracted and exported to JSON.
