@@ -23,6 +23,11 @@ function NiaiDB()
             return (this.lookup_db[kanji].level !== 99);
         },
 
+        isKanjiInDB: function(kanji)
+        {
+            return (kanji in this.lookup_db);
+        },
+
         isKanjiLocked: function(kanji, level)
         {
             return (this.lookup_db[kanji].level > level);

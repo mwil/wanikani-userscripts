@@ -53,6 +53,19 @@
                         .append(`<a class="btn" id="niai_badges_btn">
                                     <i class="icon-remove-circle"></i>
                                 </a>`)
+                        .append(`<span id="add_kanji_dropdown">
+                                     <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                                         <span class="icon-plus"></span>
+                                     </a>
+                                     <ul class="dropdown-menu">
+                                        <li><span class="input-prepend">
+                                                <span class="add-on">漢</span>
+                                                <input id="add_kanji_input" maxlength="1" class="span2" type="text" placeholder="Enter Kanji Here">
+                                            </span>
+                                        </li>
+                                        <li><a id="add_kanji_btn"><i class="icon-fixed-width icon-plus"></i> Add To Similar Kanji</a></li>
+                                     </ul>
+                                 </span>`)
                         .append(`<a class="btn disabled" id="niai_reset_similar_btn">
                                     <i class="icon-undo"></i>
                                 </a>`);
@@ -167,6 +180,38 @@
         GM_setValue(`override_db`, JSON.stringify(this.override_db));
 
         this.populateNiaiSection(kanji);
+
+        return false;
+    };
+    // #########################################################################
+
+    // #########################################################################
+    WK_Niai.prototype.addSimilarKanji = function(event)
+    {
+        const kanji = this.wki.getSubject().kan;
+        const new_kanji = $(`#add_kanji_input`).val().trim();
+
+        if (!kanji || !new_kanji)
+            return false;
+
+        // TODO:
+        // - clear field
+        // - close fold
+
+        if (!(kanji in this.override_db))
+            this.override_db[kanji] = [];
+
+        let found = this.override_db[kanji].some(
+            (item) => (new_kanji === item.kan)
+        );
+
+        if (!found && this.ndb.isKanjiInDB(new_kanji))
+            this.override_db[kanji].push({"kan": new_kanji, "score": 1.0});
+
+        GM_setValue(`override_db`, JSON.stringify(this.override_db));
+        this.populateNiaiSection(kanji);
+
+        $(`#add_kanji_input`).val(``).focus();
 
         return false;
     };

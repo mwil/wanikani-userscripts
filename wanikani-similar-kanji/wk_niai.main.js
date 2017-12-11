@@ -104,7 +104,10 @@ function WK_Niai()
         $(`#niai_grid_visibility`).on(`click`, this.toggleMainFold.bind(this));
         $(`#niai_badges_btn`).on(`click`, this.toggleBadges.bind(this));
         $(`#niai_reset_similar_btn`).on(`click`, this.resetSimilarKanji.bind(this));
+        $(`#add_kanji_btn`).on(`click`, this.addSimilarKanji.bind(this));
         // #####################################################################
+        $(document).on(`click`, `#add_kanji_dropdown .dropdown-menu`,
+           (e) => e.stopPropagation());
     };
     // #########################################################################
 
