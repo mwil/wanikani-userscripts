@@ -1,38 +1,44 @@
 // ==UserScript==
 // @name        Wanikani Niai Similar Kanji
-// @version     0.0.1
+// @version     0.7.0
 // @author      acm
+// @description Adds a visually similar kanji section to content pages, reviews, and lessons
+// @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
 // @namespace   wk_niai
-
+//
 // @include     *://www.wanikani.com/kanji/*
 // @include     *://www.wanikani.com/review/session*
 // @include     *://www.wanikani.com/lesson/session*
-
-// @resource    from_keisei   http://localhost:8088/static/from_keisei.json
-// @resource    stroke_dist   http://localhost:8088/static/stroke_edit_dist.json
-// @resource    yl_radical    http://localhost:8088/static/yl_radical.json
-// @resource    old_script    http://localhost:8088/static/old_script.json
-// @resource    manual        http://localhost:8088/static/manual.json
-// @resource    lookup        http://localhost:8088/static/lookup.json
-
-// @resource    niai_style    http://localhost:8088/static/wk_niai.css
-// @resource    chargrid      http://localhost:8088/static/chargrid.css
-// @resource    bootstrapcss  http://localhost:8088/static/bootstrap.crop.css
-
-// @resource    bootstrapjs   http://localhost:8088/static/bootstrap.js
-
-// @require     http://localhost:8088/static/wk_interaction.js
-
-// @require     http://localhost:8088/static/wk_niai.db.js
-// @require     http://localhost:8088/static/wk_niai.modal.js
-// @require     http://localhost:8088/static/wk_niai.html.js
-// @require     http://localhost:8088/static/wk_niai.main.js
-
+//
+// @updateURL   https://github.com/mwil/wanikani-userscripts/raw/master/wanikani-similar-kanji/wk_niai.user.js
+// @downloadURL https://github.com/mwil/wanikani-userscripts/raw/master/wanikani-similar-kanji/wk_niai.user.js
+//
+// @resource    from_keisei   https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-similar-kanji/db/from_keisei.json
+// @resource    stroke_dist   https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-similar-kanji/db/stroke_edit_dist.json
+// @resource    yl_radical    https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-similar-kanji/db/yl_radical.json
+// @resource    old_script    https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-similar-kanji/db/old_script.json
+// @resource    manual        https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-similar-kanji/db/manual.json
+// @resource    lookup        https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-similar-kanji/db/lookup.json
+//
+// @resource    niai_style    https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-similar-kanji/css/wk_niai.css
+//
+// @resource    chargrid      https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/css/chargrid.css
+// @resource    bootstrapcss  https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/bootstrap/css/bootstrap.crop.css
+//
+// @resource    bootstrapjs   https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/bootstrap/js/bootstrap.js
+//
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/utility/wk_interaction.js
+//
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-similar-kanji/wk_niai.db.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-similar-kanji/wk_niai.modal.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-similar-kanji/wk_niai.html.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-similar-kanji/wk_niai.main.js
+//
 // @grant       GM_log
 // @grant       GM_getValue
 // @grant       GM_setValue
 // @grant       GM_addStyle
 // @grant       GM_getResourceText
-
+//
 // @run-at      document-end
 // ==/UserScript==
