@@ -9,12 +9,15 @@ function WK_Niai()
 
     this.settings = {
         "debug": false,
+        "minify": false,
+        "edit_mode": false,
         "sources": [
             "manual_db",
             "stroke_dist_db",
             "yl_radical_db",
             "keisei_db",
-            "old_script_db"
+            "old_script_db",
+            "override_db"
         ],
         "user_level": 99
     };
@@ -44,7 +47,7 @@ function WK_Niai()
                 // Remove the old section
                 $(`section:contains('Visually Similar Kanji')`).remove();
 
-                $(`section#note-reading`)
+                $(`section:contains('Found In Vocabulary')`)
                     .before(this.createNiaiSection());
                 break;
             case this.wki.PageEnum.reviews:
@@ -84,6 +87,24 @@ function WK_Niai()
 
         $(`li.notInWK a`).attr(`target`, `_blank`);
         // #####################################################################
+
+        if (this.settings.minify)
+        {
+            $(`#niai_main_fold`).hide();
+            $(`#niai_grid_visibility i`).attr(`class`, `icon-eye-close`);
+        }
+
+        if (!this.settings.edit_mode)
+        {
+            $(`.delete-badge`).hide();
+            $(`#niai_badges_btn i`).attr(`class`, `icon-circle-blank`);
+        }
+
+        // #####################################################################
+        $(`#niai_grid_visibility`).on(`click`, this.toggleMainFold.bind(this));
+        $(`#niai_badges_btn`).on(`click`, this.toggleBadges.bind(this));
+        $(`#niai_reset_similar_btn`).on(`click`, this.resetSimilarKanji.bind(this));
+        // #####################################################################
     };
     // #########################################################################
 
@@ -114,8 +135,6 @@ function WK_Niai()
                                                      this.settings.sources)];
         let char_list = [];
 
-        console.log("found similar kanji", similar_list);
-
         similar_list.forEach(
             function(sim_kanji, i)
             {
@@ -125,10 +144,11 @@ function WK_Niai()
                     "kanji":     sim_kanji,
                     "readings":  sim_info.readings,
                     "meanings":  len_limiter(sim_info.meanings),
-                    "is_locked":  this.ndb.isKanjiLocked(
+                    "is_locked": this.ndb.isKanjiLocked(
                                     sim_kanji, this.settings.user_level) ?
                                         `locked` :
                                         ``,
+                    "badge":     kanji === sim_kanji ? `` : `delete-badge`,
                     "href":      this.ndb.isKanjiInWK(sim_kanji) ?
                                     `/kanji/${sim_kanji}` :
                                     `https://jisho.org/search/${sim_kanji}%20%23kanji`,
@@ -141,6 +161,22 @@ function WK_Niai()
         );
 
         $(`#niai_similar_grid`).html(char_list.map(this.gen_item_chargrid).join(``));
+
+        if (!$(`#niai_badges_btn i`).hasClass(`icon-remove-circle`))
+        {
+            $(`.delete-badge`).hide();
+            $(`#niai_badges_btn i`).attr(`class`, `icon-circle-blank`);
+        }
+
+        if (kanji in this.override_db)
+            $(`#niai_reset_similar_btn`).removeClass(`disabled`);
+        else
+            $(`#niai_reset_similar_btn`).addClass(`disabled`);
+
+        // #####################################################################
+        $(`.${GM_info.script.namespace} .delete-badge`).on(
+            `click`, this.removeSimilarKanji.bind(this));
+        // #####################################################################
     };
     // #########################################################################
 
@@ -151,7 +187,11 @@ function WK_Niai()
                         .replace(/wk_namespace/g, GM_info.script.namespace));
 
         this.settings.debug = GM_getValue(`debug`) || true;
+        this.settings.minify = GM_getValue(`minify`) || false;
+        this.settings.edit_mode = GM_getValue(`edit_mode`) || false;
         this.settings.user_level = GM_getValue(`user_level`) || 99;
+
+        this.override_db = JSON.parse(GM_getValue(`override_db`) || `{}`);
 
         if (this.settings.user_level === 99 &&
             this.wki.detectCurPage() === this.wki.PageEnum.kanji)
@@ -166,10 +206,11 @@ function WK_Niai()
             } :
             function() {};
 
-        this.ndb.init();
+        this.ndb.init(this.override_db);
         this.wki.init();
 
         this.log(`The script element is:`, GM_info);
+        this.log("The override db is", this.override_db);
 
         // #####################################################################
         // Main hook, WK Interaction will kick off this script once the page

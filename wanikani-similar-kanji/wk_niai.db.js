@@ -2,6 +2,7 @@
 
 function NiaiDB()
 {
+    this.override_db = {};
 }
 
 
@@ -12,7 +13,10 @@ function NiaiDB()
     NiaiDB.prototype = {
         constructor: NiaiDB,
 
-        init: function() {},
+        init: function(override_db)
+        {
+            this.override_db = override_db;
+        },
 
         isKanjiInWK: function(kanji)
         {
@@ -53,6 +57,14 @@ function NiaiDB()
                                     similar_locked_set.add(sim_info.kan);
                                 else
                                     similar_set.add(sim_info.kan);
+                            }
+                            else if (sim_info.score < 0)
+                            {
+                                // negative scores are used to delete unwanted
+                                // kanji to make it consistent across all DBs
+                                // including the user's local db.
+                                similar_set.delete(sim_info.kan);
+                                similar_locked_set.delete(sim_info.kan);
                             }
                         },
                         this

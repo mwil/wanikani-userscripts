@@ -13,3 +13,45 @@
     border-bottom:1px solid #092;
     border-left:1px solid #0c4
 }
+
+@media (max-width: 767px)
+{
+    .wk_namespace ul.single-character-grid span.delete-badge:before
+    {
+        top: -0.5em;
+        right: -0.5em;
+        font-size:11px;
+        text-align:center;
+        line-height: 1.45em;
+    }
+}
+
+.wk_namespace .delete-badge
+{
+    position:absolute;
+    right:0
+}
+
+.wk_namespace .delete-badge:before
+{
+    content: "×";
+    background-color: orangered;
+    display:block;
+    position:absolute;
+    top:-0.25em;
+    right:-0.25em;
+    width:1.5em;
+    height:1.5em;
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
+    line-height:1.2em;
+    text-shadow:0 2px 0 #99001f;
+    -webkit-box-shadow:0 -2px 0 rgba(0,0,0,0.2) inset,0 0 10px rgba(255,255,255,0.5);
+    -moz-box-shadow:0 -2px 0 rgba(0,0,0,0.2) inset,0 0 10px rgba(255,255,255,0.5);
+    box-shadow:0 -2px 0 rgba(0,0,0,0.2) inset,0 0 10px rgba(255,255,255,0.5);
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    border-radius:50%;
+    z-index:999
+}
