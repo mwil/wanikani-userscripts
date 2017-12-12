@@ -60,7 +60,7 @@
                                      <ul class="dropdown-menu text-center">
                                         <li><span class="input-prepend">
                                                 <span class="add-on">漢</span>
-                                                <input id="niai_add_similar_input" maxlength="1" class="span2" type="text" placeholder="Enter Kanji Here">
+                                                <textarea id="niai_add_similar_input" maxlength="1" rows="1" class="span2" type="text" placeholder="Enter Kanji Here"></textarea>
                                             </span>
                                         </li>
                                         <li>
@@ -207,26 +207,23 @@
             $(`#kanji-dropdown .niai_reading`).text(``);
             $(`#kanji-dropdown .niai_meaning`).text(`Enter Kanji`);
             $(`#kanji-dropdown`)[0].dataset.kanji = ``;
-
-            return false;
         }
-
-        if (!this.ndb.isKanjiInDB(new_kanji))
+        else if (!this.ndb.isKanjiInDB(new_kanji))
         {
             $(`#kanji-dropdown .character`).text(new_kanji);
             $(`#kanji-dropdown .niai_reading`).text(``);
             $(`#kanji-dropdown .niai_meaning`).text(`Not In WK!`);
             $(`#kanji-dropdown`)[0].dataset.kanji = ``;
-
-            return false;
         }
+        else
+        {
+            const kanji_item = this.ndb.getInfo(new_kanji);
 
-        const kanji_item = this.ndb.getInfo(new_kanji);
-
-        $(`#kanji-dropdown .character`).text(new_kanji);
-        $(`#kanji-dropdown .niai_reading`).text(kanji_item.readings[0]);
-        $(`#kanji-dropdown .niai_meaning`).text(kanji_item.meanings[0]);
-        $(`#kanji-dropdown`)[0].dataset.kanji = new_kanji;
+            $(`#kanji-dropdown .character`).text(new_kanji);
+            $(`#kanji-dropdown .niai_reading`).text(kanji_item.readings[0]);
+            $(`#kanji-dropdown .niai_meaning`).text(kanji_item.meanings[0]);
+            $(`#kanji-dropdown`)[0].dataset.kanji = new_kanji;
+        }
 
         return false;
     };
@@ -256,8 +253,6 @@
 
         if (!found && this.ndb.isKanjiInDB(new_kanji))
             this.override_db[kanji].push({"kan": new_kanji, "score": 1.0});
-
-        console.log("found kanji", new_kanji, "found is", found, "and indb is", this.ndb.isKanjiInDB(new_kanji));
 
         GM_setValue(`override_db`, JSON.stringify(this.override_db));
         this.populateNiaiSection(kanji);

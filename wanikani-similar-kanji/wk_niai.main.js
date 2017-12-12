@@ -191,7 +191,7 @@ function WK_Niai()
         GM_addStyle(GM_getResourceText(`niai_style`)
                         .replace(/wk_namespace/g, GM_info.script.namespace));
 
-        this.settings.debug = GM_getValue(`debug`) || true;
+        this.settings.debug = GM_getValue(`debug`) || false;
         this.settings.minify = GM_getValue(`minify`) || false;
         this.settings.edit_mode = GM_getValue(`edit_mode`) || false;
         this.settings.user_level = GM_getValue(`user_level`) || 99;
