@@ -3,7 +3,7 @@
 // TODO: info on namespacing
 // You can listen to the following custom events from this module:
 //
-// keisei_wk_subject_ready   args: (curPage)
+// wk_subject_ready   args: (curPage)
 //
 // The "subject" of a page is ready and can be accessed via `getSubject()`.
 // For content pages like the kanji and radical pages this will be triggered
@@ -30,7 +30,17 @@ function WKInteraction(namespace)
 {
     this.namespace = namespace;
 
-    this.PageEnum = Object.freeze({ "unknown":0, "radicals":1, "kanji":2, "reviews":3, "reviews_summary":4, "lessons":5, "lessons_reviews":6 });
+    this.PageEnum = Object.freeze({
+        "unknown": 0,
+        "radicals": 1,
+        "kanji": 2,
+        "vocabulary": 3,
+        "reviews": 4,
+        "reviews_summary": 5,
+        "lessons": 6,
+        "lessons_reviews": 7
+    });
+
     this.curPage = this.PageEnum.unknown;
 
     this.lastQuestionCount = 0;
@@ -40,8 +50,6 @@ function WKInteraction(namespace)
 
     this.lastItem = null;
     this.lastQType = null; // meaning, reading
-
-    // Monitor review sessions
 }
 // #############################################################################
 
@@ -55,13 +63,13 @@ function WKInteraction(namespace)
 
         init: function()
         {
-            this.lessonInfoObserver = new MutationObserver(this.lessonInfoCallback.bind(this));
-            this.reviewInfoObserver = new MutationObserver(this.reviewInfoCallback.bind(this));
+            this.lessonInfoObserver  = new MutationObserver(this.lessonInfoCallback.bind(this));
+            this.reviewInfoObserver  = new MutationObserver(this.reviewInfoCallback.bind(this));
             this.reviewStartObserver = new MutationObserver(this.reviewStartCallback.bind(this));
 
 
             // TODO: removal didn't work, store the functions for now ...
-            this.bound_currentItem =   this.newReviewItemCallback.bind(this);
+            this.bound_currentItem   = this.newReviewItemCallback.bind(this);
             this.bound_questionCount = this.questionCountCallback.bind(this);
             $.jStorage.listenKeyChange(`currentItem`,   this.bound_currentItem);
             $.jStorage.listenKeyChange(`questionCount`, this.bound_questionCount);
@@ -75,6 +83,8 @@ function WKInteraction(namespace)
                 this.curPage = this.PageEnum.radicals;
             else if (/\/kanji\/./.test(document.URL)) /* Kanji Pages */
                 this.curPage = this.PageEnum.kanji;
+            else if (/\/vocabulary\/./.test(document.URL)) /* Vocab Pages */
+                this.curPage = this.PageEnum.vocabulary;
             else if (/\/review\/session/.test(document.URL)) /* Reviews Pages */
                 this.curPage = this.PageEnum.reviews;
             else if (/\/review/.test(document.URL)) /* Reviews Summary Page then? */
@@ -101,12 +111,14 @@ function WKInteraction(namespace)
                 case this.PageEnum.kanji:
                     $(document).triggerHandler(`${this.namespace}_wk_subject_ready`, [this.PageEnum.kanji]);
                     break;
+                case this.PageEnum.vocabulary:
+                    $(document).triggerHandler(`${this.namespace}_wk_subject_ready`, [this.PageEnum.vocabulary]);
+                    break;
                 case this.PageEnum.reviews:
                     this.reviewInfoObserver.observe(document.getElementById(`item-info-col2`), {childList: true});
                     // reviews are not ready after load, wait until the WK animation finishes.
                     this.reviewStartObserver.observe(document.getElementById(`loading`), {attributes: true});
 
-                    // TODO: do something after the last review was finished!
                     $(window).on(`beforeunload`, this.reviewEndCallback.bind(this));
                     break;
                 case this.PageEnum.reviews_summary:
@@ -114,6 +126,7 @@ function WKInteraction(namespace)
                 case this.PageEnum.lessons:
                     this.lessonInfoObserver.observe(document.getElementById(`supplement-rad`), {attributes: true});
                     this.lessonInfoObserver.observe(document.getElementById(`supplement-kan`), {attributes: true});
+                    this.lessonInfoObserver.observe(document.getElementById(`supplement-voc`), {attributes: true});
                     // Observer for the reviews after lessons, thankfully equal to normal reviews!
                     this.lessonInfoObserver.observe(document.getElementById(`item-info-col2`), {childList: true});
                     break;
@@ -141,10 +154,11 @@ function WKInteraction(namespace)
         // #####################################################################
         reviewEndCallback: function(event)
         {
-            var wasWrongAnswer = this.lastWrongCount < $.jStorage.get(`wrongCount`);
+            const wasWrongAnswer = this.lastWrongCount < $.jStorage.get(`wrongCount`);
 
             if (this.lastQuestionAnswered)
-                $(document).trigger(`${this.namespace}_wk_review_answered`, [wasWrongAnswer, this.lastQType, this.lastItem]);
+                $(document).trigger(`${this.namespace}_wk_review_answered`,
+                                    [wasWrongAnswer, this.lastQType, this.lastItem]);
 
             $(document).trigger(`${this.namespace}_wk_review_session_finished`);
         },
@@ -153,16 +167,20 @@ function WKInteraction(namespace)
         // #####################################################################
         reviewInfoCallback: function(mutations)
         {
-            var doTrigger = false;
+            let doTrigger = false;
 
-            mutations.forEach( function(mutation) {
-                // Length 2 for radical page, 4 for kanji page (vocab is 5)
-                if (mutation.addedNodes.length === 2 || mutation.addedNodes.length === 4)
-                    doTrigger = true;
-            }, this);
+            mutations.forEach(
+                function(mutation) {
+                    // Length 2 for radical page, 4 for kanji page (vocab is 5)
+                    if ([2, 4, 5].includes(mutation.addedNodes.length))
+                        doTrigger = true;
+                },
+                this
+            );
 
             if (doTrigger)
-                $(document).triggerHandler(`${this.namespace}_wk_subject_ready`, [this.PageEnum.reviews]);
+                $(document).triggerHandler(`${this.namespace}_wk_subject_ready`,
+                                           [this.PageEnum.reviews]);
         },
         // #####################################################################
 
@@ -170,19 +188,24 @@ function WKInteraction(namespace)
         lessonInfoCallback: function(mutations)
         {
             if (mutations[0].type === `attributes`)
-                $(document).triggerHandler(`${this.namespace}_wk_subject_ready`, [this.PageEnum.lessons]);
+                $(document).triggerHandler(`${this.namespace}_wk_subject_ready`,
+                                           [this.PageEnum.lessons]);
             else if (mutations[0].type === `childList`)
             {
-                var doTrigger = false;
+                let doTrigger = false;
 
-                mutations.forEach( function(mutation) {
-                    // Length 2 for radical page, 4 for kanji page (vocab is 5)
-                    if (mutation.addedNodes.length === 2 || mutation.addedNodes.length === 4)
-                        doTrigger = true;
-                }, this);
+                mutations.forEach(
+                    function(mutation) {
+                        // Length 2 for radical page, 4 for kanji page (vocab is 5)
+                        if ([2, 4, 5].includes(mutation.addedNodes.length))
+                            doTrigger = true;
+                    },
+                    this
+                );
 
                 if (doTrigger)
-                    $(document).triggerHandler(`${this.namespace}_wk_subject_ready`, [this.PageEnum.lessons_reviews]);
+                    $(document).triggerHandler(`${this.namespace}_wk_subject_ready`,
+                                               [this.PageEnum.lessons_reviews]);
             }
         },
         // #####################################################################
@@ -190,12 +213,13 @@ function WKInteraction(namespace)
         // #####################################################################
         newReviewItemCallback: function(key, action)
         {
-            var wasWrongAnswer = this.lastWrongCount < $.jStorage.get(`wrongCount`);
+            const wasWrongAnswer = this.lastWrongCount < $.jStorage.get(`wrongCount`);
             this.lastWrongCount = $.jStorage.get(`wrongCount`);
 
             if (this.lastQuestionAnswered)
             {
-                $(document).trigger(`${this.namespace}_wk_review_answered`, [wasWrongAnswer, this.lastQType, this.lastItem]);
+                $(document).trigger(`${this.namespace}_wk_review_answered`,
+                                    [wasWrongAnswer, this.lastQType, this.lastItem]);
 
                 this.lastQuestionAnswered = false;
             }
@@ -240,7 +264,7 @@ function WKInteraction(namespace)
         // #####################################################################
         getSubject: function()
         {
-            var result = {"rad": null, "kan": null, "voc": null};
+            let result = {"rad": null, "kan": null, "voc": null};
 
             switch(this.curPage)
             {
@@ -250,9 +274,13 @@ function WKInteraction(namespace)
                 case this.PageEnum.kanji:
                     result.kan = document.title[document.title.length - 1];
                     break;
+                case this.PageEnum.vocabulary:
+                    result.voc = decodeURIComponent(document.URL.split(`/`).slice(-1)[0]);
+                    break;
                 case this.PageEnum.reviews:
-                    var curItem = $.jStorage.get(`currentItem`);
-                    var curType = this.getItemType(curItem);
+                    const curItem = $.jStorage.get(`currentItem`);
+                    const curType = this.getItemType(curItem);
+
                     // GM_log(`Getting the subject of this page, from storage:`, curItem);
 
                     if (curType === `kan`)
@@ -264,21 +292,27 @@ function WKInteraction(namespace)
                         else
                             result.rad = curItem.rad.trim();
                     }
+                    else if (curType === `voc`)
+                        result.voc = curItem.voc.trim();
+
                     break;
 
                 case this.PageEnum.lessons:
-                    var kanjiNode = $(`#character`);
+                    const $character = $(`#character`);
 
                     if ($(`#main-info`).hasClass(`radical`))
                     {
                         if (!$(`#character > i`).length)
-                            result.rad = kanjiNode.text().trim();
+                            result.rad = $character.text().trim();
                         else
                             result.rad = $(`#character > i`).attr(`class`).slice(8);
                     }
                     else if ($(`#main-info`).hasClass(`kanji`))
-                        result.kan = kanjiNode.text().trim();
+                        result.kan = $character.text().trim();
+                    else if ($(`#main-info`).hasClass(`vocabulary`))
+                        result.voc = $character.text().trim();
                     break;
+
                 default:
                     result = null;
                     break;
@@ -288,15 +322,18 @@ function WKInteraction(namespace)
         },
         // #####################################################################
 
+        // Check if at least one data element in subject is set
         // #####################################################################
-        checkSubject: function(subject)
+        checkSubject: function(subject, white_list)
         {
-            var result = false;
+            let result = false;
 
-            Object.keys(subject).forEach( function(key) {
-                if (subject[key])
-                    result = true;
-            });
+            Object.keys(subject).forEach(
+                function(key) {
+                    if (white_list.includes(key) && !!subject[key])
+                        result = true;
+                }
+            );
 
             return result;
         }
