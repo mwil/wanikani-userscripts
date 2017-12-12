@@ -39,10 +39,9 @@ if __name__ == "__main__":
                     if compound == kanji:
                         continue
 
-                    similar_out[kanji].append({"kan": compound,
-                                               "score": 1.0})
+                    similar_out[kanji].append(compound)
 
-    with open("../keisei.json", "w") as outfile:
+    with open("../from_keisei_esc.json", "w") as outfile:
         json.dump(similar_out, outfile)
 
     # Create a new lookup database (meanings) with all entries
@@ -88,5 +87,5 @@ if __name__ == "__main__":
             else:
                 cur_item["nanori"] = []
 
-    with open("../lookup.json", "w") as outfile:
+    with open("../lookup_esc.json", "w") as outfile:
         json.dump(lookup_out, outfile)

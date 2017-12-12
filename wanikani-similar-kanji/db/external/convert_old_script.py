@@ -12,10 +12,7 @@ if __name__ == "__main__":
             json_out[kanji] = []
 
             for sim_info in info["similar"]:
-                json_out[kanji].append({
-                    "kan": sim_info["character"],
-                    "score": 1.0
-                })
+                json_out[kanji].append(sim_info["character"])
 
-    with open("../old_script.json", "w") as outfile:
+    with open("../old_script_esc.json", "w") as outfile:
         json.dump(json_out, outfile)

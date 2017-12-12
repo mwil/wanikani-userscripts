@@ -4,9 +4,9 @@ import json
 
 files = [
     ("db/jyouyou__strokeEditDistance.csv",
-     "../stroke_edit_dist.json"),
+     "../stroke_edit_dist_esc.json"),
     ("db/jyouyou__yehAndLiRadical.csv",
-     "../yl_radical.json")
+     "../yl_radical_esc.json")
 ]
 
 
