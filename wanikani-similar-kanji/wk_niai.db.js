@@ -42,34 +42,43 @@ function NiaiDB()
             return this.lookup_db[kanji];
         },
 
-        getSimilar: function(kanji, level, db_names)
+        getSimilar: function(kanji, level, sources)
         {
-            let similar_set = new Set();
-            let similar_locked_set = new Set();
+            // use an object to override with later databases.
+            let similar_kanji = {};
 
-            db_names.forEach(
-                function(db_name)
+            sources.forEach(
+                function(source)
                 {
-                    if (!(kanji in this[db_name]))
+                    if (!(kanji in this[source.id]))
                         return;
 
-                    this[db_name][kanji].forEach(
+                    this[source.id][kanji].forEach(
                         function(sim_info)
                         {
-                            if (sim_info.score > 0.3)
+                            const hasScore = (
+                                typeof sim_info !== `string` &&
+                                `score` in sim_info
+                            );
+
+                            let sim_kanji = hasScore ? sim_info.kan : sim_info;
+                            let score = source.base_score +
+                                        (hasScore ? sim_info.score : 0);
+
+                            if (score > 0.3)
                             {
-                                if (this.isKanjiLocked(sim_info.kan, level))
-                                    similar_locked_set.add(sim_info.kan);
-                                else
-                                    similar_set.add(sim_info.kan);
+                                similar_kanji[sim_kanji] = {
+                                    "kan": sim_kanji,
+                                    "score": score,
+                                    "locked": this.isKanjiLocked(sim_kanji, level)
+                                };
                             }
-                            else if (sim_info.score < 0)
+                            else if (score < 0)
                             {
                                 // negative scores are used to delete unwanted
                                 // kanji to make it consistent across all DBs
                                 // including the user's local db.
-                                similar_set.delete(sim_info.kan);
-                                similar_locked_set.delete(sim_info.kan);
+                                delete similar_kanji[sim_kanji];
                             }
                         },
                         this
@@ -78,7 +87,12 @@ function NiaiDB()
                 this
             );
 
-            return [...similar_set, ...similar_locked_set];
+            let result = Object.values(similar_kanji).sort(
+                (a, b) => 10*(a.locked - b.locked) + (b.score - a.score));
+
+            console.log("sort result is", result);
+
+            return result.map((a) => a.kan);
         }
     };
 }

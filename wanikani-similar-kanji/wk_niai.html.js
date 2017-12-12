@@ -57,7 +57,7 @@
                                      <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                                          <span class="icon-plus"></span>
                                      </a>
-                                     <ul class="dropdown-menu">
+                                     <ul class="single-character-grid dropdown-menu">
                                         <li><span class="input-prepend">
                                                 <span class="add-on">漢</span>
                                                 <input id="add_kanji_input" maxlength="1" class="span2" type="text" placeholder="Enter Kanji Here">

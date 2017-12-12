@@ -12,12 +12,12 @@ function WK_Niai()
         "minify": false,
         "edit_mode": false,
         "sources": [
-            "manual_db",
-            "stroke_dist_db",
-            "yl_radical_db",
-            "keisei_db",
-            "old_script_db",
-            "override_db"
+            {"id": "manual_db",      "base_score": 0.9},
+            {"id": "stroke_dist_db", "base_score": 0},
+            {"id": "yl_radical_db",  "base_score": 0},
+            {"id": "keisei_db",      "base_score": 0.5},
+            {"id": "old_script_db",  "base_score": 0.4},
+            {"id": "override_db",    "base_score": 0.0}
         ],
         "user_level": 99
     };
