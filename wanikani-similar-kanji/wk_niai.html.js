@@ -57,10 +57,10 @@
                                      <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                                          <span class="icon-plus"></span>
                                      </a>
-                                     <ul class="dropdown-menu text-center">
+                                     <ul class="dropdown-menu text-center note-niai">
                                         <li><span class="input-prepend">
                                                 <span class="add-on">漢</span>
-                                                <textarea id="niai_add_similar_input" maxlength="1" rows="1" class="note-niai span2" type="text" placeholder="Enter Kanji Here"></textarea>
+                                                <textarea id="niai_add_similar_input" maxlength="1" rows="1" class="span2" type="text" placeholder="Enter Kanji Here"></textarea>
                                             </span>
                                         </li>
                                         <li>
