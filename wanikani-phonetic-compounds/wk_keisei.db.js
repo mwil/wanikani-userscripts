@@ -25,32 +25,32 @@ function KeiseiDB()
 (function() {
    "use strict";
 
+    // #####################################################################
+    const upperAll = function(string, delim=` `)
+    {
+        const tmp = string.split(delim);
+        let words = [];
+
+        for (let i = 0; i < tmp.length; i++)
+            words.push(tmp[i].charAt(0).toUpperCase() + tmp[i].slice(1));
+
+        let result = words.join(` `);
+
+        if (result.length > 15)
+            return result.slice(0, 12) + `...`;
+        else
+            return result;
+    };
+    // #####################################################################
+
+
     KeiseiDB.prototype = {
         constructor: KeiseiDB,
 
         // #####################################################################
-        init: function(wkdb)
+        init: function()
         {
             this.genWKRadicalToPhon();
-            this.wkdb = wkdb;
-        },
-        // #####################################################################
-
-        // #####################################################################
-        upperAll: function(string, delim=` `)
-        {
-            var tmp = string.split(delim);
-            var result = [];
-
-            for (var i = 0; i < tmp.length; i++)
-                result.push(tmp[i].charAt(0).toUpperCase() + tmp[i].slice(1));
-
-            result = result.join(` `);
-
-            if (result.length > 12)
-                return result.slice(0, 9) + `...`;
-            else
-                return result;
         },
         // #####################################################################
 
@@ -81,7 +81,7 @@ function KeiseiDB()
         // #####################################################################
         getKReadings: function(kanji)
         {
-            var result = [];
+            let result = [];
 
             if (!(kanji in this.kanji_db))
                 result = this.phonetic_db[kanji].readings;
@@ -89,7 +89,7 @@ function KeiseiDB()
                 result = this.kanji_db[kanji].readings;
 
             if (!result.length)
-                return this.wkdb.getWKOnyomi(kanji);
+                return this.getWKOnyomi(kanji);
             else
                 return result;
         },
@@ -148,12 +148,15 @@ function KeiseiDB()
 
         genWKRadicalToPhon: function()
         {
-            Object.keys(this.phonetic_db).forEach( function(phon) {
-                var data = this.phonetic_db[phon];
+            Object.keys(this.phonetic_db).forEach(
+                function(phon) {
+                    const data = this.phonetic_db[phon];
 
-                this.wkradical_to_phon[data[`wk-radical`]] = phon;
-                this.wkradical_to_phon[phon] = phon;
-            }, this);
+                    this.wkradical_to_phon[data[`wk-radical`]] = phon;
+                    this.wkradical_to_phon[phon] = phon;
+                },
+                this
+            );
         },
         // #####################################################################
         mapWKRadicalToPhon: function(radical)
@@ -172,7 +175,7 @@ function KeiseiDB()
         getWKRadicalPP: function(phon)
         {
             if (this.phonetic_db && this.phonetic_db[phon][`wk-radical`])
-                return this.upperAll(this.phonetic_db[phon][`wk-radical`], `-`);
+                return upperAll(this.phonetic_db[phon][`wk-radical`], `-`);
             else
                 return `*Not in WK!*`;
         },
@@ -206,17 +209,18 @@ function KeiseiDB()
         getWKKMeaning: function(kanji)
         {
             if (this.isKanjiInWK(kanji))
-                return this.wk_kanji_db[kanji].meaning.split(`,`).map((s) => this.upperAll(s, ` `));
+                return this.wk_kanji_db[kanji].meaning.split(`,`).map((s) => upperAll(s, ` `));
             else
-                return this.kanji_db[kanji].meaning.map((s) => this.upperAll(s, ` `));
+                return this.kanji_db[kanji].meaning.map((s) => upperAll(s, ` `));
         }
         // #####################################################################
     };
-}());
+}
+());
 // #############################################################################
 
 // #############################################################################
-KeiseiDB.prototype.kanji_db = JSON.parse(GM_getResourceText(`kanji`));
+KeiseiDB.prototype.kanji_db    = JSON.parse(GM_getResourceText(`kanji`));
 KeiseiDB.prototype.phonetic_db = JSON.parse(GM_getResourceText(`phonetic`));
 KeiseiDB.prototype.wk_kanji_db = JSON.parse(GM_getResourceText(`wk_kanji`));
 // #############################################################################

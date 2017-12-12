@@ -7,7 +7,11 @@ function WK_Keisei()
     this.kdb = new KeiseiDB();
     this.wki = new WKInteraction(GM_info.script.namespace);
 
-    this.settings = {"debug": false, "minify": false, "fullinfo": false};
+    this.settings = {
+        "debug": false,
+        "minify": false,
+        "fullinfo": false
+    };
 }
 // #############################################################################
 
@@ -28,11 +32,11 @@ function WK_Keisei()
         // #####################################################################
         $(`#keisei_section`).remove();
 
-        var subject = this.wki.getSubject();
+        const subject = this.wki.getSubject();
 
         this.log(`Injecting phonetic section (callback works).`);
 
-        if (!this.wki.checkSubject(subject))
+        if (!this.wki.checkSubject(subject, [`rad`, `kan`]))
             return;
 
         if (subject.rad)
@@ -47,30 +51,35 @@ function WK_Keisei()
         switch(curPage)
         {
             case this.wki.PageEnum.radicals:
-                $(`section#note-meaning`).before(this.createKeiseiSection());
+                $(`section#note-meaning`)
+                    .before(this.createKeiseiSection());
                 break;
             case this.wki.PageEnum.kanji:
-                $(`section#note-reading`).before(this.createKeiseiSection());
+                $(`section#note-reading`)
+                    .before(this.createKeiseiSection());
                 break;
             case this.wki.PageEnum.reviews:
             case this.wki.PageEnum.lessons_reviews:
                 if ($(`section#item-info-reading-mnemonic`).length)
                 {
-                    $(`section#item-info-reading-mnemonic`).after(this.createKeiseiSection());
+                    $(`section#item-info-reading-mnemonic`)
+                        .after(this.createKeiseiSection());
 
                     if ($(`section#item-info-reading-mnemonic`).is(`:hidden`))
                         $(`#keisei_section`).hide();
                 }
                 else
-                    $(`section#note-meaning`).before(this.createKeiseiSection());
+                    $(`section#note-meaning`)
+                        .before(this.createKeiseiSection());
 
                 break;
             case this.wki.PageEnum.lessons:
                 if ($(`div#main-info`).hasClass(`radical`))
-                    $(`div#supplement-rad-name-mne`).after(this.createKeiseiSection(`margin-top: 12px;`));
+                    $(`div#supplement-rad-name-mne`)
+                        .after(this.createKeiseiSection(`margin-top: 1em;`));
                 else
-                    $(`div#supplement-kan-reading div:contains("Reading Mnemonic") blockquote:last`)
-                    .after(this.createKeiseiSection(`margin-top: 12px;`));
+                    $(`div#supplement-kan-reading div.col2 blockquote:last`)
+                        .after(this.createKeiseiSection(`margin-top: 1em;`));
 
                 break;
             default:
@@ -98,6 +107,7 @@ function WK_Keisei()
             $(`#keisei_head_visibility i`).attr(`class`, `icon-eye-close`);
         }
     };
+    // #########################################################################
 
     // Fill the various field in the section, depending on the information in
     // the kanji and phonetic databases.
@@ -108,20 +118,25 @@ function WK_Keisei()
         if (subject.rad)
             if (subject.phon)
             {
-                $(`#keisei_explanation`).append(this.explanation_radical(subject, this.kdb.getPReadings(subject.phon)));
+                $(`#keisei_explanation`).append(
+                    this.explanation_radical(subject,
+                                             this.kdb.getPReadings(subject.phon)));
                 this.populateCharGrid(`#keisei_phonetic_grid`, subject);
             }
             else
             {
-                $(`#keisei_explanation`).append(this.explanation_non_radical(subject));
+                $(`#keisei_explanation`).append(
+                    this.explanation_non_radical(subject));
                 return;
             }
         // #####################################################################
         else
         {
-            if ((!this.wki.checkSubject(subject)) || (subject.kan && !this.kdb.checkKanji(subject.kan)))
+            if ((!this.wki.checkSubject(subject, [`rad`, `kan`])) ||
+                (subject.kan && !this.kdb.checkKanji(subject.kan)))
             {
-                $(`#keisei_explanation`).append(this.explanation_missing(subject));
+                $(`#keisei_explanation`).append(
+                    this.explanation_missing(subject));
                 return;
             }
             else if (!subject.phon && !this.kdb.checkKanji(subject.kan))
@@ -135,7 +150,8 @@ function WK_Keisei()
             // The kanji could be a phonetic element itself, show full info ...
             else if (this.kdb.checkPhonetic(subject.kan))
             {
-                $(`#keisei_explanation`).append(this.explanation_pmark(subject, this.kdb.getPReadings(subject.kan)));
+                $(`#keisei_explanation`).append(
+                    this.explanation_pmark(subject, this.kdb.getPReadings(subject.kan)));
 
                 // v1.1.1 Fixed bug where kanji that are tone marks but also have their own tone mark
                 if (subject.kan !== subject.phon)
@@ -152,10 +168,12 @@ function WK_Keisei()
                 switch (this.kdb.getKType(subject.kan))
                 {
                     case this.kdb.KTypeEnum.unprocessed:
-                        $(`#keisei_explanation`).append(this.explanation_unprocessed(subject));
+                        $(`#keisei_explanation`).append(
+                            this.explanation_unprocessed(subject));
                         return;
                     case this.kdb.KTypeEnum.unknown:
-                        $(`#keisei_explanation`).append(this.explanation_unknown(subject));
+                        $(`#keisei_explanation`).append(
+                            this.explanation_unknown(subject));
                         break;
                     case this.kdb.KTypeEnum.hieroglyph:
                     case this.kdb.KTypeEnum.indicative:
@@ -163,7 +181,8 @@ function WK_Keisei()
                     case this.kdb.KTypeEnum.derivative:
                     case this.kdb.KTypeEnum.rebus:
                     case this.kdb.KTypeEnum.kokuji:
-                        $(`#keisei_explanation`).append(this.explanation_other(subject));
+                        $(`#keisei_explanation`).append(
+                            this.explanation_other(subject));
                         break;
                     case this.kdb.KTypeEnum.comp_phonetic:
                         if (!subject.phon)
@@ -175,7 +194,9 @@ function WK_Keisei()
                         }
 
                         $(`#keisei_explanation`).append(
-                            this.explanation_phonetic(subject, this.kdb.getPReadings(subject.phon)));
+                            this.explanation_phonetic(
+                                subject,
+                                this.kdb.getPReadings(subject.phon)));
 
                         this.populateCharGrid(`#keisei_phonetic_grid`, subject);
 
@@ -218,20 +239,17 @@ function WK_Keisei()
     //
     // From https://stackoverflow.com/a/16227294/2699475
     // #########################################################################
-    WK_Keisei.prototype.intersect = function(a, b)
-    {
-        return a.filter((e) => (b.indexOf(e)>-1));
-    };
+    const intersect = (a, b) => a.filter((e) => (b.indexOf(e)>-1));
     // #########################################################################
 
     // Create character items for all compounds, sort them, and add them all.
     // #########################################################################
     WK_Keisei.prototype.populateCharGrid = function(selector, subject)
     {
-        var char_list = [];
+        let char_list = [];
         // arrays used for sorting the 4 categories, append to front/back at each
-        var char_list_lo = [];
-        var char_list_hi = [];
+        let char_list_lo = [];
+        let char_list_hi = [];
 
         if (!this.kdb.checkPhonetic(subject.phon))
         {
@@ -240,100 +258,111 @@ function WK_Keisei()
         }
 
         // #####################################################################
-        for (var i = 0; i < this.kdb.getPCompounds(subject.phon).length; i++)
-        {
-            var kanji = this.kdb.getPCompounds(subject.phon)[i];
-            var badges = [`item-badge`, `recently-unlocked-badge`];
-
-            if (!kanji)
-                continue;
-
-            var common_readings = this.intersect(
-                                    this.kdb.getKReadings(kanji),
-                                    this.kdb.getPReadings(subject.phon));
-
-            var li_template = {
-                "kanji": kanji,
-                "readings": this.kdb.getKReadings(kanji),
-                "meaning": this.kdb.getWKKMeaning(kanji)[0],
-                "notInWK": this.kdb.isKanjiInWK(kanji) ? `` : `notInWK`,
-                "href": this.kdb.isKanjiInWK(kanji) ? `/kanji/${kanji}` : `https://jisho.org/search/${kanji}%20%23kanji`,
-                "kanji_id": `kanji-${i+2}`
-            };
-
-            if (this.kdb.getKReadings(kanji).length === common_readings.length)
+        this.kdb.getPCompounds(subject.phon).forEach(
+            function(kanji, i)
             {
-                badges.push(`badge-perfect`);
-                char_list_hi.unshift(li_template);
+                let badges = [`item-badge`, `recently-unlocked-badge`];
 
-                if (kanji === subject.kan)
-                    $(`#keisei_explanation_quality`).html(this.pmark_perfect(subject));
-            }
-            else if (!common_readings.length)
-            {
-                badges.push(`badge-low`);
-                char_list_lo.push(li_template);
+                if (!kanji)
+                    return;
 
-                if (kanji === subject.kan)
-                    $(`#keisei_explanation_quality`).html(this.pmark_low(subject));
-            }
-            else
-            {
-                if (this.kdb.getPReadings(subject.phon).indexOf(this.kdb.getKReadings(kanji)[0]) !== -1)
+                const common_readings = intersect(
+                                            this.kdb.getKReadings(kanji),
+                                            this.kdb.getPReadings(subject.phon));
+
+                const li_template = {
+                    "kanji":    kanji,
+                    "readings": this.kdb.getKReadings(kanji),
+                    "meaning":  this.kdb.getWKKMeaning(kanji)[0],
+                    "notInWK":  this.kdb.isKanjiInWK(kanji) ? `` : `notInWK`,
+                    "href":     this.kdb.isKanjiInWK(kanji) ?
+                                    `/kanji/${kanji}` :
+                                    `https://jisho.org/search/${kanji}%20%23kanji`,
+                    "kanji_id": `kanji-${i+2}`
+                };
+
+                if (this.kdb.getKReadings(kanji).length === common_readings.length)
                 {
-                    badges.push(`badge-high`);
-                    char_list_hi.push(li_template);
+                    badges.push(`badge-perfect`);
+                    char_list_hi.unshift(li_template);
 
                     if (kanji === subject.kan)
-                        $(`#keisei_explanation_quality`).html(this.pmark_high(subject));
+                        $(`#keisei_explanation_quality`).html(
+                            this.pmark_perfect(subject));
+                }
+                else if (!common_readings.length)
+                {
+                    badges.push(`badge-low`);
+                    char_list_lo.push(li_template);
+
+                    if (kanji === subject.kan)
+                        $(`#keisei_explanation_quality`).html(
+                            this.pmark_low(subject));
                 }
                 else
                 {
-                    badges.push(`badge-middle`);
-                    char_list_lo.unshift(li_template);
+                    if (this.kdb.getPReadings(subject.phon).indexOf(
+                            this.kdb.getKReadings(kanji)[0]) !== -1)
+                    {
+                        badges.push(`badge-high`);
+                        char_list_hi.push(li_template);
 
-                    if (kanji === subject.kan)
-                        $(`#keisei_explanation_quality`).html(this.pmark_middle(subject));
+                        if (kanji === subject.kan)
+                            $(`#keisei_explanation_quality`).html(
+                                this.pmark_high(subject));
+                    }
+                    else
+                    {
+                        badges.push(`badge-middle`);
+                        char_list_lo.unshift(li_template);
+
+                        if (kanji === subject.kan)
+                            $(`#keisei_explanation_quality`).html(
+                                this.pmark_middle(subject));
+                    }
                 }
-            }
 
-            // mimic XOR to override already marked ones
-            // https://stackoverflow.com/a/4540443/2699475
-            if ((kanji in this.override_db && this.override_db[kanji].marked) !=
-                this.kdb.isPObscure(kanji))
-                badges.push(`badge-marked`);
+                // mimic XOR to override already marked ones
+                // https://stackoverflow.com/a/4540443/2699475
+                if ((kanji in this.override_db &&
+                        this.override_db[kanji].marked) != this.kdb.isPObscure(kanji))
+                    badges.push(`badge-marked`);
 
-            li_template.badge = badges.join(` `);
-        }
+                li_template.badge = badges.join(` `);
+            },
+            this
+        );
         // #####################################################################
 
         // #####################################################################
         // Push green phonetic character
         char_list.push({
-            "kanji": subject.phon,
+            "kanji":    subject.phon,
             "readings": this.kdb.getKReadings(subject.phon),
-            "meaning": `Phonetic`,
+            "meaning":  `Phonetic`,
             "kanji_id": `phonetic-1`
         });
 
         // If available, push blue WK Radical
         if (this.kdb.checkRadical(subject.phon))
             char_list.push({
-                "kanji": subject.phon,
+                "kanji":    subject.phon,
                 "readings": this.kdb.getKReadings(subject.phon),
-                "meaning": this.kdb.getWKRadicalPP(subject.phon),
-                "href": `/radicals/${this.kdb.getWKRadical(subject.phon)}`,
+                "meaning":  this.kdb.getWKRadicalPP(subject.phon),
+                "href":     `/radicals/${this.kdb.getWKRadical(subject.phon)}`,
                 "kanji_id": `radical-1`
             });
 
         // If phonetic is also kanji in WK, push it!
         if (this.kdb.checkKanji(subject.phon))
             char_list.push({
-                "kanji": subject.phon,
+                "kanji":    subject.phon,
                 "readings": this.kdb.getKReadings(subject.phon),
-                "meaning": this.kdb.getWKKMeaning(subject.phon)[0],
-                "notInWK": this.kdb.isKanjiInWK(subject.phon) ? `` : `notInWK`,
-                "href": this.kdb.isKanjiInWK(subject.phon) ? `/kanji/${subject.phon}`: `https://jisho.org/search/${subject.phon}%20%23kanji`,
+                "meaning":  this.kdb.getWKKMeaning(subject.phon)[0],
+                "notInWK":  this.kdb.isKanjiInWK(subject.phon) ? `` : `notInWK`,
+                "href":     this.kdb.isKanjiInWK(subject.phon) ?
+                                `/kanji/${subject.phon}` :
+                                `https://jisho.org/search/${subject.phon}%20%23kanji`,
                 "kanji_id": `kanji-1`
             });
 
@@ -349,32 +378,33 @@ function WK_Keisei()
     // #########################################################################
     WK_Keisei.prototype.populateMoreInfoFold = function(subject)
     {
-        var i;
-
         // #####################################################################
         // Append all cross-referenced tone marks (for example compounds that
         // are tone marks on their own), 0, ..., n
-        for (i = 0; i < this.kdb.getPXRefs(subject.phon).length; i++)
-        {
-            var curPhon = this.kdb.getPXRefs(subject.phon)[i];
+        this.kdb.getPXRefs(subject.phon).forEach(
+            function(curPhon, i)
+            {
+                $(`#keisei_more_fold`).append($(`<span></span>`)
+                                      .attr(`id`, `keisei_more_expl_${i}`));
 
-            $(`#keisei_more_fold`).append($(`<span></span>`)
-                                  .attr(`id`, `keisei_more_expl_${i}`));
+                if (`base_phon` in subject && subject.base_phon === curPhon)
+                    $(`#keisei_more_expl_${i}`).append(
+                        this.explanation_phonetic(subject, this.kdb.getPReadings(curPhon)));
+                else
+                    $(`#keisei_more_expl_${i}`).append(
+                        this.explanation_xref(curPhon, this.kdb.getPReadings(curPhon)));
 
-            if (`base_phon` in subject && subject.base_phon === curPhon)
-                $(`#keisei_more_expl_${i}`).append(
-                    this.explanation_phonetic(subject, this.kdb.getPReadings(curPhon)));
-            else
-                $(`#keisei_more_expl_${i}`).append(this.explanation_xref(curPhon, this.kdb.getPReadings(curPhon)));
+                const $gridx = $(`<ul></ul>`)
+                               .attr(`id`, `keisei_xref_grid_${i}`)
+                               .attr(`style`, `padding-bottom: 10px; margin-bottom:6px; border-bottom: 1px solid #d5d5d5;`)
+                               .addClass(`single-character-grid`);
 
-            var $gridx = $(`<ul></ul>`)
-                        .attr(`id`, `keisei_xref_grid_${i}`)
-                        .attr(`style`, `padding-bottom: 10px; margin-bottom:6px; border-bottom: 1px solid #d5d5d5;`)
-                        .addClass(`single-character-grid`);
-
-            $(`#keisei_more_fold`).append($gridx);
-            this.populateCharGrid(`#keisei_xref_grid_${i}`, {"kan": subject.kan, "phon": curPhon});
-        }
+                $(`#keisei_more_fold`).append($gridx);
+                this.populateCharGrid(`#keisei_xref_grid_${i}`,
+                                      {"kan": subject.kan, "phon": curPhon});
+            },
+            this
+        );
         // #####################################################################
 
         // #####################################################################
@@ -386,35 +416,41 @@ function WK_Keisei()
 
             $(`#keisei_more_non_comp`).append(this.explanation_non_compound(subject));
 
-            var $gridn = $(`<ul></ul>`)
-                        .attr(`id`, `keisei_non_comp_grid`)
-                        .attr(`style`, `padding-bottom: 10px; margin-bottom:6px; border-bottom: 1px solid #d5d5d5;`)
-                        .addClass(`single-character-grid`);
+            const $gridn = $(`<ul></ul>`)
+                           .attr(`id`, `keisei_non_comp_grid`)
+                           .attr(`style`, `padding-bottom: 10px; margin-bottom:6px; border-bottom: 1px solid #d5d5d5;`)
+                           .addClass(`single-character-grid`);
 
             $(`#keisei_more_fold`).append($gridn);
 
-            var char_list = [];
+            let char_list = [];
+
             char_list.push({
-                "kanji": subject.phon,
+                "kanji":    subject.phon,
                 "readings": this.kdb.getKReadings(subject.phon),
-                "meaning": `Non-Phonetic`,
+                "meaning":  `Non-Phonetic`,
                 "kanji_id": `nonphonetic-1`
             });
 
-            for (i = 0; i < this.kdb.getPNonCompounds(subject.phon).length; i++)
-            {
-                var curKanji = this.kdb.getPNonCompounds(subject.phon)[i];
-                char_list.push({
-                    "kanji": curKanji,
-                    "readings": this.kdb.getKReadings(curKanji),
-                    "meaning": this.kdb.getWKKMeaning(curKanji)[0],
-                    "notInWK": this.kdb.isKanjiInWK(curKanji) ? `` : `notInWK`,
-                    "href": this.kdb.isKanjiInWK(curKanji) ? `/kanji/${curKanji}` : `https://jisho.org/search/${curKanji}%20%23kanji`,
-                    "kanji_id": `kanji-${i+101}`
-                });
-            }
+            this.kdb.getPNonCompounds(subject.phon).forEach(
+                function(curKanji, i)
+                {
+                    char_list.push({
+                        "kanji":    curKanji,
+                        "readings": this.kdb.getKReadings(curKanji),
+                        "meaning":  this.kdb.getWKKMeaning(curKanji)[0],
+                        "notInWK":  this.kdb.isKanjiInWK(curKanji) ? `` : `notInWK`,
+                        "href":     this.kdb.isKanjiInWK(curKanji) ?
+                                        `/kanji/${curKanji}` :
+                                        `https://jisho.org/search/${curKanji}%20%23kanji`,
+                        "kanji_id": `kanji-${i+101}`
+                    });
+                },
+                this
+            );
 
-            $(`#keisei_non_comp_grid`).html(char_list.map(this.gen_item_chargrid).join(``));
+            $(`#keisei_non_comp_grid`).html(
+                char_list.map(this.gen_item_chargrid).join(``));
         }
         // #####################################################################
     };
@@ -423,7 +459,8 @@ function WK_Keisei()
     // #########################################################################
     WK_Keisei.prototype.init = function()
     {
-        GM_addStyle(GM_getResourceText(`keisei_style`).replace(/wk_namespace/g, GM_info.script.namespace));
+        GM_addStyle(GM_getResourceText(`keisei_style`)
+                        .replace(/wk_namespace/g, GM_info.script.namespace));
 
         this.settings.debug = GM_getValue(`debug`) || false;
         this.settings.minify = GM_getValue(`minify`) || false;
@@ -456,8 +493,6 @@ function WK_Keisei()
     // #########################################################################
     WK_Keisei.prototype.run = function()
     {
-        var curPage = this.wki.detectCurPage.call(this.wki);
-
         // Add scripts with guarding namespace (selecting class)
         GM_addStyle(GM_getResourceText(`bootstrapcss`)
                         .replace(/wk_namespace/g, GM_info.script.namespace));
@@ -466,14 +501,11 @@ function WK_Keisei()
 
         // #####################################################################
         // Add parts of bootstrap for the modal pages (settings, etc.)
-        if (curPage === this.wki.PageEnum.reviews ||
-            curPage === this.wki.PageEnum.lessons)
-        {
+        if ($.fn.modal === undefined)
             $(`<script></script>`)
-            .attr(`type`, `text/javascript`)
-            .text(GM_getResourceText(`bootstrapjs`))
-            .appendTo(`head`);
-        }
+                .attr(`type`, `text/javascript`)
+                .text(GM_getResourceText(`bootstrapjs`))
+                .appendTo(`head`);
         // #####################################################################
 
         // Start page detection (and its callbacks once ready)

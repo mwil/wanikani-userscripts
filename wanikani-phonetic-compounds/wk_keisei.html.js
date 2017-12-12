@@ -5,6 +5,7 @@
 (function()
 {
     "use strict";
+
     // Character item to be included in a character grid
     // #########################################################################
     WK_Keisei.prototype.gen_item_chargrid = ({kanji, readings, meaning, notInWK=``, badge=``, href=`javascript:;`, kanji_id=``}) =>
@@ -37,44 +38,49 @@
     // #########################################################################
     WK_Keisei.prototype.createKeiseiSection = function(style)
     {
-        var $section = $(`<section></section>`)
-                       .attr(`id`, `keisei_section`)
-                       .addClass(`${GM_info.script.namespace} col1`);
+        const $section = $(`<section></section>`)
+                         .attr(`id`, `keisei_section`)
+                         .attr(`style`, style)
+                         .addClass(`${GM_info.script.namespace} col1`);
 
-        var $mini_fold = $(`<div></div>`)
-                         .attr(`id`, `keisei_main_fold`);
+        const $main_fold = $(`<div></div>`)
+                           .attr(`id`, `keisei_main_fold`);
 
-        var $grid = $(`<ul></ul>`)
-                    .attr(`id`, `keisei_phonetic_grid`)
-                    .attr(`style`, `padding-bottom: 10px; margin-bottom:6px; border-bottom: 1px solid #d5d5d5;`)
-                    .addClass(`single-character-grid`);
+        const $grid = $(`<ul></ul>`)
+                      .attr(`id`, `keisei_phonetic_grid`)
+                      .attr(`style`, `padding-bottom: 10px; margin-bottom:6px; border-bottom: 1px solid #d5d5d5;`)
+                      .addClass(`single-character-grid`);
 
-        var $view_btn = $(`<div class="btn-group pull-right"></div>`)
-                        .append(`<a class="btn disabled" id="keisei_head_moreinfo">
-                                    <i class="icon-collapse-top"></i>
-                                 </a>`)
-                        .append(`<a class="btn" id="keisei_head_visibility">
-                                    <i class="icon-eye-open"></i>
-                                 </a>`);
+        const $view_btn = $(`<span class="btn-group"></span>`)
+                          .append(`<a class="btn disabled" id="keisei_head_moreinfo">
+                                       <i class="icon-collapse-top"></i>
+                                   </a>`)
+                          .append(`<a class="btn" id="keisei_head_visibility">
+                                      <i class="icon-eye-open"></i>
+                                   </a>`);
 
-        var $head_btn = $(`<div class="btn-group pull-right"></div>`)
-                        .append(`<a class="btn" id="keisei_head_settings" data-toggle="modal" data-target="#keisei_modal_settings">
-                                    <i class="icon-gear"></i>
-                                 </a>`)
-                        .append(`<a class="btn" id="keisei_head_info" data-toggle="modal" data-target="#keisei_modal_info">
-                                    <i class="icon-question"></i>
-                                 </a>`);
+        const $main_btn = $(`<span class="btn-group"></span>`)
+                          .append(`<a class="btn" id="keisei_head_settings" data-toggle="modal" data-target="#keisei_modal_settings">
+                                        <i class="icon-gear"></i>
+                                   </a>`)
+                          .append(`<a class="btn" id="keisei_head_info" data-toggle="modal" data-target="#keisei_modal_info">
+                                        <i class="icon-question"></i>
+                                   </a>`);
 
-        var $head = $(`<h2>Phonetic-Semantic Composition</h2>`)
-                    .attr(`style`, style)
-                    .append($head_btn)
-                    .append($view_btn);
+        const $head_grp = $(`<span></span>`)
+                          .attr(`id`, `keisei_head_btn_group`)
+                          .addClass(`btn-group pull-right`)
+                          .append($view_btn)
+                          .append($main_btn);
+
+        const $head = $(`<h2>Phonetic-Semantic Composition</h2>`)
+                      .append($head_grp);
 
         $section.append($head);
-        $section.append($(`<span></span>`).attr(`id`, `keisei_explanation`));
-        $section.append($mini_fold);
+        $section.append($(`<div></div>`).attr(`id`, `keisei_explanation`));
+        $section.append($main_fold);
 
-        $mini_fold.append($grid);
+        $main_fold.append($grid);
 
         this.log(`Created the Keisei section, appending to the page!`);
 
@@ -90,8 +96,8 @@
     // #########################################################################
     WK_Keisei.prototype.createMoreInfoFold = function()
     {
-        var $infofold = $(`<span></span>`)
-                        .attr(`id`, `keisei_more_fold`);
+        const $infofold = $(`<span></span>`)
+                          .attr(`id`, `keisei_more_fold`);
 
         $(`#keisei_head_moreinfo`).removeClass(`disabled`);
 
@@ -139,10 +145,10 @@
     // #########################################################################
     WK_Keisei.prototype.toggleBadgeMarker = function(event)
     {
-        var kanji = event.currentTarget.dataset.kanji;
+        const kanji = event.currentTarget.dataset.kanji;
 
         if (!kanji)
-            return;
+            return false;
 
         if (kanji in this.override_db)
             this.override_db[kanji].marked = !this.override_db[kanji].marked;
@@ -158,4 +164,3 @@
 }
 )();
 // #############################################################################
-

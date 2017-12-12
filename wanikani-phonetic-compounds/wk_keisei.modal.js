@@ -1,4 +1,3 @@
-
 /* jshint esversion: 6 */
 
 (function() {
@@ -7,17 +6,17 @@
     // #########################################################################
     WK_Keisei.prototype.injectModals = function()
     {
-        var $settings_modal = $(`<div></div>`)
-                              .attr(`id`, `keisei_modal_settings`)
-                              .attr(`role`, `dialog`)
-                              .addClass(`${GM_info.script.namespace} modal fade`)
-                              .hide();
+        const $settings_modal = $(`<div></div>`)
+                                .attr(`id`, `keisei_modal_settings`)
+                                .attr(`role`, `dialog`)
+                                .addClass(`${GM_info.script.namespace} modal fade`)
+                                .hide();
 
-        var $info_modal = $(`<div></div>`)
-                          .attr(`id`, `keisei_modal_info`)
-                          .attr(`role`, `dialog`)
-                          .addClass(`${GM_info.script.namespace} modal fade`)
-                          .hide();
+        const $info_modal = $(`<div></div>`)
+                            .attr(`id`, `keisei_modal_info`)
+                            .attr(`role`, `dialog`)
+                            .addClass(`${GM_info.script.namespace} modal fade`)
+                            .hide();
 
         $(`body`).append($settings_modal);
         $(`body`).append($info_modal);
@@ -99,14 +98,16 @@
     // #########################################################################
     WK_Keisei.prototype.fillStats = function()
     {
-        var all_kanji_cnt = Object.keys(this.kdb.kanji_db).length;
-        var proc_kanji_cnt = 0;
-        var phonetic_cnt = Object.keys(this.kdb.phonetic_db).length;
-        var compound_cnt = 0;
-        var wk_radicals_cnt = 0;
+        let wk_radicals_cnt = 0;
+        let proc_kanji_cnt  = 0;
+        let compound_cnt    = 0;
+
+        const all_kanji_cnt = Object.keys(this.kdb.kanji_db).length;
+        const phonetic_cnt  = Object.keys(this.kdb.phonetic_db).length;
 
         Object.keys(this.kdb.kanji_db).forEach(
-            function(kanji) {
+            function(kanji)
+            {
                 if (this.kdb.kanji_db[kanji].type !== `unprocessed`)
                     proc_kanji_cnt += 1;
                 if (this.kdb.kanji_db[kanji].type === `comp_phonetic`)
@@ -116,7 +117,8 @@
         );
 
         Object.keys(this.kdb.phonetic_db).forEach(
-            function(phon) {
+            function(phon)
+            {
                 if (this.kdb.phonetic_db[phon]["wk-radical"])
                     wk_radicals_cnt += 1;
             },
@@ -204,4 +206,5 @@
         return false;
     };
     // #########################################################################
-})();
+}
+)();
