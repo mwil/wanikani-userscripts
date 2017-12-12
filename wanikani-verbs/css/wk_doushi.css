@@ -1,0 +1,27 @@
+.wk_namespace .badge-vi:before {
+    content: "自";
+    background-color: #c0e;
+}
+
+.wk_namespace .badge-vt:before {
+    content: "他";
+    background-color: #c0e;
+}
+
+.wk_namespace .badge-both:before {
+    content: "両";
+    background-color: #c0e;
+}
+
+.wk_namespace .badge-none:before {
+    content: "";
+    background-color: #c0e;
+}
+
+.wk_namespace .badge-1dan:before {
+    border-radius: 50%;
+}
+
+.wk_namespace .badge-5dan:before {
+    border-radius: 0 !important;
+}

@@ -1,0 +1,9333 @@
+{
+  "入れる": {
+    "level": 1,
+    "character": "入れる",
+    "kana": "いれる",
+    "meaning": "to insert, to put in",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "上る": {
+    "level": 1,
+    "character": "上る",
+    "kana": "のぼる",
+    "meaning": "to climb, to go up",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "上がる": {
+    "level": 1,
+    "character": "上がる",
+    "kana": "あがる",
+    "meaning": "to rise, to go up, to be raised",
+    "pos": [
+      "suf",
+      "v5r",
+      "vi"
+    ]
+  },
+  "入る": {
+    "level": 1,
+    "character": "入る",
+    "kana": "はいる",
+    "meaning": "to enter",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "上げる": {
+    "level": 1,
+    "character": "上げる",
+    "kana": "あげる",
+    "meaning": "to raise, to raise something",
+    "pos": [
+      "v1",
+      "vt",
+      "vi",
+      "aux-v"
+    ]
+  },
+  "下がる": {
+    "level": 1,
+    "character": "下がる",
+    "kana": "さがる",
+    "meaning": "to get lower, to fall, to drop, to come down, to hang down",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "下げる": {
+    "level": 1,
+    "character": "下げる",
+    "kana": "さげる",
+    "meaning": "to lower, to hang, to lower something, to hang something",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "立つ": {
+    "level": 2,
+    "character": "立つ",
+    "kana": "たつ",
+    "meaning": "to stand",
+    "pos": [
+      "v5t",
+      "vi"
+    ]
+  },
+  "出す": {
+    "level": 2,
+    "character": "出す",
+    "kana": "だす",
+    "meaning": "to remove, to hand over, to take out, to reveal",
+    "pos": [
+      "v5s",
+      "vt",
+      "suf"
+    ]
+  },
+  "正す": {
+    "level": 2,
+    "character": "正す",
+    "kana": "ただす",
+    "meaning": "to correct",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "出る": {
+    "level": 2,
+    "character": "出る",
+    "kana": "でる",
+    "meaning": "to exit, to leave, to attend, to come out, to go out",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "立てる": {
+    "level": 2,
+    "character": "立てる",
+    "kana": "たてる",
+    "meaning": "to stand up, to stand something up, to erect, to erect something",
+    "pos": [
+      "v1",
+      "vt",
+      "suf"
+    ]
+  },
+  "分かる": {
+    "level": 3,
+    "character": "分かる",
+    "kana": "わかる",
+    "meaning": "to understand",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "止める": {
+    "level": 3,
+    "character": "止める",
+    "kana": "とめる",
+    "meaning": "to stop something, to stop",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "太る": {
+    "level": 3,
+    "character": "太る",
+    "kana": "ふとる",
+    "meaning": "to get fat, to become fat, to grow fat",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "生む": {
+    "level": 3,
+    "character": "生む",
+    "kana": "うむ",
+    "meaning": "to give birth, to produce",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "用いる": {
+    "level": 3,
+    "character": "用いる",
+    "kana": "もちいる",
+    "meaning": "to utilize, to use, to utilise",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "生きる": {
+    "level": 3,
+    "character": "生きる",
+    "kana": "いきる",
+    "meaning": "to live, to be alive, to exist",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "生まれる": {
+    "level": 3,
+    "character": "生まれる",
+    "kana": "うまれる",
+    "meaning": "to be born",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "切る": {
+    "level": 3,
+    "character": "切る",
+    "kana": "きる",
+    "meaning": "to cut",
+    "pos": [
+      "suf",
+      "v5r",
+      "vt"
+    ]
+  },
+  "分ける": {
+    "level": 3,
+    "character": "分ける",
+    "kana": "わける",
+    "meaning": "to separate, to divide, to part, to split",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "引く": {
+    "level": 3,
+    "character": "引く",
+    "kana": "ひく",
+    "meaning": "to pull, to subtract",
+    "pos": [
+      "vt",
+      "vi",
+      "v5k"
+    ]
+  },
+  "止まる": {
+    "level": 3,
+    "character": "止まる",
+    "kana": "とまる",
+    "meaning": "to stop",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "外れる": {
+    "level": 3,
+    "character": "外れる",
+    "kana": "はずれる",
+    "meaning": "to be disconnected, to come off, to be out, to be off",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "切れる": {
+    "level": 3,
+    "character": "切れる",
+    "kana": "きれる",
+    "meaning": "to be cut, to snap, to break",
+    "pos": [
+      "v1",
+      "vi",
+      "aux-v"
+    ]
+  },
+  "見せる": {
+    "level": 4,
+    "character": "見せる",
+    "kana": "みせる",
+    "meaning": "to show",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "見える": {
+    "level": 4,
+    "character": "見える",
+    "kana": "みえる",
+    "meaning": "can see, visible, to be visible, to be able to see, able to see",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "足りる": {
+    "level": 4,
+    "character": "足りる",
+    "kana": "たりる",
+    "meaning": "to be enough, to be sufficient, to suffice",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "代わる": {
+    "level": 4,
+    "character": "代わる",
+    "kana": "かわる",
+    "meaning": "to replace, to substitute for, to substitute, to be replaced, to be substituted, to be substituted for",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "申す": {
+    "level": 4,
+    "character": "申す",
+    "kana": "もうす",
+    "meaning": "to say humbly, to say, to humbly say",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "打つ": {
+    "level": 4,
+    "character": "打つ",
+    "kana": "うつ",
+    "meaning": "to hit, to pound, to type",
+    "pos": [
+      "v5t",
+      "vt"
+    ]
+  },
+  "写す": {
+    "level": 4,
+    "character": "写す",
+    "kana": "うつす",
+    "meaning": "to copy, to photograph, to take a picture",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "休む": {
+    "level": 4,
+    "character": "休む",
+    "kana": "やすむ",
+    "meaning": "to rest",
+    "pos": [
+      "vi",
+      "v5m"
+    ]
+  },
+  "見る": {
+    "level": 4,
+    "character": "見る",
+    "kana": "みる",
+    "meaning": "to see, to look",
+    "pos": [
+      "v1",
+      "vt",
+      "aux-v"
+    ]
+  },
+  "写る": {
+    "level": 4,
+    "character": "写る",
+    "kana": "うつる",
+    "meaning": "to be photographed",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "出かける": {
+    "level": 4,
+    "character": "出かける",
+    "kana": "でかける",
+    "meaning": "to go out, to leave",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "気に入る": {
+    "level": 4,
+    "character": "気に入る",
+    "kana": "きにいる",
+    "meaning": "to be pleased with, to be satisfied with, to be happy with, to be pleased, to be satisfied, to be happy",
+    "pos": [
+      "exp",
+      "v5r"
+    ]
+  },
+  "見分ける": {
+    "level": 4,
+    "character": "見分ける",
+    "kana": "みわける",
+    "meaning": "to distinguish, to tell apart, to differentiate",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "売る": {
+    "level": 5,
+    "character": "売る",
+    "kana": "うる",
+    "meaning": "to sell",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "行う": {
+    "level": 5,
+    "character": "行う",
+    "kana": "おこなう",
+    "meaning": "to carry out a task, to carry out, to perform, to perform a task, to do a task",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "会う": {
+    "level": 5,
+    "character": "会う",
+    "kana": "あう",
+    "meaning": "to meet, to encounter",
+    "pos": [
+      "v5u",
+      "vi"
+    ]
+  },
+  "生える": {
+    "level": 5,
+    "character": "生える",
+    "kana": "はえる",
+    "meaning": "to grow, to spring up, to sprout, to come out",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "行く": {
+    "level": 5,
+    "character": "行く",
+    "kana": "いく",
+    "meaning": "to go",
+    "pos": [
+      "vi",
+      "aux-v",
+      "v5k-s"
+    ]
+  },
+  "言う": {
+    "level": 5,
+    "character": "言う",
+    "kana": "いう",
+    "meaning": "to say",
+    "pos": [
+      "v5u"
+    ]
+  },
+  "交ぜる": {
+    "level": 5,
+    "character": "交ぜる",
+    "kana": "まぜる",
+    "meaning": "to mix, to mix something",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "当たる": {
+    "level": 5,
+    "character": "当たる",
+    "kana": "あたる",
+    "meaning": "to be on target, to hit, to touch, to guess correctly, to guess right, to be right, to hit the target",
+    "pos": [
+      "v5r",
+      "vi",
+      "vt"
+    ]
+  },
+  "考える": {
+    "level": 5,
+    "character": "考える",
+    "kana": "かんがえる",
+    "meaning": "to think about, to consider, to give thought",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "学ぶ": {
+    "level": 5,
+    "character": "学ぶ",
+    "kana": "まなぶ",
+    "meaning": "to learn, to study in depth, to study",
+    "pos": [
+      "v5b"
+    ]
+  },
+  "作る": {
+    "level": 5,
+    "character": "作る",
+    "kana": "つくる",
+    "meaning": "to make, to build, to create",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "走る": {
+    "level": 5,
+    "character": "走る",
+    "kana": "はしる",
+    "meaning": "to run",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "回る": {
+    "level": 5,
+    "character": "回る",
+    "kana": "まわる",
+    "meaning": "to revolve, to go around, to rotate",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "来る": {
+    "level": 5,
+    "character": "来る",
+    "kana": "くる",
+    "meaning": "to come",
+    "pos": [
+      "vk",
+      "vi",
+      "aux-v"
+    ]
+  },
+  "死ぬ": {
+    "level": 6,
+    "character": "死ぬ",
+    "kana": "しぬ",
+    "meaning": "to die",
+    "pos": [
+      "vi",
+      "v5n",
+      "vn"
+    ]
+  },
+  "足す": {
+    "level": 6,
+    "character": "足す",
+    "kana": "たす",
+    "meaning": "to add",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "代える": {
+    "level": 6,
+    "character": "代える",
+    "kana": "かえる",
+    "meaning": "to replace, to substitute, to exchange, to replace something, to substitute something, to exchange something",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "食べる": {
+    "level": 6,
+    "character": "食べる",
+    "kana": "たべる",
+    "meaning": "to eat",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "歩く": {
+    "level": 6,
+    "character": "歩く",
+    "kana": "あるく",
+    "meaning": "to walk",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "向く": {
+    "level": 6,
+    "character": "向く",
+    "kana": "むく",
+    "meaning": "to face, to turn toward",
+    "pos": [
+      "v5k"
+    ]
+  },
+  "知る": {
+    "level": 6,
+    "character": "知る",
+    "kana": "しる",
+    "meaning": "to know",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "有る": {
+    "level": 6,
+    "character": "有る",
+    "kana": "ある",
+    "meaning": "to have, to exist",
+    "pos": [
+      "vi",
+      "v5r-i"
+    ]
+  },
+  "思う": {
+    "level": 6,
+    "character": "思う",
+    "kana": "おもう",
+    "meaning": "to think",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "亡くなる": {
+    "level": 6,
+    "character": "亡くなる",
+    "kana": "なくなる",
+    "meaning": "to pass away, to become deceased, to die",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "出来る": {
+    "level": 6,
+    "character": "出来る",
+    "kana": "できる",
+    "meaning": "to be able to do",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "直す": {
+    "level": 6,
+    "character": "直す",
+    "kana": "なおす",
+    "meaning": "to fix, to repair",
+    "pos": [
+      "v5s",
+      "vt",
+      "aux-v"
+    ]
+  },
+  "直る": {
+    "level": 6,
+    "character": "直る",
+    "kana": "なおる",
+    "meaning": "to be fixed, to fix",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "首になる": {
+    "level": 6,
+    "character": "首になる",
+    "kana": "くびになる",
+    "meaning": "to get fired, to be fired",
+    "pos": [
+      "exp",
+      "v5r"
+    ]
+  },
+  "売れる": {
+    "level": 7,
+    "character": "売れる",
+    "kana": "うれる",
+    "meaning": "to be sold, to sell",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "欠ける": {
+    "level": 7,
+    "character": "欠ける",
+    "kana": "かける",
+    "meaning": "to lack, to be lacking, to be chipped",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "失う": {
+    "level": 7,
+    "character": "失う",
+    "kana": "うしなう",
+    "meaning": "to lose, to part with, to lose something, to part with something",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "教える": {
+    "level": 7,
+    "character": "教える",
+    "kana": "おしえる",
+    "meaning": "to teach",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "通る": {
+    "level": 7,
+    "character": "通る",
+    "kana": "とおる",
+    "meaning": "to pass, to pass through",
+    "pos": [
+      "suf",
+      "v5r",
+      "vi"
+    ]
+  },
+  "付ける": {
+    "level": 7,
+    "character": "付ける",
+    "kana": "つける",
+    "meaning": "to attach",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "見当たる": {
+    "level": 7,
+    "character": "見当たる",
+    "kana": "みあたる",
+    "meaning": "to be found, to come upon, to come across",
+    "pos": [
+      "v5r"
+    ]
+  },
+  "光る": {
+    "level": 7,
+    "character": "光る",
+    "kana": "ひかる",
+    "meaning": "to shine, to glitter",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "走り回る": {
+    "level": 8,
+    "character": "走り回る",
+    "kana": "はしりまわる",
+    "meaning": "to run around",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "対する": {
+    "level": 8,
+    "character": "対する",
+    "kana": "たいする",
+    "meaning": "to compare to, to face each other, to oppose, to compare, to contrast, to contrast to",
+    "pos": [
+      "vs-s"
+    ]
+  },
+  "曲がる": {
+    "level": 8,
+    "character": "曲がる",
+    "kana": "まがる",
+    "meaning": "to be bent, to bend, to curve, to turn",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "助ける": {
+    "level": 8,
+    "character": "助ける",
+    "kana": "たすける",
+    "meaning": "to help, to save, to rescue",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "話す": {
+    "level": 8,
+    "character": "話す",
+    "kana": "はなす",
+    "meaning": "to speak, to talk",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "化ける": {
+    "level": 8,
+    "character": "化ける",
+    "kana": "ばける",
+    "meaning": "to transform",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "合う": {
+    "level": 8,
+    "character": "合う",
+    "kana": "あう",
+    "meaning": "to suit, to come together, to meet, to match",
+    "pos": [
+      "v5u",
+      "vi",
+      "suf"
+    ]
+  },
+  "曲げる": {
+    "level": 8,
+    "character": "曲げる",
+    "kana": "まげる",
+    "meaning": "to bend, to bend something",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "回す": {
+    "level": 8,
+    "character": "回す",
+    "kana": "まわす",
+    "meaning": "to turn, to rotate, to turn something, to rotate something, to spin",
+    "pos": [
+      "v5s",
+      "vt",
+      "suf"
+    ]
+  },
+  "向ける": {
+    "level": 8,
+    "character": "向ける",
+    "kana": "むける",
+    "meaning": "to turn towards, to point, to turn (something) towards",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "当てる": {
+    "level": 8,
+    "character": "当てる",
+    "kana": "あてる",
+    "meaning": "to guess, to guess something, to hit, to apply",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "支える": {
+    "level": 8,
+    "character": "支える",
+    "kana": "ささえる",
+    "meaning": "to support",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "住む": {
+    "level": 8,
+    "character": "住む",
+    "kana": "すむ",
+    "meaning": "to live, to dwell, to reside",
+    "pos": [
+      "vi",
+      "v5m"
+    ]
+  },
+  "決める": {
+    "level": 8,
+    "character": "決める",
+    "kana": "きめる",
+    "meaning": "to decide",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "投げる": {
+    "level": 8,
+    "character": "投げる",
+    "kana": "なげる",
+    "meaning": "to throw, to throw something",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "買う": {
+    "level": 8,
+    "character": "買う",
+    "kana": "かう",
+    "meaning": "to buy",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "答える": {
+    "level": 8,
+    "character": "答える",
+    "kana": "こたえる",
+    "meaning": "to answer, to reply, to respond",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "近づく": {
+    "level": 8,
+    "character": "近づく",
+    "kana": "ちかづく",
+    "meaning": "to get close, to approach, to draw near, to near, to bring near",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "思い出す": {
+    "level": 8,
+    "character": "思い出す",
+    "kana": "おもいだす",
+    "meaning": "to remember, to recall",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "見直す": {
+    "level": 8,
+    "character": "見直す",
+    "kana": "みなおす",
+    "meaning": "to reevaluate, to look again, to reassess",
+    "pos": [
+      "v5s",
+      "vt",
+      "vi"
+    ]
+  },
+  "出来上がる": {
+    "level": 8,
+    "character": "出来上がる",
+    "kana": "できあがる",
+    "meaning": "to be finished, to be completed",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "交じる": {
+    "level": 8,
+    "character": "交じる",
+    "kana": "まじる",
+    "meaning": "to be mixed, to be blended with, to join",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "交わる": {
+    "level": 8,
+    "character": "交わる",
+    "kana": "まじわる",
+    "meaning": "to intersect, to cross, to mingle",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "点ける": {
+    "level": 8,
+    "character": "点ける",
+    "kana": "つける",
+    "meaning": "to turn on, to switch on, to light up",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "役に立つ": {
+    "level": 8,
+    "character": "役に立つ",
+    "kana": "やくにたつ",
+    "meaning": "to be useful, to be of use, to be helpful, to be of service",
+    "pos": [
+      "v5t",
+      "exp"
+    ]
+  },
+  "数える": {
+    "level": 8,
+    "character": "数える",
+    "kana": "かぞえる",
+    "meaning": "to count",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "泳ぐ": {
+    "level": 9,
+    "character": "泳ぐ",
+    "kana": "およぐ",
+    "meaning": "to swim",
+    "pos": [
+      "v5g",
+      "vi"
+    ]
+  },
+  "乗る": {
+    "level": 9,
+    "character": "乗る",
+    "kana": "のる",
+    "meaning": "to ride",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "持つ": {
+    "level": 9,
+    "character": "持つ",
+    "kana": "もつ",
+    "meaning": "to hold, to carry, to own, to keep",
+    "pos": [
+      "v5t"
+    ]
+  },
+  "受ける": {
+    "level": 9,
+    "character": "受ける",
+    "kana": "うける",
+    "meaning": "to receive, to accept, to catch",
+    "pos": [
+      "v1",
+      "vt",
+      "vi"
+    ]
+  },
+  "始まる": {
+    "level": 9,
+    "character": "始まる",
+    "kana": "はじまる",
+    "meaning": "to begin, something begins, to start, something starts",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "始める": {
+    "level": 9,
+    "character": "始める",
+    "kana": "はじめる",
+    "meaning": "to begin, to start, to begin something, to start something",
+    "pos": [
+      "v1",
+      "vt",
+      "aux-v"
+    ]
+  },
+  "欠かす": {
+    "level": 9,
+    "character": "欠かす",
+    "kana": "かかす",
+    "meaning": "to miss, to fail, to fail to attend",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "待たせる": {
+    "level": 9,
+    "character": "待たせる",
+    "kana": "またせる",
+    "meaning": "to make someone wait, to keep someone waiting, to make wait, to keep waiting",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "負ける": {
+    "level": 9,
+    "character": "負ける",
+    "kana": "まける",
+    "meaning": "to lose, to be defeated",
+    "pos": [
+      "v1",
+      "vt",
+      "vi"
+    ]
+  },
+  "返す": {
+    "level": 9,
+    "character": "返す",
+    "kana": "かえす",
+    "meaning": "to return, to return something",
+    "pos": [
+      "v5s",
+      "vt",
+      "suf"
+    ]
+  },
+  "使う": {
+    "level": 9,
+    "character": "使う",
+    "kana": "つかう",
+    "meaning": "to use",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "要る": {
+    "level": 9,
+    "character": "要る",
+    "kana": "いる",
+    "meaning": "to need",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "表す": {
+    "level": 9,
+    "character": "表す",
+    "kana": "あらわす",
+    "meaning": "to express",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "通す": {
+    "level": 9,
+    "character": "通す",
+    "kana": "とおす",
+    "meaning": "to let pass, to overlook, to continue, to keep, to make way for, to persist in",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "待つ": {
+    "level": 9,
+    "character": "待つ",
+    "kana": "まつ",
+    "meaning": "to wait",
+    "pos": [
+      "v5t",
+      "vt",
+      "vi"
+    ]
+  },
+  "乗せる": {
+    "level": 9,
+    "character": "乗せる",
+    "kana": "のせる",
+    "meaning": "to give a ride, to give someone a ride, to place on",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "勝つ": {
+    "level": 9,
+    "character": "勝つ",
+    "kana": "かつ",
+    "meaning": "to win",
+    "pos": [
+      "v5t",
+      "vi"
+    ]
+  },
+  "送る": {
+    "level": 9,
+    "character": "送る",
+    "kana": "おくる",
+    "meaning": "to send",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "付く": {
+    "level": 9,
+    "character": "付く",
+    "kana": "つく",
+    "meaning": "to be attached",
+    "pos": [
+      "suf",
+      "vi",
+      "v5k"
+    ]
+  },
+  "見付ける": {
+    "level": 9,
+    "character": "見付ける",
+    "kana": "みつける",
+    "meaning": "to find, to find something",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "配る": {
+    "level": 10,
+    "character": "配る",
+    "kana": "くばる",
+    "meaning": "to distribute, to pass out, to deliver",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "習う": {
+    "level": 10,
+    "character": "習う",
+    "kana": "ならう",
+    "meaning": "to learn",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "転がる": {
+    "level": 10,
+    "character": "転がる",
+    "kana": "ころがる",
+    "meaning": "to roll, to tumble, to lie down, to be scattered about",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "落ちる": {
+    "level": 10,
+    "character": "落ちる",
+    "kana": "おちる",
+    "meaning": "to fall down, to drop, to fall",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "運ぶ": {
+    "level": 10,
+    "character": "運ぶ",
+    "kana": "はこぶ",
+    "meaning": "to carry, to transport, to move",
+    "pos": [
+      "vt",
+      "vi",
+      "v5b"
+    ]
+  },
+  "飲む": {
+    "level": 10,
+    "character": "飲む",
+    "kana": "のむ",
+    "meaning": "to drink",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "聞く": {
+    "level": 10,
+    "character": "聞く",
+    "kana": "きく",
+    "meaning": "to hear, to ask, to listen",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "調べる": {
+    "level": 10,
+    "character": "調べる",
+    "kana": "しらべる",
+    "meaning": "to investigate, to examine, to research, to look into, to search",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "決まる": {
+    "level": 10,
+    "character": "決まる",
+    "kana": "きまる",
+    "meaning": "to be decided, to be settled",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "読む": {
+    "level": 10,
+    "character": "読む",
+    "kana": "よむ",
+    "meaning": "to read",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "助かる": {
+    "level": 10,
+    "character": "助かる",
+    "kana": "たすかる",
+    "meaning": "to be helped, to be saved, to be rescued",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "終わる": {
+    "level": 10,
+    "character": "終わる",
+    "kana": "おわる",
+    "meaning": "to end, to finish",
+    "pos": [
+      "v5r",
+      "vi",
+      "aux-v"
+    ]
+  },
+  "投げ付ける": {
+    "level": 10,
+    "character": "投げ付ける",
+    "kana": "なげつける",
+    "meaning": "to throw against, to throw at",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "開ける": {
+    "level": 10,
+    "character": "開ける",
+    "kana": "あける",
+    "meaning": "to open, to open something",
+    "pos": [
+      "v1",
+      "vt",
+      "vi"
+    ]
+  },
+  "病む": {
+    "level": 10,
+    "character": "病む",
+    "kana": "やむ",
+    "meaning": "to be sick, to fall ill, to be ill, to come down with, to suffer from",
+    "pos": [
+      "v5m"
+    ]
+  },
+  "進む": {
+    "level": 10,
+    "character": "進む",
+    "kana": "すすむ",
+    "meaning": "to advance, to go forward, to progress",
+    "pos": [
+      "vi",
+      "v5m"
+    ]
+  },
+  "集める": {
+    "level": 10,
+    "character": "集める",
+    "kana": "あつめる",
+    "meaning": "to collect, to gather, to assemble",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "運転する": {
+    "level": 10,
+    "character": "運転する",
+    "kana": "うんてんする",
+    "meaning": "to drive",
+    "pos": []
+  },
+  "出会う": {
+    "level": 10,
+    "character": "出会う",
+    "kana": "であう",
+    "meaning": "to meet by chance, to meet unexpectedly, to come across, to encounter, to run into",
+    "pos": [
+      "v5u",
+      "vi"
+    ]
+  },
+  "語る": {
+    "level": 10,
+    "character": "語る",
+    "kana": "かたる",
+    "meaning": "to talk, to tell, to recite",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "起きる": {
+    "level": 10,
+    "character": "起きる",
+    "kana": "おきる",
+    "meaning": "to wake up",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "算定する": {
+    "level": 10,
+    "character": "算定する",
+    "kana": "さんていする",
+    "meaning": "to calculate",
+    "pos": []
+  },
+  "鳴く": {
+    "level": 10,
+    "character": "鳴く",
+    "kana": "なく",
+    "meaning": "to chirp, to bark, to make an animal sound",
+    "pos": [
+      "v5k"
+    ]
+  },
+  "間に合う": {
+    "level": 10,
+    "character": "間に合う",
+    "kana": "まにあう",
+    "meaning": "to be in time for, to make it on time, to be on time for",
+    "pos": [
+      "v5u"
+    ]
+  },
+  "楽しむ": {
+    "level": 10,
+    "character": "楽しむ",
+    "kana": "たのしむ",
+    "meaning": "to enjoy, to enjoy oneself, to have fun",
+    "pos": [
+      "v5m"
+    ]
+  },
+  "化かす": {
+    "level": 10,
+    "character": "化かす",
+    "kana": "ばかす",
+    "meaning": "to bewitch, to enchant",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "合わせる": {
+    "level": 11,
+    "character": "合わせる",
+    "kana": "あわせる",
+    "meaning": "to join together, to unify together, to unite, to match, to unify, to bring together, to join",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "争う": {
+    "level": 11,
+    "character": "争う",
+    "kana": "あらそう",
+    "meaning": "to quarrel, to compete, to argue",
+    "pos": [
+      "v5u",
+      "vi"
+    ]
+  },
+  "伝える": {
+    "level": 11,
+    "character": "伝える",
+    "kana": "つたえる",
+    "meaning": "to transmit, to tell",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "成る": {
+    "level": 11,
+    "character": "成る",
+    "kana": "なる",
+    "meaning": "to become",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "利く": {
+    "level": 11,
+    "character": "利く",
+    "kana": "きく",
+    "meaning": "to be effective, to show effect",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "放す": {
+    "level": 11,
+    "character": "放す",
+    "kana": "はなす",
+    "meaning": "to release, to let go, to release something, to let go of something",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "集中する": {
+    "level": 11,
+    "character": "集中する",
+    "kana": "しゅうちゅうする",
+    "meaning": "to concentrate",
+    "pos": []
+  },
+  "育つ": {
+    "level": 11,
+    "character": "育つ",
+    "kana": "そだつ",
+    "meaning": "to be raised",
+    "pos": [
+      "v5t",
+      "vi"
+    ]
+  },
+  "指定する": {
+    "level": 11,
+    "character": "指定する",
+    "kana": "していする",
+    "meaning": "to appoint, to assign, to designate, to specify",
+    "pos": []
+  },
+  "追う": {
+    "level": 11,
+    "character": "追う",
+    "kana": "おう",
+    "meaning": "to chase, to follow",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "働く": {
+    "level": 11,
+    "character": "働く",
+    "kana": "はたらく",
+    "meaning": "to work, to labor, to labour",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "苦しむ": {
+    "level": 11,
+    "character": "苦しむ",
+    "kana": "くるしむ",
+    "meaning": "to suffer, to hurt",
+    "pos": [
+      "vi",
+      "v5m"
+    ]
+  },
+  "気付く": {
+    "level": 11,
+    "character": "気付く",
+    "kana": "きづく",
+    "meaning": "to realize, to notice, to realise",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "通う": {
+    "level": 11,
+    "character": "通う",
+    "kana": "かよう",
+    "meaning": "to commute, to attend, to go back and forth",
+    "pos": [
+      "v5u",
+      "vi"
+    ]
+  },
+  "放送する": {
+    "level": 11,
+    "character": "放送する",
+    "kana": "ほうそうする",
+    "meaning": "to broadcast",
+    "pos": []
+  },
+  "拾う": {
+    "level": 11,
+    "character": "拾う",
+    "kana": "ひろう",
+    "meaning": "to pick up, to find, to gather",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "開放する": {
+    "level": 11,
+    "character": "開放する",
+    "kana": "かいほうする",
+    "meaning": "to fling open, to throw open, to liberate",
+    "pos": []
+  },
+  "注ぐ": {
+    "level": 11,
+    "character": "注ぐ",
+    "kana": "そそぐ, つぐ",
+    "meaning": "to pour",
+    "pos": [
+      "v5g",
+      "vi"
+    ]
+  },
+  "指す": {
+    "level": 11,
+    "character": "指す",
+    "kana": "さす",
+    "meaning": "to point, to point at",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "競う": {
+    "level": 11,
+    "character": "競う",
+    "kana": "きそう",
+    "meaning": "to compete",
+    "pos": [
+      "v5u",
+      "vi"
+    ]
+  },
+  "見送る": {
+    "level": 11,
+    "character": "見送る",
+    "kana": "みおくる",
+    "meaning": "to see off",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "返る": {
+    "level": 11,
+    "character": "返る",
+    "kana": "かえる",
+    "meaning": "to be returned, to return, to come back",
+    "pos": [
+      "suf",
+      "v5r",
+      "vi"
+    ]
+  },
+  "決定する": {
+    "level": 11,
+    "character": "決定する",
+    "kana": "けっていする",
+    "meaning": "to decide, to determine",
+    "pos": []
+  },
+  "植える": {
+    "level": 12,
+    "character": "植える",
+    "kana": "うえる",
+    "meaning": "to plant, to grow",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "流す": {
+    "level": 12,
+    "character": "流す",
+    "kana": "ながす",
+    "meaning": "to flow, to flush, to drain, to pour, to float, to wash away, to set afloat",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "消す": {
+    "level": 12,
+    "character": "消す",
+    "kana": "けす",
+    "meaning": "to extinguish, to erase, to turn off",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "登る": {
+    "level": 12,
+    "character": "登る",
+    "kana": "のぼる",
+    "meaning": "to climb, to ascend",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "着る": {
+    "level": 12,
+    "character": "着る",
+    "kana": "きる",
+    "meaning": "to wear, to put on",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "聞こえる": {
+    "level": 12,
+    "character": "聞こえる",
+    "kana": "きこえる",
+    "meaning": "hearable, audible, to be able to hear, to be heard, to be audible, can hear",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "転ぶ": {
+    "level": 12,
+    "character": "転ぶ",
+    "kana": "ころぶ",
+    "meaning": "to fall over, to fall down",
+    "pos": [
+      "vi",
+      "v5b"
+    ]
+  },
+  "起こる": {
+    "level": 12,
+    "character": "起こる",
+    "kana": "おこる",
+    "meaning": "to occur, to happen, to take place",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "心配する": {
+    "level": 12,
+    "character": "心配する",
+    "kana": "しんぱいする",
+    "meaning": "to worry, to be concerned, to be anxious",
+    "pos": []
+  },
+  "歌う": {
+    "level": 12,
+    "character": "歌う",
+    "kana": "うたう",
+    "meaning": "to sing",
+    "pos": [
+      "v5u",
+      "vt",
+      "vi"
+    ]
+  },
+  "動く": {
+    "level": 12,
+    "character": "動く",
+    "kana": "うごく",
+    "meaning": "to move, to operate",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "着く": {
+    "level": 12,
+    "character": "着く",
+    "kana": "つく",
+    "meaning": "to arrive",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "集まる": {
+    "level": 12,
+    "character": "集まる",
+    "kana": "あつまる",
+    "meaning": "to come together, to gather, to be gathered",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "落とす": {
+    "level": 12,
+    "character": "落とす",
+    "kana": "おとす",
+    "meaning": "to drop something, to let fall, to drop, to fall",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "開く": {
+    "level": 12,
+    "character": "開く",
+    "kana": "あく",
+    "meaning": "to open, to be open",
+    "pos": [
+      "vt",
+      "vi",
+      "v5k"
+    ]
+  },
+  "鳴る": {
+    "level": 12,
+    "character": "鳴る",
+    "kana": "なる",
+    "meaning": "to ring",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "別れる": {
+    "level": 13,
+    "character": "別れる",
+    "kana": "わかれる",
+    "meaning": "to separate, to be divided, to part from",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "共有する": {
+    "level": 13,
+    "character": "共有する",
+    "kana": "きょうゆうする",
+    "meaning": "to share, to own jointly, to co own",
+    "pos": []
+  },
+  "見返る": {
+    "level": 13,
+    "character": "見返る",
+    "kana": "みかえる",
+    "meaning": "to look back at, to look back on",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "戦う": {
+    "level": 13,
+    "character": "戦う",
+    "kana": "たたかう",
+    "meaning": "to fight, to battle, to combat",
+    "pos": [
+      "v5u",
+      "vi"
+    ]
+  },
+  "伝わる": {
+    "level": 13,
+    "character": "伝わる",
+    "kana": "つたわる",
+    "meaning": "to be transmitted",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "感動する": {
+    "level": 13,
+    "character": "感動する",
+    "kana": "かんどうする",
+    "meaning": "to be emotionally moved, to be moved emotionally, to be moving",
+    "pos": []
+  },
+  "映る": {
+    "level": 13,
+    "character": "映る",
+    "kana": "うつる",
+    "meaning": "to be reflected, to be projected",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "殺す": {
+    "level": 13,
+    "character": "殺す",
+    "kana": "ころす",
+    "meaning": "to kill",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "謝る": {
+    "level": 13,
+    "character": "謝る",
+    "kana": "あやまる",
+    "meaning": "to apologize, to apologise",
+    "pos": [
+      "v5r"
+    ]
+  },
+  "想像する": {
+    "level": 13,
+    "character": "想像する",
+    "kana": "そうぞうする",
+    "meaning": "to imagine",
+    "pos": []
+  },
+  "手伝う": {
+    "level": 13,
+    "character": "手伝う",
+    "kana": "てつだう",
+    "meaning": "to help, to assist, to lend a hand, to give a hand",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "注文する": {
+    "level": 13,
+    "character": "注文する",
+    "kana": "ちゅうもんする",
+    "meaning": "to order, to request",
+    "pos": []
+  },
+  "育てる": {
+    "level": 13,
+    "character": "育てる",
+    "kana": "そだてる",
+    "meaning": "to bring up, to raise, to bring something up, to raise something",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "追い付く": {
+    "level": 13,
+    "character": "追い付く",
+    "kana": "おいつく",
+    "meaning": "to catch up to, to overtake",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "追いかける": {
+    "level": 13,
+    "character": "追いかける",
+    "kana": "おいかける",
+    "meaning": "to follow, to stalk, to chase, to run after, to pursue",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "放れる": {
+    "level": 13,
+    "character": "放れる",
+    "kana": "はなれる",
+    "meaning": "to be released",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "感じる": {
+    "level": 13,
+    "character": "感じる",
+    "kana": "かんじる",
+    "meaning": "to feel",
+    "pos": [
+      "v1"
+    ]
+  },
+  "選ぶ": {
+    "level": 13,
+    "character": "選ぶ",
+    "kana": "えらぶ",
+    "meaning": "to choose",
+    "pos": [
+      "vt",
+      "v5b"
+    ]
+  },
+  "養う": {
+    "level": 13,
+    "character": "養う",
+    "kana": "やしなう",
+    "meaning": "to foster, to raise, to rear",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "参る": {
+    "level": 14,
+    "character": "参る",
+    "kana": "まいる",
+    "meaning": "to come, to go",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "囲む": {
+    "level": 14,
+    "character": "囲む",
+    "kana": "かこむ",
+    "meaning": "to surround",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "折る": {
+    "level": 14,
+    "character": "折る",
+    "kana": "おる",
+    "meaning": "to fold",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "合格する": {
+    "level": 14,
+    "character": "合格する",
+    "kana": "ごうかくする",
+    "meaning": "to pass a test, to pass an exam",
+    "pos": []
+  },
+  "求める": {
+    "level": 14,
+    "character": "求める",
+    "kana": "もとめる",
+    "meaning": "to want, to request, to demand",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "悲しむ": {
+    "level": 14,
+    "character": "悲しむ",
+    "kana": "かなしむ",
+    "meaning": "to be sad",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "落ち着く": {
+    "level": 14,
+    "character": "落ち着く",
+    "kana": "おちつく",
+    "meaning": "to calm down",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "消える": {
+    "level": 14,
+    "character": "消える",
+    "kana": "きえる",
+    "meaning": "to disappear, to go out, to turn off",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "流れる": {
+    "level": 14,
+    "character": "流れる",
+    "kana": "ながれる",
+    "meaning": "to stream, to flow",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "起こす": {
+    "level": 14,
+    "character": "起こす",
+    "kana": "おこす",
+    "meaning": "to wake someone up, to wake up, to wake someone",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "回転する": {
+    "level": 14,
+    "character": "回転する",
+    "kana": "かいてんする",
+    "meaning": "to rotate, to revolve",
+    "pos": []
+  },
+  "期待する": {
+    "level": 14,
+    "character": "期待する",
+    "kana": "きたいする",
+    "meaning": "to expect, to anticipate",
+    "pos": []
+  },
+  "望む": {
+    "level": 14,
+    "character": "望む",
+    "kana": "のぞむ",
+    "meaning": "to wish, to desire, to wish for",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "約する": {
+    "level": 14,
+    "character": "約する",
+    "kana": "やくする",
+    "meaning": "to promise",
+    "pos": [
+      "vs-s",
+      "vt"
+    ]
+  },
+  "残る": {
+    "level": 14,
+    "character": "残る",
+    "kana": "のこる",
+    "meaning": "to remain behind, to remain, to stay behind",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "消化する": {
+    "level": 14,
+    "character": "消化する",
+    "kana": "しょうかする",
+    "meaning": "to digest",
+    "pos": []
+  },
+  "温める": {
+    "level": 14,
+    "character": "温める",
+    "kana": "あたためる",
+    "meaning": "to warm up, to warm, to heat up, to heat",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "着ける": {
+    "level": 14,
+    "character": "着ける",
+    "kana": "つける",
+    "meaning": "to put on, to wear",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "気持ち悪い": {
+    "level": 14,
+    "character": "気持ち悪い",
+    "kana": "きもちわるい",
+    "meaning": "to feel terrible, terrible, to feel bad, bad feeling, feeling bad, feeling terrible",
+    "pos": [
+      "adj-i"
+    ]
+  },
+  "動かす": {
+    "level": 14,
+    "character": "動かす",
+    "kana": "うごかす",
+    "meaning": "to move something",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "勉強する": {
+    "level": 14,
+    "character": "勉強する",
+    "kana": "べんきょうする",
+    "meaning": "to study",
+    "pos": []
+  },
+  "旅行する": {
+    "level": 14,
+    "character": "旅行する",
+    "kana": "りょこうする",
+    "meaning": "to travel, to take a trip",
+    "pos": []
+  },
+  "変える": {
+    "level": 15,
+    "character": "変える",
+    "kana": "かえる",
+    "meaning": "to change",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "見返す": {
+    "level": 15,
+    "character": "見返す",
+    "kana": "みかえす",
+    "meaning": "to look back at, to triumph over",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "放つ": {
+    "level": 15,
+    "character": "放つ",
+    "kana": "はなつ",
+    "meaning": "to fire, to hit, to break wind",
+    "pos": [
+      "v5t",
+      "vt"
+    ]
+  },
+  "好む": {
+    "level": 15,
+    "character": "好む",
+    "kana": "このむ",
+    "meaning": "to be fond of, to like",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "建てる": {
+    "level": 15,
+    "character": "建てる",
+    "kana": "たてる",
+    "meaning": "to build, to construct",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "晴れる": {
+    "level": 15,
+    "character": "晴れる",
+    "kana": "はれる",
+    "meaning": "to clear up, to become sunny",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "暗記する": {
+    "level": 15,
+    "character": "暗記する",
+    "kana": "あんきする",
+    "meaning": "to memorize, to memorise",
+    "pos": []
+  },
+  "練習する": {
+    "level": 15,
+    "character": "練習する",
+    "kana": "れんしゅうする",
+    "meaning": "to practice",
+    "pos": []
+  },
+  "整える": {
+    "level": 15,
+    "character": "整える",
+    "kana": "ととのえる",
+    "meaning": "to arrange, to put in order, to adjust, to prepare",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "信じる": {
+    "level": 15,
+    "character": "信じる",
+    "kana": "しんじる",
+    "meaning": "to believe, to trust in",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "帰る": {
+    "level": 15,
+    "character": "帰る",
+    "kana": "かえる",
+    "meaning": "to return home, to return",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "泣く": {
+    "level": 15,
+    "character": "泣く",
+    "kana": "なく",
+    "meaning": "to cry",
+    "pos": [
+      "v5k"
+    ]
+  },
+  "映す": {
+    "level": 15,
+    "character": "映す",
+    "kana": "うつす",
+    "meaning": "to project, to reflect",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "整理する": {
+    "level": 15,
+    "character": "整理する",
+    "kana": "せいりする",
+    "meaning": "to arrange, to organize, to sort",
+    "pos": []
+  },
+  "折れる": {
+    "level": 16,
+    "character": "折れる",
+    "kana": "おれる",
+    "meaning": "to break, to snap, to fracture",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "係わる": {
+    "level": 16,
+    "character": "係わる",
+    "kana": "かかわる",
+    "meaning": "to be involved with, to be connected with, to be affected, to have to do with",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "喜ぶ": {
+    "level": 16,
+    "character": "喜ぶ",
+    "kana": "よろこぶ",
+    "meaning": "to rejoice, to become happy",
+    "pos": [
+      "v5b"
+    ]
+  },
+  "存じる": {
+    "level": 16,
+    "character": "存じる",
+    "kana": "ぞんじる",
+    "meaning": "to know, to be aware of",
+    "pos": [
+      "v1"
+    ]
+  },
+  "急ぐ": {
+    "level": 16,
+    "character": "急ぐ",
+    "kana": "いそぐ",
+    "meaning": "to hurry",
+    "pos": [
+      "v5g",
+      "vt",
+      "vi"
+    ]
+  },
+  "治す": {
+    "level": 16,
+    "character": "治す",
+    "kana": "なおす",
+    "meaning": "to cure, to heal",
+    "pos": [
+      "v5s",
+      "vt",
+      "aux-v"
+    ]
+  },
+  "浴びる": {
+    "level": 16,
+    "character": "浴びる",
+    "kana": "あびる",
+    "meaning": "to bathe",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "辞める": {
+    "level": 16,
+    "character": "辞める",
+    "kana": "やめる",
+    "meaning": "to quit, to resign",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "関する": {
+    "level": 16,
+    "character": "関する",
+    "kana": "かんする",
+    "meaning": "to be connected to, to be related",
+    "pos": [
+      "vs-s"
+    ]
+  },
+  "要求する": {
+    "level": 16,
+    "character": "要求する",
+    "kana": "ようきゅうする",
+    "meaning": "to demand",
+    "pos": []
+  },
+  "残す": {
+    "level": 16,
+    "character": "残す",
+    "kana": "のこす",
+    "meaning": "to leave behind, to leave over",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "保つ": {
+    "level": 16,
+    "character": "保つ",
+    "kana": "たもつ",
+    "meaning": "to preserve, to keep, to maintain",
+    "pos": [
+      "v5t"
+    ]
+  },
+  "守る": {
+    "level": 16,
+    "character": "守る",
+    "kana": "まもる",
+    "meaning": "to protect, to defend",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "取る": {
+    "level": 16,
+    "character": "取る",
+    "kana": "とる",
+    "meaning": "to take",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "書く": {
+    "level": 16,
+    "character": "書く",
+    "kana": "かく",
+    "meaning": "to write",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "笑う": {
+    "level": 16,
+    "character": "笑う",
+    "kana": "わらう",
+    "meaning": "to laugh",
+    "pos": [
+      "v5u",
+      "vi"
+    ]
+  },
+  "妥協する": {
+    "level": 16,
+    "character": "妥協する",
+    "kana": "だきょうする",
+    "meaning": "to compromise",
+    "pos": []
+  },
+  "希望する": {
+    "level": 16,
+    "character": "希望する",
+    "kana": "きぼうする",
+    "meaning": "to request, to wish",
+    "pos": []
+  },
+  "固める": {
+    "level": 16,
+    "character": "固める",
+    "kana": "かためる",
+    "meaning": "to make hard, to harden",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "卒業する": {
+    "level": 16,
+    "character": "卒業する",
+    "kana": "そつぎょうする",
+    "meaning": "to graduate",
+    "pos": []
+  },
+  "変わる": {
+    "level": 17,
+    "character": "変わる",
+    "kana": "かわる",
+    "meaning": "to be changed, to be transformed, to be altered, to vary, to be turned",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "愛する": {
+    "level": 17,
+    "character": "愛する",
+    "kana": "あいする",
+    "meaning": "to love",
+    "pos": [
+      "vs-s",
+      "vt"
+    ]
+  },
+  "察する": {
+    "level": 17,
+    "character": "察する",
+    "kana": "さっする",
+    "meaning": "to guess, to sense, to presume",
+    "pos": [
+      "vs-s",
+      "vt"
+    ]
+  },
+  "干す": {
+    "level": 17,
+    "character": "干す",
+    "kana": "ほす",
+    "meaning": "to dry",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "敗れる": {
+    "level": 17,
+    "character": "敗れる",
+    "kana": "やぶれる",
+    "meaning": "to be defeated, to be unsuccessful",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "勇む": {
+    "level": 17,
+    "character": "勇む",
+    "kana": "いさむ",
+    "meaning": "to be encouraged, to be lively, to be in high spirits, to cheer up, to be excited, to be inspired",
+    "pos": [
+      "v5m"
+    ]
+  },
+  "果てる": {
+    "level": 17,
+    "character": "果てる",
+    "kana": "はてる",
+    "meaning": "to end, to be finished, to be exhausted, to die",
+    "pos": [
+      "v1",
+      "vi",
+      "aux-v"
+    ]
+  },
+  "建つ": {
+    "level": 17,
+    "character": "建つ",
+    "kana": "たつ",
+    "meaning": "to be erected, to be built",
+    "pos": [
+      "v5t",
+      "vi"
+    ]
+  },
+  "栄える": {
+    "level": 17,
+    "character": "栄える",
+    "kana": "さかえる",
+    "meaning": "to flourish, to prosper",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "配達する": {
+    "level": 18,
+    "character": "配達する",
+    "kana": "はいたつする",
+    "meaning": "to deliver",
+    "pos": []
+  },
+  "保持する": {
+    "level": 18,
+    "character": "保持する",
+    "kana": "ほじする",
+    "meaning": "to maintain, to preserve",
+    "pos": []
+  },
+  "禁じる": {
+    "level": 18,
+    "character": "禁じる",
+    "kana": "きんじる",
+    "meaning": "to prohibit",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "座る": {
+    "level": 18,
+    "character": "座る",
+    "kana": "すわる",
+    "meaning": "to sit",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "借りる": {
+    "level": 18,
+    "character": "借りる",
+    "kana": "かりる",
+    "meaning": "to borrow",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "取れる": {
+    "level": 18,
+    "character": "取れる",
+    "kana": "とれる",
+    "meaning": "to come off, to be removed, to fall off",
+    "pos": [
+      "v1",
+      "vt",
+      "vi"
+    ]
+  },
+  "告げる": {
+    "level": 18,
+    "character": "告げる",
+    "kana": "つげる",
+    "meaning": "to announce, to tell",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "書き直す": {
+    "level": 18,
+    "character": "書き直す",
+    "kana": "かきなおす",
+    "meaning": "to rewrite",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "祈る": {
+    "level": 18,
+    "character": "祈る",
+    "kana": "いのる",
+    "meaning": "to pray",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "試す": {
+    "level": 18,
+    "character": "試す",
+    "kana": "ためす",
+    "meaning": "to attempt, to try out, to test, to test the limits, to try",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "固まる": {
+    "level": 18,
+    "character": "固まる",
+    "kana": "かたまる",
+    "meaning": "to harden, to solidify, to become firm, to become certain",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "達する": {
+    "level": 18,
+    "character": "達する",
+    "kana": "たっする",
+    "meaning": "to attain, to reach, to get to, to arrive at",
+    "pos": [
+      "vs-s"
+    ]
+  },
+  "書き入れる": {
+    "level": 18,
+    "character": "書き入れる",
+    "kana": "かきいれる",
+    "meaning": "to write in, to fill in",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "切り取る": {
+    "level": 18,
+    "character": "切り取る",
+    "kana": "きりとる",
+    "meaning": "to cut off, to cut out",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "取り出す": {
+    "level": 18,
+    "character": "取り出す",
+    "kana": "とりだす",
+    "meaning": "to pick out, to take out, to retrieve",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "報じる": {
+    "level": 18,
+    "character": "報じる",
+    "kana": "ほうじる",
+    "meaning": "to report on",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "忘れる": {
+    "level": 18,
+    "character": "忘れる",
+    "kana": "わすれる",
+    "meaning": "to forget",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "洗う": {
+    "level": 18,
+    "character": "洗う",
+    "kana": "あらう",
+    "meaning": "to wash",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "焼く": {
+    "level": 18,
+    "character": "焼く",
+    "kana": "やく",
+    "meaning": "to bake, to cook, to burn",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "許す": {
+    "level": 18,
+    "character": "許す",
+    "kana": "ゆるす",
+    "meaning": "to permit, to forgive, to allow",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "試みる": {
+    "level": 18,
+    "character": "試みる",
+    "kana": "こころみる",
+    "meaning": "to try, to attempt",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "比べる": {
+    "level": 19,
+    "character": "比べる",
+    "kana": "くらべる",
+    "meaning": "to compare",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "混ぜる": {
+    "level": 19,
+    "character": "混ぜる",
+    "kana": "まぜる",
+    "meaning": "to mix, to mix something, to stir, to stir something, to blend, to blend something",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "混ざる": {
+    "level": 19,
+    "character": "混ざる",
+    "kana": "まざる",
+    "meaning": "to get mixed, to be mixed, to be blended with",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "続く": {
+    "level": 19,
+    "character": "続く",
+    "kana": "つづく",
+    "meaning": "to continue",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "連絡する": {
+    "level": 19,
+    "character": "連絡する",
+    "kana": "れんらくする",
+    "meaning": "to contact, to get in touch, to get in contact",
+    "pos": []
+  },
+  "覚える": {
+    "level": 19,
+    "character": "覚える",
+    "kana": "おぼえる",
+    "meaning": "to memorize, to remember, to memorise, to learn, to pick up",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "乱れる": {
+    "level": 19,
+    "character": "乱れる",
+    "kana": "みだれる",
+    "meaning": "to be in disorder, to be disordered",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "困る": {
+    "level": 19,
+    "character": "困る",
+    "kana": "こまる",
+    "meaning": "to be distressed, to be troubled",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "履く": {
+    "level": 19,
+    "character": "履く",
+    "kana": "はく",
+    "meaning": "to put on shoes, to put on pants, to put on boots",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "得る": {
+    "level": 19,
+    "character": "得る",
+    "kana": "える",
+    "meaning": "to acquire, to gain, to obtain",
+    "pos": [
+      "v1",
+      "vt",
+      "aux-v"
+    ]
+  },
+  "改まる": {
+    "level": 19,
+    "character": "改まる",
+    "kana": "あらたまる",
+    "meaning": "to be renewed, to be formal",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "暴れる": {
+    "level": 19,
+    "character": "暴れる",
+    "kana": "あばれる",
+    "meaning": "to act violently, to rage",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "減る": {
+    "level": 19,
+    "character": "減る",
+    "kana": "へる",
+    "meaning": "to be decreased, to get decreased, to decrease",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "絡む": {
+    "level": 19,
+    "character": "絡む",
+    "kana": "からむ",
+    "meaning": "to get entangled, to be entangled",
+    "pos": [
+      "vi",
+      "v5m"
+    ]
+  },
+  "連れる": {
+    "level": 19,
+    "character": "連れる",
+    "kana": "つれる",
+    "meaning": "to take along, to bring with, to bring a person, to lead",
+    "pos": [
+      "v1"
+    ]
+  },
+  "加える": {
+    "level": 19,
+    "character": "加える",
+    "kana": "くわえる",
+    "meaning": "to add",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "焼ける": {
+    "level": 20,
+    "character": "焼ける",
+    "kana": "やける",
+    "meaning": "to be cooked, to burn",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "倒す": {
+    "level": 20,
+    "character": "倒す",
+    "kana": "たおす",
+    "meaning": "to knock over, to knock down, to bring down",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "嫌い": {
+    "level": 20,
+    "character": "嫌い",
+    "kana": "きらい",
+    "meaning": "to dislike, to hate, dislike, hate",
+    "pos": [
+      "n",
+      "adj-na"
+    ]
+  },
+  "飛ぶ": {
+    "level": 20,
+    "character": "飛ぶ",
+    "kana": "とぶ",
+    "meaning": "to fly, to jump",
+    "pos": [
+      "vi",
+      "v5b"
+    ]
+  },
+  "文句する": {
+    "level": 20,
+    "character": "文句する",
+    "kana": "もんくする",
+    "meaning": "to complain",
+    "pos": []
+  },
+  "余る": {
+    "level": 20,
+    "character": "余る",
+    "kana": "あまる",
+    "meaning": "to be in surplus, to remain left over, to exceed, to surplus, to be in excess",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "妨げる": {
+    "level": 20,
+    "character": "妨げる",
+    "kana": "さまたげる",
+    "meaning": "to obstruct, to prevent, to hamper",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "被る": {
+    "level": 20,
+    "character": "被る",
+    "kana": "かぶる",
+    "meaning": "to put on a hat, to put on, to wear a hat, to wear, to put a hat on",
+    "pos": [
+      "v5r",
+      "vi",
+      "vt"
+    ]
+  },
+  "犯す": {
+    "level": 20,
+    "character": "犯す",
+    "kana": "おかす",
+    "meaning": "to commit a crime, to perpetrate, to make a mistake",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "産む": {
+    "level": 20,
+    "character": "産む",
+    "kana": "うむ",
+    "meaning": "to give birth",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "経つ": {
+    "level": 20,
+    "character": "経つ",
+    "kana": "たつ",
+    "meaning": "to pass, to expire",
+    "pos": [
+      "v5t",
+      "vi"
+    ]
+  },
+  "防ぐ": {
+    "level": 20,
+    "character": "防ぐ",
+    "kana": "ふせぐ",
+    "meaning": "to defend, to protect against, to prevent",
+    "pos": [
+      "v5g",
+      "vt"
+    ]
+  },
+  "参加する": {
+    "level": 21,
+    "character": "参加する",
+    "kana": "さんかする",
+    "meaning": "to participate",
+    "pos": []
+  },
+  "混む": {
+    "level": 21,
+    "character": "混む",
+    "kana": "こむ",
+    "meaning": "to be crowded",
+    "pos": [
+      "vi",
+      "aux-v",
+      "v5m"
+    ]
+  },
+  "減らす": {
+    "level": 21,
+    "character": "減らす",
+    "kana": "へらす",
+    "meaning": "to decrease, to decrease something",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "設ける": {
+    "level": 21,
+    "character": "設ける",
+    "kana": "もうける",
+    "meaning": "to establish",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "設定する": {
+    "level": 21,
+    "character": "設定する",
+    "kana": "せっていする",
+    "meaning": "to establish",
+    "pos": []
+  },
+  "乱す": {
+    "level": 21,
+    "character": "乱す",
+    "kana": "みだす",
+    "meaning": "to put in disorder, to throw out of order",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "説得する": {
+    "level": 21,
+    "character": "説得する",
+    "kana": "せっとくする",
+    "meaning": "to persuade",
+    "pos": []
+  },
+  "混じる": {
+    "level": 21,
+    "character": "混じる",
+    "kana": "まじる",
+    "meaning": "to get mixed up in, to get mixed, to be mixed",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "混乱する": {
+    "level": 21,
+    "character": "混乱する",
+    "kana": "こんらんする",
+    "meaning": "to be confused",
+    "pos": []
+  },
+  "続ける": {
+    "level": 21,
+    "character": "続ける",
+    "kana": "つづける",
+    "meaning": "to continue",
+    "pos": [
+      "v1",
+      "vt",
+      "aux-v"
+    ]
+  },
+  "済む": {
+    "level": 21,
+    "character": "済む",
+    "kana": "すむ",
+    "meaning": "to come to an end",
+    "pos": [
+      "vi",
+      "v5m"
+    ]
+  },
+  "挙がる": {
+    "level": 21,
+    "character": "挙がる",
+    "kana": "あがる",
+    "meaning": "to rise",
+    "pos": [
+      "suf",
+      "v5r",
+      "vi"
+    ]
+  },
+  "務める": {
+    "level": 21,
+    "character": "務める",
+    "kana": "つとめる",
+    "meaning": "to work for, to serve at, to be employed at",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "断る": {
+    "level": 21,
+    "character": "断る",
+    "kana": "ことわる",
+    "meaning": "to refuse, to reject",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "検問する": {
+    "level": 21,
+    "character": "検問する",
+    "kana": "けんもんする",
+    "meaning": "to inspect, to examine, to check",
+    "pos": []
+  },
+  "責める": {
+    "level": 21,
+    "character": "責める",
+    "kana": "せめる",
+    "meaning": "to blame",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "省く": {
+    "level": 21,
+    "character": "省く",
+    "kana": "はぶく",
+    "meaning": "to omit, to eliminate, to skip",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "増える": {
+    "level": 21,
+    "character": "増える",
+    "kana": "ふえる",
+    "meaning": "to increase",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "解ける": {
+    "level": 21,
+    "character": "解ける",
+    "kana": "とける",
+    "meaning": "to become untied, to get untied, to come undone, to become undone",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "認める": {
+    "level": 21,
+    "character": "認める",
+    "kana": "みとめる",
+    "meaning": "to recognize, to perceive, to acknowledge, to recognise",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "目覚める": {
+    "level": 21,
+    "character": "目覚める",
+    "kana": "めざめる",
+    "meaning": "to wake up, to awaken",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "企てる": {
+    "level": 21,
+    "character": "企てる",
+    "kana": "くわだてる",
+    "meaning": "to plan, to scheme",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "存在する": {
+    "level": 22,
+    "character": "存在する",
+    "kana": "そんざいする",
+    "meaning": "to exist",
+    "pos": []
+  },
+  "脱走する": {
+    "level": 22,
+    "character": "脱走する",
+    "kana": "だっそうする",
+    "meaning": "to escape, to flee",
+    "pos": []
+  },
+  "営む": {
+    "level": 22,
+    "character": "営む",
+    "kana": "いとなむ",
+    "meaning": "to run a business, to manage a business",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "応じる": {
+    "level": 22,
+    "character": "応じる",
+    "kana": "おうじる",
+    "meaning": "to respond",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "非難する": {
+    "level": 22,
+    "character": "非難する",
+    "kana": "ひなんする",
+    "meaning": "to criticize, to criticise",
+    "pos": []
+  },
+  "大嫌い": {
+    "level": 22,
+    "character": "大嫌い",
+    "kana": "だいきらい",
+    "meaning": "to hate, to really hate, hate",
+    "pos": [
+      "adj-na"
+    ]
+  },
+  "倒れる": {
+    "level": 22,
+    "character": "倒れる",
+    "kana": "たおれる",
+    "meaning": "to get knocked over, to get knocked down, to collapse",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "飛ばす": {
+    "level": 22,
+    "character": "飛ばす",
+    "kana": "とばす",
+    "meaning": "to let fly, to send flying",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "確かめる": {
+    "level": 22,
+    "character": "確かめる",
+    "kana": "たしかめる",
+    "meaning": "to make sure of, to verify, to confirm, to make certain",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "在留する": {
+    "level": 22,
+    "character": "在留する",
+    "kana": "ざいりゅうする",
+    "meaning": "to reside, to stay, to remain",
+    "pos": []
+  },
+  "震える": {
+    "level": 22,
+    "character": "震える",
+    "kana": "ふるえる",
+    "meaning": "to shake, to shiver, to quake, to tremble, to quaver, to quiver",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "圧倒する": {
+    "level": 22,
+    "character": "圧倒する",
+    "kana": "あっとうする",
+    "meaning": "to overwhelm",
+    "pos": []
+  },
+  "寝る": {
+    "level": 22,
+    "character": "寝る",
+    "kana": "ねる",
+    "meaning": "to lie down, to go to bed, to sleep",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "過ぎる": {
+    "level": 22,
+    "character": "過ぎる",
+    "kana": "すぎる",
+    "meaning": "to surpass",
+    "pos": [
+      "v1",
+      "vi",
+      "suf"
+    ]
+  },
+  "罰する": {
+    "level": 22,
+    "character": "罰する",
+    "kana": "ばっする",
+    "meaning": "to punish, to penalize, to penalise",
+    "pos": [
+      "vs-s"
+    ]
+  },
+  "脱ぐ": {
+    "level": 22,
+    "character": "脱ぐ",
+    "kana": "ぬぐ",
+    "meaning": "to undress, to take off clothes",
+    "pos": [
+      "v5g",
+      "vt"
+    ]
+  },
+  "置く": {
+    "level": 22,
+    "character": "置く",
+    "kana": "おく",
+    "meaning": "to put down, to set down, to place",
+    "pos": [
+      "vt",
+      "aux-v",
+      "v5k"
+    ]
+  },
+  "示す": {
+    "level": 22,
+    "character": "示す",
+    "kana": "しめす",
+    "meaning": "to indicate, to show",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "観る": {
+    "level": 22,
+    "character": "観る",
+    "kana": "みる",
+    "meaning": "to view, to spectate, to watch",
+    "pos": [
+      "v1",
+      "vt",
+      "aux-v"
+    ]
+  },
+  "吸う": {
+    "level": 22,
+    "character": "吸う",
+    "kana": "すう",
+    "meaning": "to smoke, to suck, to inhale",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "選挙する": {
+    "level": 23,
+    "character": "選挙する",
+    "kana": "せんきょする",
+    "meaning": "to elect",
+    "pos": []
+  },
+  "割る": {
+    "level": 23,
+    "character": "割る",
+    "kana": "わる",
+    "meaning": "to divide",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "導く": {
+    "level": 23,
+    "character": "導く",
+    "kana": "みちびく",
+    "meaning": "to lead, to guide",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "現れる": {
+    "level": 23,
+    "character": "現れる",
+    "kana": "あらわれる",
+    "meaning": "to appear, to emerge",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "呼ぶ": {
+    "level": 23,
+    "character": "呼ぶ",
+    "kana": "よぶ",
+    "meaning": "to call, to call out",
+    "pos": [
+      "vt",
+      "v5b"
+    ]
+  },
+  "検査する": {
+    "level": 23,
+    "character": "検査する",
+    "kana": "けんさする",
+    "meaning": "to examine, to inspect, to check",
+    "pos": []
+  },
+  "挙げる": {
+    "level": 23,
+    "character": "挙げる",
+    "kana": "あげる",
+    "meaning": "to raise, to elevate, to bring up",
+    "pos": [
+      "v1",
+      "vt",
+      "vi",
+      "aux-v"
+    ]
+  },
+  "理解する": {
+    "level": 23,
+    "character": "理解する",
+    "kana": "りかいする",
+    "meaning": "to understand, to comprehend",
+    "pos": []
+  },
+  "解く": {
+    "level": 23,
+    "character": "解く",
+    "kana": "とく",
+    "meaning": "to untie, to untie something",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "演ずる": {
+    "level": 23,
+    "character": "演ずる",
+    "kana": "えんずる",
+    "meaning": "to perform, to play",
+    "pos": [
+      "vt",
+      "vz"
+    ]
+  },
+  "確認する": {
+    "level": 23,
+    "character": "確認する",
+    "kana": "かくにんする",
+    "meaning": "to confirm, to verify",
+    "pos": []
+  },
+  "済ます": {
+    "level": 23,
+    "character": "済ます",
+    "kana": "すます",
+    "meaning": "to finish, to settle",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "判断する": {
+    "level": 23,
+    "character": "判断する",
+    "kana": "はんだんする",
+    "meaning": "to judge",
+    "pos": []
+  },
+  "保護する": {
+    "level": 23,
+    "character": "保護する",
+    "kana": "ほごする",
+    "meaning": "to conserve, to protect",
+    "pos": []
+  },
+  "裁く": {
+    "level": 23,
+    "character": "裁く",
+    "kana": "さばく",
+    "meaning": "to judge",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "備える": {
+    "level": 23,
+    "character": "備える",
+    "kana": "そなえる",
+    "meaning": "to provide, to furnish, to equip, to prepare for",
+    "pos": [
+      "v1",
+      "vr",
+      "vt"
+    ]
+  },
+  "張る": {
+    "level": 23,
+    "character": "張る",
+    "kana": "はる",
+    "meaning": "to stretch",
+    "pos": [
+      "v5r",
+      "vi",
+      "vt"
+    ]
+  },
+  "秀でる": {
+    "level": 23,
+    "character": "秀でる",
+    "kana": "ひいでる",
+    "meaning": "to excel, to surpass",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "批判する": {
+    "level": 23,
+    "character": "批判する",
+    "kana": "ひはんする",
+    "meaning": "to criticize, to criticise",
+    "pos": []
+  },
+  "増やす": {
+    "level": 23,
+    "character": "増やす",
+    "kana": "ふやす",
+    "meaning": "to increase something, to increase",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "断つ": {
+    "level": 23,
+    "character": "断つ",
+    "kana": "たつ",
+    "meaning": "to cut off",
+    "pos": [
+      "v5t",
+      "vt"
+    ]
+  },
+  "心得る": {
+    "level": 23,
+    "character": "心得る",
+    "kana": "こころえる",
+    "meaning": "to know, to understand, to be aware of, to consent, to agree",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "提案する": {
+    "level": 24,
+    "character": "提案する",
+    "kana": "ていあんする",
+    "meaning": "to propose",
+    "pos": []
+  },
+  "寝坊する": {
+    "level": 24,
+    "character": "寝坊する",
+    "kana": "ねぼうする",
+    "meaning": "to oversleep",
+    "pos": []
+  },
+  "触る": {
+    "level": 24,
+    "character": "触る",
+    "kana": "さわる",
+    "meaning": "to touch",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "無視する": {
+    "level": 24,
+    "character": "無視する",
+    "kana": "むしする",
+    "meaning": "to ignore, to disregard",
+    "pos": []
+  },
+  "差す": {
+    "level": 24,
+    "character": "差す",
+    "kana": "さす",
+    "meaning": "to shine at, to shine on",
+    "pos": [
+      "v5s",
+      "vt",
+      "vi",
+      "suf"
+    ]
+  },
+  "量る": {
+    "level": 24,
+    "character": "量る",
+    "kana": "はかる",
+    "meaning": "to measure, to weigh",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "述べる": {
+    "level": 24,
+    "character": "述べる",
+    "kana": "のべる",
+    "meaning": "to mention, to state, to explain",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "供える": {
+    "level": 24,
+    "character": "供える",
+    "kana": "そなえる",
+    "meaning": "to make an offering, to offer",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "援助する": {
+    "level": 24,
+    "character": "援助する",
+    "kana": "えんじょする",
+    "meaning": "to assist, to aid",
+    "pos": []
+  },
+  "応援する": {
+    "level": 24,
+    "character": "応援する",
+    "kana": "おうえんする",
+    "meaning": "to root for, to cheer on, to cheer for",
+    "pos": []
+  },
+  "燃やす": {
+    "level": 24,
+    "character": "燃やす",
+    "kana": "もやす",
+    "meaning": "to burn something, to burn",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "違う": {
+    "level": 24,
+    "character": "違う",
+    "kana": "ちがう",
+    "meaning": "to be different, to be wrong, to be mistaken, to vary, to differ",
+    "pos": [
+      "v5u",
+      "vi"
+    ]
+  },
+  "営業する": {
+    "level": 24,
+    "character": "営業する",
+    "kana": "えいぎょうする",
+    "meaning": "to run a business, to manage a business",
+    "pos": []
+  },
+  "担ぐ": {
+    "level": 24,
+    "character": "担ぐ",
+    "kana": "かつぐ",
+    "meaning": "to carry",
+    "pos": [
+      "v5g",
+      "vt"
+    ]
+  },
+  "指差す": {
+    "level": 24,
+    "character": "指差す",
+    "kana": "ゆびさす",
+    "meaning": "to point at, to point to",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "祝う": {
+    "level": 24,
+    "character": "祝う",
+    "kana": "いわう",
+    "meaning": "to celebrate",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "届く": {
+    "level": 24,
+    "character": "届く",
+    "kana": "とどく",
+    "meaning": "to be delivered, to arrive, to reach",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "載る": {
+    "level": 24,
+    "character": "載る",
+    "kana": "のる",
+    "meaning": "to be published, to be reported, to be printed",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "発展する": {
+    "level": 24,
+    "character": "発展する",
+    "kana": "はってんする",
+    "meaning": "to develop",
+    "pos": []
+  },
+  "支援する": {
+    "level": 24,
+    "character": "支援する",
+    "kana": "しえんする",
+    "meaning": "to support, to back, to aid",
+    "pos": []
+  },
+  "吸収する": {
+    "level": 25,
+    "character": "吸収する",
+    "kana": "きゅうしゅうする",
+    "meaning": "to absorb",
+    "pos": []
+  },
+  "抜く": {
+    "level": 25,
+    "character": "抜く",
+    "kana": "ぬく",
+    "meaning": "to extract, to pluck",
+    "pos": [
+      "suf",
+      "vt",
+      "v5k"
+    ]
+  },
+  "渡る": {
+    "level": 25,
+    "character": "渡る",
+    "kana": "わたる",
+    "meaning": "to cross, to cross over, to go across",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "補う": {
+    "level": 25,
+    "character": "補う",
+    "kana": "おぎなう",
+    "meaning": "to supplement, to compensate for",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "構う": {
+    "level": 25,
+    "character": "構う",
+    "kana": "かまう",
+    "meaning": "to care about, to mind",
+    "pos": [
+      "v5u"
+    ]
+  },
+  "属する": {
+    "level": 25,
+    "character": "属する",
+    "kana": "ぞくする",
+    "meaning": "to belong to, to fall under",
+    "pos": [
+      "vs-s",
+      "vi",
+      "vt"
+    ]
+  },
+  "巻く": {
+    "level": 25,
+    "character": "巻く",
+    "kana": "まく",
+    "meaning": "to roll, to roll up",
+    "pos": [
+      "vt",
+      "vi",
+      "v5k"
+    ]
+  },
+  "捜す": {
+    "level": 25,
+    "character": "捜す",
+    "kana": "さがす",
+    "meaning": "to search",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "替える": {
+    "level": 25,
+    "character": "替える",
+    "kana": "かえる",
+    "meaning": "to replace, to substitute, to switch, to exchange",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "隠す": {
+    "level": 25,
+    "character": "隠す",
+    "kana": "かくす",
+    "meaning": "to hide",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "掛ける": {
+    "level": 25,
+    "character": "掛ける",
+    "kana": "かける",
+    "meaning": "to hang",
+    "pos": [
+      "v1",
+      "vt",
+      "suf"
+    ]
+  },
+  "見渡す": {
+    "level": 25,
+    "character": "見渡す",
+    "kana": "みわたす",
+    "meaning": "to look out over, to survey, to sweep, to glance over, to take an extensive view of",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "増す": {
+    "level": 25,
+    "character": "増す",
+    "kana": "ます",
+    "meaning": "to increase, to grow",
+    "pos": [
+      "v5s",
+      "vt",
+      "vi"
+    ]
+  },
+  "限る": {
+    "level": 25,
+    "character": "限る",
+    "kana": "かぎる",
+    "meaning": "to limit",
+    "pos": [
+      "v5r",
+      "vi",
+      "vt"
+    ]
+  },
+  "割れる": {
+    "level": 25,
+    "character": "割れる",
+    "kana": "われる",
+    "meaning": "to be divided, to be separated, to break",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "準備する": {
+    "level": 25,
+    "character": "準備する",
+    "kana": "じゅんびする",
+    "meaning": "to prepare",
+    "pos": []
+  },
+  "頑張る": {
+    "level": 25,
+    "character": "頑張る",
+    "kana": "がんばる",
+    "meaning": "to persevere",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "捕まる": {
+    "level": 25,
+    "character": "捕まる",
+    "kana": "つかまる",
+    "meaning": "to be caught, to get caught",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "与える": {
+    "level": 25,
+    "character": "与える",
+    "kana": "あたえる",
+    "meaning": "to give, to grant",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "含む": {
+    "level": 25,
+    "character": "含む",
+    "kana": "ふくむ",
+    "meaning": "to include",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "渡す": {
+    "level": 25,
+    "character": "渡す",
+    "kana": "わたす",
+    "meaning": "to hand over",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "響く": {
+    "level": 25,
+    "character": "響く",
+    "kana": "ひびく",
+    "meaning": "to echo, to reverberate, to resound",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "投票する": {
+    "level": 25,
+    "character": "投票する",
+    "kana": "とうひょうする",
+    "meaning": "to vote",
+    "pos": []
+  },
+  "訴える": {
+    "level": 25,
+    "character": "訴える",
+    "kana": "うったえる",
+    "meaning": "to sue",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "効く": {
+    "level": 25,
+    "character": "効く",
+    "kana": "きく",
+    "meaning": "to be effective",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "慣れる": {
+    "level": 25,
+    "character": "慣れる",
+    "kana": "なれる",
+    "meaning": "to become accustomed to, to get used to",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "絞る": {
+    "level": 25,
+    "character": "絞る",
+    "kana": "しぼる",
+    "meaning": "to strangle, to wring out, to squeeze",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "替わる": {
+    "level": 25,
+    "character": "替わる",
+    "kana": "かわる",
+    "meaning": "to be replaced, to be substituted, to be switched",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "呼ばれる": {
+    "level": 25,
+    "character": "呼ばれる",
+    "kana": "よばれる",
+    "meaning": "to be called",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "現す": {
+    "level": 25,
+    "character": "現す",
+    "kana": "あらわす",
+    "meaning": "to show",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "居る": {
+    "level": 25,
+    "character": "居る",
+    "kana": "いる",
+    "meaning": "to be alive, to exist",
+    "pos": [
+      "v1",
+      "vi",
+      "aux-v"
+    ]
+  },
+  "収める": {
+    "level": 25,
+    "character": "収める",
+    "kana": "おさめる",
+    "meaning": "to dedicate, to make an offering, to supply, to store, to finish",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "載せる": {
+    "level": 26,
+    "character": "載せる",
+    "kana": "のせる",
+    "meaning": "to publish, to place on top",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "占める": {
+    "level": 26,
+    "character": "占める",
+    "kana": "しめる",
+    "meaning": "to occupy",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "届ける": {
+    "level": 26,
+    "character": "届ける",
+    "kana": "とどける",
+    "meaning": "to deliver",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "差別する": {
+    "level": 26,
+    "character": "差別する",
+    "kana": "さべつする",
+    "meaning": "to discriminate",
+    "pos": []
+  },
+  "差し上げる": {
+    "level": 26,
+    "character": "差し上げる",
+    "kana": "さしあげる",
+    "meaning": "to give, to raise up",
+    "pos": [
+      "v1",
+      "vt",
+      "aux-v"
+    ]
+  },
+  "従う": {
+    "level": 26,
+    "character": "従う",
+    "kana": "したがう",
+    "meaning": "to obey",
+    "pos": [
+      "v5u",
+      "vi"
+    ]
+  },
+  "担う": {
+    "level": 26,
+    "character": "担う",
+    "kana": "になう",
+    "meaning": "to carry, to assume responsibility, to take on a burden, to take responsibility",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "燃える": {
+    "level": 26,
+    "character": "燃える",
+    "kana": "もえる",
+    "meaning": "to get burned, to be burned, to burn",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "触れる": {
+    "level": 26,
+    "character": "触れる",
+    "kana": "ふれる",
+    "meaning": "to feel, to perceive",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "検討する": {
+    "level": 26,
+    "character": "検討する",
+    "kana": "けんとうする",
+    "meaning": "to examine, to study, to look into",
+    "pos": []
+  },
+  "貯える": {
+    "level": 26,
+    "character": "貯える",
+    "kana": "たくわえる",
+    "meaning": "to save, to put something aside",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "造る": {
+    "level": 26,
+    "character": "造る",
+    "kana": "つくる",
+    "meaning": "to mass produce, to produce, to manufacture, to create, to make, to brew, to prepare",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "過ごす": {
+    "level": 26,
+    "character": "過ごす",
+    "kana": "すごす",
+    "meaning": "to spend time on",
+    "pos": [
+      "v5s",
+      "vt",
+      "suf"
+    ]
+  },
+  "狭める": {
+    "level": 26,
+    "character": "狭める",
+    "kana": "せばめる",
+    "meaning": "to narrow, to reduce, to contract",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "燃え付く": {
+    "level": 26,
+    "character": "燃え付く",
+    "kana": "もえつく",
+    "meaning": "to catch fire, to catch on fire",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "刺す": {
+    "level": 26,
+    "character": "刺す",
+    "kana": "さす",
+    "meaning": "to stab, to pierce, to poke, to sting, to stick, to shank",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "励ます": {
+    "level": 26,
+    "character": "励ます",
+    "kana": "はげます",
+    "meaning": "to encourage someone, to cheer up someone, to encourage",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "振る": {
+    "level": 26,
+    "character": "振る",
+    "kana": "ふる",
+    "meaning": "to shake, to jolt",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "突く": {
+    "level": 26,
+    "character": "突く",
+    "kana": "つく",
+    "meaning": "to stab, to poke, to jab",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "輸出する": {
+    "level": 26,
+    "character": "輸出する",
+    "kana": "ゆしゅつする",
+    "meaning": "to export",
+    "pos": []
+  },
+  "障る": {
+    "level": 26,
+    "character": "障る",
+    "kana": "さわる",
+    "meaning": "to hinder",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "見抜く": {
+    "level": 27,
+    "character": "見抜く",
+    "kana": "みぬく",
+    "meaning": "to see through",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "捕える": {
+    "level": 27,
+    "character": "捕える",
+    "kana": "とらえる",
+    "meaning": "to grasp an idea, to grasp a concept, to catch the meaning, to seize, to catch",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "掛かる": {
+    "level": 27,
+    "character": "掛かる",
+    "kana": "かかる",
+    "meaning": "to be hung, to get hung, to hang",
+    "pos": [
+      "v5r",
+      "vi",
+      "aux-v"
+    ]
+  },
+  "就く": {
+    "level": 27,
+    "character": "就く",
+    "kana": "つく",
+    "meaning": "to settle in, to take a seat, to take a position",
+    "pos": [
+      "v5k"
+    ]
+  },
+  "悩む": {
+    "level": 27,
+    "character": "悩む",
+    "kana": "なやむ",
+    "meaning": "to worry, to be troubled",
+    "pos": [
+      "v5m"
+    ]
+  },
+  "抜き出す": {
+    "level": 27,
+    "character": "抜き出す",
+    "kana": "ぬきだす",
+    "meaning": "to select, to extract, to start to pull out",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "招く": {
+    "level": 27,
+    "character": "招く",
+    "kana": "まねく",
+    "meaning": "to beckon, to invite, to summon",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "招待する": {
+    "level": 27,
+    "character": "招待する",
+    "kana": "しょうたいする",
+    "meaning": "to invite, to summon",
+    "pos": []
+  },
+  "昇る": {
+    "level": 27,
+    "character": "昇る",
+    "kana": "のぼる",
+    "meaning": "to ascend",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "取り替える": {
+    "level": 27,
+    "character": "取り替える",
+    "kana": "とりかえる",
+    "meaning": "to exchange",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "締める": {
+    "level": 27,
+    "character": "締める",
+    "kana": "しめる",
+    "meaning": "to tighten, to tie",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "織る": {
+    "level": 27,
+    "character": "織る",
+    "kana": "おる",
+    "meaning": "to weave, to knit",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "誘う": {
+    "level": 27,
+    "character": "誘う",
+    "kana": "さそう",
+    "meaning": "to invite, to summon",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "貸す": {
+    "level": 27,
+    "character": "貸す",
+    "kana": "かす",
+    "meaning": "to lend, to rent",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "迫る": {
+    "level": 27,
+    "character": "迫る",
+    "kana": "せまる",
+    "meaning": "to urge, to coerce, to draw near",
+    "pos": [
+      "v5r",
+      "vi",
+      "vt"
+    ]
+  },
+  "退院する": {
+    "level": 27,
+    "character": "退院する",
+    "kana": "たいいんする",
+    "meaning": "to be discharged, to leave the hospital",
+    "pos": []
+  },
+  "迷う": {
+    "level": 27,
+    "character": "迷う",
+    "kana": "まよう",
+    "meaning": "to go astray, to get lost, to be perplexed, to waver, to hesitate",
+    "pos": [
+      "v5u",
+      "vi"
+    ]
+  },
+  "逮捕する": {
+    "level": 27,
+    "character": "逮捕する",
+    "kana": "たいほする",
+    "meaning": "to arrest, to capture",
+    "pos": []
+  },
+  "手渡す": {
+    "level": 27,
+    "character": "手渡す",
+    "kana": "てわたす",
+    "meaning": "to hand over, to surrender",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "屈む": {
+    "level": 27,
+    "character": "屈む",
+    "kana": "かがむ",
+    "meaning": "to stoop, to lean over, to bend down, to crouch, to bend forward, to bow, to bend over",
+    "pos": [
+      "v5m"
+    ]
+  },
+  "抜ける": {
+    "level": 27,
+    "character": "抜ける",
+    "kana": "ぬける",
+    "meaning": "to be extracted, to get extracted, to be plucked, to get plucked, to come out, to fall out, to be omitted, to leave",
+    "pos": [
+      "v1",
+      "vt",
+      "vi"
+    ]
+  },
+  "隠れる": {
+    "level": 27,
+    "character": "隠れる",
+    "kana": "かくれる",
+    "meaning": "to be hidden",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "怒る": {
+    "level": 27,
+    "character": "怒る",
+    "kana": "おこる",
+    "meaning": "to get angry, to get mad",
+    "pos": [
+      "v5r",
+      "vi",
+      "vt"
+    ]
+  },
+  "怒鳴る": {
+    "level": 27,
+    "character": "怒鳴る",
+    "kana": "どなる",
+    "meaning": "to shout at, to yell at",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "惑う": {
+    "level": 27,
+    "character": "惑う",
+    "kana": "まどう",
+    "meaning": "to be misguided, to be led astray, to be perplexed, to be puzzled",
+    "pos": [
+      "v5u",
+      "vi"
+    ]
+  },
+  "極める": {
+    "level": 27,
+    "character": "極める",
+    "kana": "きわめる",
+    "meaning": "to carry to extremes, to carry to the extreme, to take to the extreme, to take to an extreme, to carry to an extreme, to take to extremes, to master",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "締結する": {
+    "level": 27,
+    "character": "締結する",
+    "kana": "ていけつする",
+    "meaning": "to conclude, to enter, to execute",
+    "pos": []
+  },
+  "訪ねる": {
+    "level": 27,
+    "character": "訪ねる",
+    "kana": "たずねる",
+    "meaning": "to visit",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "退く": {
+    "level": 27,
+    "character": "退く",
+    "kana": "しりぞく",
+    "meaning": "to withdraw from, to withdraw, to retreat",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "隠居する": {
+    "level": 27,
+    "character": "隠居する",
+    "kana": "いんきょする",
+    "meaning": "to retire",
+    "pos": []
+  },
+  "回復する": {
+    "level": 28,
+    "character": "回復する",
+    "kana": "かいふくする",
+    "meaning": "to recover",
+    "pos": []
+  },
+  "面接する": {
+    "level": 28,
+    "character": "面接する",
+    "kana": "めんせつする",
+    "meaning": "to interview with, to interview",
+    "pos": []
+  },
+  "撃つ": {
+    "level": 28,
+    "character": "撃つ",
+    "kana": "うつ",
+    "meaning": "to shoot, to attack, to fire a gun",
+    "pos": [
+      "v5t"
+    ]
+  },
+  "攻める": {
+    "level": 28,
+    "character": "攻める",
+    "kana": "せめる",
+    "meaning": "to attack",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "移す": {
+    "level": 28,
+    "character": "移す",
+    "kana": "うつす",
+    "meaning": "to shift, to transfer",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "絶つ": {
+    "level": 28,
+    "character": "絶つ",
+    "kana": "たつ",
+    "meaning": "to sever, to cut off, to abstain from",
+    "pos": [
+      "v5t",
+      "vt"
+    ]
+  },
+  "比較する": {
+    "level": 28,
+    "character": "比較する",
+    "kana": "ひかくする",
+    "meaning": "to compare",
+    "pos": []
+  },
+  "間違える": {
+    "level": 28,
+    "character": "間違える",
+    "kana": "まちがえる",
+    "meaning": "to make a mistake, to confuse, to mistake",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "並ぶ": {
+    "level": 28,
+    "character": "並ぶ",
+    "kana": "ならぶ",
+    "meaning": "to be lined up",
+    "pos": [
+      "vi",
+      "v5b"
+    ]
+  },
+  "凍る": {
+    "level": 28,
+    "character": "凍る",
+    "kana": "こおる",
+    "meaning": "to freeze",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "逆らう": {
+    "level": 28,
+    "character": "逆らう",
+    "kana": "さからう",
+    "meaning": "to go against, to oppose, to be contrary to",
+    "pos": [
+      "v5u",
+      "vi"
+    ]
+  },
+  "輸入する": {
+    "level": 28,
+    "character": "輸入する",
+    "kana": "ゆにゅうする",
+    "meaning": "to import",
+    "pos": []
+  },
+  "略す": {
+    "level": 29,
+    "character": "略す",
+    "kana": "りゃくす",
+    "meaning": "to abbreviate",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "道に迷う": {
+    "level": 29,
+    "character": "道に迷う",
+    "kana": "みちにまよう",
+    "meaning": "to get lost, to be lost",
+    "pos": [
+      "v5u",
+      "exp"
+    ]
+  },
+  "乾く": {
+    "level": 29,
+    "character": "乾く",
+    "kana": "かわく",
+    "meaning": "to get dry, to become dry, to be dried",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "見極める": {
+    "level": 29,
+    "character": "見極める",
+    "kana": "みきわめる",
+    "meaning": "to see through, to get to the bottom of",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "積もる": {
+    "level": 29,
+    "character": "積もる",
+    "kana": "つもる",
+    "meaning": "to accumulate, to get piled up",
+    "pos": [
+      "v5r",
+      "vi",
+      "vt"
+    ]
+  },
+  "締まる": {
+    "level": 29,
+    "character": "締まる",
+    "kana": "しまる",
+    "meaning": "to tighten, to become tight, to become taut",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "診る": {
+    "level": 29,
+    "character": "診る",
+    "kana": "みる",
+    "meaning": "to examine a patient, to examine",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "請ける": {
+    "level": 29,
+    "character": "請ける",
+    "kana": "うける",
+    "meaning": "to receive, to undertake",
+    "pos": [
+      "v1",
+      "vt",
+      "vi"
+    ]
+  },
+  "怒らせる": {
+    "level": 29,
+    "character": "怒らせる",
+    "kana": "おこらせる",
+    "meaning": "to anger someone, to anger, to provoke, to offend someone",
+    "pos": [
+      "v1"
+    ]
+  },
+  "促す": {
+    "level": 29,
+    "character": "促す",
+    "kana": "うながす",
+    "meaning": "to urge, to pressure",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "壊す": {
+    "level": 29,
+    "character": "壊す",
+    "kana": "こわす",
+    "meaning": "to break something, to break",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "添える": {
+    "level": 29,
+    "character": "添える",
+    "kana": "そえる",
+    "meaning": "to append, to accompany, to garnish",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "痛む": {
+    "level": 29,
+    "character": "痛む",
+    "kana": "いたむ",
+    "meaning": "to be painful, to hurt",
+    "pos": [
+      "vi",
+      "v5m"
+    ]
+  },
+  "眠る": {
+    "level": 29,
+    "character": "眠る",
+    "kana": "ねむる",
+    "meaning": "to sleep",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "詰める": {
+    "level": 29,
+    "character": "詰める",
+    "kana": "つめる",
+    "meaning": "to stuff in, to cram in",
+    "pos": [
+      "v1",
+      "vt",
+      "vi",
+      "suf"
+    ]
+  },
+  "詰まる": {
+    "level": 29,
+    "character": "詰まる",
+    "kana": "つまる",
+    "meaning": "to be stuffed, to be crammed full",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "誘惑する": {
+    "level": 29,
+    "character": "誘惑する",
+    "kana": "ゆうわくする",
+    "meaning": "to tempt",
+    "pos": []
+  },
+  "構える": {
+    "level": 29,
+    "character": "構える",
+    "kana": "かまえる",
+    "meaning": "to assume a stance, to get ready to fight",
+    "pos": [
+      "v1",
+      "vt",
+      "vi"
+    ]
+  },
+  "訪れる": {
+    "level": 29,
+    "character": "訪れる",
+    "kana": "おとずれる",
+    "meaning": "to visit",
+    "pos": [
+      "v1",
+      "vt",
+      "vi"
+    ]
+  },
+  "寄る": {
+    "level": 29,
+    "character": "寄る",
+    "kana": "よる",
+    "meaning": "to approach, to visit, to drop in",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "腹立つ": {
+    "level": 29,
+    "character": "腹立つ",
+    "kana": "はらだつ",
+    "meaning": "to get mad, to get angry",
+    "pos": [
+      "v5t"
+    ]
+  },
+  "押す": {
+    "level": 30,
+    "character": "押す",
+    "kana": "おす",
+    "meaning": "to push",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "冷やす": {
+    "level": 30,
+    "character": "冷やす",
+    "kana": "ひやす",
+    "meaning": "to chill something, to chill",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "並べる": {
+    "level": 30,
+    "character": "並べる",
+    "kana": "ならべる",
+    "meaning": "to line up, to put in order",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "延期する": {
+    "level": 30,
+    "character": "延期する",
+    "kana": "えんきする",
+    "meaning": "to postpone",
+    "pos": []
+  },
+  "延ばす": {
+    "level": 30,
+    "character": "延ばす",
+    "kana": "のばす",
+    "meaning": "to prolong, to lengthen, to extend",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "渇く": {
+    "level": 30,
+    "character": "渇く",
+    "kana": "かわく",
+    "meaning": "to become thirsty, to be thirsty, to become dry",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "照らす": {
+    "level": 30,
+    "character": "照らす",
+    "kana": "てらす",
+    "meaning": "to illuminate",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "遊ぶ": {
+    "level": 30,
+    "character": "遊ぶ",
+    "kana": "あそぶ",
+    "meaning": "to play",
+    "pos": [
+      "vi",
+      "v5b"
+    ]
+  },
+  "騒ぐ": {
+    "level": 30,
+    "character": "騒ぐ",
+    "kana": "さわぐ",
+    "meaning": "to make noise, to be boisterous, to make a fuss",
+    "pos": [
+      "v5g",
+      "vi"
+    ]
+  },
+  "登録する": {
+    "level": 30,
+    "character": "登録する",
+    "kana": "とうろくする",
+    "meaning": "to register",
+    "pos": []
+  },
+  "攻撃する": {
+    "level": 30,
+    "character": "攻撃する",
+    "kana": "こうげきする",
+    "meaning": "to attack",
+    "pos": []
+  },
+  "撮る": {
+    "level": 30,
+    "character": "撮る",
+    "kana": "とる",
+    "meaning": "to take a picture, to take a photograph, to take a photo, to photograph, to take video, to film",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "診断する": {
+    "level": 30,
+    "character": "診断する",
+    "kana": "しんだんする",
+    "meaning": "to diagnose",
+    "pos": []
+  },
+  "浮く": {
+    "level": 30,
+    "character": "浮く",
+    "kana": "うく",
+    "meaning": "to float",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "漏れる": {
+    "level": 30,
+    "character": "漏れる",
+    "kana": "もれる",
+    "meaning": "to leak, to leak out",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "照れる": {
+    "level": 30,
+    "character": "照れる",
+    "kana": "てれる",
+    "meaning": "to feel embarrassed, to be shy, to be embarrassed, to feel shy",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "盗む": {
+    "level": 30,
+    "character": "盗む",
+    "kana": "ぬすむ",
+    "meaning": "to steal",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "絶える": {
+    "level": 30,
+    "character": "絶える",
+    "kana": "たえる",
+    "meaning": "to die out, to end",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "越える": {
+    "level": 30,
+    "character": "越える",
+    "kana": "こえる",
+    "meaning": "to go beyond, to cross over",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "預ける": {
+    "level": 30,
+    "character": "預ける",
+    "kana": "あずける",
+    "meaning": "to deposit, to deposit money",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "飾る": {
+    "level": 30,
+    "character": "飾る",
+    "kana": "かざる",
+    "meaning": "to decorate",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "移る": {
+    "level": 30,
+    "character": "移る",
+    "kana": "うつる",
+    "meaning": "to be shifted, to be transferred",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "迷わす": {
+    "level": 31,
+    "character": "迷わす",
+    "kana": "まよわす",
+    "meaning": "to lead astray, to perplex",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "積む": {
+    "level": 31,
+    "character": "積む",
+    "kana": "つむ",
+    "meaning": "to pile things up, to accumulate",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "催促する": {
+    "level": 31,
+    "character": "催促する",
+    "kana": "さいそくする",
+    "meaning": "to urge, to press for, to demand",
+    "pos": []
+  },
+  "見詰める": {
+    "level": 31,
+    "character": "見詰める",
+    "kana": "みつめる",
+    "meaning": "to stare at",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "絶やす": {
+    "level": 31,
+    "character": "絶やす",
+    "kana": "たやす",
+    "meaning": "to kill off, to let die out",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "緊張する": {
+    "level": 31,
+    "character": "緊張する",
+    "kana": "きんちょうする",
+    "meaning": "to stress, to stress out, to be nervous",
+    "pos": []
+  },
+  "編む": {
+    "level": 31,
+    "character": "編む",
+    "kana": "あむ",
+    "meaning": "to knit",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "除く": {
+    "level": 31,
+    "character": "除く",
+    "kana": "のぞく",
+    "meaning": "to exclude",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "驚く": {
+    "level": 31,
+    "character": "驚く",
+    "kana": "おどろく",
+    "meaning": "to be surprised, to be shocked",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "嘆く": {
+    "level": 31,
+    "character": "嘆く",
+    "kana": "なげく",
+    "meaning": "to lament, to grieve",
+    "pos": [
+      "vt",
+      "vi",
+      "v5k"
+    ]
+  },
+  "救う": {
+    "level": 31,
+    "character": "救う",
+    "kana": "すくう",
+    "meaning": "to rescue",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "富む": {
+    "level": 31,
+    "character": "富む",
+    "kana": "とむ",
+    "meaning": "to be rich, to be wealthy",
+    "pos": [
+      "vi",
+      "v5m"
+    ]
+  },
+  "怖がる": {
+    "level": 31,
+    "character": "怖がる",
+    "kana": "こわがる",
+    "meaning": "to be scared, to be afraid of",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "恐れる": {
+    "level": 31,
+    "character": "恐れる",
+    "kana": "おそれる",
+    "meaning": "to fear, to dread",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "主催する": {
+    "level": 31,
+    "character": "主催する",
+    "kana": "しゅさいする",
+    "meaning": "to sponsor, to promote",
+    "pos": []
+  },
+  "思い詰める": {
+    "level": 31,
+    "character": "思い詰める",
+    "kana": "おもいつめる",
+    "meaning": "to think hard",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "離れる": {
+    "level": 31,
+    "character": "離れる",
+    "kana": "はなれる",
+    "meaning": "to separate, to leave",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "壊れる": {
+    "level": 31,
+    "character": "壊れる",
+    "kana": "こわれる",
+    "meaning": "to be broken, to get broken",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "尋ねる": {
+    "level": 31,
+    "character": "尋ねる",
+    "kana": "たずねる",
+    "meaning": "to inquire, to ask",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "掃く": {
+    "level": 31,
+    "character": "掃く",
+    "kana": "はく",
+    "meaning": "to sweep",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "散る": {
+    "level": 31,
+    "character": "散る",
+    "kana": "ちる",
+    "meaning": "to be scattered, to get scattered, to scatter",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "似る": {
+    "level": 31,
+    "character": "似る",
+    "kana": "にる",
+    "meaning": "to resemble",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "探す": {
+    "level": 31,
+    "character": "探す",
+    "kana": "さがす",
+    "meaning": "to look for, to search for",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "結婚する": {
+    "level": 32,
+    "character": "結婚する",
+    "kana": "けっこんする",
+    "meaning": "to marry, to get married",
+    "pos": []
+  },
+  "冷える": {
+    "level": 32,
+    "character": "冷える",
+    "kana": "ひえる",
+    "meaning": "to be chilled, to get cold",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "採る": {
+    "level": 32,
+    "character": "採る",
+    "kana": "とる",
+    "meaning": "to gather",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "飼う": {
+    "level": 32,
+    "character": "飼う",
+    "kana": "かう",
+    "meaning": "to keep a pet, to raise a pet, to own a pet",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "傷める": {
+    "level": 32,
+    "character": "傷める",
+    "kana": "いためる",
+    "meaning": "to damage",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "捨てる": {
+    "level": 32,
+    "character": "捨てる",
+    "kana": "すてる",
+    "meaning": "to throw away, to abandon",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "訳す": {
+    "level": 32,
+    "character": "訳す",
+    "kana": "やくす",
+    "meaning": "to translate",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "延長する": {
+    "level": 32,
+    "character": "延長する",
+    "kana": "えんちょうする",
+    "meaning": "to prolong, to extend",
+    "pos": []
+  },
+  "越す": {
+    "level": 32,
+    "character": "越す",
+    "kana": "こす",
+    "meaning": "to go beyond",
+    "pos": [
+      "v5s"
+    ]
+  },
+  "浮かれる": {
+    "level": 32,
+    "character": "浮かれる",
+    "kana": "うかれる",
+    "meaning": "to be happy, to be in high spirits, to feel happy",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "火照る": {
+    "level": 32,
+    "character": "火照る",
+    "kana": "ほてる",
+    "meaning": "to feel hot, to flush, to burn",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "出版する": {
+    "level": 32,
+    "character": "出版する",
+    "kana": "しゅっぱんする",
+    "meaning": "to publish",
+    "pos": []
+  },
+  "購読する": {
+    "level": 32,
+    "character": "購読する",
+    "kana": "こうどくする",
+    "meaning": "to subscribe",
+    "pos": []
+  },
+  "迎える": {
+    "level": 32,
+    "character": "迎える",
+    "kana": "むかえる",
+    "meaning": "to pick someone up, to meet someone",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "込む": {
+    "level": 32,
+    "character": "込む",
+    "kana": "こむ",
+    "meaning": "to be crowded, to be included",
+    "pos": [
+      "vi",
+      "aux-v",
+      "v5m"
+    ]
+  },
+  "染める": {
+    "level": 32,
+    "character": "染める",
+    "kana": "そめる",
+    "meaning": "to dye",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "汚れる": {
+    "level": 32,
+    "character": "汚れる",
+    "kana": "よごれる",
+    "meaning": "to get dirty, to get polluted, to become dirty",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "秘める": {
+    "level": 32,
+    "character": "秘める",
+    "kana": "ひめる",
+    "meaning": "to conceal, to keep secret",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "漏らす": {
+    "level": 32,
+    "character": "漏らす",
+    "kana": "もらす",
+    "meaning": "to leak something, to leak",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "似合う": {
+    "level": 33,
+    "character": "似合う",
+    "kana": "にあう",
+    "meaning": "to suit, to match",
+    "pos": [
+      "v5u",
+      "vi"
+    ]
+  },
+  "驚かす": {
+    "level": 33,
+    "character": "驚かす",
+    "kana": "おどろかす",
+    "meaning": "to surprise, to shock, to astonish",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "掃除する": {
+    "level": 33,
+    "character": "掃除する",
+    "kana": "そうじする",
+    "meaning": "to clean",
+    "pos": []
+  },
+  "散らかす": {
+    "level": 33,
+    "character": "散らかす",
+    "kana": "ちらかす",
+    "meaning": "to scatter",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "編集する": {
+    "level": 33,
+    "character": "編集する",
+    "kana": "へんしゅうする",
+    "meaning": "to edit",
+    "pos": []
+  },
+  "閉める": {
+    "level": 33,
+    "character": "閉める",
+    "kana": "しめる",
+    "meaning": "to close, to shut",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "垂らす": {
+    "level": 33,
+    "character": "垂らす",
+    "kana": "たらす",
+    "meaning": "to dangle something, to dangle",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "拡がる": {
+    "level": 33,
+    "character": "拡がる",
+    "kana": "ひろがる",
+    "meaning": "to extend, to spread",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "操る": {
+    "level": 33,
+    "character": "操る",
+    "kana": "あやつる",
+    "meaning": "to manipulate",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "異なる": {
+    "level": 33,
+    "character": "異なる",
+    "kana": "ことなる",
+    "meaning": "to differ",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "盛る": {
+    "level": 33,
+    "character": "盛る",
+    "kana": "もる",
+    "meaning": "to heap up, to serve food",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "蒸れる": {
+    "level": 33,
+    "character": "蒸れる",
+    "kana": "むれる",
+    "meaning": "to be humid",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "裏切る": {
+    "level": 33,
+    "character": "裏切る",
+    "kana": "うらぎる",
+    "meaning": "to backstab, to betray",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "乾かす": {
+    "level": 33,
+    "character": "乾かす",
+    "kana": "かわかす",
+    "meaning": "to dry something, to dry",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "離す": {
+    "level": 33,
+    "character": "離す",
+    "kana": "はなす",
+    "meaning": "to separate, to keep apart",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "散歩する": {
+    "level": 33,
+    "character": "散歩する",
+    "kana": "さんぽする",
+    "meaning": "to go for a walk, to go for a stroll, to take a walk, to take a stroll",
+    "pos": []
+  },
+  "暮らす": {
+    "level": 33,
+    "character": "暮らす",
+    "kana": "くらす",
+    "meaning": "to live, to live one's life",
+    "pos": [
+      "v5s",
+      "vi"
+    ]
+  },
+  "熟れる": {
+    "level": 33,
+    "character": "熟れる",
+    "kana": "うれる",
+    "meaning": "to ripen",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "納める": {
+    "level": 33,
+    "character": "納める",
+    "kana": "おさめる",
+    "meaning": "to supply, to deliver, to pay",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "傷つく": {
+    "level": 34,
+    "character": "傷つく",
+    "kana": "きずつく",
+    "meaning": "to get hurt",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "傷つける": {
+    "level": 34,
+    "character": "傷つける",
+    "kana": "きずつける",
+    "meaning": "to hurt someone, to injure, to wound, to scratch, to damage",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "汚す": {
+    "level": 34,
+    "character": "汚す",
+    "kana": "よごす",
+    "meaning": "to make dirty, to make something dirty",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "賛成する": {
+    "level": 34,
+    "character": "賛成する",
+    "kana": "さんせいする",
+    "meaning": "to agree, to support",
+    "pos": []
+  },
+  "降る": {
+    "level": 34,
+    "character": "降る",
+    "kana": "ふる",
+    "meaning": "to fall, to come down",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "薦める": {
+    "level": 34,
+    "character": "薦める",
+    "kana": "すすめる",
+    "meaning": "to recommend",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "発揮する": {
+    "level": 34,
+    "character": "発揮する",
+    "kana": "はっきする",
+    "meaning": "to exhibit, to demonstrate",
+    "pos": []
+  },
+  "勤める": {
+    "level": 34,
+    "character": "勤める",
+    "kana": "つとめる",
+    "meaning": "to be employed at, to work for",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "発射する": {
+    "level": 34,
+    "character": "発射する",
+    "kana": "はっしゃする",
+    "meaning": "to launch, to fire",
+    "pos": []
+  },
+  "拝む": {
+    "level": 34,
+    "character": "拝む",
+    "kana": "おがむ",
+    "meaning": "to worship, to pray to",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "引っ越す": {
+    "level": 34,
+    "character": "引っ越す",
+    "kana": "ひっこす",
+    "meaning": "to move, to move homes",
+    "pos": [
+      "v5s",
+      "vi"
+    ]
+  },
+  "追い越す": {
+    "level": 34,
+    "character": "追い越す",
+    "kana": "おいこす",
+    "meaning": "to overtake",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "投げ捨てる": {
+    "level": 34,
+    "character": "投げ捨てる",
+    "kana": "なげすてる",
+    "meaning": "to throw away",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "込める": {
+    "level": 34,
+    "character": "込める",
+    "kana": "こめる",
+    "meaning": "to include",
+    "pos": [
+      "v1",
+      "vt",
+      "vi"
+    ]
+  },
+  "申し込む": {
+    "level": 34,
+    "character": "申し込む",
+    "kana": "もうしこむ",
+    "meaning": "to apply, to submit an application",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "書き込む": {
+    "level": 34,
+    "character": "書き込む",
+    "kana": "かきこむ",
+    "meaning": "to fill out, to write in",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "詰め込む": {
+    "level": 34,
+    "character": "詰め込む",
+    "kana": "つめこむ",
+    "meaning": "to stuff, to cram",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "染まる": {
+    "level": 34,
+    "character": "染まる",
+    "kana": "そまる",
+    "meaning": "to be dyed",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "吐く": {
+    "level": 34,
+    "character": "吐く",
+    "kana": "はく",
+    "meaning": "to puke, to throw up, to barf",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "縮まる": {
+    "level": 34,
+    "character": "縮まる",
+    "kana": "ちぢまる, ちじまる",
+    "meaning": "to shrink, to contract",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "沿う": {
+    "level": 34,
+    "character": "沿う",
+    "kana": "そう",
+    "meaning": "to run alongside, to run parallel to",
+    "pos": [
+      "v5u"
+    ]
+  },
+  "承る": {
+    "level": 34,
+    "character": "承る",
+    "kana": "うけたまわる",
+    "meaning": "to consent, to hear, to be informed, to listen to",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "損なう": {
+    "level": 34,
+    "character": "損なう",
+    "kana": "そこなう",
+    "meaning": "to harm, to injure",
+    "pos": [
+      "v5u",
+      "aux-v"
+    ]
+  },
+  "腐る": {
+    "level": 34,
+    "character": "腐る",
+    "kana": "くさる",
+    "meaning": "to rot",
+    "pos": [
+      "suf",
+      "v5r",
+      "vi"
+    ]
+  },
+  "刻む": {
+    "level": 34,
+    "character": "刻む",
+    "kana": "きざむ",
+    "meaning": "to carve, to cut up",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "傷む": {
+    "level": 34,
+    "character": "傷む",
+    "kana": "いたむ",
+    "meaning": "to be damaged, to go bad, to spoil",
+    "pos": [
+      "vi",
+      "v5m"
+    ]
+  },
+  "拝見する": {
+    "level": 34,
+    "character": "拝見する",
+    "kana": "はいけんする",
+    "meaning": "to have a look at, to see",
+    "pos": []
+  },
+  "破る": {
+    "level": 35,
+    "character": "破る",
+    "kana": "やぶる",
+    "meaning": "to tear, to rip, to break",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "閉じる": {
+    "level": 35,
+    "character": "閉じる",
+    "kana": "とじる",
+    "meaning": "to shut, to close",
+    "pos": [
+      "v1",
+      "vt",
+      "vi"
+    ]
+  },
+  "垂れる": {
+    "level": 35,
+    "character": "垂れる",
+    "kana": "たれる",
+    "meaning": "to dangle, to drip",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "尊敬する": {
+    "level": 35,
+    "character": "尊敬する",
+    "kana": "そんけいする",
+    "meaning": "to respect",
+    "pos": []
+  },
+  "装う": {
+    "level": 35,
+    "character": "装う",
+    "kana": "よそおう",
+    "meaning": "to feign, to wear, to pretend",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "測る": {
+    "level": 35,
+    "character": "測る",
+    "kana": "はかる",
+    "meaning": "to measure, to measure scientifically",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "酔う": {
+    "level": 35,
+    "character": "酔う",
+    "kana": "よう",
+    "meaning": "to be drunk",
+    "pos": [
+      "v5u",
+      "vi"
+    ]
+  },
+  "滞る": {
+    "level": 35,
+    "character": "滞る",
+    "kana": "とどこおる",
+    "meaning": "to be overdue",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "宣言する": {
+    "level": 35,
+    "character": "宣言する",
+    "kana": "せんげんする",
+    "meaning": "to proclaim",
+    "pos": []
+  },
+  "盛り上げる": {
+    "level": 35,
+    "character": "盛り上げる",
+    "kana": "もりあげる",
+    "meaning": "to heap up, to pile up",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "閉まる": {
+    "level": 35,
+    "character": "閉まる",
+    "kana": "しまる",
+    "meaning": "to be shut, to be closed",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "納まる": {
+    "level": 35,
+    "character": "納まる",
+    "kana": "おさまる",
+    "meaning": "to be supplied, to be delivered, to be paid",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "否定する": {
+    "level": 35,
+    "character": "否定する",
+    "kana": "ひていする",
+    "meaning": "to deny",
+    "pos": []
+  },
+  "蒸し返す": {
+    "level": 35,
+    "character": "蒸し返す",
+    "kana": "むしかえす",
+    "meaning": "to reheat",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "遅れる": {
+    "level": 35,
+    "character": "遅れる",
+    "kana": "おくれる",
+    "meaning": "to be late",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "払う": {
+    "level": 35,
+    "character": "払う",
+    "kana": "はらう",
+    "meaning": "to pay",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "暮れる": {
+    "level": 35,
+    "character": "暮れる",
+    "kana": "くれる",
+    "meaning": "to get dark, to end, to close, to run out, to be lost",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "廃れる": {
+    "level": 36,
+    "character": "廃れる",
+    "kana": "すたれる",
+    "meaning": "to become obsolete",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "降りる": {
+    "level": 36,
+    "character": "降りる",
+    "kana": "おりる",
+    "meaning": "to get off",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "吐き出す": {
+    "level": 36,
+    "character": "吐き出す",
+    "kana": "はきだす",
+    "meaning": "to spit out, to disgorge, to spew out",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "甘く見る": {
+    "level": 36,
+    "character": "甘く見る",
+    "kana": "あまくみる",
+    "meaning": "to not take seriously, to take lightly",
+    "pos": [
+      "v1",
+      "exp"
+    ]
+  },
+  "摘む": {
+    "level": 36,
+    "character": "摘む",
+    "kana": "つむ",
+    "meaning": "to pluck, to pick, to prune",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "摘発する": {
+    "level": 36,
+    "character": "摘発する",
+    "kana": "てきはつする",
+    "meaning": "to unmask, to expose",
+    "pos": []
+  },
+  "継ぐ": {
+    "level": 36,
+    "character": "継ぐ",
+    "kana": "つぐ",
+    "meaning": "to inherit",
+    "pos": [
+      "v5g",
+      "vt"
+    ]
+  },
+  "舞う": {
+    "level": 36,
+    "character": "舞う",
+    "kana": "まう",
+    "meaning": "to dance, to flutter",
+    "pos": [
+      "v5u",
+      "vi"
+    ]
+  },
+  "踏む": {
+    "level": 36,
+    "character": "踏む",
+    "kana": "ふむ",
+    "meaning": "to step on, to tread on",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "頼む": {
+    "level": 36,
+    "character": "頼む",
+    "kana": "たのむ",
+    "meaning": "to ask for, to request, to entrust, to rely on",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "換える": {
+    "level": 36,
+    "character": "換える",
+    "kana": "かえる",
+    "meaning": "to exchange",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "損害する": {
+    "level": 36,
+    "character": "損害する",
+    "kana": "そんがいする",
+    "meaning": "to damage",
+    "pos": []
+  },
+  "伸びる": {
+    "level": 36,
+    "character": "伸びる",
+    "kana": "のびる",
+    "meaning": "to be stretched, to get stretched",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "及ぶ": {
+    "level": 36,
+    "character": "及ぶ",
+    "kana": "およぶ",
+    "meaning": "to reach, to amount to",
+    "pos": [
+      "vi",
+      "v5b"
+    ]
+  },
+  "降参する": {
+    "level": 36,
+    "character": "降参する",
+    "kana": "こうさんする",
+    "meaning": "to surrender",
+    "pos": []
+  },
+  "紹介する": {
+    "level": 37,
+    "character": "紹介する",
+    "kana": "しょうかいする",
+    "meaning": "to introduce",
+    "pos": []
+  },
+  "恥ずかしがる": {
+    "level": 37,
+    "character": "恥ずかしがる",
+    "kana": "はずかしがる",
+    "meaning": "to be shy, to be bashful",
+    "pos": [
+      "v5r"
+    ]
+  },
+  "跳ぶ": {
+    "level": 37,
+    "character": "跳ぶ",
+    "kana": "とぶ",
+    "meaning": "to jump, to hop, to leap",
+    "pos": [
+      "vi",
+      "v5b"
+    ]
+  },
+  "募る": {
+    "level": 37,
+    "character": "募る",
+    "kana": "つのる",
+    "meaning": "to appeal for, to invite, to raise",
+    "pos": [
+      "v5r",
+      "vi",
+      "vt"
+    ]
+  },
+  "患う": {
+    "level": 37,
+    "character": "患う",
+    "kana": "わずらう",
+    "meaning": "to be afflicted, to be afflicted with illness, to be sick",
+    "pos": [
+      "v5u",
+      "vi",
+      "suf"
+    ]
+  },
+  "戻る": {
+    "level": 37,
+    "character": "戻る",
+    "kana": "もどる",
+    "meaning": "to return, to be returned",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "反抗する": {
+    "level": 37,
+    "character": "反抗する",
+    "kana": "はんこうする",
+    "meaning": "to rebel",
+    "pos": []
+  },
+  "弾む": {
+    "level": 37,
+    "character": "弾む",
+    "kana": "はずむ",
+    "meaning": "to bounce",
+    "pos": [
+      "vi",
+      "v5m"
+    ]
+  },
+  "葬る": {
+    "level": 37,
+    "character": "葬る",
+    "kana": "ほうむる",
+    "meaning": "to bury, to inter",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "盛り上がる": {
+    "level": 37,
+    "character": "盛り上がる",
+    "kana": "もりあがる",
+    "meaning": "to swell, to get excited",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "償う": {
+    "level": 37,
+    "character": "償う",
+    "kana": "つぐなう",
+    "meaning": "to compensate for, to make up for",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "執る": {
+    "level": 37,
+    "character": "執る",
+    "kana": "とる",
+    "meaning": "to take control, to carry out",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "崩す": {
+    "level": 37,
+    "character": "崩す",
+    "kana": "くずす",
+    "meaning": "to demolish, to break, to pull down, to crumble",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "戻す": {
+    "level": 37,
+    "character": "戻す",
+    "kana": "もどす",
+    "meaning": "to return, to return something",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "対向する": {
+    "level": 37,
+    "character": "対向する",
+    "kana": "たいこうする",
+    "meaning": "to counter",
+    "pos": []
+  },
+  "聴く": {
+    "level": 37,
+    "character": "聴く",
+    "kana": "きく",
+    "meaning": "to listen to, to hear, to listen",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "遣う": {
+    "level": 37,
+    "character": "遣う",
+    "kana": "つかう",
+    "meaning": "to consider, to make use of",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "闘う": {
+    "level": 37,
+    "character": "闘う",
+    "kana": "たたかう",
+    "meaning": "to struggle, to fight",
+    "pos": [
+      "v5u",
+      "vi"
+    ]
+  },
+  "削る": {
+    "level": 37,
+    "character": "削る",
+    "kana": "けずる",
+    "meaning": "to whittle down, to shave off",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "恵む": {
+    "level": 37,
+    "character": "恵む",
+    "kana": "めぐむ",
+    "meaning": "to do a favor, to bless",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "抱く": {
+    "level": 37,
+    "character": "抱く",
+    "kana": "だく, いだく",
+    "meaning": "to hug, to embrace",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "掲げる": {
+    "level": 37,
+    "character": "掲げる",
+    "kana": "かかげる",
+    "meaning": "to put up a sign, to put up",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "臨む": {
+    "level": 37,
+    "character": "臨む",
+    "kana": "のぞむ",
+    "meaning": "to face",
+    "pos": [
+      "vi",
+      "v5m"
+    ]
+  },
+  "抵抗する": {
+    "level": 37,
+    "character": "抵抗する",
+    "kana": "ていこうする",
+    "meaning": "to resist",
+    "pos": []
+  },
+  "破れる": {
+    "level": 37,
+    "character": "破れる",
+    "kana": "やぶれる",
+    "meaning": "to get torn, to get broken, to get ripped",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "乗り換える": {
+    "level": 38,
+    "character": "乗り換える",
+    "kana": "のりかえる",
+    "meaning": "to transfer, to change trains, to transfer trains",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "指摘する": {
+    "level": 38,
+    "character": "指摘する",
+    "kana": "してきする",
+    "meaning": "to point out, to identify",
+    "pos": []
+  },
+  "頼る": {
+    "level": 38,
+    "character": "頼る",
+    "kana": "たよる",
+    "meaning": "to rely on, to trust, to depend on",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "避ける": {
+    "level": 38,
+    "character": "避ける",
+    "kana": "さける, よける",
+    "meaning": "to avoid, to dodge",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "刊行する": {
+    "level": 38,
+    "character": "刊行する",
+    "kana": "かんこうする",
+    "meaning": "to publish",
+    "pos": []
+  },
+  "伴う": {
+    "level": 38,
+    "character": "伴う",
+    "kana": "ともなう",
+    "meaning": "to accompany",
+    "pos": [
+      "v5u",
+      "vt",
+      "vi"
+    ]
+  },
+  "緩む": {
+    "level": 38,
+    "character": "緩む",
+    "kana": "ゆるむ",
+    "meaning": "to loosen",
+    "pos": [
+      "vi",
+      "v5m"
+    ]
+  },
+  "賄う": {
+    "level": 38,
+    "character": "賄う",
+    "kana": "まかなう",
+    "meaning": "to pay, to cover",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "踏み込む": {
+    "level": 38,
+    "character": "踏み込む",
+    "kana": "ふみこむ",
+    "meaning": "to step into, to rush into",
+    "pos": [
+      "v5m"
+    ]
+  },
+  "廃止する": {
+    "level": 38,
+    "character": "廃止する",
+    "kana": "はいしする",
+    "meaning": "to abolish",
+    "pos": []
+  },
+  "維持する": {
+    "level": 38,
+    "character": "維持する",
+    "kana": "いじする",
+    "meaning": "to maintain",
+    "pos": []
+  },
+  "繰る": {
+    "level": 38,
+    "character": "繰る",
+    "kana": "くる",
+    "meaning": "to spin",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "妊娠する": {
+    "level": 38,
+    "character": "妊娠する",
+    "kana": "にんしんする",
+    "meaning": "to be pregnant",
+    "pos": []
+  },
+  "致す": {
+    "level": 38,
+    "character": "致す",
+    "kana": "いたす",
+    "meaning": "to do",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "一致する": {
+    "level": 38,
+    "character": "一致する",
+    "kana": "いっちする",
+    "meaning": "to match",
+    "pos": []
+  },
+  "同伴する": {
+    "level": 38,
+    "character": "同伴する",
+    "kana": "どうはんする",
+    "meaning": "to accompany",
+    "pos": []
+  },
+  "傾く": {
+    "level": 38,
+    "character": "傾く",
+    "kana": "かたむく",
+    "meaning": "to be leaned, to be tilted",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "懸ける": {
+    "level": 38,
+    "character": "懸ける",
+    "kana": "かける",
+    "meaning": "to hang, to suspend, to stake",
+    "pos": [
+      "v1",
+      "vt",
+      "suf"
+    ]
+  },
+  "扱う": {
+    "level": 38,
+    "character": "扱う",
+    "kana": "あつかう",
+    "meaning": "to handle, to treat",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "描く": {
+    "level": 38,
+    "character": "描く",
+    "kana": "かく, えがく",
+    "meaning": "to draw, to sketch",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "託す": {
+    "level": 38,
+    "character": "託す",
+    "kana": "たくす",
+    "meaning": "to entrust",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "贈る": {
+    "level": 38,
+    "character": "贈る",
+    "kana": "おくる",
+    "meaning": "to give a present, to give",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "逃げる": {
+    "level": 38,
+    "character": "逃げる",
+    "kana": "にげる",
+    "meaning": "to escape, to flee, to run away",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "伸ばす": {
+    "level": 38,
+    "character": "伸ばす",
+    "kana": "のばす",
+    "meaning": "to stretch something, to stretch",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "及ぼす": {
+    "level": 38,
+    "character": "及ぼす",
+    "kana": "およぼす",
+    "meaning": "to exert, to reach to",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "超す": {
+    "level": 38,
+    "character": "超す",
+    "kana": "こす",
+    "meaning": "to exceed, to go over, to surpass",
+    "pos": [
+      "v5s"
+    ]
+  },
+  "降ろす": {
+    "level": 38,
+    "character": "降ろす",
+    "kana": "おろす",
+    "meaning": "to take down, to launch, to drop, to lower, to bring down",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "崩れる": {
+    "level": 39,
+    "character": "崩れる",
+    "kana": "くずれる",
+    "meaning": "to crumble, to collapse",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "払い戻す": {
+    "level": 39,
+    "character": "払い戻す",
+    "kana": "はらいもどす",
+    "meaning": "to repay, to refund, to reimburse",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "雇う": {
+    "level": 39,
+    "character": "雇う",
+    "kana": "やとう",
+    "meaning": "to employ, to hire",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "免れる": {
+    "level": 39,
+    "character": "免れる",
+    "kana": "まぬかれる, まぬがれる",
+    "meaning": "to escape from, to avoid",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "勧める": {
+    "level": 39,
+    "character": "勧める",
+    "kana": "すすめる",
+    "meaning": "to recommend",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "御覧になる": {
+    "level": 39,
+    "character": "御覧になる",
+    "kana": "ごらんになる",
+    "meaning": "to look, to please look",
+    "pos": [
+      "exp",
+      "v5r"
+    ]
+  },
+  "躍る": {
+    "level": 39,
+    "character": "躍る",
+    "kana": "おどる",
+    "meaning": "to leap, to jump, to bounce",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "跳ねる": {
+    "level": 39,
+    "character": "跳ねる",
+    "kana": "はねる",
+    "meaning": "to jump, to leap, to hop",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "応募する": {
+    "level": 39,
+    "character": "応募する",
+    "kana": "おうぼする",
+    "meaning": "to apply for, to enlist, to answer an ad",
+    "pos": []
+  },
+  "弾く": {
+    "level": 39,
+    "character": "弾く",
+    "kana": "ひく",
+    "meaning": "to play a stringed instrument, to play",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "削除する": {
+    "level": 39,
+    "character": "削除する",
+    "kana": "さくじょする",
+    "meaning": "to delete, to eliminate",
+    "pos": []
+  },
+  "狙う": {
+    "level": 39,
+    "character": "狙う",
+    "kana": "ねらう",
+    "meaning": "to aim at, to aim",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "取り戻す": {
+    "level": 39,
+    "character": "取り戻す",
+    "kana": "とりもどす",
+    "meaning": "to take back",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "解雇する": {
+    "level": 39,
+    "character": "解雇する",
+    "kana": "かいこする",
+    "meaning": "to fire someone, to fire",
+    "pos": []
+  },
+  "奪う": {
+    "level": 39,
+    "character": "奪う",
+    "kana": "うばう",
+    "meaning": "to rob, to steal by force",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "埋める": {
+    "level": 39,
+    "character": "埋める",
+    "kana": "うめる, うずめる",
+    "meaning": "to bury",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "慎む": {
+    "level": 39,
+    "character": "慎む",
+    "kana": "つつしむ",
+    "meaning": "to be discreet, to be careful",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "拒む": {
+    "level": 39,
+    "character": "拒む",
+    "kana": "こばむ",
+    "meaning": "to refuse, to reject",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "譲る": {
+    "level": 39,
+    "character": "譲る",
+    "kana": "ゆずる",
+    "meaning": "to concede, to hand over, to turn over",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "掲載する": {
+    "level": 39,
+    "character": "掲載する",
+    "kana": "けいさいする",
+    "meaning": "to publish, to print",
+    "pos": []
+  },
+  "吹く": {
+    "level": 40,
+    "character": "吹く",
+    "kana": "ふく",
+    "meaning": "to blow",
+    "pos": [
+      "vt",
+      "vi",
+      "v5k"
+    ]
+  },
+  "繰り返す": {
+    "level": 40,
+    "character": "繰り返す",
+    "kana": "くりかえす",
+    "meaning": "to repeat, to repeat over and over",
+    "pos": [
+      "v5s",
+      "vt",
+      "vi"
+    ]
+  },
+  "遠慮する": {
+    "level": 40,
+    "character": "遠慮する",
+    "kana": "えんりょする",
+    "meaning": "to decline, to restrain",
+    "pos": []
+  },
+  "懸かる": {
+    "level": 40,
+    "character": "懸かる",
+    "kana": "かかる",
+    "meaning": "to hang, to depend on, to be at stake",
+    "pos": [
+      "v5r",
+      "vi",
+      "aux-v"
+    ]
+  },
+  "逃す": {
+    "level": 40,
+    "character": "逃す",
+    "kana": "のがす",
+    "meaning": "to let go, to let escape, to set free",
+    "pos": [
+      "v5s",
+      "vt",
+      "suf"
+    ]
+  },
+  "兼ねる": {
+    "level": 40,
+    "character": "兼ねる",
+    "kana": "かねる",
+    "meaning": "to combine, to double as, to be unable, to have trouble doing",
+    "pos": [
+      "suf",
+      "v1",
+      "vt"
+    ]
+  },
+  "携わる": {
+    "level": 40,
+    "character": "携わる",
+    "kana": "たずさわる",
+    "meaning": "to engage in, to participate, to take part in",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "殖える": {
+    "level": 40,
+    "character": "殖える",
+    "kana": "ふえる",
+    "meaning": "to multiply, to increase",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "巡る": {
+    "level": 40,
+    "character": "巡る",
+    "kana": "めぐる",
+    "meaning": "to go around, to return",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "戒める": {
+    "level": 40,
+    "character": "戒める",
+    "kana": "いましめる",
+    "meaning": "to warn, to caution, to admonish",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "避難する": {
+    "level": 40,
+    "character": "避難する",
+    "kana": "ひなんする",
+    "meaning": "to evacuate",
+    "pos": []
+  },
+  "傾ける": {
+    "level": 40,
+    "character": "傾ける",
+    "kana": "かたむける",
+    "meaning": "to lean, to tilt",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "緩める": {
+    "level": 40,
+    "character": "緩める",
+    "kana": "ゆるめる",
+    "meaning": "to loosen, to relax",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "取り扱う": {
+    "level": 40,
+    "character": "取り扱う",
+    "kana": "とりあつかう",
+    "meaning": "to manage, to handle",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "選択する": {
+    "level": 40,
+    "character": "選択する",
+    "kana": "せんたくする",
+    "meaning": "to select, to choose",
+    "pos": []
+  },
+  "称える": {
+    "level": 40,
+    "character": "称える",
+    "kana": "たたえる, となえる",
+    "meaning": "to praise, to give praise, to call oneself",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "顧みる": {
+    "level": 40,
+    "character": "顧みる",
+    "kana": "かえりみる",
+    "meaning": "to look back on, to reflect on",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "唱える": {
+    "level": 40,
+    "character": "唱える",
+    "kana": "となえる",
+    "meaning": "to chant",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "駆ける": {
+    "level": 40,
+    "character": "駆ける",
+    "kana": "かける",
+    "meaning": "to gallop, to drive, to spur on",
+    "pos": [
+      "v1",
+      "v5r",
+      "vi"
+    ]
+  },
+  "敷く": {
+    "level": 40,
+    "character": "敷く",
+    "kana": "しく",
+    "meaning": "to spread out, to lay out",
+    "pos": [
+      "v5k"
+    ]
+  },
+  "茂る": {
+    "level": 40,
+    "character": "茂る",
+    "kana": "しげる",
+    "meaning": "to be luxurious, to grow thickly",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "褒める": {
+    "level": 40,
+    "character": "褒める",
+    "kana": "ほめる",
+    "meaning": "to praise, to compliment",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "透ける": {
+    "level": 40,
+    "character": "透ける",
+    "kana": "すける",
+    "meaning": "to be transparent, to be see through",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "控える": {
+    "level": 41,
+    "character": "控える",
+    "kana": "ひかえる",
+    "meaning": "to abstain",
+    "pos": [
+      "v1",
+      "vt",
+      "vi"
+    ]
+  },
+  "群れる": {
+    "level": 41,
+    "character": "群れる",
+    "kana": "むれる",
+    "meaning": "to flock, to crowd",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "伺う": {
+    "level": 41,
+    "character": "伺う",
+    "kana": "うかがう",
+    "meaning": "to implore, to inquire, to ask",
+    "pos": [
+      "v5u",
+      "vt",
+      "vi"
+    ]
+  },
+  "辞儀する": {
+    "level": 41,
+    "character": "辞儀する",
+    "kana": "じぎする",
+    "meaning": "to bow",
+    "pos": []
+  },
+  "帰郷する": {
+    "level": 41,
+    "character": "帰郷する",
+    "kana": "ききょうする",
+    "meaning": "to return to one's hometown",
+    "pos": []
+  },
+  "偽る": {
+    "level": 41,
+    "character": "偽る",
+    "kana": "いつわる",
+    "meaning": "to lie, to cheat, to deceive",
+    "pos": [
+      "v5r",
+      "vi",
+      "vt"
+    ]
+  },
+  "埋め合わせる": {
+    "level": 41,
+    "character": "埋め合わせる",
+    "kana": "うめあわせる",
+    "meaning": "to compensate for",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "埋もれる": {
+    "level": 41,
+    "character": "埋もれる",
+    "kana": "うもれる",
+    "meaning": "to get buried, to be buried",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "充電する": {
+    "level": 41,
+    "character": "充電する",
+    "kana": "じゅうでんする",
+    "meaning": "to charge a battery, to recharge, to recharge a battery",
+    "pos": []
+  },
+  "徹する": {
+    "level": 41,
+    "character": "徹する",
+    "kana": "てっする",
+    "meaning": "to devote oneself, to sink in, to penetrate",
+    "pos": [
+      "vs-s"
+    ]
+  },
+  "拠る": {
+    "level": 41,
+    "character": "拠る",
+    "kana": "よる",
+    "meaning": "to be due to, to be caused by",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "潜む": {
+    "level": 41,
+    "character": "潜む",
+    "kana": "ひそむ",
+    "meaning": "to lurk, to lie dormant",
+    "pos": [
+      "vi",
+      "v5m"
+    ]
+  },
+  "包む": {
+    "level": 41,
+    "character": "包む",
+    "kana": "つつむ, くるむ",
+    "meaning": "to wrap",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "至る": {
+    "level": 41,
+    "character": "至る",
+    "kana": "いたる",
+    "meaning": "to arrive at",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "侵す": {
+    "level": 41,
+    "character": "侵す",
+    "kana": "おかす",
+    "meaning": "to invade, to violate, to intrude",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "駆け込む": {
+    "level": 42,
+    "character": "駆け込む",
+    "kana": "かけこむ",
+    "meaning": "to rush into",
+    "pos": [
+      "vi",
+      "v5m"
+    ]
+  },
+  "括る": {
+    "level": 42,
+    "character": "括る",
+    "kana": "くくる",
+    "meaning": "to fasten, to tie up, to tie together, to bind",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "挑む": {
+    "level": 42,
+    "character": "挑む",
+    "kana": "いどむ",
+    "meaning": "to challenge someone, to challenge something, to challenge",
+    "pos": [
+      "vi",
+      "v5m"
+    ]
+  },
+  "駆け出す": {
+    "level": 42,
+    "character": "駆け出す",
+    "kana": "かけだす",
+    "meaning": "to rush out",
+    "pos": [
+      "v5s",
+      "vi"
+    ]
+  },
+  "駆け回る": {
+    "level": 42,
+    "character": "駆け回る",
+    "kana": "かけまわる",
+    "meaning": "to run around",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "掘る": {
+    "level": 42,
+    "character": "掘る",
+    "kana": "ほる",
+    "meaning": "to dig",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "揚げる": {
+    "level": 42,
+    "character": "揚げる",
+    "kana": "あげる",
+    "meaning": "to hoist, to fly, to raise, to deep fry",
+    "pos": [
+      "v1",
+      "vt",
+      "vi",
+      "aux-v"
+    ]
+  },
+  "握る": {
+    "level": 42,
+    "character": "握る",
+    "kana": "にぎる",
+    "meaning": "to grasp, to clasp",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "揺る": {
+    "level": 42,
+    "character": "揺る",
+    "kana": "ゆる",
+    "meaning": "to shake, to jolt",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "泊まる": {
+    "level": 42,
+    "character": "泊まる",
+    "kana": "とまる",
+    "meaning": "to stay the night, to stay at",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "滑る": {
+    "level": 42,
+    "character": "滑る",
+    "kana": "すべる",
+    "meaning": "to slide, to slip",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "焦げる": {
+    "level": 42,
+    "character": "焦げる",
+    "kana": "こげる",
+    "meaning": "to be burned, to get burned",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "紛らす": {
+    "level": 42,
+    "character": "紛らす",
+    "kana": "まぎらす",
+    "meaning": "to divert, to distract",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "荒れる": {
+    "level": 42,
+    "character": "荒れる",
+    "kana": "あれる",
+    "meaning": "to be stormy, to be rough",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "吹き出す": {
+    "level": 42,
+    "character": "吹き出す",
+    "kana": "ふきだす",
+    "meaning": "to begin to blow, to breathe out, to burst out laughing",
+    "pos": [
+      "v5s",
+      "vt",
+      "vi"
+    ]
+  },
+  "吹き込む": {
+    "level": 42,
+    "character": "吹き込む",
+    "kana": "ふきこむ",
+    "meaning": "to blow in",
+    "pos": [
+      "vt",
+      "vi",
+      "v5m"
+    ]
+  },
+  "口笛を吹く": {
+    "level": 42,
+    "character": "口笛を吹く",
+    "kana": "くちぶえをふく",
+    "meaning": "to whistle",
+    "pos": [
+      "exp",
+      "v5k"
+    ]
+  },
+  "薄める": {
+    "level": 42,
+    "character": "薄める",
+    "kana": "うすめる",
+    "meaning": "to dilute, to water down",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "吹き飛ばす": {
+    "level": 42,
+    "character": "吹き飛ばす",
+    "kana": "ふきとばす",
+    "meaning": "to blow away",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "透き通る": {
+    "level": 42,
+    "character": "透き通る",
+    "kana": "すきとおる",
+    "meaning": "to be transparent, to be clear, to be see through",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "逃れる": {
+    "level": 42,
+    "character": "逃れる",
+    "kana": "のがれる",
+    "meaning": "to escape",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "逃がす": {
+    "level": 42,
+    "character": "逃がす",
+    "kana": "にがす",
+    "meaning": "to let go, to set free, to let escape",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "威張る": {
+    "level": 43,
+    "character": "威張る",
+    "kana": "いばる",
+    "meaning": "to be proud, to be arrogant",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "慰める": {
+    "level": 43,
+    "character": "慰める",
+    "kana": "なぐさめる",
+    "meaning": "to console",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "懲りる": {
+    "level": 43,
+    "character": "懲りる",
+    "kana": "こりる",
+    "meaning": "to learn by experience",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "沈める": {
+    "level": 43,
+    "character": "沈める",
+    "kana": "しずめる",
+    "meaning": "to sink",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "沈む": {
+    "level": 43,
+    "character": "沈む",
+    "kana": "しずむ",
+    "meaning": "to sink",
+    "pos": [
+      "vi",
+      "v5m"
+    ]
+  },
+  "滅ぼす": {
+    "level": 43,
+    "character": "滅ぼす",
+    "kana": "ほろぼす",
+    "meaning": "to destroy, to annihilate",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "裂く": {
+    "level": 43,
+    "character": "裂く",
+    "kana": "さく",
+    "meaning": "to tear, to rip up",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "襲う": {
+    "level": 43,
+    "character": "襲う",
+    "kana": "おそう",
+    "meaning": "to attack",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "刷る": {
+    "level": 43,
+    "character": "刷る",
+    "kana": "する",
+    "meaning": "to print",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "擦れる": {
+    "level": 43,
+    "character": "擦れる",
+    "kana": "すれる, こすれる",
+    "meaning": "to chafe, to rub",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "潜る": {
+    "level": 43,
+    "character": "潜る",
+    "kana": "くぐる, もぐる",
+    "meaning": "to pass through, to pass under, to evade, to dive underwater, to get in, to go underground",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "群がる": {
+    "level": 43,
+    "character": "群がる",
+    "kana": "むらがる",
+    "meaning": "to flock, to crowd",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "埋まる": {
+    "level": 43,
+    "character": "埋まる",
+    "kana": "うまる",
+    "meaning": "to be buried, to be surrounded, to overflow, to be filled",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "克服する": {
+    "level": 44,
+    "character": "克服する",
+    "kana": "こくふくする",
+    "meaning": "to conquer",
+    "pos": []
+  },
+  "揺さぶる": {
+    "level": 44,
+    "character": "揺さぶる",
+    "kana": "ゆさぶる",
+    "meaning": "to shake, to jolt",
+    "pos": [
+      "v5r"
+    ]
+  },
+  "泊める": {
+    "level": 44,
+    "character": "泊める",
+    "kana": "とめる",
+    "meaning": "to let someone stay over, to let someone stay the night",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "忍ぶ": {
+    "level": 44,
+    "character": "忍ぶ",
+    "kana": "しのぶ",
+    "meaning": "to endure, to conceal, to hide",
+    "pos": [
+      "vt",
+      "v5b"
+    ]
+  },
+  "釣る": {
+    "level": 44,
+    "character": "釣る",
+    "kana": "つる",
+    "meaning": "to fish",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "揺れる": {
+    "level": 44,
+    "character": "揺れる",
+    "kana": "ゆれる",
+    "meaning": "to be shaken, to be jolted",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "揺する": {
+    "level": 44,
+    "character": "揺する",
+    "kana": "ゆする",
+    "meaning": "to shake, to jolt",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "焦る": {
+    "level": 44,
+    "character": "焦る",
+    "kana": "あせる",
+    "meaning": "to be in a hurry, to be impatient",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "焦がす": {
+    "level": 44,
+    "character": "焦がす",
+    "kana": "こがす",
+    "meaning": "to burn, to scorch",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "紛れる": {
+    "level": 44,
+    "character": "紛れる",
+    "kana": "まぎれる",
+    "meaning": "to be diverted, to be distracted",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "叫ぶ": {
+    "level": 44,
+    "character": "叫ぶ",
+    "kana": "さけぶ",
+    "meaning": "to shout, to scream",
+    "pos": [
+      "vi",
+      "v5b"
+    ]
+  },
+  "叱る": {
+    "level": 44,
+    "character": "叱る",
+    "kana": "しかる",
+    "meaning": "to scold",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "見逃す": {
+    "level": 44,
+    "character": "見逃す",
+    "kana": "みのがす",
+    "meaning": "to overlook",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "取り逃がす": {
+    "level": 44,
+    "character": "取り逃がす",
+    "kana": "とりにがす",
+    "meaning": "to fail to catch",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "荒らす": {
+    "level": 44,
+    "character": "荒らす",
+    "kana": "あらす",
+    "meaning": "to lay waste, to devastate",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "引き裂く": {
+    "level": 45,
+    "character": "引き裂く",
+    "kana": "ひきさく",
+    "meaning": "to tear up, to tear off, to split",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "稼ぐ": {
+    "level": 45,
+    "character": "稼ぐ",
+    "kana": "かせぐ",
+    "meaning": "to earn income, to make money",
+    "pos": [
+      "v5g",
+      "vt",
+      "vi"
+    ]
+  },
+  "澄む": {
+    "level": 45,
+    "character": "澄む",
+    "kana": "すむ",
+    "meaning": "to become clear, to become transparent",
+    "pos": [
+      "vi",
+      "v5m"
+    ]
+  },
+  "襲撃する": {
+    "level": 45,
+    "character": "襲撃する",
+    "kana": "しゅうげきする",
+    "meaning": "to attack, to assault",
+    "pos": []
+  },
+  "滅びる": {
+    "level": 45,
+    "character": "滅びる",
+    "kana": "ほろびる",
+    "meaning": "to be destroyed, to be annihilated",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "曇る": {
+    "level": 45,
+    "character": "曇る",
+    "kana": "くもる",
+    "meaning": "to get cloudy, to become cloudy",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "賭ける": {
+    "level": 45,
+    "character": "賭ける",
+    "kana": "かける",
+    "meaning": "to gamble, to bet, to stake, to risk",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "磨く": {
+    "level": 45,
+    "character": "磨く",
+    "kana": "みがく",
+    "meaning": "to polish, to shine, to brush your teeth",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "嫁ぐ": {
+    "level": 45,
+    "character": "嫁ぐ",
+    "kana": "とつぐ",
+    "meaning": "to marry",
+    "pos": [
+      "v5g",
+      "vi"
+    ]
+  },
+  "狂う": {
+    "level": 45,
+    "character": "狂う",
+    "kana": "くるう",
+    "meaning": "to go mad, to go crazy",
+    "pos": [
+      "v5u",
+      "vi"
+    ]
+  },
+  "呪う": {
+    "level": 45,
+    "character": "呪う",
+    "kana": "のろう",
+    "meaning": "to curse, to put a curse on",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "眺める": {
+    "level": 45,
+    "character": "眺める",
+    "kana": "ながめる",
+    "meaning": "to stare at, to look at, to view, to gaze at",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "疲れる": {
+    "level": 45,
+    "character": "疲れる",
+    "kana": "つかれる",
+    "meaning": "to be exhausted, to be tired",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "湿る": {
+    "level": 45,
+    "character": "湿る",
+    "kana": "しめる",
+    "meaning": "to be damp, to be moist, to be wet",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "擦る": {
+    "level": 45,
+    "character": "擦る",
+    "kana": "する, こする",
+    "meaning": "to rub, to scrub",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "翔る": {
+    "level": 45,
+    "character": "翔る",
+    "kana": "かける",
+    "meaning": "to fly, to soar",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "斬る": {
+    "level": 46,
+    "character": "斬る",
+    "kana": "きる",
+    "meaning": "to cut down, to slice off, to lop off",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "鍛える": {
+    "level": 46,
+    "character": "鍛える",
+    "kana": "きたえる",
+    "meaning": "to forge, to temper, to train, to discipline",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "誇る": {
+    "level": 46,
+    "character": "誇る",
+    "kana": "ほこる",
+    "meaning": "to be proud of, to boast of",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "黙る": {
+    "level": 46,
+    "character": "黙る",
+    "kana": "だまる",
+    "meaning": "to shut up, to be silent",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "揺らぐ": {
+    "level": 46,
+    "character": "揺らぐ",
+    "kana": "ゆらぐ",
+    "meaning": "to swing, to sway, to shake, to tremble",
+    "pos": [
+      "v5g",
+      "vi"
+    ]
+  },
+  "零す": {
+    "level": 46,
+    "character": "零す",
+    "kana": "こぼす",
+    "meaning": "to spill, to drop, to shed tears",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "瞬く": {
+    "level": 46,
+    "character": "瞬く",
+    "kana": "またたく",
+    "meaning": "to blink, to flicker, to twinkle",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "阻む": {
+    "level": 46,
+    "character": "阻む",
+    "kana": "はばむ",
+    "meaning": "to thwart, to hamper, to prevent",
+    "pos": [
+      "v5m"
+    ]
+  },
+  "湿らせる": {
+    "level": 47,
+    "character": "湿らせる",
+    "kana": "しめらせる",
+    "meaning": "to moisten, to dampen",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "欺く": {
+    "level": 47,
+    "character": "欺く",
+    "kana": "あざむく",
+    "meaning": "to deceive, to swindle, to delude",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "恨む": {
+    "level": 47,
+    "character": "恨む",
+    "kana": "うらむ",
+    "meaning": "to hold a grudge",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "憩う": {
+    "level": 47,
+    "character": "憩う",
+    "kana": "いこう",
+    "meaning": "to rest, to relax",
+    "pos": [
+      "v5u",
+      "vi"
+    ]
+  },
+  "扇ぐ": {
+    "level": 47,
+    "character": "扇ぐ",
+    "kana": "あおぐ",
+    "meaning": "to fan",
+    "pos": [
+      "v5g",
+      "vt"
+    ]
+  },
+  "澄ます": {
+    "level": 47,
+    "character": "澄ます",
+    "kana": "すます",
+    "meaning": "to clear, to make clear",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "砕く": {
+    "level": 47,
+    "character": "砕く",
+    "kana": "くだく",
+    "meaning": "to smash, to break",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "粘る": {
+    "level": 47,
+    "character": "粘る",
+    "kana": "ねばる",
+    "meaning": "to be sticky, to persevere",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "憎む": {
+    "level": 47,
+    "character": "憎む",
+    "kana": "にくむ",
+    "meaning": "to hate, to detest",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "滴る": {
+    "level": 47,
+    "character": "滴る",
+    "kana": "したたる",
+    "meaning": "to drip",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "炊く": {
+    "level": 47,
+    "character": "炊く",
+    "kana": "たく",
+    "meaning": "to cook, to boil, to cook grains",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "歯を磨く": {
+    "level": 47,
+    "character": "歯を磨く",
+    "kana": "はをみがく",
+    "meaning": "to brush one's teeth",
+    "pos": [
+      "exp",
+      "v5k"
+    ]
+  },
+  "塗る": {
+    "level": 48,
+    "character": "塗る",
+    "kana": "ぬる",
+    "meaning": "to paint, to plaster, to lacquer",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "殴る": {
+    "level": 48,
+    "character": "殴る",
+    "kana": "なぐる",
+    "meaning": "to punch, to strike, to hit",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "辱める": {
+    "level": 48,
+    "character": "辱める",
+    "kana": "はずかしめる",
+    "meaning": "to humiliate, to embarass",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "飢える": {
+    "level": 48,
+    "character": "飢える",
+    "kana": "うえる",
+    "meaning": "to starve, to thirst, to be hungry",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "彩る": {
+    "level": 48,
+    "character": "彩る",
+    "kana": "いろどる",
+    "meaning": "to color something, to colour something, to color, to colour",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "溶かす": {
+    "level": 48,
+    "character": "溶かす",
+    "kana": "とかす",
+    "meaning": "to melt something, to melt",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "耐える": {
+    "level": 48,
+    "character": "耐える",
+    "kana": "たえる",
+    "meaning": "to endure, to withstand",
+    "pos": [
+      "v1",
+      "vt",
+      "vi"
+    ]
+  },
+  "踊る": {
+    "level": 48,
+    "character": "踊る",
+    "kana": "おどる",
+    "meaning": "to dance",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "輝く": {
+    "level": 48,
+    "character": "輝く",
+    "kana": "かがやく",
+    "meaning": "to shine, to glitter, to sparkle",
+    "pos": [
+      "v5k"
+    ]
+  },
+  "咲く": {
+    "level": 48,
+    "character": "咲く",
+    "kana": "さく",
+    "meaning": "to bloom, to blossom",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "貼る": {
+    "level": 48,
+    "character": "貼る",
+    "kana": "はる",
+    "meaning": "to paste, to stick",
+    "pos": [
+      "v5r",
+      "vi",
+      "vt"
+    ]
+  },
+  "涼む": {
+    "level": 48,
+    "character": "涼む",
+    "kana": "すずむ",
+    "meaning": "to cool oneself, to cool off",
+    "pos": [
+      "vi",
+      "v5m"
+    ]
+  },
+  "蓄える": {
+    "level": 48,
+    "character": "蓄える",
+    "kana": "たくわえる",
+    "meaning": "to amass, to store, to lay in stock, to have a beard, to grow a beard",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "尽きる": {
+    "level": 48,
+    "character": "尽きる",
+    "kana": "つきる",
+    "meaning": "to be exhausted, to be used up, to exhaust, to use up",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "培う": {
+    "level": 48,
+    "character": "培う",
+    "kana": "つちかう",
+    "meaning": "to cultivate, to foster",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "挿入する": {
+    "level": 49,
+    "character": "挿入する",
+    "kana": "そうにゅうする",
+    "meaning": "to insert",
+    "pos": []
+  },
+  "悟る": {
+    "level": 49,
+    "character": "悟る",
+    "kana": "さとる",
+    "meaning": "to realize",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "浸る": {
+    "level": 49,
+    "character": "浸る",
+    "kana": "ひたる",
+    "meaning": "to be soaked in, to be submerged, to be flooded",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "覆る": {
+    "level": 49,
+    "character": "覆る",
+    "kana": "くつがえる",
+    "meaning": "to capsize, to topple over, to be overturned",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "煮る": {
+    "level": 49,
+    "character": "煮る",
+    "kana": "にる",
+    "meaning": "to boil, to simmer",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "謀る": {
+    "level": 49,
+    "character": "謀る",
+    "kana": "はかる",
+    "meaning": "to conspire, to plot",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "哀れむ": {
+    "level": 49,
+    "character": "哀れむ",
+    "kana": "あわれむ",
+    "meaning": "to pity, to have mercy on",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "刈る": {
+    "level": 49,
+    "character": "刈る",
+    "kana": "かる",
+    "meaning": "to prune, to mow, to cut",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "刈り取る": {
+    "level": 49,
+    "character": "刈り取る",
+    "kana": "かりとる",
+    "meaning": "to mow, to reap, to harvest",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "隔てる": {
+    "level": 49,
+    "character": "隔てる",
+    "kana": "へだてる",
+    "meaning": "to isolate, to partition, to separate",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "潤う": {
+    "level": 49,
+    "character": "潤う",
+    "kana": "うるおう",
+    "meaning": "to be moist, to be damp, to be watered",
+    "pos": [
+      "v5u",
+      "vi"
+    ]
+  },
+  "衰える": {
+    "level": 49,
+    "character": "衰える",
+    "kana": "おとろえる",
+    "meaning": "to decline, to decay, to become weak, to wither",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "劣る": {
+    "level": 49,
+    "character": "劣る",
+    "kana": "おとる",
+    "meaning": "to be inferior to",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "溶ける": {
+    "level": 50,
+    "character": "溶ける",
+    "kana": "とける",
+    "meaning": "to melt, to dissolve, to thaw",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "漂う": {
+    "level": 50,
+    "character": "漂う",
+    "kana": "ただよう",
+    "meaning": "to drift",
+    "pos": [
+      "v5u",
+      "vi"
+    ]
+  },
+  "翻る": {
+    "level": 50,
+    "character": "翻る",
+    "kana": "ひるがえる",
+    "meaning": "to flip, to turn over, to flip over",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "仰ぐ": {
+    "level": 50,
+    "character": "仰ぐ",
+    "kana": "あおぐ",
+    "meaning": "to look up at, to look up to",
+    "pos": [
+      "v5g",
+      "vt"
+    ]
+  },
+  "脅す": {
+    "level": 50,
+    "character": "脅す",
+    "kana": "おどす",
+    "meaning": "to threaten",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "尽くす": {
+    "level": 50,
+    "character": "尽くす",
+    "kana": "つくす",
+    "meaning": "to exhaust, to run out, to do to exhaustion",
+    "pos": [
+      "v5s",
+      "aux-v"
+    ]
+  },
+  "悔やむ": {
+    "level": 50,
+    "character": "悔やむ",
+    "kana": "くやむ",
+    "meaning": "to regret, to mourn, to lament",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "遂げる": {
+    "level": 50,
+    "character": "遂げる",
+    "kana": "とげる",
+    "meaning": "to accomplish, to achieve, to carry out",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "諮る": {
+    "level": 50,
+    "character": "諮る",
+    "kana": "はかる",
+    "meaning": "to consult with, to discuss, to confer",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "搬送": {
+    "level": 50,
+    "character": "搬送",
+    "kana": "はんそう",
+    "meaning": "transportation",
+    "pos": [
+      "n",
+      "vs",
+      "vt"
+    ]
+  },
+  "灯る": {
+    "level": 50,
+    "character": "灯る",
+    "kana": "ともる",
+    "meaning": "to burn, to be lighted, to be lit, to be burning",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "召す": {
+    "level": 51,
+    "character": "召す",
+    "kana": "めす",
+    "meaning": "to humbly call, to humbly invite, to humbly eat, to humbly drink",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "喚く": {
+    "level": 51,
+    "character": "喚く",
+    "kana": "わめく",
+    "meaning": "to shout, to scream",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "挟む": {
+    "level": 51,
+    "character": "挟む",
+    "kana": "はさむ",
+    "meaning": "to insert, to put between",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "沸く": {
+    "level": 51,
+    "character": "沸く",
+    "kana": "わく",
+    "meaning": "to boil, to grow hot, to get excited",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "枯れる": {
+    "level": 51,
+    "character": "枯れる",
+    "kana": "かれる",
+    "meaning": "to wither, to die",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "浸す": {
+    "level": 51,
+    "character": "浸す",
+    "kana": "ひたす",
+    "meaning": "to soak, to dip, to drench",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "耕す": {
+    "level": 51,
+    "character": "耕す",
+    "kana": "たがやす",
+    "meaning": "to till, to plow, to plough, to cultivate",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "覆う": {
+    "level": 51,
+    "character": "覆う",
+    "kana": "おおう",
+    "meaning": "to cover, to hide, to conceal",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "頂く": {
+    "level": 51,
+    "character": "頂く",
+    "kana": "いただく",
+    "meaning": "to humbly receive, to humbly accept, to humbly eat, to humbly drink",
+    "pos": [
+      "vt",
+      "aux-v",
+      "v5k"
+    ]
+  },
+  "擁する": {
+    "level": 52,
+    "character": "擁する",
+    "kana": "ようする",
+    "meaning": "to have, to possess",
+    "pos": [
+      "vs-s"
+    ]
+  },
+  "偏る": {
+    "level": 52,
+    "character": "偏る",
+    "kana": "かたよる",
+    "meaning": "to be biased, to be one sided, to be partial, to be prejudiced",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "怠る": {
+    "level": 52,
+    "character": "怠る",
+    "kana": "おこたる",
+    "meaning": "to be negligent, to shirk, to be off one's guard",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "貫く": {
+    "level": 52,
+    "character": "貫く",
+    "kana": "つらぬく",
+    "meaning": "to go through, to pierce, to penetrate, to persist, to stick to",
+    "pos": [
+      "vt",
+      "v5k"
+    ]
+  },
+  "陥る": {
+    "level": 52,
+    "character": "陥る",
+    "kana": "おちいる",
+    "meaning": "to cave in, to collapse, to fall, to trap",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "膨れる": {
+    "level": 52,
+    "character": "膨れる",
+    "kana": "ふくれる",
+    "meaning": "to swell, to expand, to be inflated, to distend, to bulge",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "遭う": {
+    "level": 52,
+    "character": "遭う",
+    "kana": "あう",
+    "meaning": "to meet, to encounter",
+    "pos": [
+      "v5u",
+      "vi"
+    ]
+  },
+  "召し上がる": {
+    "level": 53,
+    "character": "召し上がる",
+    "kana": "めしあがる",
+    "meaning": "to humbly eat, to honorably eat",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "寛ぐ": {
+    "level": 53,
+    "character": "寛ぐ",
+    "kana": "くつろぐ",
+    "meaning": "to relax, to feel at home",
+    "pos": [
+      "v5g"
+    ]
+  },
+  "挟まる": {
+    "level": 53,
+    "character": "挟まる",
+    "kana": "はさまる",
+    "meaning": "to get between, to be caught in",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "据える": {
+    "level": 53,
+    "character": "据える",
+    "kana": "すえる",
+    "meaning": "to install, to place, to fix, to set, to lay, to seat",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "沸かす": {
+    "level": 53,
+    "character": "沸かす",
+    "kana": "わかす",
+    "meaning": "to boil, to heat, to excite",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "肯く": {
+    "level": 53,
+    "character": "肯く",
+    "kana": "うなずく, うなづく",
+    "meaning": "to nod, to bow one's head",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "枯らす": {
+    "level": 53,
+    "character": "枯らす",
+    "kana": "からす",
+    "meaning": "to let dry, to kill, to season",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "諭す": {
+    "level": 53,
+    "character": "諭す",
+    "kana": "さとす",
+    "meaning": "to admonish, to persuade, to warn",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "虐げる": {
+    "level": 53,
+    "character": "虐げる",
+    "kana": "しいたげる",
+    "meaning": "to oppress, to persecute, to tyrannize",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "卸す": {
+    "level": 54,
+    "character": "卸す",
+    "kana": "おろす",
+    "meaning": "to sell wholesale, to grate",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "呆ける": {
+    "level": 54,
+    "character": "呆ける",
+    "kana": "ぼける, ほうける",
+    "meaning": "to grow senile, to be mentally slow",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "噴き出す": {
+    "level": 54,
+    "character": "噴き出す",
+    "kana": "ふきだす",
+    "meaning": "to burst out, to spout out, to bud, to sprout",
+    "pos": [
+      "v5s",
+      "vt",
+      "vi"
+    ]
+  },
+  "怠ける": {
+    "level": 54,
+    "character": "怠ける",
+    "kana": "なまける",
+    "meaning": "to neglect, to be idle, to slack",
+    "pos": [
+      "v1",
+      "vt",
+      "vi"
+    ]
+  },
+  "逸らす": {
+    "level": 54,
+    "character": "逸らす",
+    "kana": "そらす",
+    "meaning": "to turn away, to avert",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "膨らむ": {
+    "level": 54,
+    "character": "膨らむ",
+    "kana": "ふくらむ",
+    "meaning": "to expand, to swell, to get big, to become inflated",
+    "pos": [
+      "vi",
+      "v5m"
+    ]
+  },
+  "貫き通す": {
+    "level": 54,
+    "character": "貫き通す",
+    "kana": "つらぬきとおす",
+    "meaning": "to follow, to stick with, to stick to, to go through",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "惜しむ": {
+    "level": 55,
+    "character": "惜しむ",
+    "kana": "おしむ",
+    "meaning": "to be frugal, to be sparing",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "憂える": {
+    "level": 55,
+    "character": "憂える",
+    "kana": "うれえる",
+    "meaning": "to grieve, to lament, to be anxious, to be distressed",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "鎮める": {
+    "level": 55,
+    "character": "鎮める",
+    "kana": "しずめる",
+    "meaning": "to appease, to suppress, to calm",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "凝る": {
+    "level": 55,
+    "character": "凝る",
+    "kana": "こる",
+    "meaning": "to be absorbed in, to grow stiff, to be devoted to",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "据え付ける": {
+    "level": 55,
+    "character": "据え付ける",
+    "kana": "すえつける",
+    "meaning": "to install, to equip, to mount",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "伏せる": {
+    "level": 55,
+    "character": "伏せる",
+    "kana": "ふせる",
+    "meaning": "to cover, to hide, to lay upside down, to turn over",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "呆れる": {
+    "level": 56,
+    "character": "呆れる",
+    "kana": "あきれる",
+    "meaning": "to be amazed, to be shocked, to be astonished",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "縫う": {
+    "level": 56,
+    "character": "縫う",
+    "kana": "ぬう",
+    "meaning": "to sew, to stitch",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "逸れる": {
+    "level": 56,
+    "character": "逸れる",
+    "kana": "それる, はぐれる",
+    "meaning": "to stray, to turn away, to digress, to deviate",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "搾る": {
+    "level": 56,
+    "character": "搾る",
+    "kana": "しぼる",
+    "meaning": "to squeeze, to press, to wring",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "縛る": {
+    "level": 56,
+    "character": "縛る",
+    "kana": "しばる",
+    "meaning": "to tie, to bind",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "飽きる": {
+    "level": 56,
+    "character": "飽きる",
+    "kana": "あきる",
+    "meaning": "to get tired of, to lose interest in",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "漬ける": {
+    "level": 57,
+    "character": "漬ける",
+    "kana": "つける",
+    "meaning": "to soak, to seep, to dip in, to pickle",
+    "pos": [
+      "v1",
+      "vt"
+    ]
+  },
+  "鎮まる": {
+    "level": 57,
+    "character": "鎮まる",
+    "kana": "しずまる",
+    "meaning": "to quiet down, to calm down, to subside, to die down",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "弔う": {
+    "level": 57,
+    "character": "弔う",
+    "kana": "とむらう",
+    "meaning": "to mourn for, to hold a memorial service for, to condole",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "遮る": {
+    "level": 57,
+    "character": "遮る",
+    "kana": "さえぎる",
+    "meaning": "to interrupt, to intercept, to obstruct",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "醸す": {
+    "level": 57,
+    "character": "醸す",
+    "kana": "かもす",
+    "meaning": "to brew, to cause, to give rise to, to distill",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "凌ぐ": {
+    "level": 58,
+    "character": "凌ぐ",
+    "kana": "しのぐ",
+    "meaning": "to endure, to keep out, to stave off",
+    "pos": [
+      "v5g",
+      "vt"
+    ]
+  },
+  "朽ちる": {
+    "level": 58,
+    "character": "朽ちる",
+    "kana": "くちる",
+    "meaning": "to decay, to die out",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "酌む": {
+    "level": 58,
+    "character": "酌む",
+    "kana": "くむ",
+    "meaning": "to serve, to pour",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "飽くまでも": {
+    "level": 58,
+    "character": "飽くまでも",
+    "kana": "あくまでも",
+    "meaning": "to the last, to the end",
+    "pos": [
+      "adv"
+    ]
+  },
+  "呆れ返る": {
+    "level": 58,
+    "character": "呆れ返る",
+    "kana": "あきれかえる",
+    "meaning": "to be utterly amazed, to be stunned, to be amazed",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "戯れる": {
+    "level": 58,
+    "character": "戯れる",
+    "kana": "たわむれる",
+    "meaning": "to toy with, to play with, to flirt, to kid",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "濁す": {
+    "level": 58,
+    "character": "濁す",
+    "kana": "にごす",
+    "meaning": "to make muddy, to make cloudy",
+    "pos": [
+      "v5s",
+      "vt"
+    ]
+  },
+  "漬かる": {
+    "level": 59,
+    "character": "漬かる",
+    "kana": "つかる",
+    "meaning": "to be pickled, to be well seasoned, to be submerged, to be soaked",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  },
+  "凹む": {
+    "level": 59,
+    "character": "凹む",
+    "kana": "へこむ",
+    "meaning": "to become hollow, to be dented, to sink, to collapse",
+    "pos": [
+      "vi",
+      "v5m"
+    ]
+  },
+  "憧れる": {
+    "level": 59,
+    "character": "憧れる",
+    "kana": "あこがれる",
+    "meaning": "to long for, to yearn after, to admire, to be attracted by",
+    "pos": [
+      "v1",
+      "vi"
+    ]
+  },
+  "紡ぐ": {
+    "level": 59,
+    "character": "紡ぐ",
+    "kana": "つむぐ",
+    "meaning": "to spin, to make yarn",
+    "pos": [
+      "v5g",
+      "vt"
+    ]
+  },
+  "詠む": {
+    "level": 59,
+    "character": "詠む",
+    "kana": "よむ",
+    "meaning": "to compose, to recite",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "侮る": {
+    "level": 59,
+    "character": "侮る",
+    "kana": "あなどる",
+    "meaning": "to despise, to disdain, to make light of",
+    "pos": [
+      "v5r",
+      "vt"
+    ]
+  },
+  "堪える": {
+    "level": 59,
+    "character": "堪える",
+    "kana": "たえる, こたえる, こらえる",
+    "meaning": "to endure, to bear, to stand, to put up with",
+    "pos": [
+      "v1",
+      "vt",
+      "vi"
+    ]
+  },
+  "蔑む": {
+    "level": 59,
+    "character": "蔑む",
+    "kana": "さげすむ",
+    "meaning": "to scorn, to despise",
+    "pos": [
+      "vt",
+      "v5m"
+    ]
+  },
+  "湧く": {
+    "level": 60,
+    "character": "湧く",
+    "kana": "わく",
+    "meaning": "to well up, to gush forth, to spring out, to surge",
+    "pos": [
+      "vi",
+      "v5k"
+    ]
+  },
+  "唄う": {
+    "level": 60,
+    "character": "唄う",
+    "kana": "うたう",
+    "meaning": "to sing, to recite, to chant",
+    "pos": [
+      "v5u",
+      "vt",
+      "vi"
+    ]
+  },
+  "慕う": {
+    "level": 60,
+    "character": "慕う",
+    "kana": "したう",
+    "meaning": "to yearn for, to miss, to adore",
+    "pos": [
+      "v5u",
+      "vt"
+    ]
+  },
+  "濁る": {
+    "level": 60,
+    "character": "濁る",
+    "kana": "にごる",
+    "meaning": "to become muddy, to become impure, to become cloudy",
+    "pos": [
+      "v5r",
+      "vi"
+    ]
+  }
+}

@@ -1,0 +1,6100 @@
+{
+  "入れる": {
+    "same_kanji": [
+      "入る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "上る": {
+    "same_kanji": [
+      "上がる",
+      "上げる"
+    ],
+    "same_kana": [
+      "登る",
+      "昇る"
+    ],
+    "same_meaning": []
+  },
+  "上がる": {
+    "same_kanji": [
+      "上る",
+      "上げる"
+    ],
+    "same_kana": [
+      "挙がる"
+    ],
+    "same_meaning": []
+  },
+  "入る": {
+    "same_kanji": [
+      "入れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "上げる": {
+    "same_kanji": [
+      "上る",
+      "上がる"
+    ],
+    "same_kana": [
+      "挙げる",
+      "揚げる"
+    ],
+    "same_meaning": []
+  },
+  "下がる": {
+    "same_kanji": [
+      "下げる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "下げる": {
+    "same_kanji": [
+      "下がる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "立つ": {
+    "same_kanji": [
+      "立てる"
+    ],
+    "same_kana": [
+      "建つ",
+      "経つ",
+      "断つ",
+      "絶つ"
+    ],
+    "same_meaning": []
+  },
+  "出す": {
+    "same_kanji": [
+      "出る",
+      "出かける"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "正す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "出る": {
+    "same_kanji": [
+      "出す",
+      "出かける"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "立てる": {
+    "same_kanji": [
+      "立つ"
+    ],
+    "same_kana": [
+      "建てる"
+    ],
+    "same_meaning": []
+  },
+  "分かる": {
+    "same_kanji": [
+      "分ける"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "止める": {
+    "same_kanji": [
+      "止まる"
+    ],
+    "same_kana": [
+      "泊める"
+    ],
+    "same_meaning": []
+  },
+  "太る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "生む": {
+    "same_kanji": [
+      "生きる",
+      "生まれる",
+      "生える"
+    ],
+    "same_kana": [
+      "産む"
+    ],
+    "same_meaning": []
+  },
+  "用いる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "生きる": {
+    "same_kanji": [
+      "生む",
+      "生まれる",
+      "生える"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "生まれる": {
+    "same_kanji": [
+      "生む",
+      "生きる",
+      "生える"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "切る": {
+    "same_kanji": [
+      "切れる"
+    ],
+    "same_kana": [
+      "着る",
+      "斬る"
+    ],
+    "same_meaning": []
+  },
+  "分ける": {
+    "same_kanji": [
+      "分かる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "引く": {
+    "same_kanji": [],
+    "same_kana": [
+      "弾く"
+    ],
+    "same_meaning": []
+  },
+  "止まる": {
+    "same_kanji": [
+      "止める"
+    ],
+    "same_kana": [
+      "泊まる"
+    ],
+    "same_meaning": []
+  },
+  "外れる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "切れる": {
+    "same_kanji": [
+      "切る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "見せる": {
+    "same_kanji": [
+      "見える",
+      "見る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "見える": {
+    "same_kanji": [
+      "見せる",
+      "見る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "足りる": {
+    "same_kanji": [
+      "足す"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "代わる": {
+    "same_kanji": [
+      "代える"
+    ],
+    "same_kana": [
+      "変わる",
+      "替わる"
+    ],
+    "same_meaning": []
+  },
+  "申す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "打つ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "写す": {
+    "same_kanji": [
+      "写る"
+    ],
+    "same_kana": [
+      "映す",
+      "移す"
+    ],
+    "same_meaning": []
+  },
+  "休む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "見る": {
+    "same_kanji": [
+      "見せる",
+      "見える"
+    ],
+    "same_kana": [
+      "観る",
+      "診る"
+    ],
+    "same_meaning": []
+  },
+  "写る": {
+    "same_kanji": [
+      "写す"
+    ],
+    "same_kana": [
+      "映る",
+      "移る"
+    ],
+    "same_meaning": []
+  },
+  "出かける": {
+    "same_kanji": [
+      "出す",
+      "出る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "気に入る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "見分ける": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "売る": {
+    "same_kanji": [
+      "売れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "行う": {
+    "same_kanji": [
+      "行く"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "会う": {
+    "same_kanji": [],
+    "same_kana": [
+      "合う",
+      "遭う"
+    ],
+    "same_meaning": []
+  },
+  "生える": {
+    "same_kanji": [
+      "生む",
+      "生きる",
+      "生まれる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "行く": {
+    "same_kanji": [
+      "行う"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "言う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "交ぜる": {
+    "same_kanji": [
+      "交じる",
+      "交わる"
+    ],
+    "same_kana": [
+      "混ぜる"
+    ],
+    "same_meaning": []
+  },
+  "当たる": {
+    "same_kanji": [
+      "当てる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "考える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "学ぶ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "作る": {
+    "same_kanji": [],
+    "same_kana": [
+      "造る"
+    ],
+    "same_meaning": []
+  },
+  "走る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "回る": {
+    "same_kanji": [
+      "回す"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "来る": {
+    "same_kanji": [],
+    "same_kana": [
+      "繰る"
+    ],
+    "same_meaning": []
+  },
+  "死ぬ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "足す": {
+    "same_kanji": [
+      "足りる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "代える": {
+    "same_kanji": [
+      "代わる"
+    ],
+    "same_kana": [
+      "返る",
+      "変える",
+      "帰る",
+      "替える",
+      "換える"
+    ],
+    "same_meaning": []
+  },
+  "食べる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "歩く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "向く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "知る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "有る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "思う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "亡くなる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "出来る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "直す": {
+    "same_kanji": [
+      "直る"
+    ],
+    "same_kana": [
+      "治す"
+    ],
+    "same_meaning": []
+  },
+  "直る": {
+    "same_kanji": [
+      "直す"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "首になる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "売れる": {
+    "same_kanji": [
+      "売る"
+    ],
+    "same_kana": [
+      "熟れる"
+    ],
+    "same_meaning": []
+  },
+  "欠ける": {
+    "same_kanji": [
+      "欠かす"
+    ],
+    "same_kana": [
+      "掛ける",
+      "懸ける",
+      "駆ける",
+      "賭ける",
+      "翔る"
+    ],
+    "same_meaning": []
+  },
+  "失う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "教える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "通る": {
+    "same_kanji": [
+      "通す",
+      "通う"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "付ける": {
+    "same_kanji": [
+      "付く"
+    ],
+    "same_kana": [
+      "点ける",
+      "着ける",
+      "漬ける"
+    ],
+    "same_meaning": []
+  },
+  "見当たる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "光る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "走り回る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "対する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "曲がる": {
+    "same_kanji": [
+      "曲げる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "助ける": {
+    "same_kanji": [
+      "助かる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "話す": {
+    "same_kanji": [],
+    "same_kana": [
+      "放す",
+      "離す"
+    ],
+    "same_meaning": []
+  },
+  "化ける": {
+    "same_kanji": [
+      "化かす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "合う": {
+    "same_kanji": [
+      "合わせる"
+    ],
+    "same_kana": [
+      "会う",
+      "遭う"
+    ],
+    "same_meaning": []
+  },
+  "曲げる": {
+    "same_kanji": [
+      "曲がる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "回す": {
+    "same_kanji": [
+      "回る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "向ける": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "当てる": {
+    "same_kanji": [
+      "当たる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "支える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "住む": {
+    "same_kanji": [],
+    "same_kana": [
+      "済む",
+      "澄む"
+    ],
+    "same_meaning": []
+  },
+  "決める": {
+    "same_kanji": [
+      "決まる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "投げる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "買う": {
+    "same_kanji": [],
+    "same_kana": [
+      "飼う"
+    ],
+    "same_meaning": []
+  },
+  "答える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "近づく": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "思い出す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "見直す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "出来上がる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "交じる": {
+    "same_kanji": [
+      "交ぜる",
+      "交わる"
+    ],
+    "same_kana": [
+      "混じる"
+    ],
+    "same_meaning": []
+  },
+  "交わる": {
+    "same_kanji": [
+      "交ぜる",
+      "交じる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "点ける": {
+    "same_kanji": [],
+    "same_kana": [
+      "付ける",
+      "着ける",
+      "漬ける"
+    ],
+    "same_meaning": []
+  },
+  "役に立つ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "数える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "泳ぐ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "乗る": {
+    "same_kanji": [
+      "乗せる"
+    ],
+    "same_kana": [
+      "載る"
+    ],
+    "same_meaning": []
+  },
+  "持つ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "受ける": {
+    "same_kanji": [],
+    "same_kana": [
+      "請ける"
+    ],
+    "same_meaning": []
+  },
+  "始まる": {
+    "same_kanji": [
+      "始める"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "始める": {
+    "same_kanji": [
+      "始まる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "欠かす": {
+    "same_kanji": [
+      "欠ける"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "待たせる": {
+    "same_kanji": [
+      "待つ"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "負ける": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "返す": {
+    "same_kanji": [
+      "返る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "使う": {
+    "same_kanji": [],
+    "same_kana": [
+      "遣う"
+    ],
+    "same_meaning": []
+  },
+  "要る": {
+    "same_kanji": [],
+    "same_kana": [
+      "居る"
+    ],
+    "same_meaning": []
+  },
+  "表す": {
+    "same_kanji": [],
+    "same_kana": [
+      "現す"
+    ],
+    "same_meaning": []
+  },
+  "通す": {
+    "same_kanji": [
+      "通る",
+      "通う"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "待つ": {
+    "same_kanji": [
+      "待たせる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "乗せる": {
+    "same_kanji": [
+      "乗る"
+    ],
+    "same_kana": [
+      "載せる"
+    ],
+    "same_meaning": []
+  },
+  "勝つ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "送る": {
+    "same_kanji": [],
+    "same_kana": [
+      "贈る"
+    ],
+    "same_meaning": []
+  },
+  "付く": {
+    "same_kanji": [
+      "付ける"
+    ],
+    "same_kana": [
+      "着く",
+      "突く"
+    ],
+    "same_meaning": []
+  },
+  "見付ける": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "配る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "習う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "転がる": {
+    "same_kanji": [
+      "転ぶ"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "落ちる": {
+    "same_kanji": [
+      "落とす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "運ぶ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "飲む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "聞く": {
+    "same_kanji": [
+      "聞こえる"
+    ],
+    "same_kana": [
+      "利く",
+      "効く",
+      "聴く"
+    ],
+    "same_meaning": []
+  },
+  "調べる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "決まる": {
+    "same_kanji": [
+      "決める"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "読む": {
+    "same_kanji": [],
+    "same_kana": [
+      "詠む"
+    ],
+    "same_meaning": []
+  },
+  "助かる": {
+    "same_kanji": [
+      "助ける"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "終わる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "投げ付ける": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "開ける": {
+    "same_kanji": [
+      "開く"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "病む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "進む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "集める": {
+    "same_kanji": [
+      "集まる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "運転する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "出会う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "語る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "起きる": {
+    "same_kanji": [
+      "起こる",
+      "起こす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "算定する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "鳴く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "間に合う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "楽しむ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "化かす": {
+    "same_kanji": [
+      "化ける"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "合わせる": {
+    "same_kanji": [
+      "合う"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "争う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "伝える": {
+    "same_kanji": [
+      "伝わる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "成る": {
+    "same_kanji": [],
+    "same_kana": [
+      "鳴る"
+    ],
+    "same_meaning": []
+  },
+  "利く": {
+    "same_kanji": [],
+    "same_kana": [
+      "聞く",
+      "効く",
+      "聴く"
+    ],
+    "same_meaning": []
+  },
+  "放す": {
+    "same_kanji": [
+      "放れる",
+      "放つ"
+    ],
+    "same_kana": [
+      "話す",
+      "離す"
+    ],
+    "same_meaning": []
+  },
+  "集中する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "育つ": {
+    "same_kanji": [
+      "育てる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "指定する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "追う": {
+    "same_kanji": [
+      "追いかける"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "働く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "苦しむ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "気付く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "通う": {
+    "same_kanji": [
+      "通る",
+      "通す"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "放送する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "拾う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "開放する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "注ぐ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "指す": {
+    "same_kanji": [],
+    "same_kana": [
+      "差す",
+      "刺す"
+    ],
+    "same_meaning": []
+  },
+  "競う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "見送る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "返る": {
+    "same_kanji": [
+      "返す"
+    ],
+    "same_kana": [
+      "代える",
+      "変える",
+      "帰る",
+      "替える",
+      "換える"
+    ],
+    "same_meaning": []
+  },
+  "決定する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "植える": {
+    "same_kanji": [],
+    "same_kana": [
+      "飢える"
+    ],
+    "same_meaning": []
+  },
+  "流す": {
+    "same_kanji": [
+      "流れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "消す": {
+    "same_kanji": [
+      "消える"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "登る": {
+    "same_kanji": [],
+    "same_kana": [
+      "上る",
+      "昇る"
+    ],
+    "same_meaning": []
+  },
+  "着る": {
+    "same_kanji": [
+      "着く",
+      "着ける"
+    ],
+    "same_kana": [
+      "切る",
+      "斬る"
+    ],
+    "same_meaning": []
+  },
+  "聞こえる": {
+    "same_kanji": [
+      "聞く"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "転ぶ": {
+    "same_kanji": [
+      "転がる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "起こる": {
+    "same_kanji": [
+      "起きる",
+      "起こす"
+    ],
+    "same_kana": [
+      "怒る"
+    ],
+    "same_meaning": []
+  },
+  "心配する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "歌う": {
+    "same_kanji": [],
+    "same_kana": [
+      "唄う"
+    ],
+    "same_meaning": []
+  },
+  "動く": {
+    "same_kanji": [
+      "動かす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "着く": {
+    "same_kanji": [
+      "着る",
+      "着ける"
+    ],
+    "same_kana": [
+      "付く",
+      "突く"
+    ],
+    "same_meaning": []
+  },
+  "集まる": {
+    "same_kanji": [
+      "集める"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "落とす": {
+    "same_kanji": [
+      "落ちる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "開く": {
+    "same_kanji": [
+      "開ける"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "鳴る": {
+    "same_kanji": [],
+    "same_kana": [
+      "成る"
+    ],
+    "same_meaning": []
+  },
+  "別れる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "共有する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "見返る": {
+    "same_kanji": [
+      "見返す"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "戦う": {
+    "same_kanji": [],
+    "same_kana": [
+      "闘う"
+    ],
+    "same_meaning": []
+  },
+  "伝わる": {
+    "same_kanji": [
+      "伝える"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "感動する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "映る": {
+    "same_kanji": [
+      "映す"
+    ],
+    "same_kana": [
+      "写る",
+      "移る"
+    ],
+    "same_meaning": []
+  },
+  "殺す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "謝る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "想像する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "手伝う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "注文する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "育てる": {
+    "same_kanji": [
+      "育つ"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "追い付く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "追いかける": {
+    "same_kanji": [
+      "追う"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "放れる": {
+    "same_kanji": [
+      "放す",
+      "放つ"
+    ],
+    "same_kana": [
+      "離れる"
+    ],
+    "same_meaning": []
+  },
+  "感じる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "選ぶ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "養う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "参る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "囲む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "折る": {
+    "same_kanji": [
+      "折れる"
+    ],
+    "same_kana": [
+      "織る"
+    ],
+    "same_meaning": []
+  },
+  "合格する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "求める": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "悲しむ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "落ち着く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "消える": {
+    "same_kanji": [
+      "消す"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "流れる": {
+    "same_kanji": [
+      "流す"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "起こす": {
+    "same_kanji": [
+      "起きる",
+      "起こる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "回転する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "期待する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "望む": {
+    "same_kanji": [],
+    "same_kana": [
+      "臨む"
+    ],
+    "same_meaning": []
+  },
+  "約する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "残る": {
+    "same_kanji": [
+      "残す"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "消化する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "温める": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "着ける": {
+    "same_kanji": [
+      "着る",
+      "着く"
+    ],
+    "same_kana": [
+      "付ける",
+      "点ける",
+      "漬ける"
+    ],
+    "same_meaning": []
+  },
+  "気持ち悪い": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "動かす": {
+    "same_kanji": [
+      "動く"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "勉強する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "旅行する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "変える": {
+    "same_kanji": [
+      "変わる"
+    ],
+    "same_kana": [
+      "代える",
+      "返る",
+      "帰る",
+      "替える",
+      "換える"
+    ],
+    "same_meaning": []
+  },
+  "見返す": {
+    "same_kanji": [
+      "見返る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "放つ": {
+    "same_kanji": [
+      "放す",
+      "放れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "好む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "建てる": {
+    "same_kanji": [
+      "建つ"
+    ],
+    "same_kana": [
+      "立てる"
+    ],
+    "same_meaning": []
+  },
+  "晴れる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "暗記する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "練習する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "整える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "信じる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "帰る": {
+    "same_kanji": [],
+    "same_kana": [
+      "代える",
+      "返る",
+      "変える",
+      "替える",
+      "換える"
+    ],
+    "same_meaning": []
+  },
+  "泣く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "映す": {
+    "same_kanji": [
+      "映る"
+    ],
+    "same_kana": [
+      "写す",
+      "移す"
+    ],
+    "same_meaning": []
+  },
+  "整理する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "折れる": {
+    "same_kanji": [
+      "折る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "係わる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "喜ぶ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "存じる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "急ぐ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "治す": {
+    "same_kanji": [],
+    "same_kana": [
+      "直す"
+    ],
+    "same_meaning": []
+  },
+  "浴びる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "辞める": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "関する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "要求する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "残す": {
+    "same_kanji": [
+      "残る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "保つ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "守る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "取る": {
+    "same_kanji": [
+      "取れる"
+    ],
+    "same_kana": [
+      "撮る",
+      "採る",
+      "執る"
+    ],
+    "same_meaning": []
+  },
+  "書く": {
+    "same_kanji": [],
+    "same_kana": [
+      "描く"
+    ],
+    "same_meaning": []
+  },
+  "笑う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "妥協する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "希望する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "固める": {
+    "same_kanji": [
+      "固まる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "卒業する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "変わる": {
+    "same_kanji": [
+      "変える"
+    ],
+    "same_kana": [
+      "代わる",
+      "替わる"
+    ],
+    "same_meaning": []
+  },
+  "愛する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "察する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "干す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "敗れる": {
+    "same_kanji": [],
+    "same_kana": [
+      "破れる"
+    ],
+    "same_meaning": []
+  },
+  "勇む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "果てる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "建つ": {
+    "same_kanji": [
+      "建てる"
+    ],
+    "same_kana": [
+      "立つ",
+      "経つ",
+      "断つ",
+      "絶つ"
+    ],
+    "same_meaning": []
+  },
+  "栄える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "配達する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "保持する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "禁じる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "座る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "借りる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "取れる": {
+    "same_kanji": [
+      "取る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "告げる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "書き直す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "祈る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "試す": {
+    "same_kanji": [
+      "試みる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "固まる": {
+    "same_kanji": [
+      "固める"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "達する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "書き入れる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "切り取る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "取り出す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "報じる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "忘れる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "洗う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "焼く": {
+    "same_kanji": [
+      "焼ける"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "許す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "試みる": {
+    "same_kanji": [
+      "試す"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "比べる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "混ぜる": {
+    "same_kanji": [
+      "混ざる",
+      "混む",
+      "混じる"
+    ],
+    "same_kana": [
+      "交ぜる"
+    ],
+    "same_meaning": []
+  },
+  "混ざる": {
+    "same_kanji": [
+      "混ぜる",
+      "混む",
+      "混じる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "続く": {
+    "same_kanji": [
+      "続ける"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "連絡する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "覚える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "乱れる": {
+    "same_kanji": [
+      "乱す"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "困る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "履く": {
+    "same_kanji": [],
+    "same_kana": [
+      "掃く",
+      "吐く"
+    ],
+    "same_meaning": []
+  },
+  "得る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "改まる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "暴れる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "減る": {
+    "same_kanji": [
+      "減らす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "絡む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "連れる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "加える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "焼ける": {
+    "same_kanji": [
+      "焼く"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "倒す": {
+    "same_kanji": [
+      "倒れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "嫌い": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "飛ぶ": {
+    "same_kanji": [
+      "飛ばす"
+    ],
+    "same_kana": [
+      "跳ぶ"
+    ],
+    "same_meaning": []
+  },
+  "文句する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "余る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "妨げる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "被る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "犯す": {
+    "same_kanji": [],
+    "same_kana": [
+      "侵す"
+    ],
+    "same_meaning": []
+  },
+  "産む": {
+    "same_kanji": [],
+    "same_kana": [
+      "生む"
+    ],
+    "same_meaning": []
+  },
+  "経つ": {
+    "same_kanji": [],
+    "same_kana": [
+      "立つ",
+      "建つ",
+      "断つ",
+      "絶つ"
+    ],
+    "same_meaning": []
+  },
+  "防ぐ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "参加する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "混む": {
+    "same_kanji": [
+      "混ぜる",
+      "混ざる",
+      "混じる"
+    ],
+    "same_kana": [
+      "込む"
+    ],
+    "same_meaning": []
+  },
+  "減らす": {
+    "same_kanji": [
+      "減る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "設ける": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "設定する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "乱す": {
+    "same_kanji": [
+      "乱れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "説得する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "混じる": {
+    "same_kanji": [
+      "混ぜる",
+      "混ざる",
+      "混む"
+    ],
+    "same_kana": [
+      "交じる"
+    ],
+    "same_meaning": []
+  },
+  "混乱する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "続ける": {
+    "same_kanji": [
+      "続く"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "済む": {
+    "same_kanji": [
+      "済ます"
+    ],
+    "same_kana": [
+      "住む",
+      "澄む"
+    ],
+    "same_meaning": []
+  },
+  "挙がる": {
+    "same_kanji": [
+      "挙げる"
+    ],
+    "same_kana": [
+      "上がる"
+    ],
+    "same_meaning": []
+  },
+  "務める": {
+    "same_kanji": [],
+    "same_kana": [
+      "勤める"
+    ],
+    "same_meaning": []
+  },
+  "断る": {
+    "same_kanji": [
+      "断つ"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "検問する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "責める": {
+    "same_kanji": [],
+    "same_kana": [
+      "攻める"
+    ],
+    "same_meaning": []
+  },
+  "省く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "増える": {
+    "same_kanji": [
+      "増やす",
+      "増す"
+    ],
+    "same_kana": [
+      "殖える"
+    ],
+    "same_meaning": []
+  },
+  "解ける": {
+    "same_kanji": [
+      "解く"
+    ],
+    "same_kana": [
+      "溶ける"
+    ],
+    "same_meaning": []
+  },
+  "認める": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "目覚める": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "企てる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "存在する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "脱走する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "営む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "応じる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "非難する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "大嫌い": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "倒れる": {
+    "same_kanji": [
+      "倒す"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "飛ばす": {
+    "same_kanji": [
+      "飛ぶ"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "確かめる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "在留する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "震える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "圧倒する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "寝る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "過ぎる": {
+    "same_kanji": [
+      "過ごす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "罰する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "脱ぐ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "置く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "示す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "観る": {
+    "same_kanji": [],
+    "same_kana": [
+      "見る",
+      "診る"
+    ],
+    "same_meaning": []
+  },
+  "吸う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "選挙する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "割る": {
+    "same_kanji": [
+      "割れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "導く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "現れる": {
+    "same_kanji": [
+      "現す"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "呼ぶ": {
+    "same_kanji": [
+      "呼ばれる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "検査する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "挙げる": {
+    "same_kanji": [
+      "挙がる"
+    ],
+    "same_kana": [
+      "上げる",
+      "揚げる"
+    ],
+    "same_meaning": []
+  },
+  "理解する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "解く": {
+    "same_kanji": [
+      "解ける"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "演ずる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "確認する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "済ます": {
+    "same_kanji": [
+      "済む"
+    ],
+    "same_kana": [
+      "澄ます"
+    ],
+    "same_meaning": []
+  },
+  "判断する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "保護する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "裁く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "備える": {
+    "same_kanji": [],
+    "same_kana": [
+      "供える"
+    ],
+    "same_meaning": []
+  },
+  "張る": {
+    "same_kanji": [],
+    "same_kana": [
+      "貼る"
+    ],
+    "same_meaning": []
+  },
+  "秀でる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "批判する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "増やす": {
+    "same_kanji": [
+      "増える",
+      "増す"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "断つ": {
+    "same_kanji": [
+      "断る"
+    ],
+    "same_kana": [
+      "立つ",
+      "建つ",
+      "経つ",
+      "絶つ"
+    ],
+    "same_meaning": []
+  },
+  "心得る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "提案する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "寝坊する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "触る": {
+    "same_kanji": [
+      "触れる"
+    ],
+    "same_kana": [
+      "障る"
+    ],
+    "same_meaning": []
+  },
+  "無視する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "差す": {
+    "same_kanji": [],
+    "same_kana": [
+      "指す",
+      "刺す"
+    ],
+    "same_meaning": []
+  },
+  "量る": {
+    "same_kanji": [],
+    "same_kana": [
+      "測る",
+      "謀る",
+      "諮る"
+    ],
+    "same_meaning": []
+  },
+  "述べる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "供える": {
+    "same_kanji": [],
+    "same_kana": [
+      "備える"
+    ],
+    "same_meaning": []
+  },
+  "援助する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "応援する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "燃やす": {
+    "same_kanji": [
+      "燃える"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "違う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "営業する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "担ぐ": {
+    "same_kanji": [
+      "担う"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "指差す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "祝う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "届く": {
+    "same_kanji": [
+      "届ける"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "載る": {
+    "same_kanji": [
+      "載せる"
+    ],
+    "same_kana": [
+      "乗る"
+    ],
+    "same_meaning": []
+  },
+  "発展する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "支援する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "吸収する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "抜く": {
+    "same_kanji": [
+      "抜ける"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "渡る": {
+    "same_kanji": [
+      "渡す"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "補う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "構う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "属する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "巻く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "捜す": {
+    "same_kanji": [],
+    "same_kana": [
+      "探す"
+    ],
+    "same_meaning": []
+  },
+  "替える": {
+    "same_kanji": [
+      "替わる"
+    ],
+    "same_kana": [
+      "代える",
+      "返る",
+      "変える",
+      "帰る",
+      "換える"
+    ],
+    "same_meaning": []
+  },
+  "隠す": {
+    "same_kanji": [
+      "隠れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "掛ける": {
+    "same_kanji": [
+      "掛かる"
+    ],
+    "same_kana": [
+      "欠ける",
+      "懸ける",
+      "駆ける",
+      "賭ける",
+      "翔る"
+    ],
+    "same_meaning": []
+  },
+  "見渡す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "増す": {
+    "same_kanji": [
+      "増える",
+      "増やす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "限る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "割れる": {
+    "same_kanji": [
+      "割る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "準備する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "頑張る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "捕まる": {
+    "same_kanji": [
+      "捕える"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "与える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "含む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "渡す": {
+    "same_kanji": [
+      "渡る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "響く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "投票する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "訴える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "効く": {
+    "same_kanji": [],
+    "same_kana": [
+      "聞く",
+      "利く",
+      "聴く"
+    ],
+    "same_meaning": []
+  },
+  "慣れる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "絞る": {
+    "same_kanji": [],
+    "same_kana": [
+      "搾る"
+    ],
+    "same_meaning": []
+  },
+  "替わる": {
+    "same_kanji": [
+      "替える"
+    ],
+    "same_kana": [
+      "代わる",
+      "変わる"
+    ],
+    "same_meaning": []
+  },
+  "呼ばれる": {
+    "same_kanji": [
+      "呼ぶ"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "現す": {
+    "same_kanji": [
+      "現れる"
+    ],
+    "same_kana": [
+      "表す"
+    ],
+    "same_meaning": []
+  },
+  "居る": {
+    "same_kanji": [],
+    "same_kana": [
+      "要る"
+    ],
+    "same_meaning": []
+  },
+  "収める": {
+    "same_kanji": [],
+    "same_kana": [
+      "納める"
+    ],
+    "same_meaning": []
+  },
+  "載せる": {
+    "same_kanji": [
+      "載る"
+    ],
+    "same_kana": [
+      "乗せる"
+    ],
+    "same_meaning": []
+  },
+  "占める": {
+    "same_kanji": [],
+    "same_kana": [
+      "締める",
+      "閉める",
+      "湿る"
+    ],
+    "same_meaning": []
+  },
+  "届ける": {
+    "same_kanji": [
+      "届く"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "差別する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "差し上げる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "従う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "担う": {
+    "same_kanji": [
+      "担ぐ"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "燃える": {
+    "same_kanji": [
+      "燃やす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "触れる": {
+    "same_kanji": [
+      "触る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "検討する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "貯える": {
+    "same_kanji": [],
+    "same_kana": [
+      "蓄える"
+    ],
+    "same_meaning": []
+  },
+  "造る": {
+    "same_kanji": [],
+    "same_kana": [
+      "作る"
+    ],
+    "same_meaning": []
+  },
+  "過ごす": {
+    "same_kanji": [
+      "過ぎる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "狭める": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "燃え付く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "刺す": {
+    "same_kanji": [],
+    "same_kana": [
+      "指す",
+      "差す"
+    ],
+    "same_meaning": []
+  },
+  "励ます": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "振る": {
+    "same_kanji": [],
+    "same_kana": [
+      "降る"
+    ],
+    "same_meaning": []
+  },
+  "突く": {
+    "same_kanji": [],
+    "same_kana": [
+      "付く",
+      "着く"
+    ],
+    "same_meaning": []
+  },
+  "輸出する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "障る": {
+    "same_kanji": [],
+    "same_kana": [
+      "触る"
+    ],
+    "same_meaning": []
+  },
+  "見抜く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "捕える": {
+    "same_kanji": [
+      "捕まる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "掛かる": {
+    "same_kanji": [
+      "掛ける"
+    ],
+    "same_kana": [
+      "懸かる"
+    ],
+    "same_meaning": []
+  },
+  "就く": {
+    "same_kanji": [],
+    "same_kana": [
+      "付く",
+      "着く",
+      "突く"
+    ],
+    "same_meaning": []
+  },
+  "悩む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "抜き出す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "招く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "招待する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "昇る": {
+    "same_kanji": [],
+    "same_kana": [
+      "上る",
+      "登る"
+    ],
+    "same_meaning": []
+  },
+  "取り替える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "締める": {
+    "same_kanji": [
+      "締まる"
+    ],
+    "same_kana": [
+      "占める",
+      "閉める",
+      "湿る"
+    ],
+    "same_meaning": []
+  },
+  "織る": {
+    "same_kanji": [],
+    "same_kana": [
+      "折る"
+    ],
+    "same_meaning": []
+  },
+  "誘う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "貸す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "迫る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "退院する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "迷う": {
+    "same_kanji": [
+      "迷わす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "逮捕する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "手渡す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "屈む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "抜ける": {
+    "same_kanji": [
+      "抜く"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "隠れる": {
+    "same_kanji": [
+      "隠す"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "怒る": {
+    "same_kanji": [],
+    "same_kana": [
+      "起こる"
+    ],
+    "same_meaning": []
+  },
+  "怒鳴る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "惑う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "極める": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "締結する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "訪ねる": {
+    "same_kanji": [
+      "訪れる"
+    ],
+    "same_kana": [
+      "尋ねる"
+    ],
+    "same_meaning": []
+  },
+  "退く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "隠居する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "回復する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "面接する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "撃つ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "攻める": {
+    "same_kanji": [],
+    "same_kana": [
+      "責める"
+    ],
+    "same_meaning": []
+  },
+  "移す": {
+    "same_kanji": [
+      "移る"
+    ],
+    "same_kana": [
+      "写す",
+      "映す"
+    ],
+    "same_meaning": []
+  },
+  "絶つ": {
+    "same_kanji": [
+      "絶える",
+      "絶やす"
+    ],
+    "same_kana": [
+      "立つ",
+      "建つ",
+      "経つ",
+      "断つ"
+    ],
+    "same_meaning": []
+  },
+  "比較する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "間違える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "並ぶ": {
+    "same_kanji": [
+      "並べる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "凍る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "逆らう": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "輸入する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "略す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "道に迷う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "乾く": {
+    "same_kanji": [
+      "乾かす"
+    ],
+    "same_kana": [
+      "渇く"
+    ],
+    "same_meaning": []
+  },
+  "見極める": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "積もる": {
+    "same_kanji": [
+      "積む"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "締まる": {
+    "same_kanji": [
+      "締める"
+    ],
+    "same_kana": [
+      "閉まる"
+    ],
+    "same_meaning": []
+  },
+  "診る": {
+    "same_kanji": [],
+    "same_kana": [
+      "見る",
+      "観る"
+    ],
+    "same_meaning": []
+  },
+  "請ける": {
+    "same_kanji": [],
+    "same_kana": [
+      "受ける"
+    ],
+    "same_meaning": []
+  },
+  "怒らせる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "促す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "壊す": {
+    "same_kanji": [
+      "壊れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "添える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "痛む": {
+    "same_kanji": [],
+    "same_kana": [
+      "傷む"
+    ],
+    "same_meaning": []
+  },
+  "眠る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "詰める": {
+    "same_kanji": [
+      "詰まる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "詰まる": {
+    "same_kanji": [
+      "詰める"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "誘惑する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "構える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "訪れる": {
+    "same_kanji": [
+      "訪ねる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "寄る": {
+    "same_kanji": [],
+    "same_kana": [
+      "拠る"
+    ],
+    "same_meaning": []
+  },
+  "腹立つ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "押す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "冷やす": {
+    "same_kanji": [
+      "冷える"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "並べる": {
+    "same_kanji": [
+      "並ぶ"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "延期する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "延ばす": {
+    "same_kanji": [],
+    "same_kana": [
+      "伸ばす"
+    ],
+    "same_meaning": []
+  },
+  "渇く": {
+    "same_kanji": [],
+    "same_kana": [
+      "乾く"
+    ],
+    "same_meaning": []
+  },
+  "照らす": {
+    "same_kanji": [
+      "照れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "遊ぶ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "騒ぐ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "登録する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "攻撃する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "撮る": {
+    "same_kanji": [],
+    "same_kana": [
+      "取る",
+      "採る",
+      "執る"
+    ],
+    "same_meaning": []
+  },
+  "診断する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "浮く": {
+    "same_kanji": [
+      "浮かれる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "漏れる": {
+    "same_kanji": [
+      "漏らす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "照れる": {
+    "same_kanji": [
+      "照らす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "盗む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "絶える": {
+    "same_kanji": [
+      "絶つ",
+      "絶やす"
+    ],
+    "same_kana": [
+      "耐える",
+      "堪える"
+    ],
+    "same_meaning": []
+  },
+  "越える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "預ける": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "飾る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "移る": {
+    "same_kanji": [
+      "移す"
+    ],
+    "same_kana": [
+      "写る",
+      "映る"
+    ],
+    "same_meaning": []
+  },
+  "迷わす": {
+    "same_kanji": [
+      "迷う"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "積む": {
+    "same_kanji": [
+      "積もる"
+    ],
+    "same_kana": [
+      "摘む"
+    ],
+    "same_meaning": []
+  },
+  "催促する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "見詰める": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "絶やす": {
+    "same_kanji": [
+      "絶つ",
+      "絶える"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "緊張する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "編む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "除く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "驚く": {
+    "same_kanji": [
+      "驚かす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "嘆く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "救う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "富む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "怖がる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "恐れる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "主催する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "思い詰める": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "離れる": {
+    "same_kanji": [
+      "離す"
+    ],
+    "same_kana": [
+      "放れる"
+    ],
+    "same_meaning": []
+  },
+  "壊れる": {
+    "same_kanji": [
+      "壊す"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "尋ねる": {
+    "same_kanji": [],
+    "same_kana": [
+      "訪ねる"
+    ],
+    "same_meaning": []
+  },
+  "掃く": {
+    "same_kanji": [],
+    "same_kana": [
+      "履く",
+      "吐く"
+    ],
+    "same_meaning": []
+  },
+  "散る": {
+    "same_kanji": [
+      "散らかす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "似る": {
+    "same_kanji": [],
+    "same_kana": [
+      "煮る"
+    ],
+    "same_meaning": []
+  },
+  "探す": {
+    "same_kanji": [],
+    "same_kana": [
+      "捜す"
+    ],
+    "same_meaning": []
+  },
+  "結婚する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "冷える": {
+    "same_kanji": [
+      "冷やす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "採る": {
+    "same_kanji": [],
+    "same_kana": [
+      "取る",
+      "撮る",
+      "執る"
+    ],
+    "same_meaning": []
+  },
+  "飼う": {
+    "same_kanji": [],
+    "same_kana": [
+      "買う"
+    ],
+    "same_meaning": []
+  },
+  "傷める": {
+    "same_kanji": [
+      "傷つく",
+      "傷つける",
+      "傷む"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "捨てる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "訳す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "延長する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "越す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "浮かれる": {
+    "same_kanji": [
+      "浮く"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "火照る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "出版する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "購読する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "迎える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "込む": {
+    "same_kanji": [
+      "込める"
+    ],
+    "same_kana": [
+      "混む"
+    ],
+    "same_meaning": []
+  },
+  "染める": {
+    "same_kanji": [
+      "染まる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "汚れる": {
+    "same_kanji": [
+      "汚す"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "秘める": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "漏らす": {
+    "same_kanji": [
+      "漏れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "似合う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "驚かす": {
+    "same_kanji": [
+      "驚く"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "掃除する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "散らかす": {
+    "same_kanji": [
+      "散る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "編集する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "閉める": {
+    "same_kanji": [
+      "閉じる",
+      "閉まる"
+    ],
+    "same_kana": [
+      "占める",
+      "締める",
+      "湿る"
+    ],
+    "same_meaning": []
+  },
+  "垂らす": {
+    "same_kanji": [
+      "垂れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "拡がる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "操る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "異なる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "盛る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "蒸れる": {
+    "same_kanji": [],
+    "same_kana": [
+      "群れる"
+    ],
+    "same_meaning": []
+  },
+  "裏切る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "乾かす": {
+    "same_kanji": [
+      "乾く"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "離す": {
+    "same_kanji": [
+      "離れる"
+    ],
+    "same_kana": [
+      "話す",
+      "放す"
+    ],
+    "same_meaning": []
+  },
+  "散歩する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "暮らす": {
+    "same_kanji": [
+      "暮れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "熟れる": {
+    "same_kanji": [],
+    "same_kana": [
+      "売れる"
+    ],
+    "same_meaning": []
+  },
+  "納める": {
+    "same_kanji": [
+      "納まる"
+    ],
+    "same_kana": [
+      "収める"
+    ],
+    "same_meaning": []
+  },
+  "傷つく": {
+    "same_kanji": [
+      "傷める",
+      "傷つける",
+      "傷む"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "傷つける": {
+    "same_kanji": [
+      "傷める",
+      "傷つく",
+      "傷む"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "汚す": {
+    "same_kanji": [
+      "汚れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "賛成する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "降る": {
+    "same_kanji": [
+      "降りる",
+      "降ろす"
+    ],
+    "same_kana": [
+      "振る"
+    ],
+    "same_meaning": []
+  },
+  "薦める": {
+    "same_kanji": [],
+    "same_kana": [
+      "勧める"
+    ],
+    "same_meaning": []
+  },
+  "発揮する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "勤める": {
+    "same_kanji": [],
+    "same_kana": [
+      "務める"
+    ],
+    "same_meaning": []
+  },
+  "発射する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "拝む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "引っ越す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "追い越す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "投げ捨てる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "込める": {
+    "same_kanji": [
+      "込む"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "申し込む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "書き込む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "詰め込む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "染まる": {
+    "same_kanji": [
+      "染める"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "吐く": {
+    "same_kanji": [],
+    "same_kana": [
+      "履く",
+      "掃く"
+    ],
+    "same_meaning": []
+  },
+  "縮まる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "沿う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "承る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "損なう": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "腐る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "刻む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "傷む": {
+    "same_kanji": [
+      "傷める",
+      "傷つく",
+      "傷つける"
+    ],
+    "same_kana": [
+      "痛む"
+    ],
+    "same_meaning": []
+  },
+  "拝見する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "破る": {
+    "same_kanji": [
+      "破れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "閉じる": {
+    "same_kanji": [
+      "閉める",
+      "閉まる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "垂れる": {
+    "same_kanji": [
+      "垂らす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "尊敬する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "装う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "測る": {
+    "same_kanji": [],
+    "same_kana": [
+      "量る",
+      "謀る",
+      "諮る"
+    ],
+    "same_meaning": []
+  },
+  "酔う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "滞る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "宣言する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "盛り上げる": {
+    "same_kanji": [
+      "盛り上がる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "閉まる": {
+    "same_kanji": [
+      "閉める",
+      "閉じる"
+    ],
+    "same_kana": [
+      "締まる"
+    ],
+    "same_meaning": []
+  },
+  "納まる": {
+    "same_kanji": [
+      "納める"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "否定する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "蒸し返す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "遅れる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "払う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "暮れる": {
+    "same_kanji": [
+      "暮らす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "廃れる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "降りる": {
+    "same_kanji": [
+      "降る",
+      "降ろす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "吐き出す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "甘く見る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "摘む": {
+    "same_kanji": [],
+    "same_kana": [
+      "積む"
+    ],
+    "same_meaning": []
+  },
+  "摘発する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "継ぐ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "舞う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "踏む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "頼む": {
+    "same_kanji": [
+      "頼る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "換える": {
+    "same_kanji": [],
+    "same_kana": [
+      "代える",
+      "返る",
+      "変える",
+      "帰る",
+      "替える"
+    ],
+    "same_meaning": []
+  },
+  "損害する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "伸びる": {
+    "same_kanji": [
+      "伸ばす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "及ぶ": {
+    "same_kanji": [
+      "及ぼす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "降参する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "紹介する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "恥ずかしがる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "跳ぶ": {
+    "same_kanji": [
+      "跳ねる"
+    ],
+    "same_kana": [
+      "飛ぶ"
+    ],
+    "same_meaning": []
+  },
+  "募る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "患う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "戻る": {
+    "same_kanji": [
+      "戻す"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "反抗する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "弾む": {
+    "same_kanji": [
+      "弾く"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "葬る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "盛り上がる": {
+    "same_kanji": [
+      "盛り上げる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "償う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "執る": {
+    "same_kanji": [],
+    "same_kana": [
+      "取る",
+      "撮る",
+      "採る"
+    ],
+    "same_meaning": []
+  },
+  "崩す": {
+    "same_kanji": [
+      "崩れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "戻す": {
+    "same_kanji": [
+      "戻る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "対向する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "聴く": {
+    "same_kanji": [],
+    "same_kana": [
+      "聞く",
+      "利く",
+      "効く"
+    ],
+    "same_meaning": []
+  },
+  "遣う": {
+    "same_kanji": [],
+    "same_kana": [
+      "使う"
+    ],
+    "same_meaning": []
+  },
+  "闘う": {
+    "same_kanji": [],
+    "same_kana": [
+      "戦う"
+    ],
+    "same_meaning": []
+  },
+  "削る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "恵む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "抱く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "掲げる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "臨む": {
+    "same_kanji": [],
+    "same_kana": [
+      "望む"
+    ],
+    "same_meaning": []
+  },
+  "抵抗する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "破れる": {
+    "same_kanji": [
+      "破る"
+    ],
+    "same_kana": [
+      "敗れる"
+    ],
+    "same_meaning": []
+  },
+  "乗り換える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "指摘する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "頼る": {
+    "same_kanji": [
+      "頼む"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "避ける": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "刊行する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "伴う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "緩む": {
+    "same_kanji": [
+      "緩める"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "賄う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "踏み込む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "廃止する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "維持する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "繰る": {
+    "same_kanji": [],
+    "same_kana": [
+      "来る"
+    ],
+    "same_meaning": []
+  },
+  "妊娠する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "致す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "一致する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "同伴する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "傾く": {
+    "same_kanji": [
+      "傾ける"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "懸ける": {
+    "same_kanji": [
+      "懸かる"
+    ],
+    "same_kana": [
+      "欠ける",
+      "掛ける",
+      "駆ける",
+      "賭ける",
+      "翔る"
+    ],
+    "same_meaning": []
+  },
+  "扱う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "描く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "託す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "贈る": {
+    "same_kanji": [],
+    "same_kana": [
+      "送る"
+    ],
+    "same_meaning": []
+  },
+  "逃げる": {
+    "same_kanji": [
+      "逃す",
+      "逃れる",
+      "逃がす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "伸ばす": {
+    "same_kanji": [
+      "伸びる"
+    ],
+    "same_kana": [
+      "延ばす"
+    ],
+    "same_meaning": []
+  },
+  "及ぼす": {
+    "same_kanji": [
+      "及ぶ"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "超す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "降ろす": {
+    "same_kanji": [
+      "降る",
+      "降りる"
+    ],
+    "same_kana": [
+      "卸す"
+    ],
+    "same_meaning": []
+  },
+  "崩れる": {
+    "same_kanji": [
+      "崩す"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "払い戻す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "雇う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "免れる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "勧める": {
+    "same_kanji": [],
+    "same_kana": [
+      "薦める"
+    ],
+    "same_meaning": []
+  },
+  "御覧になる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "躍る": {
+    "same_kanji": [],
+    "same_kana": [
+      "踊る"
+    ],
+    "same_meaning": []
+  },
+  "跳ねる": {
+    "same_kanji": [
+      "跳ぶ"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "応募する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "弾く": {
+    "same_kanji": [
+      "弾む"
+    ],
+    "same_kana": [
+      "引く"
+    ],
+    "same_meaning": []
+  },
+  "削除する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "狙う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "取り戻す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "解雇する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "奪う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "埋める": {
+    "same_kanji": [
+      "埋もれる",
+      "埋まる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "慎む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "拒む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "譲る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "掲載する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "吹く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "繰り返す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "遠慮する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "懸かる": {
+    "same_kanji": [
+      "懸ける"
+    ],
+    "same_kana": [
+      "掛かる"
+    ],
+    "same_meaning": []
+  },
+  "逃す": {
+    "same_kanji": [
+      "逃げる",
+      "逃れる",
+      "逃がす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "兼ねる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "携わる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "殖える": {
+    "same_kanji": [],
+    "same_kana": [
+      "増える"
+    ],
+    "same_meaning": []
+  },
+  "巡る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "戒める": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "避難する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "傾ける": {
+    "same_kanji": [
+      "傾く"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "緩める": {
+    "same_kanji": [
+      "緩む"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "取り扱う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "選択する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "称える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "顧みる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "唱える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "駆ける": {
+    "same_kanji": [],
+    "same_kana": [
+      "欠ける",
+      "掛ける",
+      "懸ける",
+      "賭ける",
+      "翔る"
+    ],
+    "same_meaning": []
+  },
+  "敷く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "茂る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "褒める": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "透ける": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "控える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "群れる": {
+    "same_kanji": [
+      "群がる"
+    ],
+    "same_kana": [
+      "蒸れる"
+    ],
+    "same_meaning": []
+  },
+  "伺う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "辞儀する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "帰郷する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "偽る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "埋め合わせる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "埋もれる": {
+    "same_kanji": [
+      "埋める",
+      "埋まる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "充電する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "徹する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "拠る": {
+    "same_kanji": [],
+    "same_kana": [
+      "寄る"
+    ],
+    "same_meaning": []
+  },
+  "潜む": {
+    "same_kanji": [
+      "潜る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "包む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "至る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "侵す": {
+    "same_kanji": [],
+    "same_kana": [
+      "犯す"
+    ],
+    "same_meaning": []
+  },
+  "駆け込む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "括る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "挑む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "駆け出す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "駆け回る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "掘る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "揚げる": {
+    "same_kanji": [],
+    "same_kana": [
+      "上げる",
+      "挙げる"
+    ],
+    "same_meaning": []
+  },
+  "握る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "揺る": {
+    "same_kanji": [
+      "揺れる",
+      "揺する",
+      "揺らぐ"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "泊まる": {
+    "same_kanji": [
+      "泊める"
+    ],
+    "same_kana": [
+      "止まる"
+    ],
+    "same_meaning": []
+  },
+  "滑る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "焦げる": {
+    "same_kanji": [
+      "焦る",
+      "焦がす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "紛らす": {
+    "same_kanji": [
+      "紛れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "荒れる": {
+    "same_kanji": [
+      "荒らす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "吹き出す": {
+    "same_kanji": [],
+    "same_kana": [
+      "噴き出す"
+    ],
+    "same_meaning": []
+  },
+  "吹き込む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "口笛を吹く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "薄める": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "吹き飛ばす": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "透き通る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "逃れる": {
+    "same_kanji": [
+      "逃げる",
+      "逃す",
+      "逃がす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "逃がす": {
+    "same_kanji": [
+      "逃げる",
+      "逃す",
+      "逃れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "威張る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "慰める": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "懲りる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "沈める": {
+    "same_kanji": [
+      "沈む"
+    ],
+    "same_kana": [
+      "鎮める"
+    ],
+    "same_meaning": []
+  },
+  "沈む": {
+    "same_kanji": [
+      "沈める"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "滅ぼす": {
+    "same_kanji": [
+      "滅びる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "裂く": {
+    "same_kanji": [],
+    "same_kana": [
+      "咲く"
+    ],
+    "same_meaning": []
+  },
+  "襲う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "刷る": {
+    "same_kanji": [],
+    "same_kana": [
+      "擦る"
+    ],
+    "same_meaning": []
+  },
+  "擦れる": {
+    "same_kanji": [
+      "擦る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "潜る": {
+    "same_kanji": [
+      "潜む"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "群がる": {
+    "same_kanji": [
+      "群れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "埋まる": {
+    "same_kanji": [
+      "埋める",
+      "埋もれる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "克服する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "揺さぶる": {
+    "same_kanji": [
+      "揺る",
+      "揺れる",
+      "揺する",
+      "揺らぐ"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "泊める": {
+    "same_kanji": [
+      "泊まる"
+    ],
+    "same_kana": [
+      "止める"
+    ],
+    "same_meaning": []
+  },
+  "忍ぶ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "釣る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "揺れる": {
+    "same_kanji": [
+      "揺る",
+      "揺する",
+      "揺らぐ"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "揺する": {
+    "same_kanji": [
+      "揺る",
+      "揺れる",
+      "揺らぐ"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "焦る": {
+    "same_kanji": [
+      "焦げる",
+      "焦がす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "焦がす": {
+    "same_kanji": [
+      "焦げる",
+      "焦る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "紛れる": {
+    "same_kanji": [
+      "紛らす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "叫ぶ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "叱る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "見逃す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "取り逃がす": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "荒らす": {
+    "same_kanji": [
+      "荒れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "引き裂く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "稼ぐ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "澄む": {
+    "same_kanji": [
+      "澄ます"
+    ],
+    "same_kana": [
+      "住む",
+      "済む"
+    ],
+    "same_meaning": []
+  },
+  "襲撃する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "滅びる": {
+    "same_kanji": [
+      "滅ぼす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "曇る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "賭ける": {
+    "same_kanji": [],
+    "same_kana": [
+      "欠ける",
+      "掛ける",
+      "懸ける",
+      "駆ける",
+      "翔る"
+    ],
+    "same_meaning": []
+  },
+  "磨く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "嫁ぐ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "狂う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "呪う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "眺める": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "疲れる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "湿る": {
+    "same_kanji": [
+      "湿らせる"
+    ],
+    "same_kana": [
+      "占める",
+      "締める",
+      "閉める"
+    ],
+    "same_meaning": []
+  },
+  "擦る": {
+    "same_kanji": [
+      "擦れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "翔る": {
+    "same_kanji": [],
+    "same_kana": [
+      "欠ける",
+      "掛ける",
+      "懸ける",
+      "駆ける",
+      "賭ける"
+    ],
+    "same_meaning": []
+  },
+  "斬る": {
+    "same_kanji": [],
+    "same_kana": [
+      "切る",
+      "着る"
+    ],
+    "same_meaning": []
+  },
+  "鍛える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "誇る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "黙る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "揺らぐ": {
+    "same_kanji": [
+      "揺る",
+      "揺れる",
+      "揺する"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "零す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "瞬く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "阻む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "湿らせる": {
+    "same_kanji": [
+      "湿る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "欺く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "恨む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "憩う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "扇ぐ": {
+    "same_kanji": [],
+    "same_kana": [
+      "仰ぐ"
+    ],
+    "same_meaning": []
+  },
+  "澄ます": {
+    "same_kanji": [
+      "澄む"
+    ],
+    "same_kana": [
+      "済ます"
+    ],
+    "same_meaning": []
+  },
+  "砕く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "粘る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "憎む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "滴る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "炊く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "歯を磨く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "塗る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "殴る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "辱める": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "飢える": {
+    "same_kanji": [],
+    "same_kana": [
+      "植える"
+    ],
+    "same_meaning": []
+  },
+  "彩る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "溶かす": {
+    "same_kanji": [
+      "溶ける"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "耐える": {
+    "same_kanji": [],
+    "same_kana": [
+      "絶える",
+      "堪える"
+    ],
+    "same_meaning": []
+  },
+  "踊る": {
+    "same_kanji": [],
+    "same_kana": [
+      "躍る"
+    ],
+    "same_meaning": []
+  },
+  "輝く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "咲く": {
+    "same_kanji": [],
+    "same_kana": [
+      "裂く"
+    ],
+    "same_meaning": []
+  },
+  "貼る": {
+    "same_kanji": [],
+    "same_kana": [
+      "張る"
+    ],
+    "same_meaning": []
+  },
+  "涼む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "蓄える": {
+    "same_kanji": [],
+    "same_kana": [
+      "貯える"
+    ],
+    "same_meaning": []
+  },
+  "尽きる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "培う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "挿入する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "悟る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "浸る": {
+    "same_kanji": [
+      "浸す"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "覆る": {
+    "same_kanji": [
+      "覆う"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "煮る": {
+    "same_kanji": [],
+    "same_kana": [
+      "似る"
+    ],
+    "same_meaning": []
+  },
+  "謀る": {
+    "same_kanji": [],
+    "same_kana": [
+      "量る",
+      "測る",
+      "諮る"
+    ],
+    "same_meaning": []
+  },
+  "哀れむ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "刈る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "刈り取る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "隔てる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "潤う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "衰える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "劣る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "溶ける": {
+    "same_kanji": [
+      "溶かす"
+    ],
+    "same_kana": [
+      "解ける"
+    ],
+    "same_meaning": []
+  },
+  "漂う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "翻る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "仰ぐ": {
+    "same_kanji": [],
+    "same_kana": [
+      "扇ぐ"
+    ],
+    "same_meaning": []
+  },
+  "脅す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "尽くす": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "悔やむ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "遂げる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "諮る": {
+    "same_kanji": [],
+    "same_kana": [
+      "量る",
+      "測る",
+      "謀る"
+    ],
+    "same_meaning": []
+  },
+  "搬送": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "灯る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "召す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "喚く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "挟む": {
+    "same_kanji": [
+      "挟まる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "沸く": {
+    "same_kanji": [
+      "沸かす"
+    ],
+    "same_kana": [
+      "湧く"
+    ],
+    "same_meaning": []
+  },
+  "枯れる": {
+    "same_kanji": [
+      "枯らす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "浸す": {
+    "same_kanji": [
+      "浸る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "耕す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "覆う": {
+    "same_kanji": [
+      "覆る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "頂く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "擁する": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "偏る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "怠る": {
+    "same_kanji": [
+      "怠ける"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "貫く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "陥る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "膨れる": {
+    "same_kanji": [
+      "膨らむ"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "遭う": {
+    "same_kanji": [],
+    "same_kana": [
+      "会う",
+      "合う"
+    ],
+    "same_meaning": []
+  },
+  "召し上がる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "寛ぐ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "挟まる": {
+    "same_kanji": [
+      "挟む"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "据える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "沸かす": {
+    "same_kanji": [
+      "沸く"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "肯く": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "枯らす": {
+    "same_kanji": [
+      "枯れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "諭す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "虐げる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "卸す": {
+    "same_kanji": [],
+    "same_kana": [
+      "降ろす"
+    ],
+    "same_meaning": []
+  },
+  "呆ける": {
+    "same_kanji": [
+      "呆れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "噴き出す": {
+    "same_kanji": [],
+    "same_kana": [
+      "吹き出す"
+    ],
+    "same_meaning": []
+  },
+  "怠ける": {
+    "same_kanji": [
+      "怠る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "逸らす": {
+    "same_kanji": [
+      "逸れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "膨らむ": {
+    "same_kanji": [
+      "膨れる"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "貫き通す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "惜しむ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "憂える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "鎮める": {
+    "same_kanji": [
+      "鎮まる"
+    ],
+    "same_kana": [
+      "沈める"
+    ],
+    "same_meaning": []
+  },
+  "凝る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "据え付ける": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "伏せる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "呆れる": {
+    "same_kanji": [
+      "呆ける"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "縫う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "逸れる": {
+    "same_kanji": [
+      "逸らす"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "搾る": {
+    "same_kanji": [],
+    "same_kana": [
+      "絞る"
+    ],
+    "same_meaning": []
+  },
+  "縛る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "飽きる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "漬ける": {
+    "same_kanji": [
+      "漬かる"
+    ],
+    "same_kana": [
+      "付ける",
+      "点ける",
+      "着ける"
+    ],
+    "same_meaning": []
+  },
+  "鎮まる": {
+    "same_kanji": [
+      "鎮める"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "弔う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "遮る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "醸す": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "凌ぐ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "朽ちる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "酌む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "飽くまでも": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "呆れ返る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "戯れる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "濁す": {
+    "same_kanji": [
+      "濁る"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "漬かる": {
+    "same_kanji": [
+      "漬ける"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "凹む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "憧れる": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "紡ぐ": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "詠む": {
+    "same_kanji": [],
+    "same_kana": [
+      "読む"
+    ],
+    "same_meaning": []
+  },
+  "侮る": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "堪える": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "蔑む": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "湧く": {
+    "same_kanji": [],
+    "same_kana": [
+      "沸く"
+    ],
+    "same_meaning": []
+  },
+  "唄う": {
+    "same_kanji": [],
+    "same_kana": [
+      "歌う"
+    ],
+    "same_meaning": []
+  },
+  "慕う": {
+    "same_kanji": [],
+    "same_kana": [],
+    "same_meaning": []
+  },
+  "濁る": {
+    "same_kanji": [
+      "濁す"
+    ],
+    "same_kana": [],
+    "same_meaning": []
+  }
+}
