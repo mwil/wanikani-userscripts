@@ -12,11 +12,11 @@ function WK_Niai()
         "minify": false,
         "edit_mode": false,
         "sources": [
-            {"id": "manual_db",      "base_score": 0.9},
-            {"id": "stroke_dist_db", "base_score": 0},
-            {"id": "yl_radical_db",  "base_score": 0},
-            {"id": "keisei_db",      "base_score": 0.5},
             {"id": "old_script_db",  "base_score": 0.4},
+            {"id": "yl_radical_db",  "base_score": 0},
+            {"id": "stroke_dist_db", "base_score": 0},
+            {"id": "keisei_db",      "base_score": 0.5},
+            {"id": "manual_db",      "base_score": 0.8},
             {"id": "override_db",    "base_score": 0.0}
         ],
         "user_level": 99
@@ -106,6 +106,8 @@ function WK_Niai()
         $(`#niai_reset_similar_btn`).on(`click`, this.resetSimilarKanji.bind(this));
         $(`#add_kanji_btn`).on(`click`, this.addSimilarKanji.bind(this));
         // #####################################################################
+        $(`#niai_add_similar_input`).on(`input`, this.onSimilarInput.bind(this));
+        // Keep dropdown open when acting inside
         $(document).on(`click`, `#add_kanji_dropdown .dropdown-menu`,
            (e) => e.stopPropagation());
     };

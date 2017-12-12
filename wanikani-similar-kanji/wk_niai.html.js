@@ -9,13 +9,13 @@
     // Character item to be included in a character grid
     // #########################################################################
     WK_Niai.prototype.gen_item_chargrid = ({kanji, readings, meanings, is_locked=``, badge=`item-badge`, href=`javascript:;`, kanji_id=``}) =>
-       `<li id="${kanji_id}" class="${is_locked} character-item">
+       `<li id="${kanji_id}" class="${is_locked} character-item" data-kanji="${kanji}">
             <span lang="ja" class="${badge}" data-kanji="${kanji}"></span>
             <a class="niai_similar_link" href="${href}">
                 <span class="character" lang="ja">${kanji}</span>
                 <ul>
-                    <li>${readings[0]}</li>
-                    <li>${meanings[0]}</li>
+                    <li class="niai_reading">${readings[0]}</li>
+                    <li class="niai_meaning">${meanings[0]}</li>
                 </ul>
             </a>
         </li>`;
@@ -57,12 +57,23 @@
                                      <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                                          <span class="icon-plus"></span>
                                      </a>
-                                     <ul class="single-character-grid dropdown-menu">
+                                     <ul class="dropdown-menu text-center">
                                         <li><span class="input-prepend">
                                                 <span class="add-on">漢</span>
-                                                <input id="add_kanji_input" maxlength="1" class="span2" type="text" placeholder="Enter Kanji Here">
+                                                <input id="niai_add_similar_input" maxlength="1" class="span2" type="text" placeholder="Enter Kanji Here">
                                             </span>
                                         </li>
+                                        <li>
+                                            <ul class="single-character-grid">
+                                                ${this.gen_item_chargrid({
+                                                    "kanji": "？",
+                                                    "readings": ["&nbsp;"],
+                                                    "meanings": ["Enter Kanji"],
+                                                    "kanji_id": "kanji-dropdown"
+                                                })}
+                                            </ul>
+                                        </li>
+                                        <li class="divider"></li>
                                         <li><a id="add_kanji_btn"><i class="icon-fixed-width icon-plus"></i> Add To Similar Kanji</a></li>
                                      </ul>
                                  </span>`)
@@ -186,32 +197,77 @@
     // #########################################################################
 
     // #########################################################################
+    WK_Niai.prototype.onSimilarInput = function(event)
+    {
+        const new_kanji = $(`#niai_add_similar_input`).val().trim();
+
+        if (!new_kanji || new_kanji.length > 1)
+        {
+            $(`#kanji-dropdown .character`).text(`？`);
+            $(`#kanji-dropdown .niai_reading`).text(``);
+            $(`#kanji-dropdown .niai_meaning`).text(`Enter Kanji`);
+            $(`#kanji-dropdown`)[0].dataset.kanji = ``;
+
+            return false;
+        }
+
+        if (!this.ndb.isKanjiInDB(new_kanji))
+        {
+            $(`#kanji-dropdown .character`).text(new_kanji);
+            $(`#kanji-dropdown .niai_reading`).text(``);
+            $(`#kanji-dropdown .niai_meaning`).text(`Not In WK!`);
+            $(`#kanji-dropdown`)[0].dataset.kanji = ``;
+
+            return false;
+        }
+
+        const kanji_item = this.ndb.getInfo(new_kanji);
+
+        $(`#kanji-dropdown .character`).text(new_kanji);
+        $(`#kanji-dropdown .niai_reading`).text(kanji_item.readings[0]);
+        $(`#kanji-dropdown .niai_meaning`).text(kanji_item.meanings[0]);
+        $(`#kanji-dropdown`)[0].dataset.kanji = new_kanji;
+
+        return false;
+    };
+    // #########################################################################
+
+    // #########################################################################
     WK_Niai.prototype.addSimilarKanji = function(event)
     {
         const kanji = this.wki.getSubject().kan;
-        const new_kanji = $(`#add_kanji_input`).val().trim();
+        const new_kanji = $(`#kanji-dropdown`)[0].dataset.kanji;
 
         if (!kanji || !new_kanji)
             return false;
-
-        // TODO:
-        // - clear field
-        // - close fold
 
         if (!(kanji in this.override_db))
             this.override_db[kanji] = [];
 
         let found = this.override_db[kanji].some(
-            (item) => (new_kanji === item.kan)
+            function(item)
+            {
+                if (new_kanji === item.kan)
+                    item.score = 1.0;
+
+                return (new_kanji === item.kan);
+            }
         );
 
         if (!found && this.ndb.isKanjiInDB(new_kanji))
             this.override_db[kanji].push({"kan": new_kanji, "score": 1.0});
 
+        console.log("found kanji", new_kanji, "found is", found, "and indb is", this.ndb.isKanjiInDB(new_kanji));
+
         GM_setValue(`override_db`, JSON.stringify(this.override_db));
         this.populateNiaiSection(kanji);
 
-        $(`#add_kanji_input`).val(``).focus();
+        $(`#niai_add_similar_input`).val(``).focus();
+        $(`#kanji-dropdown .character`).text(`？`);
+        $(`#kanji-dropdown .niai_reading`).text(``);
+        $(`#kanji-dropdown .niai_meaning`).text(`Enter Kanji`);
+
+        // $(`[data-toggle="dropdown"]`).parent().removeClass(`open`);
 
         return false;
     };

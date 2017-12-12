@@ -90,8 +90,6 @@ function NiaiDB()
             let result = Object.values(similar_kanji).sort(
                 (a, b) => 10*(a.locked - b.locked) + (b.score - a.score));
 
-            console.log("sort result is", result);
-
             return result.map((a) => a.kan);
         }
     };
