@@ -104,7 +104,8 @@ function WK_Niai()
         $(`#niai_add_similar_input`).on(`keydown`, function(event) {
             if (event.keyCode === 10 || event.keyCode === 13)
                 event.preventDefault();
-            return false;
+
+            return true;
         });
 
         // Keep dropdown open when acting inside

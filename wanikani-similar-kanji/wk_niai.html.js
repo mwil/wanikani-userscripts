@@ -58,11 +58,6 @@
                                          <span class="icon-plus"></span>
                                      </a>
                                      <ul class="dropdown-menu text-center note-niai">
-                                        <li><span class="input-prepend">
-                                                <span class="add-on">漢</span>
-                                                <textarea id="niai_add_similar_input" maxlength="1" rows="1" class="span2" type="text" placeholder="Enter Kanji Here"></textarea>
-                                            </span>
-                                        </li>
                                         <li>
                                             <ul class="single-character-grid">
                                                 ${this.gen_item_chargrid({
@@ -74,6 +69,11 @@
                                             </ul>
                                         </li>
                                         <li class="divider"></li>
+                                        <li><span class="input-prepend" style="margin-bottom: 0;">
+                                                <span class="add-on">漢</span>
+                                                <textarea id="niai_add_similar_input" maxlength="1" rows="1" class="span2" type="text" placeholder="Enter Kanji Here"></textarea>
+                                            </span>
+                                        </li>
                                         <li><a id="add_kanji_btn"><i class="icon-fixed-width icon-plus"></i> Add To Similar Kanji</a></li>
                                      </ul>
                                  </span>`)
@@ -204,14 +204,14 @@
         if (!new_kanji || new_kanji.length > 1)
         {
             $(`#kanji-dropdown .character`).text(`？`);
-            $(`#kanji-dropdown .niai_reading`).text(``);
+            $(`#kanji-dropdown .niai_reading`).html(`&nbsp;`);
             $(`#kanji-dropdown .niai_meaning`).text(`Enter Kanji`);
             $(`#kanji-dropdown`)[0].dataset.kanji = ``;
         }
         else if (!this.ndb.isKanjiInDB(new_kanji))
         {
             $(`#kanji-dropdown .character`).text(new_kanji);
-            $(`#kanji-dropdown .niai_reading`).text(``);
+            $(`#kanji-dropdown .niai_reading`).html(`&nbsp;`);
             $(`#kanji-dropdown .niai_meaning`).text(`Not In WK!`);
             $(`#kanji-dropdown`)[0].dataset.kanji = ``;
         }
@@ -259,7 +259,7 @@
 
         $(`#niai_add_similar_input`).val(``).focus();
         $(`#kanji-dropdown .character`).text(`？`);
-        $(`#kanji-dropdown .niai_reading`).text(``);
+        $(`#kanji-dropdown .niai_reading`).html(`&nbsp;`);
         $(`#kanji-dropdown .niai_meaning`).text(`Enter Kanji`);
 
         // $(`[data-toggle="dropdown"]`).parent().removeClass(`open`);
