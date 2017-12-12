@@ -100,6 +100,13 @@ function WK_Niai()
         $(`#add_kanji_btn`).on(`click`, this.addSimilarKanji.bind(this));
         // #####################################################################
         $(`#niai_add_similar_input`).on(`input`, this.onSimilarInput.bind(this));
+
+        $(`#niai_add_similar_input`).on(`keydown`, function(event) {
+            if (event.keyCode === 10 || event.keyCode === 13)
+                event.preventDefault();
+            return false;
+        });
+
         // Keep dropdown open when acting inside
         $(document).on(`click`, `#add_kanji_dropdown .dropdown-menu`,
            (e) => e.stopPropagation());
