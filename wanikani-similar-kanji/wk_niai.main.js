@@ -240,7 +240,12 @@ function WK_Niai()
         if ($.fn.modal === undefined)
             $(`<script></script>`)
                 .attr(`type`, `text/javascript`)
-                .text(GM_getResourceText(`bootstrapjs`))
+                .text(GM_getResourceText(`bootstrap-js`))
+                .appendTo(`head`);
+        if ($.fn.dropdown === undefined)
+            $(`<script></script>`)
+                .attr(`type`, `text/javascript`)
+                .text(GM_getResourceText(`b-dropdown-js`))
                 .appendTo(`head`);
         // #####################################################################
 

@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Wanikani Niai Similar Kanji
-// @version     0.9.0
+// @version     0.9.1
 // @author      acm
 // @description Adds a visually similar kanji section to content pages, reviews, and lessons
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
@@ -25,7 +25,8 @@
 // @resource    chargrid      https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/css/chargrid.css
 // @resource    bootstrapcss  https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/bootstrap/css/bootstrap.crop.css
 //
-// @resource    bootstrapjs   https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/bootstrap/js/bootstrap.js
+// @resource    bootstrap-js  https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/bootstrap/js/bootstrap.js
+// @resource    b-dropdown-js https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/utility/bootstrap/js/bootstrap-dropdown.js
 //
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/utility/wk_interaction.js
 //
