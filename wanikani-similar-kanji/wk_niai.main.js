@@ -81,13 +81,6 @@ function WK_Niai()
 
         this.populateNiaiSection(subject.kan);
 
-        if (curPage === this.wki.PageEnum.reviews ||
-            curPage === this.wki.PageEnum.lessons)
-            $(`.niai_similar_link`).attr(`target`, `_blank`);
-
-        $(`li.notInWK a`).attr(`target`, `_blank`);
-        // #####################################################################
-
         if (this.settings.minify)
         {
             $(`#niai_main_fold`).hide();
@@ -177,6 +170,13 @@ function WK_Niai()
             $(`#niai_reset_similar_btn`).removeClass(`disabled`);
         else
             $(`#niai_reset_similar_btn`).addClass(`disabled`);
+
+        if (this.wki.detectCurPage() === this.wki.PageEnum.reviews ||
+            this.wki.detectCurPage() === this.wki.PageEnum.lessons)
+            $(`.niai_similar_link`).attr(`target`, `_blank`);
+
+        $(`li.notInWK a`).attr(`target`, `_blank`);
+        // #####################################################################
 
         // #####################################################################
         $(`.${GM_info.script.namespace} .delete-badge`).on(
