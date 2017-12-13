@@ -101,9 +101,12 @@ function WK_Niai()
         // #####################################################################
         $(`#niai_add_similar_input`).on(`input`, this.onSimilarInput.bind(this));
 
+        // Prevent the enter key from replacing the content with nothing
         $(`#niai_add_similar_input`).on(`keydown`, function(event) {
-            if (event.keyCode === 10 || event.keyCode === 13)
+            if (event.keyCode === 10 || event.keyCode === 13) {
                 event.preventDefault();
+                return false;
+            }
 
             return true;
         });

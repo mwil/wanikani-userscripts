@@ -48,7 +48,8 @@
                           .append(`<a class="btn" id="niai_grid_visibility">
                                       <i class="icon-eye-open"></i>
                                   </a>`);
-
+        // The note-niai part (at front!!) is crucial to stop enter keypresses
+        // to go to the next page during reviews and lessons
         const $db_btn = $(`<span class="btn-group"></span>`)
                         .append(`<a class="btn" id="niai_badges_btn">
                                     <i class="icon-remove-circle"></i>
@@ -57,7 +58,7 @@
                                      <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
                                          <span class="icon-plus"></span>
                                      </a>
-                                     <ul class="dropdown-menu text-center note-niai">
+                                     <ul class="note-niai dropdown-menu text-center">
                                         <li>
                                             <ul class="single-character-grid">
                                                 ${this.gen_item_chargrid({
