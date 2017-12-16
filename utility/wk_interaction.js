@@ -302,8 +302,13 @@ function WKInteraction(namespace)
 
                     if ($(`#main-info`).hasClass(`radical`))
                     {
+                        // Fixed for elf radical: grab the meaning instead
                         if (!$(`#character > i`).length)
-                            result.rad = $character.text().trim();
+                            if ($character.text().length)
+                                result.rad = $character.text().trim();
+                            else
+                                result.rad = $(`#main-info > #meaning`)
+                                    .text().trim().replace(" ", "-").toLowerCase();
                         else
                             result.rad = $(`#character > i`).attr(`class`).slice(8);
                     }
