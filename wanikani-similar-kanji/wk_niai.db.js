@@ -88,7 +88,9 @@ function NiaiDB()
             );
 
             let result = Object.values(similar_kanji).sort(
-                (a, b) => 10*(a.locked - b.locked) + (b.score - a.score));
+                (a, b) => 100*(a.locked - b.locked) +
+                          10*(b.score - a.score) +
+                          a.kan.localeCompare(b.kan));
 
             return result.map((a) => a.kan);
         }
