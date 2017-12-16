@@ -28,7 +28,7 @@
 // @resource    bootstrap-js   https://raw.githubusercontent.com/mwil/wanikani-userscripts/8d4694c53273fbac4e6b888f4ab95a3fa16d31c5/styles/bootstrap/js/bootstrap.js
 // @resource    b-dropdown-js  https://raw.githubusercontent.com/mwil/wanikani-userscripts/7caebf537b4d02084d85f1a19d26b50c185d8d05/styles/bootstrap/js/bootstrap-dropdown.js
 //
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/3adc5e03fb71be39b33ded2faf6847fd9a4bbcb8/utility/wk_interaction.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/aaf6bf291dbbffe1507017eacf05de6059295109/utility/wk_interaction.js
 //
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/8bb97d14f9b173c9a05c450444a6d9d122e163ed/wanikani-similar-kanji/wk_niai.db.js
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/e61adae7ce316be8917b19309123956abf1f990b/wanikani-similar-kanji/wk_niai.modal.js
