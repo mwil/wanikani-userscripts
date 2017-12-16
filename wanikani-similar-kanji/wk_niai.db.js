@@ -100,10 +100,10 @@ function NiaiDB()
 // #############################################################################
 
 // #############################################################################
-NiaiDB.prototype.keisei_db      = JSON.parse(GM_getResourceText(`from_keisei`));
-NiaiDB.prototype.old_script_db  = JSON.parse(GM_getResourceText(`old_script`));
-NiaiDB.prototype.yl_radical_db  = JSON.parse(GM_getResourceText(`yl_radical`));
-NiaiDB.prototype.stroke_dist_db = JSON.parse(GM_getResourceText(`stroke_dist`));
-NiaiDB.prototype.manual_db      = JSON.parse(GM_getResourceText(`manual`));
-NiaiDB.prototype.lookup_db      = JSON.parse(GM_getResourceText(`lookup`));
+NiaiDB.prototype.keisei_db      = JSON.parse(GM_getResourceText(`from_keisei_db`));
+NiaiDB.prototype.old_script_db  = JSON.parse(GM_getResourceText(`old_script_db`));
+NiaiDB.prototype.yl_radical_db  = JSON.parse(GM_getResourceText(`yl_radical_db`));
+NiaiDB.prototype.stroke_dist_db = JSON.parse(GM_getResourceText(`stroke_dist_db`));
+NiaiDB.prototype.manual_db      = JSON.parse(GM_getResourceText(`manual_db`));
+NiaiDB.prototype.lookup_db      = JSON.parse(GM_getResourceText(`lookup_db`));
 // #############################################################################
