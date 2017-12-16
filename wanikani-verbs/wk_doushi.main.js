@@ -9,7 +9,11 @@ function WK_Doushi()
 
     this.settings = {
         "debug": false,
-        "with_self": true
+        "with_self": true,
+        "with_same_kanji": true,
+        "with_same_kana": true,
+        "with_same_stem": true,
+        "with_same_meaning": true
     };
 }
 // #############################################################################
@@ -24,7 +28,7 @@ function WK_Doushi()
     {
         $(`#doushi_section`).remove();
 
-        var subject = this.wki.getSubject();
+        const subject = this.wki.getSubject();
 
         if (!(`voc` in subject) || !this.ddb.isVerb(subject.voc))
             return;
@@ -52,26 +56,32 @@ function WK_Doushi()
         if (curPage === this.wki.PageEnum.reviews ||
             curPage === this.wki.PageEnum.lessons)
             $(`.doushi_link`).attr(`target`, `_blank`);
+
+        $(`#doushi_head_visibility`)
+            .on(`click`, this.toggleMainFold.bind(this));
     };
     // #########################################################################
 
     // #########################################################################
     WK_Doushi.prototype.populateDoushiSection = function(character)
     {
-        if (!this.ddb.hasRelated(character))
-            $(`#doushi_section`).append(`<p>Nothing found in DB.</p>`);
+        $(`#doushi_not_found`).remove();
+        $(`#doushi_grid`).empty();
+
+        if (!this.ddb.hasRelated(character, this.settings))
+            $(`#doushi_section`).append(`<p id="doushi_not_found">Nothing found in DB.</p>`);
         else
             this.populateCharGrid(`#doushi_grid`, character);
     };
     // #########################################################################
 
     // #########################################################################
-    var upperAll = function(string, delim=` `)
+    const upperAll = function(string, delim=` `)
     {
-        var tmp = string.split(delim);
-        var result = [];
+        const tmp = string.split(delim);
+        let result = [];
 
-        for (var i = 0; i < tmp.length; i++)
+        for (let i = 0; i < tmp.length; i++)
             result.push(tmp[i].charAt(0).toUpperCase() + tmp[i].slice(1));
 
         result = result.join(` `);
@@ -88,39 +98,41 @@ function WK_Doushi()
     // #########################################################################
     WK_Doushi.prototype.populateCharGrid = function(selector, character)
     {
-        var verb_list = [];
-        var related = this.ddb.getRelated(character);
+        let verb_list = [];
+        let related = this.ddb.getRelated(character, this.settings);
 
         // Add the verb itself as the first element in the list
         if (this.settings.with_self)
             related.unshift(character);
 
         related.forEach( function(char) {
-            var wk_info = this.ddb.getWKInfo(char);
-            var badges = [`item-badge`, `recently-unlocked-badge`];
+            const wk_info = this.ddb.getWKInfo(char);
+            let badges = [];
+            let vtype = [];
 
             // check for vi/vt information
             if (wk_info.pos.includes(`vi`))
                 if (wk_info.pos.includes(`vt`))
-                    badges.push(`badge-both`);
+                    vtype.push(`badge-both`);
                 else
-                    badges.push(`badge-vi`);
+                    vtype.push(`badge-vi`);
             else if (wk_info.pos.includes(`vt`))
-                badges.push(`badge-vt`);
+                vtype.push(`badge-vt`);
             else
-                badges.push(`badge-none`);
+                vtype.push(`badge-none`);
 
             if (!wk_info.pos || wk_info.pos.includes(`v1`))
                 badges.push(`badge-1dan`);
             else
                 badges.push(`badge-5dan`);
 
-            var li_item = {
-                "character": char,
-                "kana": wk_info.kana,
-                "meaning": upperAll(wk_info.meaning),
-                "badge": badges.join(` `),
-                "href": `/vocabulary/${char}`
+            const li_item = {
+                  "character": char,
+                  "kana": wk_info.kana,
+                  "meaning": upperAll(wk_info.meaning),
+                  "badge": badges.join(` `),
+                  "vtype": vtype.join(` `),
+                  "href": `/vocabulary/${char}`
             };
 
             verb_list.push(li_item);
@@ -138,6 +150,11 @@ function WK_Doushi()
 
         this.settings.debug = GM_getValue(`debug`) || false;
         this.settings.with_self = GM_getValue(`with_self`) || false;
+
+        this.settings.with_same_kanji   = GM_getValue(`with_same_kanji`)   || false;
+        this.settings.with_same_kana    = GM_getValue(`with_same_kana`)    || false;
+        this.settings.with_same_stem    = GM_getValue(`with_same_stem`)    || false;
+        this.settings.with_same_meaning = GM_getValue(`with_same_meaning`) || false;
 
         this.wki.init();
         this.ddb.init();
@@ -176,7 +193,7 @@ function WK_Doushi()
 // #############################################################################
 
 // #############################################################################
-var wk_doushi = new WK_Doushi();
+const wk_doushi = new WK_Doushi();
 
 wk_doushi.init();
 wk_doushi.run();

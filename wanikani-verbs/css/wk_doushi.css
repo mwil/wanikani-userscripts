@@ -1,27 +1,76 @@
+.wk_namespace .badge-vtype {
+    position: absolute;
+    top: 1.3em;
+    left: -0.6em;
+    color:#fff;
+    font-size:12px;
+    z-index:99;
+}
+
 .wk_namespace .badge-vi:before {
     content: "自";
-    background-color: #c0e;
 }
 
 .wk_namespace .badge-vt:before {
     content: "他";
-    background-color: #c0e;
 }
 
 .wk_namespace .badge-both:before {
     content: "両";
-    background-color: #c0e;
 }
 
 .wk_namespace .badge-none:before {
     content: "";
-    background-color: #c0e;
 }
 
-.wk_namespace .badge-1dan:before {
-    border-radius: 50%;
+.wk_namespace ul.multi-character-grid span.badge-1dan:before {
+    top: 1.3em;
+    left: -1.1em;
+    font-size: 11px;
+    text-align: center;
+}
+
+.wk_namespace .badge-1dan {
+    position: absolute;
+    left: 0
+}
+
+.wk_namespace .badge-5dan {
+    display:block;
+    position:absolute;
+    top:1.8em;
+    left:-1em;
+    width:0.8em;
+    border-width: 0.8em 0.5em 0;
+    border-style: solid;
+    border-color: #c0e transparent;
+    text-shadow:0 2px 0 #99001f;
+    z-index:98
 }
 
 .wk_namespace .badge-5dan:before {
-    border-radius: 0 !important;
+    content: "";
+    position: absolute;
+    top: -1.8em;
+    left: -0.5em;
+    border-width: 0 0.9em 1em;
+    border-style: solid;
+    border-color: transparent transparent #c0e;
+}
+
+.wk_namespace .badge-1dan:before {
+    content: "";
+    display:block;
+    position:absolute;
+    top:-0.6em;
+    left:-0.6em;
+    width:2em;
+    height:2em;
+    background-color: #c0e;
+    border-radius: 50%;
+    text-shadow:0 2px 0 #99001f;
+    -webkit-box-shadow:0 -2px 0 rgba(0,0,0,0.2) inset,0 0 10px rgba(255,255,255,0.5);
+    -moz-box-shadow:0 -2px 0 rgba(0,0,0,0.2) inset,0 0 10px rgba(255,255,255,0.5);
+    box-shadow:0 -2px 0 rgba(0,0,0,0.2) inset,0 0 10px rgba(255,255,255,0.5);
+    z-index:98
 }
