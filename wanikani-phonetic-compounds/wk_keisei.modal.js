@@ -10,16 +10,16 @@
                                 .attr(`id`, `keisei_modal_settings`)
                                 .attr(`role`, `dialog`)
                                 .addClass(`${GM_info.script.namespace} modal fade`)
+                                .appendTo(`body`)
                                 .hide();
 
         const $info_modal = $(`<div></div>`)
                             .attr(`id`, `keisei_modal_info`)
                             .attr(`role`, `dialog`)
                             .addClass(`${GM_info.script.namespace} modal fade`)
+                            .appendTo(`body`)
                             .hide();
 
-        $(`body`).append($settings_modal);
-        $(`body`).append($info_modal);
 
         $settings_modal.html(
            `<div class="modal-dialog">
@@ -49,9 +49,6 @@
             </div>`
         );
 
-        if (this.settings.debug)
-            $(`#keisei_settings_btn_debug`).addClass(`active`);
-
         $info_modal.html(
            `<div class="modal-dialog">
                 <div class="modal-content">
@@ -75,6 +72,9 @@
         );
 
         this.fillStats();
+
+        if (this.settings.debug)
+            $(`#keisei_settings_btn_debug`).addClass(`active`);
 
         if (this.settings.minify) {
             $(`#keisei_settings_btn_minify`).addClass(`active`);

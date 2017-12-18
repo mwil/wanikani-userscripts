@@ -220,7 +220,7 @@ function KeiseiDB()
 // #############################################################################
 
 // #############################################################################
-KeiseiDB.prototype.kanji_db    = JSON.parse(GM_getResourceText(`kanji`));
-KeiseiDB.prototype.phonetic_db = JSON.parse(GM_getResourceText(`phonetic`));
-KeiseiDB.prototype.wk_kanji_db = JSON.parse(GM_getResourceText(`wk_kanji`));
+KeiseiDB.prototype.kanji_db    = JSON.parse(GM_getResourceText(`kanji_db`));
+KeiseiDB.prototype.phonetic_db = JSON.parse(GM_getResourceText(`phonetic_db`));
+KeiseiDB.prototype.wk_kanji_db = JSON.parse(GM_getResourceText(`wk_kanji_db`));
 // #############################################################################

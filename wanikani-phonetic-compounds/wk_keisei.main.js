@@ -97,8 +97,10 @@ function WK_Keisei()
         $(`li.notInWK a`).attr(`target`, `_blank`);
 
         // #####################################################################
-        $(`#keisei_head_visibility`).on(`click`, this.toggleMainFold.bind(this));
-        $(`.${GM_info.script.namespace} .item-badge`).on(`click`, this.toggleBadgeMarker.bind(this));
+        $(`#keisei_head_visibility`)
+            .on(`click`, this.toggleMainFold.bind(this));
+        $(`.${GM_info.script.namespace} .item-badge`)
+            .on(`click`, this.toggleBadgeMarker.bind(this));
         // #####################################################################
 
         if (this.settings.minify)
@@ -118,6 +120,7 @@ function WK_Keisei()
         if (subject.rad)
             if (subject.phon)
             {
+                // Radical subject with a phonetic association
                 $(`#keisei_explanation`).append(
                     this.explanation_radical(subject,
                                              this.kdb.getPReadings(subject.phon)));
@@ -125,6 +128,7 @@ function WK_Keisei()
             }
             else
             {
+                // Radical subject, but not a tone mark
                 $(`#keisei_explanation`).append(
                     this.explanation_non_radical(subject));
                 return;
@@ -135,12 +139,15 @@ function WK_Keisei()
             if ((!this.wki.checkSubject(subject, [`rad`, `kan`])) ||
                 (subject.kan && !this.kdb.checkKanji(subject.kan)))
             {
+                // Something is wrong, not a kanji or not in DB!
                 $(`#keisei_explanation`).append(
                     this.explanation_missing(subject));
                 return;
             }
             else if (!subject.phon && !this.kdb.checkKanji(subject.kan))
             {
+                // Kanji present, but not found in the DB.
+                // TODO: looks a bit obsolete ...
                 $(`#keisei_explanation`).append(
                     this.error_msg(subject,
                         `The requested information is not in the Keisei database!`));
@@ -204,6 +211,7 @@ function WK_Keisei()
                     default:
                         $(`#keisei_explanation`).append(
                             this.error_msg(subject, `The requested kanji is not in the database (or typo in DB)!`));
+                        return;
                 }
             }
         }
@@ -253,7 +261,8 @@ function WK_Keisei()
 
         if (!this.kdb.checkPhonetic(subject.phon))
         {
-            GM_log(`The following phonetic was not found in the database`, subject.phon);
+            GM_log(`The following phonetic was not found in the database`,
+                   subject.phon);
             return;
         }
 
@@ -419,9 +428,8 @@ function WK_Keisei()
             const $gridn = $(`<ul></ul>`)
                            .attr(`id`, `keisei_non_comp_grid`)
                            .attr(`style`, `padding-bottom: 10px; margin-bottom:6px; border-bottom: 1px solid #d5d5d5;`)
-                           .addClass(`single-character-grid`);
-
-            $(`#keisei_more_fold`).append($gridn);
+                           .addClass(`single-character-grid`)
+                           .appendTo(`#keisei_more_fold`);
 
             let char_list = [];
 
@@ -462,8 +470,8 @@ function WK_Keisei()
         GM_addStyle(GM_getResourceText(`keisei_style`)
                         .replace(/wk_namespace/g, GM_info.script.namespace));
 
-        this.settings.debug = GM_getValue(`debug`) || false;
-        this.settings.minify = GM_getValue(`minify`) || false;
+        this.settings.debug    = GM_getValue(`debug`)    || false;
+        this.settings.minify   = GM_getValue(`minify`)   || false;
         this.settings.fullinfo = GM_getValue(`fullinfo`) || false;
 
         this.override_db = JSON.parse(GM_getValue(`override_db`) || `{}`);
@@ -478,7 +486,7 @@ function WK_Keisei()
         this.wki.init();
 
         this.log(`The script element is:`, GM_info);
-        this.log("The override db is", this.override_db);
+        this.log(`The override db is`, this.override_db);
 
         // #####################################################################
         // Main hook, WK Interaction will kick off this script once the page
