@@ -8,8 +8,9 @@
 
     // Character item to be included in a character grid
     // #########################################################################
-    WK_Niai.prototype.gen_item_chargrid = ({kanji, readings, meanings, is_locked=``, badge=`item-badge`, href=`javascript:;`, kanji_id=``}) =>
-       `<li id="${kanji_id}" class="${is_locked} character-item" data-kanji="${kanji}">
+    WK_Niai.prototype.gen_item_chargrid =
+        ({kanji, readings, meanings, is_locked=``, notInWK=``, badge=`item-badge`, href=`javascript:;`, kanji_id=``}) =>
+       `<li id="${kanji_id}" class="${is_locked} ${notInWK} character-item" data-kanji="${kanji}">
             <span lang="ja" class="${badge}" data-kanji="${kanji}"></span>
             <a class="niai_similar_link" href="${href}">
                 <span class="character" lang="ja">${kanji}</span>
