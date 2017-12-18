@@ -1465,7 +1465,7 @@
         "readings": ["こう", "きょう", "しょう"],
         "compounds": ["尚"],
         "non_compounds": [],
-        "xrefs": ["尚"],
+        "xrefs": ["尚", "賞"],
         "wk-radical": "cyclops"
     },
     "州": {
@@ -1724,7 +1724,8 @@
         "readings": ["てい"],
         "compounds": ["程"],
         "non_compounds": [],
-        "xrefs": ["𡈼"]
+        "xrefs": ["𡈼"],
+        "wk-radical": null
     },
     "廷": {
         "readings": ["てい"],
@@ -1751,7 +1752,7 @@
         "readings": ["しょう"],
         "compounds": ["堂", "常", "掌", "当", "賞", "党"],
         "non_compounds": [],
-        "xrefs": ["向"],
+        "xrefs": ["向", "賞"],
         "wk-radical": null
     },
     "賞": {
@@ -2649,7 +2650,7 @@
     },
     "西": {
         "readings": ["せい", "さい", "すい"],
-        "compounds": ["垔", "茜"],
+        "compounds": ["茜"],
         "non_compounds": [],
         "xrefs": ["垔"],
         "wk-radical": "west"
@@ -3854,15 +3855,6 @@
     "宰": {
         "readings": ["さい"],
         "compounds": ["梓"],
-        "non_compounds": [],
-        "xrefs": [],
-        "wk-radical": null
-    },
-
-
-    "": {
-        "readings": [],
-        "compounds": [],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null

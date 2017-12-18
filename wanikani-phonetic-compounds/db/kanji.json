@@ -648,7 +648,7 @@
     },
     "東": {
         "readings": ["とう"],
-        "type": "borrowing"
+        "type": "rebus"
     },
     "京": {
         "readings": ["きょう", "けい", "きん"],
@@ -715,7 +715,7 @@
     },
     "南": {
         "readings": ["なん", "な", "だん"],
-        "type": "borrowing"
+        "type": "rebus"
     },
     "点": {
         "readings": ["てん"],
@@ -4062,7 +4062,7 @@
         "type": "comp_phonetic"
     },
     "紅": {
-        "readings": ["こう", "く中", "ぐ"],
+        "readings": ["こう", "く", "ぐ"],
         "phonetic": "工",
         "type": "comp_phonetic"
     },
@@ -4599,7 +4599,7 @@
     },
     "臨": {
         "readings": ["りん"],
-        "type": "unknown "
+        "type": "unknown"
     },
     "難": {
         "readings": ["なん", "だん"],
@@ -7665,7 +7665,7 @@
         "type": "comp_phonetic"
     },
     "滅": {
-        "readings": [],
+        "readings": ["めつ", "べつ"],
         "type": "unknown",
         "comment": "obscure phonetic mark "
     },
@@ -10204,7 +10204,7 @@
         "type": "comp_phonetic"
     },
     "々": {
-        "readings": [],
+        "readings": ["のま"],
         "type": "unknown"
     },
     "噌": {
