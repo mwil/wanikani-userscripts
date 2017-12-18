@@ -3654,9 +3654,10 @@
         "type": "comp_phonetic"
     },
     "雑": {
-        "readings": ["さつ", "そう"],
+        "readings": ["ざつ", "ぞう"],
         "phonetic": "集",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "領": {
         "readings": ["りょう"],

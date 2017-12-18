@@ -1307,18 +1307,11 @@
         "xrefs": [],
         "wk-radical": null
     },
-    "辛": {
-        "readings": ["しん"],
-        "compounds": ["亲"],
-        "non_compounds": [],
-        "xrefs": ["亲"],
-        "wk-radical": "spicy"
-    },
     "亲": {
         "readings": ["しん"],
         "compounds": ["親"],
         "non_compounds": [],
-        "xrefs": ["辛"],
+        "xrefs": [],
         "wk-radical": null
     },
     "豆": {
