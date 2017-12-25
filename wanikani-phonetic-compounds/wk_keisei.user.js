@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        WaniKani Keisei Phonetic-Semantic Composition
-// @version     1.3.0
+// @version     1.3.1
 // @author      acm
 // @description Adds information to Wanikani about kanji that use Phonetic-Semantic Composition.
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
@@ -20,9 +20,9 @@
 //
 // @resource    keisei_style https://raw.githubusercontent.com/mwil/wanikani-userscripts/5ec4d82173f9e4b5b11b6f70d7417af67b4d4cac/wanikani-phonetic-compounds/css/keisei.css
 //
-// @resource    chargrid     https://raw.githubusercontent.com/mwil/wanikani-userscripts/59e90d85a5a10f4ff2563b15058474a6adde867e/styles/css/chargrid.css
-// @resource    bootstrapcss https://raw.githubusercontent.com/mwil/wanikani-userscripts/80568c99d09eb37ac932b4eb82304264b477329b/styles/bootstrap/css/bootstrap.crop.css
-// @resource    bootstrapjs  https://raw.githubusercontent.com/mwil/wanikani-userscripts/80568c99d09eb37ac932b4eb82304264b477329b/styles/bootstrap/js/bootstrap.js
+// @resource    chargrid     https://raw.githubusercontent.com/mwil/wanikani-userscripts/7caebf537b4d02084d85f1a19d26b50c185d8d05/styles/css/chargrid.css
+// @resource    bootstrapcss https://raw.githubusercontent.com/mwil/wanikani-userscripts/7caebf537b4d02084d85f1a19d26b50c185d8d05/styles/bootstrap/css/bootstrap.crop.css
+// @resource    bootstrapjs  https://raw.githubusercontent.com/mwil/wanikani-userscripts/8d4694c53273fbac4e6b888f4ab95a3fa16d31c5/styles/bootstrap/js/bootstrap.js
 //
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/aaf6bf291dbbffe1507017eacf05de6059295109/utility/wk_interaction.js
 //
