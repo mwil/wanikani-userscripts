@@ -1155,7 +1155,7 @@
     "者": {
         "readings": ["しゃ", "しょ", "と"],
         "compounds": ["都", "暑", "煮", "署", "箸", "諸", "書", "緒", "著", "着", "賭"],
-        "non_compounds": ["賭"],
+        "non_compounds": [],
         "xrefs": ["署"],
         "wk-radical": "someone",
         "comment": "added しょ, but found no reason"

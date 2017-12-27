@@ -123,3 +123,13 @@ def test_compound_appear_multiple_times():
             assert item["compounds"].count(comp) == 1,\
                 """Duplicate of comp {} for phon {}
                 """.format(comp, phon)
+
+
+def test_overlap_compounds_noncompounds():
+    phonetic_db = phonetic_db_import()
+
+    for phon, item in phonetic_db.items():
+        for comp in item["compounds"]:
+            assert comp not in item["non_compounds"],\
+                """Kanji {} inconsistent compound for phon {}.
+                """.format(comp, phon)
