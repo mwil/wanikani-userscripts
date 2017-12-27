@@ -893,7 +893,7 @@
     },
     "周": {
         "readings": ["しゅう", "す"],
-        "compounds": ["彫", "週", "調", "彫"],
+        "compounds": ["彫", "週", "調"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "ghost"
@@ -1218,7 +1218,7 @@
     },
     "云": {
         "readings": ["うん"],
-        "compounds": ["芸", "雲", "魂", "魂"],
+        "compounds": ["芸", "雲", "魂"],
         "non_compounds": [],
         "xrefs": ["雲"],
         "wk-radical": "boobs"

@@ -113,3 +113,13 @@ def test_readings_are_hiragana():
                 assert not regex.sub("\p{Hiragana}", "", rdn),\
                     """Kanji {}, reading '{}' not in hiragana!
                     """.format(kanji, rdn)
+
+
+def test_compound_appear_multiple_times():
+    phonetic_db = phonetic_db_import()
+
+    for phon, item in phonetic_db.items():
+        for comp in item["compounds"]:
+            assert item["compounds"].count(comp) == 1,\
+                """Duplicate of comp {} for phon {}
+                """.format(comp, phon)
