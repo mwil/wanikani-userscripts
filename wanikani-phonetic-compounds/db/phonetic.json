@@ -649,7 +649,7 @@
         "compounds": ["溶"],
         "non_compounds": [],
         "xrefs": ["谷"],
-        "wk-radical": null
+        "wk-radical": "form"
     },
     "量": {
         "readings": ["りょう", "ろう"],
@@ -3010,7 +3010,7 @@
         "compounds": ["滑"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": null
+        "wk-radical": "bone"
     },
     "竜": {
         "readings": ["りゅう", "ろう"],

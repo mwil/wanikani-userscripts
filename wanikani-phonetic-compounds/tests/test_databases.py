@@ -3,6 +3,7 @@ import regex
 
 KANJI_DB = "../db/kanji.json"
 PHONETIC_DB = "../db/phonetic.json"
+WK_RAD_DB = "../db/wk_rad.json"
 
 
 def phonetic_db_import():
@@ -17,6 +18,13 @@ def kanji_db_import():
         kanji_db = json.load(infile)
 
     return kanji_db
+
+
+def wk_rad_db_import():
+    with open(WK_RAD_DB, "r") as infile:
+        wk_rad_db = json.load(infile)
+
+    return wk_rad_db
 
 
 def test_kanji_entries_are_consistent():
@@ -133,3 +141,28 @@ def test_overlap_compounds_noncompounds():
             assert comp not in item["non_compounds"],\
                 """Kanji {} inconsistent compound for phon {}.
                 """.format(comp, phon)
+
+
+def test_wk_radical_coverage():
+    phonetic_db = phonetic_db_import()
+    wk_rad_db = wk_rad_db_import()
+
+    wk_exceptions = ["易", "ト", "業", "禹", "ム", "ホ", "専", "両"]
+    wk_exceptions2 = ["易", "専"]
+
+    for phon, item in phonetic_db.items():
+        cur_rad = item["wk-radical"]
+
+        if cur_rad:
+            cur_rad_char = wk_rad_db[cur_rad]["character"]
+
+            if cur_rad_char and cur_rad_char not in wk_exceptions:
+                assert cur_rad_char == phon,\
+                    """Character of WK {} and phon {} don't match!
+                    """.format(cur_rad_char, phon)
+        else:
+            for wk_rad, wk_item in wk_rad_db.items():
+                if wk_item["character"] not in wk_exceptions2:
+                    assert wk_item["character"] != phon,\
+                        """Matching WK radical {} not mentioned in DB!
+                        """.format(phon)

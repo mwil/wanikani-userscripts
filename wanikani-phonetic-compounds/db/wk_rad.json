@@ -1,0 +1,4304 @@
+{
+  "ground": {
+    "level": 1,
+    "character": "一",
+    "meaning": "ground",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "fins": {
+    "level": 1,
+    "character": "ハ",
+    "meaning": "fins",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "drop": {
+    "level": 1,
+    "character": "丶",
+    "meaning": "drop",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "seven": {
+    "level": 1,
+    "character": "七",
+    "meaning": "seven",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "slide": {
+    "level": 1,
+    "character": "丿",
+    "meaning": "slide",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "barb": {
+    "level": 1,
+    "character": "亅",
+    "meaning": "barb",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "two": {
+    "level": 1,
+    "character": "二",
+    "meaning": "two",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "lid": {
+    "level": 1,
+    "character": "亠",
+    "meaning": "lid",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "person": {
+    "level": 1,
+    "character": "人",
+    "meaning": "person",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "toe": {
+    "level": 1,
+    "character": "ト",
+    "meaning": "toe",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "nine": {
+    "level": 1,
+    "character": "九",
+    "meaning": "nine",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "enter": {
+    "level": 1,
+    "character": "入",
+    "meaning": "enter",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "power": {
+    "level": 1,
+    "character": "力",
+    "meaning": "power",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "enclosure": {
+    "level": 1,
+    "character": "勹",
+    "meaning": "enclosure",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "cross": {
+    "level": 1,
+    "character": "十",
+    "meaning": "cross",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "mouth": {
+    "level": 1,
+    "character": "口",
+    "meaning": "mouth",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "big": {
+    "level": 1,
+    "character": "大",
+    "meaning": "big",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "woman": {
+    "level": 1,
+    "character": "女",
+    "meaning": "woman",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "mountain": {
+    "level": 1,
+    "character": "山",
+    "meaning": "mountain",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "river": {
+    "level": 1,
+    "character": "川",
+    "meaning": "river",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "sun": {
+    "level": 1,
+    "character": "日",
+    "meaning": "sun",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "tree": {
+    "level": 1,
+    "character": "木",
+    "meaning": "tree",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "construction": {
+    "level": 1,
+    "character": "工",
+    "meaning": "construction",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "gun": {
+    "level": 1,
+    "character": null,
+    "meaning": "gun",
+    "image_file_name": "01a829340c3acd941eb1f682053049f6684bdf70.png",
+    "image_content_type": "image/png",
+    "image_file_size": 21989,
+    "image": "https://cdn.wanikani.com/subjects/images/8762-gun-large.png"
+  },
+  "stick": {
+    "level": 1,
+    "character": null,
+    "meaning": "stick",
+    "image_file_name": "397dafb0edce881022a70bbc7cfe977fbcfc80b3.png",
+    "image_content_type": "image/png",
+    "image_file_size": 7495,
+    "image": "https://cdn.wanikani.com/subjects/images/8761-stick-large.png"
+  },
+  "leaf": {
+    "level": 1,
+    "character": null,
+    "meaning": "leaf",
+    "image_file_name": "64867b2474b53e062732743143cb0b066a46922f.png",
+    "image_content_type": "image/png",
+    "image_file_size": 13708,
+    "image": "https://cdn.wanikani.com/subjects/images/8763-leaf-large.png"
+  },
+  "stool": {
+    "level": 2,
+    "character": "又",
+    "meaning": "stool",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "grave": {
+    "level": 2,
+    "character": "土",
+    "meaning": "grave",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "sword": {
+    "level": 2,
+    "character": "刀",
+    "meaning": "sword",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "narwhal": {
+    "level": 2,
+    "character": "ナ",
+    "meaning": "narwhal",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "nail": {
+    "level": 2,
+    "character": "丁",
+    "meaning": "nail",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "legs": {
+    "level": 2,
+    "character": "儿",
+    "meaning": "legs",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "head": {
+    "level": 2,
+    "character": "冂",
+    "meaning": "head",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "treasure": {
+    "level": 2,
+    "character": "メ",
+    "meaning": "treasure",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "thousand": {
+    "level": 2,
+    "character": "千",
+    "meaning": "thousand",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "evening": {
+    "level": 2,
+    "character": "夕",
+    "meaning": "evening",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "child": {
+    "level": 2,
+    "character": "子",
+    "meaning": "child",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "small": {
+    "level": 2,
+    "character": "小",
+    "meaning": "small",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "spring": {
+    "level": 2,
+    "character": "弓",
+    "meaning": "spring",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "flag": {
+    "level": 2,
+    "character": "尸",
+    "meaning": "flag",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "hair": {
+    "level": 2,
+    "character": "彡",
+    "meaning": "hair",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "five": {
+    "level": 2,
+    "character": "五",
+    "meaning": "five",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "heaven": {
+    "level": 2,
+    "character": "天",
+    "meaning": "heaven",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "hand": {
+    "level": 2,
+    "character": "手",
+    "meaning": "hand",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "doll": {
+    "level": 2,
+    "character": "文",
+    "meaning": "doll",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "moon": {
+    "level": 2,
+    "character": "月",
+    "meaning": "moon",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "stop": {
+    "level": 2,
+    "character": "止",
+    "meaning": "stop",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "water": {
+    "level": 2,
+    "character": "水",
+    "meaning": "water",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "fire": {
+    "level": 2,
+    "character": "火",
+    "meaning": "fire",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "dog": {
+    "level": 2,
+    "character": "犬",
+    "meaning": "dog",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "king": {
+    "level": 2,
+    "character": "王",
+    "meaning": "king",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "middle": {
+    "level": 2,
+    "character": "中",
+    "meaning": "middle",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "real": {
+    "level": 2,
+    "character": "本",
+    "meaning": "real",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "rice-paddy": {
+    "level": 2,
+    "character": "田",
+    "meaning": "rice-paddy",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "white": {
+    "level": 2,
+    "character": "白",
+    "meaning": "white",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "eye": {
+    "level": 2,
+    "character": "目",
+    "meaning": "eye",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "stone": {
+    "level": 2,
+    "character": "石",
+    "meaning": "stone",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "stand": {
+    "level": 2,
+    "character": "立",
+    "meaning": "stand",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "cow": {
+    "level": 2,
+    "character": "牛",
+    "meaning": "cow",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "pile": {
+    "level": 2,
+    "character": "ム",
+    "meaning": "pile",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "spoon": {
+    "level": 3,
+    "character": "匕",
+    "meaning": "spoon",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "ra": {
+    "level": 3,
+    "character": "ラ",
+    "meaning": "ra",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "raptor-cage": {
+    "level": 3,
+    "character": "久",
+    "meaning": "raptor-cage",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "winter": {
+    "level": 3,
+    "character": "夂",
+    "meaning": "winter",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "antenna": {
+    "level": 3,
+    "character": "干",
+    "meaning": "antenna",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "mullet": {
+    "level": 3,
+    "character": "广",
+    "meaning": "mullet",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "nailbat": {
+    "level": 3,
+    "character": "扌",
+    "meaning": "nailbat",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "origin": {
+    "level": 3,
+    "character": "元",
+    "meaning": "origin",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "heart": {
+    "level": 3,
+    "character": "心",
+    "meaning": "heart",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "direction": {
+    "level": 3,
+    "character": "方",
+    "meaning": "direction",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "fur": {
+    "level": 3,
+    "character": "毛",
+    "meaning": "fur",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "father": {
+    "level": 3,
+    "character": "父",
+    "meaning": "father",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "old": {
+    "level": 3,
+    "character": "古",
+    "meaning": "old",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "drawer": {
+    "level": 3,
+    "character": "母",
+    "meaning": "drawer",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "elephant": {
+    "level": 3,
+    "character": "用",
+    "meaning": "elephant",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "arrow": {
+    "level": 3,
+    "character": "矢",
+    "meaning": "arrow",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "door": {
+    "level": 3,
+    "character": "戸",
+    "meaning": "door",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "poop": {
+    "level": 3,
+    "character": "幺",
+    "meaning": "poop",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "two-face": {
+    "level": 3,
+    "character": "巾",
+    "meaning": "two-face",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "life": {
+    "level": 3,
+    "character": "生",
+    "meaning": "life",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "hat": {
+    "level": 3,
+    "character": null,
+    "meaning": "hat",
+    "image_file_name": "ef488649116f8ce207a90dfcd81dffe669cc212c.png",
+    "image_content_type": "image/png",
+    "image_file_size": 15444,
+    "image": "https://cdn.wanikani.com/subjects/images/8764-hat-large.png"
+  },
+  "triceratops": {
+    "level": 3,
+    "character": null,
+    "meaning": "triceratops",
+    "image_file_name": "211e112e9a5d308d1f5fbfded1ac4a58f90e1f8e.png",
+    "image_content_type": "image/png",
+    "image_file_size": 14581,
+    "image": "https://cdn.wanikani.com/subjects/images/8765-triceratops-large.png"
+  },
+  "see": {
+    "level": 4,
+    "character": "見",
+    "meaning": "see",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "measurement": {
+    "level": 4,
+    "character": "寸",
+    "meaning": "measurement",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "leader": {
+    "level": 4,
+    "character": "ｲ",
+    "meaning": "leader",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "forehead": {
+    "level": 4,
+    "character": "冖",
+    "meaning": "forehead",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "alligator": {
+    "level": 4,
+    "character": "也",
+    "meaning": "alligator",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "helmet": {
+    "level": 4,
+    "character": "宀",
+    "meaning": "helmet",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "ceremony": {
+    "level": 4,
+    "character": "弋",
+    "meaning": "ceremony",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "pelican": {
+    "level": 4,
+    "character": "ネ",
+    "meaning": "pelican",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "frog": {
+    "level": 4,
+    "character": "支",
+    "meaning": "frog",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "energy": {
+    "level": 4,
+    "character": "气",
+    "meaning": "energy",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "generation": {
+    "level": 4,
+    "character": "世",
+    "meaning": "generation",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "plate": {
+    "level": 4,
+    "character": "皿",
+    "meaning": "plate",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "bamboo": {
+    "level": 4,
+    "character": "竹",
+    "meaning": "bamboo",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "thread": {
+    "level": 4,
+    "character": "糸",
+    "meaning": "thread",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "ear": {
+    "level": 4,
+    "character": "耳",
+    "meaning": "ear",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "insect": {
+    "level": 4,
+    "character": "虫",
+    "meaning": "insect",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "flowers": {
+    "level": 4,
+    "character": "艹",
+    "meaning": "flowers",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "red": {
+    "level": 4,
+    "character": "赤",
+    "meaning": "red",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "car": {
+    "level": 4,
+    "character": "車",
+    "meaning": "car",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "clam": {
+    "level": 4,
+    "character": "貝",
+    "meaning": "clam",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "foot": {
+    "level": 4,
+    "character": "足",
+    "meaning": "foot",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "not": {
+    "level": 4,
+    "character": "不",
+    "meaning": "not",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "samurai": {
+    "level": 4,
+    "character": "士",
+    "meaning": "samurai",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "rice": {
+    "level": 4,
+    "character": "米",
+    "meaning": "rice",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "bed": {
+    "level": 4,
+    "character": "巴",
+    "meaning": "bed",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "pi": {
+    "level": 4,
+    "character": "兀",
+    "meaning": "pi",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "cliff": {
+    "level": 4,
+    "character": "厂",
+    "meaning": "cliff",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "master": {
+    "level": 4,
+    "character": "主",
+    "meaning": "master",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "umbrella": {
+    "level": 4,
+    "character": "乚",
+    "meaning": "umbrella",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "beggar": {
+    "level": 4,
+    "character": null,
+    "meaning": "beggar",
+    "image_file_name": "90135584b5a3030ac78b99cae8b481a76bce2038.png",
+    "image_content_type": "image/png",
+    "image_file_size": 24728,
+    "image": "https://cdn.wanikani.com/subjects/images/8766-beggar-large.png"
+  },
+  "horns": {
+    "level": 4,
+    "character": null,
+    "meaning": "horns",
+    "image_file_name": "99a896fa33e2d92c4ab2ea84835563867ae38047.png",
+    "image_content_type": "image/png",
+    "image_file_size": 14404,
+    "image": "https://cdn.wanikani.com/subjects/images/8767-horns-large.png"
+  },
+  "spikes": {
+    "level": 4,
+    "character": null,
+    "meaning": "spikes",
+    "image_file_name": "60132b32e47815794c999742f5bbbd80eba78ebc.png",
+    "image_content_type": "image/png",
+    "image_file_size": 10454,
+    "image": "https://cdn.wanikani.com/subjects/images/8768-spikes-large.png"
+  },
+  "loiter": {
+    "level": 4,
+    "character": "彳",
+    "meaning": "loiter",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "gold": {
+    "level": 5,
+    "character": "金",
+    "meaning": "gold",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "go": {
+    "level": 5,
+    "character": "行",
+    "meaning": "go",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "water-slide": {
+    "level": 5,
+    "character": "⻌",
+    "meaning": "water-slide",
+    "image_file_name": "ae10232f80461689544f6d910edc480e1329e082.png",
+    "image_content_type": "image/png",
+    "image_file_size": 14222,
+    "image": "https://cdn.wanikani.com/subjects/images/114-water-slide-large.png"
+  },
+  "tsunami": {
+    "level": 5,
+    "character": "氵",
+    "meaning": "tsunami",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "coffin": {
+    "level": 5,
+    "character": "耂",
+    "meaning": "coffin",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "wolverine": {
+    "level": 5,
+    "character": "ヨ",
+    "meaning": "wolverine",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "twenty": {
+    "level": 5,
+    "character": "廾",
+    "meaning": "twenty",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "window": {
+    "level": 5,
+    "character": "毋",
+    "meaning": "window",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "meat": {
+    "level": 5,
+    "character": "肉",
+    "meaning": "meat",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "self": {
+    "level": 5,
+    "character": "自",
+    "meaning": "self",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "color": {
+    "level": 5,
+    "character": "色",
+    "meaning": "color",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "west": {
+    "level": 5,
+    "character": "西",
+    "meaning": "west",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "lip-ring": {
+    "level": 5,
+    "character": "可",
+    "meaning": "lip-ring",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "axe": {
+    "level": 5,
+    "character": "斤",
+    "meaning": "axe",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "say": {
+    "level": 5,
+    "character": "言",
+    "meaning": "say",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "rain": {
+    "level": 5,
+    "character": "雨",
+    "meaning": "rain",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "blue": {
+    "level": 5,
+    "character": "青",
+    "meaning": "blue",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "mustache": {
+    "level": 5,
+    "character": "冋",
+    "meaning": "mustache",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "key": {
+    "level": 5,
+    "character": "乍",
+    "meaning": "key",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "ice": {
+    "level": 5,
+    "character": "冫",
+    "meaning": "ice",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "run": {
+    "level": 5,
+    "character": "走",
+    "meaning": "run",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "sunflower": {
+    "level": 5,
+    "character": "里",
+    "meaning": "sunflower",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "meet": {
+    "level": 5,
+    "character": "会",
+    "meaning": "meet",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "lantern": {
+    "level": 5,
+    "character": "开",
+    "meaning": "lantern",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "feathers": {
+    "level": 5,
+    "character": "羽",
+    "meaning": "feathers",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "viking": {
+    "level": 5,
+    "character": null,
+    "meaning": "viking",
+    "image_file_name": "765036cd90c620429753e012d6288188c9951181.png",
+    "image_content_type": "image/png",
+    "image_file_size": 11177,
+    "image": "https://cdn.wanikani.com/subjects/images/8769-viking-large.png"
+  },
+  "kick": {
+    "level": 5,
+    "character": null,
+    "meaning": "kick",
+    "image_file_name": "99b8f3903fafd0a3998def321b0b16054cbcafcd.png",
+    "image_content_type": "image/png",
+    "image_file_size": 14929,
+    "image": "https://cdn.wanikani.com/subjects/images/8770-kick-large.png"
+  },
+  "lion": {
+    "level": 6,
+    "character": "L",
+    "meaning": "lion",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "box": {
+    "level": 6,
+    "character": "凵",
+    "meaning": "box",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "ribs": {
+    "level": 6,
+    "character": "刂",
+    "meaning": "ribs",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "chopsticks": {
+    "level": 6,
+    "character": "斗",
+    "meaning": "chopsticks",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "angel": {
+    "level": 6,
+    "character": "ホ",
+    "meaning": "angel",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "fish-tail": {
+    "level": 6,
+    "character": "灬",
+    "meaning": "fish-tail",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "bad": {
+    "level": 6,
+    "character": "歹",
+    "meaning": "bad",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "cyclops": {
+    "level": 6,
+    "character": "向",
+    "meaning": "cyclops",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "jet": {
+    "level": 6,
+    "character": "未",
+    "meaning": "jet",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "pine": {
+    "level": 6,
+    "character": "禾",
+    "meaning": "pine",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "sheep": {
+    "level": 6,
+    "character": "羊",
+    "meaning": "sheep",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "blood": {
+    "level": 6,
+    "character": "血",
+    "meaning": "blood",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "long": {
+    "level": 6,
+    "character": "長",
+    "meaning": "long",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "eat": {
+    "level": 6,
+    "character": "食",
+    "meaning": "eat",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "mama": {
+    "level": 6,
+    "character": "マ",
+    "meaning": "mama",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "lack": {
+    "level": 6,
+    "character": "欠",
+    "meaning": "lack",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "fortune": {
+    "level": 6,
+    "character": "占",
+    "meaning": "fortune",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "animal": {
+    "level": 6,
+    "character": "犭",
+    "meaning": "animal",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "neck": {
+    "level": 6,
+    "character": "首",
+    "meaning": "neck",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "death": {
+    "level": 6,
+    "character": "亡",
+    "meaning": "death",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "wing": {
+    "level": 7,
+    "character": "勿",
+    "meaning": "wing",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "stamp": {
+    "level": 7,
+    "character": "卩",
+    "meaning": "stamp",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "husband": {
+    "level": 7,
+    "character": "夫",
+    "meaning": "husband",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "duck": {
+    "level": 7,
+    "character": "氏",
+    "meaning": "duck",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "soldier": {
+    "level": 7,
+    "character": "矛",
+    "meaning": "soldier",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "sail": {
+    "level": 7,
+    "character": "舟",
+    "meaning": "sail",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "fish": {
+    "level": 7,
+    "character": "魚",
+    "meaning": "fish",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "bird": {
+    "level": 7,
+    "character": "鳥",
+    "meaning": "bird",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "yellow": {
+    "level": 7,
+    "character": "黄",
+    "meaning": "yellow",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "black": {
+    "level": 7,
+    "character": "黒",
+    "meaning": "black",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "ghost": {
+    "level": 7,
+    "character": "周",
+    "meaning": "ghost",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "table": {
+    "level": 7,
+    "character": "几",
+    "meaning": "table",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "gate": {
+    "level": 7,
+    "character": "門",
+    "meaning": "gate",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "cobra": {
+    "level": 7,
+    "character": "己",
+    "meaning": "cobra",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "pig": {
+    "level": 7,
+    "character": "豕",
+    "meaning": "pig",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "teacher": {
+    "level": 7,
+    "character": "孝",
+    "meaning": "teacher",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "top-hat": {
+    "level": 7,
+    "character": "且",
+    "meaning": "top-hat",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "hook": {
+    "level": 8,
+    "character": "ユ",
+    "meaning": "hook",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "snake": {
+    "level": 8,
+    "character": "巳",
+    "meaning": "snake",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "boobs": {
+    "level": 8,
+    "character": "云",
+    "meaning": "boobs",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "ikea": {
+    "level": 8,
+    "character": "殳",
+    "meaning": "ikea",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "compare": {
+    "level": 8,
+    "character": "比",
+    "meaning": "compare",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "sauron": {
+    "level": 8,
+    "character": "罒",
+    "meaning": "sauron",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "sickle": {
+    "level": 8,
+    "character": "釆",
+    "meaning": "sickle",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "horse": {
+    "level": 8,
+    "character": "馬",
+    "meaning": "horse",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "hole": {
+    "level": 8,
+    "character": "穴",
+    "meaning": "hole",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "gravity": {
+    "level": 8,
+    "character": "易",
+    "meaning": "gravity",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "tongue": {
+    "level": 8,
+    "character": "舌",
+    "meaning": "tongue",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "suit": {
+    "level": 8,
+    "character": "合",
+    "meaning": "suit",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "cage": {
+    "level": 8,
+    "character": "匚",
+    "meaning": "cage",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "cloak": {
+    "level": 8,
+    "character": null,
+    "meaning": "cloak",
+    "image_file_name": "0f10574d1429d646939be830b6c613b53a71cfc0.png",
+    "image_content_type": "image/png",
+    "image_file_size": 8438,
+    "image": "https://cdn.wanikani.com/subjects/images/8780-cloak-large.png"
+  },
+  "hills": {
+    "level": 8,
+    "character": null,
+    "meaning": "hills",
+    "image_file_name": "d50326adb021f3b1fd1d2368a564de997341434a.png",
+    "image_content_type": "image/png",
+    "image_file_size": 17177,
+    "image": "https://cdn.wanikani.com/subjects/images/8771-hills-large.png"
+  },
+  "coat-rack": {
+    "level": 9,
+    "character": "疋",
+    "meaning": "coat-rack",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "train": {
+    "level": 9,
+    "character": null,
+    "meaning": "train",
+    "image_file_name": "daefe7451e5821d81a3a90f045629a7081d3f807.png",
+    "image_content_type": "image/png",
+    "image_file_size": 16754,
+    "image": "https://cdn.wanikani.com/subjects/images/8779-train-large.png"
+  },
+  "hut": {
+    "level": 9,
+    "character": "介",
+    "meaning": "hut",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "history": {
+    "level": 9,
+    "character": "史",
+    "meaning": "history",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "tent": {
+    "level": 9,
+    "character": "癶",
+    "meaning": "tent",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "clown": {
+    "level": 9,
+    "character": "咅",
+    "meaning": "clown",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "butcher": {
+    "level": 9,
+    "character": "阝",
+    "meaning": "butcher",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "spicy": {
+    "level": 9,
+    "character": "辛",
+    "meaning": "spicy",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "heavy": {
+    "level": 9,
+    "character": "重",
+    "meaning": "heavy",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "devil": {
+    "level": 9,
+    "character": "反",
+    "meaning": "devil",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "brush": {
+    "level": 9,
+    "character": "聿",
+    "meaning": "brush",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "machine": {
+    "level": 9,
+    "character": "台",
+    "meaning": "machine",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "helicopter": {
+    "level": 9,
+    "character": "覀",
+    "meaning": "helicopter",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "hick": {
+    "level": 9,
+    "character": null,
+    "meaning": "hick",
+    "image_file_name": "80ad47735bc52c2a06ee977dc8a2a8669c5c5cb9.png",
+    "image_content_type": "image/png",
+    "image_file_size": 11108,
+    "image": "https://cdn.wanikani.com/subjects/images/8787-hick-large.png"
+  },
+  "cleat": {
+    "level": 9,
+    "character": null,
+    "meaning": "cleat",
+    "image_file_name": "55ecdc3c571c091f01badb6fd4557d9dc25a9182.png",
+    "image_content_type": "image/png",
+    "image_file_size": 11978,
+    "image": "https://cdn.wanikani.com/subjects/images/8772-cleat-large.png"
+  },
+  "pope": {
+    "level": 9,
+    "character": null,
+    "meaning": "pope",
+    "image_file_name": "5a5428e7c1643a113ad1a6243368bce3912dbf2a.png",
+    "image_content_type": "image/png",
+    "image_file_size": 7908,
+    "image": "https://cdn.wanikani.com/subjects/images/8773-pope-large.png"
+  },
+  "tombstone": {
+    "level": 10,
+    "character": "圣",
+    "meaning": "tombstone",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "kiss": {
+    "level": 10,
+    "character": "各",
+    "meaning": "kiss",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "beans": {
+    "level": 10,
+    "character": "豆",
+    "meaning": "beans",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "alcohol": {
+    "level": 10,
+    "character": "酉",
+    "meaning": "alcohol",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "superman": {
+    "level": 10,
+    "character": "辰",
+    "meaning": "superman",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "geoduck": {
+    "level": 10,
+    "character": "頁",
+    "meaning": "geoduck",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "music": {
+    "level": 10,
+    "character": "曲",
+    "meaning": "music",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "dynamite": {
+    "level": 10,
+    "character": "丙",
+    "meaning": "dynamite",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "sick": {
+    "level": 10,
+    "character": "疒",
+    "meaning": "sick",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "stairs": {
+    "level": 10,
+    "character": "乃",
+    "meaning": "stairs",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "ent": {
+    "level": 10,
+    "character": "束",
+    "meaning": "ent",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "turkey": {
+    "level": 10,
+    "character": "隹",
+    "meaning": "turkey",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "fault": {
+    "level": 10,
+    "character": "失",
+    "meaning": "fault",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "sell": {
+    "level": 10,
+    "character": "売",
+    "meaning": "sell",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "chinese": {
+    "level": 10,
+    "character": null,
+    "meaning": "chinese",
+    "image_file_name": "89eeedfc1737a0e9f264efd77840fd519a8710c4.png",
+    "image_content_type": "image/png",
+    "image_file_size": 14433,
+    "image": "https://cdn.wanikani.com/subjects/images/8774-chinese-large.png"
+  },
+  "orders": {
+    "level": 11,
+    "character": "令",
+    "meaning": "orders",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "say-humbly": {
+    "level": 11,
+    "character": "申",
+    "meaning": "say-humbly",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "older-brother": {
+    "level": 11,
+    "character": "兄",
+    "meaning": "older-brother",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "temple": {
+    "level": 11,
+    "character": "寺",
+    "meaning": "temple",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "escalator": {
+    "level": 11,
+    "character": "及",
+    "meaning": "escalator",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "drunkard": {
+    "level": 11,
+    "character": "戈",
+    "meaning": "drunkard",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "skin": {
+    "level": 11,
+    "character": "皮",
+    "meaning": "skin",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "good": {
+    "level": 11,
+    "character": "艮",
+    "meaning": "good",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "sound": {
+    "level": 11,
+    "character": "音",
+    "meaning": "sound",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "few": {
+    "level": 11,
+    "character": "少",
+    "meaning": "few",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "witch-doctor": {
+    "level": 11,
+    "character": "単",
+    "meaning": "witch-doctor",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "blackjack": {
+    "level": 11,
+    "character": null,
+    "meaning": "blackjack",
+    "image_file_name": "facc56551bbb36d73161821bada5c0de2a5c109c.png",
+    "image_content_type": "image/png",
+    "image_file_size": 7950,
+    "image": "https://cdn.wanikani.com/subjects/images/8775-blackjack-large.png"
+  },
+  "boob": {
+    "level": 11,
+    "character": null,
+    "meaning": "boob",
+    "image_file_name": "88bba82c6ba37f67ae2f9e6ce9bcc2683e814652.png",
+    "image_content_type": "image/png",
+    "image_file_size": 11604,
+    "image": "https://cdn.wanikani.com/subjects/images/8776-boob-large.png"
+  },
+  "bear": {
+    "level": 11,
+    "character": null,
+    "meaning": "bear",
+    "image_file_name": "e3d29c78609f9b95e22227200475e2e8b413f16e.png",
+    "image_content_type": "image/png",
+    "image_file_size": 10178,
+    "image": "https://cdn.wanikani.com/subjects/images/8777-bear-large.png"
+  },
+  "early": {
+    "level": 12,
+    "character": "早",
+    "meaning": "early",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "younger-brother": {
+    "level": 12,
+    "character": "弟",
+    "meaning": "younger-brother",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "someone": {
+    "level": 12,
+    "character": "者",
+    "meaning": "someone",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "tie-fighter": {
+    "level": 12,
+    "character": "亜",
+    "meaning": "tie-fighter",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "crab": {
+    "level": 12,
+    "character": "其",
+    "meaning": "crab",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "big-bird": {
+    "level": 12,
+    "character": "廴",
+    "meaning": "big-bird",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "jackhammer": {
+    "level": 12,
+    "character": "示",
+    "meaning": "jackhammer",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "excuse": {
+    "level": 12,
+    "character": "免",
+    "meaning": "excuse",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "injustice": {
+    "level": 12,
+    "character": "非",
+    "meaning": "injustice",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "beforehand": {
+    "level": 12,
+    "character": "予",
+    "meaning": "beforehand",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "tofu": {
+    "level": 12,
+    "character": null,
+    "meaning": "tofu",
+    "image_file_name": "9b46b71a134048d06da9522c6b90f78689a07271.png",
+    "image_content_type": "image/png",
+    "image_file_size": 31107,
+    "image": "https://cdn.wanikani.com/subjects/images/8778-tofu-large.png"
+  },
+  "shrimp": {
+    "level": 13,
+    "character": "尺",
+    "meaning": "shrimp",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "idea": {
+    "level": 13,
+    "character": "意",
+    "meaning": "idea",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "womb": {
+    "level": 13,
+    "character": "坴",
+    "meaning": "womb",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "circle": {
+    "level": 13,
+    "character": "丸",
+    "meaning": "circle",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "east": {
+    "level": 13,
+    "character": "東",
+    "meaning": "east",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "roof": {
+    "level": 13,
+    "character": "亼",
+    "meaning": "roof",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "books": {
+    "level": 13,
+    "character": "冊",
+    "meaning": "books",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "products": {
+    "level": 13,
+    "character": "品",
+    "meaning": "products",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "correct": {
+    "level": 13,
+    "character": "正",
+    "meaning": "correct",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "diamond": {
+    "level": 13,
+    "character": "原",
+    "meaning": "diamond",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "central": {
+    "level": 13,
+    "character": "央",
+    "meaning": "central",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "fish-stick": {
+    "level": 13,
+    "character": "忄",
+    "meaning": "fish-stick",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "somebody": {
+    "level": 13,
+    "character": "身",
+    "meaning": "somebody",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "fruit": {
+    "level": 13,
+    "character": "果",
+    "meaning": "fruit",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "hundred": {
+    "level": 13,
+    "character": "百",
+    "meaning": "hundred",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "creeper": {
+    "level": 13,
+    "character": null,
+    "meaning": "creeper",
+    "image_file_name": "244523012bc55c4b17b8dfbe282f4b0c7ee454fb.png",
+    "image_content_type": "image/png",
+    "image_file_size": 9009,
+    "image": "https://cdn.wanikani.com/subjects/images/8781-creeper-large.png"
+  },
+  "public": {
+    "level": 14,
+    "character": "公",
+    "meaning": "public",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "pool": {
+    "level": 14,
+    "character": "勺",
+    "meaning": "pool",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "now": {
+    "level": 14,
+    "character": "今",
+    "meaning": "now",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "well": {
+    "level": 14,
+    "character": "井",
+    "meaning": "well",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "part": {
+    "level": 14,
+    "character": "分",
+    "meaning": "part",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "bar": {
+    "level": 14,
+    "character": null,
+    "meaning": "bar",
+    "image_file_name": "b273dbd3b9c595870d8918407d352885408d9433.png",
+    "image_content_type": "image/png",
+    "image_file_size": 28504,
+    "image": "https://cdn.wanikani.com/subjects/images/8782-bar-large.png"
+  },
+  "paragraph": {
+    "level": 15,
+    "character": "句",
+    "meaning": "paragraph",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "man": {
+    "level": 15,
+    "character": "男",
+    "meaning": "man",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "cemetery": {
+    "level": 15,
+    "character": "去",
+    "meaning": "cemetery",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "walk": {
+    "level": 15,
+    "character": "歩",
+    "meaning": "walk",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "height": {
+    "level": 15,
+    "character": "丈",
+    "meaning": "height",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "grass": {
+    "level": 15,
+    "character": null,
+    "meaning": "grass",
+    "image_file_name": "41c7e2dc975b55e8292e69321cd63f0d0eee447a.png",
+    "image_content_type": "image/png",
+    "image_file_size": 10657,
+    "image": "https://cdn.wanikani.com/subjects/images/8783-grass-large.png"
+  },
+  "saw": {
+    "level": 15,
+    "character": "巩",
+    "meaning": "saw",
+    "image_file_name": "ae757246cd4ba5b2ab2151b30a1dbddcc7cc5a42.png",
+    "image_content_type": "image/png",
+    "image_file_size": 16167,
+    "image": "https://cdn.wanikani.com/subjects/images/241-saw-large.png"
+  },
+  "drum": {
+    "level": 16,
+    "character": "壴",
+    "meaning": "drum",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "glue": {
+    "level": 16,
+    "character": "付",
+    "meaning": "glue",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "valley": {
+    "level": 16,
+    "character": "谷",
+    "meaning": "valley",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "robot": {
+    "level": 16,
+    "character": "面",
+    "meaning": "robot",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "zombie": {
+    "level": 16,
+    "character": null,
+    "meaning": "zombie",
+    "image_file_name": "16ae61711b9dbc4f0b81f0cb76ba44d72b42eb62.png",
+    "image_content_type": "image/png",
+    "image_file_size": 15575,
+    "image": "https://cdn.wanikani.com/subjects/images/8784-zombie-large.png"
+  },
+  "squid": {
+    "level": 16,
+    "character": null,
+    "meaning": "squid",
+    "image_file_name": "b29b484add85ead16251b3cccb9d342b38797c04.png",
+    "image_content_type": "image/png",
+    "image_file_size": 18690,
+    "image": "https://cdn.wanikani.com/subjects/images/8785-squid-large.png"
+  },
+  "comfort": {
+    "level": 17,
+    "character": "楽",
+    "meaning": "comfort",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "nothing": {
+    "level": 17,
+    "character": "無",
+    "meaning": "nothing",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "longcat": {
+    "level": 17,
+    "character": "吉",
+    "meaning": "longcat",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "tiger": {
+    "level": 17,
+    "character": "虍",
+    "meaning": "tiger",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "poem": {
+    "level": 17,
+    "character": "苟",
+    "meaning": "poem",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "guard": {
+    "level": 17,
+    "character": "兑",
+    "meaning": "guard",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "worm": {
+    "level": 17,
+    "character": null,
+    "meaning": "worm",
+    "image_file_name": "86d987b6263355cc6b1c85d1761707209cc98b9f.png",
+    "image_content_type": "image/png",
+    "image_file_size": 7802,
+    "image": "https://cdn.wanikani.com/subjects/images/8786-worm-large.png"
+  },
+  "conflict": {
+    "level": 18,
+    "character": "争",
+    "meaning": "conflict",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "treasure-chest": {
+    "level": 18,
+    "character": "凶",
+    "meaning": "treasure-chest",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "happiness": {
+    "level": 18,
+    "character": "幸",
+    "meaning": "happiness",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "long-ago": {
+    "level": 18,
+    "character": "昔",
+    "meaning": "long-ago",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "gambler": {
+    "level": 18,
+    "character": "尭",
+    "meaning": "gambler",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "previous": {
+    "level": 18,
+    "character": "先",
+    "meaning": "previous",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "mask": {
+    "level": 18,
+    "character": "曽",
+    "meaning": "mask",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "noon": {
+    "level": 18,
+    "character": "午",
+    "meaning": "noon",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "become": {
+    "level": 19,
+    "character": "成",
+    "meaning": "become",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "genius": {
+    "level": 19,
+    "character": "才",
+    "meaning": "genius",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "black-hole": {
+    "level": 19,
+    "character": "复",
+    "meaning": "black-hole",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "director": {
+    "level": 19,
+    "character": "司",
+    "meaning": "director",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "city": {
+    "level": 19,
+    "character": "市",
+    "meaning": "city",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "reason": {
+    "level": 19,
+    "character": "由",
+    "meaning": "reason",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "together": {
+    "level": 19,
+    "character": "共",
+    "meaning": "together",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "feeling": {
+    "level": 19,
+    "character": "感",
+    "meaning": "feeling",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "ego": {
+    "level": 19,
+    "character": "我",
+    "meaning": "ego",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "explosion": {
+    "level": 20,
+    "character": null,
+    "meaning": "explosion",
+    "image_file_name": "3745e10096f14382e22aeca6221f6c12190713ec.png",
+    "image_content_type": "image/png",
+    "image_file_size": 21379,
+    "image": "https://cdn.wanikani.com/subjects/images/8788-explosion-large.png"
+  },
+  "fly": {
+    "level": 20,
+    "character": "飛",
+    "meaning": "fly",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "mona-lisa": {
+    "level": 20,
+    "character": "兼",
+    "meaning": "mona-lisa",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "arrows": {
+    "level": 20,
+    "character": "巛",
+    "meaning": "arrows",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "boob-grave": {
+    "level": 20,
+    "character": "至",
+    "meaning": "boob-grave",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "righteousness": {
+    "level": 20,
+    "character": "義",
+    "meaning": "righteousness",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "mohawk": {
+    "level": 21,
+    "character": "啇",
+    "meaning": "mohawk",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "stilts": {
+    "level": 21,
+    "character": "斉",
+    "meaning": "stilts",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "next": {
+    "level": 21,
+    "character": "次",
+    "meaning": "next",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "peace": {
+    "level": 21,
+    "character": "平",
+    "meaning": "peace",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "number": {
+    "level": 21,
+    "character": "番",
+    "meaning": "number",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "angle": {
+    "level": 21,
+    "character": "角",
+    "meaning": "angle",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "half": {
+    "level": 21,
+    "character": "半",
+    "meaning": "half",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "bathtub": {
+    "level": 22,
+    "character": "呂",
+    "meaning": "bathtub",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "cheap": {
+    "level": 22,
+    "character": "安",
+    "meaning": "cheap",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "slinky": {
+    "level": 22,
+    "character": "弗",
+    "meaning": "slinky",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "outhouse": {
+    "level": 22,
+    "character": "充",
+    "meaning": "outhouse",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "football": {
+    "level": 22,
+    "character": "爰",
+    "meaning": "football",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "ability": {
+    "level": 22,
+    "character": "能",
+    "meaning": "ability",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "leather": {
+    "level": 23,
+    "character": "革",
+    "meaning": "leather",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "four": {
+    "level": 23,
+    "character": "丩",
+    "meaning": "four",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "nailgun": {
+    "level": 23,
+    "character": "亭",
+    "meaning": "nailgun",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "road": {
+    "level": 23,
+    "character": "道",
+    "meaning": "road",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "demon": {
+    "level": 23,
+    "character": "鬼",
+    "meaning": "demon",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "clothes": {
+    "level": 23,
+    "character": "衣",
+    "meaning": "clothes",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "corn": {
+    "level": 23,
+    "character": null,
+    "meaning": "corn",
+    "image_file_name": "26b318ca8ddd617b89ee6de536e24ae729d598e9.png",
+    "image_content_type": "image/png",
+    "image_file_size": 7546,
+    "image": "https://cdn.wanikani.com/subjects/images/8789-corn-large.png"
+  },
+  "sunrise": {
+    "level": 24,
+    "character": "旦",
+    "meaning": "sunrise",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "cow-god": {
+    "level": 24,
+    "character": "韋",
+    "meaning": "cow-god",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "guest": {
+    "level": 24,
+    "character": "客",
+    "meaning": "guest",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "control": {
+    "level": 24,
+    "character": "制",
+    "meaning": "control",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "nature": {
+    "level": 24,
+    "character": "然",
+    "meaning": "nature",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "accept": {
+    "level": 24,
+    "character": "受",
+    "meaning": "accept",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "death-star": {
+    "level": 24,
+    "character": null,
+    "meaning": "death-star",
+    "image_file_name": "884e018f82f6e8982fe861a51d906618c9bbbd77.png",
+    "image_content_type": "image/png",
+    "image_file_size": 20222,
+    "image": "https://cdn.wanikani.com/subjects/images/8790-death-star-large.png"
+  },
+  "capital": {
+    "level": 25,
+    "character": "京",
+    "meaning": "capital",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "wedding": {
+    "level": 25,
+    "character": "甫",
+    "meaning": "wedding",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "friend": {
+    "level": 25,
+    "character": "友",
+    "meaning": "friend",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "mix": {
+    "level": 25,
+    "character": "交",
+    "meaning": "mix",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "circus": {
+    "level": 25,
+    "character": "冓",
+    "meaning": "circus",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "both": {
+    "level": 25,
+    "character": "両",
+    "meaning": "both",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "greenhouse": {
+    "level": 25,
+    "character": "莫",
+    "meaning": "greenhouse",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "mantis": {
+    "level": 25,
+    "character": "禹",
+    "meaning": "mantis",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "egg": {
+    "level": 26,
+    "character": null,
+    "meaning": "egg",
+    "image_file_name": "36075b7d466b8a3badd2bd2820495e57dba08e31.png",
+    "image_content_type": "image/png",
+    "image_file_size": 9406,
+    "image": "https://cdn.wanikani.com/subjects/images/8791-egg-large.png"
+  },
+  "announce": {
+    "level": 26,
+    "character": "告",
+    "meaning": "announce",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "ten-thousand": {
+    "level": 26,
+    "character": "万",
+    "meaning": "ten-thousand",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "peoples": {
+    "level": 27,
+    "character": "民",
+    "meaning": "peoples",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "surplus": {
+    "level": 27,
+    "character": "余",
+    "meaning": "surplus",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "change": {
+    "level": 27,
+    "character": "化",
+    "meaning": "change",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "farming": {
+    "level": 27,
+    "character": "農",
+    "meaning": "farming",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "rake": {
+    "level": 27,
+    "character": "而",
+    "meaning": "rake",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "substitute": {
+    "level": 27,
+    "character": "代",
+    "meaning": "substitute",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "exit": {
+    "level": 27,
+    "character": "出",
+    "meaning": "exit",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "comb": {
+    "level": 27,
+    "character": null,
+    "meaning": "comb",
+    "image_file_name": "a36063d7e9e78df6432c3161c7f1cff884bb7aa1.png",
+    "image_content_type": "image/png",
+    "image_file_size": 10281,
+    "image": "https://cdn.wanikani.com/subjects/images/8792-comb-large.png"
+  },
+  "giant": {
+    "level": 28,
+    "character": "巨",
+    "meaning": "giant",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "thorn": {
+    "level": 28,
+    "character": "屯",
+    "meaning": "thorn",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "hercules": {
+    "level": 28,
+    "character": "絜",
+    "meaning": "hercules",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "specialty": {
+    "level": 28,
+    "character": "専",
+    "meaning": "specialty",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "lovely": {
+    "level": 28,
+    "character": "麗",
+    "meaning": "lovely",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "morning": {
+    "level": 29,
+    "character": null,
+    "meaning": "morning",
+    "image_file_name": "8fd71fd5858b6e6f4a81ef71adbaa1a7b986f1ff.png",
+    "image_content_type": "image/png",
+    "image_file_size": 10567,
+    "image": "https://cdn.wanikani.com/subjects/images/8793-morning-large.png"
+  },
+  "ox": {
+    "level": 29,
+    "character": "尞",
+    "meaning": "ox",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "blame": {
+    "level": 29,
+    "character": "責",
+    "meaning": "blame",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "district": {
+    "level": 29,
+    "character": "区",
+    "meaning": "district",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "servant": {
+    "level": 29,
+    "character": "臣",
+    "meaning": "servant",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "nose": {
+    "level": 29,
+    "character": "乙",
+    "meaning": "nose",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "above": {
+    "level": 29,
+    "character": "上",
+    "meaning": "above",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "odd": {
+    "level": 29,
+    "character": "奇",
+    "meaning": "odd",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "waiter": {
+    "level": 30,
+    "character": "片",
+    "meaning": "waiter",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "north": {
+    "level": 30,
+    "character": "北",
+    "meaning": "north",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "oversee": {
+    "level": 30,
+    "character": "監",
+    "meaning": "oversee",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "lineage": {
+    "level": 30,
+    "character": "系",
+    "meaning": "lineage",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "turtle-shell": {
+    "level": 30,
+    "character": "甲",
+    "meaning": "turtle-shell",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "joker": {
+    "level": 30,
+    "character": "召",
+    "meaning": "joker",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "fang": {
+    "level": 31,
+    "character": "牙",
+    "meaning": "fang",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "line-up": {
+    "level": 31,
+    "character": "並",
+    "meaning": "line-up",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "chester": {
+    "level": 31,
+    "character": "鬲",
+    "meaning": "chester",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "rocket": {
+    "level": 31,
+    "character": "离",
+    "meaning": "rocket",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "bookshelf": {
+    "level": 31,
+    "character": "扁",
+    "meaning": "bookshelf",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "request": {
+    "level": 31,
+    "character": "求",
+    "meaning": "request",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "potato": {
+    "level": 31,
+    "character": "華",
+    "meaning": "potato",
+    "image_file_name": "8501cc97351387f11807192db5f0fcb639ac8e34.png",
+    "image_content_type": "image/png",
+    "image_file_size": 8394,
+    "image": "https://cdn.wanikani.com/subjects/images/335-potato-large.png"
+  },
+  "cat-pirate": {
+    "level": 32,
+    "character": "卬",
+    "meaning": "cat-pirate",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "same": {
+    "level": 32,
+    "character": "同",
+    "meaning": "same",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "night": {
+    "level": 32,
+    "character": "夜",
+    "meaning": "night",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "certain": {
+    "level": 32,
+    "character": "必",
+    "meaning": "certain",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "frostbite": {
+    "level": 32,
+    "character": "夌",
+    "meaning": "frostbite",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "spider": {
+    "level": 32,
+    "character": "夋",
+    "meaning": "spider",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "elf": {
+    "level": 32,
+    "character": null,
+    "meaning": "elf",
+    "image_file_name": "cebe3a90484ef41bc3664dbd9d94a3c96d0fcae8.png",
+    "image_content_type": "image/png",
+    "image_file_size": 10654,
+    "image": "https://cdn.wanikani.com/subjects/images/8799-elf-large.png"
+  },
+  "interval": {
+    "level": 33,
+    "character": "間",
+    "meaning": "interval",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "sock": {
+    "level": 33,
+    "character": "享",
+    "meaning": "sock",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "inside": {
+    "level": 33,
+    "character": "内",
+    "meaning": "inside",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "storehouse": {
+    "level": 33,
+    "character": "蔵",
+    "meaning": "storehouse",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "shark": {
+    "level": 33,
+    "character": null,
+    "meaning": "shark",
+    "image_file_name": "0bb8ac84251279ccf1219b9f1b5f9377f41b344d.png",
+    "image_content_type": "image/png",
+    "image_file_size": 25811,
+    "image": "https://cdn.wanikani.com/subjects/images/8794-shark-large.png"
+  },
+  "catapult": {
+    "level": 34,
+    "character": "呉",
+    "meaning": "catapult",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "member": {
+    "level": 34,
+    "character": "員",
+    "meaning": "member",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "claw": {
+    "level": 34,
+    "character": "爪",
+    "meaning": "claw",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "slice": {
+    "level": 34,
+    "character": "亥",
+    "meaning": "slice",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "kiln": {
+    "level": 34,
+    "character": "堇",
+    "meaning": "kiln",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "belt": {
+    "level": 35,
+    "character": "帯",
+    "meaning": "belt",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "turtle": {
+    "level": 35,
+    "character": "亀",
+    "meaning": "turtle",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "shuriken": {
+    "level": 35,
+    "character": "彑",
+    "meaning": "shuriken",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "sake": {
+    "level": 35,
+    "character": "為",
+    "meaning": "sake",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "bright": {
+    "level": 36,
+    "character": "明",
+    "meaning": "bright",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "valuable": {
+    "level": 36,
+    "character": "貴",
+    "meaning": "valuable",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "departure": {
+    "level": 36,
+    "character": "発",
+    "meaning": "departure",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "sweet": {
+    "level": 36,
+    "character": "甘",
+    "meaning": "sweet",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "south": {
+    "level": 36,
+    "character": "南",
+    "meaning": "south",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "right": {
+    "level": 36,
+    "character": "右",
+    "meaning": "right",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "protester": {
+    "level": 36,
+    "character": "舛",
+    "meaning": "protester",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "prize": {
+    "level": 37,
+    "character": "賞",
+    "meaning": "prize",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "omen": {
+    "level": 37,
+    "character": "兆",
+    "meaning": "omen",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "skewer": {
+    "level": 37,
+    "character": "串",
+    "meaning": "skewer",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "violence": {
+    "level": 37,
+    "character": "暴",
+    "meaning": "violence",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "propaganda": {
+    "level": 38,
+    "character": "辟",
+    "meaning": "propaganda",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "think": {
+    "level": 38,
+    "character": "思",
+    "meaning": "think",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "prefecture": {
+    "level": 38,
+    "character": "県",
+    "meaning": "prefecture",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "sky": {
+    "level": 38,
+    "character": "空",
+    "meaning": "sky",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "have": {
+    "level": 38,
+    "character": "有",
+    "meaning": "have",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "tooth": {
+    "level": 38,
+    "character": "歯",
+    "meaning": "tooth",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "buddy": {
+    "level": 39,
+    "character": "君",
+    "meaning": "buddy",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "former": {
+    "level": 39,
+    "character": "旧",
+    "meaning": "former",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "six": {
+    "level": 39,
+    "character": "六",
+    "meaning": "six",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "hill": {
+    "level": 39,
+    "character": "岡",
+    "meaning": "hill",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "three": {
+    "level": 39,
+    "character": "三",
+    "meaning": "three",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "reality": {
+    "level": 39,
+    "character": "真",
+    "meaning": "reality",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "scroll": {
+    "level": 39,
+    "character": "巻",
+    "meaning": "scroll",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "nurse": {
+    "level": 39,
+    "character": "㐮",
+    "meaning": "nurse",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "employ": {
+    "level": 40,
+    "character": "雇",
+    "meaning": "employ",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "every": {
+    "level": 40,
+    "character": "毎",
+    "meaning": "every",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "preserve": {
+    "level": 40,
+    "character": "保",
+    "meaning": "preserve",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "cactus": {
+    "level": 41,
+    "character": null,
+    "meaning": "cactus",
+    "image_file_name": "86a6968ee8170b9dc276c0d6de05774a77d30258.png",
+    "image_content_type": "image/png",
+    "image_file_size": 7871,
+    "image": "https://cdn.wanikani.com/subjects/images/8796-cactus-large.png"
+  },
+  "signpost": {
+    "level": 41,
+    "character": "丰",
+    "meaning": "signpost",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "wide": {
+    "level": 41,
+    "character": "広",
+    "meaning": "wide",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "trident": {
+    "level": 41,
+    "character": null,
+    "meaning": "trident",
+    "image_file_name": "4af7a4f93cef4bece4ab0ae0cf340875177991c4.png",
+    "image_content_type": "image/png",
+    "image_file_size": 8736,
+    "image": "https://cdn.wanikani.com/subjects/images/8795-trident-large.png"
+  },
+  "satellite": {
+    "level": 42,
+    "character": null,
+    "meaning": "satellite",
+    "image_file_name": "d27aa9c0cf07280965eee650b9bd0ed222620f08.png",
+    "image_content_type": "image/png",
+    "image_file_size": 20729,
+    "image": "https://cdn.wanikani.com/subjects/images/8798-satellite-large.png"
+  },
+  "melon": {
+    "level": 42,
+    "character": "瓜",
+    "meaning": "melon",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "bone": {
+    "level": 42,
+    "character": "骨",
+    "meaning": "bone",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "grenade": {
+    "level": 42,
+    "character": "臼",
+    "meaning": "grenade",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "shop": {
+    "level": 42,
+    "character": "屋",
+    "meaning": "shop",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "redwood": {
+    "level": 43,
+    "character": "耒",
+    "meaning": "redwood",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "imperial": {
+    "level": 43,
+    "character": "龍",
+    "meaning": "imperial",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "business": {
+    "level": 43,
+    "character": "業",
+    "meaning": "business",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "pirate": {
+    "level": 43,
+    "character": "尢",
+    "meaning": "pirate",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "badger": {
+    "level": 43,
+    "character": "豸",
+    "meaning": "badger",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "can": {
+    "level": 44,
+    "character": "缶",
+    "meaning": "can",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "blade": {
+    "level": 44,
+    "character": "刃",
+    "meaning": "blade",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "dragon": {
+    "level": 44,
+    "character": "竜",
+    "meaning": "dragon",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "wrap": {
+    "level": 44,
+    "character": "包",
+    "meaning": "wrap",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "wind": {
+    "level": 44,
+    "character": "風",
+    "meaning": "wind",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "protect": {
+    "level": 45,
+    "character": "守",
+    "meaning": "protect",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "again": {
+    "level": 45,
+    "character": "更",
+    "meaning": "again",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "house": {
+    "level": 45,
+    "character": "家",
+    "meaning": "house",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "favor": {
+    "level": 46,
+    "character": "恵",
+    "meaning": "favor",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "fat": {
+    "level": 46,
+    "character": "太",
+    "meaning": "fat",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "task": {
+    "level": 47,
+    "character": "務",
+    "meaning": "task",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "wave": {
+    "level": 47,
+    "character": "波",
+    "meaning": "wave",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "demolition-man": {
+    "level": 47,
+    "character": "敝",
+    "meaning": "demolition-man",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "mysterious": {
+    "level": 48,
+    "character": "玄",
+    "meaning": "mysterious",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "form": {
+    "level": 48,
+    "character": "容",
+    "meaning": "form",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "sunlight": {
+    "level": 48,
+    "character": "光",
+    "meaning": "sunlight",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "times": {
+    "level": 49,
+    "character": "回",
+    "meaning": "times",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "crab-trap": {
+    "level": 49,
+    "character": "甚",
+    "meaning": "crab-trap",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "psychopath": {
+    "level": 50,
+    "character": null,
+    "meaning": "psychopath",
+    "image_file_name": "59d0151270383a39d8a210c2af901d3ecb946ce2.png",
+    "image_content_type": "image/png",
+    "image_file_size": 25265,
+    "image": "https://cdn.wanikani.com/subjects/images/8797-psychopath-large.png"
+  },
+  "name": {
+    "level": 50,
+    "character": "名",
+    "meaning": "name",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "splinter": {
+    "level": 50,
+    "character": "禺",
+    "meaning": "splinter",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "stomach": {
+    "level": 51,
+    "character": "胃",
+    "meaning": "stomach",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "cottage": {
+    "level": 53,
+    "character": "舎",
+    "meaning": "cottage",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "tall": {
+    "level": 53,
+    "character": "高",
+    "meaning": "tall",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "convex": {
+    "level": 57,
+    "character": "凸",
+    "meaning": "convex",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "concave": {
+    "level": 57,
+    "character": "凹",
+    "meaning": "concave",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "below": {
+    "level": 59,
+    "character": "下",
+    "meaning": "below",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  },
+  "courage": {
+    "level": 60,
+    "character": "勇",
+    "meaning": "courage",
+    "image_file_name": null,
+    "image_content_type": null,
+    "image_file_size": null,
+    "image": null
+  }
+}
