@@ -69,7 +69,7 @@ function WK_Niai()
                         .wrap(`<div id="real_skrv"></div>`);
 
                 $(`div#real_skrv`)
-                    .prepend(this.createNiaiSection(`margin-bottom: 1em;`)
+                    .append(this.createNiaiSection(`margin-bottom: 1em;`)
                              .wrap(`<div class="pure-u-1 col1></div>`)
                              .wrap(`<div class="pure-g-r"></div>`));
 
