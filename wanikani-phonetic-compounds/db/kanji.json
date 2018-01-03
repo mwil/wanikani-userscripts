@@ -5350,6 +5350,7 @@
     },
     "宜": {
         "readings": ["ぎ"],
+        "decomposition": ["宀", "且"],
         "type": "unknown"
     },
     "尚": {
@@ -5927,7 +5928,8 @@
     "砕": {
         "readings": ["さい"],
         "phonetic": "卒",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "窃": {
         "readings": ["せつ"],
@@ -6362,7 +6364,8 @@
     "粋": {
         "readings": ["すい"],
         "phonetic": "卒",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "紛": {
         "readings": ["ふん"],
