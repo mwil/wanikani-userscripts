@@ -127,6 +127,52 @@ function KeiseiDB()
                 return [];
         },
         // #####################################################################
+
+        // Sort the readings by their importance (main readings first, then the
+        // readings that are at least possible, and finally readings unused in
+        // jouyou. Also add styles that reflect their importance.
+        // #####################################################################
+        getPReadings_format: function(phon)
+        {
+            let result = [];
+            const rnd_length = this.phonetic_db[phon].readings.length;
+
+            if (phon in this.phonetic_db)
+            {
+                this.phonetic_db[phon].readings.forEach(
+                    function(reading, i)
+                    {
+                        let rnd_count = 0;
+
+                        [phon, ...this.phonetic_db[phon].compounds].forEach(
+                            function(compound, j)
+                            {
+                                if (!(compound in this.kanji_db))
+                                    return;
+
+                                // Give a bonus to earlier readings in the phonetic's list
+                                if (this.kanji_db[compound].readings[0] === reading)
+                                    rnd_count += 10 + (rnd_length-i);
+                                else if (this.kanji_db[compound].readings.includes(reading))
+                                    rnd_count += 2 + (rnd_length-i);
+                            },
+                            this
+                        );
+
+                        if (!rnd_count)
+                            result.push([rnd_count, `<span class="keisei_obscure_reading">${reading}</span>`]);
+                        else if (rnd_count < 10)
+                            result.push([rnd_count, `<span class="keisei_alternative_reading">${reading}</span>`]);
+                        else
+                            result.push([rnd_count, `<span class="keisei_main_reading">${reading}</span>`]);
+                    },
+                    this
+                );
+            }
+
+            return result.sort().reverse().map((d)=>d[1]);
+        },
+        // #####################################################################
         // #####################################################################
         getPXRefs: function(phon)
         {

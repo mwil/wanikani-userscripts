@@ -23,6 +23,18 @@
     background-color: #fb1 !important;
 }
 
+.wk_namespace .keisei_obscure_reading {
+    color: #aaa;
+}
+
+.wk_namespace .keisei_alternative_reading {
+    color: #888;
+}
+
+.wk_namespace .keisei_main_reading {
+    font-weight: bold;
+}
+
 /* #f0a -> 0c4, #dd0093 -> 092 */
 .wk_namespace ul.single-character-grid li[id|=phonetic]
 {

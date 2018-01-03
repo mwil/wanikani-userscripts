@@ -76,10 +76,10 @@ function WK_Keisei()
             case this.wki.PageEnum.lessons:
                 if ($(`div#main-info`).hasClass(`radical`))
                     $(`div#supplement-rad-name-mne`)
-                        .after(this.createKeiseiSection(`margin-top: 1em;`));
+                        .after(this.createKeiseiSection(`margin-top: 1.5em;`));
                 else
                     $(`div#supplement-kan-reading div.col2 blockquote:last`)
-                        .after(this.createKeiseiSection(`margin-top: 1em;`));
+                        .after(this.createKeiseiSection(`margin-top: 1.5em;`));
 
                 break;
             default:
@@ -89,6 +89,8 @@ function WK_Keisei()
         // #####################################################################
 
         this.populateKeiseiSection(subject);
+
+        // #####################################################################
 
         if (curPage === this.wki.PageEnum.reviews ||
             curPage === this.wki.PageEnum.lessons)
@@ -123,7 +125,7 @@ function WK_Keisei()
                 // Radical subject with a phonetic association
                 $(`#keisei_explanation`).append(
                     this.explanation_radical(subject,
-                                             this.kdb.getPReadings(subject.phon)));
+                                             this.kdb.getPReadings_format(subject.phon)));
                 this.populateCharGrid(`#keisei_phonetic_grid`, subject);
             }
             else
@@ -158,7 +160,7 @@ function WK_Keisei()
             else if (this.kdb.checkPhonetic(subject.kan))
             {
                 $(`#keisei_explanation`).append(
-                    this.explanation_pmark(subject, this.kdb.getPReadings(subject.kan)));
+                    this.explanation_pmark(subject, this.kdb.getPReadings_format(subject.kan)));
 
                 // v1.1.1 Fixed bug where kanji that are tone marks but also have their own tone mark
                 if (subject.kan !== subject.phon)
@@ -203,7 +205,7 @@ function WK_Keisei()
                         $(`#keisei_explanation`).append(
                             this.explanation_phonetic(
                                 subject,
-                                this.kdb.getPReadings(subject.phon)));
+                                this.kdb.getPReadings_format(subject.phon)));
 
                         this.populateCharGrid(`#keisei_phonetic_grid`, subject);
 
@@ -243,13 +245,6 @@ function WK_Keisei()
     };
     // #########################################################################
 
-    // Find common items in two arrays a, b.
-    //
-    // From https://stackoverflow.com/a/16227294/2699475
-    // #########################################################################
-    const intersect = (a, b) => a.filter((e) => (b.indexOf(e)>-1));
-    // #########################################################################
-
     // Create character items for all compounds, sort them, and add them all.
     // #########################################################################
     WK_Keisei.prototype.populateCharGrid = function(selector, subject)
@@ -275,11 +270,11 @@ function WK_Keisei()
                 if (!kanji)
                     return;
 
-                const common_readings = intersect(
+                const common_readings = _.intersection(
                                             this.kdb.getKReadings(kanji),
                                             this.kdb.getPReadings(subject.phon));
 
-                const li_template = {
+                const cur_compound_li = {
                     "kanji":    kanji,
                     "readings": this.kdb.getKReadings(kanji),
                     "meaning":  this.kdb.getWKKMeaning(kanji)[0],
@@ -293,7 +288,7 @@ function WK_Keisei()
                 if (this.kdb.getKReadings(kanji).length === common_readings.length)
                 {
                     badges.push(`badge-perfect`);
-                    char_list_hi.unshift(li_template);
+                    char_list_hi.unshift(cur_compound_li);
 
                     if (kanji === subject.kan)
                         $(`#keisei_explanation_quality`).html(
@@ -302,7 +297,7 @@ function WK_Keisei()
                 else if (!common_readings.length)
                 {
                     badges.push(`badge-low`);
-                    char_list_lo.push(li_template);
+                    char_list_lo.push(cur_compound_li);
 
                     if (kanji === subject.kan)
                         $(`#keisei_explanation_quality`).html(
@@ -314,7 +309,7 @@ function WK_Keisei()
                             this.kdb.getKReadings(kanji)[0]) !== -1)
                     {
                         badges.push(`badge-high`);
-                        char_list_hi.push(li_template);
+                        char_list_hi.push(cur_compound_li);
 
                         if (kanji === subject.kan)
                             $(`#keisei_explanation_quality`).html(
@@ -323,7 +318,7 @@ function WK_Keisei()
                     else
                     {
                         badges.push(`badge-middle`);
-                        char_list_lo.unshift(li_template);
+                        char_list_lo.unshift(cur_compound_li);
 
                         if (kanji === subject.kan)
                             $(`#keisei_explanation_quality`).html(
@@ -337,7 +332,7 @@ function WK_Keisei()
                         this.override_db[kanji].marked) != this.kdb.isPObscure(kanji))
                     badges.push(`badge-marked`);
 
-                li_template.badge = badges.join(` `);
+                cur_compound_li.badge = badges.join(` `);
             },
             this
         );
@@ -376,8 +371,7 @@ function WK_Keisei()
             });
 
         // Push sorted list of all phonetic compounds
-        char_list = char_list.concat(char_list_hi);
-        char_list = char_list.concat(char_list_lo);
+        char_list = [...char_list, ...char_list_hi, ...char_list_lo];
 
         $(selector).html(char_list.map(this.gen_item_chargrid).join(``));
         // #####################################################################
@@ -398,10 +392,10 @@ function WK_Keisei()
 
                 if (`base_phon` in subject && subject.base_phon === curPhon)
                     $(`#keisei_more_expl_${i}`).append(
-                        this.explanation_phonetic(subject, this.kdb.getPReadings(curPhon)));
+                        this.explanation_phonetic(subject, this.kdb.getPReadings_format(curPhon)));
                 else
                     $(`#keisei_more_expl_${i}`).append(
-                        this.explanation_xref(curPhon, this.kdb.getPReadings(curPhon)));
+                        this.explanation_xref(curPhon, this.kdb.getPReadings_format(curPhon)));
 
                 const $gridx = $(`<ul></ul>`)
                                .attr(`id`, `keisei_xref_grid_${i}`)
