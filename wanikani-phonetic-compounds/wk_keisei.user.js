@@ -18,7 +18,7 @@
 // @resource    phonetic_db  https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/phonetic_esc.json
 // @resource    wk_kanji_db  https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/wk_kanji_esc.json
 //
-// @resource    keisei_style https://raw.githubusercontent.com/mwil/wanikani-userscripts/4ac50d7104d41b25649cf950b309689aba236428/wanikani-phonetic-compounds/css/keisei.css
+// @resource    keisei_style https://raw.githubusercontent.com/mwil/wanikani-userscripts/0bcf5595834b9059256c0849f7e0419a313bad7b/wanikani-phonetic-compounds/css/keisei.css
 //
 // @resource    chargrid     https://raw.githubusercontent.com/mwil/wanikani-userscripts/7caebf537b4d02084d85f1a19d26b50c185d8d05/styles/css/chargrid.css
 // @resource    bootstrapcss https://raw.githubusercontent.com/mwil/wanikani-userscripts/7caebf537b4d02084d85f1a19d26b50c185d8d05/styles/bootstrap/css/bootstrap.crop.css
