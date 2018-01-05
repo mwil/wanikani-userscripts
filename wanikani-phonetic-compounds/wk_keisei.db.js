@@ -224,8 +224,8 @@ function KeiseiDB()
 
                 return (onyomi.includes(this.getKReadings(kanji)[0]));
             }
-
-            return false;
+            else
+                return true;
         },
         // #####################################################################
 
