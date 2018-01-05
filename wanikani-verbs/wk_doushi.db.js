@@ -44,6 +44,9 @@ function DoushiDB()
             if (settings.with_same_meaning)
                 related = related.concat(this.doushi_db[character].same_meaning);
 
+            if (settings.with_conjugated)
+                related = related.concat(this.doushi_db[character].conjugated);
+
             return related;
         },
 

@@ -44,6 +44,8 @@
                             <i class="icon-check-empty"></i> Same Stem</a>
                         <a class="btn" id="doushi_settings_btn_same_meaning" data-setting="with_same_meaning">
                             <i class="icon-check-empty"></i> Same Meaning</a>
+                        <a class="btn" id="doushi_settings_btn_conjugated" data-setting="with_conjugated">
+                            <i class="icon-check-empty"></i> Conjugated</a>
                         </div>
                         </p>
                     </div>
@@ -84,7 +86,8 @@
         }
 
         [`#doushi_settings_btn_same_kanji`, `#doushi_settings_btn_same_kana`,
-         `#doushi_settings_btn_same_stem`,  `#doushi_settings_btn_same_meaning`]
+         `#doushi_settings_btn_same_stem`,  `#doushi_settings_btn_same_meaning`,
+         `#doushi_settings_btn_conjugated`]
         .forEach(
             function(selector)
             {

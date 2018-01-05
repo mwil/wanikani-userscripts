@@ -13,7 +13,8 @@ function WK_Doushi()
         "with_same_kanji": true,
         "with_same_kana": true,
         "with_same_stem": true,
-        "with_same_meaning": true
+        "with_same_meaning": true,
+        "with_conjugated": true
     };
 }
 // #############################################################################
@@ -68,7 +69,8 @@ function WK_Doushi()
         $(`#doushi_not_found`).remove();
         $(`#doushi_grid`).empty();
 
-        if (!this.ddb.hasRelated(character, this.settings))
+        if (!this.ddb.hasRelated(character, this.settings) &&
+            !this.settings.with_self)
             $(`#doushi_section`).append(`<p id="doushi_not_found">Nothing found in DB.</p>`);
         else
             this.populateCharGrid(`#doushi_grid`, character);
@@ -110,21 +112,24 @@ function WK_Doushi()
             let badges = [];
             let vtype = [];
 
-            // check for vi/vt information
-            if (wk_info.pos.includes(`vi`))
-                if (wk_info.pos.includes(`vt`))
-                    vtype.push(`badge-both`);
+            if (`pos` in wk_info)
+            {
+                // check for vi/vt information
+                if (wk_info.pos.includes(`vi`))
+                    if (wk_info.pos.includes(`vt`))
+                        vtype.push(`badge-both`);
+                    else
+                        vtype.push(`badge-vi`);
+                else if (wk_info.pos.includes(`vt`))
+                    vtype.push(`badge-vt`);
                 else
-                    vtype.push(`badge-vi`);
-            else if (wk_info.pos.includes(`vt`))
-                vtype.push(`badge-vt`);
-            else
-                vtype.push(`badge-none`);
+                    vtype.push(`badge-none`);
 
-            if (!wk_info.pos || wk_info.pos.includes(`v1`))
-                badges.push(`badge-1dan`);
-            else
-                badges.push(`badge-5dan`);
+                if (!wk_info.pos || wk_info.pos.includes(`v1`))
+                    badges.push(`badge-1dan`);
+                else
+                    badges.push(`badge-5dan`);
+            }
 
             const li_item = {
                   "character": char,
@@ -155,6 +160,7 @@ function WK_Doushi()
         this.settings.with_same_kana    = GM_getValue(`with_same_kana`)    || false;
         this.settings.with_same_stem    = GM_getValue(`with_same_stem`)    || false;
         this.settings.with_same_meaning = GM_getValue(`with_same_meaning`) || false;
+        this.settings.with_conjugated   = GM_getValue(`with_conjugated`)   || false;
 
         this.wki.init();
         this.ddb.init();
