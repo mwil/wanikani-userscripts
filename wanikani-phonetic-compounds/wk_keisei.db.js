@@ -25,25 +25,6 @@ function KeiseiDB()
 (function() {
    "use strict";
 
-    // #####################################################################
-    const upperAll = function(string, delim=` `)
-    {
-        const tmp = string.split(delim);
-        let words = [];
-
-        for (let i = 0; i < tmp.length; i++)
-            words.push(tmp[i].charAt(0).toUpperCase() + tmp[i].slice(1));
-
-        let result = words.join(` `);
-
-        if (result.length > 15)
-            return result.slice(0, 12) + `...`;
-        else
-            return result;
-    };
-    // #####################################################################
-
-
     KeiseiDB.prototype = {
         constructor: KeiseiDB,
 
@@ -132,7 +113,7 @@ function KeiseiDB()
         // readings that are at least possible, and finally readings unused in
         // jouyou. Also add styles that reflect their importance.
         // #####################################################################
-        getPReadings_format: function(phon)
+        getPReadings_style: function(phon)
         {
             let result = [];
             const rnd_length = this.phonetic_db[phon].readings.length;
@@ -221,7 +202,7 @@ function KeiseiDB()
         getWKRadicalPP: function(phon)
         {
             if (this.phonetic_db && this.phonetic_db[phon][`wk-radical`])
-                return upperAll(this.phonetic_db[phon][`wk-radical`], `-`);
+                return _.startCase(this.phonetic_db[phon][`wk-radical`]);
             else
                 return `*Not in WK!*`;
         },
@@ -231,6 +212,20 @@ function KeiseiDB()
         isKanjiInWK: function(kanji)
         {
             return Boolean(this.wk_kanji_db && (kanji in this.wk_kanji_db));
+        },
+        // #####################################################################
+
+        // #####################################################################
+        isFirstReadingInWK: function(kanji)
+        {
+            if (this.isKanjiInWK(kanji))
+            {
+                const onyomi = this.getWKOnyomi(kanji);
+
+                return (onyomi.includes(this.getKReadings(kanji)[0]));
+            }
+
+            return false;
         },
         // #####################################################################
 
@@ -251,13 +246,17 @@ function KeiseiDB()
                 return [`*DB Error*`];
         },
         // #####################################################################
-        // TODO: correctly upper meanings with multiple words
         getWKKMeaning: function(kanji)
         {
+            let result = [];
+
             if (this.isKanjiInWK(kanji))
-                return this.wk_kanji_db[kanji].meaning.split(`,`).map((s) => upperAll(s, ` `));
+                result = this.wk_kanji_db[kanji].meaning.split(`,`);
             else
-                return this.kanji_db[kanji].meaning.map((s) => upperAll(s, ` `));
+                result = this.kanji_db[kanji].meanings;
+
+            return result.map(_.startCase)
+                         .map(_.partial(_.truncate, _, {"length": 15}));
         }
         // #####################################################################
     };

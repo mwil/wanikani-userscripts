@@ -8,13 +8,13 @@
 
     // Character item to be included in a character grid
     // #########################################################################
-    WK_Keisei.prototype.gen_item_chargrid = ({kanji, readings, meaning, notInWK=``, badge=``, href=`javascript:;`, kanji_id=`kanji-0`}) =>
+    WK_Keisei.prototype.gen_item_chargrid = ({kanji, readings, meaning, notInWK=``, badge=``, href=`javascript:;`, kanji_id=`kanji-0`, rnd_style=``}) =>
        `<li id="${kanji_id}" class="${notInWK} character-item">
             <span lang="ja" class="${badge}" data-kanji="${kanji}"></span>
             <a class="keisei_kanji_link" href="${href}">
                 <span class="character" lang="ja">${kanji}</span>
                 <ul>
-                    <li>${readings[0]}</li>
+                    <li class=${rnd_style}>${readings[0]}</li>
                     <li>${meaning}</li>
                 </ul>
             </a>

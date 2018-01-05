@@ -125,7 +125,7 @@ function WK_Keisei()
                 // Radical subject with a phonetic association
                 $(`#keisei_explanation`).append(
                     this.explanation_radical(subject,
-                                             this.kdb.getPReadings_format(subject.phon)));
+                                             this.kdb.getPReadings_style(subject.phon)));
                 this.populateCharGrid(`#keisei_phonetic_grid`, subject);
             }
             else
@@ -160,7 +160,7 @@ function WK_Keisei()
             else if (this.kdb.checkPhonetic(subject.kan))
             {
                 $(`#keisei_explanation`).append(
-                    this.explanation_pmark(subject, this.kdb.getPReadings_format(subject.kan)));
+                    this.explanation_pmark(subject, this.kdb.getPReadings_style(subject.kan)));
 
                 // v1.1.1 Fixed bug where kanji that are tone marks but also have their own tone mark
                 if (subject.kan !== subject.phon)
@@ -205,7 +205,7 @@ function WK_Keisei()
                         $(`#keisei_explanation`).append(
                             this.explanation_phonetic(
                                 subject,
-                                this.kdb.getPReadings_format(subject.phon)));
+                                this.kdb.getPReadings_style(subject.phon)));
 
                         this.populateCharGrid(`#keisei_phonetic_grid`, subject);
 
@@ -282,7 +282,10 @@ function WK_Keisei()
                     "href":     this.kdb.isKanjiInWK(kanji) ?
                                     `/kanji/${kanji}` :
                                     `https://jisho.org/search/${kanji}%20%23kanji`,
-                    "kanji_id": `kanji-${i+2}`
+                    "kanji_id": `kanji-${i+2}`,
+                    "rnd_style": this.kdb.isFirstReadingInWK(kanji) ?
+                                    `` :
+                                    `keisei_style_reading_notInWK`
                 };
 
                 if (this.kdb.getKReadings(kanji).length === common_readings.length)
@@ -367,7 +370,10 @@ function WK_Keisei()
                 "href":     this.kdb.isKanjiInWK(subject.phon) ?
                                 `/kanji/${subject.phon}` :
                                 `https://jisho.org/search/${subject.phon}%20%23kanji`,
-                "kanji_id": `kanji-1`
+                "kanji_id": `kanji-1`,
+                "rnd_style": this.kdb.isFirstReadingInWK(subject.phon) ?
+                                `` :
+                                `keisei_style_reading_notInWK`
             });
 
         // Push sorted list of all phonetic compounds
@@ -392,10 +398,10 @@ function WK_Keisei()
 
                 if (`base_phon` in subject && subject.base_phon === curPhon)
                     $(`#keisei_more_expl_${i}`).append(
-                        this.explanation_phonetic(subject, this.kdb.getPReadings_format(curPhon)));
+                        this.explanation_phonetic(subject, this.kdb.getPReadings_style(curPhon)));
                 else
                     $(`#keisei_more_expl_${i}`).append(
-                        this.explanation_xref(curPhon, this.kdb.getPReadings_format(curPhon)));
+                        this.explanation_xref(curPhon, this.kdb.getPReadings_style(curPhon)));
 
                 const $gridx = $(`<ul></ul>`)
                                .attr(`id`, `keisei_xref_grid_${i}`)
@@ -445,7 +451,10 @@ function WK_Keisei()
                         "href":     this.kdb.isKanjiInWK(curKanji) ?
                                         `/kanji/${curKanji}` :
                                         `https://jisho.org/search/${curKanji}%20%23kanji`,
-                        "kanji_id": `kanji-${i+101}`
+                        "kanji_id": `kanji-${i+101}`,
+                        "rnd_style": this.kdb.isFirstReadingInWK(curKanji) ?
+                                        `` :
+                                        `keisei_style_reading_notInWK`
                     });
                 },
                 this
