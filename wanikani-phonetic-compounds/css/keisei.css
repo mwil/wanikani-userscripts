@@ -34,6 +34,10 @@
     font-weight: bold;
 }
 
+.wk_namespace .keisei_style_reading_notInWK {
+    color: darkorange;
+}
+
 /* #f0a -> 0c4, #dd0093 -> 092 */
 .wk_namespace ul.single-character-grid li[id|=phonetic]
 {
