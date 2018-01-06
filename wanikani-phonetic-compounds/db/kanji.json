@@ -2646,6 +2646,7 @@
     },
     "航": {
         "readings": ["こう"],
+        "semantic": "舟",
         "phonetic": "亢",
         "type": "comp_phonetic"
     },
@@ -2779,6 +2780,7 @@
     },
     "順": {
         "readings": ["じゅん"],
+        "semantic": "頁",
         "phonetic": "川",
         "type": "comp_phonetic"
     },
@@ -3002,6 +3004,7 @@
     },
     "賞": {
         "readings": ["しょう"],
+        "semantic": "貝",
         "phonetic": "尚",
         "type": "comp_phonetic"
     },
@@ -3061,6 +3064,7 @@
     },
     "観": {
         "readings": ["かん"],
+        "semantic": "見",
         "phonetic": "雚",
         "type": "comp_phonetic"
     },
@@ -3272,6 +3276,7 @@
     "状": {
         "readings": ["じょう"],
         "composition": ["犬", "爿"],
+        "semantic": "犬",
         "phonetic": "爿",
         "type": "comp_phonetic"
     },
@@ -3362,6 +3367,7 @@
     },
     "版": {
         "readings": ["はん"],
+        "semantic": "片",
         "phonetic": "反",
         "type": "comp_phonetic"
     },
@@ -3623,6 +3629,7 @@
     },
     "眼": {
         "readings": ["がん", "げん"],
+        "semantic": "目",
         "phonetic": "艮",
         "type": "comp_phonetic"
     },
@@ -3817,6 +3824,7 @@
     },
     "群": {
         "readings": ["ぐん"],
+        "semantic": "羊",
         "phonetic": "君",
         "type": "comp_phonetic"
     },
@@ -3928,11 +3936,13 @@
     },
     "製": {
         "readings": ["せい"],
+        "semantic": "衣",
         "phonetic": "制",
         "type": "comp_phonetic"
     },
     "複": {
         "readings": ["ふく"],
+        "semantic": "衣",
         "phonetic": "复",
         "type": "comp_phonetic"
     },
@@ -4071,6 +4081,7 @@
     },
     "職": {
         "readings": ["しょく", "しき"],
+        "semantic": "耳",
         "phonetic": "戠",
         "type": "comp_phonetic"
     },
@@ -4555,6 +4566,7 @@
     },
     "密": {
         "readings": ["みつ", "びつ"],
+        "semantic": "山",
         "phonetic": "宓",
         "type": "comp_phonetic"
     },
@@ -4588,22 +4600,26 @@
     },
     "盛": {
         "readings": ["せい", "じょう"],
+        "semantic": "皿",
         "phonetic": "成",
         "type": "comp_phonetic"
     },
     "視": {
         "readings": ["し"],
+        "semantic": "見",
         "phonetic": "示",
         "type": "comp_phonetic",
         "obscure": true
     },
     "窓": {
         "readings": ["そう"],
+        "semantic": "穴",
         "phonetic": "悤",
         "type": "comp_phonetic"
     },
     "翌": {
         "readings": ["よく"],
+        "semantic": "羽",
         "phonetic": "立",
         "type": "comp_phonetic"
     },
@@ -4633,6 +4649,7 @@
     },
     "欲": {
         "readings": ["よく"],
+        "semantic": "欠",
         "phonetic": "谷",
         "type": "comp_phonetic"
     },
@@ -4687,6 +4704,7 @@
     },
     "裁": {
         "readings": ["さい"],
+        "semantic": "衣",
         "phonetic": "𢦏",
         "type": "comp_phonetic"
     },
@@ -4732,11 +4750,13 @@
     },
     "装": {
         "readings": ["そう", "しょう"],
+        "semantic": "衣",
         "phonetic": "壮",
         "type": "comp_phonetic"
     },
     "補": {
         "readings": ["ほ", "ふ"],
+        "semantic": "衣",
         "phonetic": "甫",
         "type": "comp_phonetic"
     },
@@ -4752,6 +4772,7 @@
     },
     "裏": {
         "readings": ["り"],
+        "semantic": "衣",
         "phonetic": "里",
         "type": "comp_phonetic"
     },
@@ -4779,6 +4800,7 @@
     },
     "盟": {
         "readings": ["めい"],
+        "semantic": "皿",
         "phonetic": "明",
         "type": "comp_phonetic"
     },
@@ -4790,6 +4812,7 @@
     },
     "署": {
         "readings": ["しょ"],
+        "semantic": "网",
         "phonetic": "者",
         "type": "comp_phonetic"
     },
@@ -4807,6 +4830,7 @@
     },
     "幕": {
         "readings": ["まく", "ばく"],
+        "semantic": "衣",
         "phonetic": "莫",
         "type": "comp_phonetic"
     },
@@ -4874,6 +4898,7 @@
     },
     "閣": {
         "readings": ["かく"],
+        "semantic": "門",
         "phonetic": "各",
         "type": "comp_phonetic"
     },
@@ -5014,6 +5039,7 @@
     },
     "難": {
         "readings": ["なん", "だん"],
+        "semantic": "隹",
         "phonetic": "𦰩",
         "type": "comp_phonetic"
     },
@@ -5572,6 +5598,7 @@
     },
     "岐": {
         "readings": ["き", "ぎ"],
+        "semantic": "山",
         "phonetic": "支",
         "type": "comp_phonetic"
     },
@@ -5839,6 +5866,7 @@
     },
     "岬": {
         "readings": ["こう"],
+        "semantic": "山",
         "phonetic": "甲",
         "type": "comp_phonetic"
     },
@@ -6163,6 +6191,7 @@
     "衷": {
         "readings": ["ちゅう"],
         "meanings": ["inmost"],
+        "semantic": "衣",
         "phonetic": "中",
         "type": "comp_phonetic"
     },
@@ -6226,6 +6255,7 @@
     },
     "盆": {
         "readings": ["ぼん", "ほん"],
+        "semantic": "皿",
         "phonetic": "分",
         "type": "comp_phonetic"
     },
@@ -6303,6 +6333,7 @@
     },
     "峡": {
         "readings": ["きょう"],
+        "semantic": "山",
         "phonetic": "夾",
         "type": "comp_phonetic"
     },
@@ -6618,6 +6649,7 @@
     "翁": {
         "readings": ["おう"],
         "meanings": ["venerable old man"],
+        "semantic": "羽",
         "phonetic": "公",
         "type": "comp_phonetic"
     },
@@ -6730,6 +6762,7 @@
     },
     "峰": {
         "readings": ["ほう", "ふ"],
+        "semantic": "山",
         "phonetic": "夆",
         "type": "comp_phonetic"
     },
@@ -6924,6 +6957,7 @@
     },
     "眠": {
         "readings": ["みん", "べん"],
+        "semantic": "目",
         "phonetic": "民",
         "type": "comp_phonetic"
     },
@@ -7031,11 +7065,13 @@
     },
     "蚊": {
         "readings": ["ぶん"],
+        "semantic": "虫",
         "phonetic": "文",
         "type": "comp_phonetic"
     },
     "被": {
         "readings": ["ひ"],
+        "semantic": "衣",
         "phonetic": "皮",
         "type": "comp_phonetic"
     },
@@ -7233,16 +7269,19 @@
     },
     "崎": {
         "readings": ["き"],
+        "semantic": "山",
         "phonetic": "奇",
         "type": "comp_phonetic"
     },
     "崇": {
         "readings": ["すう", "しゅう"],
+        "semantic": "山",
         "phonetic": "宗",
         "type": "comp_phonetic"
     },
     "崩": {
         "readings": ["ほう"],
+        "semantic": "山",
         "phonetic": "朋",
         "type": "comp_phonetic"
     },
@@ -7449,11 +7488,13 @@
     },
     "眺": {
         "readings": ["ちょう"],
+        "semantic": "目",
         "phonetic": "兆",
         "type": "comp_phonetic"
     },
     "窒": {
         "readings": ["ちつ"],
+        "semantic": "穴",
         "phonetic": "至",
         "type": "comp_phonetic"
     },
@@ -7517,6 +7558,7 @@
     },
     "舶": {
         "readings": ["はく"],
+        "semantic": "舟",
         "phonetic": "白",
         "type": "comp_phonetic"
     },
@@ -7542,16 +7584,19 @@
     },
     "蛍": {
         "readings": ["けい"],
+        "semantic": "虫",
         "phonetic": "熒",
         "type": "comp_phonetic"
     },
     "蛇": {
         "readings": ["じゃ", "だ", "た", "い"],
+        "semantic": "虫",
         "phonetic": "它",
         "type": "comp_phonetic"
     },
     "袋": {
         "readings": ["たい", "てい"],
+        "semantic": "衣",
         "phonetic":  "代",
         "type": "comp_phonetic"
     },
@@ -7569,6 +7614,7 @@
     },
     "赦": {
         "readings": ["しゃ"],
+        "semantic": "攴",
         "phonetic": "赤",
         "type": "comp_phonetic"
     },
@@ -7825,6 +7871,7 @@
     },
     "雇": {
         "readings": ["こ"],
+        "semantic": "隹",
         "phonetic": "戸",
         "type": "comp_phonetic"
     },
@@ -7916,6 +7963,7 @@
     },
     "欺": {
         "readings": ["ぎ", "き"],
+        "semantic": "欠",
         "phonetic": "其",
         "type": "comp_phonetic"
     },
@@ -8067,11 +8115,13 @@
     },
     "裕": {
         "readings": ["ゆう"],
+        "semantic": "衣",
         "phonetic": "谷",
         "type": "comp_phonetic"
     },
     "裂": {
         "readings": ["れつ"],
+        "semantic": "衣",
         "phonetic": "列",
         "type": "comp_phonetic"
     },
@@ -8424,6 +8474,7 @@
     },
     "雅": {
         "readings": ["が"],
+        "semantic": "隹",
         "phonetic": "牙",
         "type": "comp_phonetic"
     },
@@ -8445,11 +8496,13 @@
     },
     "睡": {
         "readings": ["すい"],
+        "semantic": "目",
         "phonetic": "垂",
         "type": "comp_phonetic"
     },
     "督": {
         "readings": ["とく"],
+        "semantic": "目",
         "phonetic": "叔",
         "type": "comp_phonetic"
     },
@@ -8490,6 +8543,7 @@
     },
     "艇": {
         "readings": ["てい"],
+        "semantic": "舟",
         "phonetic": "廷",
         "type": "comp_phonetic"
     },
@@ -8513,11 +8567,13 @@
     "褐": {
         "readings": ["かつ"],
         "meanings": ["brown"],
+        "semantic": "衣",
         "phonetic": "曷",
         "type": "comp_phonetic"
     },
     "裸": {
         "readings": ["ら"],
+        "semantic": "衣",
         "phonetic": "果",
         "type": "comp_phonetic"
     },
@@ -8767,6 +8823,7 @@
     },
     "雌": {
         "readings": ["し"],
+        "semantic": "隹",
         "phonetic": "此",
         "type": "comp_phonetic"
     },
@@ -9087,6 +9144,7 @@
     },
     "歓": {
         "readings": ["かん"],
+        "semantic": "欠",
         "phonetic": "雚",
         "type": "comp_phonetic"
     },
@@ -9108,6 +9166,7 @@
     },
     "艦": {
         "readings": ["かん"],
+        "semantic": "舟",
         "phonetic": "監",
         "type": "comp_phonetic"
     },
@@ -9192,6 +9251,7 @@
     },
     "襟": {
         "readings": ["きん"],
+        "semantic": "衣",
         "phonetic": "禁",
         "type": "comp_phonetic"
     },
@@ -9738,6 +9798,7 @@
     },
     "盤": {
         "readings": ["ばん", "はん"],
+        "semantic": "皿",
         "phonetic": "般",
         "type": "comp_phonetic"
     },
@@ -9882,6 +9943,7 @@
     },
     "翻": {
         "readings": ["ほん", "はん"],
+        "semantic": "羽",
         "phonetic": "番",
         "type": "comp_phonetic"
     },
@@ -9956,6 +10018,7 @@
     "窯": {
         "readings": ["よう"],
         "meanings": ["kiln"],
+        "semantic": "穴",
         "phonetic": "羔",
         "type": "comp_phonetic"
     },
@@ -9967,6 +10030,7 @@
     },
     "翼": {
         "readings": ["よく"],
+        "semantic": "羽",
         "phonetic": "異",
         "type": "comp_phonetic"
     },
@@ -9999,6 +10063,7 @@
     },
     "離": {
         "readings": ["り"],
+        "semantic": "隹",
         "phonetic": "离",
         "type": "comp_phonetic"
     },
@@ -10310,6 +10375,7 @@
     "袖": {
         "readings": ["しゅう"],
         "meanings": ["sleeve"],
+        "semantic": "衣",
         "phonetic": "由",
         "type": "comp_phonetic"
     },
@@ -10398,6 +10464,7 @@
     "裾": {
         "readings": ["きょ", "こ"],
         "meanings": ["cuff"],
+        "semantic": "衣",
         "phonetic": "居",
         "type": "comp_phonetic"
     },
@@ -10448,6 +10515,7 @@
     },
     "崖": {
         "readings": ["がい"],
+        "semantic": "山",
         "phonetic": "厓",
         "type": "comp_phonetic"
     },
@@ -10531,6 +10599,7 @@
     },
     "瞳": {
         "readings": ["どう", "とう"],
+        "semantic": "目",
         "phonetic": "童",
         "type": "comp_phonetic"
     },
@@ -10629,6 +10698,7 @@
     "窟": {
         "readings": ["くつ"],
         "meanings": ["cavern"],
+        "semantic": "穴",
         "phonetic": "屈",
         "type": "comp_phonetic"
     },
@@ -10638,6 +10708,7 @@
     },
     "蜂": {
         "readings": ["ほう"],
+        "semantic": "虫",
         "phonetic": "夆",
         "type": "comp_phonetic"
     },
@@ -10662,6 +10733,7 @@
     "罵": {
         "readings": ["ば"],
         "meanings": ["abuse"],
+        "semantic": "网",
         "phonetic": "馬",
         "type": "comp_phonetic"
     },
@@ -10869,6 +10941,7 @@
     },
     "瞭": {
         "readings": ["りょう"],
+        "semantic": "目",
         "phonetic": "尞",
         "type": "comp_phonetic"
     },
@@ -10910,6 +10983,7 @@
     },
     "虹": {
         "readings": ["こう"],
+        "semantic": "虫",
         "phonetic": "工",
         "type": "comp_phonetic"
     },
@@ -10981,6 +11055,7 @@
     "舷": {
         "readings": ["げん"],
         "meanings": ["gunwale"],
+        "semantic": "舟",
         "phonetic": "玄",
         "type": "comp_phonetic"
     },
@@ -11248,6 +11323,7 @@
     },
     "翔": {
         "readings": ["しょう"],
+        "semantic": "羽",
         "phonetic": "羊",
         "type": "comp_phonetic"
     },
@@ -11272,6 +11348,7 @@
     },
     "蟹": {
         "readings": ["かい"],
+        "semantic": "虫",
         "phonetic": "解",
         "type": "comp_phonetic"
     },
@@ -11298,6 +11375,7 @@
     },
     "聡": {
         "readings": ["そう"],
+        "semantic": "耳",
         "phonetic": "悤",
         "type": "comp_phonetic"
     },
@@ -11434,6 +11512,7 @@
     },
     "蝶": {
         "readings": ["ちょう"],
+        "semantic": "虫",
         "phonetic": "枼",
         "type": "comp_phonetic"
     },
@@ -11513,6 +11592,7 @@
     },
     "睦": {
         "readings": ["ぼく", "もく"],
+        "semantic": "目",
         "phonetic": "坴",
         "type": "comp_phonetic"
     },
