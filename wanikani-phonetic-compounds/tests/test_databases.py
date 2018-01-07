@@ -2,6 +2,7 @@ import json
 import regex
 
 KANJI_DB = "../db/kanji.json"
+WK_KANJI_DB = "../db/wk_kanji.json"
 PHONETIC_DB = "../db/phonetic.json"
 WK_RAD_DB = "../db/wk_rad.json"
 
@@ -18,6 +19,13 @@ def kanji_db_import():
         kanji_db = json.load(infile)
 
     return kanji_db
+
+
+def wk_kanji_db_import():
+    with open(WK_KANJI_DB, "r") as infile:
+        wk_kanji_db = json.load(infile)
+
+    return wk_kanji_db
 
 
 def wk_rad_db_import():
@@ -166,3 +174,40 @@ def test_wk_radical_coverage():
                     assert wk_item["character"] != phon,\
                         """Matching WK radical {} not mentioned in DB!
                         """.format(phon)
+
+
+def test_consistent_readings_wk_kanji():
+    kanji_db = kanji_db_import()
+    wk_kanji_db = wk_kanji_db_import()
+    phonetic_db = phonetic_db_import()
+
+    # 掛,堰,烏 seems like mistake in WK
+    # KP wrong for 斐?
+    EXCEPTIONS = ["兄", "黄", "由", "絵", "掛", "枕", "丼", "噌", "牙", "鈴",
+                  "御", "斐", "井", "鳩", "箸", "堰", "乃", "綾", "萌", "烏"]
+
+    for wk_kanji, wk_item in wk_kanji_db.items():
+        if wk_kanji not in kanji_db:
+            continue
+
+        if wk_kanji in EXCEPTIONS:
+            continue
+
+        if not kanji_db[wk_kanji]["readings"]:
+            print("No ON readings for kanji {}!".format(wk_kanji))
+            continue
+
+        rdg_first = kanji_db[wk_kanji]["readings"][0]
+
+        if not wk_item["onyomi"] or wk_item["onyomi"] == "None":
+            continue
+
+        rdgs_wk = [rdg.strip() for rdg in wk_item["onyomi"].split(",")]
+
+        assert rdg_first in rdgs_wk,\
+            """Reading {} of kanji {} not in WK!
+            """.format(rdg_first, wk_kanji)
+
+    for phon, p_item in phonetic_db.items():
+        if phon in wk_kanji_db:
+            continue
