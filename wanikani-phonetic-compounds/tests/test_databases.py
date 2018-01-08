@@ -211,3 +211,21 @@ def test_consistent_readings_wk_kanji():
     for phon, p_item in phonetic_db.items():
         if phon in wk_kanji_db:
             continue
+
+
+def test_consistent_phonetics():
+    kanji_db = kanji_db_import()
+    phonetic_db = phonetic_db_import()
+
+    for kanji, k_item in kanji_db.items():
+        if k_item["type"] != "comp_phonetic":
+            continue
+
+        assert "phonetic" in k_item
+        assert "semantic" in k_item
+
+        assert k_item["phonetic"] in phonetic_db
+
+        assert kanji in phonetic_db[k_item["phonetic"]]["compounds"],\
+            """Kanji {} not found as a compound for {}!
+            """.format(kanji, k_item["phonetic"])

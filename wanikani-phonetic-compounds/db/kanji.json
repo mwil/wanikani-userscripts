@@ -228,7 +228,9 @@
     },
     "気": {
         "readings": ["き", "け"],
-        "type": "unknown"
+        "semantic": "米",
+        "phonetic": "气",
+        "type": "comp_phonetic"
     },
     "竹": {
         "readings": ["ちく"],
@@ -624,8 +626,9 @@
     },
     "汽": {
         "readings": ["き"],
-        "type": "unknown",
-        "comment": "TODO phonetic 气"
+        "semantic": "水",
+        "phonetic": "气",
+        "type": "comp_phonetic"
     },
     "社": {
         "readings": ["しゃ", "じゃ"],
@@ -2877,8 +2880,9 @@
     },
     "貯": {
         "readings": ["ちょ"],
-        "type": "unknown",
-        "comment": "obscure tone mark 宁"
+        "semantic": "貝",
+        "phonetic": "宁",
+        "type": "comp_phonetic"
     },
     "費": {
         "readings": ["ひ"],
@@ -5879,9 +5883,8 @@
     "劾": {
         "readings": ["がい"],
         "semantic": "力",
-        "phonetic": "蜀",
-        "type": "comp_phonetic",
-        "obscure": true
+        "phonetic": "亥",
+        "type": "comp_phonetic"
     },
     "卓": {
         "readings": ["たく"],
@@ -6925,7 +6928,7 @@
     "核": {
         "readings": ["かく"],
         "semantic": "⽊",
-        "phonetic": "蜀",
+        "phonetic": "亥",
         "type": "comp_phonetic"
     },
     "桟": {
@@ -7523,6 +7526,7 @@
     },
     "渉": {
         "readings": ["しょう"],
+        "decomposition": ["水", "歩"],
         "type": "comp_indicative"
     },
     "淡": {
@@ -8692,7 +8696,7 @@
     "該": {
         "readings": ["がい", "かい"],
         "semantic": "言",
-        "phonetic": "蜀",
+        "phonetic": "亥",
         "type": "comp_phonetic"
     },
     "詰": {
@@ -10875,7 +10879,7 @@
         "readings": ["がい", "かい"],
         "meanings": ["bone"],
         "semantic": "骨",
-        "phonetic": "蜀",
+        "phonetic": "亥",
         "type": "comp_phonetic"
     },
     "弄": {
@@ -11400,6 +11404,7 @@
     "捗": {
         "readings": ["ちょく"],
         "meanings": ["make progress"],
+        "decomposition": ["手", "步"],
         "type": "unknown",
         "comment": "obscure tone mark 步"
     },
@@ -11506,8 +11511,9 @@
     },
     "伊": {
         "readings": ["い"],
-        "type": "unknown",
-        "comment": "TODO: search phonetic 尹"
+        "semantic": "人",
+        "phonetic": "尹",
+        "type": "comp_phonetic"
     },
     "鰐": {
         "readings": ["がく"],

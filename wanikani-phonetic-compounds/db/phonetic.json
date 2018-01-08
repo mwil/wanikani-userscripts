@@ -59,9 +59,15 @@
         "readings": ["ちょう", "てい", "とう"],
         "compounds": ["庁", "灯", "町", "亭", "頂", "訂", "打"],
         "non_compounds": ["貯"],
-        "xrefs": ["亭"],
-        "wk-radical": "nail",
-        "comment": "phonetic xref 宁?"
+        "xrefs": ["宁", "亭"],
+        "wk-radical": "nail"
+    },
+    "宁": {
+        "readings": ["ちょ"],
+        "compounds": ["貯"],
+        "non_compounds": [],
+        "xrefs": ["丁"],
+        "wk-radical": null
     },
     "化": {
         "readings": ["か", "け", "げ"],
@@ -268,7 +274,7 @@
     },
     "波": {
         "readings": ["は"],
-        "compounds": [],
+        "compounds": ["婆"],
         "non_compounds": [],
         "xrefs": ["皮"],
         "wk-radical": "wave"
@@ -1295,7 +1301,7 @@
     },
     "尞": {
         "readings": ["りょう"],
-        "compounds": ["僚", "寮", "瞭", "遼"],
+        "compounds": ["僚", "寮", "瞭", "遼", "療"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "ox"
@@ -1496,11 +1502,18 @@
         "xrefs": [],
         "wk-radical": "have"
     },
+    "尹": {
+        "readings": ["いん", "い"],
+        "compounds": ["伊"],
+        "non_compounds": [],
+        "xrefs": ["君"],
+        "wk-radical": null
+    },
     "君": {
         "readings": ["くん"],
         "compounds": ["郡", "群"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["尹"],
         "wk-radical": "buddy"
     },
     "役": {
@@ -3851,6 +3864,13 @@
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "hercules"
+    },
+    "气": {
+        "readings": ["き", "け"],
+        "compounds": ["気", "汽"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": "energy"
     },
     "宰": {
         "readings": ["さい"],
