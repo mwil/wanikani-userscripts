@@ -57,7 +57,7 @@
     },
     "丁": {
         "readings": ["ちょう", "てい", "とう"],
-        "compounds": ["庁", "灯", "町", "亭", "頂", "訂", "打"],
+        "compounds": ["庁", "灯", "町", "亭", "頂", "訂", "打", "宁"],
         "non_compounds": ["貯"],
         "xrefs": ["宁", "亭"],
         "wk-radical": "nail"
@@ -191,7 +191,7 @@
     "几": {
         "readings": ["き"],
         "compounds": ["机", "肌", "飢"],
-        "non_compounds": ["処", "冗"],
+        "non_compounds": ["処", "冗", "亢"],
         "xrefs": [],
         "wk-radical": "table"
     },
@@ -1730,7 +1730,7 @@
         "readings": ["てい", "い"],
         "compounds": ["聖", "廷", "呈"],
         "non_compounds": [],
-        "xrefs": ["呈"],
+        "xrefs": ["呈", "廷"],
         "wk-radical": null
     },
     "呈": {
@@ -1744,7 +1744,7 @@
         "readings": ["てい"],
         "compounds": ["庭", "艇"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["𡈼"],
         "wk-radical": null
     },
     "要": {
@@ -2192,9 +2192,9 @@
     },
     "至": {
         "readings": ["し"],
-        "compounds": ["致", "窒"],
-        "non_compounds": ["到", "室"],
-        "xrefs": ["致"],
+        "compounds": ["窒", "致"],
+        "non_compounds": ["到", "室", "屋"],
+        "xrefs": ["屋", "致", "到"],
         "wk-radical": "boob-grave"
     },
     "致": {
@@ -2208,14 +2208,14 @@
         "readings": ["とう"],
         "compounds": ["倒"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["至"],
         "wk-radical": null
     },
     "屋": {
         "readings": ["おく"],
         "compounds": ["握"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["至"],
         "wk-radical": "shop"
     },
     "疋": {
@@ -2567,14 +2567,14 @@
         "readings": ["しょう"],
         "compounds": ["状", "壮"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["壮"],
         "wk-radical": null
     },
     "壮": {
         "readings": ["そう", "しょう"],
         "compounds": ["荘", "装"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["爿"],
         "wk-radical": null
     },
     "支": {
@@ -3316,7 +3316,7 @@
         "readings": ["ほう", "ぶ"],
         "compounds": ["俸", "棒"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["丰"],
         "wk-radical": null
     },
     "喿": {
@@ -3442,7 +3442,7 @@
         "readings": ["ほう"],
         "compounds": ["邦", "奉"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["奉"],
         "wk-radical": "signpost"
     },
     "并": {
@@ -3561,14 +3561,14 @@
         "readings": ["しゅく", "せき"],
         "compounds": ["叔", "戚"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["叔"],
         "wk-radical": null
     },
     "叔": {
         "readings": ["しゅく"],
         "compounds": ["寂", "淑", "督"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["尗"],
         "wk-radical": null
     },
     "金": {

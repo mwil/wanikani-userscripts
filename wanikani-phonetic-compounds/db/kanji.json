@@ -1027,6 +1027,7 @@
     },
     "鳴": {
         "readings": ["めい", "みょう"],
+        "decomposition": ["口", "鳥"],
         "type": "comp_indicative",
         "comment": "NOT phonetic 鳥"
     },
@@ -1228,6 +1229,7 @@
     },
     "列": {
         "readings": ["れつ"],
+        "decomposition": ["刀", "歹"],
         "type": "comp_indicative"
     },
     "羊": {
@@ -1256,10 +1258,12 @@
     },
     "医": {
         "readings": ["い"],
+        "decomposition": ["匚", "矢"],
         "type": "comp_indicative"
     },
     "君": {
         "readings": ["くん"],
+        "decomposition": ["口", "尹"],
         "type": "comp_indicative"
     },
     "坂": {
@@ -11787,5 +11791,882 @@
         "semantic": "貝",
         "phonetic": "者",
         "type": "comp_phonetic"
+    },
+
+
+    "宁": {
+        "readings": ["ちょ"],
+        "meanings": ["calm", "peaceful", "serene", "healthy"],
+        "semantic": "宀",
+        "phonetic": "丁",
+        "type": "comp_phonetic"
+    },
+    "几": {
+        "readings": ["き"],
+        "meanings": ["table", "table enclosure"],
+        "type": "hieroglyph"
+    },
+    "亢": {
+        "readings": ["こう"],
+        "meanings": ["high spirits"],
+        "type": "hieroglyph"
+    },
+    "圭": {
+        "readings": ["けい"],
+        "meanings": ["square jewel", "corner", "angle", "edge"],
+        "decomposition": ["土", "土"],
+        "type": "comp_indicative"
+    },
+    "兪": {
+        "readings": ["ゆ"],
+        "meanings": ["steal"],
+        "type": "comp_indicative"
+    },
+    "莫": {
+        "readings": ["ばく", "まく", "ぼ", "も"],
+        "meanings": ["must not", "do not", "be not"],
+        "decomposition": ["茻", "日"],
+        "type": "comp_indicative"
+    },
+    "柬": {
+        "readings": ["かん", "けん", "れん"],
+        "meanings": ["select", "pick out"],
+        "type": "unprocessed"
+    },
+    "袁": {
+        "readings": ["えん", "おん"],
+        "meanings": ["long kimono"],
+        "type": "unprocessed"
+    },
+    "甫": {
+        "readings": ["ほ", "ふ"],
+        "meanings": ["for the first time", "not until"],
+        "type": "unprocessed"
+    },
+    "辰": {
+        "readings": ["しん"],
+        "meanings": ["sign of the dragon", "7-9AM", "fifth sign of Chinese zodiac"],
+        "type": "unprocessed"
+    },
+    "艮": {
+        "readings": ["こん", "ごん"],
+        "meanings": ["northeast (Oriental zodiac)", "stopping"],
+        "type": "unprocessed"
+    },
+    "其": {
+        "readings": ["き"],
+        "meanings": ["that"],
+        "type": "unprocessed"
+    },
+    "圣": {
+        "readings": ["けい"],
+        "meanings": ["holy", "sacred"],
+        "type": "unprocessed"
+    },
+    "囟": {
+        "readings": ["しん", "し"],
+        "meanings": ["skull", "top of the head"],
+        "type": "unprocessed"
+    },
+    "昜": {
+        "readings": ["よう"],
+        "meanings": ["open", "sun"],
+        "type": "unprocessed"
+    },
+    "卜": {
+        "readings": ["ぼく", "ほく"],
+        "meanings": ["divining", "fortune-telling", "divination or katakana to radical"],
+        "type": "unprocessed"
+    },
+    "弋": {
+        "readings": ["よく", "いき"],
+        "meanings": ["piling", "ceremony radical"],
+        "type": "unprocessed"
+    },
+    "氐": {
+        "readings": ["てい", "たい"],
+        "meanings": ["an ancient tribe"],
+        "type": "unprocessed"
+    },
+    "兑": {
+        "readings": ["だ", "たい", "えつ", "えい"],
+        "meanings": ["dui (one of the trigrams of the I Ching: swamp, west)"],
+        "type": "unprocessed"
+    },
+    "曽": {
+        "readings": ["そう", "そ", "ぞう"],
+        "meanings": ["formerly", "once", "before", "ever", "never", "ex-"],
+        "type": "unprocessed"
+    },
+    "菐": {
+        "readings": ["ほく", "ぼく"],
+        "meanings": ["thicket"],
+        "type": "unprocessed"
+    },
+    "𢦏": {
+        "readings": ["さい"],
+        "meanings": ["to cut", "wound", "hurt"],
+        "type": "unprocessed"
+    },
+    "甬": {
+        "readings": ["つう", "ゆう", "よう"],
+        "meanings": ["road with walls on both sides"],
+        "type": "unprocessed"
+    },
+    "㕣": {
+        "readings": ["えん"],
+        "meanings": ["marsh at the foot of the hills", "name of a river"],
+        "type": "unprocessed"
+    },
+    "云": {
+        "readings": ["うん"],
+        "meanings": ["say"],
+        "type": "unprocessed"
+    },
+    "尞": {
+        "readings": ["りょう"],
+        "meanings": ["fuel used for sacrifices"],
+        "type": "unprocessed"
+    },
+    "亲": {
+        "readings": ["しん"],
+        "meanings": ["parents", "one's family members"],
+        "type": "unprocessed"
+    },
+    "彦": {
+        "readings": ["げん"],
+        "meanings": ["lad", "boy (ancient)"],
+        "type": "unprocessed"
+    },
+    "畐": {
+        "readings": ["ふく", "ひき"],
+        "meanings": ["to fill", "roll of cloth"],
+        "type": "unprocessed"
+    },
+    "寅": {
+        "readings": ["いん"],
+        "meanings": ["sign of the tiger", "3-5AM", "third sign of Chinese zodiac"],
+        "type": "unprocessed"
+    },
+    "賁": {
+        "readings": ["ひ", "ほん", "ふん"],
+        "meanings": ["decorate"],
+        "type": "unprocessed"
+    },
+    "冓": {
+        "readings": ["こう"],
+        "meanings": ["put together", "inner palace"],
+        "type": "unprocessed"
+    },
+    "弗": {
+        "readings": ["ふつ"],
+        "meanings": ["dollar"],
+        "type": "unprocessed"
+    },
+    "丩": {
+        "readings": ["きゅう"],
+        "meanings": ["to join or connect the vine"],
+        "type": "unprocessed"
+    },
+    "尹": {
+        "readings": ["いん", "い"],
+        "meanings": ["an official rank"],
+        "type": "unprocessed"
+    },
+    "乍": {
+        "readings": ["さ", "さく", "じゃ"],
+        "meanings": ["though", "notwithstanding", "while", "during", "both", "all"],
+        "type": "unprocessed"
+    },
+    "朿": {
+        "readings": ["し"],
+        "meanings": ["thorn"],
+        "type": "unprocessed"
+    },
+    "僉": {
+        "readings": ["けん"],
+        "meanings": ["all"],
+        "type": "unprocessed"
+    },
+    "蜀": {
+        "readings": ["ぞく", "しょく"],
+        "meanings": ["green caterpillar", "Szechwan"],
+        "type": "unprocessed"
+    },
+    "亥": {
+        "readings": ["がい", "かい"],
+        "meanings": ["sign of the hog", "9-11PM", "twelfth sign of the Chinese zodiac"],
+        "type": "unprocessed"
+    },
+    "臧": {
+        "readings": ["ぞう", "そう"],
+        "meanings": ["good", "bribe", "servant"],
+        "type": "unprocessed"
+    },
+    "䍃": {
+        "readings": ["よう"],
+        "meanings": ["vase", "pitcher", "earthenware"],
+        "type": "unprocessed"
+    },
+    "厓": {
+        "readings": ["がい"],
+        "meanings": ["precipice", "shore", "bank", "surname", "cliff"],
+        "type": "unprocessed"
+    },
+    "扁": {
+        "readings": ["へん", "はん"],
+        "meanings": ["level", "small"],
+        "type": "unprocessed"
+    },
+    "韋": {
+        "readings": ["い"],
+        "meanings": ["tanned leather radical"],
+        "type": "unprocessed"
+    },
+    "戠": {
+        "readings": ["しょく", "し", "しき"],
+        "meanings": ["sword", "potter's clay", "to gather"],
+        "type": "unprocessed"
+    },
+    "爰": {
+        "readings": ["えん"],
+        "meanings": ["lead on to", "therefore", "then"],
+        "type": "unprocessed"
+    },
+    "瞏": {
+        "readings": ["けい", "せん"],
+        "meanings": ["gaze in terror", "lonely"],
+        "type": "unprocessed"
+    },
+    "堇": {
+        "readings": ["きん"],
+        "meanings": ["flowering plant of the family Violaceae"],
+        "type": "unprocessed"
+    },
+    "𦰩": {
+        "readings": ["かん", "なん"],
+        "meanings": ["drought"],
+        "type": "unprocessed",
+        "comment": "TODO: Check the meaning"
+    },
+    "𡈼": {
+        "readings": ["てい", "い"],
+        "meanings": ["the ninth Heavenly Stems"],
+        "type": "unprocessed"
+    },
+    "于": {
+        "readings": ["う"],
+        "meanings": ["going", "from"],
+        "type": "unprocessed"
+    },
+    "厶": {
+        "readings": ["し", "ぼう", "む"],
+        "meanings": ["I", "myself", "katakana mu radical"],
+        "type": "unprocessed"
+    },
+    "厷": {
+        "readings": ["こう", "ゆう"],
+        "meanings": ["the fore-arm", "the upper-arm", "round"],
+        "type": "unprocessed"
+    },
+    "勿": {
+        "readings": ["ぶつ", "もつ"],
+        "meanings": ["not", "must not", "do not", "be not"],
+        "type": "unprocessed"
+    },
+    "朮": {
+        "readings": ["じゅつ", "しゅつ"],
+        "meanings": ["type of millet", "a type of herb"],
+        "type": "unprocessed"
+    },
+    "妾": {
+        "readings": ["しょう"],
+        "meanings": ["concubine"],
+        "type": "unprocessed"
+    },
+    "敄": {
+        "readings": ["ぶ", "む"],
+        "meanings": ["to put forth effort"],
+        "type": "unprocessed"
+    },
+    "熒": {
+        "readings": ["えい", "えい", "ぎょう"],
+        "meanings": ["shine", "shimmer", "shining", "dazzling"],
+        "type": "unprocessed"
+    },
+    "复": {
+        "readings": ["ふく", "ふう", "ぶく", "ぶ"],
+        "meanings": ["return", "repeat", "repeatedly"],
+        "type": "unprocessed"
+    },
+    "咸": {
+        "readings": ["かん", "げん"],
+        "meanings": ["all", "same"],
+        "type": "unprocessed"
+    },
+    "或": {
+        "readings": ["わく", "こく", "よく"],
+        "meanings": ["some", "one", "or", "possibly", "a certain"],
+        "type": "unprocessed"
+    },
+    "侖": {
+        "readings": ["りん"],
+        "meanings": ["think", "be methodical"],
+        "type": "unprocessed"
+    },
+    "巽": {
+        "readings": ["そん"],
+        "meanings": ["southeast"],
+        "type": "unprocessed"
+    },
+    "彔": {
+        "readings": ["ろく"],
+        "meanings": ["to carve wood"],
+        "type": "unprocessed"
+    },
+    "竟": {
+        "readings": ["けい", "きょう"],
+        "meanings": ["end", "finally"],
+        "type": "unprocessed"
+    },
+    "𠬝": {
+        "readings": ["ふく", "ふう"],
+        "meanings": ["clothes", "to wear", "to dress"],
+        "type": "unprocessed"
+    },
+    "开": {
+        "readings": ["けん"],
+        "meanings": ["open", "initiate", "begin", "start"],
+        "type": "unprocessed"
+    },
+    "喬": {
+        "readings": ["きょう", "ぎょう"],
+        "meanings": ["high", "boasting"],
+        "type": "unprocessed"
+    },
+    "㐬": {
+        "readings": ["りゅう", "る"],
+        "meanings": ["a pennant", "a cup with pendants", "wild", "barren, uncultivated"],
+        "type": "unprocessed"
+    },
+    "㫃": {
+        "readings": ["えん"],
+        "meanings": ["flags flying", "long bands or ribbons attached to flags", "streamers"],
+        "type": "unprocessed"
+    },
+    "栗": {
+        "readings": ["りつ", "り"],
+        "meanings": ["chestnut"],
+        "type": "unprocessed"
+    },
+    "罔": {
+        "readings": ["もう", "ぼう", "む"],
+        "meanings": ["net"],
+        "type": "unprocessed"
+    },
+    "壬": {
+        "readings": ["じん", "にん"],
+        "meanings": ["9th calendar sign"],
+        "type": "unprocessed"
+    },
+    "肙": {
+        "readings": ["えん", "けん"],
+        "meanings": ["small worm", "to twist", "to surround", "empty"],
+        "type": "unprocessed"
+    },
+    "夭": {
+        "readings": ["よう"],
+        "meanings": ["early death", "calamity"],
+        "type": "unprocessed"
+    },
+    "关": {
+        "readings": ["しょう", "そう"],
+        "meanings": ["frontier pass", "close", "relation"],
+        "type": "unprocessed"
+    },
+    "尃": {
+        "readings": ["ふ", "はく"],
+        "meanings": ["to state to", "to announce"],
+        "type": "unprocessed"
+    },
+    "溥": {
+        "readings": ["ふ", "はく"],
+        "meanings": ["far and wide"],
+        "type": "unprocessed"
+    },
+    "滕": {
+        "readings": ["とう", "どう"],
+        "meanings": ["rising water"],
+        "type": "unprocessed"
+    },
+    "疋": {
+        "readings": ["しょ", "そ", "ひき", "ひつ"],
+        "meanings": ["head", "counter for animals"],
+        "type": "unprocessed"
+    },
+    "楚": {
+        "readings": ["そ", "しょ"],
+        "meanings": ["whip", "cane"],
+        "type": "unprocessed"
+    },
+    "胥": {
+        "readings": ["しょ", "そ"],
+        "meanings": ["together", "mutual", "subordinate official"],
+        "type": "unprocessed"
+    },
+    "乇": {
+        "readings": ["たく", "ちゃく"],
+        "meanings": ["to depend on", "to entrust with"],
+        "type": "unprocessed"
+    },
+    "禺": {
+        "readings": ["ぐ", "ぐう"],
+        "meanings": ["long-tailed monkey"],
+        "type": "unprocessed"
+    },
+    "聿": {
+        "readings": ["いつ", "いち"],
+        "meanings": ["brush", "finally", "self", "relate", "follow", "here", "fast", "writing brush radical"],
+        "type": "unprocessed"
+    },
+    "叚": {
+        "readings": ["か", "け"],
+        "meanings": ["false"],
+        "type": "unprocessed"
+    },
+    "孰": {
+        "readings": ["しゅく", "じゅく"],
+        "meanings": ["which", "how", "who"],
+        "type": "unprocessed"
+    },
+    "攸": {
+        "readings": ["ゆう"],
+        "meanings": ["relaxed", "at ease", "place"],
+        "type": "unprocessed"
+    },
+    "屰": {
+        "readings": ["ぎゃく"],
+        "meanings": ["disobedient"],
+        "type": "unprocessed"
+    },
+    "隹": {
+        "readings": ["すい"],
+        "meanings": ["bird", "old bird radical"],
+        "type": "unprocessed"
+    },
+    "崔": {
+        "readings": ["がい", "さい", "すい"],
+        "meanings": ["cliff", "bluff", "precipice"],
+        "type": "unprocessed"
+    },
+    "奞": {
+        "readings": ["すい"],
+        "meanings": ["man's stride"],
+        "type": "unprocessed"
+    },
+    "雚": {
+        "readings": ["かん"],
+        "meanings": ["heron", "small cup"],
+        "type": "unprocessed"
+    },
+    "隺": {
+        "readings": ["かく", "こく"],
+        "meanings": ["bird flying", "high ambition"],
+        "type": "unprocessed"
+    },
+    "此": {
+        "readings": ["し"],
+        "meanings": ["this", "current", "next", "coming", "last", "past"],
+        "type": "unprocessed"
+    },
+    "翟": {
+        "readings": ["けき", "たく", "たい"],
+        "meanings": ["surname", "kind of pheasant"],
+        "type": "unprocessed"
+    },
+    "蒦": {
+        "readings": ["ふく", "かく", "やく"],
+        "meanings": ["to measure", "to calculate"],
+        "type": "unprocessed"
+    },
+    "离": {
+        "readings": ["り", "ち"],
+        "meanings": ["rare beast", "strange", "elegant"],
+        "type": "unprocessed"
+    },
+    "羕": {
+        "readings": ["よう"],
+        "meanings": ["to stream"],
+        "type": "unprocessed"
+    },
+    "啇": {
+        "readings": ["てき", "ちゃく", "せき"],
+        "meanings": ["the stalk", "the stem", "the foot", "the base"],
+        "type": "unprocessed"
+    },
+    "犮": {
+        "readings": ["はつ"],
+        "meanings": ["to pull up"],
+        "type": "unprocessed"
+    },
+    "㒼": {
+        "readings": ["まん", "ばん"],
+        "meanings": ["average", "equivalent", "corresponding", "to cover something carefully and tightly without a break"],
+        "type": "unprocessed"
+    },
+    "爿": {
+        "readings": ["しょう"],
+        "meanings": ["left-side kata radical"],
+        "type": "unprocessed"
+    },
+    "臤": {
+        "readings": ["けん", "かん"],
+        "meanings": ["hard", "wise"],
+        "type": "unprocessed"
+    },
+    "熏": {
+        "readings": ["くん"],
+        "meanings": ["smoke", "fog", "vapor", "cure"],
+        "type": "unprocessed"
+    },
+    "蚤": {
+        "readings": ["そう"],
+        "meanings": ["flea"],
+        "type": "unprocessed"
+    },
+    "卂": {
+        "readings": ["じん", "しん"],
+        "meanings": ["to fly rapidly"],
+        "type": "unprocessed"
+    },
+    "卬": {
+        "readings": ["きょう", "ごう"],
+        "meanings": ["lofty", "high", "raise", "high-priced"],
+        "type": "unprocessed"
+    },
+    "癶": {
+        "readings": ["はつ"],
+        "meanings": ["dotted tent radical"],
+        "type": "unprocessed"
+    },
+    "羍": {
+        "readings": ["たつ", "たち"],
+        "meanings": ["the stride of a person"],
+        "type": "unprocessed"
+    },
+    "賈": {
+        "readings": ["か", "こ", "く", "け"],
+        "meanings": ["buy", "tradesman"],
+        "type": "unprocessed"
+    },
+    "垔": {
+        "readings": ["いん", "えん"],
+        "meanings": ["to restrain", "to dam a stream and change its direction", "mound"],
+        "type": "unprocessed"
+    },
+    "咅": {
+        "readings": ["ばい", "はい", "ぼう", "ほう"],
+        "meanings": ["to spit out"],
+        "type": "unprocessed"
+    },
+    "夆": {
+        "readings": ["ほう", "ふ"],
+        "meanings": ["resist"],
+        "type": "unprocessed"
+    },
+    "亘": {
+        "readings": ["こう", "せん"],
+        "meanings": ["span", "range", "extend over"],
+        "type": "unprocessed"
+    },
+    "夬": {
+        "readings": ["かい", "けつ"],
+        "meanings": ["decide", "determine", "archery glove"],
+        "type": "unprocessed"
+    },
+    "咼": {
+        "readings": ["か"],
+        "meanings": ["crooked mouth", "evil", "dishonest"],
+        "type": "unprocessed"
+    },
+    "彭": {
+        "readings": ["ほう"],
+        "meanings": ["swelling", "sound of drum"],
+        "type": "unprocessed"
+    },
+    "剌": {
+        "readings": ["らつ", "らい"],
+        "meanings": ["opposed", "biased"],
+        "type": "unprocessed"
+    },
+    "夾": {
+        "readings": ["きょう", "こう"],
+        "meanings": ["insert"],
+        "type": "unprocessed"
+    },
+    "坐": {
+        "readings": ["ざ", "さ"],
+        "meanings": ["sit"],
+        "type": "unprocessed"
+    },
+    "㒸": {
+        "readings": ["たい", "すい"],
+        "meanings": ["a year", "age", "the harvest"],
+        "type": "unprocessed"
+    },
+    "厤": {
+        "readings": ["れき", "りゃく"],
+        "meanings": ["to calculate", "the calendar"],
+        "type": "unprocessed"
+    },
+    "悤": {
+        "readings": ["そう"],
+        "meanings": ["agitated", "restless", "hurried"],
+        "type": "unprocessed"
+    },
+    "戔": {
+        "readings": ["せん", "ぜん", "さん"],
+        "meanings": ["damage", "remain", "slight"],
+        "type": "unprocessed"
+    },
+    "戊": {
+        "readings": ["ぼ", "ぼう"],
+        "meanings": ["5th calendar sign"],
+        "type": "unprocessed"
+    },
+    "羔": {
+        "readings": ["こう"],
+        "meanings": ["lamb"],
+        "type": "unprocessed"
+    },
+    "丂": {
+        "readings": ["こう"],
+        "meanings": ["obstruction of breath (qi) as it seeks release"],
+        "type": "unprocessed"
+    },
+    "隶": {
+        "readings": ["たい"],
+        "meanings": ["extend", "give", "cast", "slave radical"],
+        "type": "unprocessed"
+    },
+    "𡿺": {
+        "readings": ["のう", "どう"],
+        "meanings": ["brain", "memory"],
+        "type": "unprocessed"
+    },
+    "爾": {
+        "readings": ["じ", "に"],
+        "meanings": ["you", "thou", "second person"],
+        "type": "unprocessed"
+    },
+    "閏": {
+        "readings": ["じゅん"],
+        "meanings": ["intercalation", "illegitimate throne"],
+        "type": "unprocessed"
+    },
+    "耑": {
+        "readings": ["たん", "せん"],
+        "meanings": ["specialized", "concentrated"],
+        "type": "unprocessed"
+    },
+    "夌": {
+        "readings": ["りょう"],
+        "meanings": ["to dawdle", "the name of the father of the Emperor Yao"],
+        "type": "unprocessed"
+    },
+    "朋": {
+        "readings": ["ほう"],
+        "meanings": ["companion", "friend"],
+        "type": "unprocessed"
+    },
+    "它": {
+        "readings": ["た"],
+        "meanings": ["other"],
+        "type": "unprocessed"
+    },
+    "𠔉": {
+        "readings": ["けん"],
+        "meanings": ["to roll rice"],
+        "type": "unprocessed"
+    },
+    "坴": {
+        "readings": ["りく", "ろく"],
+        "meanings": ["clod of earth", "land"],
+        "type": "unprocessed"
+    },
+    "埶": {
+        "readings": ["げい", "せい"],
+        "meanings": ["art"],
+        "type": "unprocessed"
+    },
+    "夅": {
+        "readings": ["こう", "ご"],
+        "meanings": ["to descend", "to come down from heaven", "to send down"],
+        "type": "unprocessed"
+    },
+    "罙": {
+        "readings": ["しん"],
+        "meanings": ["deep"],
+        "type": "unprocessed"
+    },
+    "荅": {
+        "readings": ["とう"],
+        "meanings": ["azuki beans, thick"],
+        "type": "unprocessed"
+    },
+    "喿": {
+        "readings": ["そう", "しょう"],
+        "meanings": ["chirping of birds"],
+        "type": "unprocessed"
+    },
+    "豦": {
+        "readings": ["きょ", "ご"],
+        "meanings": ["wild boar", "to fight"],
+        "type": "unprocessed"
+    },
+    "辟": {
+        "readings": ["へき"],
+        "meanings": ["false", "punish", "crime", "law"],
+        "type": "unprocessed"
+    },
+    "巴": {
+        "readings": ["は"],
+        "meanings": ["comma-design"],
+        "type": "unprocessed"
+    },
+    "彡": {
+        "readings": ["さん", "せん"],
+        "meanings": ["three", "hair ornament", "short hair or fur radical"],
+        "type": "unprocessed"
+    },
+    "㐱": {
+        "readings": ["しん"],
+        "meanings": ["black hair"],
+        "type": "unprocessed"
+    },
+    "丰": {
+        "readings": ["ほう"],
+        "meanings": ["abundant", "lush", "bountiful", "plenty", "fat face", "luxurious growth of grass"],
+        "type": "unprocessed"
+    },
+    "并": {
+        "readings": ["へい", "ひょう"],
+        "meanings": ["put together"],
+        "type": "unprocessed"
+    },
+    "酉": {
+        "readings": ["ゆう", "しゅう", "しゅ"],
+        "meanings": ["west", "bird", "sign of the bird", "5-7PM", "tenth sign of Chinese zodiac", "sake radical"],
+        "type": "unprocessed"
+    },
+    "劦": {
+        "readings": ["きょう"],
+        "meanings": ["to cooperate"],
+        "type": "unprocessed"
+    },
+    "敝": {
+        "readings": ["へい"],
+        "meanings": ["be worn-out", "be dilapidated", "be defeated"],
+        "type": "unprocessed"
+    },
+    "夋": {
+        "readings": ["しゅん", "さん"],
+        "meanings": ["to dawdle"],
+        "type": "unprocessed"
+    },
+    "尗": {
+        "readings": ["しゅく", "せき"],
+        "meanings": ["younger brothers", "father's younger brother", "younger brother of a husband"],
+        "type": "unprocessed"
+    },
+    "冘": {
+        "readings": ["いん", "ゆ", "ちん", "しん"],
+        "meanings": ["to move on", "doubtful"],
+        "type": "unprocessed"
+    },
+    "倝": {
+        "readings": ["かん"],
+        "meanings": ["sunrise", "dawn"],
+        "type": "unprocessed"
+    },
+    "曷": {
+        "readings": ["かつ"],
+        "meanings": ["why", "how", "when"],
+        "type": "unprocessed"
+    },
+    "畾": {
+        "readings": ["らい", "るい"],
+        "meanings": ["fields divided by dikes"],
+        "type": "unprocessed"
+    },
+    "曼": {
+        "readings": ["まん"],
+        "meanings": ["wide", "beautiful"],
+        "type": "unprocessed"
+    },
+    "褱": {
+        "readings": ["かい", "え"],
+        "meanings": ["to conceal", "to carry in the bosom or the sleeve", "to wrap"],
+        "type": "unprocessed"
+    },
+    "㐮": {
+        "readings": ["じょう"],
+        "meanings": ["to help", "to assist", "to achieve", "to rise", "to raise"],
+        "type": "unprocessed"
+    },
+    "奐": {
+        "readings": ["かん"],
+        "meanings": ["clear", "bright"],
+        "type": "unprocessed"
+    },
+    "茲": {
+        "readings": ["し", "じ"],
+        "meanings": ["here"],
+        "type": "unprocessed"
+    },
+    "桼": {
+        "readings": ["しつ", "ひざ"],
+        "meanings": ["varnish tree", "lacquer", "varnish", "paint"],
+        "type": "unprocessed"
+    },
+    "咢": {
+        "readings": ["がく"],
+        "meanings": ["outspokenly"],
+        "type": "unprocessed"
+    },
+    "宓": {
+        "readings": ["みつ", "びつ"],
+        "meanings": ["quiet", "silent", "in good health"],
+        "type": "unprocessed"
+    },
+    "夗": {
+        "readings": ["えん", "おん"],
+        "meanings": ["to sleep", "to lie down"],
+        "type": "unprocessed"
+    },
+    "枼": {
+        "readings": ["ちょう", "よう"],
+        "meanings": ["table", "flat pieces of wood", "slip", "leaf"],
+        "type": "unprocessed"
+    },
+    "鬲": {
+        "readings": ["かく", "れき"],
+        "meanings": ["tripod"],
+        "type": "unprocessed"
+    },
+    "烝": {
+        "readings": ["じょう"],
+        "meanings": ["many", "offer", "dedicate", "to steam"],
+        "type": "unprocessed"
+    },
+    "絜": {
+        "readings": ["けつ"],
+        "meanings": ["marking line", "ascertain", "assess", "measure"],
+        "type": "unprocessed"
+    },
+    "气": {
+        "readings": ["き", "け"],
+        "meanings": ["spirit", "steam radical"],
+        "type": "unprocessed"
     }
 }

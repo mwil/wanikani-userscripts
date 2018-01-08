@@ -119,6 +119,17 @@ def test_two_way_xrefs_of_phonetics():
                    """.format(phon, xref)
 
 
+def test_compounds_appear_as_xrefs():
+    phonetic_db = phonetic_db_import()
+
+    for phon, item in phonetic_db.items():
+        for comp in item["compounds"]:
+            if comp in phonetic_db:
+                assert comp in item["xrefs"],\
+                    """Phonetic {} is compound of {}, but no xref!
+                    """.format(comp, phon)
+
+
 def test_readings_are_hiragana():
     kanji_db = kanji_db_import()
     phonetic_db = phonetic_db_import()
