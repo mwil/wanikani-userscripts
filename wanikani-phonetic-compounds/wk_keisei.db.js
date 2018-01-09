@@ -241,7 +241,12 @@ function KeiseiDB()
         getWKOnyomi: function(kanji)
         {
             if (this.isKanjiInWK(kanji))
-                return this.wk_kanji_db[kanji].onyomi.split(`,`);
+            {
+                if (this.wk_kanji_db[kanji].onyomi !== null)
+                    return this.wk_kanji_db[kanji].onyomi.split(`,`);
+                else
+                    return [];
+            }
             else
                 return [`*DB Error*`];
         },
