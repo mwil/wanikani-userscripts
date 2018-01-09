@@ -222,6 +222,7 @@ function KeiseiDB()
             {
                 const onyomi = this.getWKOnyomi(kanji);
 
+                console.log(onyomi);
                 return (onyomi.includes(this.getKReadings(kanji)[0]));
             }
             else
@@ -243,7 +244,7 @@ function KeiseiDB()
             if (this.isKanjiInWK(kanji))
             {
                 if (this.wk_kanji_db[kanji].onyomi !== null)
-                    return this.wk_kanji_db[kanji].onyomi.split(`,`);
+                    return _.map(this.wk_kanji_db[kanji].onyomi.split(`,`), _.trim);
                 else
                     return [];
             }
@@ -256,7 +257,7 @@ function KeiseiDB()
             let result = [];
 
             if (this.isKanjiInWK(kanji))
-                result = this.wk_kanji_db[kanji].meaning.split(`,`);
+                result = _.map(this.wk_kanji_db[kanji].meaning.split(`,`), _.trim);
             else
                 result = this.kanji_db[kanji].meanings;
 
