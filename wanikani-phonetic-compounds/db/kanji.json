@@ -693,8 +693,9 @@
     },
     "姉": {
         "readings": ["し"],
-        "type": "unknown",
-        "comment": "TODO: obscure phonetic 𠂔"
+        "semantic": "女",
+        "phonetic": "𠂔",
+        "type": "comp_phonetic"
     },
     "妹": {
         "readings": ["まい", "ばい"],
@@ -1842,8 +1843,9 @@
     },
     "湖": {
         "readings": ["こ"],
-        "type": "unknown",
-        "comment": "obscure tone mark 胡"
+        "semantic": "水",
+        "phonetic": "胡",
+        "type": "comp_phonetic"
     },
     "港": {
         "readings": ["こう"],
@@ -2790,7 +2792,7 @@
         "type": "comp_phonetic"
     },
     "敗": {
-        "readings": ["はい", "ばい"],
+        "readings": ["はい"],
         "semantic": "攴",
         "phonetic": "貝",
         "type": "comp_phonetic"
@@ -3192,8 +3194,9 @@
     },
     "布": {
         "readings": ["ふ", "ほ"],
-        "type": "unknown",
-        "comment": "obscure tone mark 父"
+        "semantic": "巾",
+        "phonetic": "父",
+        "type": "comp_phonetic"
     },
     "刊": {
         "readings": ["かん"],
@@ -5336,7 +5339,8 @@
     "弐": {
         "readings": ["に", "じ"],
         "meanings": ["two"],
-        "type": "unknown"
+        "type": "unknown",
+        "comment": "phonetic 二??"
     },
     "朱": {
         "readings": ["しゅ", "す"],
@@ -6317,7 +6321,8 @@
     },
     "侵": {
         "readings": ["しん"],
-        "type": "unknown"
+        "type": "unknown",
+        "comment" : "侵寝浸 shared unprintale tone mark"
     },
     "促": {
         "readings": ["そく", "しょく"],
@@ -6376,7 +6381,9 @@
     },
     "叙": {
         "readings": ["じょ"],
-        "type": "unknown"
+        "semantic": "又",
+        "phonetic": "余",
+        "type": "comp_phonetic"
     },
     "咲": {
         "readings": ["しょう"],
@@ -6458,7 +6465,7 @@
     "括": {
         "readings": ["かつ"],
         "type": "unknown",
-        "comment": "also check 活!"
+        "comment": "tone mark 舌? also check 活!"
     },
     "挟": {
         "readings": ["きょう"],
@@ -6588,7 +6595,8 @@
     },
     "窃": {
         "readings": ["せつ"],
-        "type": "unknown"
+        "type": "unknown",
+        "comment": "tone mark 切"
     },
     "糾": {
         "readings": ["きゅう"],
@@ -6832,7 +6840,8 @@
     },
     "宴": {
         "readings": ["えん"],
-        "type": "unknown"
+        "type": "unknown",
+        "comment": "tone mark 妟?"
     },
     "宰": {
         "readings": ["さい"],
@@ -6912,7 +6921,9 @@
     },
     "捜": {
         "readings": ["そう"],
-        "type": "unknown"
+        "semantic": "手",
+        "phonetic": "叟",
+        "type": "comp_phonetic"
     },
     "挿": {
         "readings": ["そう"],
@@ -6962,7 +6973,7 @@
     "殉": {
         "readings": ["じゅん"],
         "type": "unknown",
-        "comment": "obscure tone mark 徇"
+        "comment": "obscure tone mark 徇, maybe just 旬?"
     },
     "浦": {
         "readings": ["ほ"],
@@ -7294,7 +7305,7 @@
     "剰": {
         "readings": ["じょう"],
         "type": "unknown",
-        "comment": "maybe related to 乗"
+        "comment": "related to 乗"
     },
     "勘": {
         "readings": ["かん"],
@@ -7514,8 +7525,9 @@
     },
     "渓": {
         "readings": ["けい"],
-        "type": "unknown",
-        "comment": "obscure phonetic 奚"
+        "semantic": "水",
+        "phonetic": "奚",
+        "type": "comp_phonetic"
     },
     "渋": {
         "readings": ["じゅう", "しゅう"],
@@ -7739,7 +7751,9 @@
     },
     "酔": {
         "readings": ["すい"],
-        "type": "unknown"
+        "decomposition": ["酉", "卒"],
+        "type": "unknown",
+        "comment": "could be phonetic as well, not so good fit"
     },
     "釈": {
         "readings": ["しゃく", "せき"],
@@ -7789,7 +7803,9 @@
     },
     "斎": {
         "readings": ["さい"],
-        "type": "unknown"
+        "semantic": "示",
+        "phonetic": "斉",
+        "type": "comp_phonetic"
     },
     "喪": {
         "readings": ["そう"],
@@ -7874,8 +7890,9 @@
         "type": "comp_phonetic"
     },
     "塀": {
-        "readings": [],
-        "type": "kokuji"
+        "readings": ["へい"],
+        "type": "unknown",
+        "comment": "obscure tone mark related to 并"
     },
     "媒": {
         "readings": ["ばい"],
@@ -8031,7 +8048,9 @@
     },
     "晶": {
         "readings": ["しょう"],
-        "type": "comp_indicative"
+        "semantic": "日",
+        "phonetic": "昌",
+        "type": "comp_phonetic"
     },
     "替": {
         "readings": ["たい", "てい"],
@@ -8323,6 +8342,7 @@
     },
     "閑": {
         "readings": ["かん"],
+        "decomposition": ["木", "門"],
         "type": "comp_indicative"
     },
     "隅": {
@@ -8333,7 +8353,9 @@
     },
     "随": {
         "readings": ["ずい"],
-        "type": "unknown"
+        "semantic": "阜",
+        "phonetic": "迶",
+        "type": "comp_phonetic"
     },
     "焦": {
         "readings": ["しょう"],
@@ -8363,7 +8385,8 @@
     },
     "傾": {
         "readings": ["けい"],
-        "type": "unknown"
+        "type": "unknown",
+        "comment": "tone mark 頃"
     },
     "傑": {
         "readings": ["けつ"],
@@ -8428,8 +8451,9 @@
     "塑": {
         "readings": ["そ"],
         "meanings": ["model"],
-        "type": "unknown",
-        "comment": "obscure tone mark 朔"
+        "semantic": "土",
+        "phonetic": "朔",
+        "type": "comp_phonetic"
     },
     "塗": {
         "readings": ["と"],
@@ -8505,8 +8529,9 @@
         "type": "unknown"
     },
     "搾": {
-        "readings": [],
-        "type": "kokuji"
+        "readings": ["さく"],
+        "type": "unknown",
+        "comment": "obscure tone mark 窄, related to 乍"
     },
     "摂": {
         "readings": ["せつ", "しょう"],
@@ -8675,7 +8700,8 @@
     },
     "虜": {
         "readings": ["りょ", "ろ"],
-        "type": "unknown"
+        "type": "unknown",
+        "comment": "TODO: obscure phonetic 虍, or 𧆨"
     },
     "褐": {
         "readings": ["かつ"],
@@ -9425,8 +9451,9 @@
     },
     "鶏": {
         "readings": ["けい"],
-        "type": "unknown",
-        "comment": "obscure tone mark 奚"
+        "semantic": "鳥",
+        "phonetic": "奚",
+        "type": "comp_phonetic"
     },
     "鯨": {
         "readings": ["げい", "けい"],
@@ -9441,7 +9468,7 @@
     "懸": {
         "readings": ["けん", "け"],
         "type": "unknown",
-        "comment": "TODO: phonetic 縣"
+        "comment": "TODO: phonetic 縣 related to 県"
     },
     "謙": {
         "readings": ["けん"],
@@ -9487,12 +9514,15 @@
     "墾": {
         "readings": ["こん"],
         "meanings": ["open up farmland"],
-        "type": "unknown"
+        "semantic": "土",
+        "phonetic": "豤",
+        "type": "comp_phonetic"
     },
     "懇": {
         "readings": ["こん"],
-        "type": "unknown",
-        "comment": "obscure tone mark 豤"
+        "semantic": "心",
+        "phonetic": "豤",
+        "type": "comp_phonetic"
     },
     "鎖": {
         "readings": ["さ"],
@@ -9524,7 +9554,8 @@
     },
     "諮": {
         "readings": ["し"],
-        "type": "unknown"
+        "type": "unknown",
+        "comment": "obscure tone mark 咨 related to 次"
     },
     "賜": {
         "readings": ["し"],
@@ -9676,7 +9707,9 @@
     },
     "髄": {
         "readings": ["ずい"],
-        "type": "unknown"
+        "semantic": "骨",
+        "phonetic": "迶",
+        "type": "comp_phonetic"
     },
     "澄": {
         "readings": ["ちょう"],
@@ -9696,7 +9729,8 @@
     },
     "籍": {
         "readings": ["せき"],
-        "type": "unknown"
+        "type": "unknown",
+        "comment": "obscure phonetic, related to 昔"
     },
     "潜": {
         "readings": ["せん"],
@@ -9795,7 +9829,8 @@
     },
     "壇": {
         "readings": ["だん", "たん"],
-        "type": "unknown"
+        "type": "unknown",
+        "comment": "TODO: obscure tone mark 亶, related to 旦?"
     },
     "鋳": {
         "readings": ["ちゅう", "しゅ"],
@@ -9839,7 +9874,8 @@
     },
     "徹": {
         "readings": ["てつ"],
-        "type": "unknown"
+        "type": "unknown",
+        "comment": "this and next have unprintable mark"
     },
     "撤": {
         "readings": ["てつ"],
@@ -9849,7 +9885,8 @@
     "謄": {
         "readings": ["とう"],
         "meanings": ["mimeograph"],
-        "type": "unknown"
+        "type": "unknown",
+        "comment": "related to tone mark 朕?"
     },
     "踏": {
         "readings": ["とう"],
@@ -9858,7 +9895,8 @@
     },
     "騰": {
         "readings": ["とう"],
-        "type": "unknown"
+        "type": "unknown",
+        "comment": "related to tone mark 朕?"
     },
     "闘": {
         "readings": ["とう"],
@@ -9929,7 +9967,7 @@
     "藩": {
         "readings": ["はん"],
         "type": "unknown",
-        "comment": "obscure phonetic 潘"
+        "comment": "obscure phonetic 潘 related to 番"
     },
     "範": {
         "readings": ["はん"],
@@ -9975,7 +10013,9 @@
     },
     "譜": {
         "readings": ["ふ"],
-        "type": "unknown"
+        "semantic": "言",
+        "phonetic": "普",
+        "type": "comp_phonetic"
     },
     "賦": {
         "readings": ["ふ"],
@@ -10392,13 +10432,6 @@
     "亀": {
         "readings": ["き", "きゅう", "きん"],
         "type": "hieroglyph"
-    },
-    "頬": {
-        "readings": ["きょう"],
-        "meanings": ["cheeks"],
-        "semantic": "頁",
-        "phonetic": "夾",
-        "type": "comp_phonetic"
     },
     "膝": {
         "readings": ["ひざ"],
@@ -10839,7 +10872,9 @@
     "痩": {
         "readings": ["そう", "しゅう"],
         "meanings": ["get thin"],
-        "type": "unknown"
+        "semantic": "疒",
+        "phonetic": "叟",
+        "type": "comp_phonetic"
     },
     "怨": {
         "readings": ["えん", "おん"],
@@ -11086,7 +11121,9 @@
     },
     "瑠": {
         "readings": ["る"],
-        "type": "unknown"
+        "semantic": "玉",
+        "phonetic": "留",
+        "type": "comp_phonetic"
     },
     "羨": {
         "readings": ["せん", "ぜん", "えん"],
@@ -11259,7 +11296,8 @@
     "斑": {
         "readings": ["はん"],
         "meanings": ["spot"],
-        "type": "unknown"
+        "type": "unknown",
+        "comment": "tone mark 班"
     },
     "冥": {
         "readings": ["めい", "にょう"],
@@ -11612,6 +11650,7 @@
     },
     "葵": {
         "readings": ["き"],
+        "decomposition": ["艸", "癸"],
         "type": "unknown",
         "comment": "obscure phonetic 癸"
     },
@@ -11793,6 +11832,76 @@
         "type": "comp_phonetic"
     },
 
+    "錮": {
+        "readings": ["こ"],
+        "meanings": ["confinement", "to tie"],
+        "semantic": "金",
+        "phonetic": "固",
+        "type": "comp_phonetic"
+    },
+    "楷": {
+        "readings": ["かい"],
+        "meanings": ["square character style", "correctness"],
+        "semantic": "⽊",
+        "phonetic": "皆",
+        "type": "comp_phonetic"
+    },
+    "遡": {
+        "readings": ["そ"],
+        "meanings": ["go upstream", "retrace the past"],
+        "semantic": "辵",
+        "phonetic": "朔",
+        "type": "comp_phonetic"
+    },
+    "刹": {
+        "readings": ["さつ", "せつ"],
+        "meanings": ["temple"],
+        "type": "unknown",
+        "comment": "tone mark 杀"
+    },
+    "柿": {
+        "readings": ["し"],
+        "meanings": ["persimmon"],
+        "semantic": "⽊",
+        "phonetic": "𠂔",
+        "type": "comp_phonetic",
+        "obscure": true
+    },
+    "釜": {
+        "readings": ["ふ"],
+        "meanings": ["kettle", "cauldron", "iron pot"],
+        "semantic": "金",
+        "phonetic": "父",
+        "type": "comp_phonetic"
+    },
+    "勾": {
+        "readings": ["こう"],
+        "meanings": ["be bent", "slope", "capture"],
+        "semantic": "勹",
+        "phonetic": "口",
+        "type": "comp_phonetic",
+        "obscure": true
+    },
+    "毀": {
+        "readings": ["き"],
+        "meanings": ["break", "destroy", "censure", "be chipped", "be scratched", "be broken", "be ruined"],
+        "type": "unknown"
+    },
+    "塡": {
+        "readings": ["てん"],
+        "meanings": ["fill in", "fill up", "make good"],
+        "type": "unknown",
+        "comment": "obscure tone mark 眞"
+    },
+    "頰": {
+        "readings": ["きょう"],
+        "meanings": ["cheeks", "jaw"],
+        "readings": ["きょう"],
+        "meanings": ["cheeks"],
+        "semantic": "頁",
+        "phonetic": "夾",
+        "type": "comp_phonetic"
+    },
 
     "宁": {
         "readings": ["ちょ"],
@@ -12087,7 +12196,8 @@
     "敄": {
         "readings": ["ぶ", "む"],
         "meanings": ["to put forth effort"],
-        "type": "unprocessed"
+        "type": "unprocessed",
+        "comment": "related to 矛?"
     },
     "熒": {
         "readings": ["えい", "えい", "ぎょう"],
