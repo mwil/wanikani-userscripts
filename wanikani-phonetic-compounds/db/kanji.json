@@ -11896,8 +11896,6 @@
     "頰": {
         "readings": ["きょう"],
         "meanings": ["cheeks", "jaw"],
-        "readings": ["きょう"],
-        "meanings": ["cheeks"],
         "semantic": "頁",
         "phonetic": "夾",
         "type": "comp_phonetic"
@@ -11940,253 +11938,274 @@
     "柬": {
         "readings": ["かん", "けん", "れん"],
         "meanings": ["select", "pick out"],
-        "type": "unprocessed"
+        "type": "comp_indicative"
     },
     "袁": {
         "readings": ["えん", "おん"],
         "meanings": ["long kimono"],
-        "type": "unprocessed"
+        "type": "unknown",
+        "comment": "maybe tone mark 叀?"
     },
     "甫": {
         "readings": ["ほ", "ふ"],
         "meanings": ["for the first time", "not until"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "辰": {
         "readings": ["しん"],
         "meanings": ["sign of the dragon", "7-9AM", "fifth sign of Chinese zodiac"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "艮": {
         "readings": ["こん", "ごん"],
         "meanings": ["northeast (Oriental zodiac)", "stopping"],
-        "type": "unprocessed"
+        "decomposition": ["目", "匕"],
+        "type": "comp_indicative"
     },
     "其": {
         "readings": ["き"],
         "meanings": ["that"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "圣": {
         "readings": ["けい"],
         "meanings": ["holy", "sacred"],
-        "type": "unprocessed"
+        "type": "comp_indicative",
+        "comment": "simplified form of 聖!"
     },
     "囟": {
         "readings": ["しん", "し"],
         "meanings": ["skull", "top of the head"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "昜": {
         "readings": ["よう"],
         "meanings": ["open", "sun"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "卜": {
         "readings": ["ぼく", "ほく"],
         "meanings": ["divining", "fortune-telling", "divination or katakana to radical"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "弋": {
         "readings": ["よく", "いき"],
         "meanings": ["piling", "ceremony radical"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "氐": {
         "readings": ["てい", "たい"],
         "meanings": ["an ancient tribe"],
-        "type": "unprocessed"
+        "decomposition": ["氏", "一"],
+        "type": "comp_indicative"
     },
     "兑": {
         "readings": ["だ", "たい", "えつ", "えい"],
         "meanings": ["dui (one of the trigrams of the I Ching: swamp, west)"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "曽": {
         "readings": ["そう", "そ", "ぞう"],
         "meanings": ["formerly", "once", "before", "ever", "never", "ex-"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "菐": {
         "readings": ["ほく", "ぼく"],
         "meanings": ["thicket"],
-        "type": "unprocessed"
+        "type": "comp_indicative"
     },
     "𢦏": {
         "readings": ["さい"],
         "meanings": ["to cut", "wound", "hurt"],
-        "type": "unprocessed"
+        "decomposition": ["才", "戈"],
+        "type": "comp_indicative"
     },
     "甬": {
         "readings": ["つう", "ゆう", "よう"],
         "meanings": ["road with walls on both sides"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "㕣": {
         "readings": ["えん"],
         "meanings": ["marsh at the foot of the hills", "name of a river"],
-        "type": "unprocessed"
+        "decomposition": ["八", "口"],
+        "type": "comp_indicative"
     },
     "云": {
         "readings": ["うん"],
         "meanings": ["say"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "尞": {
         "readings": ["りょう"],
         "meanings": ["fuel used for sacrifices"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "亲": {
         "readings": ["しん"],
         "meanings": ["parents", "one's family members"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "彦": {
         "readings": ["げん"],
         "meanings": ["lad", "boy (ancient)"],
-        "type": "unprocessed"
+        "type": "comp_indicative"
     },
     "畐": {
         "readings": ["ふく", "ひき"],
         "meanings": ["to fill", "roll of cloth"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "寅": {
         "readings": ["いん"],
         "meanings": ["sign of the tiger", "3-5AM", "third sign of Chinese zodiac"],
-        "type": "unprocessed"
+        "type": "comp_indicative"
     },
     "賁": {
         "readings": ["ひ", "ほん", "ふん"],
         "meanings": ["decorate"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "冓": {
         "readings": ["こう"],
         "meanings": ["put together", "inner palace"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "弗": {
         "readings": ["ふつ"],
         "meanings": ["dollar"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "丩": {
         "readings": ["きゅう"],
         "meanings": ["to join or connect the vine"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "尹": {
         "readings": ["いん", "い"],
         "meanings": ["an official rank"],
-        "type": "unprocessed"
+        "type": "comp_indicative"
     },
     "乍": {
         "readings": ["さ", "さく", "じゃ"],
         "meanings": ["though", "notwithstanding", "while", "during", "both", "all"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "朿": {
         "readings": ["し"],
         "meanings": ["thorn"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "僉": {
         "readings": ["けん"],
         "meanings": ["all"],
-        "type": "unprocessed"
+        "type": "comp_indicative"
     },
     "蜀": {
         "readings": ["ぞく", "しょく"],
         "meanings": ["green caterpillar", "Szechwan"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "亥": {
         "readings": ["がい", "かい"],
         "meanings": ["sign of the hog", "9-11PM", "twelfth sign of the Chinese zodiac"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "臧": {
         "readings": ["ぞう", "そう"],
         "meanings": ["good", "bribe", "servant"],
-        "type": "unprocessed"
+        "semantic": "臣",
+        "phonetic": "戕",
+        "type": "comp_phonetic"
+    },
+    "戕": {
+        "readings": ["しょう", "さん", "そう"],
+        "meanings": ["kill", "slay", "wound", "injure", "hurt"],
+        "semantic": "戈",
+        "phonetic": "爿",
+        "type": "comp_phonetic"
     },
     "䍃": {
         "readings": ["よう"],
         "meanings": ["vase", "pitcher", "earthenware"],
-        "type": "unprocessed"
+        "type": "unknown",
+        "comment": "obscure, tone mark is 肉??"
     },
     "厓": {
         "readings": ["がい"],
         "meanings": ["precipice", "shore", "bank", "surname", "cliff"],
-        "type": "unprocessed"
+        "semantic": "厂",
+        "phonetic": "圭",
+        "type": "comp_phonetic"
     },
     "扁": {
         "readings": ["へん", "はん"],
         "meanings": ["level", "small"],
-        "type": "unprocessed"
+        "decomposition": ["戸", "冊"],
+        "type": "comp_indicative"
     },
     "韋": {
         "readings": ["い"],
         "meanings": ["tanned leather radical"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "戠": {
         "readings": ["しょく", "し", "しき"],
         "meanings": ["sword", "potter's clay", "to gather"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "爰": {
         "readings": ["えん"],
         "meanings": ["lead on to", "therefore", "then"],
-        "type": "unprocessed"
+        "type": "comp_indicative"
     },
     "瞏": {
         "readings": ["けい", "せん"],
         "meanings": ["gaze in terror", "lonely"],
-        "type": "unprocessed"
+        "semantic": "网",
+        "phonetic": "袁",
+        "type": "comp_phonetic"
     },
     "堇": {
         "readings": ["きん"],
         "meanings": ["flowering plant of the family Violaceae"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "𦰩": {
         "readings": ["かん", "なん"],
         "meanings": ["drought"],
-        "type": "unprocessed",
+        "type": "unknown",
         "comment": "TODO: Check the meaning"
     },
     "𡈼": {
         "readings": ["てい", "い"],
         "meanings": ["the ninth Heavenly Stems"],
-        "type": "unprocessed"
+        "type": "indicative"
     },
     "于": {
         "readings": ["う"],
         "meanings": ["going", "from"],
-        "type": "unprocessed"
+        "type": "indicative"
     },
     "厶": {
         "readings": ["し", "ぼう", "む"],
         "meanings": ["I", "myself", "katakana mu radical"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "厷": {
         "readings": ["こう", "ゆう"],
         "meanings": ["the fore-arm", "the upper-arm", "round"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "勿": {
         "readings": ["ぶつ", "もつ"],
         "meanings": ["not", "must not", "do not", "be not"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "朮": {
         "readings": ["じゅつ", "しゅつ"],
         "meanings": ["type of millet", "a type of herb"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "妾": {
         "readings": ["しょう"],
@@ -12362,17 +12381,19 @@
     "隹": {
         "readings": ["すい"],
         "meanings": ["bird", "old bird radical"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "崔": {
         "readings": ["がい", "さい", "すい"],
         "meanings": ["cliff", "bluff", "precipice"],
-        "type": "unprocessed"
+        "semantic": "山",
+        "phonetic": "隹",
+        "type": "comp_phonetic"
     },
     "奞": {
         "readings": ["すい"],
         "meanings": ["man's stride"],
-        "type": "unprocessed"
+        "type": "comp_indicative"
     },
     "雚": {
         "readings": ["かん"],
@@ -12487,7 +12508,7 @@
     "亘": {
         "readings": ["こう", "せん"],
         "meanings": ["span", "range", "extend over"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "夬": {
         "readings": ["かい", "けつ"],
