@@ -1141,7 +1141,9 @@
     },
     "仕": {
         "readings": ["し", "じ"],
-        "type": "unknown"
+        "semantic": "人",
+        "phonetic": "士",
+        "type": "comp_phonetic"
     },
     "他": {
         "readings": ["た"],
@@ -3279,9 +3281,8 @@
     "志": {
         "readings": ["し"],
         "semantic": "心",
-        "phonetic": "之",
-        "type": "comp_phonetic",
-        "obscure": true
+        "phonetic": "士",
+        "type": "comp_phonetic"
     },
     "条": {
         "readings": ["じょう"],

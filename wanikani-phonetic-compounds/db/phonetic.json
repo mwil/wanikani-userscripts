@@ -127,7 +127,7 @@
     },
     "固": {
         "readings": ["こ"],
-        "compounds": ["箇", "個"],
+        "compounds": ["箇", "個", "錮"],
         "non_compounds": [],
         "xrefs": ["古"],
         "wk-radical": null
@@ -339,7 +339,7 @@
         "readings": ["けい"],
         "compounds": ["街", "掛", "佳", "厓"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["厓"],
         "wk-radical": null
     },
     "交": {
@@ -845,7 +845,7 @@
         "readings": ["こん", "ごん"],
         "compounds": ["限", "恨", "根", "眼", "痕", "銀"],
         "non_compounds": ["退"],
-        "xrefs": ["良"],
+        "xrefs": ["良", "豤"],
         "wk-radical": "good"
     },
     "豤": {
@@ -1640,7 +1640,7 @@
         "readings": ["ぞう", "そう"],
         "compounds": ["蔵"],
         "non_compounds": [],
-        "xrefs": ["蔵"],
+        "xrefs": ["戕", "蔵"],
         "wk-radical": null
     },
     "蔵": {
@@ -1668,7 +1668,7 @@
         "readings": ["がい"],
         "compounds": ["涯", "崖"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["圭"],
         "wk-radical": null
     },
     "扁": {
@@ -2314,7 +2314,7 @@
     },
     "口": {
         "readings": ["こう", "く"],
-        "compounds": ["句"],
+        "compounds": ["句", "勾"],
         "non_compounds": [],
         "xrefs": ["句"],
         "wk-radical": "mouth"
@@ -2597,7 +2597,7 @@
         "readings": ["しょう", "さん", "そう"],
         "compounds": ["臧"],
         "non_compounds": [],
-        "xrefs": ["爿"],
+        "xrefs": ["爿", "臧"],
         "wk-radical": null
     },
     "支": {
@@ -3274,16 +3274,23 @@
     },
     "之": {
         "readings": ["し"],
-        "compounds": ["志", "芝"],
+        "compounds": ["芝"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
+    },
+    "士": {
+        "readings": ["し"],
+        "compounds": ["志", "仕"],
         "non_compounds": [],
         "xrefs": ["志"],
-        "wk-radical": null
+        "wk-radical": "samurai"
     },
     "志": {
         "readings": ["し"],
         "compounds": ["誌"],
         "non_compounds": [],
-        "xrefs": ["之"],
+        "xrefs": ["士"],
         "wk-radical": null
     },
     "表": {
@@ -3542,7 +3549,7 @@
         "readings": ["ふ", "ほ"],
         "compounds": ["怖"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["父"],
         "wk-radical": null
     },
     "衣": {
@@ -3918,7 +3925,7 @@
     },
     "朔": {
         "readings": ["そ", "さく"],
-        "compounds": ["遡"],
+        "compounds": ["遡", "塑"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
@@ -3946,9 +3953,9 @@
     },
     "父": {
         "readings": ["ふ", "ほ"],
-        "compounds": ["", "釜"],
+        "compounds": ["布", "釜"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["布"],
         "wk-radical": "father"
     },
     "宰": {
