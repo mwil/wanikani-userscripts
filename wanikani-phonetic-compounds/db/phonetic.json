@@ -1743,9 +1743,9 @@
     },
     "𡈼": {
         "readings": ["てい", "い"],
-        "compounds": ["聖", "廷", "呈"],
+        "compounds": ["廷", "呈"],
         "non_compounds": [],
-        "xrefs": ["呈", "廷"],
+        "xrefs": ["壬", "呈", "廷"],
         "wk-radical": null
     },
     "呈": {
@@ -2138,9 +2138,16 @@
     },
     "壬": {
         "readings": ["じん", "にん"],
-        "compounds": ["任", "妊", "賃"],
+        "compounds": ["任", "妊"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["𡈼", "任"],
+        "wk-radical": null
+    },
+    "任": {
+        "readings": ["にん", "じん"],
+        "compounds": ["賃"],
+        "non_compounds": [],
+        "xrefs": ["壬"],
         "wk-radical": null
     },
     "肙": {

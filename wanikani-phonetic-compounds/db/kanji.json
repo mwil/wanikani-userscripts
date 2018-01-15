@@ -4860,9 +4860,8 @@
     },
     "聖": {
         "readings": ["せい", "しょう"],
-        "semantic": "耳",
-        "phonetic": "𡈼",
-        "type": "comp_phonetic"
+        "decomposition": ["耳", "呈"],
+        "type": "comp_indicative"
     },
     "盟": {
         "readings": ["めい"],
@@ -4909,7 +4908,7 @@
     "賃": {
         "readings": ["ちん", "じん"],
         "semantic": "貝",
-        "phonetic": "壬",
+        "phonetic": "任",
         "type": "comp_phonetic"
     },
     "疑": {
