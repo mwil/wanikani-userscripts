@@ -2828,7 +2828,7 @@
         "readings": ["ま", "ば"],
         "compounds": ["摩", "磨", "魔"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["厤"],
         "wk-radical": null
     },
     "剌": {
@@ -2905,7 +2905,7 @@
         "readings": ["れき", "りゃく"],
         "compounds": ["暦", "歴"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["麻"],
         "wk-radical": null
     },
     "因": {
