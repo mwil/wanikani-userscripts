@@ -169,10 +169,17 @@
     },
     "各": {
         "readings": ["かく", "ろ"],
-        "compounds": ["客", "格", "略", "絡", "路", "酪", "閣", "額", "賂"],
+        "compounds": ["客", "格", "略", "絡", "路", "酪", "閣", "賂"],
         "non_compounds": [],
-        "xrefs": ["路"],
+        "xrefs": ["路", "客"],
         "wk-radical": "kiss"
+    },
+    "客": {
+        "readings": ["きゃく", "かく"],
+        "compounds": ["額"],
+        "non_compounds": [],
+        "xrefs": ["各"],
+        "wk-radical": "guest"
     },
     "路": {
         "readings": ["ろ"],
@@ -185,14 +192,14 @@
         "readings": ["しゅ", "ちゅう", "す"],
         "compounds": ["住", "注", "柱", "駐"],
         "non_compounds": ["往"],
-        "xrefs": [],
+        "xrefs": ["王"],
         "wk-radical": "master"
     },
     "王": {
         "readings": ["おう"],
         "compounds": ["往", "旺"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["主"],
         "wk-radical": "king"
     },
     "几": {

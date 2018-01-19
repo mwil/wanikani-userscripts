@@ -4148,7 +4148,7 @@
     "額": {
         "readings": ["がく"],
         "semantic": "頁",
-        "phonetic": "各",
+        "phonetic": "客",
         "type": "comp_phonetic"
     },
     "識": {
@@ -11948,17 +11948,17 @@
     },
     "甫": {
         "readings": ["ほ", "ふ"],
-        "meanings": ["for the first time", "not until"],
+        "meanings": ["first time", "for the first time", "not until"],
         "type": "unknown"
     },
     "辰": {
         "readings": ["しん"],
-        "meanings": ["sign of the dragon", "7-9AM", "fifth sign of Chinese zodiac"],
+        "meanings": ["dragon sign", "sign of the dragon", "7-9AM", "fifth sign of Chinese zodiac"],
         "type": "hieroglyph"
     },
     "艮": {
         "readings": ["こん", "ごん"],
-        "meanings": ["northeast (Oriental zodiac)", "stopping"],
+        "meanings": ["northeast zodiac", "northeast (Oriental zodiac)", "stopping"],
         "decomposition": ["目", "匕"],
         "type": "comp_indicative"
     },
@@ -11995,13 +11995,13 @@
     },
     "氐": {
         "readings": ["てい", "たい"],
-        "meanings": ["an ancient tribe"],
+        "meanings": ["ancient tribe"],
         "decomposition": ["氏", "一"],
         "type": "comp_indicative"
     },
     "兑": {
         "readings": ["だ", "たい", "えつ", "えい"],
-        "meanings": ["dui (one of the trigrams of the I Ching: swamp, west)"],
+        "meanings": ["dui trigram", "dui (one of the trigrams of the I Ching: swamp, west)"],
         "type": "unknown"
     },
     "曽": {
@@ -12022,12 +12022,12 @@
     },
     "甬": {
         "readings": ["つう", "ゆう", "よう"],
-        "meanings": ["road with walls on both sides"],
+        "meanings": ["walled road", "road with walls on both sides"],
         "type": "hieroglyph"
     },
     "㕣": {
         "readings": ["えん"],
-        "meanings": ["marsh at the foot of the hills", "name of a river"],
+        "meanings": ["marsh", "marsh at the foot of the hills", "name of a river"],
         "decomposition": ["八", "口"],
         "type": "comp_indicative"
     },
@@ -12038,7 +12038,7 @@
     },
     "尞": {
         "readings": ["りょう"],
-        "meanings": ["fuel used for sacrifices"],
+        "meanings": ["sacrifice fuel", "fuel used for sacrifices"],
         "type": "unknown"
     },
     "亲": {
@@ -12058,7 +12058,7 @@
     },
     "寅": {
         "readings": ["いん"],
-        "meanings": ["sign of the tiger", "3-5AM", "third sign of Chinese zodiac"],
+        "meanings": ["tiger sign", "sign of the tiger", "3-5AM", "third sign of Chinese zodiac"],
         "type": "comp_indicative"
     },
     "賁": {
@@ -12078,12 +12078,12 @@
     },
     "丩": {
         "readings": ["きゅう"],
-        "meanings": ["to join or connect the vine"],
+        "meanings": ["join vine", "to join or connect the vine"],
         "type": "hieroglyph"
     },
     "尹": {
         "readings": ["いん", "い"],
-        "meanings": ["an official rank"],
+        "meanings": ["official rank"],
         "type": "comp_indicative"
     },
     "乍": {
@@ -12108,7 +12108,7 @@
     },
     "亥": {
         "readings": ["がい", "かい"],
-        "meanings": ["sign of the hog", "9-11PM", "twelfth sign of the Chinese zodiac"],
+        "meanings": ["hog sign", "sign of the hog", "9-11PM", "twelfth sign of the Chinese zodiac"],
         "type": "hieroglyph"
     },
     "臧": {
@@ -12168,7 +12168,7 @@
     },
     "堇": {
         "readings": ["きん"],
-        "meanings": ["flowering plant of the family Violaceae"],
+        "meanings": ["violacea", "flowering plant of the family Violaceae"],
         "type": "unknown"
     },
     "𦰩": {
@@ -12179,7 +12179,7 @@
     },
     "𡈼": {
         "readings": ["てい", "い"],
-        "meanings": ["the ninth Heavenly Stems"],
+        "meanings": ["9th heavenly stem", "the ninth Heavenly Stems"],
         "type": "indicative"
     },
     "于": {
@@ -12447,7 +12447,7 @@
     },
     "爿": {
         "readings": ["しょう"],
-        "meanings": ["left-side kata radical"],
+        "meanings": ["kata radical", "left-side kata radical"],
         "type": "unprocessed"
     },
     "臤": {
@@ -12482,7 +12482,7 @@
     },
     "羍": {
         "readings": ["たつ", "たち"],
-        "meanings": ["the stride of a person"],
+        "meanings": ["persons stride", "the stride of a person"],
         "type": "unprocessed"
     },
     "賈": {
@@ -12572,7 +12572,7 @@
     },
     "丂": {
         "readings": ["こう"],
-        "meanings": ["obstruction of breath (qi) as it seeks release"],
+        "meanings": ["qi obstruction", "obstruction of breath (qi) as it seeks release"],
         "type": "unprocessed"
     },
     "隶": {
@@ -12793,6 +12793,36 @@
     "絜": {
         "readings": ["けつ"],
         "meanings": ["marking line", "ascertain", "assess", "measure"],
+        "type": "unprocessed"
+    },
+    "豤": {
+        "readings": ["こん"],
+        "meanings": ["feeding"],
+        "type": "unprocessed"
+    },
+    "叟": {
+        "readings": ["そう", "しょう"],
+        "meanings": ["elder", "old man", "old gentleman"],
+        "type": "unprocessed"
+    },
+    "朔": {
+        "readings": ["そ", "さく"],
+        "meanings": ["conjunction (astronomy)", "first day of month", "north"],
+        "type": "unprocessed"
+    },
+    "迶": {
+        "readings": ["ずい"],
+        "meanings": ["to walk"],
+        "type": "unprocessed"
+    },
+    "奚": {
+        "readings": ["けい"],
+        "meanings": ["servant", "what", "why"],
+        "type": "unprocessed"
+    },
+    "𠂔": {
+        "readings": ["し"],
+        "meanings": ["to stop"],
         "type": "unprocessed"
     },
     "气": {

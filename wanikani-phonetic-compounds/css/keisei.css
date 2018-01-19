@@ -1,3 +1,8 @@
+.wk_namespace .ellipsis {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
 
 .wk_namespace .badge-perfect:before {
     content: "天";
@@ -23,6 +28,10 @@
     background-color: #fb1 !important;
 }
 
+.wk_namespace .badge-rendaku:before {
+    color: darkorange !important;
+}
+
 .wk_namespace .keisei_obscure_reading {
     color: darkorange;
 }
@@ -35,7 +44,7 @@
 }
 
 .wk_namespace .keisei_style_reading_notInWK {
-    color: darkorange;
+    color: darkorange !important;
 }
 
 /* #f0a -> 0c4, #dd0093 -> 092 */

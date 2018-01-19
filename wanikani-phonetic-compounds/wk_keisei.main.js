@@ -7,10 +7,14 @@ function WK_Keisei()
     this.kdb = new KeiseiDB();
     this.wki = new WKInteraction(GM_info.script.namespace);
 
+    this.currentSubject = null;
+
     this.settings = {
         "debug": false,
         "minify": false,
-        "fullinfo": false
+        "fullinfo": false,
+        "fuzzykana": false,
+        "withbeta": false
     };
 }
 // #############################################################################
@@ -44,6 +48,7 @@ function WK_Keisei()
         else
             subject.phon = this.kdb.getKPhonetic(subject.kan) || subject.kan;
 
+        this.currentSubject = subject;
         this.log(`Working with the following input:`, subject);
         // #####################################################################
 
@@ -270,14 +275,23 @@ function WK_Keisei()
                 if (!kanji)
                     return;
 
-                const common_readings = _.intersection(
-                                            this.kdb.getKReadings(kanji),
-                                            this.kdb.getPReadings(subject.phon));
+                let common_readings_deRen = new Set(
+                    _.intersection(
+                        _.map(this.kdb.getKReadings(kanji), this.kdb.deRendaku),
+                        _.map(this.kdb.getPReadings(subject.phon), this.kdb.deRendaku)));
+
+                const common_readings = new Set(
+                    _.intersection(
+                        this.kdb.getKReadings(kanji),
+                        this.kdb.getPReadings(subject.phon)));
+
+                if (!this.settings.fuzzykana)
+                    common_readings_deRen = common_readings;
 
                 const cur_compound_li = {
                     "kanji":    kanji,
                     "readings": this.kdb.getKReadings(kanji),
-                    "meaning":  this.kdb.getWKKMeaning(kanji)[0],
+                    "meanings": this.kdb.getWKKMeanings(kanji),
                     "notInWK":  this.kdb.isKanjiInWK(kanji) ? `` : `notInWK`,
                     "href":     this.kdb.isKanjiInWK(kanji) ?
                                     `/kanji/${kanji}` :
@@ -288,7 +302,11 @@ function WK_Keisei()
                                     `keisei_style_reading_notInWK`
                 };
 
-                if (this.kdb.getKReadings(kanji).length === common_readings.length)
+                if (common_readings_deRen.size > common_readings.size)
+                    badges.push(`badge-rendaku`);
+
+                if (this.kdb.getKReadings(kanji).length ===
+                    common_readings_deRen.size)
                 {
                     badges.push(`badge-perfect`);
                     char_list_hi.unshift(cur_compound_li);
@@ -297,7 +315,7 @@ function WK_Keisei()
                         $(`#keisei_explanation_quality`).html(
                             this.pmark_perfect(subject));
                 }
-                else if (!common_readings.length)
+                else if (!common_readings_deRen.size)
                 {
                     badges.push(`badge-low`);
                     char_list_lo.push(cur_compound_li);
@@ -346,7 +364,7 @@ function WK_Keisei()
         char_list.push({
             "kanji":    subject.phon,
             "readings": this.kdb.getKReadings(subject.phon),
-            "meaning":  `Phonetic`,
+            "meanings": [`Phonetic`],
             "kanji_id": `phonetic-1`
         });
 
@@ -355,8 +373,15 @@ function WK_Keisei()
             char_list.push({
                 "kanji":    subject.phon,
                 "readings": this.kdb.getKReadings(subject.phon),
-                "meaning":  this.kdb.getWKRadicalPP(subject.phon),
+                "meanings": [this.kdb.getWKRadicalPP(subject.phon)],
                 "href":     `/radicals/${this.kdb.getWKRadical(subject.phon)}`,
+                "kanji_id": `radical-1`
+            });
+        else
+            char_list.push({
+                "kanji":    `&nbsp;`,
+                "readings": [`&nbsp;`],
+                "meanings": [`&nbsp;`],
                 "kanji_id": `radical-1`
             });
 
@@ -365,7 +390,7 @@ function WK_Keisei()
             char_list.push({
                 "kanji":    subject.phon,
                 "readings": this.kdb.getKReadings(subject.phon),
-                "meaning":  this.kdb.getWKKMeaning(subject.phon)[0],
+                "meanings": this.kdb.getWKKMeanings(subject.phon),
                 "notInWK":  this.kdb.isKanjiInWK(subject.phon) ? `` : `notInWK`,
                 "href":     this.kdb.isKanjiInWK(subject.phon) ?
                                 `/kanji/${subject.phon}` :
@@ -436,7 +461,7 @@ function WK_Keisei()
             char_list.push({
                 "kanji":    subject.phon,
                 "readings": this.kdb.getKReadings(subject.phon),
-                "meaning":  `Non-Phonetic`,
+                "meanings": [`Non-Phonetic`],
                 "kanji_id": `nonphonetic-1`
             });
 
@@ -446,7 +471,7 @@ function WK_Keisei()
                     char_list.push({
                         "kanji":    curKanji,
                         "readings": this.kdb.getKReadings(curKanji),
-                        "meaning":  this.kdb.getWKKMeaning(curKanji)[0],
+                        "meanings": this.kdb.getWKKMeanings(curKanji),
                         "notInWK":  this.kdb.isKanjiInWK(curKanji) ? `` : `notInWK`,
                         "href":     this.kdb.isKanjiInWK(curKanji) ?
                                         `/kanji/${curKanji}` :
@@ -473,9 +498,11 @@ function WK_Keisei()
         GM_addStyle(GM_getResourceText(`keisei_style`)
                         .replace(/wk_namespace/g, GM_info.script.namespace));
 
-        this.settings.debug    = GM_getValue(`debug`)    || false;
-        this.settings.minify   = GM_getValue(`minify`)   || false;
-        this.settings.fullinfo = GM_getValue(`fullinfo`) || false;
+        this.settings.debug     = GM_getValue(`debug`)     || false;
+        this.settings.minify    = GM_getValue(`minify`)    || false;
+        this.settings.fullinfo  = GM_getValue(`fullinfo`)  || false;
+        this.settings.fuzzykana = GM_getValue(`fuzzykana`) || false;
+        this.settings.withbeta  = GM_getValue(`withbeta`)  || false;
 
         this.override_db = JSON.parse(GM_getValue(`override_db`) || `{}`);
 
@@ -521,6 +548,9 @@ function WK_Keisei()
 
         // Start page detection (and its callbacks once ready)
         this.wki.startInteraction.call(this.wki);
+
+        if (this.settings.withbeta)
+            this.addNavItem();
     };
     // #########################################################################
 }

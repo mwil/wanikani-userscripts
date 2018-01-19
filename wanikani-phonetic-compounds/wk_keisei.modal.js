@@ -39,6 +39,7 @@
                             <div class="btn-group-lg text-center">
                                 <a class="btn" id="keisei_settings_btn_minify"><i class="icon-eye-open"></i> Toggle Mini Mode</a>
                                 <a class="btn" id="keisei_settings_btn_fullinfo"><i class="icon-collapse"></i> Toggle Full Info Mode</a>
+                                <a class="btn" id="keisei_settings_btn_fuzzykana"><i class="icon-circle-blank"></i> Toggle Dakuten Mode</a>
                             </div>
                         </p>
                     </div>
@@ -76,21 +77,32 @@
         if (this.settings.debug)
             $(`#keisei_settings_btn_debug`).addClass(`active`);
 
-        if (this.settings.minify) {
+        if (this.settings.minify)
+        {
             $(`#keisei_settings_btn_minify`).addClass(`active`);
             $(`#keisei_settings_btn_minify i`).removeClass(`icon-eye-open`);
             $(`#keisei_settings_btn_minify i`).addClass(`icon-eye-close`);
         }
 
-        if (this.settings.fullinfo) {
+        if (this.settings.fullinfo)
+        {
             $(`#keisei_settings_btn_fullinfo`).addClass(`active`);
             $(`#keisei_settings_btn_fullinfo i`).removeClass(`icon-collapse`);
             $(`#keisei_settings_btn_fullinfo i`).addClass(`icon-collapse-top`);
         }
 
+        if (this.settings.fuzzykana)
+        {
+            $(`#keisei_settings_btn_fuzzykana`).addClass(`active`);
+
+            $(`#keisei_settings_btn_fuzzykana i`).removeClass(`icon-circle-blank`);
+            $(`#keisei_settings_btn_fuzzykana i`).addClass(`icon-quote-right`);
+        }
+
         $(`#keisei_settings_btn_debug`).on(`click`, this.toggleDebug.bind(this));
         $(`#keisei_settings_btn_minify`).on(`click`, this.toggleMinify.bind(this));
         $(`#keisei_settings_btn_fullinfo`).on(`click`, this.toggleFullInfo.bind(this));
+        $(`#keisei_settings_btn_fuzzykana`).on(`click`, this.toggleFuzzyKana.bind(this));
         $(`#keisei_settings_btn_clearDB`).on(`click`, this.toggleClearDB.bind(this));
     };
     // #########################################################################
@@ -182,6 +194,23 @@
             this.toggleMoreInfoFold();
 
         GM_setValue(`fullinfo`, this.settings.fullinfo);
+
+        return false;
+    };
+    // #########################################################################
+
+    // #########################################################################
+    WK_Keisei.prototype.toggleFuzzyKana = function(event)
+    {
+        this.settings.fuzzykana = !this.settings.fuzzykana;
+
+        $(`#keisei_settings_btn_fuzzykana`).toggleClass(`active`);
+        $(`#keisei_settings_btn_fuzzykana i`).toggleClass(`icon-circle-blank`);
+        $(`#keisei_settings_btn_fuzzykana i`).toggleClass(`icon-quote-right`);
+
+        this.populateCharGrid(`#keisei_phonetic_grid`, this.currentSubject);
+
+        GM_setValue(`fuzzykana`, this.settings.fuzzykana);
 
         return false;
     };

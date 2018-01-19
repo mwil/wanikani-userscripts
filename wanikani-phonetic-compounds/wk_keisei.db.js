@@ -222,7 +222,6 @@ function KeiseiDB()
             {
                 const onyomi = this.getWKOnyomi(kanji);
 
-                console.log(onyomi);
                 return (onyomi.includes(this.getKReadings(kanji)[0]));
             }
             else
@@ -252,7 +251,7 @@ function KeiseiDB()
                 return [`*DB Error*`];
         },
         // #####################################################################
-        getWKKMeaning: function(kanji)
+        getWKKMeanings: function(kanji)
         {
             let result = [];
 
@@ -261,11 +260,89 @@ function KeiseiDB()
             else
                 result = this.kanji_db[kanji].meanings;
 
-            return result.map(_.startCase)
-                         .map(_.partial(_.truncate, _, {"length": 15}));
-        }
+            return result.map(_.startCase);
+        },
         // #####################################################################
+
+        // #####################################################################
+        deRendaku: function(reading)
+        {
+            let result = reading;
+
+            const rendaku = `がぎぐげござじずぜぞだぢちづでどばびぶべぼぱぴぷぺぽ`;
+            const vanilla = `かきくけこさしすせそたちしつてとはひふへほはひふへほ`;
+
+            const pattern = _.zip(_.split(rendaku, ``), _.split(vanilla, ``));
+            pattern.push([`じょ`, `よ`]);
+            pattern.push([`じゃ`, `や`]);
+            pattern.push([`じゅ`, `ゆ`]);
+
+            _.forEach(pattern,
+                ([from_kana, to_kana]) =>
+                    result = result.replace(from_kana, to_kana)
+            );
+
+            return result;
+        },
+        // #####################################################################
+
+        // #####################################################################
+        // Support for additional pages listing all tone mark
+        // #####################################################################
+
+        //
+        // #####################################################################
+        getPhoneticsByHeader: function()
+        {
+            const initials_d = new Map([
+                [`あ`, `あいうえお`],
+                [`か`, `かきくけこがぎぐげご`],
+                [`さ`, `さしすせそざじずぜぞ`],
+                [`た`, `たちつてとだぢづでど`],
+                [`な`, `なにぬねの`],
+                [`は`, `はひふへほばびぶべぼぱぴぷぺぽ`],
+                [`ま`, `まみむめも`],
+                [`ら`, `らりるれろ`],
+                [`や`, `やゆよ`],
+                [`わ`, `わを`]
+            ]);
+
+            let result = new Map();
+
+            initials_d.forEach(
+                (subheaders, header) => {
+                    result.set(header, new Map());
+
+                    _.forEach(subheaders,
+                        (subheader) => {
+                            const sub_result = [];
+
+                            _.forEach(this.phonetic_db,
+                                (p_item, phon) => {
+                                    if (!p_item.readings.length)
+                                        return;
+
+                                    if (subheader.match(p_item.readings[0][0]))
+                                        sub_result.push([2*p_item.compounds.length +
+                                                    (p_item["wk-radical"]?1:0),
+                                                    phon]);
+                                }
+                            );
+
+                            result.get(header).set(subheader,
+                                                   sub_result
+                                                    .sort((a,b)=>b[0]-a[0])
+                                                    .map((d)=>d[1]));
+                        }
+                    );
+                },
+                this
+            );
+
+            return result;
+        }
     };
+    // #########################################################################
 }
 ());
 // #############################################################################

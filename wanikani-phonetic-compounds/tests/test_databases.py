@@ -240,3 +240,13 @@ def test_consistent_phonetics():
         assert kanji in phonetic_db[k_item["phonetic"]]["compounds"],\
             """Kanji {} not found as a compound for {}!
             """.format(kanji, k_item["phonetic"])
+
+
+def test_all_phonetics_covered_by_kanji():
+    kanji_db = kanji_db_import()
+    phonetic_db = phonetic_db_import()
+
+    for phon, p_item in phonetic_db.items():
+        assert phon in kanji_db,\
+            """Tone mark {} is not covered by a kanji yet!
+            """.format(phon)
