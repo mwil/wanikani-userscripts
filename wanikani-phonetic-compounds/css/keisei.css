@@ -4,6 +4,19 @@
     overflow: hidden;
 }
 
+.wk_namespace .parentTabs {
+    margin-top: 40px;
+}
+
+.wk_namespace .tab-title {
+    width: 80px;
+}
+
+.wk_namespace .nav-tabs a {
+    color: #666;
+    font-size: 14pt;
+}
+
 .wk_namespace .badge-perfect:before {
     content: "天";
     background-color: #092;
@@ -76,4 +89,24 @@
     border-top:1px solid #f04;
     border-bottom:1px solid #c04;
     border-left:1px solid #f04
+}
+
+html#main .navbar .nav li.phonetic.dropdown.open>.dropdown-toggle {
+    background-color: #0c4;
+}
+
+html#main .navbar .phonetic .dropdown-menu {
+    background-color: #0a2;
+}
+
+html#main .navbar .nav>li.phonetic>.dropdown-menu:after {
+    border-bottom: 8px solid #0a2;
+}
+
+html#main .navbar .nav>li.phonetic>a:hover>span:first-child {
+    border-color: #0a2;
+}
+
+html#main .navbar .nav>li.phonetic>a:hover {
+    color: #0a2;
 }

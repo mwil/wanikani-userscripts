@@ -106,18 +106,23 @@ function WKInteraction(namespace)
             switch(this.curPage)
             {
                 case this.PageEnum.radicals:
-                    $(document).triggerHandler(`${this.namespace}_wk_subject_ready`, [this.PageEnum.radicals]);
+                    $(document).triggerHandler(`${this.namespace}_wk_subject_ready`,
+                                               [this.PageEnum.radicals]);
                     break;
                 case this.PageEnum.kanji:
-                    $(document).triggerHandler(`${this.namespace}_wk_subject_ready`, [this.PageEnum.kanji]);
+                    $(document).triggerHandler(`${this.namespace}_wk_subject_ready`,
+                                               [this.PageEnum.kanji]);
                     break;
                 case this.PageEnum.vocabulary:
-                    $(document).triggerHandler(`${this.namespace}_wk_subject_ready`, [this.PageEnum.vocabulary]);
+                    $(document).triggerHandler(`${this.namespace}_wk_subject_ready`,
+                                               [this.PageEnum.vocabulary]);
                     break;
                 case this.PageEnum.reviews:
-                    this.reviewInfoObserver.observe(document.getElementById(`item-info-col2`), {childList: true});
+                    this.reviewInfoObserver.observe(document.getElementById(`item-info-col2`),
+                                                    {childList: true});
                     // reviews are not ready after load, wait until the WK animation finishes.
-                    this.reviewStartObserver.observe(document.getElementById(`loading`), {attributes: true});
+                    this.reviewStartObserver.observe(document.getElementById(`loading`),
+                                                     {attributes: true});
 
                     $(window).on(`beforeunload`, this.reviewEndCallback.bind(this));
                     break;
@@ -131,7 +136,7 @@ function WKInteraction(namespace)
                     this.lessonInfoObserver.observe(document.getElementById(`item-info-col2`), {childList: true});
                     break;
                 default:
-                    break;
+                    return;
             }
 
             if (this.curPage !== this.PageEnum.unknown &&
@@ -270,6 +275,7 @@ function WKInteraction(namespace)
             {
                 case this.PageEnum.radicals:
                     result.rad = document.URL.split(`/`).slice(-1)[0];
+                    result.rad = result.rad.replace("#", "");
                     break;
                 case this.PageEnum.kanji:
                     result.kan = document.title[document.title.length - 1];

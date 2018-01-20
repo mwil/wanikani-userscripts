@@ -42,6 +42,11 @@
                                 <a class="btn" id="keisei_settings_btn_fuzzykana"><i class="icon-circle-blank"></i> Toggle Dakuten Mode</a>
                             </div>
                         </p>
+                        <p>
+                            <div class="btn-group-lg text-center">
+                                <a class="btn btn-large" id="keisei_settings_btn_withbeta"><i class="icon-thumbs-up-alt"></i> Enable Beta Features</a>
+                            </div>
+                        </p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -94,15 +99,23 @@
         if (this.settings.fuzzykana)
         {
             $(`#keisei_settings_btn_fuzzykana`).addClass(`active`);
-
             $(`#keisei_settings_btn_fuzzykana i`).removeClass(`icon-circle-blank`);
             $(`#keisei_settings_btn_fuzzykana i`).addClass(`icon-quote-right`);
+        }
+
+        if (this.settings.withbeta)
+        {
+            $(`#keisei_settings_btn_withbeta`).addClass(`active`);
+            // $(`#keisei_settings_btn_withbeta i`).removeClass(`icon-circle-blank`);
+            // $(`#keisei_settings_btn_withbeta i`).addClass(`icon-quote-right`);
         }
 
         $(`#keisei_settings_btn_debug`).on(`click`, this.toggleDebug.bind(this));
         $(`#keisei_settings_btn_minify`).on(`click`, this.toggleMinify.bind(this));
         $(`#keisei_settings_btn_fullinfo`).on(`click`, this.toggleFullInfo.bind(this));
         $(`#keisei_settings_btn_fuzzykana`).on(`click`, this.toggleFuzzyKana.bind(this));
+        $(`#keisei_settings_btn_withbeta`).on(`click`, this.toggleWithBeta.bind(this));
+
         $(`#keisei_settings_btn_clearDB`).on(`click`, this.toggleClearDB.bind(this));
     };
     // #########################################################################
@@ -211,6 +224,26 @@
         this.populateCharGrid(`#keisei_phonetic_grid`, this.currentSubject);
 
         GM_setValue(`fuzzykana`, this.settings.fuzzykana);
+
+        return false;
+    };
+    // #########################################################################
+
+    // #########################################################################
+    WK_Keisei.prototype.toggleWithBeta = function(event)
+    {
+        this.settings.withbeta = !this.settings.withbeta;
+
+        $(`#keisei_settings_btn_withbeta`).toggleClass(`active`);
+        // $(`#keisei_settings_btn_withbeta i`).toggleClass(`icon-circle-blank`);
+        // $(`#keisei_settings_btn_withbeta i`).toggleClass(`icon-quote-right`);
+
+        if (!$(`.dropdown.phonetic`).length && this.settings.withbeta)
+            this.addNavItem();
+        else if ($(`.dropdown.phonetic`).length && !this.settings.withbeta)
+            $(`.dropdown.phonetic`).remove();
+
+        GM_setValue(`withbeta`, this.settings.withbeta);
 
         return false;
     };
