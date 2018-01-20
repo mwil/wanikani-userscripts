@@ -1,15 +1,12 @@
 // ==UserScript==
 // @name        WaniKani Keisei Phonetic-Semantic Composition
-// @version     1.6.0
+// @version     1.6.1
 // @author      acm
 // @description Adds information to Wanikani about kanji that use Phonetic-Semantic Composition.
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
 // @namespace   wk_keisei
 //
-// @include     *://www.wanikani.com/radicals/*
-// @include     *://www.wanikani.com/kanji/*
-// @include     *://www.wanikani.com/review/session*
-// @include     *://www.wanikani.com/lesson/session*
+// @include     *://www.wanikani.com/*
 //
 // @updateURL   https://github.com/mwil/wanikani-userscripts/raw/master/wanikani-phonetic-compounds/wk_keisei.user.js
 // @downloadURL https://github.com/mwil/wanikani-userscripts/raw/master/wanikani-phonetic-compounds/wk_keisei.user.js
