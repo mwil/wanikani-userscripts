@@ -89,7 +89,7 @@ function WKInteraction(namespace)
                 this.curPage = this.PageEnum.reviews;
             else if (/\/review/.test(document.URL)) /* Reviews Summary Page then? */
                 this.curPage = this.PageEnum.reviews_summary;
-            else if (/\/lesson/.test(document.URL)) /* Lessons Pages */
+            else if (/\/lesson\/./.test(document.URL)) /* Lessons Pages */
                 this.curPage = this.PageEnum.lessons;
             else
                 this.curPage = this.PageEnum.unknown;
