@@ -14,7 +14,7 @@
             <a class="keisei_kanji_link" href="${href}">
                 <span class="character" lang="ja">${kanji}</span>
                 <ul>
-                    <li title="${readings.join("．")}" class="${rnd_style}">${readings[0]}</li>
+                    <li title="${readings.join("・")}" class="${rnd_style}">${readings[0]}</li>
                     <li title="${meanings.join(", ")}" class="ellipsis">${meanings[0]}</li>
                 </ul>
             </a>

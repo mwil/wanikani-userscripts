@@ -61,7 +61,8 @@
 }
 
 /* #f0a -> 0c4, #dd0093 -> 092 */
-.wk_namespace ul.single-character-grid li[id|=phonetic]
+.wk_namespace ul.single-character-grid li[id|=phonetic],
+.wk_namespace ul.multi-character-grid  li[id|=phonetic]
 {
     background-color:#0a2;
     background-image:-moz-linear-gradient(top, #0c4, #092);
@@ -76,7 +77,8 @@
     border-left:1px solid #0c4
 }
 
-.wk_namespace ul.single-character-grid li[id|=nonphonetic]
+.wk_namespace ul.single-character-grid li[id|=nonphonetic],
+.wk_namespace ul.multi-character-grid  li[id|=nonphonetic]
 {
     background-color:#f04;
     background-image:-moz-linear-gradient(top, #f04, #c04);
@@ -89,6 +91,27 @@
     border-top:1px solid #f04;
     border-bottom:1px solid #c04;
     border-left:1px solid #f04
+}
+
+.wk_namespace .keisei_spaced_chargrid {
+    padding-top: 1em;
+}
+
+.wk_namespace .keisei_chargrid_header {
+    vertical-align: top;
+    width: 358px;
+}
+
+.wk_namespace .keisei_chargrid_compounds {
+    vertical-align: top;
+    padding-left: 1em;
+}
+
+@media (max-width: 767px)
+{
+    .wk_namespace .keisei_chargrid_compounds {
+        width: 50%;
+    }
 }
 
 html#main .navbar .nav li.phonetic.dropdown.open>.dropdown-toggle {

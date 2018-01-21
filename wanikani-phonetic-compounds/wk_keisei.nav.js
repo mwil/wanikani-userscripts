@@ -13,7 +13,7 @@
         const $keisei_li = $(`<li></li>`)
                            .attr(`data-dropdown`, ``)
                            .addClass(`dropdown phonetic`)
-                           .insertAfter(`li.radicals`);
+                           .insertAfter(`li.dropdown.vocabulary`);
 
         const $drop_a = $(`<a></a>`)
                         .attr(`href`, `#`)
@@ -183,7 +183,7 @@
 
                                 const $grid = $(`<ul></ul>`)
                                             .attr(`id`, selector)
-                                            .addClass(`single-character-grid`)
+                                            .addClass(`single-character-grid keisei_spaced_chargrid`)
                                             .appendTo(tab_i);
 
                                 this.populateCharGrid(`#${selector}`, {"phon": phon});

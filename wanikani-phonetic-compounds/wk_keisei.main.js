@@ -259,6 +259,8 @@ function WK_Keisei()
         let char_list_lo = [];
         let char_list_hi = [];
 
+        let head_list = [];
+
         if (!this.kdb.checkPhonetic(subject.phon))
         {
             GM_log(`The following phonetic was not found in the database`,
@@ -358,10 +360,16 @@ function WK_Keisei()
             this
         );
         // #####################################################################
+        //
+        const $table = $(`<table><tbody></tbody></table>`)
+                       .appendTo(selector);
+
+        const $tr = $(`<tr></tr>`)
+                    .appendTo($table);
 
         // #####################################################################
         // Push green phonetic character
-        char_list.push({
+        head_list.push({
             "kanji":    subject.phon,
             "readings": this.kdb.getKReadings(subject.phon),
             "meanings": [`Phonetic`],
@@ -370,7 +378,7 @@ function WK_Keisei()
 
         // If available, push blue WK Radical
         if (this.kdb.checkRadical(subject.phon))
-            char_list.push({
+            head_list.push({
                 "kanji":    subject.phon,
                 "readings": this.kdb.getKReadings(subject.phon),
                 "meanings": [this.kdb.getWKRadicalPP(subject.phon)],
@@ -378,7 +386,7 @@ function WK_Keisei()
                 "kanji_id": `radical-1`
             });
         else
-            char_list.push({
+            head_list.push({
                 "kanji":    `&nbsp;`,
                 "readings": [`&nbsp;`],
                 "meanings": [`&nbsp;`],
@@ -387,7 +395,7 @@ function WK_Keisei()
 
         // If phonetic is also kanji in WK, push it!
         if (this.kdb.checkKanji(subject.phon))
-            char_list.push({
+            head_list.push({
                 "kanji":    subject.phon,
                 "readings": this.kdb.getKReadings(subject.phon),
                 "meanings": this.kdb.getWKKMeanings(subject.phon),
@@ -401,10 +409,20 @@ function WK_Keisei()
                                 `keisei_style_reading_notInWK`
             });
 
-        // Push sorted list of all phonetic compounds
-        char_list = [...char_list, ...char_list_hi, ...char_list_lo];
+        const $td_head = $(`<td></td>`)
+                         .addClass(`keisei_chargrid_header`)
+                         .appendTo($tr);
 
-        $(selector).html(char_list.map(this.gen_item_chargrid).join(``));
+        $td_head.html(head_list.map(this.gen_item_chargrid).join(``));
+
+        const $td_comp = $(`<td></td>`)
+                         .addClass(`keisei_chargrid_compounds`)
+                         .appendTo($tr);
+
+        // Push sorted list of all phonetic compounds
+        char_list = [...char_list_hi, ...char_list_lo];
+
+        $td_comp.html(char_list.map(this.gen_item_chargrid).join(``));
         // #####################################################################
     };
     // #########################################################################
