@@ -2986,9 +2986,9 @@
         "wk-radical": null
     },
     "軍": {
-        "readings": ["ぐん", "くん"],
-        "compounds": ["運", "輝"],
-        "non_compounds": ["揮"],
+        "readings": ["ぐん", "くん", "き"],
+        "compounds": ["運", "輝", "揮"],
+        "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
     },

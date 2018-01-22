@@ -4775,7 +4775,9 @@
     },
     "揮": {
         "readings": ["き"],
-        "type": "comp_indicative"
+        "semantic": "手",
+        "phonetic": "軍",
+        "type": "comp_phonetic"
     },
     "敬": {
         "readings": ["けい", "きょう"],
