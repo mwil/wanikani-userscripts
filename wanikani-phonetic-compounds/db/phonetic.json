@@ -799,8 +799,8 @@
         "xrefs": ["瞏"],
         "wk-radical": "zombie"
     },
-    "瞏": {
-        "readings": ["けい", "せん"],
+    "睘": {
+        "readings": ["かん", "けい"],
         "compounds": ["還", "環"],
         "non_compounds": [],
         "xrefs": ["袁"],
@@ -2350,7 +2350,7 @@
     "聿": {
         "readings": ["いつ", "いち"],
         "compounds": ["律", "筆"],
-        "non_compounds": ["書", "建"],
+        "non_compounds": ["書", "建", "津"],
         "xrefs": ["建"],
         "wk-radical": "brush"
     },
