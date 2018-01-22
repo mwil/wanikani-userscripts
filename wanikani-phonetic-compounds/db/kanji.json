@@ -12160,6 +12160,11 @@
         "meanings": ["lead on to", "therefore", "then"],
         "type": "comp_indicative"
     },
+    "睘": {
+        "readings": ["かん", "けい"],
+        "meanings": ["round", "stare"],
+        "type": "unknown"
+    },
     "瞏": {
         "readings": ["けい", "せん"],
         "meanings": ["gaze in terror", "lonely"],
