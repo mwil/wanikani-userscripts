@@ -27,8 +27,11 @@
                            .addClass(`dropdown-menu`)
                            .appendTo($keisei_li)
                            .append(`<li class="nav-header">Lists</li>`)
+                           .append(`<li id="keisei_nav_btn_phonetics">
+                                        <a href="#">Tone Marks</a>
+                                    </li>`)
                            .append(`<li id="keisei_nav_btn_compounds">
-                                        <a href="#">List of Compounds</a>
+                                        <a href="#">Compounds</a>
                                     </li>`)
                            .append(`<li class="nav-header">More</li>`)
                            .append(`<li id="keisei_nav_btn_settings">
@@ -42,23 +45,111 @@
             this.injectModals();
 
         $(`#keisei_nav_btn_compounds`).on(`click`, this.handleNavCompounds.bind(this));
+        $(`#keisei_nav_btn_phonetics`).on(`click`, this.handleNavPhonetics.bind(this));
+    };
+    // #########################################################################
+
+    // #########################################################################
+    WK_Keisei.prototype.handleNavPhonetics = function(event)
+    {
+        $(`#keisei_summary_top_div`).remove();
+
+        const $top = $(`<div></div>`)
+                        .attr(`id`, `keisei_summary_top_div`)
+                        .addClass(`${GM_info.script.namespace} container`);
+
+        $(`.container:eq(2)`).hide().after($top);
+
+        const content = this.kdb.getPhoneticsByCompCount();
+
+        this.createPhoneticSummary($top, content);
+        this.populatePhoneticSummary(content);
+
+        $(`.keisei_kanji_link`).attr(`target`, `_blank`);
+    };
+    // #########################################################################
+
+    // #########################################################################
+    WK_Keisei.prototype.createPhoneticSummary = function(parent, content)
+    {
+        const $page = parent;
+
+        $(`<h1>List Of Tone Marks</h1>`)
+            .appendTo($page);
+
+        const $outer = $(`<div></div>`)
+                         .appendTo($page);
+
+        content.forEach(
+            (phons, count) => {
+                const $section = $(`<section></section>`)
+                                 .attr(`id`, `level-keisei_tm_by_comp_count`)
+                                 .appendTo($outer);
+
+                const $header = $(`<header></header>`)
+                                .append(`<h2>Tone Marks with ${count} Compounds</h2>`)
+                                .appendTo($section);
+
+                const $ul = $(`<ul></ul>`)
+                            .attr(`id`, `keisei_grid_tm_by_comp_count_${count}`)
+                            .addClass(`single-character-grid`)
+                            .appendTo($section);
+            }
+        );
+    };
+    // #########################################################################
+
+    // #########################################################################
+    WK_Keisei.prototype.populatePhoneticSummary = function(content)
+    {
+        content.forEach(
+            (phons, count) => {
+                _.forEach(phons,
+                    (phon) => {
+                        let li_item_data = {};
+
+                        if (this.kdb.checkRadical(phon))
+                            li_item_data = {
+                                "kanji":    phon,
+                                "readings": this.kdb.getKReadings(phon),
+                                "meanings": [this.kdb.getWKRadicalPP(phon)],
+                                "href":     `/radicals/${this.kdb.getWKRadical(phon)}`,
+                                "kanji_id": `radical-${phon}`
+                            };
+                        else
+                            li_item_data = {
+                                "kanji":    phon,
+                                "readings": this.kdb.getKReadings(phon),
+                                "meanings": this.kdb.getWKKMeanings(phon),
+                                "notInWK":  this.kdb.isKanjiInWK(phon) ? `` : `notInWK`,
+                                "href":     this.kdb.isKanjiInWK(phon) ?
+                                                `/kanji/${phon}` :
+                                                `https://jisho.org/search/${phon}%20%23kanji`,
+                                "kanji_id": `kanji-${phon}`,
+                                "rnd_style": this.kdb.isFirstReadingInWK(phon) ?
+                                                `` :
+                                                `keisei_style_reading_notInWK`
+                            };
+
+                        $(`#keisei_grid_tm_by_comp_count_${count}`).append(
+                            this.gen_item_chargrid(li_item_data));
+                    }
+                );
+            }
+        );
     };
     // #########################################################################
 
     // #########################################################################
     WK_Keisei.prototype.handleNavCompounds = function (event)
     {
+        $(`#keisei_summary_top_div`).remove();
+
         const $top = $(`<div></div>`)
+                        .attr(`id`, `keisei_summary_top_div`)
                         .addClass(`${GM_info.script.namespace} container`);
 
-        if ($(`.standard`).length)
-            $top.insertAfter(`.standard`);
-        else
-            $top.insertAfter(`.dashboard`);
-
-        $(`.standard`).hide();
-        $(`#progress`).hide();
-        $(`.dashboard`).hide();
+        $(`.container:eq(2)`).hide().after($top);
 
         const content = this.kdb.getPhoneticsByHeader();
 

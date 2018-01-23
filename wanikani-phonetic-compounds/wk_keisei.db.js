@@ -290,7 +290,33 @@ function KeiseiDB()
         // Support for additional pages listing all tone mark
         // #####################################################################
 
-        //
+        // #####################################################################
+        getPhoneticsByCompCount: function()
+        {
+            let result = new Map();
+
+            _.forEach(this.phonetic_db,
+                (p_item, phon) => {
+                    const comp_len = p_item.compounds.length;
+
+                    if (result.has(comp_len))
+                        result.get(comp_len).push(phon);
+                    else
+                        result.set(comp_len, [phon]);
+                }
+            );
+
+            result.forEach(
+                (phons, count) => {
+                    result.set(count, phons.sort(
+                        (a,b)=>a.localeCompare(b, "ja-u-co-unihan")));
+                }
+            );
+
+            return new Map([...result.entries()].sort((a,b)=>b[0]-a[0]));
+        },
+        // #####################################################################
+
         // #####################################################################
         getPhoneticsByHeader: function()
         {
