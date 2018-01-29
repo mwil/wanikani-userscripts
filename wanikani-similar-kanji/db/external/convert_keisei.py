@@ -1,6 +1,7 @@
 #! /usr/bin/env python3
 
 import json
+import os
 import re
 
 from collections import defaultdict
@@ -17,10 +18,10 @@ def titlecase(s):
 
 
 if __name__ == "__main__":
-    with open(KEISEI_DB_PATH+"phonetic.json", "r") as phon_in:
+    with open(os.path.join(KEISEI_DB_PATH, "phonetic.json"), "r") as phon_in:
         phon_json = json.load(phon_in)
 
-    with open(KEISEI_DB_PATH+"kanji.json", "r") as kanji_in:
+    with open(os.path.join(KEISEI_DB_PATH, "kanji.json"), "r") as kanji_in:
         kanji_json = json.load(kanji_in)
 
     similar_out = defaultdict(list)
@@ -29,6 +30,8 @@ if __name__ == "__main__":
         if kan_item["type"] == "comp_phonetic":
             phon = kan_item["phonetic"]
             phon_item = phon_json[phon]
+
+            similar_out[kanji].append(phon)
 
             for cur_phon in [phon, *phon_item["xrefs"]]:
                 cur_item = phon_json[cur_phon]
@@ -47,7 +50,7 @@ if __name__ == "__main__":
     # Create a new lookup database (meanings) with all entries
     # from the old wk_kanji db and kanji db for jouyou kanji
     # not in WK.
-    with open(KEISEI_DB_PATH+"wk_kanji.json", "r") as kanji_in:
+    with open(os.path.join(KEISEI_DB_PATH, "wk_kanji.json"), "r") as kanji_in:
         wk_kanji_json = json.load(kanji_in)
 
     lookup_out = defaultdict(dict)
@@ -55,10 +58,10 @@ if __name__ == "__main__":
     for kanji, kan_item in kanji_json.items():
         cur_item = lookup_out[kanji]
 
-        if "meaning" in kan_item:
+        if "meanings" in kan_item:
             # the kanji is not included in WK, create!
             cur_item["level"] = 99
-            cur_item["meanings"] = list(map(titlecase, kan_item["meaning"]))
+            cur_item["meanings"] = list(map(titlecase, kan_item["meanings"]))
             cur_item["onyomi"] = kan_item["readings"]
             cur_item["kunyomi"] = []
             cur_item["important_reading"] = "onyomi"
