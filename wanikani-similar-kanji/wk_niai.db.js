@@ -30,7 +30,10 @@ function NiaiDB()
 
         isKanjiLocked: function(kanji, level)
         {
-            return (this.lookup_db[kanji].level > level);
+            if (kanji in this.lookup_db)
+                return (this.lookup_db[kanji].level > level);
+            else
+                return true;
         },
 
         getInfo: function(kanji)
@@ -65,6 +68,12 @@ function NiaiDB()
                             let score = source.base_score +
                                         (hasScore ? sim_info.score : 0);
 
+                            if (!(sim_kanji in this.lookup_db))
+                            {
+                                console.log("Ignoring", kanji, ", not in DB yet!");
+                                return;
+                            }
+
                             if (score > 0.3)
                             {
                                 similar_kanji[sim_kanji] = {
@@ -87,10 +96,11 @@ function NiaiDB()
                 this
             );
 
-            let result = Object.values(similar_kanji).sort(
-                (a, b) => Math.sign(4*(a.locked - b.locked) +
-                                    2*(b.score - a.score) +
-                                    a.kan.localeCompare(b.kan)));
+            let result = Object.values(similar_kanji);
+
+            result.sort((a,b) => 2*Math.sign(b.score - a.score) +
+                                 a.kan.localeCompare(b.kan))
+                  .splice(19);
 
             return result.map((a) => a.kan);
         }
@@ -104,6 +114,7 @@ NiaiDB.prototype.keisei_db      = JSON.parse(GM_getResourceText(`from_keisei_db`
 NiaiDB.prototype.old_script_db  = JSON.parse(GM_getResourceText(`old_script_db`));
 NiaiDB.prototype.yl_radical_db  = JSON.parse(GM_getResourceText(`yl_radical_db`));
 NiaiDB.prototype.stroke_dist_db = JSON.parse(GM_getResourceText(`stroke_dist_db`));
+NiaiDB.prototype.noto_db        = JSON.parse(GM_getResourceText(`noto_db`));
 NiaiDB.prototype.manual_db      = JSON.parse(GM_getResourceText(`manual_db`));
 NiaiDB.prototype.lookup_db      = JSON.parse(GM_getResourceText(`lookup_db`));
 // #############################################################################

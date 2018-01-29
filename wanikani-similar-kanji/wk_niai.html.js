@@ -164,14 +164,8 @@
     // #########################################################################
 
     // #########################################################################
-    WK_Niai.prototype.removeSimilarKanji = function(event)
+    WK_Niai.prototype.addMappingToOverrideDB = function(kanji, sim_kanji)
     {
-        const kanji = this.wki.getSubject().kan;
-        const sim_kanji = event.currentTarget.dataset.kanji;
-
-        if (!kanji || !sim_kanji)
-            return false;
-
         if (kanji in this.override_db)
         {
             let found = this.override_db[kanji].some(
@@ -189,6 +183,21 @@
         }
         else
             this.override_db[kanji] = [{"kan": sim_kanji, "score": -1.0}];
+    };
+    // #########################################################################
+
+    // #########################################################################
+    WK_Niai.prototype.removeSimilarKanji = function(event)
+    {
+        const kanji = this.wki.getSubject().kan;
+        const sim_kanji = event.currentTarget.dataset.kanji;
+
+        if (!kanji || !sim_kanji)
+            return false;
+
+        // FIXED: also add the reverse mapping to DB
+        this.addMappingToOverrideDB(kanji, sim_kanji);
+        this.addMappingToOverrideDB(sim_kanji, kanji);
 
         GM_setValue(`override_db`, JSON.stringify(this.override_db));
 

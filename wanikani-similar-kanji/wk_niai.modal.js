@@ -41,6 +41,11 @@
                                 <a class="btn" id="niai_settings_btn_edit_mode"><i class="icon-circle-blank"></i> Toggle Edit Mode</a>
                             </div>
                         </p>
+                        <p>
+                            <div class="btn-group-lg text-center">
+                                <a class="btn" id="niai_settings_btn_use_alt"><i class="icon-minus-sign-alt"></i> Original Sources</a>
+                            </div>
+                        </p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -86,10 +91,19 @@
                 .addClass(`icon-remove-circle`);
         }
 
+        if (this.settings.use_alt)
+        {
+            $(`#niai_settings_btn_use_alt`).addClass(`active`);
+            $(`#niai_settings_btn_use_alt i`)
+                .removeClass(`icon-minus-sign-alt`)
+                .addClass(`icon-plus-sign-alt`);
+        }
+
         $(`#niai_settings_btn_debug`).on(`click`, this.toggleDebug.bind(this));
         $(`#niai_settings_btn_clearDB`).on(`click`, this.toggleClearDB.bind(this));
         $(`#niai_settings_btn_minify`).on(`click`, this.toggleMinify.bind(this));
         $(`#niai_settings_btn_edit_mode`).on(`click`, this.toggleEditMode.bind(this));
+        $(`#niai_settings_btn_use_alt`).on(`click`, this.toggleUseAlt.bind(this));
     };
     // #########################################################################
 
@@ -142,6 +156,24 @@
             this.toggleBadges();
 
         GM_setValue(`edit_mode`, this.settings.edit_mode);
+
+        return false;
+    };
+    // #########################################################################
+
+    // #########################################################################
+    WK_Niai.prototype.toggleUseAlt = function(event)
+    {
+        const kanji = this.wki.getSubject().kan;
+        this.settings.use_alt = !this.settings.use_alt;
+
+        $(`#niai_settings_btn_use_alt`).toggleClass(`active`);
+        $(`#niai_settings_btn_use_alt i`).toggleClass(`icon-minus-sign-alt`);
+        $(`#niai_settings_btn_use_alt i`).toggleClass(`icon-plus-sign-alt`);
+
+        this.populateNiaiSection(kanji);
+
+        GM_setValue(`use_alt`, this.settings.use_alt);
 
         return false;
     };

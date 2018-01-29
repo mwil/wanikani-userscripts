@@ -11,10 +11,14 @@ function WK_Niai()
         "debug": false,
         "minify": false,
         "edit_mode": false,
-        "sources": [
+        "use_alt": false,
+        "alt_sources": [
             {"id": "old_script_db",  "base_score": 0.4},
             {"id": "yl_radical_db",  "base_score": 0},
-            {"id": "stroke_dist_db", "base_score": 0},
+            {"id": "stroke_dist_db", "base_score": 0}
+        ],
+        "sources": [
+            {"id": "noto_db",        "base_score": 0},
             {"id": "keisei_db",      "base_score": 0.5},
             {"id": "manual_db",      "base_score": 0.8},
             {"id": "override_db",    "base_score": 0.0}
@@ -138,10 +142,15 @@ function WK_Niai()
     {
         $(`#niai_similar_grid`).empty();
 
+        let use_sources = this.settings.sources;
+
+        if (this.settings.use_alt)
+            use_sources = [...this.settings.alt_sources, ...use_sources];
+
         const similar_list = [kanji,
                               ...this.ndb.getSimilar(kanji,
                                                      this.settings.user_level,
-                                                     this.settings.sources)];
+                                                     use_sources)];
         let char_list = [];
 
         similar_list.forEach(
@@ -203,9 +212,10 @@ function WK_Niai()
         GM_addStyle(GM_getResourceText(`niai_style`)
                         .replace(/wk_namespace/g, GM_info.script.namespace));
 
-        this.settings.debug = GM_getValue(`debug`) || false;
-        this.settings.minify = GM_getValue(`minify`) || false;
-        this.settings.edit_mode = GM_getValue(`edit_mode`) || false;
+        this.settings.debug      = GM_getValue(`debug`)      || false;
+        this.settings.minify     = GM_getValue(`minify`)     || false;
+        this.settings.edit_mode  = GM_getValue(`edit_mode`)  || false;
+        this.settings.use_alt    = GM_getValue(`use_alt`)    || false;
         this.settings.user_level = GM_getValue(`user_level`) || 99;
 
         this.override_db = JSON.parse(GM_getValue(`override_db`) || `{}`);
