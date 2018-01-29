@@ -794,9 +794,9 @@
     },
     "袁": {
         "readings": ["えん", "おん"],
-        "compounds": ["遠", "園", "猿", "瞏"],
+        "compounds": ["遠", "園", "猿", "睘"],
         "non_compounds": [],
-        "xrefs": ["瞏"],
+        "xrefs": ["睘"],
         "wk-radical": "zombie"
     },
     "睘": {
@@ -844,7 +844,7 @@
     "辰": {
         "readings": ["しん"],
         "compounds": ["唇", "娠", "振", "震"],
-        "non_compounds": [],
+        "non_compounds": ["辱"],
         "xrefs": [],
         "wk-radical": "superman"
     },

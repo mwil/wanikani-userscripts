@@ -7189,7 +7189,8 @@
     },
     "辱": {
         "readings": ["じょく", "にく"],
-        "type": "unknown"
+        "decomposition": ["寸", "辰"],
+        "type": "comp_indicative"
     },
     "唇": {
         "readings": ["しん"],
@@ -12821,21 +12822,21 @@
     "迶": {
         "readings": ["ずい"],
         "meanings": ["to walk"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "奚": {
         "readings": ["けい"],
         "meanings": ["servant", "what", "why"],
-        "type": "unprocessed"
+        "type": "comp_indicative"
     },
     "𠂔": {
         "readings": ["し"],
         "meanings": ["to stop"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "气": {
         "readings": ["き", "け"],
         "meanings": ["spirit", "steam radical"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     }
 }
