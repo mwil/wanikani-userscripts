@@ -198,7 +198,7 @@
     "王": {
         "readings": ["おう"],
         "compounds": ["往", "旺"],
-        "non_compounds": [],
+        "non_compounds": ["狂"],
         "xrefs": ["主"],
         "wk-radical": "king"
     },
@@ -794,7 +794,7 @@
     },
     "袁": {
         "readings": ["えん", "おん"],
-        "compounds": ["遠", "園", "猿", "睘"],
+        "compounds": ["遠", "園", "猿", "睘", "瞏"],
         "non_compounds": [],
         "xrefs": ["睘"],
         "wk-radical": "zombie"
@@ -1302,10 +1302,17 @@
     },
     "付": {
         "readings": ["ふ"],
-        "compounds": ["府", "附", "符", "腐"],
+        "compounds": ["府", "附", "符"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["府"],
         "wk-radical": "glue"
+    },
+    "府": {
+        "readings": ["ふ"],
+        "compounds": ["腐"],
+        "non_compounds": [],
+        "xrefs": ["付"],
+        "wk-radical": null
     },
     "牙": {
         "readings": ["が", "げ"],
@@ -2222,8 +2229,8 @@
     },
     "至": {
         "readings": ["し"],
-        "compounds": ["窒", "致"],
-        "non_compounds": ["到", "室", "屋"],
+        "compounds": ["窒", "室", "致"],
+        "non_compounds": ["到", "屋"],
         "xrefs": ["屋", "致", "到"],
         "wk-radical": "boob-grave"
     },

@@ -756,7 +756,9 @@
     },
     "室": {
         "readings": ["しつ"],
-        "type": "unknown"
+        "semantic": "宀",
+        "phonetic": "至",
+        "type": "comp_phonetic"
     },
     "後": {
         "readings": ["ご", "こう"],
@@ -2499,14 +2501,17 @@
     },
     "変": {
         "readings": ["へん"],
+        "decomposition": ["䜌", "攴"],
         "type": "comp_indicative"
     },
     "信": {
         "readings": ["しん"],
+        "decomposition": ["人", "言"],
         "type": "unknown"
     },
     "便": {
         "readings": ["べん", "びん"],
+        "decomposition": ["人", "更"],
         "type": "comp_indicative"
     },
     "軍": {
@@ -5793,7 +5798,7 @@
     "狂": {
         "readings": ["きょう"],
         "type": "unknown",
-        "comment": "obsucre tone mark 㞷"
+        "comment": "obscure tone mark 㞷"
     },
     "秀": {
         "readings": ["しゅう"],
@@ -8937,7 +8942,7 @@
     "腐": {
         "readings": ["ふ"],
         "semantic": "肉",
-        "phonetic": "付",
+        "phonetic": "府",
         "type": "comp_phonetic"
     },
     "彰": {
@@ -12219,38 +12224,43 @@
     "妾": {
         "readings": ["しょう"],
         "meanings": ["concubine"],
-        "type": "unprocessed"
+        "decomposition": ["辛", "女"],
+        "type": "comp_indicative"
     },
     "敄": {
         "readings": ["ぶ", "む"],
         "meanings": ["to put forth effort"],
-        "type": "unprocessed",
-        "comment": "related to 矛?"
+        "type": "unknown",
+        "comment": "related to tone mark 矛?"
     },
     "熒": {
         "readings": ["えい", "えい", "ぎょう"],
         "meanings": ["shine", "shimmer", "shining", "dazzling"],
-        "type": "unprocessed"
+        "decomposition": ["𤇾", "火"],
+        "type": "unknown"
     },
     "复": {
         "readings": ["ふく", "ふう", "ぶく", "ぶ"],
         "meanings": ["return", "repeat", "repeatedly"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "咸": {
         "readings": ["かん", "げん"],
         "meanings": ["all", "same"],
-        "type": "unprocessed"
+        "decomposition": ["口", "戌"],
+        "type": "comp_indicative"
     },
     "或": {
         "readings": ["わく", "こく", "よく"],
         "meanings": ["some", "one", "or", "possibly", "a certain"],
-        "type": "unprocessed"
+        "decomposition": ["囗", "戈"],
+        "type": "comp_indicative"
     },
     "侖": {
         "readings": ["りん"],
         "meanings": ["think", "be methodical"],
-        "type": "unprocessed"
+        "decomposition": ["亼", "冊"],
+        "type": "comp_indicative"
     },
     "巽": {
         "readings": ["そん"],
@@ -12260,7 +12270,7 @@
     "彔": {
         "readings": ["ろく"],
         "meanings": ["to carve wood"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "竟": {
         "readings": ["けい", "きょう"],
@@ -12270,12 +12280,12 @@
     "𠬝": {
         "readings": ["ふく", "ふう"],
         "meanings": ["clothes", "to wear", "to dress"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "开": {
         "readings": ["けん"],
         "meanings": ["open", "initiate", "begin", "start"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "喬": {
         "readings": ["きょう", "ぎょう"],
@@ -12437,7 +12447,8 @@
     "羕": {
         "readings": ["よう"],
         "meanings": ["to stream"],
-        "type": "unprocessed"
+        "type": "unknown",
+        "comment": "obscure tone mark 𦍌"
     },
     "啇": {
         "readings": ["てき", "ちゃく", "せき"],
