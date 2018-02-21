@@ -15,7 +15,7 @@
     },
     "土": {
         "readings": ["と", "ど"],
-        "compounds": ["吐", "社"],
+        "compounds": ["吐", "社", "徒"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "grave"
@@ -2030,7 +2030,7 @@
     },
     "旨": {
         "readings": ["し", "けい"],
-        "compounds": ["指", "脂", "詣", "稽"],
+        "compounds": ["指", "脂", "詣"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null,
@@ -2443,8 +2443,15 @@
         "readings": ["ほ", "ほう", "たい"],
         "compounds": ["保"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["保"],
         "wk-radical": null
+    },
+    "保": {
+        "readings": ["ほ", "ほう"],
+        "compounds": ["褒"],
+        "non_compounds": [],
+        "xrefs": ["呆"],
+        "wk-radical": "preserve"
     },
     "争": {
         "readings": ["そう"],

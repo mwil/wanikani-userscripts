@@ -145,6 +145,7 @@
     },
     "正": {
         "readings": ["せい", "しょう"],
+        "decomposition": ["止", "一"],
         "type": "comp_indicative"
     },
     "出": {
@@ -157,6 +158,7 @@
     },
     "右": {
         "readings": ["う", "ゆう"],
+        "decomposition": ["又", "口"],
         "type": "comp_indicative"
     },
     "四": {
@@ -165,6 +167,7 @@
     },
     "左": {
         "readings": ["さ"],
+        "decomposition": ["又", "工"],
         "type": "comp_indicative"
     },
     "玉": {
@@ -193,14 +196,17 @@
     },
     "立": {
         "readings": ["りつ", "りゅう"],
+        "decomposition": ["大", "一"],
         "type": "comp_indicative"
     },
     "百": {
         "readings": ["ひゃく", "はく"],
+        "decomposition": ["白", "一"],
         "type": "comp_indicative"
     },
     "年": {
         "readings": ["ねん"],
+        "decomposition": ["禾", "人"],
         "type": "comp_indicative"
     },
     "休": {
@@ -210,10 +216,12 @@
     },
     "先": {
         "readings": ["せん"],
+        "decomposition": ["儿", "之"],
         "type": "comp_indicative"
     },
     "名": {
         "readings": ["めい", "みょう"],
+        "decomposition": ["口", "夕"],
         "type": "comp_indicative"
     },
     "字": {
@@ -224,7 +232,7 @@
     },
     "早": {
         "readings": ["そう", "さっ"],
-        "type": "comp_indicative"
+        "type": "unknown"
     },
     "気": {
         "readings": ["き", "け"],
@@ -274,6 +282,7 @@
     },
     "見": {
         "readings": ["けん", "げん"],
+        "decomposition": ["儿", "目"],
         "type": "comp_indicative"
     },
     "貝": {
@@ -294,6 +303,7 @@
     },
     "学": {
         "readings": ["がく"],
+        "decomposition": ["𦥯", "子"],
         "type": "comp_indicative"
     },
     "林": {
@@ -329,6 +339,7 @@
     },
     "音": {
         "readings": ["おん", "いん"],
+        "decomposition": ["言", "口"],
         "type": "comp_indicative"
     },
     "校": {
@@ -403,6 +414,7 @@
     },
     "友": {
         "readings": ["ゆう"],
+        "decomposition": ["又", "又"],
         "type": "comp_indicative"
     },
     "太": {
@@ -411,6 +423,7 @@
     },
     "引": {
         "readings": ["いん"],
+        "decomposition": ["弓", "丨"],
         "type": "comp_indicative"
     },
     "心": {
@@ -463,6 +476,7 @@
     },
     "兄": {
         "readings": ["けい", "きょう"],
+        "decomposition": ["儿", "口"],
         "type": "comp_indicative"
     },
     "冬": {
@@ -471,6 +485,7 @@
     },
     "外": {
         "readings": ["がい", "げ", "うい"],
+        "decomposition": ["夕", "卜"],
         "type": "comp_indicative"
     },
     "広": {
@@ -502,10 +517,12 @@
     },
     "合": {
         "readings": ["ごう", "こう"],
+        "decomposition": ["口", "亼"],
         "type": "comp_indicative"
     },
     "同": {
         "readings": ["どう"],
+        "decomposition": ["口", "凡"],
         "type": "comp_indicative"
     },
     "回": {
@@ -524,10 +541,12 @@
     },
     "多": {
         "readings": ["た"],
+        "decomposition": ["夕", "夕"],
         "type": "comp_indicative"
     },
     "光": {
         "readings": ["こう"],
+        "decomposition": ["儿", "火"],
         "type": "comp_indicative"
     },
     "当": {
@@ -539,7 +558,7 @@
     },
     "毎": {
         "readings": ["まい"],
-        "type": "comp_indicative"
+        "type": "hieroglyph"
     },
     "池": {
         "readings": ["ち"],
@@ -571,6 +590,7 @@
     },
     "色": {
         "readings": ["しょく", "しき"],
+        "decomposition": ["人", "卩"],
         "type": "comp_indicative"
     },
     "行": {
@@ -608,6 +628,7 @@
     },
     "図": {
         "readings": ["ず", "と"],
+        "decomposition": ["囗", "啚"],
         "type": "comp_indicative"
     },
     "声": {
@@ -616,6 +637,7 @@
     },
     "売": {
         "readings": ["ばい"],
+        "decomposition": ["出", "買"],
         "type": "comp_indicative"
     },
     "形": {
@@ -646,11 +668,11 @@
     },
     "谷": {
         "readings": ["こく"],
-        "type": "comp_indicative"
+        "type": "unknown"
     },
     "走": {
         "readings": ["そう"],
-        "type": "comp_indicative"
+        "type": "unknown"
     },
     "近": {
         "readings": ["きん", "こん"],
@@ -660,14 +682,17 @@
     },
     "里": {
         "readings": ["り"],
+        "decomposition": ["田", "土"],
         "type": "comp_indicative"
     },
     "麦": {
         "readings": ["ばく"],
+        "decomposition": ["來", "夊"],
         "type": "comp_indicative"
     },
     "画": {
         "readings": ["が", "かく"],
+        "decomposition": ["田", "聿"],
         "type": "comp_indicative"
     },
     "東": {
@@ -721,7 +746,7 @@
     },
     "歩": {
         "readings": ["ほ", "ぶ", "ふ"],
-        "type": "comp_indicative"
+        "type": "unknown"
     },
     "知": {
         "readings": ["ち"],
@@ -742,6 +767,7 @@
     },
     "前": {
         "readings": ["ぜん", "せん"],
+        "decomposition": ["止", "舟"],
         "type": "comp_indicative"
     },
     "南": {
@@ -794,6 +820,7 @@
     },
     "科": {
         "readings": ["か"],
+        "decomposition": ["禾", "斗"],
         "type": "comp_indicative"
     },
     "秋": {
@@ -807,6 +834,7 @@
     },
     "計": {
         "readings": ["けい"],
+        "decomposition": ["言", "十"],
         "type": "comp_indicative"
     },
     "風": {
@@ -832,6 +860,7 @@
     },
     "原": {
         "readings": ["げん"],
+        "decomposition": ["厂", "泉"],
         "type": "comp_indicative"
     },
     "家": {
@@ -840,6 +869,7 @@
     },
     "帰": {
         "readings": ["き"],
+        "decomposition": ["𠂤", "止", "帚"],
         "type": "comp_indicative"
     },
     "時": {
@@ -883,10 +913,12 @@
     },
     "強": {
         "readings": ["きょう", "ごう"],
+        "decomposition": ["弘", "虫"],
         "type": "comp_indicative"
     },
     "教": {
         "readings": ["きょう"],
+        "decomposition": ["爻", "子", "攴"],
         "type": "comp_indicative"
     },
     "理": {
@@ -927,6 +959,7 @@
     },
     "雪": {
         "readings": ["せつ"],
+        "decomposition": ["雨", "羽"],
         "type": "comp_indicative"
     },
     "魚": {
@@ -975,6 +1008,7 @@
     },
     "朝": {
         "readings": ["ちょう"],
+        "decomposition": ["艸", "日", "月"],
         "type": "comp_indicative"
     },
     "道": {
@@ -987,6 +1021,7 @@
     },
     "間": {
         "readings": ["かん", "けん"],
+        "decomposition": ["門", "月"],
         "type": "comp_indicative"
     },
     "雲": {
@@ -1026,6 +1061,7 @@
     },
     "電": {
         "readings": ["でん", "てん"],
+        "decomposition": ["雨", "申"],
         "type": "comp_indicative"
     },
     "鳴": {
@@ -1041,7 +1077,7 @@
     },
     "算": {
         "readings": ["さん"],
-        "type": "comp_indicative"
+        "type": "unknown"
     },
     "語": {
         "readings": ["ご"],
@@ -1103,14 +1139,17 @@
     },
     "化": {
         "readings": ["か", "け", "げ"],
+        "decomposition": ["人", "𠤎"],
         "type": "comp_indicative"
     },
     "区": {
         "readings": ["く"],
+        "decomposition": ["匸", "品"],
         "type": "comp_indicative"
     },
     "反": {
         "readings": ["はん", "ほん", "たん"],
+        "decomposition": ["厂", "又"],
         "type": "comp_indicative"
     },
     "央": {
@@ -1135,7 +1174,9 @@
     },
     "氷": {
         "readings": ["ひょう"],
-        "type": "comp_indicative"
+        "decomposition": ["仌", "水"],
+        "type": "comp_indicative",
+        "comment": "TODO: strange ice here, fix ..."
     },
     "主": {
         "readings": ["しゅ", "す"],
@@ -1212,14 +1253,16 @@
     },
     "次": {
         "readings": ["じ", "し"],
-        "type": "comp_indicative"
+        "type": "unknown"
     },
     "安": {
         "readings": ["あん"],
+        "decomposition": ["宀", "女"],
         "type": "comp_indicative"
     },
     "守": {
         "readings": ["しゅ", "す"],
+        "decomposition": ["宀", "寸"],
         "type": "comp_indicative"
     },
     "式": {
@@ -1230,6 +1273,7 @@
     },
     "死": {
         "readings": ["し"],
+        "decomposition": ["歹", "匕"],
         "type": "comp_indicative"
     },
     "列": {
@@ -1243,11 +1287,12 @@
     },
     "有": {
         "readings": ["ゆう", "う"],
+        "decomposition": ["又", "肉"],
         "type": "comp_indicative"
     },
     "血": {
         "readings": ["けつ"],
-        "type": "comp_indicative"
+        "type": "hieroglyph"
     },
     "住": {
         "readings": ["じゅう"],
@@ -1283,14 +1328,17 @@
     },
     "役": {
         "readings": ["やく", "えき"],
+        "decomposition": ["彳", "殳"],
         "type": "comp_indicative"
     },
     "投": {
         "readings": ["とう"],
+        "decomposition": ["手", "殳"],
         "type": "comp_indicative"
     },
     "対": {
         "readings": ["たい", "つい"],
+        "decomposition": ["左", "寸"],
         "type": "comp_indicative"
     },
     "決": {
@@ -1357,6 +1405,7 @@
     },
     "実": {
         "readings": ["じつ"],
+        "decomposition": ["宀", "貫"],
         "type": "comp_indicative"
     },
     "定": {
@@ -1429,6 +1478,7 @@
     },
     "具": {
         "readings": ["ぐ"],
+        "decomposition": ["廾", "貝"],
         "type": "comp_indicative"
     },
     "委": {
@@ -1445,6 +1495,7 @@
     },
     "取": {
         "readings": ["しゅ"],
+        "decomposition": ["耳", "又"],
         "type": "comp_indicative"
     },
     "服": {
@@ -1475,6 +1526,7 @@
     },
     "品": {
         "readings": ["ひん", "ほん"],
+        "decomposition": ["口", "口", "口"],
         "type": "comp_indicative"
     },
     "客": {
@@ -1697,6 +1749,7 @@
     },
     "起": {
         "readings": ["き"],
+        "decomposition": ["走", "巳"],
         "type": "unknown",
         "comment": "obscure tone mark 巳, doesn't fit"
     },
@@ -2622,7 +2675,12 @@
     },
     "徒": {
         "readings": ["と", "ず"],
-        "type": "comp_indicative"
+        "decomposition": ["辵", "土"],
+        "semantic": "辵",
+        "phonetic": "土",
+        "type": "comp_phonetic",
+        "comment": "TODO: scary decomposition",
+        "obscure": true
     },
     "挙": {
         "readings": ["きょ"],
@@ -4096,6 +4154,7 @@
     },
     "興": {
         "readings": ["こう", "きょう"],
+        "decomposition": ["舁", "同"],
         "type": "comp_indicative"
     },
     "衛": {
@@ -8293,6 +8352,7 @@
     },
     "越": {
         "readings": ["えつ", "おち", "おつ"],
+        "decomposition": ["走", "戉"],
         "type": "unknown",
         "cooment": "obscure tone mark 戉"
     },
@@ -8385,7 +8445,8 @@
     },
     "殿": {
         "readings": ["でん", "てん"],
-        "type": "unknown"
+        "type": "unknown",
+        "comment": "TODO: related to 展? Same reading"
     },
     "棄": {
         "readings": ["き"],
@@ -8632,7 +8693,8 @@
     },
     "献": {
         "readings": ["けん", "こん"],
-        "type": "unknown"
+        "type": "unknown",
+        "comment": "犬 also has reading けん ..."
     },
     "痴": {
         "readings": ["ち"],
@@ -9895,7 +9957,7 @@
         "readings": ["とう"],
         "meanings": ["mimeograph"],
         "type": "unknown",
-        "comment": "related to tone mark 朕?"
+        "comment": "related to tone mark 朕, or 誉?"
     },
     "踏": {
         "readings": ["とう"],
@@ -10111,7 +10173,9 @@
     },
     "褒": {
         "readings": ["ほう"],
-        "type": "unknown"
+        "semantic": "衣",
+        "phonetic": "保",
+        "type": "comp_phonetic"
     },
     "膨": {
         "readings": ["ぼう", "ほう"],
@@ -10519,9 +10583,8 @@
     "稽": {
         "readings": ["けい"],
         "meanings": ["think"],
-        "semantic": "禾",
-        "phonetic": "旨",
-        "type": "comp_phonetic"
+        "decomposition": ["禾", "旨", "尤"],
+        "type": "comp_indicative"
     },
     "曾": {
         "readings": ["そう", "ぞ", "そ", "ぞう"],
@@ -11865,6 +11928,7 @@
     "刹": {
         "readings": ["さつ", "せつ"],
         "meanings": ["temple"],
+        "decomposition": ["刀", "杀"],
         "type": "unknown",
         "comment": "tone mark 杀"
     },
@@ -11899,6 +11963,7 @@
     "塡": {
         "readings": ["てん"],
         "meanings": ["fill in", "fill up", "make good"],
+        "decomposition": ["土", "眞"],
         "type": "unknown",
         "comment": "obscure tone mark 眞"
     },
