@@ -3868,8 +3868,9 @@
     },
     "統": {
         "readings": ["とう"],
-        "type": "unknown",
-        "comment": "maybe tone mark 充, but doesn't fit and looked different in the past."
+        "semantic": "糸",
+        "phonetic": "充",
+        "type": "comp_phonetic"
     },
     "証": {
         "readings": ["しょう"],
@@ -9037,8 +9038,9 @@
     },
     "概": {
         "readings": ["がい", "かい"],
-        "type": "unknown",
-        "comment": "obscure tone mark 旣"
+        "semantic": "⽊",
+        "phonetic": "既",
+        "type": "comp_phonetic"
     },
     "雌": {
         "readings": ["し"],

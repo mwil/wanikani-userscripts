@@ -3736,8 +3736,8 @@
     },
     "充": {
         "readings": ["じゅう", "しゅう"],
-        "compounds": ["銃"],
-        "non_compounds": ["統"],
+        "compounds": ["銃", "統"],
+        "non_compounds": [],
         "xrefs": [],
         "wk-radical": "outhouse"
     },
