@@ -45,7 +45,7 @@ function NiaiDB()
             return this.lookup_db[kanji];
         },
 
-        getSimilar: function(kanji, level, sources)
+        getSimilar: function(kanji, level, sources, min_score)
         {
             // use an object to override with later databases.
             let similar_kanji = {};
@@ -74,11 +74,15 @@ function NiaiDB()
                                 return;
                             }
 
-                            if (score > 0.3)
+                            const old_score = (sim_kanji in similar_kanji ?
+                                               similar_kanji[sim_kanji].score :
+                                               0.0);
+
+                            if (score > min_score)
                             {
                                 similar_kanji[sim_kanji] = {
                                     "kan": sim_kanji,
-                                    "score": score,
+                                    "score": score+old_score,
                                     "locked": this.isKanjiLocked(sim_kanji, level)
                                 };
                             }

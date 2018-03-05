@@ -18,12 +18,13 @@ function WK_Niai()
             {"id": "stroke_dist_db", "base_score": 0}
         ],
         "sources": [
-            {"id": "noto_db",        "base_score": 0},
+            {"id": "noto_db",        "base_score": 0.2},
             {"id": "keisei_db",      "base_score": 0.5},
             {"id": "manual_db",      "base_score": 0.8},
             {"id": "override_db",    "base_score": 0.0}
         ],
-        "user_level": 99
+        "user_level": 99,
+        "min_score": 0.3
     };
 }
 // #############################################################################
@@ -150,7 +151,8 @@ function WK_Niai()
         const similar_list = [kanji,
                               ...this.ndb.getSimilar(kanji,
                                                      this.settings.user_level,
-                                                     use_sources)];
+                                                     use_sources,
+                                                     this.settings.min_score)];
         let char_list = [];
 
         similar_list.forEach(
@@ -217,6 +219,7 @@ function WK_Niai()
         this.settings.edit_mode  = GM_getValue(`edit_mode`)  || false;
         this.settings.use_alt    = GM_getValue(`use_alt`)    || false;
         this.settings.user_level = GM_getValue(`user_level`) || 99;
+        this.settings.min_score  = GM_getValue(`min_score`)  || 0.3;
 
         this.override_db = JSON.parse(GM_getValue(`override_db`) || `{}`);
 

@@ -46,6 +46,10 @@
                                 <a class="btn" id="niai_settings_btn_use_alt"><i class="icon-minus-sign-alt"></i> Original Sources</a>
                             </div>
                         </p>
+                        <p class="text-center">
+                            <label for="niai_settings_input_min_score">Set Minimal Score Below:</label>
+                            <input id="niai_settings_input_min_score" type="number", min="0", max="1", step="0.1" value="${this.settings.min_score}">
+                        </p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -99,11 +103,15 @@
                 .addClass(`icon-plus-sign-alt`);
         }
 
+        $(`#niai_settings_input_min_score`).val(this.settings.min_score);
+
         $(`#niai_settings_btn_debug`).on(`click`, this.toggleDebug.bind(this));
         $(`#niai_settings_btn_clearDB`).on(`click`, this.toggleClearDB.bind(this));
         $(`#niai_settings_btn_minify`).on(`click`, this.toggleMinify.bind(this));
         $(`#niai_settings_btn_edit_mode`).on(`click`, this.toggleEditMode.bind(this));
         $(`#niai_settings_btn_use_alt`).on(`click`, this.toggleUseAlt.bind(this));
+
+        $(`#niai_settings_input_min_score`).on(`change`, this.changeMinScore.bind(this));
     };
     // #########################################################################
 
@@ -190,7 +198,7 @@
 
         if (!$(`#niai_settings_btn_clearDB`).hasClass(`active`))
         {
-            GM_log("WK_Niai: Override database cleared!");
+            GM_log(`WK_Niai: Override database cleared!`);
 
             Object.keys(this.override_db).forEach(
                 function(key) {
@@ -204,6 +212,20 @@
         }
 
         return false;
+    };
+
+    WK_Niai.prototype.changeMinScore = function(event)
+    {
+        const kanji = this.wki.getSubject().kan;
+        const new_value = $(`#niai_settings_input_min_score`).val();
+
+        if (new_value != this.settings.min_score)
+        {
+            this.settings.min_score = new_value;
+            GM_setValue(`min_score`, new_value);
+
+            this.populateNiaiSection(kanji);
+        }
     };
     // #########################################################################
 }
