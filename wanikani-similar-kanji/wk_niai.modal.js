@@ -111,7 +111,7 @@
         $(`#niai_settings_btn_edit_mode`).on(`click`, this.toggleEditMode.bind(this));
         $(`#niai_settings_btn_use_alt`).on(`click`, this.toggleUseAlt.bind(this));
 
-        $(`#niai_settings_input_min_score`).on(`change`, this.changeMinScore.bind(this));
+        $(`#niai_settings_input_min_score`).on(`input`, this.changeMinScore.bind(this));
     };
     // #########################################################################
 
