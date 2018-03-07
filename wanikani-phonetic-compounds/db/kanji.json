@@ -1958,8 +1958,9 @@
     },
     "勝": {
         "readings": ["しょう"],
-        "decomposition": ["朕", "力"],
-        "type": "unknown"
+        "semantic": "力",
+        "phonetic": "朕",
+        "type": "comp_phonetic"
     },
     "葉": {
         "readings": ["よう"],
@@ -9959,8 +9960,9 @@
     "謄": {
         "readings": ["とう"],
         "meanings": ["mimeograph"],
-        "type": "unknown",
-        "comment": "related to tone mark 朕, or 誉?"
+        "semantic": "言",
+        "phonetic": "朕",
+        "type": "comp_phonetic"
     },
     "踏": {
         "readings": ["とう"],
@@ -9969,8 +9971,9 @@
     },
     "騰": {
         "readings": ["とう"],
-        "type": "unknown",
-        "comment": "related to tone mark 朕?"
+        "semantic": "馬",
+        "phonetic": "朕",
+        "type": "comp_phonetic"
     },
     "闘": {
         "readings": ["とう"],
