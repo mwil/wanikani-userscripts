@@ -6273,7 +6273,8 @@
     },
     "到": {
         "readings": ["とう"],
-        "type": "unknown"
+        "type": "unknown",
+        "comment": "TODO: tone mark 刀?"
     },
     "茎": {
         "readings": ["けい"],
@@ -10046,7 +10047,8 @@
         "readings": ["はん"],
         "semantic": "竹",
         "phonetic": "氾",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "盤": {
         "readings": ["ばん", "はん"],

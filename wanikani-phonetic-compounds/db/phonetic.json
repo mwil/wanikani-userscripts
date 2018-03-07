@@ -688,7 +688,7 @@
     "斤": {
         "readings": ["きん"],
         "compounds": ["近", "析", "祈"],
-        "non_compounds": ["斬"],
+        "non_compounds": ["斬", "断", "折", "所", "新"],
         "xrefs": [],
         "wk-radical": "axe"
     },
@@ -844,8 +844,8 @@
     "辰": {
         "readings": ["しん"],
         "compounds": ["唇", "娠", "振", "震"],
-        "non_compounds": ["辱"],
-        "xrefs": [],
+        "non_compounds": ["辱", "農"],
+        "xrefs": ["農"],
         "wk-radical": "superman"
     },
     "艮": {
@@ -1791,7 +1791,7 @@
         "wk-radical": null
     },
     "尚": {
-        "readings": ["しょう"],
+        "readings": ["しょう", "とう"],
         "compounds": ["堂", "常", "掌", "当", "賞", "党"],
         "non_compounds": [],
         "xrefs": ["向", "賞"],
@@ -2295,7 +2295,7 @@
         "readings": ["のう"],
         "compounds": ["濃"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["辰"],
         "wk-radical": "farming"
     },
     "乇": {
