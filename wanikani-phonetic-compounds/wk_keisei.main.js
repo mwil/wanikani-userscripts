@@ -210,6 +210,7 @@ function WK_Keisei()
                         $(`#keisei_explanation`).append(
                             this.explanation_phonetic(
                                 subject,
+                                this.kdb.getKItem(subject.kan).semantic,
                                 this.kdb.getPReadings_style(subject.phon)));
 
                         this.populateCharGrid(`#keisei_phonetic_grid`, subject);
@@ -441,7 +442,10 @@ function WK_Keisei()
 
                 if (`base_phon` in subject && subject.base_phon === curPhon)
                     $(`#keisei_more_expl_${i}`).append(
-                        this.explanation_phonetic(subject, this.kdb.getPReadings_style(curPhon)));
+                        this.explanation_phonetic(
+                            subject,
+                            this.kdb.getKItem(subject.kan).semantic,
+                            this.kdb.getPReadings_style(curPhon)));
                 else
                     $(`#keisei_more_expl_${i}`).append(
                         this.explanation_xref(curPhon, this.kdb.getPReadings_style(curPhon)));
