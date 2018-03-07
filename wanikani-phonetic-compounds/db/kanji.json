@@ -1749,9 +1749,9 @@
     },
     "起": {
         "readings": ["き"],
-        "decomposition": ["走", "巳"],
-        "type": "unknown",
-        "comment": "obscure tone mark 巳, doesn't fit"
+        "semantic": "走",
+        "phonetic": "己",
+        "type": "comp_phonetic"
     },
     "速": {
         "readings": ["そく"],
@@ -2720,7 +2720,8 @@
         "readings": ["しょう"],
         "semantic": "竹",
         "phonetic": "关",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "粉": {
         "readings": ["ふん"],
