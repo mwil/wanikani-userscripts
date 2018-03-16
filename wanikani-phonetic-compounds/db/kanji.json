@@ -239,6 +239,7 @@
         "readings": ["き", "け"],
         "semantic": "米",
         "phonetic": "气",
+        "seiji": "氣",
         "type": "comp_phonetic"
     },
     "竹": {
@@ -247,6 +248,7 @@
     },
     "糸": {
         "readings": ["し"],
+        "seiji": "絲",
         "type": "hieroglyph"
     },
     "耳": {
@@ -364,6 +366,7 @@
     },
     "万": {
         "readings": ["まん", "ばん"],
+        "seiji": "萬",
         "type": "derivative"
     },
     "丸": {
@@ -497,7 +500,7 @@
         "readings": ["こう"],
         "semantic": "广",
         "phonetic": "黄",
-        "seiji": "廣",
+        "seiji": "黃",
         "type": "comp_phonetic",
         "obscure": true
     },
@@ -560,11 +563,13 @@
         "readings": ["とう"],
         "semantic": "田",
         "phonetic": "尚",
+        "seiji": "當",
         "type": "comp_phonetic",
         "obscure": true
     },
     "毎": {
         "readings": ["まい"],
+        "seiji": "每",
         "type": "hieroglyph"
     },
     "池": {
@@ -610,6 +615,7 @@
     },
     "来": {
         "readings": ["らい"],
+        "seiji": "來",
         "type": "hieroglyph"
     },
     "何": {
@@ -627,26 +633,30 @@
     "体": {
         "readings": ["たい", "てい"],
         "decomposition": ["人", "本"],
-        "seiji" : "體",
+        "seiji": "體",
         "type": "shinjitai",
         "comment": "TODO: phonetic of 豊?"
     },
     "弟": {
         "readings": ["てい", "だい", "で"],
+        "seiji": "豐",
         "type": "hieroglyph"
     },
     "図": {
         "readings": ["ず", "と"],
         "decomposition": ["囗", "啚"],
+        "seiji": "圖",
         "type": "comp_indicative"
     },
     "声": {
         "readings": ["せい", "しょう"],
+        "seiji": "聲",
         "type": "unknown"
     },
     "売": {
         "readings": ["ばい"],
         "decomposition": ["出", "買"],
+        "seiji": "賣",
         "type": "comp_indicative"
     },
     "形": {
@@ -665,6 +675,7 @@
         "readings": ["しゃ", "じゃ"],
         "semantic": "示",
         "phonetic": "土",
+        "seiji": "社",
         "type": "comp_phonetic"
     },
     "角": {
@@ -697,6 +708,7 @@
     "麦": {
         "readings": ["ばく"],
         "decomposition": ["來", "夊"],
+        "seiji": "麥",
         "type": "comp_indicative"
     },
     "画": {
@@ -758,7 +770,7 @@
     "歩": {
         "readings": ["ほ", "ぶ", "ふ"],
         "seiji": "步",
-        "type": "shinjitai"
+        "type": "unknown"
     },
     "知": {
         "readings": ["ち"],
@@ -791,6 +803,7 @@
         "readings": ["てん"],
         "semantic": "火",
         "phonetic": "占",
+        "seiji": "點",
         "type": "comp_phonetic"
     },
     "室": {
@@ -971,6 +984,7 @@
         "readings": ["や", "しょ"],
         "semantic": "里",
         "phonetic": "予",
+        "seiji": "豫",
         "type": "comp_phonetic"
     },
     "雪": {
@@ -992,6 +1006,7 @@
     },
     "黒": {
         "readings": ["こく"],
+        "seiji": "黑",
         "type": "unknown"
     },
     "場": {
@@ -1055,6 +1070,7 @@
     },
     "数": {
         "readings": ["すう", "す", "しゅ", "さく", "そく"],
+        "seiji": "數",
         "type": "unknown"
     },
     "新": {
@@ -1063,6 +1079,7 @@
     },
     "楽": {
         "readings": ["がく", "らく", "ごう", "ぎょう"],
+        "seiji": "樂",
         "type": "hieroglyph"
     },
     "話": {
@@ -1106,6 +1123,7 @@
         "readings": ["どく", "とく", "とう"],
         "semantic": "言",
         "phonetic": "売",
+        "seiji": "讀",
         "type": "comp_phonetic"
     },
     "聞": {
@@ -1163,6 +1181,7 @@
     "区": {
         "readings": ["く"],
         "decomposition": ["匸", "品"],
+        "seiji": "區",
         "type": "comp_indicative"
     },
     "反": {
@@ -1225,6 +1244,7 @@
     },
     "号": {
         "readings": ["ごう"],
+        "seiji": "號",
         "type": "unknown"
     },
     "去": {
@@ -1253,6 +1273,7 @@
     },
     "両": {
         "readings": ["りょう"],
+        "seiji": "兩",
         "type": "unknown"
     },
     "曲": {
@@ -1360,6 +1381,7 @@
     "対": {
         "readings": ["たい", "つい"],
         "decomposition": ["左", "寸"],
+        "seiji": "對",
         "type": "comp_indicative"
     },
     "決": {
@@ -1427,6 +1449,7 @@
     "実": {
         "readings": ["じつ"],
         "decomposition": ["宀", "貫"],
+        "seiji": "實",
         "type": "comp_indicative"
     },
     "定": {
@@ -1512,6 +1535,7 @@
     },
     "者": {
         "readings": ["しゃ"],
+        "seiji": "者",
         "type": "unknown"
     },
     "取": {
@@ -1640,18 +1664,21 @@
         "readings": ["はつ", "ほつ"],
         "semantic": "弓",
         "phonetic": "癶",
+        "seiji": "發",
         "type": "comp_phonetic"
     },
     "研": {
         "readings": ["けん", "げん"],
         "semantic": "石",
         "phonetic": "开",
+        "seiji": "硏",
         "type": "comp_phonetic"
     },
     "神": {
         "readings": ["しん", "じん"],
         "semantic": "示",
         "phonetic": "申",
+        "seiji": "神",
         "type": "comp_phonetic"
     },
     "秒": {
@@ -1694,6 +1721,7 @@
         "readings": ["べん"],
         "semantic": "力",
         "phonetic": "免",
+        "seiji": "勉",
         "type": "comp_phonetic"
     },
     "倍": {
@@ -1704,6 +1732,7 @@
     },
     "真": {
         "readings": ["しん"],
+        "seiji": "眞",
         "type": "unknown"
     },
     "員": {
@@ -1868,6 +1897,7 @@
         "readings": ["てん"],
         "semantic": "車",
         "phonetic": "専",
+        "seiji": "轉",
         "type": "comp_phonetic",
         "obscure": true
     },
@@ -1881,6 +1911,7 @@
         "readings": ["と", "つ"],
         "semantic": "邑",
         "phonetic": "者",
+        "seiji": "都",
         "type": "comp_phonetic"
     },
     "部": {
@@ -1907,6 +1938,7 @@
         "readings": ["しょ"],
         "semantic": "日",
         "phonetic": "者",
+        "seiji": "暑",
         "type": "comp_phonetic"
     },
     "植": {
@@ -2000,6 +2032,7 @@
         "readings": ["けい", "きん"],
         "semantic": "車",
         "phonetic": "圣",
+        "seiji": "輕",
         "type": "comp_phonetic"
     },
     "運": {
@@ -2077,12 +2110,14 @@
         "readings": ["かん"],
         "semantic": "水",
         "phonetic": "𦰩",
+        "seiji": "漢",
         "type": "comp_phonetic"
     },
     "福": {
         "readings": ["ふく"],
         "semantic": "示",
         "phonetic": "畐",
+        "seiji": "福",
         "type": "comp_phonetic"
     },
     "詩": {
@@ -2116,18 +2151,21 @@
         "readings": ["よう"],
         "semantic": "⽊",
         "phonetic": "羕",
+        "seiji": "樣",
         "type": "comp_phonetic"
     },
     "緑": {
         "readings": ["りょく", "ろく"],
         "semantic": "糸",
         "phonetic": "彔",
+        "seiji": "綠",
         "type": "comp_phonetic"
     },
     "練": {
         "readings": ["れん"],
         "semantic": "糸",
         "phonetic": "柬",
+        "seiji": "練",
         "type": "comp_phonetic"
     },
     "銀": {
@@ -2187,6 +2225,7 @@
         "readings": ["やく"],
         "semantic": "艸",
         "phonetic": "楽",
+        "seiji": "藥",
         "type": "comp_phonetic"
     },
     "館": {
@@ -2216,6 +2255,7 @@
     },
     "欠": {
         "readings": ["けつ", "けん"],
+        "seiji": "缺",
         "type": "unknown"
     },
     "氏": {
@@ -2292,6 +2332,7 @@
     },
     "争": {
         "readings": ["そう"],
+        "seiji": "爭",
         "type": "comp_indicative"
     },
     "仲": {
@@ -2302,7 +2343,9 @@
     },
     "伝": {
         "readings": ["でん"],
-        "type": "unknown"
+        "seiji": "傳",
+        "type": "unknown",
+        "comment": "Check old tone mark!"
     },
     "共": {
         "readings": ["きょう"],
@@ -2327,8 +2370,10 @@
     "灯": {
         "readings": ["とう"],
         "semantic": "火",
-        "phonetic": "丁",
-        "type": "comp_phonetic"
+        "phonetic": "登",
+        "seiji": "燈",
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "老": {
         "readings": ["ろう"],
@@ -2364,6 +2409,7 @@
     },
     "児": {
         "readings": ["じ", "に"],
+        "seiji": "兒",
         "type": "hieroglyph"
     },
     "冷": {
@@ -2385,6 +2431,7 @@
     "労": {
         "readings": ["ろう"],
         "decomposition": ["𤇾", "力"],
+        "seiji": "勞",
         "type": "comp_indicative"
     },
     "告": {
@@ -2489,6 +2536,7 @@
     },
     "参": {
         "readings": ["さん", "しん"],
+        "seiji": "參",
         "type": "unknown"
     },
     "固": {
@@ -2517,6 +2565,7 @@
         "readings": ["けい"],
         "semantic": "行",
         "phonetic": "圣",
+        "seiji": "徑",
         "type": "comp_phonetic"
     },
     "松": {
@@ -2572,6 +2621,7 @@
     },
     "単": {
         "readings": ["たん", "ぜん"],
+        "seiji": "單",
         "type": "unknown"
     },
     "省": {
@@ -2635,6 +2685,7 @@
         "readings": ["せん"],
         "semantic": "水",
         "phonetic": "戔",
+        "seiji": "淺",
         "type": "comp_phonetic"
     },
     "胃": {
@@ -2643,6 +2694,7 @@
     },
     "祝": {
         "readings": ["しゅく", "しゅう"],
+        "seiji": "祝",
         "type": "comp_indicative"
     },
     "紀": {
@@ -2698,6 +2750,7 @@
     },
     "帯": {
         "readings": ["たい"],
+        "seiji": "帶",
         "type": "hieroglyph"
     },
     "席": {
@@ -2715,6 +2768,7 @@
     },
     "挙": {
         "readings": ["きょ"],
+        "seiji": "擧",
         "type": "unknown",
         "comment": "obscure phone mark 與"
     },
@@ -2722,16 +2776,19 @@
         "readings": ["ばい"],
         "semantic": "⽊",
         "phonetic": "毎",
+        "seiji": "梅",
         "type": "comp_phonetic"
     },
     "残": {
         "readings": ["ざん"],
         "semantic": "歹",
         "phonetic": "戔",
+        "seiji": "殘",
         "type": "comp_phonetic"
     },
     "殺": {
         "readings": ["さつ", "さい", "せつ"],
+        "seiji": "殺",
         "type": "unknown"
     },
     "浴": {
@@ -2798,6 +2855,7 @@
     },
     "巣": {
         "readings": ["そう"],
+        "seiji": "巢",
         "type": "hieroglyph"
     },
     "健": {
@@ -2945,10 +3003,12 @@
         "readings": ["まん", "ばん"],
         "semantic": "水",
         "phonetic": "㒼",
+        "seiji": "滿",
         "type": "comp_phonetic"
     },
     "焼": {
         "readings": ["しょう"],
+        "seiji": "燒",
         "type": "unknown",
         "comment": "obscure tone mark 堯"
     },
@@ -2974,6 +3034,7 @@
     },
     "覚": {
         "readings": ["かく"],
+        "seiji": "覺",
         "type": "unknown",
         "comment": "obscure tone mark 𦥯"
     },
@@ -3027,6 +3088,7 @@
         "readings": ["せん"],
         "semantic": "戈",
         "phonetic": "単",
+        "seiji": "戰",
         "type": "comp_phonetic"
     },
     "極": {
@@ -3049,12 +3111,14 @@
         "readings": ["せつ", "せち"],
         "semantic": "竹",
         "phonetic": "即",
+        "seiji": "節",
         "type": "comp_phonetic"
     },
     "続": {
         "readings": ["ぞく", "しょく"],
         "semantic": "糸",
         "phonetic": "売",
+        "seiji": "續",
         "type": "comp_phonetic"
     },
     "置": {
@@ -3071,6 +3135,7 @@
     },
     "辞": {
         "readings": ["じ"],
+        "seiji": "辭",
         "type": "unknown"
     },
     "試": {
@@ -3083,6 +3148,7 @@
         "readings": ["れき", "りゃく"],
         "semantic": "止",
         "phonetic": "厤",
+        "seiji": "歷",
         "type": "comp_phonetic"
     },
     "察": {
@@ -3130,6 +3196,7 @@
         "readings": ["せい", "じょう"],
         "semantic": "爭",
         "phonetic": "青",
+        "seiji": "靜",
         "type": "comp_phonetic"
     },
     "億": {
@@ -3140,6 +3207,7 @@
     },
     "器": {
         "readings": ["き"],
+        "seiji": "器",
         "type": "comp_indicative"
     },
     "賞": {
@@ -3200,6 +3268,7 @@
         "readings": ["ろく", "りょく"],
         "semantic": "金",
         "phonetic": "彔",
+        "seiji": "錄",
         "type": "comp_phonetic"
     },
     "観": {
@@ -3211,12 +3280,14 @@
     },
     "類": {
         "readings": ["るい"],
+        "seiji": "類",
         "type": "unknown"
     },
     "験": {
         "readings": ["けん", "げん"],
         "semantic": "馬",
         "phonetic": "僉",
+        "seiji": "驗",
         "type": "comp_phonetic"
     },
     "願": {
@@ -3251,6 +3322,7 @@
         "readings": ["ぶつ", "ふつ"],
         "semantic": "人",
         "phonetic": "弗",
+        "seiji": "佛",
         "type": "comp_phonetic",
         "obscure": true
     },
@@ -3345,6 +3417,7 @@
         "readings": ["だん", "とん", "たん"],
         "semantic": "囗",
         "phonetic": "専",
+        "seiji": "團",
         "type": "comp_phonetic",
         "obscure": true
     },
@@ -3367,6 +3440,7 @@
     },
     "余": {
         "readings": ["よ"],
+        "seiji": "餘",
         "type": "unknown"
     },
     "判": {
@@ -3390,6 +3464,7 @@
         "readings": ["じょう"],
         "semantic": "⽊",
         "phonetic": "攸",
+        "seiji": "條",
         "type": "comp_phonetic",
         "obscure": true
     },
@@ -3473,6 +3548,7 @@
         "readings": ["こう"],
         "semantic": "力",
         "phonetic": "交",
+        "seiji": "效",
         "type": "comp_phonetic"
     },
     "妻": {
@@ -3572,6 +3648,7 @@
         "readings": ["どく", "とく"],
         "semantic": "犬",
         "phonetic": "蜀",
+        "seiji": "獨",
         "type": "comp_phonetic",
         "obscure": true
     },
@@ -3579,6 +3656,7 @@
         "readings": ["そ"],
         "semantic": "示",
         "phonetic": "且",
+        "seiji": "祖",
         "type": "comp_phonetic"
     },
     "則": {
@@ -3759,6 +3837,7 @@
     },
     "断": {
         "readings": ["だん"],
+        "seiji": "斷",
         "type": "comp_indicative"
     },
     "液": {
@@ -3807,6 +3886,7 @@
         "readings": ["けい", "きょう", "きん"],
         "semantic": "糸",
         "phonetic": "圣",
+        "seiji": "經",
         "type": "comp_phonetic"
     },
     "規": {
@@ -3834,6 +3914,7 @@
         "readings": ["けん"],
         "semantic": "阜",
         "phonetic": "僉",
+        "seiji": "險",
         "type": "comp_phonetic"
     },
     "備": {
@@ -3862,6 +3943,7 @@
         "readings": ["ぞく", "しょく"],
         "semantic": "尾",
         "phonetic": "蜀",
+        "seiji": "屬",
         "type": "comp_phonetic"
     },
     "復": {
@@ -3880,6 +3962,7 @@
         "readings": ["けん"],
         "semantic": "⽊",
         "phonetic": "僉",
+        "seiji": "檢",
         "type": "comp_phonetic"
     },
     "減": {
@@ -3920,7 +4003,9 @@
         "readings": ["しょう"],
         "semantic": "言",
         "phonetic": "正",
-        "type": "comp_phonetic"
+        "seiji": "證",
+        "type": "comp_phonetic",
+        "comment": "adapted reading from new mark?"
     },
     "評": {
         "readings": ["ひょう", "へい"],
@@ -4022,6 +4107,7 @@
         "readings": ["こう"],
         "semantic": "金",
         "phonetic": "広",
+        "seiji": "鑛",
         "type": "comp_phonetic"
     },
     "預": {
@@ -4052,10 +4138,12 @@
         "readings": ["ぞう", "そう"],
         "semantic": "土",
         "phonetic": "曽",
+        "seiji": "增",
         "type": "comp_phonetic"
     },
     "徳": {
         "readings": ["とく"],
+        "seiji": "德",
         "type": "unknown",
         "comment": "obscure tone mark 𢛳"
     },
@@ -4094,6 +4182,7 @@
         "readings": ["そう"],
         "semantic": "糸",
         "phonetic": "悤",
+        "seiji": "總",
         "type": "comp_phonetic"
     },
     "綿": {
@@ -4128,6 +4217,7 @@
         "readings": ["せん", "ぜん"],
         "semantic": "金",
         "phonetic": "戔",
+        "seiji": "錢",
         "type": "comp_phonetic"
     },
     "銅": {
@@ -4146,6 +4236,7 @@
         "readings": ["ざつ", "ぞう"],
         "semantic": "衣",
         "phonetic": "集",
+        "seiji": "雜",
         "type": "comp_phonetic",
         "obscure": true
     },
@@ -4191,6 +4282,7 @@
     },
     "賛": {
         "readings": ["さん"],
+        "seiji": "贊",
         "type": "comp_indicative"
     },
     "質": {
@@ -4310,10 +4402,12 @@
     "収": {
         "readings": ["しゅう"],
         "decomposition": ["丩", "攴"],
+        "seiji": "收",
         "type": "comp_indicative"
     },
     "処": {
         "readings": ["しょ"],
+        "seiji": "處",
         "type": "unknown"
     },
     "幼": {
@@ -4421,6 +4515,7 @@
     },
     "乱": {
         "readings": ["らん", "ろん"],
+        "seiji": "亂",
         "type": "comp_indicative"
     },
     "垂": {
@@ -4439,6 +4534,7 @@
     },
     "並": {
         "readings": ["へい"],
+        "seiji": "竝",
         "type": "comp_indicative"
     },
     "刻": {
@@ -4469,6 +4565,7 @@
     },
     "届": {
         "readings": ["かい"],
+        "seiji": "屆",
         "type": "unknown"
     },
     "延": {
@@ -4486,16 +4583,19 @@
         "readings": ["かく"],
         "semantic": "手",
         "phonetic": "広",
+        "seiji": "擴",
         "type": "comp_phonetic"
     },
     "担": {
         "readings": ["たん"],
         "semantic": "手",
         "phonetic": "旦",
+        "seiji": "擔",
         "type": "comp_phonetic"
     },
     "拝": {
         "readings": ["はい"],
+        "seiji": "拜",
         "type": "unknown"
     },
     "枚": {
@@ -4540,6 +4640,7 @@
     },
     "専": {
         "readings": ["せん"],
+        "seiji": "專",
         "type": "unknown",
         "comment": "obscure tone mark 叀?"
     },
@@ -4547,6 +4648,7 @@
         "readings": ["かん", "けん"],
         "semantic": "卩",
         "phonetic": "𠔉",
+        "seiji": "卷",
         "type": "comp_phonetic"
     },
     "律": {
@@ -4643,6 +4745,7 @@
         "readings": ["とう"],
         "semantic": "黑",
         "phonetic": "尚",
+        "seiji": "黨",
         "type": "comp_phonetic"
     },
     "展": {
@@ -4658,6 +4761,7 @@
     },
     "従": {
         "readings": ["じゅう", "しょう", "じゅ"],
+        "seiji": "從",
         "type": "comp_indicative"
     },
     "株": {
@@ -4678,6 +4782,7 @@
         "readings": ["ひ"],
         "semantic": "禾",
         "phonetic": "必",
+        "seiji": "祕",
         "type": "comp_phonetic"
     },
     "純": {
@@ -4701,6 +4806,7 @@
         "readings": ["ろう"],
         "semantic": "月",
         "phonetic": "良",
+        "seiji": "朗",
         "type": "comp_phonetic"
     },
     "討": {
@@ -4772,6 +4878,7 @@
         "readings": ["さい", "せい"],
         "semantic": "水",
         "phonetic": "斉",
+        "seiji": "濟",
         "type": "comp_phonetic"
     },
     "異": {
@@ -4788,6 +4895,7 @@
         "readings": ["し"],
         "semantic": "見",
         "phonetic": "示",
+        "seiji": "視",
         "type": "comp_phonetic",
         "obscure": true
     },
@@ -4807,12 +4915,14 @@
         "readings": ["のう", "どう"],
         "semantic": "月",
         "phonetic": "𡿺",
+        "seiji": "腦",
         "type": "comp_phonetic"
     },
     "著": {
         "readings": ["ちょ", "ちゃく", "じゃく"],
         "semantic": "艸",
         "phonetic": "者",
+        "seiji": "著",
         "type": "comp_phonetic"
     },
     "訪": {
@@ -4835,6 +4945,7 @@
     },
     "郷": {
         "readings": ["きょう", "ごう"],
+        "seiji": "鄕",
         "type": "comp_indicative"
     },
     "郵": {
@@ -4880,6 +4991,7 @@
         "readings": ["きん", "ごん"],
         "semantic": "力",
         "phonetic": "堇",
+        "seiji": "勤",
         "type": "comp_phonetic"
     },
     "裁": {
@@ -4902,6 +5014,7 @@
         "readings": ["ばん"],
         "semantic": "日",
         "phonetic": "免",
+        "seiji": "晚",
         "type": "comp_phonetic"
     },
     "棒": {
@@ -4934,6 +5047,7 @@
         "readings": ["そう", "しょう"],
         "semantic": "衣",
         "phonetic": "壮",
+        "seiji": "裝",
         "type": "comp_phonetic"
     },
     "補": {
@@ -4996,6 +5110,7 @@
         "readings": ["しょ"],
         "semantic": "网",
         "phonetic": "者",
+        "seiji": "署",
         "type": "comp_phonetic"
     },
     "腹": {
@@ -5036,6 +5151,7 @@
         "readings": ["そう"],
         "semantic": "尸",
         "phonetic": "曽",
+        "seiji": "層",
         "type": "comp_phonetic"
     },
     "模": {
@@ -5046,6 +5162,7 @@
     },
     "穀": {
         "readings": ["こく"],
+        "seiji": "穀",
         "type": "unknown",
         "comment": "obscure tone mark, cannot show"
     },
@@ -5101,6 +5218,7 @@
         "readings": ["けん", "ごん"],
         "semantic": "⽊",
         "phonetic": "雚",
+        "seiji": "權",
         "type": "comp_phonetic"
     },
     "潮": {
@@ -5119,12 +5237,14 @@
         "readings": ["ぞう", "そう"],
         "semantic": "艸",
         "phonetic": "臧",
+        "seiji": "藏",
         "type": "comp_phonetic"
     },
     "諸": {
         "readings": ["しょ"],
         "semantic": "言",
         "phonetic": "者",
+        "seiji": "諸",
         "type": "comp_phonetic"
     },
     "誕": {
@@ -5181,6 +5301,7 @@
         "readings": ["じゅう", "しょう"],
         "semantic": "糸",
         "phonetic": "従",
+        "seiji": "縱",
         "type": "comp_phonetic"
     },
     "鋼": {
@@ -5191,6 +5312,7 @@
     },
     "厳": {
         "readings": ["げん", "ごん"],
+        "seiji": "嚴",
         "type": "unknown",
         "comment": "obscure tone mark, won't show"
     },
@@ -5208,6 +5330,7 @@
     },
     "覧": {
         "readings": ["らん"],
+        "seiji": "覽",
         "type": "unknown"
     },
     "簡": {
@@ -5224,12 +5347,14 @@
         "readings": ["なん", "だん"],
         "semantic": "隹",
         "phonetic": "𦰩",
+        "seiji": "難",
         "type": "comp_phonetic"
     },
     "臓": {
         "readings": ["ぞう", "そう"],
         "semantic": "月",
         "phonetic": "蔵",
+        "seiji": "臟",
         "type": "comp_phonetic"
     },
     "警": {
@@ -5429,6 +5554,7 @@
         "readings": ["ふつ"],
         "semantic": "手",
         "phonetic": "弗",
+        "seiji": "拂",
         "type": "comp_phonetic",
         "obscure": true
     },
@@ -5457,6 +5583,7 @@
     "弐": {
         "readings": ["に", "じ"],
         "meanings": ["two"],
+        "seiji": "貳",
         "type": "unknown",
         "comment": "phonetic 二??"
     },
@@ -5551,6 +5678,7 @@
     },
     "尽": {
         "readings": ["じん"],
+        "seiji": "盡",
         "type": "unknown",
         "comment": "obscure tone mark 盡"
     },
@@ -5607,6 +5735,7 @@
         "readings": ["そう"],
         "semantic": "士",
         "phonetic": "爿",
+        "seiji": "壯",
         "type": "comp_phonetic"
     },
     "缶": {
@@ -5662,11 +5791,13 @@
     },
     "寿": {
         "readings": ["じゅ", "す"],
-        "type": "unknown",
-        "comment": "obscure tone mark won't show, old version: 壽"
+        "seiji": "壽",
+        "type": "shinjitai",
+        "comment": "obscure tone mark won't show"
     },
     "励": {
         "readings": ["れい"],
+        "seiji": "勵",
         "type": "unknown",
         "comment": "obscure tone mark 厲"
     },
@@ -5833,6 +5964,7 @@
         "readings": ["れい"],
         "semantic": "戸",
         "phonetic": "大",
+        "seiji": "戾",
         "type": "comp_phonetic"
     },
     "抗": {
@@ -5852,6 +5984,7 @@
         "readings": ["たく"],
         "semantic": "手",
         "phonetic": "尺",
+        "seiji": "擇",
         "type": "comp_phonetic"
     },
     "把": {
@@ -5865,6 +5998,7 @@
         "decomposition": ["手", "犮"],
         "semantic": "手",
         "phonetic": "犮",
+        "seiji": "拔",
         "type": "comp_phonetic"
     },
     "扶": {
@@ -5892,9 +6026,9 @@
     },
     "沢": {
         "readings": ["たく"],
-        "semantic": "水",
-        "phonetic": "尺",
-        "type": "comp_phonetic"
+        "decomposition": ["水", "尺"],
+        "seiji": "澤",
+        "type": "shinjitai"
     },
     "沈": {
         "readings": ["ちん", "じん"],
@@ -5928,6 +6062,7 @@
     },
     "即": {
         "readings": ["そく", "しゅく"],
+        "seiji": "卽",
         "type": "comp_indicative"
     },
     "芳": {
@@ -5954,6 +6089,7 @@
     },
     "岳": {
         "readings": ["がく"],
+        "seiji": "嶽",
         "type": "comp_indicative"
     },
     "奉": {
@@ -5993,16 +6129,19 @@
     },
     "侮": {
         "readings": ["ぶ"],
+        "seiji": "侮",
         "type": "unknown"
     },
     "併": {
         "readings": ["へい"],
         "semantic": "人",
         "phonetic": "并",
+        "seiji": "倂",
         "type": "comp_phonetic"
     },
     "免": {
         "readings": ["めん", "べん", "ぶん"],
+        "seiji": "免",
         "type": "hieroglyph"
     },
     "刺": {
@@ -6130,6 +6269,7 @@
         "readings": ["きょ", "こ"],
         "semantic": "手",
         "phonetic": "豦",
+        "seiji": "據",
         "type": "comp_phonetic",
         "obscure": true
     },
@@ -6201,6 +6341,7 @@
         "readings": ["すう"],
         "semantic": "⽊",
         "phonetic": "区",
+        "seiji": "樞",
         "type": "comp_phonetic"
     },
     "析": {
@@ -6305,16 +6446,19 @@
         "readings": ["き"],
         "semantic": "示",
         "phonetic": "斤",
+        "seiji": "祈",
         "type": "comp_phonetic"
     },
     "祉": {
         "readings": ["し"],
         "semantic": "示",
         "phonetic": "止",
+        "seiji": "祉",
         "type": "comp_phonetic"
     },
     "突": {
         "readings": ["とつ"],
+        "seiji": "突",
         "type": "comp_indicative"
     },
     "肢": {
@@ -6339,6 +6483,7 @@
         "readings": ["けい"],
         "semantic": "艸",
         "phonetic": "圣",
+        "seiji": "莖",
         "type": "comp_phonetic"
     },
     "苗": {
@@ -6384,6 +6529,7 @@
     },
     "斉": {
         "readings": ["せい", "さい"],
+        "seiji": "齊",
         "type": "hieroglyph"
     },
     "甚": {
@@ -6417,6 +6563,7 @@
     },
     "卑": {
         "readings": ["ひ"],
+        "seiji": "卑",
         "type": "comp_indicative"
     },
     "哀": {
@@ -6456,6 +6603,7 @@
         "readings": ["そく", "しょく"],
         "semantic": "人",
         "phonetic": "足",
+        "seiji": "寢",
         "type": "comp_phonetic"
     },
     "俗": {
@@ -6485,6 +6633,7 @@
     "勅": {
         "readings": ["ちょく"],
         "meanings": ["imperial order"],
+        "seiji": "敕",
         "type": "unknown"
     },
     "貞": {
@@ -6511,6 +6660,7 @@
         "readings": ["じょ"],
         "semantic": "又",
         "phonetic": "余",
+        "seiji": "敍",
         "type": "comp_phonetic"
     },
     "咲": {
@@ -6550,6 +6700,7 @@
         "readings": ["きょう"],
         "semantic": "山",
         "phonetic": "夾",
+        "seiji": "峽",
         "type": "comp_phonetic"
     },
     "峠": {
@@ -6573,6 +6724,7 @@
         "readings": ["こう"],
         "semantic": "心",
         "phonetic": "亘",
+        "seiji": "恆",
         "type": "comp_phonetic"
     },
     "恨": {
@@ -6600,6 +6752,7 @@
         "readings": ["きょう"],
         "semantic": "手",
         "phonetic": "夾",
+        "seiji": "挾",
         "type": "comp_phonetic"
     },
     "拷": {
@@ -6664,6 +6817,7 @@
         "readings": ["じょう"],
         "semantic": "水",
         "phonetic": "争",
+        "seiji": "淨",
         "type": "comp_phonetic"
     },
     "津": {
@@ -6687,6 +6841,7 @@
         "readings": ["きょう", "こう"],
         "semantic": "犬",
         "phonetic": "夾",
+        "seiji": "狹",
         "type": "comp_phonetic"
     },
     "狩": {
@@ -6719,6 +6874,7 @@
         "readings": ["さい"],
         "semantic": "石",
         "phonetic": "卒",
+        "seiji": "碎",
         "type": "comp_phonetic",
         "obscure": true
     },
@@ -6749,6 +6905,7 @@
         "readings": ["たん", "とう"],
         "semantic": "月",
         "phonetic": "旦",
+        "seiji": "膽",
         "type": "comp_phonetic"
     },
     "胞": {
@@ -6759,6 +6916,7 @@
     },
     "臭": {
         "readings": ["しゅう", "きゅう"],
+        "seiji": "臭",
         "type": "comp_indicative"
     },
     "荒": {
@@ -6770,6 +6928,7 @@
         "readings": ["そう", "しょう"],
         "semantic": "艸",
         "phonetic": "壮",
+        "seiji": "莊",
         "type": "comp_phonetic"
     },
     "虐": {
@@ -6810,6 +6969,7 @@
         "readings": ["ろう"],
         "semantic": "邑",
         "phonetic": "良",
+        "seiji": "郞",
         "type": "comp_phonetic"
     },
     "香": {
@@ -6842,6 +7002,7 @@
         "readings": ["けん"],
         "semantic": "人",
         "phonetic": "僉",
+        "seiji": "儉",
         "type": "comp_phonetic"
     },
     "倒": {
@@ -6896,6 +7057,7 @@
         "readings": ["けん"],
         "semantic": "刀",
         "phonetic": "僉",
+        "seiji": "劍",
         "type": "comp_phonetic"
     },
     "剖": {
@@ -7028,6 +7190,7 @@
     },
     "恵": {
         "readings": ["けい", "え"],
+        "seiji": "惠",
         "type": "unknown"
     },
     "悟": {
@@ -7040,6 +7203,7 @@
         "readings": ["のう", "どう"],
         "semantic": "心",
         "phonetic": "𡿺",
+        "seiji": "惱",
         "type": "comp_phonetic"
     },
     "扇": {
@@ -7056,10 +7220,12 @@
         "readings": ["そう"],
         "semantic": "手",
         "phonetic": "叟",
+        "seiji": "搜",
         "type": "comp_phonetic"
     },
     "挿": {
         "readings": ["そう"],
+        "seiji": "插",
         "type": "unknown",
         "comment": "obscure tone mark 臿"
     },
@@ -7071,6 +7237,7 @@
     },
     "敏": {
         "readings": ["びん"],
+        "seiji": "敏",
         "type": "comp_indicative"
     },
     "核": {
@@ -7083,6 +7250,7 @@
         "readings": ["さん", "せん"],
         "semantic": "⽊",
         "phonetic": "戔",
+        "seiji": "棧",
         "type": "comp_phonetic"
     },
     "栓": {
@@ -7129,6 +7297,7 @@
         "readings": ["ひん"],
         "semantic": "水",
         "phonetic": "賓",
+        "seiji": "濱",
         "type": "comp_phonetic",
         "obscure": true
     },
@@ -7140,6 +7309,7 @@
     "涙": {
         "readings": ["るい"],
         "decomposition": ["氵", "戻"],
+        "seiji": "淚",
         "type": "comp_indicative"
     },
     "浪": {
@@ -7204,10 +7374,12 @@
         "readings": ["しょう"],
         "semantic": "示",
         "phonetic": "羊",
+        "seiji": "祥",
         "type": "comp_phonetic"
     },
     "称": {
         "readings": ["しょう"],
+        "seiji": "稱",
         "type": "unknown",
         "comment": "obscure phonetic 爯"
     },
@@ -7227,6 +7399,7 @@
         "readings": ["すい"],
         "semantic": "米",
         "phonetic": "卒",
+        "seiji": "粹",
         "type": "comp_phonetic",
         "obscure": true
     },
@@ -7290,6 +7463,7 @@
     },
     "既": {
         "readings": ["き"],
+        "seiji": "卽",
         "type": "unknown",
         "comment": "obscure tone mark 旡"
     },
@@ -7346,6 +7520,7 @@
     "逓": {
         "readings": ["てい"],
         "meanings": ["relay"],
+        "seiji": "遞",
         "type": "unknown",
         "comment": "obscure tone mark 虒"
     },
@@ -7369,6 +7544,7 @@
     },
     "陥": {
         "readings": ["かん"],
+        "seiji": "陷",
         "type": "unknown",
         "comment": "obscure tone mark 臽"
     },
@@ -7395,6 +7571,7 @@
         "readings": ["ざい", "せい"],
         "semantic": "刀",
         "phonetic": "斉",
+        "seiji": "劑",
         "type": "comp_phonetic"
     },
     "竜": {
@@ -7403,6 +7580,7 @@
     },
     "粛": {
         "readings": ["しゅく"],
+        "seiji": "肅",
         "type": "comp_indicative"
     },
     "尉": {
@@ -7419,6 +7597,7 @@
         "readings": ["ぎ"],
         "semantic": "人",
         "phonetic": "為",
+        "seiji": "僞",
         "type": "comp_phonetic"
     },
     "偶": {
@@ -7441,6 +7620,7 @@
     },
     "剰": {
         "readings": ["じょう"],
+        "seiji": "剩",
         "type": "unknown",
         "comment": "related to 乗"
     },
@@ -7448,6 +7628,7 @@
         "readings": ["かん"],
         "semantic": "力",
         "phonetic": "甚",
+        "seiji": "乘",
         "type": "comp_phonetic"
     },
     "乾": {
@@ -7460,6 +7641,7 @@
         "readings": ["かつ"],
         "semantic": "口",
         "phonetic": "曷",
+        "seiji": "喝",
         "type": "comp_phonetic"
     },
     "啓": {
@@ -7550,6 +7732,7 @@
         "readings": ["さん", "ざん"],
         "semantic": "心",
         "phonetic": "参",
+        "seiji": "慘",
         "type": "comp_phonetic",
         "obscure": true
     },
@@ -7587,6 +7770,7 @@
         "readings": ["けい"],
         "semantic": "手",
         "phonetic": "曷",
+        "seiji": "揭",
         "type": "comp_phonetic"
     },
     "控": {
@@ -7641,6 +7825,7 @@
     },
     "殻": {
         "readings": ["かく"],
+        "seiji": "殼",
         "type": "unknown",
         "comment": "obscure tone mark 壳"
     },
@@ -7658,16 +7843,19 @@
         "readings": ["かつ"],
         "semantic": "水",
         "phonetic": "曷",
+        "seiji": "渴",
         "type": "comp_phonetic"
     },
     "渓": {
         "readings": ["けい"],
         "semantic": "水",
         "phonetic": "奚",
+        "seiji": "溪",
         "type": "comp_phonetic"
     },
     "渋": {
         "readings": ["じゅう", "しゅう"],
+        "seiji": "澁",
         "type": "unknown",
         "comment": "maybe phonetic 歮歰"
     },
@@ -7680,6 +7868,7 @@
     "渉": {
         "readings": ["しょう"],
         "decomposition": ["水", "歩"],
+        "seiji": "涉",
         "type": "comp_indicative"
     },
     "淡": {
@@ -7712,12 +7901,14 @@
     },
     "猟": {
         "readings": ["りょう"],
+        "seiji": "獵",
         "type": "unknown"
     },
     "瓶": {
         "readings": ["びん", "へい"],
         "semantic": "瓦",
         "phonetic": "并",
+        "seiji": "甁",
         "type": "comp_phonetic"
     },
     "累": {
@@ -7730,6 +7921,7 @@
     "盗": {
         "readings": ["とう"],
         "decomposition": ["皿", "㳄"],
+        "seiji": "盜",
         "type": "comp_indicative"
     },
     "眺": {
@@ -7827,12 +8019,14 @@
     },
     "虚": {
         "readings": ["きょ", "こ"],
+        "seiji": "虛",
         "type": "unknown"
     },
     "蛍": {
         "readings": ["けい"],
         "semantic": "虫",
         "phonetic": "𤇾",
+        "seiji": "螢",
         "type": "comp_phonetic"
     },
     "蛇": {
@@ -7890,6 +8084,7 @@
     "酔": {
         "readings": ["すい"],
         "decomposition": ["酉", "卒"],
+        "seiji": "醉",
         "type": "unknown",
         "comment": "could be phonetic as well, not so good fit"
     },
@@ -7897,6 +8092,7 @@
         "readings": ["しゃく", "せき"],
         "semantic": "釆",
         "phonetic": "尺",
+        "seiji": "釋",
         "type": "comp_phonetic"
     },
     "釣": {
@@ -7927,6 +8123,7 @@
     },
     "隆": {
         "readings": ["りゅう"],
+        "seiji": "隆",
         "type": "unknown"
     },
     "陵": {
@@ -7943,6 +8140,7 @@
         "readings": ["さい"],
         "semantic": "示",
         "phonetic": "斉",
+        "seiji": "齋",
         "type": "comp_phonetic"
     },
     "喪": {
@@ -7994,6 +8192,7 @@
         "readings": ["けん"],
         "semantic": "囗",
         "phonetic": "巻",
+        "seiji": "圈",
         "type": "comp_phonetic"
     },
     "堪": {
@@ -8010,10 +8209,12 @@
     },
     "堕": {
         "readings": ["だ"],
+        "seiji": "墮",
         "type": "unknown"
     },
     "塚": {
         "readings": ["ちょう"],
+        "seiji": "塚",
         "type": "unknown",
         "comment": "obscure tone mark 冢"
     },
@@ -8031,6 +8232,7 @@
     },
     "塀": {
         "readings": ["へい"],
+        "seiji": "塀",
         "type": "unknown",
         "comment": "obscure tone mark related to 并"
     },
@@ -8077,18 +8279,21 @@
     "廃": {
         "readings": ["はい"],
         "decomposition": ["广", "発"],
+        "seiji": "廢",
         "type": "unknown"
     },
     "廊": {
         "readings": ["ろう"],
         "semantic": "广",
         "phonetic": "郎",
+        "seiji": "廊",
         "type": "comp_phonetic"
     },
     "弾": {
         "readings": ["だん"],
         "semantic": "弓",
         "phonetic": "単",
+        "seiji": "彈",
         "type": "comp_phonetic"
     },
     "尋": {
@@ -8177,6 +8382,7 @@
         "readings": ["よう"],
         "semantic": "手",
         "phonetic": "䍃",
+        "seiji": "搖",
         "type": "comp_phonetic"
     },
     "敢": {
@@ -8185,6 +8391,7 @@
     },
     "暁": {
         "readings": ["ぎょう"],
+        "seiji": "曉",
         "type": "unknown"
     },
     "晶": {
@@ -8252,6 +8459,7 @@
     },
     "湿": {
         "readings": ["しつ"],
+        "seiji": "濕",
         "type": "comp_indicative"
     },
     "渡": {
@@ -8270,6 +8478,7 @@
         "readings": ["しゃ"],
         "semantic": "火",
         "phonetic": "者",
+        "seiji": "煮",
         "type": "comp_phonetic"
     },
     "猶": {
@@ -8283,10 +8492,12 @@
     },
     "畳": {
         "readings": ["じょう", "ちょう"],
+        "seiji": "疊",
         "type": "comp_indicative"
     },
     "塁": {
         "readings": ["るい"],
+        "seiji": "壘",
         "type": "unknown"
     },
     "疎": {
@@ -8462,6 +8673,7 @@
     },
     "遅": {
         "readings": ["ち"],
+        "seiji": "遲",
         "type": "unknown",
         "comment": "obscure tone mark 犀 (rhinoceros)"
     },
@@ -8498,6 +8710,7 @@
         "readings": ["ずい"],
         "semantic": "阜",
         "phonetic": "迶",
+        "seiji": "隨",
         "type": "comp_phonetic"
     },
     "焦": {
@@ -8553,6 +8766,7 @@
         "readings": ["そう"],
         "semantic": "人",
         "phonetic": "曽",
+        "seiji": "僧",
         "type": "comp_phonetic"
     },
     "慈": {
@@ -8565,6 +8779,7 @@
         "readings": ["かん"],
         "semantic": "力",
         "phonetic": "雚",
+        "seiji": "勸",
         "type": "comp_phonetic"
     },
     "載": {
@@ -8584,6 +8799,7 @@
         "readings": ["たん"],
         "semantic": "口",
         "phonetic": "𦰩",
+        "seiji": "嘆",
         "type": "comp_phonetic"
     },
     "塊": {
@@ -8609,6 +8825,7 @@
         "readings": ["しょう", "そう"],
         "semantic": "大",
         "phonetic": "将",
+        "seiji": "獎",
         "type": "comp_phonetic"
     },
     "嫁": {
@@ -8625,6 +8842,7 @@
     },
     "寛": {
         "readings": ["かん"],
+        "seiji": "寬",
         "type": "unknown",
         "comment": "obscure tone mark 萈"
     },
@@ -8647,6 +8865,7 @@
         "readings": ["がい", "かい"],
         "semantic": "心",
         "phonetic": "既",
+        "seiji": "慨",
         "type": "comp_phonetic"
     },
     "愚": {
@@ -8666,6 +8885,7 @@
         "readings": ["しん"],
         "semantic": "心",
         "phonetic": "真",
+        "seiji": "愼",
         "type": "comp_phonetic"
     },
     "携": {
@@ -8679,6 +8899,7 @@
     },
     "摂": {
         "readings": ["せつ", "しょう"],
+        "seiji": "攝",
         "type": "unknown"
     },
     "搬": {
@@ -8696,6 +8917,7 @@
     "楼": {
         "readings": ["ろう"],
         "meanings": ["watchtower"],
+        "seiji": "樓",
         "type": "unknown"
     },
     "歳": {
@@ -8718,12 +8940,14 @@
         "readings": ["たい"],
         "semantic": "水",
         "phonetic": "帯",
+        "seiji": "滯",
         "type": "comp_phonetic"
     },
     "滝": {
         "readings": ["ろう"],
         "semantic": "水",
         "phonetic": "竜",
+        "seiji": "瀧",
         "type": "comp_phonetic"
     },
     "漠": {
@@ -8767,6 +8991,7 @@
     },
     "献": {
         "readings": ["けん", "こん"],
+        "seiji": "獻",
         "type": "unknown",
         "comment": "犬 also has reading けん ..."
     },
@@ -8774,6 +8999,7 @@
         "readings": ["ち"],
         "semantic": "疒",
         "phonetic": "知",
+        "seiji": "癡",
         "type": "comp_phonetic"
     },
     "睡": {
@@ -8805,6 +9031,7 @@
         "readings": ["ぜん"],
         "semantic": "示",
         "phonetic": "単",
+        "seiji": "禪",
         "type": "comp_phonetic"
     },
     "稚": {
@@ -8815,6 +9042,7 @@
     },
     "継": {
         "readings": ["けい"],
+        "seiji": "繼",
         "type": "unknown",
         "comment": "related to 断"
     },
@@ -8846,6 +9074,7 @@
     },
     "虜": {
         "readings": ["りょ", "ろ"],
+        "seiji": "虜",
         "type": "unknown",
         "comment": "TODO: obscure phonetic 虍, or 𧆨"
     },
@@ -8854,6 +9083,7 @@
         "meanings": ["brown"],
         "semantic": "衣",
         "phonetic": "曷",
+        "seiji": "褐",
         "type": "comp_phonetic"
     },
     "裸": {
@@ -8866,6 +9096,7 @@
         "readings": ["しょく", "そく"],
         "semantic": "角",
         "phonetic": "蜀",
+        "seiji": "觸",
         "type": "comp_phonetic",
         "obscure": true
     },
@@ -8894,6 +9125,7 @@
     },
     "誉": {
         "readings": ["よ"],
+        "seiji": "譽",
         "type": "unknown"
     },
     "賊": {
@@ -8919,6 +9151,7 @@
         "readings": ["せん"],
         "semantic": "足",
         "phonetic": "戔",
+        "seiji": "踐",
         "type": "comp_phonetic"
     },
     "跳": {
@@ -9047,6 +9280,7 @@
         "readings": ["れき", "りゃく"],
         "semantic": "日",
         "phonetic": "厤",
+        "seiji": "曆",
         "type": "comp_phonetic"
     },
     "塾": {
@@ -9090,12 +9324,14 @@
     },
     "徴": {
         "readings": ["ちょう", "ち"],
+        "seiji": "徵",
         "type": "unknown"
     },
     "憎": {
         "readings": ["ぞう", "そう"],
         "semantic": "心",
         "phonetic": "曽",
+        "seiji": "憎",
         "type": "comp_phonetic"
     },
     "慢": {
@@ -9114,6 +9350,7 @@
         "readings": ["がい", "かい"],
         "semantic": "⽊",
         "phonetic": "既",
+        "seiji": "槪",
         "type": "comp_phonetic"
     },
     "雌": {
@@ -9171,10 +9408,12 @@
         "readings": ["ひ"],
         "semantic": "石",
         "phonetic": "卑",
+        "seiji": "碑",
         "type": "comp_phonetic"
     },
     "稲": {
         "readings": ["とう"],
+        "seiji": "稻",
         "type": "unknown"
     },
     "端": {
@@ -9206,6 +9445,7 @@
         "readings": ["しょ", "ちょ"],
         "semantic": "糸",
         "phonetic": "者",
+        "seiji": "緖",
         "type": "comp_phonetic"
     },
     "網": {
@@ -9310,6 +9550,7 @@
         "readings": ["く"],
         "semantic": "馬",
         "phonetic": "区",
+        "seiji": "驅",
         "type": "comp_phonetic"
     },
     "駄": {
@@ -9322,6 +9563,7 @@
         "readings": ["はつ", "ほつ"],
         "semantic": "髟",
         "phonetic": "犮",
+        "seiji": "髮",
         "type": "comp_phonetic"
     },
     "魂": {
@@ -9334,6 +9576,7 @@
         "readings": ["れん"],
         "semantic": "金",
         "phonetic": "柬",
+        "seiji": "鍊",
         "type": "comp_phonetic"
     },
     "緯": {
@@ -9408,12 +9651,14 @@
         "readings": ["かい", "え"],
         "semantic": "土",
         "phonetic": "褱",
+        "seiji": "壞",
         "type": "comp_phonetic"
     },
     "懐": {
         "readings": ["かい"],
         "semantic": "心",
         "phonetic": "褱",
+        "seiji": "懷",
         "type": "comp_phonetic"
     },
     "嚇": {
@@ -9455,6 +9700,7 @@
         "readings": ["かん"],
         "semantic": "欠",
         "phonetic": "雚",
+        "seiji": "歡",
         "type": "comp_phonetic"
     },
     "環": {
@@ -9511,6 +9757,7 @@
     },
     "戯": {
         "readings": ["ぎ", "げ"],
+        "seiji": "戲",
         "type": "unknown"
     },
     "擬": {
@@ -9523,6 +9770,7 @@
         "readings": ["ぎ", "き"],
         "semantic": "牛",
         "phonetic": "義",
+        "seiji": "犧",
         "type": "comp_phonetic"
     },
     "窮": {
@@ -9540,6 +9788,7 @@
         "readings": ["きょう"],
         "semantic": "音",
         "phonetic": "郷",
+        "seiji": "響",
         "type": "comp_phonetic"
     },
     "驚": {
@@ -9570,6 +9819,7 @@
         "readings": ["きん"],
         "semantic": "言",
         "phonetic": "堇",
+        "seiji": "謹",
         "type": "comp_phonetic"
     },
     "繰": {
@@ -9582,6 +9832,7 @@
         "readings": ["くん"],
         "semantic": "力",
         "phonetic": "熏",
+        "seiji": "勳",
         "type": "comp_phonetic",
         "obscure": true
     },
@@ -9590,6 +9841,7 @@
         "meanings": ["fragrant"],
         "semantic": "艸",
         "phonetic": "熏",
+        "seiji": "薰",
         "type": "comp_phonetic"
     },
     "慶": {
@@ -9604,6 +9856,7 @@
         "readings": ["けい"],
         "semantic": "鳥",
         "phonetic": "奚",
+        "seiji": "鷄",
         "type": "comp_phonetic"
     },
     "鯨": {
@@ -9614,6 +9867,7 @@
     },
     "撃": {
         "readings": ["げき", "けき"],
+        "seiji": "擊",
         "type": "unknown"
     },
     "懸": {
@@ -9625,6 +9879,7 @@
         "readings": ["けん"],
         "semantic": "言",
         "phonetic": "兼",
+        "seiji": "縣",
         "type": "comp_phonetic"
     },
     "賢": {
@@ -9635,6 +9890,7 @@
     },
     "顕": {
         "readings": ["けん"],
+        "seiji": "顯",
         "type": "unknown",
         "comment": "obscure phonetic 㬎?"
     },
@@ -9752,6 +10008,7 @@
     },
     "獣": {
         "readings": ["じゅう"],
+        "seiji": "獸",
         "type": "unknown"
     },
     "瞬": {
@@ -9800,24 +10057,28 @@
         "readings": ["じょう"],
         "semantic": "土",
         "phonetic": "㐮",
+        "seiji": "壤",
         "type": "comp_phonetic"
     },
     "嬢": {
         "readings": ["じょう"],
         "semantic": "女",
         "phonetic": "㐮",
+        "seiji": "孃",
         "type": "comp_phonetic"
     },
     "譲": {
         "readings": ["じょう"],
         "semantic": "言",
         "phonetic": "㐮",
+        "seiji": "讓",
         "type": "comp_phonetic"
     },
     "醸": {
         "readings": ["じょう"],
         "semantic": "酉",
         "phonetic": "㐮",
+        "seiji": "釀",
         "type": "comp_phonetic"
     },
     "錠": {
@@ -9828,6 +10089,7 @@
     },
     "嘱": {
         "readings": ["しょく"],
+        "seiji": "囑",
         "type": "unknown",
         "comment": "obscure tone mark 屬"
     },
@@ -9860,6 +10122,7 @@
         "readings": ["ずい"],
         "semantic": "骨",
         "phonetic": "迶",
+        "seiji": "髓",
         "type": "comp_phonetic"
     },
     "澄": {
@@ -9870,6 +10133,7 @@
         "readings": ["らい"],
         "semantic": "水",
         "phonetic": "頼",
+        "seiji": "瀨",
         "type": "comp_phonetic"
     },
     "請": {
@@ -9885,10 +10149,12 @@
     },
     "潜": {
         "readings": ["せん"],
+        "seiji": "潛",
         "type": "unknown"
     },
     "繊": {
         "readings": ["せん", "ちん"],
+        "seiji": "纖",
         "type": "unknown",
         "comment": "obscure tone mark 韱"
     },
@@ -9946,12 +10212,14 @@
         "readings": ["そう"],
         "semantic": "馬",
         "phonetic": "蚤",
+        "seiji": "騷",
         "type": "comp_phonetic"
     },
     "贈": {
         "readings": ["ぞう", "そう"],
         "semantic": "貝",
         "phonetic": "曽",
+        "seiji": "贈",
         "type": "comp_phonetic"
     },
     "濯": {
@@ -9987,6 +10255,7 @@
         "readings": ["ちゅう", "しゅ"],
         "semantic": "金",
         "phonetic": "寿",
+        "seiji": "鑄",
         "type": "comp_phonetic"
     },
     "駐": {
@@ -9999,16 +10268,19 @@
         "readings": ["ちょう"],
         "semantic": "心",
         "phonetic": "徴",
+        "seiji": "懲",
         "type": "comp_phonetic"
     },
     "聴": {
         "readings": ["ちょう", "てい"],
+        "seiji": "聽",
         "type": "unknown"
     },
     "鎮": {
         "readings": ["ちん"],
         "semantic": "金",
         "phonetic": "真",
+        "seiji": "鎭",
         "type": "comp_phonetic"
     },
     "墜": {
@@ -10053,6 +10325,7 @@
     },
     "闘": {
         "readings": ["とう"],
+        "seiji": "鬭",
         "type": "unknown",
         "comment": "obscure tone mark 斲?"
     },
@@ -10069,6 +10342,7 @@
     },
     "縄": {
         "readings": ["じょう"],
+        "seiji": "繩",
         "type": "unknown"
     },
     "濃": {
@@ -10079,6 +10353,7 @@
     },
     "覇": {
         "readings": ["は"],
+        "seiji": "霸",
         "type": "unknown"
     },
     "輩": {
@@ -10115,6 +10390,7 @@
         "readings": ["はん"],
         "semantic": "糸",
         "phonetic": "敏",
+        "seiji": "繁",
         "type": "comp_phonetic"
     },
     "藩": {
@@ -10148,10 +10424,12 @@
     },
     "賓": {
         "readings": ["ひん"],
+        "seiji": "賓",
         "type": "unknown"
     },
     "頻": {
         "readings": ["ひん", "びん"],
+        "seiji": "頻",
         "type": "comp_indicative"
     },
     "敷": {
@@ -10240,6 +10518,7 @@
     },
     "穂": {
         "readings": ["すい"],
+        "seiji": "穗",
         "type": "unknown"
     },
     "簿": {
@@ -10258,6 +10537,7 @@
         "readings": ["ほう"],
         "semantic": "衣",
         "phonetic": "保",
+        "seiji": "襃",
         "type": "comp_phonetic"
     },
     "膨": {
@@ -10276,6 +10556,7 @@
         "readings": ["ぼく", "もく"],
         "semantic": "土",
         "phonetic": "黒",
+        "seiji": "墨",
         "type": "comp_phonetic"
     },
     "撲": {
@@ -10288,6 +10569,7 @@
         "readings": ["ほん", "はん"],
         "semantic": "羽",
         "phonetic": "番",
+        "seiji": "飜",
         "type": "comp_phonetic"
     },
     "摩": {
@@ -10329,6 +10611,7 @@
         "readings": ["もく", "ぼく"],
         "semantic": "犬",
         "phonetic": "黒",
+        "seiji": "默",
         "type": "comp_phonetic"
     },
     "躍": {
@@ -10374,6 +10657,7 @@
         "readings": ["よう"],
         "semantic": "言",
         "phonetic": "䍃",
+        "seiji": "謠",
         "type": "comp_phonetic"
     },
     "翼": {
@@ -10390,11 +10674,13 @@
         "readings": ["らい"],
         "semantic": "頁",
         "phonetic": "剌",
+        "seiji": "賴",
         "type": "comp_phonetic",
         "obscure": true
     },
     "欄": {
         "readings": ["らん"],
+        "seiji": "欄",
         "type": "unknown",
         "comment": "obscure phonetic 闌"
     },
@@ -10451,6 +10737,7 @@
     },
     "霊": {
         "readings": ["れい", "りょう"],
+        "seiji": "靈",
         "type": "unknown",
         "comment": "obscure phonetic 霝"
     },
@@ -10462,6 +10749,7 @@
         "readings": ["れい"],
         "semantic": "歯",
         "phonetic": "令",
+        "seiji": "齡",
         "type": "comp_phonetic"
     },
     "擁": {
@@ -10520,6 +10808,7 @@
         "readings": ["び", "み"],
         "semantic": "弓",
         "phonetic": "爾",
+        "seiji": "彌",
         "type": "comp_phonetic",
         "obscure": true
     },
@@ -10579,6 +10868,7 @@
         "meanings": ["basket"],
         "semantic": "竹",
         "phonetic": "竜",
+        "seiji": "龍",
         "type": "comp_phonetic"
     },
     "呂": {
@@ -10947,6 +11237,7 @@
         "meanings": ["mochi rice cake"],
         "semantic": "食",
         "phonetic": "并",
+        "seiji": "餠",
         "type": "comp_phonetic"
     },
     "瞳": {
@@ -11017,6 +11308,7 @@
         "readings": ["みつ", "びつ"],
         "semantic": "虫",
         "phonetic": "宓",
+        "seiji": "蟲",
         "type": "comp_phonetic"
     },
     "戴": {
@@ -11030,6 +11322,7 @@
         "meanings": ["get thin"],
         "semantic": "疒",
         "phonetic": "叟",
+        "seiji": "瘦",
         "type": "comp_phonetic"
     },
     "怨": {
@@ -11408,6 +11701,7 @@
     "羞": {
         "readings": ["しゅう"],
         "meanings": ["feel ashamed"],
+        "seiji": "臺",
         "type": "comp_indicative"
     },
     "惧": {
@@ -11478,6 +11772,7 @@
         "meanings": ["noodles"],
         "semantic": "麦",
         "phonetic": "面",
+        "seiji": "麵",
         "type": "comp_phonetic"
     },
     "璃": {
@@ -12165,6 +12460,7 @@
     "曽": {
         "readings": ["そう", "そ", "ぞう"],
         "meanings": ["formerly", "once", "before", "ever", "never", "ex-"],
+        "seiji": "曾",
         "type": "hieroglyph"
     },
     "菐": {

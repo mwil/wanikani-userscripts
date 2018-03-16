@@ -63,9 +63,9 @@
         "wk-radical": "thorn"
     },
     "丁": {
-        "readings": ["ちょう", "てい", "とう"],
-        "compounds": ["庁", "灯", "町", "亭", "頂", "訂", "打", "宁"],
-        "non_compounds": ["貯"],
+        "readings": ["ちょう", "てい"],
+        "compounds": ["庁", "町", "亭", "頂", "訂", "打", "宁"],
+        "non_compounds": ["貯", "灯"],
         "xrefs": ["宁", "亭"],
         "wk-radical": "nail"
     },
@@ -1367,8 +1367,15 @@
         "readings": ["とう", "ず"],
         "compounds": ["短", "痘", "登", "頭"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["登"],
         "wk-radical": "beans"
+    },
+    "登": {
+        "readings": ["とう"],
+        "compounds": ["灯"],
+        "non_compounds": [],
+        "xrefs": ["豆"],
+        "wk-radical": null
     },
     "彦": {
         "readings": ["げん"],
@@ -2973,8 +2980,8 @@
     },
     "尺": {
         "readings": ["しゃく", "せき"],
-        "compounds": ["沢", "択", "釈"],
-        "non_compounds": ["昼", "訳", "駅"],
+        "compounds": ["択", "釈"],
+        "non_compounds": ["沢", "昼", "訳", "駅"],
         "xrefs": [],
         "wk-radical": "shrimp"
     },
