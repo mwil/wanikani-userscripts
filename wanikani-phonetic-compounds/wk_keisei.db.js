@@ -13,7 +13,8 @@ function KeiseiDB()
         derivative:      5, // 転注: applying an extended meaning to a kanji
         rebus:           6, // 仮借: borrowing a kanji with the same pronunciation to convey an unrelated term
         kokuji:          7, // kanji originating from Japan
-        unprocessed:     8  // not yet visited
+        shinjitai:       8, // Character was simplified from a different form (seiji)
+        unprocessed:     9  // not yet visited
         }
     );
 

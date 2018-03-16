@@ -262,6 +262,8 @@ function WK_Keisei()
 
         let head_list = [];
 
+        $(selector).empty();
+
         if (!this.kdb.checkPhonetic(subject.phon))
         {
             GM_log(`The following phonetic was not found in the database`,
