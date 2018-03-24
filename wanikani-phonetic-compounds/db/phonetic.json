@@ -31,8 +31,15 @@
         "readings": ["だい", "たい"],
         "compounds": ["泰", "戻"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["戻"],
         "wk-radical": "big"
+    },
+    "戻": {
+        "readings": ["れい"],
+        "compounds": [],
+        "non_compounds": [],
+        "xrefs": ["大"],
+        "wk-radical": null
     },
     "子": {
         "readings": ["し", "す"],
@@ -3044,7 +3051,7 @@
     "風": {
         "readings": ["ふう", "ふ"],
         "compounds": ["楓"],
-        "non_compounds": ["嵐"],
+        "non_compounds": ["嵐", "颯"],
         "xrefs": [],
         "wk-radical": "wind"
     },

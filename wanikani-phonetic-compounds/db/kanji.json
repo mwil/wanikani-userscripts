@@ -7308,9 +7308,11 @@
     },
     "涙": {
         "readings": ["るい"],
-        "decomposition": ["氵", "戻"],
+        "decomposition": ["水", "戻"],
+        "semantic": "水",
+        "phonetic": "戻",
         "seiji": "淚",
-        "type": "comp_indicative"
+        "type": "comp_phonetic"
     },
     "浪": {
         "readings": ["ろう"],
@@ -13071,27 +13073,28 @@
     "隶": {
         "readings": ["たい"],
         "meanings": ["extend", "give", "cast", "slave radical"],
-        "type": "unprocessed"
+        "type": "comp_indicative"
     },
     "𡿺": {
         "readings": ["のう", "どう"],
         "meanings": ["brain", "memory"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "爾": {
         "readings": ["じ", "に"],
         "meanings": ["you", "thou", "second person"],
-        "type": "unprocessed"
+        "type": "comp_indicative"
     },
     "閏": {
         "readings": ["じゅん"],
         "meanings": ["intercalation", "illegitimate throne"],
-        "type": "unprocessed"
+        "decomposition": ["門", "王"],
+        "type": "comp_indicative"
     },
     "耑": {
         "readings": ["たん", "せん"],
         "meanings": ["specialized", "concentrated"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "夌": {
         "readings": ["りょう"],
@@ -13135,7 +13138,7 @@
     },
     "荅": {
         "readings": ["とう"],
-        "meanings": ["azuki beans, thick"],
+        "meanings": ["azuki beans", "thick"],
         "type": "unprocessed"
     },
     "喿": {
