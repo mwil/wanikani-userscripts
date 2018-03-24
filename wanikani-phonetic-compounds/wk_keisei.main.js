@@ -195,6 +195,7 @@ function WK_Keisei()
                     case this.kdb.KTypeEnum.derivative:
                     case this.kdb.KTypeEnum.rebus:
                     case this.kdb.KTypeEnum.kokuji:
+                    case this.kdb.KTypeEnum.shinjitai:
                         $(`#keisei_explanation`).append(
                             this.explanation_other(subject));
                         break;
