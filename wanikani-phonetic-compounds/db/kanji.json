@@ -9146,6 +9146,7 @@
         "readings": ["せき", "しゃく"],
         "semantic": "足",
         "phonetic": "責",
+        "seiji": "蹟",
         "type": "comp_phonetic",
         "obscure": true
     },

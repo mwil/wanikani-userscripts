@@ -716,7 +716,7 @@
     "里": {
         "readings": ["り"],
         "compounds": ["理", "裏", "鯉"],
-        "non_compounds": ["厘", "埋"],
+        "non_compounds": ["厘", "埋", "野", "黒"],
         "xrefs": [],
         "wk-radical": "sunflower"
     },
@@ -1189,7 +1189,7 @@
     "家": {
         "readings": ["か", "け"],
         "compounds": ["嫁", "稼"],
-        "non_compounds": [],
+        "non_compounds": ["塚"],
         "xrefs": [],
         "wk-radical": "house"
     },
@@ -2154,7 +2154,7 @@
         "readings": ["こう"],
         "compounds": ["綱", "鋼", "剛"],
         "non_compounds": [],
-        "xrefs": ["岡"],
+        "xrefs": ["罔"],
         "wk-radical": "hill"
     },
     "罔": {
