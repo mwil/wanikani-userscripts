@@ -44,6 +44,12 @@ if __name__ == "__main__":
 
                     similar_out[kanji].append(compound)
 
+    for phon, phon_item in phon_json.items():
+        similar_out[phon] = [*phon_item["compounds"],
+                             *phon_item["non_compounds"]]
+
+    with open("../from_keisei.json", "w") as outfile:
+        json.dump(similar_out, outfile, ensure_ascii=False, indent=4)
     with open("../from_keisei_esc.json", "w") as outfile:
         json.dump(similar_out, outfile)
 
