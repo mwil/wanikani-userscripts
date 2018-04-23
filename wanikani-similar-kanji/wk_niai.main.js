@@ -14,17 +14,17 @@ function WK_Niai()
         "use_alt": false,
         "alt_sources": [
             {"id": "old_script_db",  "base_score": 0.4},
-            {"id": "yl_radical_db",  "base_score": 0},
-            {"id": "stroke_dist_db", "base_score": 0}
+            {"id": "yl_radical_db",  "base_score": -0.2},
+            {"id": "stroke_dist_db", "base_score": -0.2}
         ],
         "sources": [
-            {"id": "noto_db",        "base_score": 0.2},
-            {"id": "keisei_db",      "base_score": 0.6},
+            {"id": "noto_db",        "base_score": 0.1},
+            {"id": "keisei_db",      "base_score": 0.65},
             {"id": "manual_db",      "base_score": 0.9},
             {"id": "override_db",    "base_score": 0.0}
         ],
         "user_level": 99,
-        "min_score": 0.3
+        "min_score": 0.4
     };
 }
 // #############################################################################
