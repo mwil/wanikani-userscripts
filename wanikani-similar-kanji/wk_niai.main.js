@@ -19,8 +19,8 @@ function WK_Niai()
         ],
         "sources": [
             {"id": "noto_db",        "base_score": 0.2},
-            {"id": "keisei_db",      "base_score": 0.5},
-            {"id": "manual_db",      "base_score": 0.8},
+            {"id": "keisei_db",      "base_score": 0.6},
+            {"id": "manual_db",      "base_score": 0.9},
             {"id": "override_db",    "base_score": 0.0}
         ],
         "user_level": 99,

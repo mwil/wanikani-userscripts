@@ -66,7 +66,7 @@ function NiaiDB()
 
                             let sim_kanji = hasScore ? sim_info.kan : sim_info;
                             let score = source.base_score +
-                                        (hasScore ? sim_info.score : 0);
+                                        (hasScore ? sim_info.score : 0.0);
 
                             if (!(sim_kanji in this.lookup_db))
                             {
@@ -78,11 +78,11 @@ function NiaiDB()
                                                similar_kanji[sim_kanji].score :
                                                0.0);
 
-                            if (score > min_score)
+                            if (score > min_score || old_score > 0.0)
                             {
                                 similar_kanji[sim_kanji] = {
                                     "kan": sim_kanji,
-                                    "score": score+old_score,
+                                    "score": score,  // why was old_score used here?
                                     "locked": this.isKanjiLocked(sim_kanji, level)
                                 };
                             }
