@@ -8181,8 +8181,9 @@
     },
     "喚": {
         "readings": ["かん"],
-        "type": "unknown",
-        "comment": "obscure tone mark 奐"
+        "semantic": "囗",
+        "phonetic": "奐",
+        "type": "comp_phonetic"
     },
     "喫": {
         "readings": ["きつ"],

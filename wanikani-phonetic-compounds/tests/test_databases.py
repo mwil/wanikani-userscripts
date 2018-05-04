@@ -46,7 +46,8 @@ def test_kanji_entries_are_consistent():
             "comp_phonetic",
             "derivative",
             "rebus",
-            "kokuji"]
+            "kokuji",
+            "shinjitai"]
 
     for kanji, item in kanji_db.items():
         for prop in ["readings", "type"]:
