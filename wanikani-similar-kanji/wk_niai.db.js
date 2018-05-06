@@ -78,7 +78,7 @@ function NiaiDB()
                                                similar_kanji[sim_kanji].score :
                                                0.0);
 
-                            if (score > min_score || old_score > 0.0)
+                            if (score > min_score || (score > 0.0 && old_score > 0.0))
                             {
                                 similar_kanji[sim_kanji] = {
                                     "kan": sim_kanji,
