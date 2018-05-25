@@ -785,7 +785,7 @@
         "wk-radical": "long"
     },
     "門": {
-        "readings": ["もん", "ぼん"],
+        "readings": ["もん", "ぼん", "ぶん"],
         "compounds": ["問", "聞"],
         "non_compounds": ["閉", "閑"],
         "xrefs": [],
@@ -4014,11 +4014,11 @@
         "xrefs": ["布"],
         "wk-radical": "father"
     },
-    "宰": {
-        "readings": ["さい"],
+    "辛": {
+        "readings": ["しん"],
         "compounds": ["梓"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": null
+        "wk-radical": "spicy"
     }
 }

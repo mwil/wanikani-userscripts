@@ -7045,7 +7045,8 @@
         "readings": ["じゅん", "しゅん"],
         "semantic": "冫",
         "phonetic": "隼",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "凍": {
         "readings": ["とう"],
@@ -12265,7 +12266,7 @@
     "梓": {
         "readings": ["し"],
         "semantic": "⽊",
-        "phonetic": "宰",
+        "phonetic": "辛",
         "type": "comp_phonetic"
     },
     "睦": {
@@ -12376,7 +12377,7 @@
         "type": "hieroglyph"
     },
     "圭": {
-        "readings": ["けい"],
+        "readings": ["けい", "かい"],
         "meanings": ["square jewel", "corner", "angle", "edge"],
         "decomposition": ["土", "土"],
         "type": "comp_indicative"
