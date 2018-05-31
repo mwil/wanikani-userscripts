@@ -8214,7 +8214,9 @@
     "堕": {
         "readings": ["だ"],
         "seiji": "墮",
-        "type": "unknown"
+        "semantic": "土",
+        "phonetic": "陏",
+        "type": "comp_phonetic"
     },
     "塚": {
         "readings": ["ちょう"],
@@ -8391,7 +8393,8 @@
     },
     "敢": {
         "readings": ["かん"],
-        "type": "unknown"
+        "type": "unknown",
+        "comment": "Related to 厳."
     },
     "暁": {
         "readings": ["ぎょう"],
@@ -9136,7 +9139,8 @@
         "readings": ["ぞく"],
         "semantic": "戈",
         "phonetic": "則",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "賄": {
         "readings": ["わい", "かい"],

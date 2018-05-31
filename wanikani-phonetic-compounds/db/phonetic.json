@@ -4020,5 +4020,12 @@
         "non_compounds": ["辞", "辟"],
         "xrefs": [],
         "wk-radical": "spicy"
+    },
+    "陏": {
+        "readings": ["だ"],
+        "compounds": ["堕"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
     }
 }
