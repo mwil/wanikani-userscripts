@@ -3011,8 +3011,9 @@
     "焼": {
         "readings": ["しょう"],
         "seiji": "燒",
-        "type": "unknown",
-        "comment": "obscure phonetic mark 堯"
+        "semantic": "火",
+        "phonetic": "尭",
+        "type": "comp_phonetic"
     },
     "然": {
         "readings": ["ぜん", "ねん"],
@@ -8401,7 +8402,9 @@
     "暁": {
         "readings": ["ぎょう"],
         "seiji": "曉",
-        "type": "unknown"
+        "semantic": "日",
+        "phonetic": "尭",
+        "type": "comp_phonetic"
     },
     "晶": {
         "readings": ["しょう"],

@@ -36,7 +36,7 @@
     },
     "戻": {
         "readings": ["れい"],
-        "compounds": [],
+        "compounds": ["涙"],
         "non_compounds": [],
         "xrefs": ["大"],
         "wk-radical": null
@@ -1960,7 +1960,7 @@
         "wk-radical": "task"
     },
     "𤇾": {
-        "readings": ["えい", "えい", "ぎょう"],
+        "readings": ["えい", "ぎょう"],
         "compounds": ["栄", "蛍", "営"],
         "non_compounds": ["労"],
         "xrefs": [],
@@ -4041,5 +4041,12 @@
         "non_compounds": [],
         "xrefs": ["夗"],
         "wk-radical": null
+    },
+    "尭": {
+        "readings": ["ぎょう"],
+        "compounds": ["焼", "暁"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": "gambler"
     }
 }

@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import json
 import regex
 
@@ -82,7 +84,7 @@ def test_phonetic_entries_are_consistent():
             assert prop in item
 
         assert len(item["readings"]) > 0,\
-            "Tone mark '{}' has no readings!".format(phon)
+            "Phonetic mark '{}' has no readings!".format(phon)
 
 
 def test_phonetic_compounds_are_kanji():
@@ -104,7 +106,7 @@ def test_phonetic_references_exist():
     for kanji, item in kanji_db.items():
         if "phonetic" in item:
             assert item["phonetic"] in phonetic_db,\
-                   """Kanji {} lists {} as a tone mark,
+                   """Kanji {} lists {} as a phonetic mark,
                    but it is not in phonetic_db!
                    """.format(kanji, item["phonetic"])
 
@@ -115,7 +117,7 @@ def test_two_way_xrefs_of_phonetics():
     for phon, item in phonetic_db.items():
         for xref in item["xrefs"]:
             assert phon in phonetic_db[xref]["xrefs"],\
-                   """Tone mark {} hass xref {},
+                   """Phonetic mark {} has xref {},
                    but it is not mutual!
                    """.format(phon, xref)
 
@@ -249,5 +251,5 @@ def test_all_phonetics_covered_by_kanji():
 
     for phon, p_item in phonetic_db.items():
         assert phon in kanji_db,\
-            """Tone mark {} is not covered by a kanji yet!
+            """Phonetic mark {} is not covered by a kanji yet!
             """.format(phon)
