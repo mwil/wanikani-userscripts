@@ -8,7 +8,7 @@
     },
     "切": {
         "readings": ["せつ"],
-        "compounds": ["叱"],
+        "compounds": ["窃"],
         "non_compounds": [],
         "xrefs": ["七"],
         "wk-radical": null
@@ -3892,7 +3892,7 @@
         "readings": ["えん", "おん"],
         "compounds": ["宛", "怨"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["宛"],
         "wk-radical": null
     },
     "枼": {
@@ -4026,6 +4026,13 @@
         "compounds": ["堕"],
         "non_compounds": [],
         "xrefs": [],
+        "wk-radical": null
+    },
+    "宛": {
+        "readings": ["わん"],
+        "compounds": ["腕"],
+        "non_compounds": [],
+        "xrefs": ["夗"],
         "wk-radical": null
     }
 }
