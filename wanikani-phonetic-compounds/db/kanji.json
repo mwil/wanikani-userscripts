@@ -2140,7 +2140,9 @@
         "readings": ["てつ"],
         "decomposition": ["金", "失"],
         "seiji": "鐵",
-        "type": "shinjitai"
+        "semantic": "金",
+        "phonetic": "失",
+        "type": "comp_phonetic"
     },
     "意": {
         "readings": ["い"],
@@ -10100,8 +10102,9 @@
     "嘱": {
         "readings": ["しょく"],
         "seiji": "囑",
-        "type": "unknown",
-        "comment": "obscure phonetic mark 屬"
+        "semantic": "口",
+        "phonetic": "属",
+        "type": "comp_phonetic"
     },
     "審": {
         "readings": ["しん"],

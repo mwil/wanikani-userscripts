@@ -603,8 +603,8 @@
     },
     "失": {
         "readings": ["しつ", "いつ"],
-        "compounds": ["迭", "秩"],
-        "non_compounds": ["鉄"],
+        "compounds": ["迭", "鉄", "秩"],
+        "non_compounds": [],
         "xrefs": [],
         "wk-radical": "fault"
     },
@@ -1662,8 +1662,15 @@
         "readings": ["ぞく", "しょく"],
         "compounds": ["濁", "独", "属", "触"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["属"],
         "wk-radical": "mantis"
+    },
+    "属": {
+        "readings": ["ぞく", "しょく"],
+        "compounds": ["嘱"],
+        "non_compounds": [],
+        "xrefs": ["蜀"],
+        "wk-radical": null
     },
     "亥": {
         "readings": ["がい", "かい"],
@@ -2126,7 +2133,7 @@
         "readings": ["りゅう", "る"],
         "compounds": ["硫", "流"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["充"],
         "wk-radical": null
     },
     "㫃": {
@@ -3766,7 +3773,7 @@
         "readings": ["じゅう", "しゅう"],
         "compounds": ["銃", "統"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["㐬"],
         "wk-radical": "outhouse"
     },
     "孝": {
