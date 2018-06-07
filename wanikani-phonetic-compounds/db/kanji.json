@@ -2489,10 +2489,11 @@
     "芸": {
         "readings": ["げい", "うん"],
         "semantic": "艸",
-        "phonetic": "云",
+        "phonetic": "埶",
         "seiji": "藝",
         "type": "comp_phonetic",
-        "comment": "there is a different kanji looking exactly the same, add reading"
+        "comment": "there is a different kanji looking exactly the same, add reading",
+        "obscure": true
     },
     "初": {
         "readings": ["しょ", "そ"],

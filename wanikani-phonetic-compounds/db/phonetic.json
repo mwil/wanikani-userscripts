@@ -1266,8 +1266,8 @@
     },
     "云": {
         "readings": ["うん"],
-        "compounds": ["芸", "雲", "魂"],
-        "non_compounds": [],
+        "compounds": ["雲", "魂"],
+        "non_compounds": ["芸"],
         "xrefs": ["雲"],
         "wk-radical": "boobs"
     },
@@ -3288,7 +3288,7 @@
     },
     "埶": {
         "readings": ["げい", "せい"],
-        "compounds": ["勢", "熱"],
+        "compounds": ["勢", "熱", "芸"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
