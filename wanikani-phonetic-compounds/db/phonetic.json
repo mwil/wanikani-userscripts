@@ -631,9 +631,9 @@
     },
     "合": {
         "readings": ["ごう", "こう"],
-        "compounds": ["拾", "給", "答"],
+        "compounds": ["拾", "給", "答", "荅"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["荅"],
         "wk-radical": "suit"
     },
     "同": {
@@ -1456,9 +1456,9 @@
     },
     "必": {
         "readings": ["ひつ"],
-        "compounds": ["泌", "秘"],
+        "compounds": ["泌", "秘", "宓"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["宓"],
         "wk-radical": "certain"
     },
     "末": {
@@ -3402,7 +3402,7 @@
         "readings": ["とう"],
         "compounds": ["塔", "搭"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["合"],
         "wk-radical": null
     },
     "害": {
@@ -3892,7 +3892,7 @@
         "readings": ["みつ", "びつ"],
         "compounds": ["密", "蜜"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["必"],
         "wk-radical": null
     },
     "夗": {

@@ -4538,7 +4538,8 @@
     "並": {
         "readings": ["へい"],
         "seiji": "竝",
-        "type": "comp_indicative"
+        "type": "comp_indicative",
+        "comment": "Related to 并!!"
     },
     "刻": {
         "readings": ["こく"],
@@ -12632,6 +12633,7 @@
     "睘": {
         "readings": ["かん", "けい"],
         "meanings": ["round", "stare"],
+        "seiji": "瞏",
         "type": "unknown"
     },
     "瞏": {
@@ -13113,12 +13115,12 @@
     "夌": {
         "readings": ["りょう"],
         "meanings": ["to dawdle", "the name of the father of the Emperor Yao"],
-        "type": "unprocessed"
+        "type": "comp_indicative"
     },
     "朋": {
         "readings": ["ほう"],
         "meanings": ["companion", "friend"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "它": {
         "readings": ["た"],
@@ -13133,152 +13135,166 @@
     "坴": {
         "readings": ["りく", "ろく"],
         "meanings": ["clod of earth", "land"],
-        "type": "unprocessed"
+        "type": "unknown",
+        "comment": "Obscure phonetic mark 圥"
     },
     "埶": {
         "readings": ["げい", "せい"],
         "meanings": ["art"],
-        "type": "unprocessed"
+        "decomposition": ["土", "木", "丮"],
+        "type": "comp_indicative"
     },
     "夅": {
         "readings": ["こう", "ご"],
         "meanings": ["to descend", "to come down from heaven", "to send down"],
-        "type": "unprocessed"
+        "decomposition": ["夂", "㐄"],
+        "type": "comp_indicative"
     },
     "罙": {
         "readings": ["しん"],
         "meanings": ["deep"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "荅": {
         "readings": ["とう"],
         "meanings": ["azuki beans", "thick"],
-        "type": "unprocessed"
+        "semantic": "艸",
+        "phonetic": "合",
+        "type": "comp_phonetic"
     },
     "喿": {
         "readings": ["そう", "しょう"],
         "meanings": ["chirping of birds"],
-        "type": "unprocessed"
+        "type": "comp_indicative"
     },
     "豦": {
         "readings": ["きょ", "ご"],
         "meanings": ["wild boar", "to fight"],
-        "type": "unprocessed"
+        "decomposition": ["豕", "虍"],
+        "type": "comp_indicative"
     },
     "辟": {
         "readings": ["へき"],
         "meanings": ["false", "punish", "crime", "law"],
-        "type": "unprocessed"
+        "type": "comp_indicative"
     },
     "巴": {
         "readings": ["は"],
         "meanings": ["comma-design"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "彡": {
         "readings": ["さん", "せん"],
         "meanings": ["three", "hair ornament", "short hair or fur radical"],
-        "type": "unprocessed"
+        "type": "indicative"
     },
     "㐱": {
         "readings": ["しん"],
         "meanings": ["black hair"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "丰": {
         "readings": ["ほう"],
         "meanings": ["abundant", "lush", "bountiful", "plenty", "fat face", "luxurious growth of grass"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "并": {
         "readings": ["へい", "ひょう"],
         "meanings": ["put together"],
-        "type": "unprocessed"
+        "decomposition": ["立", "立"],
+        "type": "comp_indicative"
     },
     "酉": {
         "readings": ["ゆう", "しゅう", "しゅ"],
         "meanings": ["west", "bird", "sign of the bird", "5-7PM", "tenth sign of Chinese zodiac", "sake radical"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "劦": {
         "readings": ["きょう"],
         "meanings": ["to cooperate"],
-        "type": "unprocessed"
+        "decomposition": ["力", "力", "力"],
+        "type": "comp_indicative"
     },
     "敝": {
         "readings": ["へい"],
         "meanings": ["be worn-out", "be dilapidated", "be defeated"],
-        "type": "unprocessed"
+        "type": "unknown",
+        "comment": "Phonetic mark 㡀"
     },
     "夋": {
         "readings": ["しゅん", "さん"],
         "meanings": ["to dawdle"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "尗": {
         "readings": ["しゅく", "せき"],
         "meanings": ["younger brothers", "father's younger brother", "younger brother of a husband"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "冘": {
         "readings": ["いん", "ゆ", "ちん", "しん"],
         "meanings": ["to move on", "doubtful"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "倝": {
         "readings": ["かん"],
         "meanings": ["sunrise", "dawn"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "曷": {
         "readings": ["かつ"],
         "meanings": ["why", "how", "when"],
-        "type": "unprocessed"
+        "type": "unknown",
+        "comment": "Obscure phon mark 匃"
     },
     "畾": {
         "readings": ["らい", "るい"],
         "meanings": ["fields divided by dikes"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "曼": {
         "readings": ["まん"],
         "meanings": ["wide", "beautiful"],
-        "type": "unprocessed"
+        "type": "comp_indicative"
     },
     "褱": {
         "readings": ["かい", "え"],
         "meanings": ["to conceal", "to carry in the bosom or the sleeve", "to wrap"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "㐮": {
         "readings": ["じょう"],
         "meanings": ["to help", "to assist", "to achieve", "to rise", "to raise"],
-        "type": "unprocessed"
+        "type": "unknown"
     },
     "奐": {
         "readings": ["かん"],
         "meanings": ["clear", "bright"],
-        "type": "unprocessed"
+        "type": "comp_indicative"
     },
     "茲": {
         "readings": ["し", "じ"],
         "meanings": ["here"],
-        "type": "unprocessed"
+        "type": "unknown",
+        "comment": "Phon mark 絲"
     },
     "桼": {
         "readings": ["しつ", "ひざ"],
         "meanings": ["varnish tree", "lacquer", "varnish", "paint"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "咢": {
         "readings": ["がく"],
         "meanings": ["outspokenly"],
-        "type": "unprocessed"
+        "decomposition": ["吅", "亏"],
+        "type": "comp_indicative"
     },
     "宓": {
         "readings": ["みつ", "びつ"],
         "meanings": ["quiet", "silent", "in good health"],
-        "type": "unprocessed"
+        "semantic": "宀",
+        "phonetic": "必",
+        "type": "comp_phonetic"
     },
     "夗": {
         "readings": ["えん", "おん"],
@@ -13288,17 +13304,18 @@
     "枼": {
         "readings": ["ちょう", "よう"],
         "meanings": ["table", "flat pieces of wood", "slip", "leaf"],
-        "type": "unprocessed"
+        "type": "comp_indicative"
     },
     "鬲": {
         "readings": ["かく", "れき"],
         "meanings": ["tripod"],
-        "type": "unprocessed"
+        "type": "hieroglyph"
     },
     "烝": {
         "readings": ["じょう"],
         "meanings": ["many", "offer", "dedicate", "to steam"],
-        "type": "unprocessed"
+        "type": "unknown",
+        "comment": "Obscure phon mark 丞"
     },
     "絜": {
         "readings": ["けつ"],
@@ -13341,5 +13358,21 @@
         "readings": ["き", "け"],
         "meanings": ["spirit", "steam radical"],
         "type": "hieroglyph"
+    },
+    "𤇾": {
+        "readings": ["えい", "ぎょう"],
+        "meanings": ["light signal"],
+        "type": "unknown"
+    },
+    "陏": {
+        "readings": ["だ"],
+        "meanings": ["melon", "wrap"],
+        "type": "unknown",
+        "comment": "PC 陏?"
+    },
+    "尭": {
+        "readings": ["ぎょう"],
+        "meanings": ["high", "far"],
+        "type": "unknown"
     }
 }
