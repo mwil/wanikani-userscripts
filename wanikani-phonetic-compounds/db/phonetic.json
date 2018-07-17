@@ -1288,7 +1288,7 @@
     "卒": {
         "readings": ["そつ", "しゅつ"],
         "compounds": ["砕", "粋"],
-        "non_compounds": ["酔"],
+        "non_compounds": ["酔", "枠"],
         "xrefs": [],
         "wk-radical": null,
         "comments": "TODO: more fitting mark 卆"
