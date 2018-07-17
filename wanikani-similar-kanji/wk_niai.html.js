@@ -246,7 +246,7 @@
         const kanji = this.wki.getSubject().kan;
         const new_kanji = $(`#kanji-dropdown`)[0].dataset.kanji;
 
-        if (!kanji || !new_kanji)
+        if (!kanji || !new_kanji || kanji === new_kanji)
             return false;
 
         if (!(kanji in this.override_db))
