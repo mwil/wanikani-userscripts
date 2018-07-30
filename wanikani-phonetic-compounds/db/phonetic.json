@@ -99,8 +99,8 @@
     },
     "貝": {
         "readings": ["ばい", "まい"],
-        "compounds": ["敗", "唄"],
-        "non_compounds": ["買"],
+        "compounds": ["敗", "唄", "買"],
+        "non_compounds": [],
         "xrefs": [],
         "wk-radical": "clam"
     },
@@ -765,8 +765,8 @@
     },
     "明": {
         "readings": ["めい", "みょう", "みん"],
-        "compounds": ["盟", "萌"],
-        "non_compounds": [],
+        "compounds": ["盟"],
+        "non_compounds": ["萌"],
         "xrefs": [],
         "wk-radical": "bright"
     },
@@ -2446,7 +2446,7 @@
         "wk-radical": null
     },
     "折": {
-        "readings": ["せつ", "じゃく"],
+        "readings": ["せつ", "せい", "じゃく"],
         "compounds": ["哲", "逝", "誓"],
         "non_compounds": [],
         "xrefs": [],
@@ -2832,11 +2832,12 @@
         "wk-radical": "sweet"
     },
     "亘": {
-        "readings": ["こう", "せん"],
+        "readings": ["こう", "かん"],
         "compounds": ["宣", "恒", "垣"],
         "non_compounds": [],
         "xrefs": ["旦"],
-        "wk-radical": null
+        "wk-radical": null,
+        "comment": "Traditional form 亙"
     },
     "夬": {
         "readings": ["かい", "けつ"],
@@ -3225,7 +3226,7 @@
     },
     "朋": {
         "readings": ["ほう"],
-        "compounds": ["棚", "崩"],
+        "compounds": ["棚", "崩", "萌"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
@@ -3690,7 +3691,7 @@
         "compounds": ["沈", "枕"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": null
+        "wk-radical": "pirate"
     },
     "為": {
         "readings": ["い"],

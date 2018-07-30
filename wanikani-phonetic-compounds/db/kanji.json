@@ -1036,7 +1036,9 @@
     },
     "買": {
         "readings": ["ばい"],
-        "type": "unknown"
+        "semantic": "网",
+        "phonetic": "貝",
+        "type": "comp_phonetic"
     },
     "朝": {
         "readings": ["ちょう"],
@@ -11931,7 +11933,8 @@
         "readings": ["よう"],
         "semantic": "辵",
         "phonetic": "䍃",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "variants": ["遙"]
     },
     "椎": {
         "readings": ["すい"],
@@ -12210,6 +12213,7 @@
     "凛": {
         "readings": ["りん"],
         "type": "unknown",
+        "variants": ["凜"],
         "comment": "obscure phonetic mark 稟"
     },
     "智": {
@@ -12233,8 +12237,10 @@
     "萌": {
         "readings": ["ぼう", "ほう"],
         "semantic": "艸",
-        "phonetic": "明",
-        "type": "comp_phonetic"
+        "phonetic": "朋",
+        "type": "comp_phonetic",
+        "obscure": true,
+        "variants": ["萠"]
     },
     "烏": {
         "readings": ["う", "お"],
@@ -13016,7 +13022,8 @@
     "亘": {
         "readings": ["こう", "せん"],
         "meanings": ["span", "range", "extend over"],
-        "type": "unknown"
+        "type": "unknown",
+        "variants": ["亙"]
     },
     "夬": {
         "readings": ["かい", "けつ"],
@@ -13374,6 +13381,7 @@
     "尭": {
         "readings": ["ぎょう"],
         "meanings": ["high", "far"],
-        "type": "unknown"
+        "type": "unknown",
+        "variants": ["堯"]
     }
 }
