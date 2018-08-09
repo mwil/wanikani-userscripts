@@ -831,8 +831,10 @@
     },
     "海": {
         "readings": ["かい"],
+        "semantic": "水",
+        "phonetic": "毎",
         "seiji": "海",
-        "type": "unknown"
+        "type": "comp_phonetic"
     },
     "活": {
         "readings": ["かつ"],
@@ -1685,7 +1687,9 @@
     },
     "秒": {
         "readings": ["びょう"],
-        "type": "comp_indicative"
+        "semantic": "禾",
+        "phonetic": "少",
+        "type": "comp_phonetic"
     },
     "級": {
         "readings": ["きゅう"],
@@ -6136,8 +6140,10 @@
     },
     "侮": {
         "readings": ["ぶ"],
+        "semantic": "人",
+        "phonetic": "毎",
         "seiji": "侮",
-        "type": "unknown"
+        "type": "comp_phonetic"
     },
     "併": {
         "readings": ["へい"],
@@ -9559,7 +9565,8 @@
     "隠": {
         "readings": ["いん", "おん"],
         "seiji": "隱",
-        "type": "shinjitai"
+        "type": "shinjitai",
+        "comment": "unprintable PC 𢚩"
     },
     "需": {
         "readings": ["じゅ"],
@@ -9652,7 +9659,8 @@
     "穏": {
         "readings": ["おん"],
         "seiji": "穩",
-        "type": "shinjitai"
+        "type": "shinjitai",
+        "comment": "unprintable PC 𢚩"
     },
     "稼": {
         "readings": ["か"],
@@ -10415,8 +10423,9 @@
     },
     "藩": {
         "readings": ["はん"],
-        "type": "unknown",
-        "comment": "obscure phonetic 潘 related to 番"
+        "semantic": "艸",
+        "phonetic": "潘",
+        "type": "comp_phonetic"
     },
     "範": {
         "readings": ["はん"],
@@ -10900,7 +10909,7 @@
         "type": "hieroglyph"
     },
     "膝": {
-        "readings": ["ひざ"],
+        "readings": ["しつ"],
         "meanings": ["knee"],
         "semantic": "月",
         "phonetic": "桼",
@@ -10919,7 +10928,9 @@
     },
     "沙": {
         "readings": ["さ", "しゃ"],
-        "type": "unknown"
+        "semantic": "水",
+        "phonetic": "少",
+        "type": "comp_phonetic"
     },
     "須": {
         "readings": ["す", "しゅ"],
@@ -12240,11 +12251,13 @@
         "phonetic": "朋",
         "type": "comp_phonetic",
         "obscure": true,
-        "variants": ["萠"]
+        "variants": ["萠"],
+        "category": "jinmeiyou"
     },
     "烏": {
         "readings": ["う", "お"],
-        "type": "hieroglyph"
+        "type": "hieroglyph",
+        "category": "jinmeiyou"
     },
     "哉": {
         "readings": ["さい"],
@@ -13383,5 +13396,3323 @@
         "meanings": ["high", "far"],
         "type": "unknown",
         "variants": ["堯"]
-    }
+    },
+    "潘": {
+        "readings": ["はん"],
+        "meanings": ["rice water"],
+        "semantic": "水",
+        "phonetic": "番",
+        "type": "comp_phonetic"
+    },
+
+
+	"彬": {
+		"readings": ["ひん"],
+		"meanings": ["refined", "gentle"],
+		"type": "unknown",
+		"category": "jinmeiyou",
+		"comment": "obscure PC 棼"
+	},
+	"皐": {
+		"readings": ["こう"],
+		"meanings": ["swamp", "shore"],
+		"seiji": "皋",
+		"type": "unknown",
+		"category": "jinmeiyou"
+	},
+	"笹": {
+		"readings": [],
+		"meanings": ["bamboo grass"],
+		"type": "kokuji",
+		"category": "jinmeiyou"
+	},
+	"槍": {
+		"readings": ["そう"],
+		"meanings": ["spear", "lance", "javelin"],
+        "semantic": "木",
+        "phonetic": "倉",
+        "type": "comp_phonetic",
+		"category": "jinmeiyou"
+	},
+	"悉": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"蕪": {
+		"readings": ["ぶ", "む"],
+		"meanings": ["turnip"],
+        "semantic": "艸",
+        "phonetic": "無",
+        "type": "comp_phonetic",
+		"category": "jinmeiyou"
+	},
+	"斯": {
+		"readings": ["し"],
+		"meanings": ["this", "thus", "such", "verbal pause"],
+		"type": "unknown",
+		"category": "jinmeiyou"
+	},
+	"鷹": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"厩": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"亦": {
+		"readings": ["えき"],
+		"meanings": ["also", "again"],
+		"type": "indicative",
+		"category": "jinmeiyou"
+	},
+	"儲": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"灸": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"皓": {
+		"readings": ["こう"],
+		"meanings": ["white", "clear"],
+        "semantic": "白",
+        "phonetic": "告",
+        "type": "comp_phonetic",
+		"category": "jinmeiyou"
+	},
+	"苺": {
+		"readings": ["ばい", "まい"],
+		"meanings": ["strawberry"],
+        "semantic": "艸",
+        "phonetic": "毎",
+        "type": "comp_phonetic",
+		"category": "jinmeiyou",
+		"obscure": true
+	},
+	"曳": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"槙": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou",
+		"variants": ["槇"]
+	},
+	"汐": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"暉": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"欽": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"淵": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"倭": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"叡": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"偲": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"焚": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"牒": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"卿": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"稟": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"椋": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"杜": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"霞": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"桧": {
+		"readings": ["かい"],
+		"meanings": ["Japanese cypress"],
+        "semantic": "木",
+        "phonetic": "会",
+        "type": "comp_phonetic",
+		"category": "jinmeiyou",
+		"variants": ["檜"]
+	},
+	"蔣": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"桂": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"姪": {
+		"readings": ["てつ"],
+		"meanings": ["niece"],
+        "semantic": "女",
+        "phonetic": "至",
+        "type": "comp_phonetic",
+		"category": "jinmeiyou"
+	},
+	"哩": {
+		"readings": ["り"],
+		"meanings": ["mile"],
+        "semantic": "口",
+        "phonetic": "里",
+        "type": "comp_phonetic",
+		"category": "jinmeiyou"
+	},
+	"李": {
+		"readings": ["り"],
+		"meanings": ["plum"],
+		"type": "unknown",
+		"category": "jinmeiyou"
+	},
+	"碩": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"菖": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"紬": {
+		"readings": ["ちゅう"],
+		"meanings": ["pongee"],
+        "semantic": "糸",
+        "phonetic": "由",
+        "type": "comp_phonetic",
+		"category": "jinmeiyou"
+	},
+	"醐": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"祁": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"肴": {
+		"readings": ["こう"],
+		"meanings": ["accompaniment for drinks"],
+		"type": "unknown",
+		"category": "jinmeiyou",
+		"comment": "obscure PC 爻"
+	},
+	"菩": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"惇": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"磯": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"煌": {
+		"readings": ["こう"],
+		"meanings": ["glitter", "gleam", "twinkle"],
+		"type": "unknown",
+		"category": "jinmeiyou",
+		"comment": "TODO: has PC 皇!"
+	},
+	"竣": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"柑": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"顚": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"萄": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"嶺": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"喧": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"瑶": {
+		"readings": ["よう"],
+		"meanings": ["beautiful as a jewel"],
+        "semantic": "玉",
+        "phonetic": "䍃",
+        "type": "comp_phonetic",
+		"category": "jinmeiyou"
+	},
+	"芹": {
+		"readings": ["きん"],
+		"meanings": ["parsley"],
+        "semantic": "艸",
+        "phonetic": "斤",
+        "type": "comp_phonetic",
+		"category": "jinmeiyou"
+	},
+	"夷": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"伶": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"嬉": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"廿": {
+		"readings": ["じゅう"],
+		"meanings": ["twenty"],
+        "semantic": "十",
+        "phonetic": "十",
+        "type": "comp_phonetic",
+		"category": "jinmeiyou"
+	},
+	"芥": {
+		"readings": ["かい", "け"],
+		"meanings": ["mustard", "rape", "dust", "trash", "rubbish"],
+        "semantic": "艸",
+        "phonetic": "介",
+        "type": "comp_phonetic",
+		"category": "jinmeiyou"
+	},
+	"汀": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"祢": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou",
+		"variants": ["禰"]
+	},
+	"洲": {
+		"readings": ["しゅう"],
+		"meanings": ["continent", "sanbar", "island", "country"],
+        "semantic": "水",
+        "phonetic": "州",
+        "type": "comp_phonetic",
+		"category": "jinmeiyou"
+	},
+	"徽": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"迦": {
+		"readings": ["か"],
+		"meanings": ["Phonetic KA"],
+        "semantic": "辵",
+        "phonetic": "加",
+        "type": "comp_phonetic",
+		"category": "jinmeiyou"
+	},
+	"播": {
+		"readings": ["は", "ばん"],
+		"meanings": ["plant", "sow"],
+        "semantic": "手",
+        "phonetic": "番",
+        "type": "comp_phonetic",
+		"category": "jinmeiyou"
+	},
+	"紗": {
+		"readings": ["さ", "しゃ"],
+		"meanings": ["gauze", "gossamer"],
+        "semantic": "糸",
+        "phonetic": "少",
+        "type": "comp_phonetic",
+		"category": "jinmeiyou"
+	},
+	"閃": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"叶": {
+		"readings": ["きょう"],
+		"meanings": ["grant", "answer"],
+        "type": "unknown",
+		"category": "jinmeiyou",
+		"variants": ["協"]
+	},
+	"庵": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"俱": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"菱": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"苔": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"屑": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"托": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"碗": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"宏": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"捷": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"舜": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"驍": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"蘭": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"綜": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鴨": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"悌": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"荻": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"楢": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"捲": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"珂": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"忽": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"仔": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"薙": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"茸": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"埴": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"茉": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"坦": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"竺": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"萩": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"晃": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou",
+		"variants": ["晄"]
+	},
+	"捺": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"慧": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"猪": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou",
+		"variants": ["猪"]
+	},
+	"蒔": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"蕎": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"尖": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"樟": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"辿": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"柏": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"戟": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"稔": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"彗": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"耽": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"瑚": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"棲": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"桔": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"楊": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"翠": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"蘇": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"蔭": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"雛": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"撫": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"俠": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"畠": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"茄": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"櫓": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"宋": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"凰": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"旭": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"樽": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"敦": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"寵": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"啄": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"巌": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou",
+		"variants": ["巖"]
+	},
+	"沌": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"漱": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"芦": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"雁": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"榎": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鵬": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"貰": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"蕃": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"挺": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"茅": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"秤": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"吻": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"恢": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鷲": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"掬": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"絃": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"萱": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"豹": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"奄": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"邑": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"函": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"倦": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"杭": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"惟": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"喰": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"琢": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou",
+		"variants": ["琢"]
+	},
+	"凜": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"壕": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"圃": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"塙": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"只": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"晒": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"椛": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"槌": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"斡": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"砦": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鞄": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"稀": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"廻": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"弘": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"允": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"糊": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"賑": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"惹": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"伍": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"堵": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鞘": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"釉": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"湛": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"巳": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"馳": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"瑳": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"耀": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"椀": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"燕": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"晦": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"燭": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"逢": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"紘": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"娩": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"丞": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"榊": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"撒": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"佑": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"蠟": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"娃": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"窪": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"淳": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"帖": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"渥": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"叢": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"宥": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"巷": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"侑": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"碓": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"柘": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"黛": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"浬": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"峻": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"竿": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"汲": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"濡": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"膏": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"輿": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"頌": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"兜": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"縞": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"衿": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"纏": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"醇": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鮎": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"喋": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"詢": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"寓": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"薩": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"樺": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"襖": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"釘": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鯛": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"畢": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"孟": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"惣": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"堺": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"雀": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鍬": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"頁": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"晋": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"晟": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"珀": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"焰": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"煤": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"桶": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"燦": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"臥": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"冴": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"凧": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"樋": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"惚": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"詫": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"槻": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"玲": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"牟": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"幡": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"漕": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"魯": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"謂": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"醬": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"俣": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"燿": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"宕": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"櫛": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"琵": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"誼": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"羚": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"蓑": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"蕨": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"枇": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"珈": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"蝦": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"諏": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鳳": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"摑": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"杷": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"辻": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"侃": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"裡": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"洛": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"祷": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou",
+		"variants": ["禱"]
+	},
+	"櫂": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鄭": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"梯": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"葦": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"閤": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"溢": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鞠": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"恕": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"箕": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"郁": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"掠": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"暢": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"釧": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"汝": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"窄": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"惺": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鳶": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"怜": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"祇": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鎧": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"迪": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"簞": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"已": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"琳": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"砥": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"弛": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"恰": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"駕": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"蔦": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"獅": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鱗": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"浩": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"絢": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"乎": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"肇": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"篠": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"董": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"滉": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"蕾": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"馴": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"苑": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"厨": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"祐": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou",
+		"variants": ["祐"]
+	},
+	"毬": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鋸": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"沓": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"秦": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"跨": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"蟬": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"溜": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"吞": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"玖": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"瓢": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"丑": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"俄": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"蒲": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"胤": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"葺": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"梧": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"嘩": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"錐": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"蓉": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"燎": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"綴": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"篇": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"梢": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"灘": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"琥": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"劫": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"栖": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"訣": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"擢": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"逗": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"於": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"套": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"而": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"尤": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"杖": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"蕉": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"檀": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"芙": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"傭": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"筑": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"牽": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"廟": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"瞥": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"馨": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"狼": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"沫": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"禎": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou",
+		"variants": ["禎"]
+	},
+	"嵩": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"雫": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"菫": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"昂": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"紐": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"毘": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"訊": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"亨": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"檎": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"斧": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"稜": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"梛": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"湘": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"匡": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"珊": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"笙": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鞍": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"楕": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鷺": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"庇": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"繫": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"迄": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"芭": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"橙": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鞭": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"疏": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"諺": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"螺": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"晨": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"彪": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"憐": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"醍": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"麒": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"蒐": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鰯": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"卯": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"穿": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"洸": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鵜": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"簾": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"葡": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"摺": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"椿": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"崚": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"昊": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"熙": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"藁": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"蹟": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"凱": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"姥": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"庚": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"昴": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"橘": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"腔": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"禄": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou",
+		"variants": ["祿"]
+	},
+	"肋": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"粟": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"樫": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"柚": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"禾": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"澪": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"毅": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"兎": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"綸": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"杵": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"耶": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"籾": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"凪": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"撞": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"椰": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"桐": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"穣": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou",
+		"variants": ["穰"]
+	},
+	"蕗": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"幌": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"箔": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"碧": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"赳": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"歎": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"勁": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"笈": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"晏": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"麿": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"嵯": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"莞": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"陀": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"頗": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"俐": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"裳": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"遁": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鱒": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"魁": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"巫": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"萊": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"梁": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"麟": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"湊": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"舵": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"眸": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"柊": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"磐": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"脩": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"這": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"粥": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"欣": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"洵": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鋒": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"揃": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"琉": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"禽": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"繡": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"迂": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"硯": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"灼": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"按": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"砧": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"窺": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"叉": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"挽": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"竪": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"輯": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"孜": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"蹄": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"矩": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"捧": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"犀": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"些": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"梶": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"劉": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"絆": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"蓬": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鼎": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"註": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"逞": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"伽": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"纂": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"嘗": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"蔓": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"煉": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"袈": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"錫": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"曝": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"峨": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"楯": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"穹": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"佃": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"渚": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou",
+		"variants": ["渚"]
+	},
+	"錆": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"噂": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"倖": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鴻": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"楠": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"撰": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"讃": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"裟": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"諄": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"淋": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"榛": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"鷗": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"袴": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"昏": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"柾": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"殆": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"饗": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"甥": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"轟": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"黎": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"筈": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"奎": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"琶": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"牡": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"徠": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"渾": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"瀕": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	},
+	"隈": {
+		"readings": [],
+		"meanings": [],
+		"type": "unprocessed",
+		"category": "jinmeiyou"
+	}
 }
