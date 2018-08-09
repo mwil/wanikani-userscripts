@@ -3135,7 +3135,7 @@
         "wk-radical": "dragon"
     },
     "毎": {
-        "readings": ["まい"],
+        "readings": ["まい", "ばい", "かい"],
         "compounds": ["梅", "悔", "侮", "海", "苺"],
         "non_compounds": ["敏"],
         "xrefs": [],
