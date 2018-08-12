@@ -3391,7 +3391,8 @@
     },
     "犯": {
         "readings": ["はん", "ぼん"],
-        "type": "unknown"
+        "type": "unknown",
+        "comment": "TODO: same PC as 氾 (𢎘)"
     },
     "示": {
         "readings": ["じ", "し"],
@@ -10807,8 +10808,9 @@
     },
     "俺": {
         "readings": ["えん"],
-        "type": "unknown",
-        "comment": "obscure phonetic mark 奄"
+        "semantic": "人",
+        "phonetic": "奄",
+        "type": "comp_phonetic"
     },
     "岡": {
         "readings": ["こう"],
@@ -13244,7 +13246,7 @@
     },
     "夋": {
         "readings": ["しゅん", "さん"],
-        "meanings": ["to dawdle"],
+        "meanings": ["outstanding person"],
         "type": "unknown"
     },
     "尗": {
@@ -13473,9 +13475,11 @@
 		"category": "jinmeiyou"
 	},
 	"儲": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+		"readings": ["ちょ"],
+		"meanings": ["profit", "earnings"],
+        "semantic": "人",
+        "phonetic": "諸",
+        "type": "comp_phonetic",
 		"category": "jinmeiyou"
 	},
 	"灸": {
@@ -13508,9 +13512,11 @@
 		"category": "jinmeiyou"
 	},
 	"槙": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+		"readings": ["しん", "てん"],
+		"meanings": ["twig", "evergreen"],
+        "semantic": "木",
+        "phonetic": "真",
+        "type": "comp_phonetic",
 		"category": "jinmeiyou",
 		"variants": ["槇"]
 	},
@@ -13521,9 +13527,11 @@
 		"category": "jinmeiyou"
 	},
 	"暉": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+		"readings": ["き"],
+		"meanings": ["shine", "light"],
+        "semantic": "日",
+        "phonetic": "軍",
+        "type": "comp_phonetic",
 		"category": "jinmeiyou"
 	},
 	"欽": {
@@ -13533,10 +13541,11 @@
 		"category": "jinmeiyou"
 	},
 	"淵": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
-		"category": "jinmeiyou"
+		"readings": ["えん"],
+		"meanings": ["abyss", "edge", "deep pool", "the depths"],
+		"type": "unknown",
+		"category": "jinmeiyou",
+		"comment": "obscure PC 𣶒"
 	},
 	"倭": {
 		"readings": [],
@@ -13551,9 +13560,11 @@
 		"category": "jinmeiyou"
 	},
 	"偲": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+		"readings": ["し"],
+		"meanings": ["recollect", "remember"],
+        "semantic": "人",
+        "phonetic": "思",
+        "type": "comp_phonetic",
 		"category": "jinmeiyou"
 	},
 	"焚": {
@@ -13587,9 +13598,11 @@
 		"category": "jinmeiyou"
 	},
 	"杜": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+		"readings": ["と", "ず"],
+		"meanings": ["woods", "grove"],
+        "semantic": "木",
+        "phonetic": "土",
+        "type": "comp_phonetic",
 		"category": "jinmeiyou"
 	},
 	"霞": {
@@ -13614,9 +13627,11 @@
 		"category": "jinmeiyou"
 	},
 	"桂": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+		"readings": ["けい"],
+		"meanings": ["Judas tree", "cinnamon tree"],
+        "semantic": "木",
+        "phonetic": "圭",
+        "type": "comp_phonetic",
 		"category": "jinmeiyou"
 	},
 	"姪": {
@@ -13681,9 +13696,11 @@
 		"comment": "obscure PC 爻"
 	},
 	"菩": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+		"readings": ["ぼ", "ほ"],
+		"meanings": ["grass", "sacred tree"],
+        "semantic": "艸",
+        "phonetic": "咅",
+        "type": "comp_phonetic",
 		"category": "jinmeiyou"
 	},
 	"惇": {
@@ -13693,9 +13710,11 @@
 		"category": "jinmeiyou"
 	},
 	"磯": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+		"readings": ["き"],
+		"meanings": ["seashore", "beach"],
+        "semantic": "石",
+        "phonetic": "幾",
+        "type": "comp_phonetic",
 		"category": "jinmeiyou"
 	},
 	"煌": {
@@ -13856,9 +13875,11 @@
 		"variants": ["協"]
 	},
 	"庵": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+		"readings": ["あん"],
+		"meanings": ["hermitage", "retreat"],
+        "semantic": "广",
+        "phonetic": "奄",
+        "type": "comp_phonetic",
 		"category": "jinmeiyou"
 	},
 	"俱": {
@@ -13934,9 +13955,11 @@
 		"category": "jinmeiyou"
 	},
 	"鴨": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+		"readings": ["おう"],
+		"meanings": ["wild duck", "easy mark"],
+        "semantic": "鳥",
+        "phonetic": "甲",
+        "type": "comp_phonetic",
 		"category": "jinmeiyou"
 	},
 	"悌": {
@@ -14006,16 +14029,19 @@
 		"category": "jinmeiyou"
 	},
 	"坦": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+		"readings": ["たん"],
+		"meanings": ["level", "wide"],
+        "semantic": "土",
+        "phonetic": "旦",
+        "type": "comp_phonetic",
 		"category": "jinmeiyou"
 	},
 	"竺": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
-		"category": "jinmeiyou"
+		"readings": ["とく", "じく"],
+		"meanings": ["bamboo"],
+		"type": "unknown",
+		"category": "jinmeiyou",
+		"comment": "TODO: PC 竹?"
 	},
 	"萩": {
 		"readings": [],
@@ -14345,9 +14371,9 @@
 		"category": "jinmeiyou"
 	},
 	"奄": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+		"readings": ["えん"],
+		"meanings": ["cover", "suffocate", "obstruct"],
+		"type": "unknown",
 		"category": "jinmeiyou"
 	},
 	"邑": {
@@ -16698,9 +16724,11 @@
 		"category": "jinmeiyou"
 	},
 	"渾": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+		"readings": ["こん"],
+		"meanings": ["all", "turbidity"],
+        "semantic": "水",
+        "phonetic": "軍",
+        "type": "comp_phonetic",
 		"category": "jinmeiyou"
 	},
 	"瀕": {

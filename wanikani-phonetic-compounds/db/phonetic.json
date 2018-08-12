@@ -22,7 +22,7 @@
     },
     "土": {
         "readings": ["と", "ど"],
-        "compounds": ["吐", "社", "徒"],
+        "compounds": ["吐", "社", "徒", "杜"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "grave"
@@ -358,7 +358,7 @@
     },
     "圭": {
         "readings": ["けい"],
-        "compounds": ["街", "掛", "佳", "厓"],
+        "compounds": ["街", "掛", "佳", "厓", "桂"],
         "non_compounds": [],
         "xrefs": ["厓"],
         "wk-radical": null
@@ -936,8 +936,15 @@
         "readings": ["しん", "し"],
         "compounds": ["細", "思"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["思"],
         "wk-radical": null
+    },
+    "思": {
+        "readings": ["し"],
+        "compounds": ["偲"],
+        "non_compounds": [],
+        "xrefs": ["囟"],
+        "wk-radical": "think"
     },
     "周": {
         "readings": ["しゅう", "す"],
@@ -1211,9 +1218,16 @@
         "readings": ["しゃ", "しょ", "と"],
         "compounds": ["都", "暑", "煮", "署", "箸", "諸", "書", "緒", "著", "着", "賭"],
         "non_compounds": [],
-        "xrefs": ["署"],
+        "xrefs": ["署", "諸"],
         "wk-radical": "someone",
         "comment": "added しょ, but found no reason"
+    },
+    "諸": {
+        "readings": ["ちょ"],
+        "compounds": ["儲"],
+        "non_compounds": [],
+        "xrefs": ["者"],
+        "wk-radical": null
     },
     "署": {
         "readings": ["しょ"],
@@ -2003,7 +2017,7 @@
     },
     "幾": {
         "readings": ["き"],
-        "compounds": ["機", "畿"],
+        "compounds": ["機", "畿", "磯"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
@@ -2256,7 +2270,7 @@
         "wk-radical": null
     },
     "尃": {
-        "readings": ["ふ", "ほ"],
+        "readings": ["ふ", "ほ", "はく", "ばく"],
         "compounds": ["敷", "博", "縛", "溥"],
         "non_compounds": [],
         "xrefs": ["甫", "溥"],
@@ -2433,7 +2447,7 @@
     },
     "旦": {
         "readings": ["たん"],
-        "compounds": ["但", "胆", "担"],
+        "compounds": ["但", "胆", "担", "坦"],
         "non_compounds": [],
         "xrefs": ["亘"],
         "wk-radical": "sunrise"
@@ -2799,7 +2813,7 @@
     },
     "咅": {
         "readings": ["ばい", "はい", "ぼう", "ほう"],
-        "compounds": ["倍", "剖", "部", "培", "陪", "賠"],
+        "compounds": ["倍", "剖", "部", "培", "陪", "賠", "菩"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "clown"
@@ -2981,7 +2995,7 @@
         "wk-radical": null
     },
     "因": {
-        "readings": ["いん"],
+        "readings": ["いん", "おん"],
         "compounds": ["咽", "姻", "恩"],
         "non_compounds": [],
         "xrefs": [],
@@ -3045,7 +3059,7 @@
     },
     "軍": {
         "readings": ["ぐん", "くん", "き"],
-        "compounds": ["運", "輝", "揮"],
+        "compounds": ["運", "輝", "揮", "暉", "渾"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
@@ -3133,6 +3147,13 @@
         "non_compounds": ["襲"],
         "xrefs": [],
         "wk-radical": "dragon"
+    },
+    "奄": {
+        "readings": ["えん", "あん"],
+        "compounds": ["俺", "庵"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
     },
     "毎": {
         "readings": ["まい", "ばい", "かい"],
@@ -3458,7 +3479,7 @@
     },
     "甲": {
         "readings": ["こう", "かん"],
-        "compounds": ["押", "岬"],
+        "compounds": ["押", "岬", "鴨"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "turtle-shell"
@@ -3612,7 +3633,7 @@
     },
     "真": {
         "readings": ["しん"],
-        "compounds": ["慎", "鎮"],
+        "compounds": ["慎", "鎮", "槙"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "reality"
@@ -3842,7 +3863,7 @@
         "wk-radical": null
     },
     "般": {
-        "readings": ["はん"],
+        "readings": ["はん", "ばん"],
         "compounds": ["搬", "盤"],
         "non_compounds": [],
         "xrefs": [],
