@@ -318,12 +318,19 @@
         "readings": ["か", "こく"],
         "compounds": ["何", "河", "苛", "阿"],
         "non_compounds": [],
-        "xrefs": ["何"],
+        "xrefs": ["何", "哥"],
         "wk-radical": "lip-ring"
     },
     "何": {
         "readings": ["か"],
         "compounds": ["荷"],
+        "non_compounds": [],
+        "xrefs": ["可"],
+        "wk-radical": null
+    },
+    "哥": {
+        "readings": ["か"],
+        "compounds": ["歌"],
         "non_compounds": [],
         "xrefs": ["可"],
         "wk-radical": null
@@ -357,10 +364,17 @@
         "wk-radical": "temple"
     },
     "圭": {
-        "readings": ["けい"],
-        "compounds": ["街", "掛", "佳", "厓", "桂"],
+        "readings": ["けい", "かい"],
+        "compounds": ["街", "佳", "厓", "桂"],
         "non_compounds": [],
-        "xrefs": ["厓"],
+        "xrefs": ["厓", "卦"],
+        "wk-radical": null
+    },
+    "卦": {
+        "readings": ["かい", "か", "け"],
+        "compounds": ["掛"],
+        "non_compounds": [],
+        "xrefs": ["圭"],
         "wk-radical": null
     },
     "交": {
@@ -3569,8 +3583,8 @@
         "wk-radical": null
     },
     "丰": {
-        "readings": ["ほう"],
-        "compounds": ["邦", "奉"],
+        "readings": ["ほう", "ふう", "ふ"],
+        "compounds": ["邦", "奉", "夆", "封"],
         "non_compounds": [],
         "xrefs": ["奉", "夆"],
         "wk-radical": "signpost"

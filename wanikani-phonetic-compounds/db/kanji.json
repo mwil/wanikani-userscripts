@@ -1110,8 +1110,9 @@
     },
     "歌": {
         "readings": ["か"],
-        "type": "unknown",
-        "comment": "phonetic mark 哥"
+        "semantic": "欠",
+        "phonetic": "哥",
+        "type": "comp_phonetic"
     },
     "算": {
         "readings": ["さん"],
@@ -4106,7 +4107,8 @@
     },
     "豊": {
         "readings": ["ほう"],
-        "type": "hieroglyph"
+        "type": "hieroglyph",
+        "comment": "contains PC 丰, strange composition (jaw)"
     },
     "資": {
         "readings": ["し"],
@@ -6708,7 +6710,10 @@
     },
     "封": {
         "readings": ["ふう", "ほう"],
-        "type": "comp_indicative"
+        "semantic": "寸",
+        "phonetic": "丰",
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "峡": {
         "readings": ["きょう"],
@@ -7772,9 +7777,9 @@
         "type": "comp_phonetic"
     },
     "掛": {
-        "readings": ["かい", "けい"],
+        "readings": ["かい"],
         "semantic": "手",
-        "phonetic": "圭",
+        "phonetic": "卦",
         "type": "comp_phonetic"
     },
     "掘": {
@@ -13032,7 +13037,9 @@
         "readings": ["ほう", "ふ"],
         "meanings": ["resist"],
         "decomposition": ["夂", "丰"],
-        "type": "comp_indicative"
+        "semantic": "夂",
+        "phonetic": "丰",
+        "type": "comp_phonetic"
     },
     "亘": {
         "readings": ["こう", "せん"],
@@ -13219,7 +13226,7 @@
     "丰": {
         "readings": ["ほう"],
         "meanings": ["abundant", "lush", "bountiful", "plenty", "fat face", "luxurious growth of grass"],
-        "type": "unknown"
+        "type": "hieroglyph"
     },
     "并": {
         "readings": ["へい", "ひょう"],
