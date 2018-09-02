@@ -13413,6 +13413,13 @@
         "phonetic": "番",
         "type": "comp_phonetic"
     },
+    "卦": {
+        "readings": ["か", "かい", "け"],
+        "meanings": ["divination sign"],
+        "semantic": "卜",
+        "phonetic": "圭",
+        "type": "comp_phonetic"
+    },
 
 
 	"彬": {
