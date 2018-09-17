@@ -1449,7 +1449,8 @@
     },
     "始": {
         "readings": ["し"],
-        "type": "unknown"
+        "type": "unknown",
+        "comment": "TODO: phonetic 巳 (Shirakawa)"
     },
     "実": {
         "readings": ["じつ"],
@@ -3382,7 +3383,8 @@
         "readings": ["ふ", "ほ"],
         "semantic": "巾",
         "phonetic": "父",
-        "type": "comp_phonetic"
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "刊": {
         "readings": ["かん"],
@@ -13451,10 +13453,11 @@
 		"category": "jinmeiyou"
 	},
 	"悉": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
-		"category": "jinmeiyou"
+		"readings": ["しつ"],
+		"meanings": ["all", "entirely", "altogether"],
+		"type": "unknown",
+		"category": "jinmeiyou",
+		"comment": "PC 釆?"
 	},
 	"蕪": {
 		"readings": ["ぶ", "む"],
@@ -13520,9 +13523,9 @@
 		"obscure": true
 	},
 	"曳": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+		"readings": ["えい"],
+		"meanings": ["pull", "tug"],
+		"type": "hieroglyph",
 		"category": "jinmeiyou"
 	},
 	"槙": {
@@ -13535,10 +13538,11 @@
 		"variants": ["槇"]
 	},
 	"汐": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
-		"category": "jinmeiyou"
+		"readings": ["せき"],
+		"meanings": ["tide", "eventide", "salt water"],
+		"type": "unknown",
+		"category": "jinmeiyou",
+		"comment": "Uses PC 夕"
 	},
 	"暉": {
 		"readings": ["き"],
@@ -13549,9 +13553,11 @@
 		"category": "jinmeiyou"
 	},
 	"欽": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+        "readings": ["きん"],
+		"meanings": ["respect", "revere", "long for"],
+        "semantic": "欠",
+        "phonetic": "金",
+        "type": "comp_phonetic",
 		"category": "jinmeiyou"
 	},
 	"淵": {
@@ -13582,9 +13588,9 @@
 		"category": "jinmeiyou"
 	},
 	"焚": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+		"readings": ["ふん"],
+		"meanings": ["burn", "kindle", "build a fire"],
+		"type": "unknown",
 		"category": "jinmeiyou"
 	},
 	"牒": {
@@ -14572,9 +14578,9 @@
 		"category": "jinmeiyou"
 	},
 	"巳": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+		"readings": ["し"],
+		"meanings": ["snake sign"],
+		"type": "hieroglyph",
 		"category": "jinmeiyou"
 	},
 	"馳": {
@@ -14638,15 +14644,16 @@
 		"category": "jinmeiyou"
 	},
 	"丞": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+		"readings": ["しょう", "じょう"],
+		"meanings": ["help"],
+		"type": "comp_indicative",
 		"category": "jinmeiyou"
 	},
 	"榊": {
 		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+		"meanings": ["Sacred tree"],
+		"decomposition": ["木", "神"],
+		"type": "comp_indicative",
 		"category": "jinmeiyou"
 	},
 	"撒": {
@@ -14656,9 +14663,11 @@
 		"category": "jinmeiyou"
 	},
 	"佑": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+		"readings": ["ゆう", "う"],
+		"meanings": ["help", "assist"],
+        "semantic": "人",
+        "phonetic": "右",
+        "type": "comp_phonetic",
 		"category": "jinmeiyou"
 	},
 	"蠟": {
@@ -14668,16 +14677,18 @@
 		"category": "jinmeiyou"
 	},
 	"娃": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
-		"category": "jinmeiyou"
+		"readings": ["あい", "あ"],
+		"meanings": ["beautiful"],
+		"type": "unknown",
+		"category": "jinmeiyou",
+		"comment": "PC 洼 (fits), but looks like 圭"
 	},
 	"窪": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
-		"category": "jinmeiyou"
+		"readings": ["わ", "あ"],
+		"meanings": ["depression", "cave in", "sink"],
+		"type": "unknown",
+		"category": "jinmeiyou",
+		"comment": "PC 洼"
 	},
 	"淳": {
 		"readings": [],
@@ -16746,15 +16757,17 @@
 		"category": "jinmeiyou"
 	},
 	"瀕": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
-		"category": "jinmeiyou"
+		"readings": ["ひん"],
+		"meanings": ["shore", "brink", "verge"],
+		"type": "unknown",
+		"category": "jinmeiyou",
+		"comment": "PC 頻?"
 	},
 	"隈": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
-		"category": "jinmeiyou"
+		"readings": ["わい"],
+		"meanings": ["corner", "nook", "recess"],
+		"type": "unknown",
+		"category": "jinmeiyou",
+		"comment": "PC 畏; is this related to 隅?"
 	}
 }

@@ -513,8 +513,8 @@
     "才": {
         "readings": ["さい"],
         "compounds": ["材", "財", "在"],
-        "non_compounds": [],
-        "xrefs": [],
+        "non_compounds": ["存"],
+        "xrefs": ["𢦏"],
         "wk-radical": "genius"
     },
     "内": {
@@ -737,7 +737,7 @@
     "東": {
         "readings": ["とう"],
         "compounds": ["凍", "棟"],
-        "non_compounds": [],
+        "non_compounds": ["陳"],
         "xrefs": ["柬"],
         "wk-radical": "east"
     },
@@ -1204,7 +1204,7 @@
         "readings": ["さい"],
         "compounds": ["災", "栽", "裁", "載", "戴", "哉"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["才"],
         "wk-radical": null
     },
     "原": {
@@ -3717,7 +3717,7 @@
     },
     "金": {
         "readings": ["きん", "こん"],
-        "compounds": ["錦"],
+        "compounds": ["錦", "欽"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "gold"
