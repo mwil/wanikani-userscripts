@@ -11,32 +11,34 @@
     // #########################################################################
     const app_callback = function(mutations)
     {
-        console.log(mutations);
+        // console.log(mutations);
 
-        if (_.some(mutations, [`target.className`, `sc-kasBVs hzKNYV`]) ||  /* Last change on transition */
-            _.some(mutations, [`target.className`, `sc-laTMn eJYOxB`]))     /* Last change on the initial (first) question */
+        if (_.some(mutations, [`target.tagName`, `UL`]))
         {
             $(`.kw_blurred`).remove();
 
-            console.log("Specified mutation happened ...");
+            // console.log("Specified mutation happened ...");
 
-            /* first div containing a solution */
-            let $contain = $(`div.sc-dliRfk.bsdHG`)[0];
+            /* first div containing a solution in reviews */
+            let $contain = $(`div[lang=ja]:first`).parent();
 
-            /* this class contains exactly one character each, join ... */
-            let solution = $($contain, `div.sc-iqzUVk.hzQWwO`).text();
+            /* this contains (exactly one each) character in reviews, join */
+            /* Use last of type to jump over furigana */
+            let solution = $(`div[lang=ja] > div:last-of-type`, $contain).text();
 
             $(`<div>`)
                 .text(solution)
                 .addClass(`kw_blurred noselect`)
                 .appendTo(`h1`);
+
         }
     };
     // #########################################################################
 
-
     const app_obs = new MutationObserver(app_callback);
-    app_obs.observe(document.getElementById(`app`), {childList: true, subtree: true});
+
+    app_obs.observe(document.getElementById(`app`),
+                    {childList: true, subtree: true});
 }
 )();
 // #############################################################################
