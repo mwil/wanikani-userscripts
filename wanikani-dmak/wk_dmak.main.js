@@ -19,11 +19,30 @@ function WK_DMAK()
 
         const subject = this.wki.getSubject();
 
+        // #####################################################################
+        switch(curPage)
+        {
+            case this.wki.PageEnum.kanji:
+            case this.wki.PageEnum.vocabulary:
+                $(`section#information`).after(this.createDMAKSection(subject));
+                break;
+            case this.wki.PageEnum.reviews:
+                break;
+            default:
+                console.log(`Unknown page type ${curPage}, cannot inject info!`);
+                return;
+        }
+        // #####################################################################
+    };
+    // #########################################################################
+
+    // #########################################################################
+    WK_DMAK.prototype.createDMAKSection = function(subject)
+    {
         const $section =
             $(`<section>`)
                 .attr(`id`, `wk_dmak_section`)
-                .append(`<h2>Stroke Order</h2>`)
-                .insertAfter(`section#information`);
+                .append(`<h2>Stroke Order</h2>`);
 
         $(`<div>`)
             .attr(`id`, `draw-dmak`)
@@ -38,9 +57,10 @@ function WK_DMAK()
                 uri: `https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/`
             }
         );
+
+        return $section;
     };
     // #########################################################################
-
 
     // #########################################################################
     WK_DMAK.prototype.init = function()
