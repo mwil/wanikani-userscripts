@@ -5,6 +5,11 @@
 function WK_DMAK()
 {
     this.wki = new WKInteraction(GM_info.script.namespace);
+
+    this.settings = {
+        "debug": false,
+        "minify": false
+    };
 }
 
 // #############################################################################
@@ -24,47 +29,30 @@ function WK_DMAK()
         {
             case this.wki.PageEnum.kanji:
             case this.wki.PageEnum.vocabulary:
-                $(`section#information`).after(this.createDMAKSection(subject));
+                $(`section#information`)
+                    .after(this.createDMAKSection(subject));
                 break;
             case this.wki.PageEnum.reviews:
+                $(`section#item-info-meaning-mnemonic`)
+                    .before(this.createDMAKSection(subject));
                 break;
             default:
                 console.log(`Unknown page type ${curPage}, cannot inject info!`);
                 return;
         }
         // #####################################################################
-    };
-    // #########################################################################
-
-    // #########################################################################
-    WK_DMAK.prototype.createDMAKSection = function(subject)
-    {
-        const $section =
-            $(`<section>`)
-                .attr(`id`, `wk_dmak_section`)
-                .append(`<h2>Stroke Order</h2>`);
-
-        $(`<div>`)
-            .attr(`id`, `draw-dmak`)
-            .appendTo($section);
-
-        const dmak = new Dmak(
-            subject.kan||subject.voc,
-            {
-                element: `draw-dmak`,
-                height: 240,
-                width: 240,
-                uri: `https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/`
-            }
-        );
-
-        return $section;
+        $(`#wk_dmak_head_visibility`)
+            .on(`click`, this.toggleMainFold.bind(this));
+        //
     };
     // #########################################################################
 
     // #########################################################################
     WK_DMAK.prototype.init = function()
     {
+        this.settings.debug     = GM_getValue(`debug`)     || false;
+        this.settings.minify    = GM_getValue(`minify`)    || false;
+
         this.wki.init();
 
         // #####################################################################
@@ -79,6 +67,19 @@ function WK_DMAK()
     // #########################################################################
     WK_DMAK.prototype.run = function()
     {
+        // Add scripts with guarding namespace (selecting class)
+        GM_addStyle(GM_getResourceText(`bootstrapcss`)
+                        .replace(/wk_namespace/g, GM_info.script.namespace));
+        // #####################################################################
+
+        // Add parts of bootstrap for the modal pages (settings, etc.)
+        if ($.fn.modal === undefined)
+            $(`<script></script>`)
+                .attr(`type`, `text/javascript`)
+                .text(GM_getResourceText(`bootstrapjs`))
+                .appendTo(`head`);
+        // #####################################################################
+
         this.wki.startInteraction.call(this.wki);
     };
     // #########################################################################

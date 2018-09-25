@@ -15,10 +15,17 @@
 // @require     https://raw.githubusercontent.com/DmitryBaranovskiy/raphael/master/raphael.min.js
 // @require     https://raw.githubusercontent.com/mbilbille/dmak/master/dist/dmak.min.js
 //
+// @resource    bootstrapcss https://raw.githubusercontent.com/mwil/wanikani-userscripts/7caebf537b4d02084d85f1a19d26b50c185d8d05/styles/bootstrap/css/bootstrap.crop.css
+// @resource    bootstrapjs  https://raw.githubusercontent.com/mwil/wanikani-userscripts/8d4694c53273fbac4e6b888f4ab95a3fa16d31c5/styles/bootstrap/js/bootstrap.js
+//
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/3c6ea0466951a1e58b75b2cb7a945ed7716082f7/utility/wk_interaction.js
 //
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-dmak/wk_dmak.html.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-dmak/wk_dmak.modal.js
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-dmak/wk_dmak.main.js
 //
+// @grant       GM_getValue
+// @grant       GM_setValue
 // @grant       GM_addStyle
 // @grant       GM_getResourceText
 //
