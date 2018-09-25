@@ -57,15 +57,17 @@
                 .attr(`id`, `wk_dmak_draw`)
                 .appendTo($container);
 
-        $(`<span>`)
-            .attr(`id`, `wk_dmak_control_btn_group`)
-            .addClass(`btn-group`)
-            .append(`<a class="btn" id="dmak_r"><i class="icon-fast-backward"></i></a>`)
-            .append(`<a class="btn" id="dmak_p"><i class="icon-step-backward"></i></a>`)
-            .append(`<a class="btn" id="dmak_s"><i class="icon-pause"></i></a>`)
-            .append(`<a class="btn" id="dmak_g"><i class="icon-play"></i></a>`)
-            .append(`<a class="btn" id="dmak_n"><i class="icon-step-forward"></i></a>`)
-            .prependTo($btn_row);
+        let rendering_now = true;
+        let rendering_finished = false;
+
+        const find_end_callback = function()
+        {
+            if (dmak.pointer === (dmak.strokes.length-1))
+            {
+                rendering_now = false;
+                rendering_finished = true;
+            }
+        };
 
         const dmak = new Dmak(
             subject.kan||subject.voc,
@@ -74,26 +76,28 @@
                 autoplay: true,
                 height: 120,
                 width: 120,
-                uri: `https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/`
+                uri: `https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/`,
+                drew: find_end_callback
             }
         );
 
-        $(document).on(`click`, `#dmak_r`, ()=>{dmak.erase();});
-        $(document).on(`click`, `#dmak_p`, ()=>{dmak.eraseLastStrokes(1);});
-        $(document).on(`click`, `#dmak_s`, ()=>{dmak.pause();});
-        $(document).on(`click`, `#dmak_g`, ()=>{dmak.render();});
-        $(document).on(`click`, `#dmak_n`, ()=>{dmak.renderNextStrokes(1);});
-
-        let rendering = false;
-
         const dmak_toggle = function()
         {
-            if (rendering)
-                dmak.pause();
-            else
-                dmak.render();
+            if (rendering_finished)
+            {
+                dmak.erase();
+                rendering_now = false;
+                rendering_finished = false;
 
-            rendering = !rendering;
+                return;
+            }
+            else
+                if (rendering_now)
+                    dmak.pause();
+                else
+                    dmak.render();
+
+            rendering_now = !rendering_now;
         };
 
         $(document).on(`click`, `#wk_dmak_draw`, dmak_toggle);

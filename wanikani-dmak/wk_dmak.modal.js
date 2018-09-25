@@ -1,5 +1,26 @@
 /* jshint esversion: 6 */
 
+const BIG_DMAK_OPTIONS = {
+    element: `wk_dmak_big_draw`,
+    autoplay: false,
+    height: 360,
+    width: 360,
+    uri: `https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/`,
+
+    stroke: {
+        order: {
+            visible: true,
+            attr: {
+                "font-size": 6
+            }
+        },
+        attr: {
+            "stroke-linecap": `butt`,
+            "stroke-linejoin": `bevel`
+        }
+    }
+};
+
 (function() {
     "use strict";
 
@@ -23,6 +44,7 @@
         const $draw_modal = $(`<div></div>`)
                             .attr(`id`, `wk_dmak_modal_draw`)
                             .attr(`role`, `dialog`)
+                            .css(`white-space`,  `nowrap`)
                             .addClass(`${GM_info.script.namespace} modal fade`)
                             .appendTo(`body`)
                             .hide();
@@ -64,8 +86,8 @@
                         <p>Userscript version: ${GM_info.script.version}</p>
                         <p>Last modified: ${new Date(GM_info.script.lastModified).toTimeString()}</p>
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <div class="modal-footer text-center">
+                        <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>`
@@ -81,7 +103,7 @@
                     <div id="wk_dmak_modal_draw_main" class="modal-body text-center">
                         <div id="wk_dmak_big_draw"></div>
                     </div>
-                    <div class="modal-footer">
+                    <div id="wk_dmak_modal_draw_footer" class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
@@ -96,19 +118,9 @@
             .append(`<a class="btn" id="dmak_big_s"><i class="icon-pause"></i></a>`)
             .append(`<a class="btn" id="dmak_big_g"><i class="icon-play"></i></a>`)
             .append(`<a class="btn" id="dmak_big_n"><i class="icon-step-forward"></i></a>`)
-            .appendTo(`#wk_dmak_modal_draw_main`);
+            .prependTo(`#wk_dmak_modal_draw_footer`);
 
-
-        const big_dmak = new Dmak(
-            subject.kan||subject.voc,
-            {
-                element: `wk_dmak_big_draw`,
-                autoplay: false,
-                height: 360,
-                width: 360,
-                uri: `https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/`
-            }
-        );
+        const big_dmak = new Dmak(subject.kan||subject.voc, BIG_DMAK_OPTIONS);
 
         $(document).on(`click`, `#dmak_big_r`, ()=>{big_dmak.erase();});
         $(document).on(`click`, `#dmak_big_p`, ()=>{big_dmak.eraseLastStrokes(1);});

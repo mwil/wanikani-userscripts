@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Wanikani Draw Me A Kanji
-// @version     0.1.0
+// @version     0.5.0
 // @author      acm
 // @description Adds a stroke animation to WK
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
