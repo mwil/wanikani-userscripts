@@ -60,8 +60,6 @@ const BIG_DMAK_OPTIONS = {
                         <p>
                             <div class="btn-group-lg text-center">
                                 <a class="btn" id="wk_dmak_settings_btn_minify"><i class="icon-eye-open"></i> Toggle Mini Mode</a>
-                                <a class="btn" id="wk_dmak_settings_btn_fullinfo"><i class="icon-collapse"></i> Toggle Full Info Mode</a>
-                                <a class="btn" id="wk_dmak_settings_btn_fuzzykana"><i class="icon-circle-blank"></i> Toggle Dakuten Mode</a>
                             </div>
                         </p>
                     </div>
@@ -86,8 +84,8 @@ const BIG_DMAK_OPTIONS = {
                         <p>Userscript version: ${GM_info.script.version}</p>
                         <p>Last modified: ${new Date(GM_info.script.lastModified).toTimeString()}</p>
                     </div>
-                    <div class="modal-footer text-center">
-                        <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>`
@@ -103,8 +101,8 @@ const BIG_DMAK_OPTIONS = {
                     <div id="wk_dmak_modal_draw_main" class="modal-body text-center">
                         <div id="wk_dmak_big_draw"></div>
                     </div>
-                    <div id="wk_dmak_modal_draw_footer" class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <div id="wk_dmak_modal_draw_footer" class="modal-footer text-center">
+                        <button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>`
@@ -120,13 +118,13 @@ const BIG_DMAK_OPTIONS = {
             .append(`<a class="btn" id="dmak_big_n"><i class="icon-step-forward"></i></a>`)
             .prependTo(`#wk_dmak_modal_draw_footer`);
 
-        const big_dmak = new Dmak(subject.kan||subject.voc, BIG_DMAK_OPTIONS);
+        this.big_dmak = new Dmak(subject.kan||subject.voc, BIG_DMAK_OPTIONS);
 
-        $(document).on(`click`, `#dmak_big_r`, ()=>{big_dmak.erase();});
-        $(document).on(`click`, `#dmak_big_p`, ()=>{big_dmak.eraseLastStrokes(1);});
-        $(document).on(`click`, `#dmak_big_s`, ()=>{big_dmak.pause();});
-        $(document).on(`click`, `#dmak_big_g`, ()=>{big_dmak.render();});
-        $(document).on(`click`, `#dmak_big_n`, ()=>{big_dmak.renderNextStrokes(1);});
+        $(document).on(`click`, `#dmak_big_r`, ()=>{this.big_dmak.erase();});
+        $(document).on(`click`, `#dmak_big_p`, ()=>{this.big_dmak.eraseLastStrokes(1);});
+        $(document).on(`click`, `#dmak_big_s`, ()=>{this.big_dmak.pause();});
+        $(document).on(`click`, `#dmak_big_g`, ()=>{this.big_dmak.render();});
+        $(document).on(`click`, `#dmak_big_n`, ()=>{this.big_dmak.renderNextStrokes(1);});
 
         if (this.settings.minify)
         {

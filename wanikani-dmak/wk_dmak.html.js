@@ -101,6 +101,7 @@
         };
 
         $(document).on(`click`, `#wk_dmak_draw`, dmak_toggle);
+        $(document).on(`click`, `#wk_dmak_head_magnify`, ()=>{this.big_dmak.render();});
 
         if (!$(`#wk_dmak_modal_settings`).length)
             this.injectModals(subject);

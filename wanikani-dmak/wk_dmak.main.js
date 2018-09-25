@@ -40,6 +40,13 @@ function WK_DMAK()
                 console.log(`Unknown page type ${curPage}, cannot inject info!`);
                 return;
         }
+
+        if (this.settings.minify)
+        {
+            $(`#wk_dmak_main_fold`).hide();
+            $(`#wk_dmak_head_visibility i`).attr(`class`, `icon-eye-close`);
+        }
+
         // #####################################################################
         $(`#wk_dmak_head_visibility`)
             .on(`click`, this.toggleMainFold.bind(this));
