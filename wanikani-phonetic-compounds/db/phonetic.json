@@ -316,7 +316,7 @@
     },
     "可": {
         "readings": ["か", "こく"],
-        "compounds": ["何", "河", "苛", "阿"],
+        "compounds": ["何", "河", "苛", "阿", "哥"],
         "non_compounds": [],
         "xrefs": ["何", "哥"],
         "wk-radical": "lip-ring"
@@ -4092,5 +4092,12 @@
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "gambler"
+    },
+    "右": {
+        "readings": ["う", "ゆう"],
+        "compounds": ["佑"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": "right"
     }
 }

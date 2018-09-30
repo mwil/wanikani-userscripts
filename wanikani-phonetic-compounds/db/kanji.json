@@ -7575,7 +7575,7 @@
     "陣": {
         "readings": ["じん", "ちん"],
         "type": "unknown",
-        "comment": "modified version of 陳"
+        "comment": "modified version of 陳, rather 敶?"
     },
     "隻": {
         "readings": ["せき"],
@@ -13421,6 +13421,14 @@
         "semantic": "卜",
         "phonetic": "圭",
         "type": "comp_phonetic"
+    },
+    "哥": {
+        "readings": ["か"],
+        "meanings": ["big brother"],
+        "semantic": "可",
+        "phonetic": "可",
+        "type": "comp_phonetic",
+		"category": "gaiji"
     },
 
 
