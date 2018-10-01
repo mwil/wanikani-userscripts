@@ -28,7 +28,7 @@
                            .appendTo($keisei_li)
                            .append(`<li class="nav-header">Lists</li>`)
                            .append(`<li id="keisei_nav_btn_phonetics">
-                                        <a href="#">Tone Marks</a>
+                                        <a href="#">Phonetic Marks</a>
                                     </li>`)
                            .append(`<li id="keisei_nav_btn_compounds">
                                         <a href="#">Compounds</a>
@@ -74,7 +74,7 @@
     {
         const $page = parent;
 
-        $(`<h1>List Of Tone Marks</h1>`)
+        $(`<h1>List Of Phonetic Marks</h1>`)
             .appendTo($page);
 
         const $outer = $(`<div></div>`)
@@ -87,7 +87,7 @@
                                  .appendTo($outer);
 
                 const $header = $(`<header></header>`)
-                                .append(`<h2>Tone Marks with ${count} Compounds</h2>`)
+                                .append(`<h2>Phonetic Marks with ${count} Compounds</h2>`)
                                 .appendTo($section);
 
                 const $ul = $(`<ul></ul>`)

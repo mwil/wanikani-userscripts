@@ -152,8 +152,8 @@
 
         $(`#keisei_stats`).html(
            `<p>${proc_kanji_cnt} kanji covered out of ${all_kanji_cnt} in database</p>
-            <p>${compound_cnt} phonetic compounds using ${phonetic_cnt} tone marks</p>
-            <p>${wk_radicals_cnt} WK radicals are also considered tone marks</p>`
+            <p>${compound_cnt} phonetic compounds using ${phonetic_cnt} phonetic marks</p>
+            <p>${wk_radicals_cnt} WK radicals are also considered phonetic marks</p>`
         );
     };
     // #########################################################################

@@ -267,7 +267,15 @@ function KeiseiDB()
             if (this.isKanjiInWK(kanji))
                 result = _.map(this.wk_kanji_db[kanji].meaning.split(`,`), _.trim);
             else
-                result = this.kanji_db[kanji].meanings;
+            {
+                if (this.kanji_db[kanji] === undefined)
+                {
+                    console.log(`The kanji ${kanji} is not found in the DB!`);
+                    result = [];
+                }
+                else
+                    result = this.kanji_db[kanji].meanings;
+            }
 
             return result.map(_.startCase);
         },
