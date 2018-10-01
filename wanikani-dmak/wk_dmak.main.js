@@ -32,9 +32,21 @@ function WK_DMAK()
                 $(`section#information`)
                     .after(this.createDMAKSection(subject));
                 break;
+
             case this.wki.PageEnum.reviews:
+            case this.wki.PageEnum.lessons_reviews:
                 $(`section#item-info-meaning-mnemonic`)
                     .before(this.createDMAKSection(subject));
+                break;
+
+            case this.wki.PageEnum.lessons:
+                if ($(`div#main-info`).hasClass(`kanji`))
+                    $(`div#supplement-kan-breakdown div.col1`)
+                        .prepend(this.createDMAKSection(subject));
+                else if ($(`div#main-info`).hasClass(`vocabulary`))
+                    $(`div#supplement-voc-breakdown div.col1`)
+                        .prepend(this.createDMAKSection(subject));
+
                 break;
             default:
                 console.log(`Unknown page type ${curPage}, cannot inject info!`);

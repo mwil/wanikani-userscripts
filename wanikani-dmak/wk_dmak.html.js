@@ -1,6 +1,50 @@
 /* jshint esversion: 6 */
 /* jshint scripturl:true */
 
+const SVG_REPO_URI = {
+    KanjiVG: {uri: `https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/`, uriEncHex: true},
+    // animCJK: {uri: `https://raw.githubusercontent.com/parsimonhi/animCJK/master/svgsJa/`, uriEncHex: false},
+    // makemeahanzi: {uri: `https://raw.githubusercontent.com/skishore/makemeahanzi/master/svgs/`, uriEncHex: false}
+};
+
+// #############################################################################
+const DMAK_OPTIONS = {
+    element: `wk_dmak_draw`,
+    autoplay: true,
+    height: 120,
+    width: 120,
+    step: 0.015,
+
+    uri: SVG_REPO_URI.KanjiVG.uri,
+    // uriEncHex: SVG_REPO_URI.KanjiVG.uriEncHex,
+};
+// #############################################################################
+
+// #############################################################################
+const BIG_DMAK_OPTIONS = {
+    element: `wk_dmak_big_draw`,
+    autoplay: false,
+    height: 360,
+    width: 360,
+
+    stroke: {
+        order: {
+            visible: true,
+            attr: {
+                "font-size": 6
+            }
+        },
+        attr: {
+            "stroke-linecap": `butt`,
+            "stroke-linejoin": `bevel`
+        }
+    },
+
+    uri: SVG_REPO_URI.KanjiVG.uri,
+    // uriEncHex: SVG_REPO_URI.KanjiVG.uriEncHex
+};
+// #############################################################################
+
 // #############################################################################
 (function()
 {
@@ -60,6 +104,7 @@
         let rendering_now = true;
         let rendering_finished = false;
 
+
         const find_end_callback = function()
         {
             if (dmak.pointer === (dmak.strokes.length-1))
@@ -71,14 +116,7 @@
 
         const dmak = new Dmak(
             subject.kan||subject.voc,
-            {
-                element: `wk_dmak_draw`,
-                autoplay: true,
-                height: 120,
-                width: 120,
-                uri: `https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/`,
-                drew: find_end_callback
-            }
+            Object.assign({drew: find_end_callback}, DMAK_OPTIONS)
         );
 
         const dmak_toggle = function()
@@ -105,6 +143,11 @@
 
         if (!$(`#wk_dmak_modal_settings`).length)
             this.injectModals(subject);
+        else
+            $(`#wk_dmak_big_draw`).empty();
+
+        // Put the current kanji also on the modal drawing area!
+        this.big_dmak = new Dmak(subject.kan||subject.voc, BIG_DMAK_OPTIONS);
 
         return $section;
     };

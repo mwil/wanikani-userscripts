@@ -1,25 +1,5 @@
 /* jshint esversion: 6 */
-
-const BIG_DMAK_OPTIONS = {
-    element: `wk_dmak_big_draw`,
-    autoplay: false,
-    height: 360,
-    width: 360,
-    uri: `https://raw.githubusercontent.com/KanjiVG/kanjivg/master/kanji/`,
-
-    stroke: {
-        order: {
-            visible: true,
-            attr: {
-                "font-size": 6
-            }
-        },
-        attr: {
-            "stroke-linecap": `butt`,
-            "stroke-linejoin": `bevel`
-        }
-    }
-};
+/* jshint scripturl:true */
 
 (function() {
     "use strict";
@@ -54,7 +34,7 @@ const BIG_DMAK_OPTIONS = {
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h3 class="modal-title">Settings &mdash; DMAK (Draw Me A Kanji) Integration</h3>
+                        <h3 class="modal-title">Settings &mdash; Hitsuji Stroke Order</h3>
                     </div>
                     <div class="modal-body">
                         <p>
@@ -75,14 +55,16 @@ const BIG_DMAK_OPTIONS = {
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h3 class="modal-title">About &mdash; DMAK (Draw Me A Kanji) Integration</h3>
+                        <h3 class="modal-title">About &mdash; Hitsuji Stroke Order</h3>
                     </div>
                     <div class="modal-body">
                         <p>Use DMAK to render kanji stroke animations.</p>
-                        <p>https://github.com/mbilbille/dmak</p>
                         <h3>Script Information</h3>
                         <p>Userscript version: ${GM_info.script.version}</p>
                         <p>Last modified: ${new Date(GM_info.script.lastModified).toTimeString()}</p>
+                        <h3>Stroke Order Sources</h3>
+                        <p>https://github.com/mbilbille/dmak</p>
+                        <p>https://github.com/KanjiVG/kanjivg</p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -96,7 +78,7 @@ const BIG_DMAK_OPTIONS = {
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h3 class="modal-title">Kanji Highlight</h3>
+                        <h3 class="modal-title">Stroke Order Focus</h3>
                     </div>
                     <div id="wk_dmak_modal_draw_main" class="modal-body text-center">
                         <div id="wk_dmak_big_draw"></div>
@@ -117,8 +99,6 @@ const BIG_DMAK_OPTIONS = {
             .append(`<a class="btn" id="dmak_big_g"><i class="icon-play"></i></a>`)
             .append(`<a class="btn" id="dmak_big_n"><i class="icon-step-forward"></i></a>`)
             .prependTo(`#wk_dmak_modal_draw_footer`);
-
-        this.big_dmak = new Dmak(subject.kan||subject.voc, BIG_DMAK_OPTIONS);
 
         $(document).on(`click`, `#dmak_big_r`, ()=>{this.big_dmak.erase();});
         $(document).on(`click`, `#dmak_big_p`, ()=>{this.big_dmak.eraseLastStrokes(1);});
