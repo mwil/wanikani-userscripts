@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name        Wanikani Draw Me A Kanji
-// @version     0.8.0
+// @name        Wanikani Hitsuji Stroke Order
+// @version     0.9.0
 // @author      acm
-// @description Adds a stroke animation to WK
+// @description Adds stroke animations using the DMAK library to WK
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
 // @namespace   wk_dmak
 //
@@ -20,9 +20,9 @@
 //
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/3c6ea0466951a1e58b75b2cb7a945ed7716082f7/utility/wk_interaction.js
 //
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-dmak/wk_dmak.html.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-dmak/wk_dmak.modal.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-dmak/wk_dmak.main.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/c01e4fd0bc4477c8f3c295ed2b0756837b056e8b/wanikani-dmak/wk_dmak.html.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/c01e4fd0bc4477c8f3c295ed2b0756837b056e8b/wanikani-dmak/wk_dmak.modal.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/c01e4fd0bc4477c8f3c295ed2b0756837b056e8b/wanikani-dmak/wk_dmak.main.js
 //
 // @grant       GM_getValue
 // @grant       GM_setValue
