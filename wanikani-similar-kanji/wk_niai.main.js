@@ -4,9 +4,6 @@
 // #############################################################################
 function WK_Niai()
 {
-    this.ndb = new NiaiDB();
-    this.wki = new WKInteraction(GM_info.script.namespace);
-
     this.settings = {
         "debug": false,
         "minify": false,
@@ -173,7 +170,9 @@ function WK_Niai()
                     "href":      this.ndb.isKanjiInWK(sim_kanji) ?
                                     `/kanji/${sim_kanji}` :
                                     `https://jisho.org/search/${sim_kanji}%20%23kanji`,
-                    "kanji_id":  kanji === sim_kanji ? `selfkanji-1` : `kanji-${i}`
+                    "kanji_id":  kanji === sim_kanji ?
+                                        `selfkanji-${sim_kanji}` :
+                                        `kanji-${sim_kanji}`
                 };
 
                 char_list.push(li_template);
@@ -182,6 +181,9 @@ function WK_Niai()
         );
 
         $(`#niai_similar_grid`).html(char_list.map(this.gen_item_chargrid).join(``));
+
+        if (window.wkof)
+            this.wkof_fix_info(similar_list);
 
         if (!$(`#niai_badges_btn i`).hasClass(`icon-remove-circle`))
         {
@@ -208,6 +210,42 @@ function WK_Niai()
     };
     // #########################################################################
 
+    // Use the WK Open Framework to fix the offine DB of Niai
+    // #########################################################################
+    WK_Niai.prototype.wkof_fix_info = function(similar_list)
+    {
+        const wkof_config = {
+            wk_items: {
+                options: {assignments: true},
+                filters: {
+                    srs: {value: 'lock', invert: true},
+                    item_type: 'kan'
+                }
+            }
+        };
+
+        const _fix_info = function(items)
+        {
+            const type_items = wkof.ItemData.get_index(items, `slug`);
+
+            similar_list.forEach((sim_kanji) => {
+                if (sim_kanji in type_items)
+                {
+                    $(`li[id$="${sim_kanji}"]`).removeClass(`locked`);
+                }
+                else
+                    $(`li[id$="${sim_kanji}"]`).addClass(`locked`);
+            });
+        };
+
+        wkof.ready(`ItemData`)
+            .then(()=>
+                    wkof.ItemData.get_items(wkof_config)
+                        .then(_fix_info)
+            );
+    };
+    // #########################################################################
+
     // #########################################################################
     WK_Niai.prototype.init = function()
     {
@@ -223,8 +261,10 @@ function WK_Niai()
 
         this.override_db = JSON.parse(GM_getValue(`override_db`) || `{}`);
 
-        if (this.settings.user_level === 99 &&
-            this.wki.detectCurPage() === this.wki.PageEnum.kanji)
+        this.ndb = new NiaiDB();
+        this.wki = new WKInteraction(GM_info.script.namespace);
+
+        if ($(`li.dropdown.levels`).length)
         {
             this.settings.user_level = parseInt($(`li.levels a span`).text());
             GM_setValue(`user_level`, this.settings.user_level);
@@ -282,20 +322,12 @@ function WK_Niai()
 )();
 // #############################################################################
 
-// Hook into App Store
-// try {
-//     $('.app-store-menu-item').remove();
-//     $('<li class="app-store-menu-item"><a href="https://community.wanikani.com/t/there-are-so-many-user-scripts-now-that-discovering-them-is-hard/20709">App Store</a></li>').insertBefore($('.navbar .dropdown-menu .nav-header:contains("Account")'));
-
-//     window.appStoreRegistry = window.appStoreRegistry || {};
-//     window.appStoreRegistry[GM_info.script.uuid] = GM_info;
-
-//     localStorage.appStoreRegistry = JSON.stringify(appStoreRegistry);
-// } catch (e) {}
-
 // #############################################################################
 // #############################################################################
-var wk_niai = new WK_Niai();
+const wk_niai = new WK_Niai();
+
+if (window.wkof)
+    wkof.include(`ItemData`);
 
 wk_niai.init();
 wk_niai.run();
