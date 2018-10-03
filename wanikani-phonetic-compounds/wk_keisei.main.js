@@ -4,9 +4,6 @@
 // #############################################################################
 function WK_Keisei()
 {
-    this.kdb = new KeiseiDB();
-    this.wki = new WKInteraction(GM_info.script.namespace);
-
     this.currentSubject = null;
 
     this.settings = {
@@ -18,7 +15,7 @@ function WK_Keisei()
         "categories": {
             "jouyou": true,
             "jinmeiyou": true,
-            "gaiji": false
+            "gaiji": true
         }
     };
 }
@@ -283,10 +280,14 @@ function WK_Keisei()
             {
                 let badges = [`item-badge`, `recently-unlocked-badge`];
 
+                const kdata = this.kdb.kdata(kanji);
+
                 if (!kanji)
                     return;
 
                 // TODO: checking for kanji categories (jouyou, jinmeiyou, etc.) goes here!
+                if (`category` in kdata && !this.settings.categories[kdata[`category`]])
+                    return;
 
                 let common_readings_deRen = new Set(
                     _.intersection(
@@ -426,6 +427,9 @@ function WK_Keisei()
 
         $td_head.html(head_list.map(this.gen_item_chargrid).join(``));
 
+        // TODO fix CSS, temporary hack ...
+        $(`.keisei_chargrid_header li`).css({width: "112px"});
+
         const $td_comp = $(`<td></td>`)
                          .addClass(`keisei_chargrid_compounds`)
                          .appendTo($tr);
@@ -530,11 +534,16 @@ function WK_Keisei()
         GM_addStyle(GM_getResourceText(`keisei_style`)
                         .replace(/wk_namespace/g, GM_info.script.namespace));
 
-        this.settings.debug     = GM_getValue(`debug`)     || false;
-        this.settings.minify    = GM_getValue(`minify`)    || false;
-        this.settings.fullinfo  = GM_getValue(`fullinfo`)  || false;
-        this.settings.fuzzykana = GM_getValue(`fuzzykana`) || false;
-        this.settings.withbeta  = GM_getValue(`withbeta`)  || false;
+        // Recover the settings from GM value storage
+        this.settings.debug       = GM_getValue(`debug`)       || false;
+        this.settings.minify      = GM_getValue(`minify`)      || false;
+        this.settings.fullinfo    = GM_getValue(`fullinfo`)    || false;
+        this.settings.fuzzykana   = GM_getValue(`fuzzykana`)   || false;
+        this.settings.withbeta    = GM_getValue(`withbeta`)    || false;
+
+        this.settings.categories.jouyou    = GM_getValue(`jouyou`)    || true;
+        this.settings.categories.jinmeiyou = GM_getValue(`jinmeiyou`) || true;
+        this.settings.categories.gaiji     = GM_getValue(`gaiji`)     || true;
 
         this.override_db = JSON.parse(GM_getValue(`override_db`) || `{}`);
 
@@ -543,6 +552,11 @@ function WK_Keisei()
                 GM_log(`${GM_info.script.namespace}:`, msg, ...args);
             } :
             function() {};
+
+        this.log(`The active keisei settings are`, this.settings);
+
+        this.kdb = new KeiseiDB();
+        this.wki = new WKInteraction(GM_info.script.namespace);
 
         this.kdb.init();
         this.wki.init();

@@ -99,12 +99,12 @@
 
 .wk_namespace .keisei_chargrid_header {
     vertical-align: top;
-    width: 358px;
+    width: 340px;
 }
 
 .wk_namespace .keisei_chargrid_compounds {
     vertical-align: top;
-    padding-left: 1em;
+    padding-left: 8px;
 }
 
 @media (max-width: 767px)

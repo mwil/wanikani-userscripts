@@ -44,6 +44,16 @@
                         </p>
                         <p>
                             <div class="btn-group-lg text-center">
+                                <a class="btn" id="keisei_settings_btn_jouyou" data-category="jouyou">
+                                    <i class="icon-jpy"></i> Show Jōyō Kanji</a>
+                                <a class="btn" id="keisei_settings_btn_jinmeiyou" data-category="jinmeiyou">
+                                    <i class="icon-cny"></i> Show Jinmeiyō Kanji</a>
+                                <a class="btn" id="keisei_settings_btn_gaiji" data-category="gaiji">
+                                    <i class="icon-inr"></i> Show Unlisted Kanji</a>
+                            </div>
+                        </p>
+                        <p>
+                            <div class="btn-group-lg text-center">
                                 <a class="btn btn-large" id="keisei_settings_btn_withbeta"><i class="icon-thumbs-up-alt"></i> Enable Beta Features</a>
                             </div>
                         </p>
@@ -79,36 +89,32 @@
 
         this.fillStats();
 
-        if (this.settings.debug)
-            $(`#keisei_settings_btn_debug`).addClass(`active`);
+        _.forEach(this.settings, (is_set, setting)=>
+        {
+            if (is_set)
+                $(`#keisei_settings_btn_${setting}`).addClass(`active`);
+        });
+
+        _.forEach(this.settings.categories, (is_set, setting)=>
+        {
+            if (is_set)
+                $(`#keisei_settings_btn_${setting}`).addClass(`active`);
+        });
 
         if (this.settings.minify)
-        {
-            $(`#keisei_settings_btn_minify`).addClass(`active`);
-            $(`#keisei_settings_btn_minify i`).removeClass(`icon-eye-open`);
-            $(`#keisei_settings_btn_minify i`).addClass(`icon-eye-close`);
-        }
+            $(`#keisei_settings_btn_minify i`)
+                .removeClass(`icon-eye-open`)
+                .addClass(`icon-eye-close`);
 
         if (this.settings.fullinfo)
-        {
-            $(`#keisei_settings_btn_fullinfo`).addClass(`active`);
-            $(`#keisei_settings_btn_fullinfo i`).removeClass(`icon-collapse`);
-            $(`#keisei_settings_btn_fullinfo i`).addClass(`icon-collapse-top`);
-        }
+            $(`#keisei_settings_btn_fullinfo i`)
+                .removeClass(`icon-collapse`)
+                .addClass(`icon-collapse-top`);
 
         if (this.settings.fuzzykana)
-        {
-            $(`#keisei_settings_btn_fuzzykana`).addClass(`active`);
-            $(`#keisei_settings_btn_fuzzykana i`).removeClass(`icon-circle-blank`);
-            $(`#keisei_settings_btn_fuzzykana i`).addClass(`icon-quote-right`);
-        }
-
-        if (this.settings.withbeta)
-        {
-            $(`#keisei_settings_btn_withbeta`).addClass(`active`);
-            // $(`#keisei_settings_btn_withbeta i`).removeClass(`icon-circle-blank`);
-            // $(`#keisei_settings_btn_withbeta i`).addClass(`icon-quote-right`);
-        }
+            $(`#keisei_settings_btn_fuzzykana i`)
+                .removeClass(`icon-circle-blank`)
+                .addClass(`icon-quote-right`);
 
         $(`#keisei_settings_btn_debug`).on(`click`, this.toggleDebug.bind(this));
         $(`#keisei_settings_btn_minify`).on(`click`, this.toggleMinify.bind(this));
@@ -117,6 +123,11 @@
         $(`#keisei_settings_btn_withbeta`).on(`click`, this.toggleWithBeta.bind(this));
 
         $(`#keisei_settings_btn_clearDB`).on(`click`, this.toggleClearDB.bind(this));
+
+        [`jouyou`, `jinmeiyou`, `gaiji`]
+        .forEach((category)=>
+            $(`#keisei_settings_btn_${category}`)
+                .on(`click`, this.toggleCategory.bind(this)));
     };
     // #########################################################################
 
@@ -224,6 +235,23 @@
         this.populateCharGrid(`#keisei_phonetic_grid`, this.currentSubject);
 
         GM_setValue(`fuzzykana`, this.settings.fuzzykana);
+
+        return false;
+    };
+    // #########################################################################
+
+    // #########################################################################
+    WK_Keisei.prototype.toggleCategory = function(event)
+    {
+        const category = event.target.dataset.category;
+
+        this.settings.categories[category] = !this.settings.categories[category];
+
+        $(`#keisei_settings_btn_${category}`).toggleClass(`active`);
+
+        this.populateCharGrid(`#keisei_phonetic_grid`, this.currentSubject);
+
+        GM_setValue(category, this.settings.categories[category]);
 
         return false;
     };

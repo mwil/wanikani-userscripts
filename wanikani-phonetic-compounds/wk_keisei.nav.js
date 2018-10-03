@@ -59,6 +59,7 @@
                         .addClass(`${GM_info.script.namespace} container`);
 
         $(`.container:eq(2)`).hide().after($top);
+        $(`#progress`).hide();
 
         const content = this.kdb.getPhoneticsByCompCount();
 
@@ -150,6 +151,7 @@
                         .addClass(`${GM_info.script.namespace} container`);
 
         $(`.container:eq(2)`).hide().after($top);
+        $(`#progress`).hide();
 
         const content = this.kdb.getPhoneticsByHeader();
 
