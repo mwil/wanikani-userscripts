@@ -14,7 +14,12 @@ function WK_Keisei()
         "minify": false,
         "fullinfo": false,
         "fuzzykana": false,
-        "withbeta": false
+        "withbeta": false,
+        "categories": {
+            "jouyou": true,
+            "jinmeiyou": true,
+            "gaiji": false
+        }
     };
 }
 // #############################################################################
@@ -135,7 +140,7 @@ function WK_Keisei()
             }
             else
             {
-                // Radical subject, but not a tone mark
+                // Radical subject, but not a phonetic mark
                 $(`#keisei_explanation`).append(
                     this.explanation_non_radical(subject));
                 return;
@@ -167,10 +172,10 @@ function WK_Keisei()
                 $(`#keisei_explanation`).append(
                     this.explanation_pmark(subject, this.kdb.getPReadings_style(subject.kan)));
 
-                // v1.1.1 Fixed bug where kanji that are tone marks but also have their own tone mark
+                // v1.1.1 Fixed bug where kanji that are phonetic marks but also have their own phonetic mark
                 if (subject.kan !== subject.phon)
                 {
-                    this.log(`Tone hierarchy detected, adjusting the tone mark from ${subject.phon} to ${subject.kan}.`);
+                    this.log(`Phonetic hierarchy detected, adjusting the phonetic mark from ${subject.phon} to ${subject.kan}.`);
                     subject.base_phon = subject.phon;
                     subject.phon = subject.kan;
                 }
@@ -280,6 +285,8 @@ function WK_Keisei()
 
                 if (!kanji)
                     return;
+
+                // TODO: checking for kanji categories (jouyou, jinmeiyou, etc.) goes here!
 
                 let common_readings_deRen = new Set(
                     _.intersection(
@@ -435,8 +442,8 @@ function WK_Keisei()
     WK_Keisei.prototype.populateMoreInfoFold = function(subject)
     {
         // #####################################################################
-        // Append all cross-referenced tone marks (for example compounds that
-        // are tone marks on their own), 0, ..., n
+        // Append all cross-referenced phonetic marks (for example compounds that
+        // are phonetic marks on their own), 0, ..., n
         this.kdb.getPXRefs(subject.phon).forEach(
             function(curPhon, i)
             {
@@ -467,7 +474,7 @@ function WK_Keisei()
         // #####################################################################
 
         // #####################################################################
-        // Append kanji that include the tone mark but are not considered to be compounds
+        // Append kanji that include the phonetic mark but are not considered to be compounds
         if (this.kdb.getPNonCompounds(subject.phon).length)
         {
             $(`#keisei_more_fold`).append($(`<span></span>`)
