@@ -3,6 +3,14 @@
 
 // WK Simulator
 
+REORDER_ID = (a, b) => -1;
+REORDER_CRIT = (a, b) =>
+{
+    const ORDER_MAP = {"radical": 1, "kanji": 2, "vocabulary": 3};
+
+    return ORDER_MAP[b.subject] - ORDER_MAP[a.subject];
+};
+
 // #############################################################################
 function WK_Sim()
 {
@@ -58,11 +66,13 @@ function WK_Sim()
         0     // Burned
     ];
 
-    this.CORRECT_READ_P = 0.95;
-    this.CORRECT_MEAN_P = 0.95;
+    this.CORRECT_READ_P = 1.0;//0.95;
+    this.CORRECT_MEAN_P = 1.0;//0.95;
+
+    this.REORDER_FUNC = REORDER_ID;
 
     // Try to do this number of lessons per session (in one "lesson hour")
-    this.LESSON_BATCH_SIZE = 200;
+    this.LESSON_BATCH_SIZE = 10;
     this.LESSONS_TODAY = 0;
 
     this.LESSON_HOURS = new Set(Array(24).keys());
@@ -178,7 +188,7 @@ function WK_Sim()
     {
         let new_queue = [];
 
-        _.forEach(this.L_QUEUE, (subject) =>
+        _.forEach(this.L_QUEUE.sort(this.REORDER_FUNC), (subject) =>
             {
                 if (this.LESSONS_TODAY >= this.LESSON_BATCH_SIZE)
                 {
@@ -264,8 +274,6 @@ function WK_Sim()
         {
             this.WK_LEVEL += 1;
 
-            console.log(`LEVEL UP!!! NEW LEVEL IS`, this.WK_LEVEL,
-                        `on day`, this.NOW_H/24);
 
             if (this.WK_LEVEL > 2)
                 this.INTERVALS = this.LATER_INTERVALS;
@@ -281,7 +289,12 @@ function WK_Sim()
             this.STATS_LEVEL.review_cnt.push(0);
 
             this.stats_analyzeQueue(this.STATS_LEVEL);
-
+            if (this.WK_LEVEL === 60)
+            {
+                console.log(`Reached level 60 on day`, this.NOW_H/24);
+                this.LEVEL_60_DAY = this.NOW_H/24;
+                this.R_QUEUE.length = 0;
+            }
             if (this.WK_LEVEL === 61)
             {
                 this.STATS_TOTAL.review_60_cnt =
@@ -365,6 +378,8 @@ function WK_Sim()
             .prepend(`<h1>Daily Stats</h1>`).appendTo($top);
         $(`<div></div>`).text(JSON.stringify(this.STATS_TOTAL))
             .prepend(`<h1>Overall Stats</h1>`).appendTo($top);
+
+        return this.LEVEL_60_DAY;
     };
     // #########################################################################
 }
@@ -373,9 +388,31 @@ function WK_Sim()
 
 // #############################################################################
 // #############################################################################
-var wk_sim = new WK_Sim();
 
-wk_sim.run();
+let ORDER_FUNCS = [REORDER_ID, REORDER_CRIT];
+
+let result = {};
+
+for (let bsize = 8; bsize < 31; bsize++)
+{
+    result[bsize] = [];
+
+    for (let i = 0; i < ORDER_FUNCS.length; i++)
+    {
+        var wk_sim = new WK_Sim();
+        wk_sim.LESSON_BATCH_SIZE = bsize;
+        wk_sim.REORDER_FUNC = ORDER_FUNCS[i];
+
+        console.log(`Running order`, i, `and batch size`, bsize);
+
+        let day = wk_sim.run();
+        result[bsize].push(day);
+    }
+
+    result[bsize].push(result[bsize][0]/result[bsize][1]);
+}
+
+console.table(result);
 // #############################################################################
 // #############################################################################
 
