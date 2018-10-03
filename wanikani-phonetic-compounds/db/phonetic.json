@@ -169,7 +169,7 @@
     },
     "青": {
         "readings": ["せい", "しょう"],
-        "compounds": ["情", "清", "精", "請", "晴", "静", "靖"],
+        "compounds": ["情", "清", "精", "請", "晴", "静", "靖", "錆"],
         "non_compounds": [],
         "xrefs": ["生"],
         "wk-radical": "blue"
@@ -386,7 +386,7 @@
     },
     "我": {
         "readings": ["が"],
-        "compounds": ["餓"],
+        "compounds": ["餓", "峨"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "ego"
@@ -1053,7 +1053,7 @@
     },
     "加": {
         "readings": ["か"],
-        "compounds": ["架", "賀", "嘉", "迦"],
+        "compounds": ["架", "賀", "嘉", "迦", "袈"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
@@ -1230,7 +1230,7 @@
     },
     "者": {
         "readings": ["しゃ", "しょ", "と"],
-        "compounds": ["都", "暑", "煮", "署", "箸", "諸", "書", "緒", "著", "着", "賭"],
+        "compounds": ["都", "暑", "煮", "署", "箸", "諸", "書", "緒", "著", "着", "賭", "渚"],
         "non_compounds": [],
         "xrefs": ["署", "諸"],
         "wk-radical": "someone",
@@ -1911,7 +1911,7 @@
         "wk-radical": "together"
     },
     "兼": {
-        "readings": ["けん"],
+        "readings": ["けん", "れん"],
         "compounds": ["嫌", "廉", "鎌", "謙"],
         "non_compounds": [],
         "xrefs": [],
@@ -3199,7 +3199,7 @@
     },
     "尊": {
         "readings": ["そん"],
-        "compounds": ["遵"],
+        "compounds": ["遵", "噂"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
@@ -3794,7 +3794,7 @@
     },
     "盾": {
         "readings": ["じゅん"],
-        "compounds": ["循"],
+        "compounds": ["循", "楯"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null

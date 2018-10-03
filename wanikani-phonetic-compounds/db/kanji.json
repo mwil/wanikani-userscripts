@@ -26269,9 +26269,11 @@
         "category": "jinmeiyou"
     },
     "袈": {
-        "readings": [],
-        "meanings": [],
-        "type": "unprocessed",
+        "readings": ["け"],
+        "meanings": ["coarse camlet"],
+        "semantic": "衣",
+        "phonetic": "加",
+        "type": "comp_phonetic",
         "category": "jinmeiyou"
     },
     "錫": {
@@ -26287,15 +26289,19 @@
         "category": "jinmeiyou"
     },
     "峨": {
-        "readings": [],
-        "meanings": [],
-        "type": "unprocessed",
+        "readings": ["が"],
+        "meanings": ["high mountain"],
+        "semantic": "山",
+        "phonetic": "我",
+        "type": "comp_phonetic",
         "category": "jinmeiyou"
     },
     "楯": {
-        "readings": [],
-        "meanings": [],
-        "type": "unprocessed",
+        "readings": ["じゅん"],
+        "meanings": ["shield", "buckler", "pretext"],
+        "semantic": "木",
+        "phonetic": "盾",
+        "type": "comp_phonetic",
         "category": "jinmeiyou"
     },
     "穹": {
@@ -26305,30 +26311,37 @@
         "category": "jinmeiyou"
     },
     "佃": {
-        "readings": [],
-        "meanings": [],
-        "type": "unprocessed",
-        "category": "jinmeiyou"
+        "readings": ["でん", "てん"],
+        "meanings": ["rice field"],
+        "type": "unknown",
+        "category": "jinmeiyou",
+        "comment": "TODO: PC 田"
     },
     "渚": {
-        "readings": [],
-        "meanings": [],
-        "type": "unprocessed",
+        "readings": ["しょ"],
+        "meanings": ["strand", "beach", "shore"],
+        "semantic": "水",
+        "phonetic": "者",
+        "type": "comp_phonetic",
         "category": "jinmeiyou",
         "variants": [
             "渚"
         ]
     },
     "錆": {
-        "readings": [],
-        "meanings": [],
-        "type": "unprocessed",
+        "readings": ["しょう", "せい"],
+        "meanings": ["rust", "tarnish"],
+        "semantic": "金",
+        "phonetic": "青",
+        "type": "comp_phonetic",
         "category": "jinmeiyou"
     },
     "噂": {
-        "readings": [],
-        "meanings": [],
-        "type": "unprocessed",
+        "readings": ["そん"],
+        "meanings": ["rumor", "gossip", "hearsay"],
+        "semantic": "口",
+        "phonetic": "尊",
+        "type": "comp_phonetic",
         "category": "jinmeiyou"
     },
     "倖": {
@@ -26344,10 +26357,11 @@
         "category": "jinmeiyou"
     },
     "楠": {
-        "readings": [],
-        "meanings": [],
-        "type": "unprocessed",
-        "category": "jinmeiyou"
+        "readings": ["なん"],
+        "meanings": ["camphor tree"],
+        "type": "unknown",
+        "category": "jinmeiyou",
+        "comment": "TODO: PC 南"
     },
     "撰": {
         "readings": [],
