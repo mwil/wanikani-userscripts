@@ -78,26 +78,6 @@ function WK_Doushi()
     // #########################################################################
 
     // #########################################################################
-    const upperAll = function(string, delim=` `)
-    {
-        const tmp = string.split(delim);
-        let result = [];
-
-        for (let i = 0; i < tmp.length; i++)
-            result.push(tmp[i].charAt(0).toUpperCase() + tmp[i].slice(1));
-
-        result = result.join(` `);
-
-        // if (result.length > 12)
-            // return result.slice(0, 9) + `...`;
-        // else
-            // return result;
-
-        return result;
-    };
-    // #########################################################################
-
-    // #########################################################################
     WK_Doushi.prototype.populateCharGrid = function(selector, character)
     {
         let verb_list = [];
@@ -134,7 +114,9 @@ function WK_Doushi()
             const li_item = {
                   "character": char,
                   "kana": wk_info.kana,
-                  "meaning": upperAll(wk_info.meaning),
+                  "meaning": _.join(_.map(_.split(wk_info.meaning, `,`),
+                                          _.startCase),
+                                    `, `),
                   "badge": badges.join(` `),
                   "vtype": vtype.join(` `),
                   "href": `/vocabulary/${char}`
@@ -182,12 +164,10 @@ function WK_Doushi()
         // #####################################################################
         // Add parts of bootstrap for the modal pages (settings, etc.)
         if ($.fn.modal === undefined)
-        {
             $(`<script></script>`)
-            .attr(`type`, `text/javascript`)
-            .text(GM_getResourceText(`bootstrapjs`))
-            .appendTo(`head`);
-        }
+                .attr(`type`, `text/javascript`)
+                .text(GM_getResourceText(`bootstrapjs`))
+                .appendTo(`head`);
         // #####################################################################
 
         // Start page detection (and its callbacks once ready)

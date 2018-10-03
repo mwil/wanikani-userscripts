@@ -22,6 +22,8 @@
 // @resource    bootstrapcss https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/bootstrap/css/bootstrap.crop.css
 // @resource    bootstrapjs  https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/bootstrap/js/bootstrap.js
 //
+// @require     https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js
+//
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/utility/wk_interaction.js
 //
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-verbs/wk_doushi.db.js
