@@ -44,12 +44,7 @@
                         </p>
                         <p>
                             <div class="btn-group-lg text-center">
-                                <a class="btn" id="keisei_settings_btn_jouyou" data-category="jouyou">
-                                    <i class="icon-jpy"></i> Show Jōyō Kanji</a>
-                                <a class="btn" id="keisei_settings_btn_jinmeiyou" data-category="jinmeiyou">
-                                    <i class="icon-cny"></i> Show Jinmeiyō Kanji</a>
-                                <a class="btn" id="keisei_settings_btn_gaiji" data-category="gaiji">
-                                    <i class="icon-inr"></i> Show Unlisted Kanji</a>
+                                <a class="btn" id="keisei_settings_btn_onlywk"><i class="icon-cny"></i> Show Only Kanji in Wanikani</a>
                             </div>
                         </p>
                         <p>
@@ -95,12 +90,6 @@
                 $(`#keisei_settings_btn_${setting}`).addClass(`active`);
         });
 
-        _.forEach(this.settings.categories, (is_set, setting)=>
-        {
-            if (is_set)
-                $(`#keisei_settings_btn_${setting}`).addClass(`active`);
-        });
-
         if (this.settings.minify)
             $(`#keisei_settings_btn_minify i`)
                 .removeClass(`icon-eye-open`)
@@ -121,13 +110,8 @@
         $(`#keisei_settings_btn_fullinfo`).on(`click`, this.toggleFullInfo.bind(this));
         $(`#keisei_settings_btn_fuzzykana`).on(`click`, this.toggleFuzzyKana.bind(this));
         $(`#keisei_settings_btn_withbeta`).on(`click`, this.toggleWithBeta.bind(this));
-
+        $(`#keisei_settings_btn_onlywk`).on(`click`, this.toggleOnlyWK.bind(this));
         $(`#keisei_settings_btn_clearDB`).on(`click`, this.toggleClearDB.bind(this));
-
-        [`jouyou`, `jinmeiyou`, `gaiji`]
-        .forEach((category)=>
-            $(`#keisei_settings_btn_${category}`)
-                .on(`click`, this.toggleCategory.bind(this)));
     };
     // #########################################################################
 
@@ -241,17 +225,15 @@
     // #########################################################################
 
     // #########################################################################
-    WK_Keisei.prototype.toggleCategory = function(event)
+    WK_Keisei.prototype.toggleOnlyWK = function(event)
     {
-        const category = event.target.dataset.category;
+        this.settings.onlywk = !this.settings.onlywk;
 
-        this.settings.categories[category] = !this.settings.categories[category];
-
-        $(`#keisei_settings_btn_${category}`).toggleClass(`active`);
+        $(`#keisei_settings_btn_onlywk`).toggleClass(`active`);
 
         this.populateCharGrid(`#keisei_phonetic_grid`, this.currentSubject);
 
-        GM_setValue(category, this.settings.categories[category]);
+        GM_setValue(`onlywk`, this.settings.onlywk);
 
         return false;
     };

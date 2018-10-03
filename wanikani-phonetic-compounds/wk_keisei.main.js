@@ -12,11 +12,7 @@ function WK_Keisei()
         "fullinfo": false,
         "fuzzykana": false,
         "withbeta": false,
-        "categories": {
-            "jouyou": true,
-            "jinmeiyou": true,
-            "gaiji": true
-        }
+        "onlywk": true
     };
 }
 // #############################################################################
@@ -280,13 +276,7 @@ function WK_Keisei()
             {
                 let badges = [`item-badge`, `recently-unlocked-badge`];
 
-                const kdata = this.kdb.kdata(kanji);
-
-                if (!kanji)
-                    return;
-
-                // TODO: checking for kanji categories (jouyou, jinmeiyou, etc.) goes here!
-                if (`category` in kdata && !this.settings.categories[kdata[`category`]])
+                if (!kanji || (this.settings.onlywk && !this.kdb.isKanjiInWK(kanji)))
                     return;
 
                 let common_readings_deRen = new Set(
@@ -310,7 +300,7 @@ function WK_Keisei()
                     "href":     this.kdb.isKanjiInWK(kanji) ?
                                     `/kanji/${kanji}` :
                                     `https://jisho.org/search/${kanji}%20%23kanji`,
-                    "kanji_id": `kanji-${i+2}`,
+                    "kanji_id": `kanji-${kanji}`,
                     "rnd_style": this.kdb.isFirstReadingInWK(kanji) ?
                                     `` :
                                     `keisei_style_reading_notInWK`
@@ -376,7 +366,7 @@ function WK_Keisei()
         const $table = $(`<table><tbody></tbody></table>`)
                        .appendTo(selector);
 
-        const $tr = $(`<tr></tr>`)
+        const $tr = $(`<tr>`)
                     .appendTo($table);
 
         // #####################################################################
@@ -421,7 +411,7 @@ function WK_Keisei()
                                 `keisei_style_reading_notInWK`
             });
 
-        const $td_head = $(`<td></td>`)
+        const $td_head = $(`<td>`)
                          .addClass(`keisei_chargrid_header`)
                          .appendTo($tr);
 
@@ -430,7 +420,7 @@ function WK_Keisei()
         // TODO fix CSS, temporary hack ...
         $(`.keisei_chargrid_header li`).css({width: "112px"});
 
-        const $td_comp = $(`<td></td>`)
+        const $td_comp = $(`<td>`)
                          .addClass(`keisei_chargrid_compounds`)
                          .appendTo($tr);
 
@@ -451,8 +441,9 @@ function WK_Keisei()
         this.kdb.getPXRefs(subject.phon).forEach(
             function(curPhon, i)
             {
-                $(`#keisei_more_fold`).append($(`<span></span>`)
-                                      .attr(`id`, `keisei_more_expl_${i}`));
+                $(`#keisei_more_fold`).append(
+                    $(`<span>`)
+                        .attr(`id`, `keisei_more_expl_${i}`));
 
                 if (`base_phon` in subject && subject.base_phon === curPhon)
                     $(`#keisei_more_expl_${i}`).append(
@@ -464,7 +455,7 @@ function WK_Keisei()
                     $(`#keisei_more_expl_${i}`).append(
                         this.explanation_xref(curPhon, this.kdb.getPReadings_style(curPhon)));
 
-                const $gridx = $(`<ul></ul>`)
+                const $gridx = $(`<ul>`)
                                .attr(`id`, `keisei_xref_grid_${i}`)
                                .attr(`style`, `padding-bottom: 10px; margin-bottom:6px; border-bottom: 1px solid #d5d5d5;`)
                                .addClass(`single-character-grid`);
@@ -481,12 +472,13 @@ function WK_Keisei()
         // Append kanji that include the phonetic mark but are not considered to be compounds
         if (this.kdb.getPNonCompounds(subject.phon).length)
         {
-            $(`#keisei_more_fold`).append($(`<span></span>`)
-                                  .attr(`id`, `keisei_more_non_comp`));
+            $(`#keisei_more_fold`).append(
+                $(`<span>`)
+                    .attr(`id`, `keisei_more_non_comp`));
 
             $(`#keisei_more_non_comp`).append(this.explanation_non_compound(subject));
 
-            const $gridn = $(`<ul></ul>`)
+            const $gridn = $(`<ul>`)
                            .attr(`id`, `keisei_non_comp_grid`)
                            .attr(`style`, `padding-bottom: 10px; margin-bottom:6px; border-bottom: 1px solid #d5d5d5;`)
                            .addClass(`single-character-grid`)
@@ -512,7 +504,7 @@ function WK_Keisei()
                         "href":     this.kdb.isKanjiInWK(curKanji) ?
                                         `/kanji/${curKanji}` :
                                         `https://jisho.org/search/${curKanji}%20%23kanji`,
-                        "kanji_id": `kanji-${i+101}`,
+                        "kanji_id": `kanji-${curKanji}`,
                         "rnd_style": this.kdb.isFirstReadingInWK(curKanji) ?
                                         `` :
                                         `keisei_style_reading_notInWK`
@@ -534,16 +526,10 @@ function WK_Keisei()
         GM_addStyle(GM_getResourceText(`keisei_style`)
                         .replace(/wk_namespace/g, GM_info.script.namespace));
 
-        // Recover the settings from GM value storage
-        this.settings.debug       = GM_getValue(`debug`)       || false;
-        this.settings.minify      = GM_getValue(`minify`)      || false;
-        this.settings.fullinfo    = GM_getValue(`fullinfo`)    || false;
-        this.settings.fuzzykana   = GM_getValue(`fuzzykana`)   || false;
-        this.settings.withbeta    = GM_getValue(`withbeta`)    || false;
-
-        this.settings.categories.jouyou    = GM_getValue(`jouyou`)    || true;
-        this.settings.categories.jinmeiyou = GM_getValue(`jinmeiyou`) || true;
-        this.settings.categories.gaiji     = GM_getValue(`gaiji`)     || true;
+        // Recover the settings from GM value storage, or use defaults
+        _.forEach(this.settings, (is_set, setting) => {
+            this.settings[setting] = GM_getValue(setting, this.settings[setting]);
+        });
 
         this.override_db = JSON.parse(GM_getValue(`override_db`) || `{}`);
 
@@ -553,7 +539,7 @@ function WK_Keisei()
             } :
             function() {};
 
-        this.log(`The active keisei settings are`, this.settings);
+        this.log(`The active settings are`, this.settings);
 
         this.kdb = new KeiseiDB();
         this.wki = new WKInteraction(GM_info.script.namespace);
@@ -586,7 +572,7 @@ function WK_Keisei()
         // #####################################################################
         // Add parts of bootstrap for the modal pages (settings, etc.)
         if ($.fn.modal === undefined)
-            $(`<script></script>`)
+            $(`<script>`)
                 .attr(`type`, `text/javascript`)
                 .text(GM_getResourceText(`bootstrapjs`))
                 .appendTo(`head`);
