@@ -2538,15 +2538,15 @@
         "wk-radical": "orders"
     },
     "隹": {
-        "readings": ["すい"],
-        "compounds": ["進", "推", "堆", "唯", "椎", "稚", "維", "誰", "崔"],
-        "non_compounds": ["隻", "雇", "雄", "雅", "雌", "難", "離"],
+        "readings": ["すい", "い", "たい", "つい"],
+        "compounds": ["推", "堆", "唯", "椎", "維", "誰", "崔"],
+        "non_compounds": ["隻", "雇", "雄", "雅", "雌", "難", "稚", "離"],
         "xrefs": ["隼", "集", "崔", "焦", "奞", "雚", "隺"],
         "wk-radical": "turkey"
     },
     "隼": {
         "readings": ["しゅん", "じゅん"],
-        "compounds": ["準", "准"],
+        "compounds": ["準", "進", "准"],
         "non_compounds": [],
         "xrefs": ["隹"],
         "wk-radical": null
@@ -2595,7 +2595,7 @@
     },
     "此": {
         "readings": ["し"],
-        "compounds": ["紫", "雌", "柴"],
+        "compounds": ["紫", "雌", "柴", "砦"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null
@@ -4099,5 +4099,12 @@
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "right"
+    },
+    "犀": {
+        "readings": ["さい", "せい", "ち"],
+        "compounds": ["遅", "稚"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
     }
 }

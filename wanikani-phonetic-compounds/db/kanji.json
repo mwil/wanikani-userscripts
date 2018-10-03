@@ -1912,8 +1912,9 @@
     "進": {
         "readings": ["しん"],
         "semantic": "辵",
-        "phonetic": "隹",
-        "type": "comp_phonetic"
+        "phonetic": "隼",
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "都": {
         "readings": ["と", "つ"],
@@ -8705,8 +8706,10 @@
     "遅": {
         "readings": ["ち"],
         "seiji": "遲",
-        "type": "unknown",
-        "comment": "obscure phonetic mark 犀 (rhinoceros)"
+        "semantic": "辵",
+        "phonetic": "犀",
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "遍": {
         "readings": ["へん"],
@@ -9068,8 +9071,9 @@
     "稚": {
         "readings": ["ち"],
         "semantic": "禾",
-        "phonetic": "隹",
-        "type": "comp_phonetic"
+        "phonetic": "犀",
+        "type": "comp_phonetic",
+        "obscure": true
     },
     "継": {
         "readings": ["けい"],
@@ -14502,9 +14506,11 @@
 		"category": "jinmeiyou"
 	},
 	"砦": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+		"readings": ["さい"],
+		"meanings": ["fort", "stronghold", "entrenchments"],
+        "semantic": "石",
+        "phonetic": "此",
+        "type": "comp_phonetic",
 		"category": "jinmeiyou"
 	},
 	"鞄": {
@@ -14661,7 +14667,7 @@
 		"readings": [],
 		"meanings": ["Sacred tree"],
 		"decomposition": ["木", "神"],
-		"type": "comp_indicative",
+		"type": "kokuji",
 		"category": "jinmeiyou"
 	},
 	"撒": {
@@ -16474,9 +16480,9 @@
 		"category": "jinmeiyou"
 	},
 	"犀": {
-		"readings": [],
-		"meanings": [],
-		"type": "unprocessed",
+		"readings": ["さい", "せい"],
+		"meanings": ["rhinoceros"],
+		"type": "unknown",
 		"category": "jinmeiyou"
 	},
 	"些": {
