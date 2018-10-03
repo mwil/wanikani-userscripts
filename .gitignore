@@ -1,6 +1,9 @@
 # Custom
 .DS_Store
 
+# Ignore development files and small scripts
+misc
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
