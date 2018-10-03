@@ -9,8 +9,8 @@
     {
         var mousemove = function(e)
         {
-            this.style.left = (e.clientX-this.offsetX)+'px';
-            this.style.top  = (e.clientY-this.offsetY)+'px';
+            this.style.left = (e.clientX-5-this.offsetX)+'px';
+            this.style.top  = (e.clientY-12-this.offsetY)+'px';
         }.bind(this);
 
         var mouseup = function(e)
