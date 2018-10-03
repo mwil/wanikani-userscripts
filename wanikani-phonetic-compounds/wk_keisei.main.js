@@ -279,10 +279,13 @@ function WK_Keisei()
                 if (!kanji || (this.settings.onlywk && !this.kdb.isKanjiInWK(kanji)))
                     return;
 
+                let kReadings_deRen =
+                    _.map(this.kdb.getKReadings(kanji), this.kdb.deRendaku);
+                let pReadings_deRen =
+                    _.map(this.kdb.getPReadings(subject.phon), this.kdb.deRendaku);
+
                 let common_readings_deRen = new Set(
-                    _.intersection(
-                        _.map(this.kdb.getKReadings(kanji), this.kdb.deRendaku),
-                        _.map(this.kdb.getPReadings(subject.phon), this.kdb.deRendaku)));
+                    _.intersection(kReadings_deRen, pReadings_deRen));
 
                 const common_readings = new Set(
                     _.intersection(
@@ -290,7 +293,12 @@ function WK_Keisei()
                         this.kdb.getPReadings(subject.phon)));
 
                 if (!this.settings.fuzzykana)
+                {
+                    kReadings_deRen = this.kdb.getKReadings(kanji);
+                    pReadings_deRen = this.kdb.getPReadings(subject.phon);
+
                     common_readings_deRen = common_readings;
+                }
 
                 const cur_compound_li = {
                     "kanji":    kanji,
@@ -306,11 +314,15 @@ function WK_Keisei()
                                     `keisei_style_reading_notInWK`
                 };
 
-                if (common_readings_deRen.size > common_readings.size)
+                // Add a marker when the matching *improved*, either by
+                // * more common readings, or
+                // * less readings that only vary by dakuten versions
+                if (common_readings_deRen &&
+                    (common_readings_deRen.size > common_readings.size ||
+                     kReadings_deRen.length > new Set(kReadings_deRen).size))
                     badges.push(`badge-rendaku`);
 
-                if (this.kdb.getKReadings(kanji).length ===
-                    common_readings_deRen.size)
+                if (new Set(kReadings_deRen).size === common_readings_deRen.size)
                 {
                     badges.push(`badge-perfect`);
                     char_list_hi.unshift(cur_compound_li);
@@ -330,8 +342,8 @@ function WK_Keisei()
                 }
                 else
                 {
-                    if (this.kdb.getPReadings(subject.phon).indexOf(
-                            this.kdb.getKReadings(kanji)[0]) !== -1)
+                    // The first reading of this kanji at least appears somewhere
+                    if (pReadings_deRen.indexOf(kReadings_deRen[0]) !== -1)
                     {
                         badges.push(`badge-high`);
                         char_list_hi.push(cur_compound_li);
