@@ -4,6 +4,9 @@
 // #############################################################################
 function WK_Keisei()
 {
+    this.wki = null;
+    this.kdb = null;
+
     this.currentSubject = null;
 
     this.settings = {
@@ -378,7 +381,7 @@ function WK_Keisei()
         const $table = $(`<table><tbody></tbody></table>`)
                        .appendTo(selector);
 
-        const $tr = $(`<tr>`)
+        const $tr = $(`<tr></tr>`)
                     .appendTo($table);
 
         // #####################################################################
@@ -423,7 +426,7 @@ function WK_Keisei()
                                 `keisei_style_reading_notInWK`
             });
 
-        const $td_head = $(`<td>`)
+        const $td_head = $(`<td></td>`)
                          .addClass(`keisei_chargrid_header`)
                          .appendTo($tr);
 
@@ -432,7 +435,7 @@ function WK_Keisei()
         // TODO fix CSS, temporary hack ...
         $(`.keisei_chargrid_header li`).css({width: "112px"});
 
-        const $td_comp = $(`<td>`)
+        const $td_comp = $(`<td></td>`)
                          .addClass(`keisei_chargrid_compounds`)
                          .appendTo($tr);
 
@@ -454,7 +457,7 @@ function WK_Keisei()
             function(curPhon, i)
             {
                 $(`#keisei_more_fold`).append(
-                    $(`<span>`)
+                    $(`<span></span>`)
                         .attr(`id`, `keisei_more_expl_${i}`));
 
                 if (`base_phon` in subject && subject.base_phon === curPhon)
@@ -467,7 +470,7 @@ function WK_Keisei()
                     $(`#keisei_more_expl_${i}`).append(
                         this.explanation_xref(curPhon, this.kdb.getPReadings_style(curPhon)));
 
-                const $gridx = $(`<ul>`)
+                const $gridx = $(`<ul></ul>`)
                                .attr(`id`, `keisei_xref_grid_${i}`)
                                .attr(`style`, `padding-bottom: 10px; margin-bottom:6px; border-bottom: 1px solid #d5d5d5;`)
                                .addClass(`single-character-grid`);
@@ -485,12 +488,12 @@ function WK_Keisei()
         if (this.kdb.getPNonCompounds(subject.phon).length)
         {
             $(`#keisei_more_fold`).append(
-                $(`<span>`)
+                $(`<span></span>`)
                     .attr(`id`, `keisei_more_non_comp`));
 
             $(`#keisei_more_non_comp`).append(this.explanation_non_compound(subject));
 
-            const $gridn = $(`<ul>`)
+            const $gridn = $(`<ul></ul>`)
                            .attr(`id`, `keisei_non_comp_grid`)
                            .attr(`style`, `padding-bottom: 10px; margin-bottom:6px; border-bottom: 1px solid #d5d5d5;`)
                            .addClass(`single-character-grid`)
@@ -539,9 +542,16 @@ function WK_Keisei()
                         .replace(/wk_namespace/g, GM_info.script.namespace));
 
         // Recover the settings from GM value storage, or use defaults
-        _.forEach(this.settings, (is_set, setting) => {
-            this.settings[setting] = GM_getValue(setting, this.settings[setting]);
-        });
+        // _.forEach(this.settings, (is_set, setting) => {
+        //     this.settings[setting] = GM_getValue(setting, this.settings[setting]);
+        // });
+
+        this.settings.debug     = GM_getValue(`debug`)     || false;
+        this.settings.minify    = GM_getValue(`minify`)    || false;
+        this.settings.fullinfo  = GM_getValue(`fullinfo`)  || false;
+        this.settings.fuzzykana = GM_getValue(`fuzzykana`) || false;
+        this.settings.withbeta  = GM_getValue(`withbeta`)  || false;
+        this.settings.onlywk    = GM_getValue(`onlywk`)    || false;
 
         this.override_db = JSON.parse(GM_getValue(`override_db`) || `{}`);
 
@@ -584,7 +594,7 @@ function WK_Keisei()
         // #####################################################################
         // Add parts of bootstrap for the modal pages (settings, etc.)
         if ($.fn.modal === undefined)
-            $(`<script>`)
+            $(`<script></script>`)
                 .attr(`type`, `text/javascript`)
                 .text(GM_getResourceText(`bootstrapjs`))
                 .appendTo(`head`);
