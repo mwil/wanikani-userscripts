@@ -6993,9 +6993,11 @@
         "readings": [
             "そん"
         ],
-        "semantic": "手",
-        "phonetic": "員",
-        "type": "comp_phonetic",
+        "decomposition": [
+            "手",
+            "員"
+        ],
+        "type": "comp_indicative",
         "category": "jouyou"
     },
     "禁": {
@@ -10737,10 +10739,12 @@
         "readings": [
             "すう"
         ],
-        "semantic": "⽊",
-        "phonetic": "区",
+        "decomposition": [
+            "⽊",
+            "区"
+        ],
         "seiji": "樞",
-        "type": "comp_phonetic",
+        "type": "comp_indicative",
         "category": "jouyou"
     },
     "析": {
@@ -15904,9 +15908,11 @@
         "readings": [
             "こん"
         ],
-        "semantic": "鬼",
-        "phonetic": "云",
-        "type": "comp_phonetic",
+        "decomposition": [
+            "鬼",
+            "云"
+        ],
+        "type": "comp_indicative",
         "category": "jouyou"
     },
     "錬": {
@@ -17113,9 +17119,11 @@
             "どん",
             "たん"
         ],
-        "semantic": "日",
-        "phonetic": "雲",
-        "type": "comp_phonetic",
+        "decomposition": [
+            "日",
+            "雲"
+        ],
+        "type": "comp_indicative",
         "category": "jouyou"
     },
     "縄": {
@@ -26269,7 +26277,7 @@
         "category": "jinmeiyou"
     },
     "袈": {
-        "readings": ["け"],
+        "readings": ["け", "か"],
         "meanings": ["coarse camlet"],
         "semantic": "衣",
         "phonetic": "加",

@@ -182,7 +182,7 @@
         "wk-radical": "top-hat"
     },
     "各": {
-        "readings": ["かく", "ろ"],
+        "readings": ["かく", "ろ", "らく"],
         "compounds": ["客", "格", "略", "絡", "路", "酪", "閣", "賂"],
         "non_compounds": [],
         "xrefs": ["路", "客"],
@@ -483,7 +483,7 @@
         "wk-radical": "stone"
     },
     "立": {
-        "readings": ["りつ", "りゅう"],
+        "readings": ["りつ", "りゅう", "い", "よく"],
         "compounds": ["位", "拉", "泣", "粒", "翌", "笠"],
         "non_compounds": [],
         "xrefs": [],
@@ -1301,17 +1301,10 @@
     },
     "云": {
         "readings": ["うん"],
-        "compounds": ["雲", "魂"],
-        "non_compounds": ["芸"],
-        "xrefs": ["雲"],
+        "compounds": ["雲"],
+        "non_compounds": ["魂", "芸"],
+        "xrefs": [],
         "wk-radical": "boobs"
-    },
-    "雲": {
-        "readings": ["うん"],
-        "compounds": ["曇"],
-        "non_compounds": [],
-        "xrefs": ["云"],
-        "wk-radical": null
     },
     "果": {
         "readings": ["か"],
@@ -1540,8 +1533,8 @@
     },
     "区": {
         "readings": ["く", "おう"],
-        "compounds": ["欧", "殴", "駆", "枢"],
-        "non_compounds": [],
+        "compounds": ["欧", "殴", "駆"],
+        "non_compounds": ["枢"],
         "xrefs": [],
         "wk-radical": "district",
         "comment": "New component for compounds like 歐"
@@ -1785,7 +1778,7 @@
         "wk-radical": null
     },
     "爰": {
-        "readings": ["えん"],
+        "readings": ["えん", "かん"],
         "compounds": ["媛", "援", "緩", "暖"],
         "non_compounds": [],
         "xrefs": [],
@@ -1799,7 +1792,7 @@
         "wk-radical": "kiln"
     },
     "𦰩": {
-        "readings": ["かん", "なん"],
+        "readings": ["かん", "なん", "たん"],
         "compounds": ["難", "漢", "嘆"],
         "non_compounds": [],
         "xrefs": [],
@@ -2467,7 +2460,7 @@
         "wk-radical": "sunrise"
     },
     "延": {
-        "readings": ["えん"],
+        "readings": ["えん", "たん"],
         "compounds": ["誕"],
         "non_compounds": [],
         "xrefs": [],
@@ -2834,8 +2827,8 @@
     },
     "員": {
         "readings": ["いん"],
-        "compounds": ["損", "韻"],
-        "non_compounds": [],
+        "compounds": ["韻"],
+        "non_compounds": ["損"],
         "xrefs": [],
         "wk-radical": "member"
     },
@@ -3116,7 +3109,7 @@
     "垂": {
         "readings": ["すい"],
         "compounds": ["睡", "錘", "唾"],
-        "non_compounds": [],
+        "non_compounds": ["郵"],
         "xrefs": [],
         "wk-radical": null
     },
@@ -3338,7 +3331,7 @@
         "wk-radical": null
     },
     "監": {
-        "readings": ["かん", "けん", "らん"],
+        "readings": ["かん", "けん", "らん", "えん"],
         "compounds": ["濫", "藍", "鑑", "艦", "塩"],
         "non_compounds": [],
         "xrefs": [],
@@ -3758,7 +3751,7 @@
         "wk-radical": null
     },
     "曷": {
-        "readings": ["かつ"],
+        "readings": ["かつ", "えつ"],
         "compounds": ["褐", "喝", "掲", "渇", "謁", "葛"],
         "non_compounds": [],
         "xrefs": [],
