@@ -25,7 +25,8 @@
         "compounds": ["吐", "社", "徒", "杜"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": "grave"
+        "wk-radical": "dirt",
+        "wk-old-rad": "grave"
     },
     "大": {
         "readings": ["だい", "たい"],
@@ -102,7 +103,8 @@
         "compounds": ["敗", "唄", "買"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": "clam"
+        "wk-radical": "shellfish",
+        "wk-old-rad": "clam"
     },
     "赤": {
         "readings": ["せき", "しゃく"],
@@ -760,7 +762,7 @@
         "compounds": ["値", "植", "殖", "置"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": null
+        "wk-radical": "fix"
     },
     "未": {
         "readings": ["み", "び"],
@@ -818,7 +820,7 @@
         "compounds": ["像"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": null
+        "wk-radical": "elephant"
     },
     "袁": {
         "readings": ["えん", "おん"],
@@ -902,14 +904,14 @@
         "compounds": ["廊"],
         "non_compounds": ["郷"],
         "xrefs": ["良"],
-        "wk-radical": null
+        "wk-radical": "guy"
     },
     "倉": {
         "readings": ["そう"],
         "compounds": ["創", "蒼", "槍"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": null
+        "wk-radical": "warehouse"
     },
     "非": {
         "readings": ["ひ", "はい"],
@@ -1412,6 +1414,14 @@
         "xrefs": ["豆"],
         "wk-radical": null
     },
+    "豊": {
+        "readings": ["れい", "てい"],
+        "compounds": ["体", "礼"],
+        "non_compounds": [],
+        "xrefs": [],
+        "comment": "Shirakawa: two identical kanji for this, readings ほう and れい",
+        "wk-radical": null
+    },
     "彦": {
         "readings": ["げん"],
         "compounds": ["顔"],
@@ -1438,7 +1448,7 @@
         "compounds": ["富", "福", "副", "幅"],
         "non_compounds": [],
         "xrefs": ["复"],
-        "wk-radical": null
+        "wk-radical": "scarecrow"
     },
     "次": {
         "readings": ["じ", "し"],
@@ -1621,7 +1631,7 @@
         "compounds": ["泳", "詠"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": null
+        "wk-radical": "eternity"
     },
     "乍": {
         "readings": ["さ", "さく", "じゃ"],
@@ -1677,7 +1687,7 @@
         "compounds": ["彰", "障", "商"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": null
+        "wk-radical": "chapter"
     },
     "呉": {
         "readings": ["ご"],
@@ -1775,7 +1785,7 @@
         "compounds": ["凝", "擬"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": null
+        "wk-radical": "doubt"
     },
     "爰": {
         "readings": ["えん", "かん"],
@@ -1789,7 +1799,8 @@
         "compounds": ["僅", "勤", "謹"],
         "non_compounds": ["難", "漢"],
         "xrefs": [],
-        "wk-radical": "kiln"
+        "wk-radical": "boot",
+        "wk-old-rad": "kiln"
     },
     "𦰩": {
         "readings": ["かん", "なん", "たん"],
@@ -2827,7 +2838,7 @@
     },
     "員": {
         "readings": ["いん"],
-        "compounds": ["韻"],
+        "compounds": ["韻", "円"],
         "non_compounds": ["損"],
         "xrefs": [],
         "wk-radical": "member"
@@ -3293,7 +3304,7 @@
         "compounds": ["券", "拳", "巻"],
         "non_compounds": [],
         "xrefs": ["巻"],
-        "wk-radical": null
+        "wk-radical": "gladiator"
     },
     "巻": {
         "readings": ["かん", "けん"],
@@ -3349,7 +3360,7 @@
         "compounds": ["察", "際"],
         "non_compounds": [],
         "xrefs": ["察"],
-        "wk-radical": null
+        "wk-radical": "festival"
     },
     "察": {
         "readings": ["さつ"],
@@ -3461,7 +3472,7 @@
         "compounds": ["繰", "操", "燥", "藻"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": null
+        "wk-radical": "syrup"
     },
     "唐": {
         "readings": ["とう"],
@@ -3860,7 +3871,7 @@
         "compounds": ["奨", "醤"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": null
+        "wk-radical": "commander"
     },
     "既": {
         "readings": ["き"],
@@ -4092,6 +4103,13 @@
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "right"
+    },
+    "䜌": {
+        "readings": ["ばん", "らん", "れん"],
+        "compounds": ["変", "恋"],
+        "non_compounds": [],
+        "xrefs": [],
+        "wk-radical": null
     },
     "犀": {
         "readings": ["さい", "せい", "ち"],
