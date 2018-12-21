@@ -95,22 +95,46 @@
 
 .wk_namespace .keisei_spaced_chargrid {
     padding-top: 1em;
+    display: flex;
+    flex-direction: row;
 }
 
-.wk_namespace .keisei_chargrid_header {
-    vertical-align: top;
-    width: 340px;
+.wk_namespace #keisei_phonetic_grid {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid #d5d5d5;
 }
 
-.wk_namespace .keisei_chargrid_compounds {
-    vertical-align: top;
-    padding-left: 8px;
+.wk_namespace #keisei_phongrid_header {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-right: 10px;
+}
+
+.wk_namespace #keisei_phongrid_compounds {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 @media (max-width: 767px)
 {
-    .wk_namespace .keisei_chargrid_compounds {
-        width: 50%;
+    .wk_namespace #keisei_phonetic_grid,
+    .wk_namespace .keisei_spaced_chargrid {
+        flex-direction: column;
+    }
+
+    .wk_namespace #keisei_phongrid_header {
+        flex-direction: column;
+        margin-right: 0;
+        margin-bottom: 6px;
+    }
+
+    .wk_namespace #keisei_phongrid_compounds {
+        flex-direction: column;
     }
 }
 

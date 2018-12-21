@@ -78,10 +78,8 @@
                            .attr(`id`, `keisei_main_fold`)
                            .appendTo($section);
 
-        const $grid = $(`<ul></ul>`)
+        const $grid = $(`<div></div>`)
                       .attr(`id`, `keisei_phonetic_grid`)
-                      .attr(`style`, `padding-bottom: 10px; margin-bottom:6px; border-bottom: 1px solid #d5d5d5;`)
-                      .addClass(`single-character-grid`)
                       .appendTo($main_fold);
 
         this.log(`Created the Keisei section, appending to the page!`);

@@ -377,12 +377,6 @@ function WK_Keisei()
             this
         );
         // #####################################################################
-        //
-        const $table = $(`<table><tbody></tbody></table>`)
-                       .appendTo(selector);
-
-        const $tr = $(`<tr></tr>`)
-                    .appendTo($table);
 
         // #####################################################################
         // Push green phonetic character
@@ -426,23 +420,22 @@ function WK_Keisei()
                                 `keisei_style_reading_notInWK`
             });
 
-        const $td_head = $(`<td></td>`)
-                         .addClass(`keisei_chargrid_header`)
-                         .appendTo($tr);
+        const $grid_head = $(`<ul></ul>`)
+                           .attr(`id`, `keisei_phongrid_header`)
+                           .addClass(`single-character-grid`)
+                           .appendTo(selector);
 
-        $td_head.html(head_list.map(this.gen_item_chargrid).join(``));
+        $grid_head.html(head_list.map(this.gen_item_chargrid).join(``));
 
-        // TODO fix CSS, temporary hack ...
-        $(`.keisei_chargrid_header li`).css({width: "112px"});
-
-        const $td_comp = $(`<td></td>`)
-                         .addClass(`keisei_chargrid_compounds`)
-                         .appendTo($tr);
+        const $grid_comp = $(`<ul></ul>`)
+                           .attr(`id`, `keisei_phongrid_compounds`)
+                           .addClass(`single-character-grid`)
+                           .appendTo(selector);
 
         // Push sorted list of all phonetic compounds
         char_list = [...char_list_hi, ...char_list_lo];
 
-        $td_comp.html(char_list.map(this.gen_item_chargrid).join(``));
+        $grid_comp.html(char_list.map(this.gen_item_chargrid).join(``));
         // #####################################################################
     };
     // #########################################################################
