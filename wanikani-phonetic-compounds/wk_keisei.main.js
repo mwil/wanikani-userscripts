@@ -132,7 +132,7 @@ function WK_Keisei()
                 $(`#keisei_explanation`).append(
                     this.explanation_radical(subject,
                                              this.kdb.getPReadings_style(subject.phon)));
-                this.populateCharGrid(`#keisei_phonetic_grid`, subject);
+                this.populateCharGrid(`#keisei_main_phonetic_grid`, subject);
             }
             else
             {
@@ -176,7 +176,7 @@ function WK_Keisei()
                     subject.phon = subject.kan;
                 }
 
-                this.populateCharGrid(`#keisei_phonetic_grid`, subject);
+                this.populateCharGrid(`#keisei_main_phonetic_grid`, subject);
             }
             else
             {
@@ -215,7 +215,7 @@ function WK_Keisei()
                                 this.kdb.getKItem(subject.kan).semantic,
                                 this.kdb.getPReadings_style(subject.phon)));
 
-                        this.populateCharGrid(`#keisei_phonetic_grid`, subject);
+                        this.populateCharGrid(`#keisei_main_phonetic_grid`, subject);
 
                         break;
                     default:
@@ -421,14 +421,14 @@ function WK_Keisei()
             });
 
         const $grid_head = $(`<ul></ul>`)
-                           .attr(`id`, `keisei_phongrid_header`)
+                           .addClass(`keisei_phongrid_header`)
                            .addClass(`single-character-grid`)
                            .appendTo(selector);
 
         $grid_head.html(head_list.map(this.gen_item_chargrid).join(``));
 
         const $grid_comp = $(`<ul></ul>`)
-                           .attr(`id`, `keisei_phongrid_compounds`)
+                           .addClass(`keisei_phongrid_compounds`)
                            .addClass(`single-character-grid`)
                            .appendTo(selector);
 
@@ -463,12 +463,11 @@ function WK_Keisei()
                     $(`#keisei_more_expl_${i}`).append(
                         this.explanation_xref(curPhon, this.kdb.getPReadings_style(curPhon)));
 
-                const $gridx = $(`<ul></ul>`)
+                const $gridx = $(`<div></div>`)
                                .attr(`id`, `keisei_xref_grid_${i}`)
-                               .attr(`style`, `padding-bottom: 10px; margin-bottom:6px; border-bottom: 1px solid #d5d5d5;`)
-                               .addClass(`single-character-grid`);
+                               .addClass(`keisei_phonetic_grid`)
+                               .appendTo(`#keisei_more_fold`);
 
-                $(`#keisei_more_fold`).append($gridx);
                 this.populateCharGrid(`#keisei_xref_grid_${i}`,
                                       {"kan": subject.kan, "phon": curPhon});
             },
@@ -486,10 +485,9 @@ function WK_Keisei()
 
             $(`#keisei_more_non_comp`).append(this.explanation_non_compound(subject));
 
-            const $gridn = $(`<ul></ul>`)
+            const $gridn = $(`<div></div>`)
                            .attr(`id`, `keisei_non_comp_grid`)
-                           .attr(`style`, `padding-bottom: 10px; margin-bottom:6px; border-bottom: 1px solid #d5d5d5;`)
-                           .addClass(`single-character-grid`)
+                           .addClass(`keisei_phonetic_grid`)
                            .appendTo(`#keisei_more_fold`);
 
             let char_list = [];
