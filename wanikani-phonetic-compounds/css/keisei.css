@@ -122,7 +122,7 @@
 
 @media (max-width: 767px)
 {
-    .wk_namespace .keisei_main_phonetic_grid,
+    .wk_namespace .keisei_phonetic_grid,
     .wk_namespace .keisei_spaced_chargrid {
         flex-direction: column;
     }
