@@ -485,9 +485,10 @@ function WK_Keisei()
 
             $(`#keisei_more_non_comp`).append(this.explanation_non_compound(subject));
 
-            const $gridn = $(`<div></div>`)
+            const $gridn = $(`<ul></ul>`)
                            .attr(`id`, `keisei_non_comp_grid`)
                            .addClass(`keisei_phonetic_grid`)
+                           .addClass(`single-character-grid`)
                            .appendTo(`#keisei_more_fold`);
 
             let char_list = [];
