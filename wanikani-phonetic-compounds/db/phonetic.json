@@ -1635,10 +1635,17 @@
     },
     "乍": {
         "readings": ["さ", "さく", "じゃ"],
-        "compounds": ["詐", "作", "昨", "酢"],
+        "compounds": ["詐", "作", "昨", "酢", "窄"],
         "non_compounds": [],
-        "xrefs": [],
+        "xrefs": ["窄"],
         "wk-radical": "key"
+    },
+    "窄": {
+        "readings": ["さく"],
+        "compounds": ["搾"],
+        "non_compounds": [],
+        "xrefs": ["乍"],
+        "wk-radical": null
     },
     "巨": {
         "readings": ["きょ", "こ"],
@@ -1655,8 +1662,8 @@
         "wk-radical": "longcat"
     },
     "朿": {
-        "readings": ["し"],
-        "compounds": ["刺", "策", "責"],
+        "readings": ["し", "せき"],
+        "compounds": ["刺", "策", "責", "跡"],
         "non_compounds": [],
         "xrefs": ["責"],
         "wk-radical": null
@@ -2042,7 +2049,7 @@
     },
     "責": {
         "readings": ["せき", "しゃく"],
-        "compounds": ["積", "債", "漬", "績", "跡"],
+        "compounds": ["積", "債", "漬", "績"],
         "non_compounds": [],
         "xrefs": ["朿"],
         "wk-radical": "blame"
@@ -3535,7 +3542,8 @@
         "compounds": ["壁", "癖", "避", "璧"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": "propaganda"
+        "wk-radical": "hot-pepper",
+        "wk-old-rad": "propaganda"
     },
     "尉": {
         "readings": ["い"],
@@ -3952,7 +3960,7 @@
     },
     "枼": {
         "readings": ["ちょう", "よう"],
-        "compounds": ["葉", "諜", "蝶"],
+        "compounds": ["葉", "諜", "蝶", "牒"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": null

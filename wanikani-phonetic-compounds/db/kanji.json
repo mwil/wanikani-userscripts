@@ -15242,8 +15242,8 @@
             "しゃく"
         ],
         "semantic": "足",
-        "phonetic": "責",
-        "kyuujitai": "蹟",
+        "phonetic": "朿",
+        "kyuujitai": "迹",
         "type": "comp_phonetic",
         "obscure": true,
         "category": "jouyou"
@@ -22962,15 +22962,16 @@
         "category": "jinmeiyou"
     },
     "鷹": {
-        "readings": [],
-        "meanings": [],
-        "type": "unprocessed",
-        "category": "jinmeiyou"
+        "readings": ["よう", "おう"],
+        "meanings": ["hawk"],
+        "type": "unknown",
+        "category": "jinmeiyou",
+        "comment": "phonetic 䧹 or 膺"
     },
     "厩": {
-        "readings": [],
-        "meanings": [],
-        "type": "unprocessed",
+        "readings": ["きゅう"],
+        "meanings": ["barn", "stable"],
+        "type": "unknown",
         "category": "jinmeiyou"
     },
     "亦": {
@@ -22998,10 +22999,11 @@
         "category": "jinmeiyou"
     },
     "灸": {
-        "readings": [],
-        "meanings": [],
-        "type": "unprocessed",
-        "category": "jinmeiyou"
+        "readings": ["きゅう"],
+        "meanings": ["moxa cautery", "chastisement"],
+        "type": "unknown",
+        "category": "jinmeiyou",
+        "comment": "TODO: phonetic 久"
     },
     "皓": {
         "readings": [
@@ -23119,10 +23121,11 @@
         "category": "jinmeiyou"
     },
     "叡": {
-        "readings": [],
-        "meanings": [],
-        "type": "unprocessed",
-        "category": "jinmeiyou"
+        "readings": ["えい"],
+        "meanings": ["intelligence", "imperial"],
+        "type": "unknown",
+        "category": "jinmeiyou",
+        "comment": "PC 睿"
     },
     "偲": {
         "readings": [
@@ -23150,9 +23153,11 @@
         "category": "jinmeiyou"
     },
     "牒": {
-        "readings": [],
-        "meanings": [],
-        "type": "unprocessed",
+        "readings": ["ちょう", "じょう"],
+        "meanings": ["label", "genealogy", "circular"],
+        "semantic": "片",
+        "phonetic": "枼",
+        "type": "comp_phonetic",
         "category": "jinmeiyou"
     },
     "卿": {
