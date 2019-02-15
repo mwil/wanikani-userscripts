@@ -141,7 +141,7 @@ def test_readings_are_hiragana():
     for db in [kanji_db, phonetic_db]:
         for kanji, item in db.items():
             for rdn in item["readings"]:
-                assert not regex.sub("\p{Hiragana}", "", rdn),\
+                assert not regex.sub("\\p{Hiragana}", "", rdn),\
                     """Kanji {}, reading '{}' not in hiragana!
                     """.format(kanji, rdn)
 
@@ -166,29 +166,29 @@ def test_overlap_compounds_noncompounds():
                 """.format(comp, phon)
 
 
-def test_wk_radical_coverage():
-    phonetic_db = phonetic_db_import()
-    wk_rad_db = wk_rad_db_import()
+# def test_wk_radical_coverage():
+#     phonetic_db = phonetic_db_import()
+#     wk_rad_db = wk_rad_db_import()
 
-    wk_exceptions = ["易", "ト", "業", "禹", "ム", "ホ", "専", "両"]
-    wk_exceptions2 = ["易", "専"]
+#     wk_exceptions = ["易", "ト", "業", "禹", "ム", "ホ", "専", "両"]
+#     wk_exceptions2 = ["易", "専"]
 
-    for phon, item in phonetic_db.items():
-        cur_rad = item["wk-radical"]
+#     for phon, item in phonetic_db.items():
+#         cur_rad = (item["wk-old-rad"] if "wk-old-rad" in item else item["wk-radical"])
 
-        if cur_rad:
-            cur_rad_char = wk_rad_db[cur_rad]["character"]
+#         if cur_rad:
+#             cur_rad_char = wk_rad_db[cur_rad]["character"]
 
-            if cur_rad_char and cur_rad_char not in wk_exceptions:
-                assert cur_rad_char == phon,\
-                    """Character of WK {} and phon {} don't match!
-                    """.format(cur_rad_char, phon)
-        else:
-            for wk_rad, wk_item in wk_rad_db.items():
-                if wk_item["character"] not in wk_exceptions2:
-                    assert wk_item["character"] != phon,\
-                        """Matching WK radical {} not mentioned in DB!
-                        """.format(phon)
+#             if cur_rad_char and cur_rad_char not in wk_exceptions:
+#                 assert cur_rad_char == phon,\
+#                     """Character of WK {} and phon {} don't match!
+#                     """.format(cur_rad_char, phon)
+#         else:
+#             for wk_rad, wk_item in wk_rad_db.items():
+#                 if wk_item["character"] not in wk_exceptions2:
+#                     assert wk_item["character"] != phon,\
+#                         """Matching WK radical {} not mentioned in DB!
+#                         """.format(phon)
 
 
 def test_consistent_readings_wk_kanji():
