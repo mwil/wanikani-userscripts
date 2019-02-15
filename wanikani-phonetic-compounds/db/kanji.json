@@ -14849,8 +14849,9 @@
         "readings": [
             "さく"
         ],
-        "type": "unknown",
-        "comment": "obscure phonetic mark 窄, related to 乍",
+        "semantic": "手",
+        "phonetic": "窄",
+        "type": "comp_phonetic",
         "category": "jouyou"
     },
     "摂": {
@@ -25006,9 +25007,11 @@
         "category": "jinmeiyou"
     },
     "窄": {
-        "readings": [],
-        "meanings": [],
-        "type": "unprocessed",
+        "readings": ["さく"],
+        "meanings": ["narrow", "fold", "furl"],
+        "semantic": "穴",
+        "phonetic": "乍",
+        "type": "comp_phonetic",
         "category": "jinmeiyou"
     },
     "惺": {
