@@ -3530,6 +3530,20 @@
         "xrefs": [],
         "wk-radical": "woman"
     },
+    "妟": {
+        "readings": ["えん"],
+        "compounds": ["宴", "匽"],
+        "non_compounds": [],
+        "xrefs": ["匽"],
+        "wk-radical": null
+    },
+    "匽": {
+        "readings": ["えん"],
+        "compounds": ["堰"],
+        "non_compounds": [],
+        "xrefs": ["妟"],
+        "wk-radical": null
+    },
     "寿": {
         "readings": ["じゅ", "す"],
         "compounds": ["鋳"],

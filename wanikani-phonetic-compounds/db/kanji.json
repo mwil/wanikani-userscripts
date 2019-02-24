@@ -12024,8 +12024,9 @@
         "readings": [
             "えん"
         ],
-        "type": "unknown",
-        "comment": "phonetic mark 妟?",
+        "semantic": "宀",
+        "phonetic": "妟",
+        "type": "comp_phonetic",
         "category": "jouyou"
     },
     "宰": {
@@ -20014,8 +20015,9 @@
         "readings": [
             "えん"
         ],
-        "type": "unknown",
-        "comment": "obscure phonetic 匽",
+        "semantic": "土",
+        "phonetic": "匽",
+        "type": "comp_phonetic",
         "category": "jinmeiyou"
     },
     "淀": {
@@ -20660,6 +20662,31 @@
             "日"
         ],
         "type": "comp_indicative"
+    },
+    "妟": {
+        "readings": [
+            "えん",
+            "あん"
+        ],
+        "meanings": [
+            "at ease",
+            "be clear and balmy"
+        ],
+        "type": "unknown",
+        "category": "gaiji"
+    },
+    "匽": {
+        "readings": [
+            "えん"
+        ],
+        "meanings": [
+            "to hide",
+            "to secrete"
+        ],
+        "semantic": "匸",
+        "phonetic": "妟",
+        "type": "comp_phonetic",
+        "category": "gaiji"
     },
     "柬": {
         "readings": [
