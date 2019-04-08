@@ -479,7 +479,7 @@
     },
     "石": {
         "readings": ["せき", "しゃく", "こく", "じゃく"],
-        "compounds": ["拓", "妬"],
+        "compounds": ["拓", "妬", "碩"],
         "non_compounds": [],
         "xrefs": [],
         "wk-radical": "stone"
@@ -752,7 +752,7 @@
     },
     "京": {
         "readings": ["きょう", "けい", "きん"],
-        "compounds": ["景", "鯨", "諒", "涼"],
+        "compounds": ["景", "鯨", "諒", "涼", "椋"],
         "non_compounds": [],
         "xrefs": ["景"],
         "wk-radical": "capital"
@@ -2086,8 +2086,15 @@
         "readings": ["じゅう", "ちょう"],
         "compounds": ["動", "腫", "種", "衝"],
         "non_compounds": [],
-        "xrefs": ["童"],
+        "xrefs": ["動", "童"],
         "wk-radical": "heavy"
+    },
+    "動": {
+        "readings": ["どう"],
+        "compounds": ["働"],
+        "non_compounds": [],
+        "xrefs": ["重"],
+        "wk-radical": null
     },
     "童": {
         "readings": ["どう", "とう", "じゅう", "ちょう"],

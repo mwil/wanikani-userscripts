@@ -5423,8 +5423,10 @@
         "category": "jouyou"
     },
     "働": {
-        "readings": [],
-        "type": "kokuji",
+        "readings": ["どう"],
+        "semantic": "人",
+        "phonetic": "動",
+        "type": "comp_phonetic",
         "category": "jouyou"
     },
     "塩": {
@@ -23201,9 +23203,14 @@
         "category": "jinmeiyou"
     },
     "椋": {
-        "readings": [],
-        "meanings": [],
-        "type": "unprocessed",
+        "readings": ["りょう"],
+        "meanings": [
+            "deciduous tree",
+            "grey starling"
+        ],
+        "semantic": "木",
+        "phonetic": "京",
+        "type": "comp_phonetic",
         "category": "jinmeiyou"
     },
     "杜": {
@@ -23295,9 +23302,14 @@
         "category": "jinmeiyou"
     },
     "碩": {
-        "readings": [],
-        "meanings": [],
-        "type": "unprocessed",
+        "readings": ["せき"],
+        "meanings": [
+            "large",
+            "great",
+            "eminent"],
+        "semantic": "頁",
+        "phonetic": "石",
+        "type": "comp_phonetic",
         "category": "jinmeiyou"
     },
     "菖": {
