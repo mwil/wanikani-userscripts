@@ -24557,9 +24557,11 @@
         "category": "jinmeiyou"
     },
     "濡": {
-        "readings": [],
-        "meanings": [],
-        "type": "unprocessed",
+        "readings": ["じゅ"],
+        "meanings": ["get wet", "damp"],
+        "semantic": "水",
+        "phonetic": "需",
+        "type": "comp_phonetic",
         "category": "jinmeiyou"
     },
     "膏": {
