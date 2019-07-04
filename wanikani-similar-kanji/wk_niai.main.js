@@ -155,6 +155,9 @@ function WK_Niai()
         similar_list.forEach(
             function(sim_kanji, i)
             {
+                if (!this.ndb.isKanjiInDB(sim_kanji))
+                    return;
+
                 const sim_info = this.ndb.getInfo(sim_kanji);
 
                 const li_template = {
@@ -216,7 +219,7 @@ function WK_Niai()
     {
         const wkof_config = {
             wk_items: {
-                options: {assignments: true},
+                options: {},
                 filters: {
                     srs: {value: 'lock', invert: true},
                     item_type: 'kan'

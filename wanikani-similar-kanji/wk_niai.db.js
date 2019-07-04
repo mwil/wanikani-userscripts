@@ -20,6 +20,10 @@ function NiaiDB()
 
         isKanjiInWK: function(kanji)
         {
+            // WK started adding new kanji, treat unknown kanji gracefully
+            if (!this.isKanjiInDB(kanji))
+                return false;
+
             return (this.lookup_db[kanji].level !== 99);
         },
 
@@ -30,7 +34,7 @@ function NiaiDB()
 
         isKanjiLocked: function(kanji, level)
         {
-            if (kanji in this.lookup_db)
+            if (this.isKanjiInDB(kanji))
                 return (this.lookup_db[kanji].level > level);
             else
                 return true;
@@ -38,6 +42,9 @@ function NiaiDB()
 
         getInfo: function(kanji)
         {
+            if (!this.isKanjiInDB(kanji))
+                return {"meanings": "Not in DB!", "readings": "&nbsp;"};
+
             let info = this.lookup_db[kanji];
 
             info.readings = info[info.important_reading];
