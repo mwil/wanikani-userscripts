@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Wanikani Niai Similar Kanji
-// @version     1.3.0
+// @version     1.3.1
 // @author      acm
 // @description Adds a visually similar kanji section to content pages, reviews, and lessons
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
@@ -41,6 +41,7 @@
 // @grant       GM_setValue
 // @grant       GM_addStyle
 // @grant       GM_getResourceText
+// @grant       unsafeWindow
 //
 // @run-at      document-end
 // ==/UserScript==
