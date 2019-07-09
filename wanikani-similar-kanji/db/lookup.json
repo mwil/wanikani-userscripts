@@ -27897,18 +27897,6 @@
     "important_reading": "onyomi",
     "nanori": []
   },
-  "膝": {
-    "level": 99,
-    "meanings": [
-      "Knee"
-    ],
-    "onyomi": [
-      "ひざ"
-    ],
-    "kunyomi": [],
-    "important_reading": "onyomi",
-    "nanori": []
-  },
   "鶴": {
     "level": 49,
     "meanings": [
@@ -27991,19 +27979,6 @@
     ],
     "onyomi": [
       "こ"
-    ],
-    "kunyomi": [],
-    "important_reading": "onyomi",
-    "nanori": []
-  },
-  "眉": {
-    "level": 99,
-    "meanings": [
-      "Eyebrow"
-    ],
-    "onyomi": [
-      "び",
-      "み"
     ],
     "kunyomi": [],
     "important_reading": "onyomi",
@@ -28470,18 +28445,6 @@
     "important_reading": "kunyomi",
     "nanori": []
   },
-  "捉": {
-    "level": 99,
-    "meanings": [
-      "Catch"
-    ],
-    "onyomi": [
-      "そく"
-    ],
-    "kunyomi": [],
-    "important_reading": "onyomi",
-    "nanori": []
-  },
   "宛": {
     "level": 99,
     "meanings": [
@@ -28648,19 +28611,6 @@
     ],
     "onyomi": [
       "こん"
-    ],
-    "kunyomi": [],
-    "important_reading": "onyomi",
-    "nanori": []
-  },
-  "諦": {
-    "level": 99,
-    "meanings": [
-      "Truth"
-    ],
-    "onyomi": [
-      "てい",
-      "たい"
     ],
     "kunyomi": [],
     "important_reading": "onyomi",
@@ -28854,19 +28804,6 @@
     "kunyomi": [
       "いただ"
     ],
-    "important_reading": "onyomi",
-    "nanori": []
-  },
-  "痩": {
-    "level": 99,
-    "meanings": [
-      "Get Thin"
-    ],
-    "onyomi": [
-      "そう",
-      "しゅう"
-    ],
-    "kunyomi": [],
     "important_reading": "onyomi",
     "nanori": []
   },
