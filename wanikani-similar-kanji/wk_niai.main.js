@@ -185,7 +185,7 @@ function WK_Niai()
 
         $(`#niai_similar_grid`).html(char_list.map(this.gen_item_chargrid).join(``));
 
-        if (window.wkof)
+        if (unsafeWindow.wkof)
             this.wkof_fix_info(similar_list);
 
         if (!$(`#niai_badges_btn i`).hasClass(`icon-remove-circle`))
@@ -217,11 +217,20 @@ function WK_Niai()
     // #########################################################################
     WK_Niai.prototype.wkof_fix_info = function(similar_list)
     {
-        const wkof_config = {
+        const wkof_config_locked = {
             wk_items: {
                 options: {},
                 filters: {
                     srs: {value: 'lock', invert: true},
+                    item_type: 'kan'
+                }
+            }
+        };
+
+        const wkof_config_meaning = {
+            wk_items: {
+                options: {},
+                filters: {
                     item_type: 'kan'
                 }
             }
@@ -233,18 +242,34 @@ function WK_Niai()
 
             similar_list.forEach((sim_kanji) => {
                 if (sim_kanji in type_items)
-                {
                     $(`li[id$="${sim_kanji}"]`).removeClass(`locked`);
-                }
                 else
                     $(`li[id$="${sim_kanji}"]`).addClass(`locked`);
             });
         };
 
+        // Retrieve the latest meanings directly from WK
+        const _fix_meanings = function(items)
+        {
+            const type_items = wkof.ItemData.get_index(items, `slug`);
+
+            similar_list.forEach((sim_kanji) => {
+                if (sim_kanji in type_items)
+                {
+                    $(`li[id$="${sim_kanji}"] li.niai_meaning`)
+                        .text(type_items[sim_kanji].data.meanings[0].meaning);
+                }
+            });
+        };
+
         wkof.ready(`ItemData`)
             .then(()=>
-                    wkof.ItemData.get_items(wkof_config)
+                    wkof.ItemData.get_items(wkof_config_locked)
                         .then(_fix_info)
+            )
+            .then(()=>
+                    wkof.ItemData.get_items(wkof_config_meaning)
+                        .then(_fix_meanings)
             );
     };
     // #########################################################################
@@ -329,7 +354,7 @@ function WK_Niai()
 // #############################################################################
 const wk_niai = new WK_Niai();
 
-if (window.wkof)
+if (unsafeWindow.wkof)
     wkof.include(`ItemData`);
 
 wk_niai.init();

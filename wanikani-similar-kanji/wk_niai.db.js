@@ -75,7 +75,7 @@ function NiaiDB()
                             let score = source.base_score +
                                         (hasScore ? sim_info.score : 0.0);
 
-                            if (!(sim_kanji in this.lookup_db))
+                            if (!this.isKanjiInDB(sim_kanji))
                             {
                                 console.log("Ignoring", kanji, ", not in DB yet!");
                                 return;
