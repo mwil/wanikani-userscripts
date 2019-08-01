@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Wanikani Niai Similar Kanji
-// @version     1.3.1
+// @version     1.3.2
 // @author      acm
 // @description Adds a visually similar kanji section to content pages, reviews, and lessons
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
@@ -34,7 +34,7 @@
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/386cca9202ac091d22383b0407d9f5ed2b3bf527/wanikani-similar-kanji/wk_niai.db.js
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/b83d74d286584b0319ee2bbe455e2e13f6a9afce/wanikani-similar-kanji/wk_niai.modal.js
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/b38bba6022d1a8bbb993bd3aaea055f35acbfa19/wanikani-similar-kanji/wk_niai.html.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/386cca9202ac091d22383b0407d9f5ed2b3bf527/wanikani-similar-kanji/wk_niai.main.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/783d29d742012317efd18d02a9d71fe881cf9008/wanikani-similar-kanji/wk_niai.main.js
 //
 // @grant       GM_log
 // @grant       GM_getValue
