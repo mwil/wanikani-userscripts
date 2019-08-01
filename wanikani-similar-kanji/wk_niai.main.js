@@ -185,7 +185,7 @@ function WK_Niai()
 
         $(`#niai_similar_grid`).html(char_list.map(this.gen_item_chargrid).join(``));
 
-        if (unsafeWindow.wkof)
+        if (false && unsafeWindow.wkof)
             this.wkof_fix_info(similar_list);
 
         if (!$(`#niai_badges_btn i`).hasClass(`icon-remove-circle`))
@@ -354,7 +354,7 @@ function WK_Niai()
 // #############################################################################
 const wk_niai = new WK_Niai();
 
-if (unsafeWindow.wkof)
+if (false && unsafeWindow.wkof)
     wkof.include(`ItemData`);
 
 wk_niai.init();
