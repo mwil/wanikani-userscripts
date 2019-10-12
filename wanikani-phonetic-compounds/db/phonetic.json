@@ -977,7 +977,8 @@
         "compounds": ["彫", "週", "調"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": "ghost"
+        "wk-radical": "circumference",
+        "wk-old-rad": "ghost"
     },
     "予": {
         "readings": ["よ"],
@@ -1227,7 +1228,8 @@
         "compounds": ["源", "願"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": "diamond"
+        "wk-radical": "original",
+        "wk-old-rad": "diamond"
     },
     "家": {
         "readings": ["か", "け"],
@@ -1364,7 +1366,8 @@
         "compounds": ["府", "附", "符"],
         "non_compounds": [],
         "xrefs": ["府"],
-        "wk-radical": "glue"
+        "wk-radical": "attach",
+        "wk-old-rad": "glue"
     },
     "府": {
         "readings": ["ふ"],
@@ -2154,7 +2157,8 @@
         "compounds": ["界", "芥"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": "hut"
+        "wk-radical": "jammed-in",
+        "wk-old-rad": "hut"
     },
     "开": {
         "readings": ["けん"],
@@ -4032,7 +4036,8 @@
         "compounds": ["麺"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": "robot"
+        "wk-radical": "face",
+        "wk-old-rad": "robot"
     },
     "虚": {
         "readings": ["きょ", "こ"],
