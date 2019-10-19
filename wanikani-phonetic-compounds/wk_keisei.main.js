@@ -385,6 +385,7 @@ function WK_Keisei()
             "kanji":    subject.phon,
             "readings": this.kdb.getKReadings(subject.phon),
             "meanings": [`Phonetic`],
+            "wk_level": "N/A",
             "kanji_id": `phonetic-1`
         });
 
@@ -394,6 +395,7 @@ function WK_Keisei()
                 "kanji":    subject.phon,
                 "readings": this.kdb.getKReadings(subject.phon),
                 "meanings": [this.kdb.getWKRadicalPP(subject.phon)],
+                "wk_level": "N/A",
                 "href":     `/radicals/${this.kdb.getWKRadical(subject.phon)}`,
                 "kanji_id": `radical-1`
             });
@@ -402,6 +404,7 @@ function WK_Keisei()
                 "kanji":    `&nbsp;`,
                 "readings": [`&nbsp;`],
                 "meanings": [`&nbsp;`],
+                "wk_level": "N/A",
                 "kanji_id": `radical-1`
             });
 
@@ -499,6 +502,7 @@ function WK_Keisei()
                 "kanji":    subject.phon,
                 "readings": this.kdb.getKReadings(subject.phon),
                 "meanings": [`Non-Phonetic`],
+                "wk_level": this.kdb.getWKItem(subject.phon).level,
                 "kanji_id": `nonphonetic-1`
             });
 
