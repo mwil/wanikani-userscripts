@@ -1699,7 +1699,7 @@
         "xrefs": [],
         "wk-radical": "omen"
     },
-    "僉": {
+    "㑒": {
         "readings": ["けん"],
         "compounds": ["倹", "険", "験", "検", "剣"],
         "non_compounds": [],
@@ -3085,8 +3085,15 @@
         "readings": ["しゃく", "せき"],
         "compounds": ["択", "釈"],
         "non_compounds": ["沢", "昼", "訳", "駅"],
-        "xrefs": [],
+        "xrefs": ["睪"],
         "wk-radical": "shrimp"
+    },
+    "睪": {
+        "readings": ["えき", "やく", "じょう", "しょう"],
+        "compounds": ["訳", "駅"],
+        "non_compounds": [],
+        "xrefs": ["尺"],
+        "wk-radical": null
     },
     "戒": {
         "readings": ["かい"],
@@ -3348,7 +3355,7 @@
         "xrefs": [],
         "wk-radical": null
     },
-    "𠔉": {
+    "龹": {
         "readings": ["けん"],
         "compounds": ["券", "拳", "巻"],
         "non_compounds": [],
@@ -3359,7 +3366,7 @@
         "readings": ["かん", "けん"],
         "compounds": ["圏"],
         "non_compounds": [],
-        "xrefs": ["𠔉"],
+        "xrefs": ["龹"],
         "wk-radical": "scroll"
     },
     "甚": {

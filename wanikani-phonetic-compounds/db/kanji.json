@@ -3924,8 +3924,9 @@
             "尺"
         ],
         "kyuujitai": "驛",
-        "type": "unknown",
-        "comment": "obscure PC 睪 (えき)",
+        "semantic": "馬",
+        "phonetic": "睪",
+        "type": "comp_phonetic",
         "category": "jouyou"
     },
     "鼻": {
@@ -5757,7 +5758,7 @@
             "げん"
         ],
         "semantic": "馬",
-        "phonetic": "僉",
+        "phonetic": "㑒",
         "kyuujitai": "驗",
         "type": "comp_phonetic",
         "category": "jouyou"
@@ -6166,7 +6167,7 @@
             "けん"
         ],
         "semantic": "刀",
-        "phonetic": "𠔉",
+        "phonetic": "龹",
         "type": "comp_phonetic",
         "category": "jouyou"
     },
@@ -6779,7 +6780,7 @@
             "けん"
         ],
         "semantic": "阜",
-        "phonetic": "僉",
+        "phonetic": "㑒",
         "kyuujitai": "險",
         "type": "comp_phonetic",
         "category": "jouyou"
@@ -6856,7 +6857,7 @@
             "けん"
         ],
         "semantic": "⽊",
-        "phonetic": "僉",
+        "phonetic": "㑒",
         "kyuujitai": "檢",
         "type": "comp_phonetic",
         "category": "jouyou"
@@ -7986,7 +7987,7 @@
             "けん"
         ],
         "semantic": "卩",
-        "phonetic": "𠔉",
+        "phonetic": "龹",
         "kyuujitai": "卷",
         "type": "comp_phonetic",
         "category": "jouyou"
@@ -8454,7 +8455,9 @@
             "尺"
         ],
         "kyuujitai": "譯",
-        "type": "shinjitai",
+        "semantic": "言",
+        "phonetic": "睪",
+        "type": "comp_phonetic",
         "category": "jouyou"
     },
     "欲": {
@@ -11815,7 +11818,7 @@
             "けん"
         ],
         "semantic": "人",
-        "phonetic": "僉",
+        "phonetic": "㑒",
         "kyuujitai": "儉",
         "type": "comp_phonetic",
         "category": "jouyou"
@@ -11903,7 +11906,7 @@
             "けん"
         ],
         "semantic": "刀",
-        "phonetic": "僉",
+        "phonetic": "㑒",
         "kyuujitai": "劍",
         "type": "comp_phonetic",
         "category": "jouyou"
@@ -18543,7 +18546,7 @@
             "げん"
         ],
         "semantic": "手",
-        "phonetic": "𠔉",
+        "phonetic": "龹",
         "type": "comp_phonetic",
         "category": "jouyou"
     },
@@ -20677,6 +20680,19 @@
         "type": "unknown",
         "category": "gaiji"
     },
+    "睪": {
+        "readings": [
+            "えき",
+            "やく",
+            "じょう",
+            "しょう"
+        ],
+        "meanings": [
+            "spy on"
+        ],
+        "type": "unknown",
+        "category": "gaiji"
+    },
     "匽": {
         "readings": [
             "えん"
@@ -21051,7 +21067,7 @@
         ],
         "type": "hieroglyph"
     },
-    "僉": {
+    "㑒": {
         "readings": [
             "けん"
         ],
@@ -22313,7 +22329,7 @@
         ],
         "type": "hieroglyph"
     },
-    "𠔉": {
+    "龹": {
         "readings": [
             "けん"
         ],
