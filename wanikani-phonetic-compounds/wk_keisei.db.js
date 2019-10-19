@@ -84,7 +84,7 @@ function KeiseiDB()
             if (kanji in this.wk_kanji_db)
                 return this.wk_kanji_db[kanji];
             else
-                return {};
+                return {"level": "N/A"};
         },
         // #####################################################################
 

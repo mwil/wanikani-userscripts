@@ -307,6 +307,7 @@ function WK_Keisei()
                     "kanji":    kanji,
                     "readings": this.kdb.getKReadings(kanji),
                     "meanings": this.kdb.getWKKMeanings(kanji),
+                    "wk_level": this.kdb.getWKItem(kanji).level,
                     "notInWK":  this.kdb.isKanjiInWK(kanji) ? `` : `notInWK`,
                     "href":     this.kdb.isKanjiInWK(kanji) ?
                                     `/kanji/${kanji}` :
