@@ -410,6 +410,7 @@ function WK_Keisei()
                 "kanji":    subject.phon,
                 "readings": this.kdb.getKReadings(subject.phon),
                 "meanings": this.kdb.getWKKMeanings(subject.phon),
+                "wk_level": this.kdb.getWKItem(subject.phon).level,
                 "notInWK":  this.kdb.isKanjiInWK(subject.phon) ? `` : `notInWK`,
                 "href":     this.kdb.isKanjiInWK(subject.phon) ?
                                 `/kanji/${subject.phon}` :
@@ -507,6 +508,7 @@ function WK_Keisei()
                         "kanji":    curKanji,
                         "readings": this.kdb.getKReadings(curKanji),
                         "meanings": this.kdb.getWKKMeanings(curKanji),
+                        "wk_level": this.kdb.getWKItem(curKanji).level,
                         "notInWK":  this.kdb.isKanjiInWK(curKanji) ? `` : `notInWK`,
                         "href":     this.kdb.isKanjiInWK(curKanji) ?
                                         `/kanji/${curKanji}` :

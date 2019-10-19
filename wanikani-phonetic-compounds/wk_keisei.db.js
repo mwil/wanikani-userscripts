@@ -71,7 +71,20 @@ function KeiseiDB()
         // #####################################################################
         getKItem: function(kanji)
         {
-            return this.kanji_db[kanji];
+            if (kanji in this.kanji_db)
+                return this.kanji_db[kanji];
+            else
+                return {};
+        },
+        // #####################################################################
+
+        // #####################################################################
+        getWKItem: function(kanji)
+        {
+            if (kanji in this.wk_kanji_db)
+                return this.wk_kanji_db[kanji];
+            else
+                return {};
         },
         // #####################################################################
 
