@@ -21,21 +21,21 @@ if __name__ == "__main__":
 
     fig, ax1 = plt.subplots()
 
-    ax1.plot(days, daily_reviews, "g-")
+    # ax1.plot(days, daily_reviews, "g-")
     # ax1.fill_between(days, 0, daily_reviews,
     #                  where=daily_reviews > 0,
     #                  facecolor="b",
     #                  interpolate=True)
 
-    N = 3  # averaging period in days
+    N = 7  # averaging period in days
 
-    # avg = np.convolve(daily_reviews,
-    #                   np.ones((N,))/N,
-    #                   mode="full")
+    avg = np.convolve(daily_reviews,
+                      np.ones((N,))/N,
+                      mode="full")
 
-    # avg_days = np.arange(min(days), max(days)+(2*N-3))
+    avg_days = np.arange(min(days), max(days)+(2*N-N))
 
-    # ax1.plot(avg_days, avg, "b-")
+    ax1.plot(avg_days, avg, "b-")
 
     # ax1.fill_between(avg_days, 0, avg,
     #                  where=avg > 0,
