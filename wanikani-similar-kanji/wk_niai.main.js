@@ -164,6 +164,7 @@ function WK_Niai()
                     "kanji":     sim_kanji,
                     "readings":  sim_info.readings,
                     "meanings":  len_limiter(sim_info.meanings),
+                    "wk_level":  sim_info.level,
                     "is_locked": this.ndb.isKanjiLocked(
                                     sim_kanji, this.settings.user_level) ?
                                         `locked` :
@@ -210,67 +211,6 @@ function WK_Niai()
         $(`.${GM_info.script.namespace} .delete-badge`).on(
             `click`, this.removeSimilarKanji.bind(this));
         // #####################################################################
-    };
-    // #########################################################################
-
-    // Use the WK Open Framework to fix the offine DB of Niai
-    // #########################################################################
-    WK_Niai.prototype.wkof_fix_info = function(similar_list)
-    {
-        const wkof_config_locked = {
-            wk_items: {
-                options: {},
-                filters: {
-                    srs: {value: 'lock', invert: true},
-                    item_type: 'kan'
-                }
-            }
-        };
-
-        const wkof_config_meaning = {
-            wk_items: {
-                options: {},
-                filters: {
-                    item_type: 'kan'
-                }
-            }
-        };
-
-        const _fix_info = function(items)
-        {
-            const type_items = wkof.ItemData.get_index(items, `slug`);
-
-            similar_list.forEach((sim_kanji) => {
-                if (sim_kanji in type_items)
-                    $(`li[id$="${sim_kanji}"]`).removeClass(`locked`);
-                else
-                    $(`li[id$="${sim_kanji}"]`).addClass(`locked`);
-            });
-        };
-
-        // Retrieve the latest meanings directly from WK
-        const _fix_meanings = function(items)
-        {
-            const type_items = wkof.ItemData.get_index(items, `slug`);
-
-            similar_list.forEach((sim_kanji) => {
-                if (sim_kanji in type_items)
-                {
-                    $(`li[id$="${sim_kanji}"] li.niai_meaning`)
-                        .text(type_items[sim_kanji].data.meanings[0].meaning);
-                }
-            });
-        };
-
-        wkof.ready(`ItemData`)
-            .then(()=>
-                    wkof.ItemData.get_items(wkof_config_locked)
-                        .then(_fix_info)
-            )
-            .then(()=>
-                    wkof.ItemData.get_items(wkof_config_meaning)
-                        .then(_fix_meanings)
-            );
     };
     // #########################################################################
 
@@ -353,9 +293,6 @@ function WK_Niai()
 // #############################################################################
 // #############################################################################
 const wk_niai = new WK_Niai();
-
-if (false && unsafeWindow.wkof)
-    wkof.include(`ItemData`);
 
 wk_niai.init();
 wk_niai.run();
