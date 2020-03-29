@@ -992,8 +992,7 @@
         "compounds": ["場", "陽", "瘍", "湯", "腸", "揚"],
         "non_compounds": [],
         "xrefs": [],
-        "wk-radical": "easy",
-        "wk-old-rad": "gravity"
+        "wk-radical": null
     },
     "道": {
         "readings": ["どう", "とう"],
@@ -2762,7 +2761,8 @@
         "compounds": ["賜"],
         "non_compounds": ["場", "陽", "瘍", "湯", "腸"],
         "xrefs": [],
-        "wk-radical": null
+        "wk-radical": "easy",
+        "wk-old-rad": "gravity"
     },
     "臤": {
         "readings": ["けん", "かん"],
