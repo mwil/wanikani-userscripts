@@ -990,7 +990,7 @@
     "昜": {
         "readings": ["よう"],
         "compounds": ["場", "陽", "瘍", "湯", "腸", "揚"],
-        "non_compounds": [],
+        "non_compounds": ["賜"],
         "xrefs": [],
         "wk-radical": null
     },
