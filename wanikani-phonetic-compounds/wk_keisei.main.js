@@ -311,7 +311,7 @@ function WK_Keisei()
                     "notInWK":  this.kdb.isKanjiInWK(kanji) ? `` : `notInWK`,
                     "href":     this.kdb.isKanjiInWK(kanji) ?
                                     `/kanji/${kanji}` :
-                                    `${GM_getValue(lookup)}${kanji}`,
+                                    `${this.settings.lookup}${kanji}`,
                     "kanji_id": `kanji-${kanji}`,
                     "rnd_style": this.kdb.isFirstReadingInWK(kanji) ?
                                     `` :
@@ -418,7 +418,7 @@ function WK_Keisei()
                 "notInWK":  this.kdb.isKanjiInWK(subject.phon) ? `` : `notInWK`,
                 "href":     this.kdb.isKanjiInWK(subject.phon) ?
                                 `/kanji/${subject.phon}` :
-                                `${GM_getValue(lookup)}${subject.phon}`,
+                                `${this.settings.lookup}${subject.phon}`,
                 "kanji_id": `kanji-1`,
                 "rnd_style": this.kdb.isFirstReadingInWK(subject.phon) ?
                                 `` :
@@ -517,7 +517,7 @@ function WK_Keisei()
                         "notInWK":  this.kdb.isKanjiInWK(curKanji) ? `` : `notInWK`,
                         "href":     this.kdb.isKanjiInWK(curKanji) ?
                                         `/kanji/${curKanji}` :
-                                        `${GM_getValue(lookup)}${curKanji}`,
+                                        `${this.settings.lookup}${curKanji}`,
                         "kanji_id": `kanji-${curKanji}`,
                         "rnd_style": this.kdb.isFirstReadingInWK(curKanji) ?
                                         `` :
