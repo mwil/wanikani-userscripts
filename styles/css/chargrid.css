@@ -117,7 +117,6 @@
 .wk_namespace ul.single-character-grid li.character-item span.character,
 .wk_namespace ul.multi-character-grid  li.character-item span.character {
     font-size:72px;
-    font-weight:bold;
     line-height:1.5em;
     text-shadow:0 2px 0 rgba(0,0,0,0.3)
 }
