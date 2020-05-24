@@ -544,6 +544,11 @@ function WK_Keisei()
         // _.forEach(this.settings, (is_set, setting) => {
         //     this.settings[setting] = GM_getValue(setting, this.settings[setting]);
         // });
+        //
+
+        if (!GM_getValue("lookup")) {
+            GM_setValue("lookup", "https://jisho.org/search/%23kanji%20");
+        }
 
         this.settings.debug     = GM_getValue("debug")     || false;
         this.settings.minify    = GM_getValue("minify")    || false;
@@ -551,9 +556,9 @@ function WK_Keisei()
         this.settings.fuzzykana = GM_getValue("fuzzykana") || false;
         this.settings.withbeta  = GM_getValue("withbeta")  || false;
         this.settings.onlywk    = GM_getValue("onlywk")    || false;
-        this.settings.lookup    = GM_getValue("lookup")    || "https://jisho.org/search/%23kanji%20";
+        this.settings.lookup    = GM_getValue("lookup");
 
-        this.override_db = JSON.parse(GM_getValue(`override_db`) || `{}`);
+        this.override_db = JSON.parse(GM_getValue("override_db") || "{}");
 
         this.log = this.settings.debug ?
             function(msg, ...args) {
