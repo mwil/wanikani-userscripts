@@ -311,7 +311,7 @@ function WK_Keisei()
                     "notInWK":  this.kdb.isKanjiInWK(kanji) ? `` : `notInWK`,
                     "href":     this.kdb.isKanjiInWK(kanji) ?
                                     `/kanji/${kanji}` :
-                                    `https://jisho.org/search/${kanji}%20%23kanji`,
+                                    `${GM_getValue(lookup)}${kanji}`,
                     "kanji_id": `kanji-${kanji}`,
                     "rnd_style": this.kdb.isFirstReadingInWK(kanji) ?
                                     `` :
@@ -418,7 +418,7 @@ function WK_Keisei()
                 "notInWK":  this.kdb.isKanjiInWK(subject.phon) ? `` : `notInWK`,
                 "href":     this.kdb.isKanjiInWK(subject.phon) ?
                                 `/kanji/${subject.phon}` :
-                                `https://jisho.org/search/${subject.phon}%20%23kanji`,
+                                `${GM_getValue(lookup)}${subject.phon}`,
                 "kanji_id": `kanji-1`,
                 "rnd_style": this.kdb.isFirstReadingInWK(subject.phon) ?
                                 `` :
@@ -517,7 +517,7 @@ function WK_Keisei()
                         "notInWK":  this.kdb.isKanjiInWK(curKanji) ? `` : `notInWK`,
                         "href":     this.kdb.isKanjiInWK(curKanji) ?
                                         `/kanji/${curKanji}` :
-                                        `https://jisho.org/search/${curKanji}%20%23kanji`,
+                                        `${GM_getValue(lookup)}${curKanji}`,
                         "kanji_id": `kanji-${curKanji}`,
                         "rnd_style": this.kdb.isFirstReadingInWK(curKanji) ?
                                         `` :
@@ -545,12 +545,13 @@ function WK_Keisei()
         //     this.settings[setting] = GM_getValue(setting, this.settings[setting]);
         // });
 
-        this.settings.debug     = GM_getValue(`debug`)     || false;
-        this.settings.minify    = GM_getValue(`minify`)    || false;
-        this.settings.fullinfo  = GM_getValue(`fullinfo`)  || false;
-        this.settings.fuzzykana = GM_getValue(`fuzzykana`) || false;
-        this.settings.withbeta  = GM_getValue(`withbeta`)  || false;
-        this.settings.onlywk    = GM_getValue(`onlywk`)    || false;
+        this.settings.debug     = GM_getValue("debug")     || false;
+        this.settings.minify    = GM_getValue("minify")    || false;
+        this.settings.fullinfo  = GM_getValue("fullinfo")  || false;
+        this.settings.fuzzykana = GM_getValue("fuzzykana") || false;
+        this.settings.withbeta  = GM_getValue("withbeta")  || false;
+        this.settings.onlywk    = GM_getValue("onlywk")    || false;
+        this.settings.lookup    = GM_getValue("lookup")    || "https://jisho.org/search/%23kanji%20";
 
         this.override_db = JSON.parse(GM_getValue(`override_db`) || `{}`);
 
