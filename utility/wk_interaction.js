@@ -176,8 +176,8 @@ function WKInteraction(namespace)
 
             mutations.forEach(
                 function(mutation) {
-                    // Length 2 for radical page, 4 for kanji page (vocab is 5)
-                    if ([2, 4, 5].includes(mutation.addedNodes.length))
+                    // Length 5 for radical page, 9 for kanji page (vocab is 11)
+                    if ([5, 9, 11].includes(mutation.addedNodes.length))
                         doTrigger = true;
                 },
                 this
@@ -201,8 +201,8 @@ function WKInteraction(namespace)
 
                 mutations.forEach(
                     function(mutation) {
-                        // Length 2 for radical page, 4 for kanji page (vocab is 5)
-                        if ([2, 4, 5].includes(mutation.addedNodes.length))
+                        // Length 5 for radical page, 9 for kanji page (vocab is 11)
+                        if ([5, 9, 11].includes(mutation.addedNodes.length))
                             doTrigger = true;
                     },
                     this
