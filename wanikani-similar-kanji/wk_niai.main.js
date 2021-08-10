@@ -31,57 +31,18 @@ function WK_Niai()
 {
     "use strict";
 
-    WK_Niai.prototype.injectNiaiSection = function(event, curPage)
+    WK_Niai.prototype.injectNiaiSection = function(injectorState)
     {
         // #####################################################################
-        $(`#niai_section`).remove();
-
-        const subject = this.wki.getSubject();
-
         this.log(`Injecting similar kanji section (callback works).`);
 
-        if (!this.wki.checkSubject(subject, [`kan`]))
-            return;
+        let niaiSection = this.createNiaiSection()[0].children;
+        let section = injectorState.injector.append([...niaiSection[0].childNodes], niaiSection[1], {injectImmediately: true});
+        if (!section) return;
+        section.classList.add(GM_info.script.namespace, `col1`);
+        section.id = `niai_section`;
 
-        switch(curPage)
-        {
-            case this.wki.PageEnum.kanji:
-                // Remove the old section
-                $(`section:contains('Visually Similar Kanji')`).remove();
-
-                $(`section:contains('Found In Vocabulary')`)
-                    .before(this.createNiaiSection());
-                break;
-            case this.wki.PageEnum.reviews:
-            case this.wki.PageEnum.lessons_reviews:
-                $(`div#item-info-col2`)
-                    .append(this.createNiaiSection());
-
-                if ($(`div#item-info-col2`).is(`:hidden`))
-                    $(`#niai_section`).hide();
-
-                break;
-            case this.wki.PageEnum.lessons:
-                // WK uses an very strong CSS selector for the lesson pages,
-                // need to move the div somewhere else ... this might possibly
-                // break other stuff!
-                if (!$(`#real_skrv`).length)
-                    $(`div#supplement-kan-related-vocabulary`)
-                        .removeAttr("style")
-                        .wrap(`<div id="real_skrv"></div>`);
-
-                $(`div#real_skrv`)
-                    .append(this.createNiaiSection(`margin-bottom: 1em;`)
-                             .wrap(`<div class="pure-u-1 col1></div>`)
-                             .wrap(`<div class="pure-g-r"></div>`));
-
-                break;
-            default:
-                GM_log(`Unknown page type ${curPage}, cannot inject info!`);
-                return;
-        }
-
-        this.populateNiaiSection(subject.kan);
+        this.populateNiaiSection(injectorState.characters, injectorState.on);
 
         if (this.settings.minify)
         {
@@ -136,7 +97,7 @@ function WK_Niai()
     };
 
     // #########################################################################
-    WK_Niai.prototype.populateNiaiSection = function(kanji)
+    WK_Niai.prototype.populateNiaiSection = function(kanji, curPage)
     {
         $(`#niai_similar_grid`).empty();
 
@@ -200,8 +161,7 @@ function WK_Niai()
         else
             $(`#niai_reset_similar_btn`).addClass(`disabled`);
 
-        if (this.wki.detectCurPage() === this.wki.PageEnum.reviews ||
-            this.wki.detectCurPage() === this.wki.PageEnum.lessons)
+        if (curPage !== `itemInfo`)
             $(`.niai_similar_link`).attr(`target`, `_blank`);
 
         $(`li.notInWK a`).attr(`target`, `_blank`);
@@ -218,7 +178,7 @@ function WK_Niai()
     WK_Niai.prototype.init = function()
     {
         GM_addStyle(GM_getResourceText(`niai_style`)
-                        .replace(/wk_namespace/g, GM_info.script.namespace));
+                        .replace(/\.wk_namespace/g, `#niai_section#niai_section#niai_section#niai_section`));
 
         this.settings.debug      = GM_getValue(`debug`)      || false;
         this.settings.minify     = GM_getValue(`minify`)     || false;
@@ -230,7 +190,6 @@ function WK_Niai()
         this.override_db = JSON.parse(GM_getValue(`override_db`) || `{}`);
 
         this.ndb = new NiaiDB();
-        this.wki = new WKInteraction(GM_info.script.namespace);
 
         if ($(`li.dropdown.levels`).length)
         {
@@ -245,16 +204,18 @@ function WK_Niai()
             function() {};
 
         this.ndb.init(this.override_db);
-        this.wki.init();
 
         this.log(`The script element is:`, GM_info);
         this.log("The override db is", this.override_db);
 
         // #####################################################################
-        // Main hook, WK Interaction will kick off this script once the page
-        // is ready and we can access the subject of the page.
-        $(document).on(`${GM_info.script.namespace}_wk_subject_ready`,
-                       this.injectNiaiSection.bind(this));
+        // Main hook, WK Item Info Injector will kick off this script once the
+        // page is ready and we can access the subject of the page.
+        let wkItemInfo = (window.unsafeWindow || window).wkItemInfo;
+        if (wkItemInfo) {
+            wkItemInfo.on(`itemPage,lessonQuiz,review`).forType(`kanji`).under(`reading`).spoiling(`meaning,reading`).notify(this.injectNiaiSection.bind(this));
+            wkItemInfo.on(`lesson`).forType(`kanji`).under(`examples`).notify(this.injectNiaiSection.bind(this));
+        }
         // #####################################################################
     };
     // #########################################################################
@@ -262,11 +223,14 @@ function WK_Niai()
     // #########################################################################
     WK_Niai.prototype.run = function()
     {
-        // Add scripts with guarding namespace (selecting class)
-        GM_addStyle(GM_getResourceText(`bootstrapcss`)
+        // Add scripts with guarding namespace (selecting class/id)
+        let bootstrapcss = GM_getResourceText(`bootstrapcss`);
+        GM_addStyle(bootstrapcss
+                        .replace(/\.wk_namespace/g, `#niai_section#niai_section#niai_section#niai_section`));
+        GM_addStyle(bootstrapcss
                         .replace(/wk_namespace/g, GM_info.script.namespace));
         GM_addStyle(GM_getResourceText(`chargrid`)
-                        .replace(/wk_namespace/g, GM_info.script.namespace));
+                        .replace(/\.wk_namespace/g, `#niai_section#niai_section#niai_section#niai_section`));
 
         // #####################################################################
         // Add parts of bootstrap for the modal pages (settings, etc.)
@@ -280,10 +244,6 @@ function WK_Niai()
                 .attr(`type`, `text/javascript`)
                 .text(GM_getResourceText(`b-dropdown-js`))
                 .appendTo(`head`);
-        // #####################################################################
-
-        // Start page detection (and its callbacks once ready)
-        this.wki.startInteraction.call(this.wki);
     };
     // #########################################################################
 }
