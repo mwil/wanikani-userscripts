@@ -172,7 +172,7 @@
     // #########################################################################
     WK_Niai.prototype.toggleUseAlt = function(event)
     {
-        const kanji = this.wki.getSubject().kan;
+        const kanji = wkItemInfo.currentState.characters;
         this.settings.use_alt = !this.settings.use_alt;
 
         $(`#niai_settings_btn_use_alt`).toggleClass(`active`);
@@ -190,7 +190,7 @@
     // #########################################################################
     WK_Niai.prototype.toggleClearDB = function(event)
     {
-        const kanji = this.wki.getSubject().kan;
+        const kanji = wkItemInfo.currentState.characters;
 
         $(`#niai_settings_btn_clearDB`).toggleClass(`active`);
         $(`#niai_settings_btn_clearDB i`).toggleClass(`icon-warning-sign`);
@@ -216,7 +216,7 @@
 
     WK_Niai.prototype.changeMinScore = function(event)
     {
-        const kanji = this.wki.getSubject().kan;
+        const kanji = wkItemInfo.currentState.characters;
         const new_value = $(`#niai_settings_input_min_score`).val();
 
         if (new_value != this.settings.min_score)
