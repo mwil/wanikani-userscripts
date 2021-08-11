@@ -13,7 +13,7 @@
 // @downloadURL https://github.com/mwil/wanikani-userscripts/raw/master/wanikani-phonetic-compounds/wk_keisei.user.js
 //
 // @resource    kanji_db     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/kanji_esc.json
-// @resource    phonetic_db  https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/phonetic_esc.json
+// @resource    phonetic_db  https://raw.githubusercontent.com/mwil/wanikani-userscripts/c2998f25a11024f9aec1c70b37319d5172b5cbe3/wanikani-phonetic-compounds/db/phonetic_esc.json
 // @resource    wk_kanji_db  https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/wk_kanji_esc.json
 //
 // @resource    keisei_style https://raw.githubusercontent.com/mwil/wanikani-userscripts/58d6c99b618aa0a84783d67ba67ed55f538e006f/wanikani-phonetic-compounds/css/keisei.css
@@ -26,7 +26,7 @@
 //
 // @require     https://greasyfork.org/scripts/430565-wanikani-item-info-injector/code/WaniKani%20Item%20Info%20Injector.user.js?version=958983
 //
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/2f590d5316a8a9aa34326fe98c5beab332179546/wanikani-phonetic-compounds/wk_keisei.db.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/c2998f25a11024f9aec1c70b37319d5172b5cbe3/wanikani-phonetic-compounds/wk_keisei.db.js
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/b2f5455a15c9e808df7214896b05e29915e807c0/wanikani-phonetic-compounds/wk_keisei.strings.en.js
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/337620114c75a9ed6aa2bdfb9ec8397b75048a01/wanikani-phonetic-compounds/wk_keisei.modal.js
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/0903f5c2a92705f8abb8a68a9a60d5d413854b2b/wanikani-phonetic-compounds/wk_keisei.html.js
