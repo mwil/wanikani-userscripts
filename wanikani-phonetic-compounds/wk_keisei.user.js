@@ -13,25 +13,25 @@
 // @downloadURL https://github.com/mwil/wanikani-userscripts/raw/master/wanikani-phonetic-compounds/wk_keisei.user.js
 //
 // @resource    kanji_db     https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/kanji_esc.json
-// @resource    phonetic_db  https://raw.githubusercontent.com/mwil/wanikani-userscripts/c2998f25a11024f9aec1c70b37319d5172b5cbe3/wanikani-phonetic-compounds/db/phonetic_esc.json
+// @resource    phonetic_db  https://raw.githubusercontent.com/mwil/wanikani-userscripts/9613d7da06618c4f55519ae1edbc9c706db13a59/wanikani-phonetic-compounds/db/phonetic_esc.json
 // @resource    wk_kanji_db  https://raw.githubusercontent.com/mwil/wanikani-userscripts/master/wanikani-phonetic-compounds/db/wk_kanji_esc.json
 //
-// @resource    keisei_style https://raw.githubusercontent.com/mwil/wanikani-userscripts/58d6c99b618aa0a84783d67ba67ed55f538e006f/wanikani-phonetic-compounds/css/keisei.css
+// @resource    keisei_style https://raw.githubusercontent.com/mwil/wanikani-userscripts/9613d7da06618c4f55519ae1edbc9c706db13a59/wanikani-phonetic-compounds/css/keisei.css
 //
-// @resource    chargrid     https://raw.githubusercontent.com/mwil/wanikani-userscripts/a8853dc81942249e98e8091b404aadc28c092d99/styles/css/chargrid.css
-// @resource    bootstrapcss https://raw.githubusercontent.com/mwil/wanikani-userscripts/7caebf537b4d02084d85f1a19d26b50c185d8d05/styles/bootstrap/css/bootstrap.crop.css
-// @resource    bootstrapjs  https://raw.githubusercontent.com/mwil/wanikani-userscripts/8d4694c53273fbac4e6b888f4ab95a3fa16d31c5/styles/bootstrap/js/bootstrap.js
+// @resource    chargrid     https://raw.githubusercontent.com/mwil/wanikani-userscripts/9613d7da06618c4f55519ae1edbc9c706db13a59/styles/css/chargrid.css
+// @resource    bootstrapcss https://raw.githubusercontent.com/mwil/wanikani-userscripts/9613d7da06618c4f55519ae1edbc9c706db13a59/styles/bootstrap/css/bootstrap.crop.css
+// @resource    bootstrapjs  https://raw.githubusercontent.com/mwil/wanikani-userscripts/9613d7da06618c4f55519ae1edbc9c706db13a59/styles/bootstrap/js/bootstrap.js
 //
 // @require     https://cdn.jsdelivr.net/npm/lodash@4.17.4/lodash.min.js
 //
-// @require     https://greasyfork.org/scripts/430565-wanikani-item-info-injector/code/WaniKani%20Item%20Info%20Injector.user.js?version=958983
+// @require     https://greasyfork.org/scripts/430565-wanikani-item-info-injector/code/WaniKani%20Item%20Info%20Injector.user.js?version=961902
 //
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/c2998f25a11024f9aec1c70b37319d5172b5cbe3/wanikani-phonetic-compounds/wk_keisei.db.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/b2f5455a15c9e808df7214896b05e29915e807c0/wanikani-phonetic-compounds/wk_keisei.strings.en.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/337620114c75a9ed6aa2bdfb9ec8397b75048a01/wanikani-phonetic-compounds/wk_keisei.modal.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/0903f5c2a92705f8abb8a68a9a60d5d413854b2b/wanikani-phonetic-compounds/wk_keisei.html.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/51438d133a194c16deb81518b1f7f89c1f6abf6d/wanikani-phonetic-compounds/wk_keisei.nav.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/5fddc57f48310146154039bb74b012efb4878336/wanikani-phonetic-compounds/wk_keisei.main.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/9613d7da06618c4f55519ae1edbc9c706db13a59/wanikani-phonetic-compounds/wk_keisei.db.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/9613d7da06618c4f55519ae1edbc9c706db13a59/wanikani-phonetic-compounds/wk_keisei.strings.en.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/9613d7da06618c4f55519ae1edbc9c706db13a59/wanikani-phonetic-compounds/wk_keisei.modal.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/9613d7da06618c4f55519ae1edbc9c706db13a59/wanikani-phonetic-compounds/wk_keisei.html.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/9613d7da06618c4f55519ae1edbc9c706db13a59/wanikani-phonetic-compounds/wk_keisei.nav.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/9613d7da06618c4f55519ae1edbc9c706db13a59/wanikani-phonetic-compounds/wk_keisei.main.js
 //
 // @grant       GM_log
 // @grant       GM_getValue
