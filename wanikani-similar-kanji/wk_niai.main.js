@@ -37,7 +37,7 @@ function WK_Niai()
         this.log(`Injecting similar kanji section (callback works).`);
 
         let niaiSection = this.createNiaiSection()[0].children;
-        let section = injectorState.injector.append([...niaiSection[0].childNodes], niaiSection[1], {injectImmediately: true});
+        let section = injectorState.injector.append([...niaiSection[0].childNodes], niaiSection[1], {injectImmediately: true, sectionName: `Visually Similar Kanji`});
         if (!section) return;
         section.classList.add(GM_info.script.namespace, `col1`);
         section.id = `niai_section`;
