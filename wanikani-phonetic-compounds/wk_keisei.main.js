@@ -4,7 +4,6 @@
 // #############################################################################
 function WK_Keisei()
 {
-    this.wki = null;
     this.kdb = null;
 
     this.currentSubject = null;
@@ -25,81 +24,46 @@ function WK_Keisei()
 {
     "use strict";
 
-    // Callback for the WKInteraction, this is called directly at the beginning
-    // when the required WK content is available.
+    // Callback for WK Item Info Injector, this is called directly at the
+    // beginning when the required WK content is available.
     //
     // Note: on the reviews and lessons page we inject some styles lifted from
     // WK to include the nice 'character grids', this might cause some ugly
     // interactions with these pages (seems fine though)!
     // #########################################################################
-    WK_Keisei.prototype.injectKeiseiSection = function(event, curPage)
+    WK_Keisei.prototype.injectKeiseiSection = function(injectorState)
     {
         // #####################################################################
-        $(`#keisei_section`).remove();
-
-        const subject = this.wki.getSubject();
+        const subject = {rad: null, kan: null, voc: null};
 
         this.log(`Injecting phonetic section (callback works).`);
 
-        if (!this.wki.checkSubject(subject, [`rad`, `kan`]))
-            return;
-
-        if (subject.rad)
+        if (injectorState.type === `radical`) {
+            subject.rad = injectorState.characters || injectorState.id;
             subject.phon = this.kdb.mapWKRadicalToPhon(subject.rad);
-        else
+        } else {
+            subject.kan = injectorState.characters;
             subject.phon = this.kdb.getKPhonetic(subject.kan) || subject.kan;
+        }
 
         this.currentSubject = subject;
         this.log(`Working with the following input:`, subject);
         // #####################################################################
 
         // #####################################################################
-        switch(curPage)
-        {
-            case this.wki.PageEnum.radicals:
-                $(`section#note-meaning`)
-                    .before(this.createKeiseiSection());
-                break;
-            case this.wki.PageEnum.kanji:
-                $(`section#note-reading`)
-                    .before(this.createKeiseiSection());
-                break;
-            case this.wki.PageEnum.reviews:
-            case this.wki.PageEnum.lessons_reviews:
-                if ($(`section#item-info-reading-mnemonic`).length)
-                {
-                    $(`section#item-info-reading-mnemonic`)
-                        .after(this.createKeiseiSection());
-
-                    if ($(`section#item-info-reading-mnemonic`).is(`:hidden`))
-                        $(`#keisei_section`).hide();
-                }
-                else
-                    $(`section#note-meaning`)
-                        .before(this.createKeiseiSection());
-
-                break;
-            case this.wki.PageEnum.lessons:
-                if ($(`div#main-info`).hasClass(`radical`))
-                    $(`div#supplement-rad-name-mne`)
-                        .after(this.createKeiseiSection(`margin-top: 1.5em;`));
-                else
-                    $(`div#supplement-kan-reading div.col2 blockquote:last`)
-                        .after(this.createKeiseiSection(`margin-top: 1.5em;`));
-
-                break;
-            default:
-                GM_log(`Unknown page type ${curPage}, cannot inject info!`);
-                return;
-        }
+        let keiseiSection = this.createKeiseiSection()[0].children;
+        let section = injectorState.injector.appendSubsection([...keiseiSection[0].childNodes], [keiseiSection[1], keiseiSection[2]], {injectImmediately: true});
+        if (!section) return;
+        section.classList.add(GM_info.script.namespace, `col1`);
+        section.id = `keisei_section`;
         // #####################################################################
 
         this.populateKeiseiSection(subject);
 
         // #####################################################################
 
-        if (curPage === this.wki.PageEnum.reviews ||
-            curPage === this.wki.PageEnum.lessons)
+        if (injectorState.on === `review` ||
+            injectorState.on === `lesson`)
             $(`.keisei_kanji_link`).attr(`target`, `_blank`);
 
         $(`li.notInWK a`).attr(`target`, `_blank`);
@@ -144,8 +108,7 @@ function WK_Keisei()
         // #####################################################################
         else
         {
-            if ((!this.wki.checkSubject(subject, [`rad`, `kan`])) ||
-                (subject.kan && !this.kdb.checkKanji(subject.kan)))
+            if (subject.kan && !this.kdb.checkKanji(subject.kan))
             {
                 // Something is wrong, not a kanji or not in DB!
                 $(`#keisei_explanation`).append(
@@ -569,19 +532,19 @@ function WK_Keisei()
         this.log(`The active settings are`, this.settings);
 
         this.kdb = new KeiseiDB();
-        this.wki = new WKInteraction(GM_info.script.namespace);
-
         this.kdb.init();
-        this.wki.init();
 
         this.log(`The script element is:`, GM_info);
         this.log(`The override db is`, this.override_db);
 
         // #####################################################################
-        // Main hook, WK Interaction will kick off this script once the page
-        // is ready and we can access the subject of the page.
-        $(document).on(`${GM_info.script.namespace}_wk_subject_ready`,
-                       this.injectKeiseiSection.bind(this));
+        // Main hook, WK Item Info Injector will kick off this script once the
+        // page is ready and we can access the subject of the page.
+        let wkItemInfo = (window.unsafeWindow || window).wkItemInfo;
+        if (wkItemInfo) {
+            wkItemInfo.forType(`kanji`).under(`reading`).spoiling(`meaning,reading`).notify(this.injectKeiseiSection.bind(this));
+            wkItemInfo.forType(`radical`).under(`meaning`).notify(this.injectKeiseiSection.bind(this));
+        }
         // #####################################################################
     };
     // #########################################################################
@@ -604,9 +567,6 @@ function WK_Keisei()
                 .text(GM_getResourceText(`bootstrapjs`))
                 .appendTo(`head`);
         // #####################################################################
-
-        // Start page detection (and its callbacks once ready)
-        this.wki.startInteraction.call(this.wki);
 
         if (this.settings.withbeta)
             this.addNavItem();

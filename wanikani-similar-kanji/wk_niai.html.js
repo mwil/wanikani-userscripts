@@ -145,7 +145,7 @@
         if ($(`#niai_reset_similar_btn`).hasClass(`disabled`))
             return false;
 
-        const kanji = this.wki.getSubject().kan;
+        const kanji = wkItemInfo.currentState.characters;
 
         $(`#niai_reset_similar_btn`).toggleClass(`active`);
         $(`#niai_reset_similar_btn i`).toggleClass(`icon-undo`);
@@ -189,7 +189,7 @@
     // #########################################################################
     WK_Niai.prototype.removeSimilarKanji = function(event)
     {
-        const kanji = this.wki.getSubject().kan;
+        const kanji = wkItemInfo.currentState.characters;
         const sim_kanji = event.currentTarget.dataset.kanji;
 
         if (!kanji || !sim_kanji)
@@ -243,7 +243,7 @@
     // #########################################################################
     WK_Niai.prototype.addSimilarKanji = function(event)
     {
-        const kanji = this.wki.getSubject().kan;
+        const kanji = wkItemInfo.currentState.characters;
         const new_kanji = $(`#kanji-dropdown`)[0].dataset.kanji;
 
         if (!kanji || !new_kanji || kanji === new_kanji)

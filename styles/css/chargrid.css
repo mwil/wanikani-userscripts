@@ -5,6 +5,33 @@
     margin:0 0 10px 25px
 }
 
+.wk_namespace h2 {
+    display: flex;
+    flex-wrap: wrap
+}
+
+.wk_namespace h2 .btn-group:first-child {
+    margin-left: auto
+}
+
+.wk_namespace ul {
+    display: block
+}
+
+.wk_namespace ul li {
+    margin-bottom: 0;
+    display: block
+}
+
+.wk_namespace ul li span {
+    padding-left: 0;
+    padding-right: 0
+}
+
+.wk_namespace div > ul {
+    text-align: left
+}
+
 .wk_namespace a {
     text-decoration:none
 }
@@ -277,33 +304,6 @@
     border-bottom-right-radius: 3px
 }
 
-
-@media (min-width: 980px) and (max-width: 1199px)
-{
-    .wk_namespace ul.single-character-grid li.character-item:nth-child(even)
-    {
-        width:117px
-    }
-}
-
-@media (min-width: 768px) and (max-width: 979px)
-{
-    .wk_namespace ul.single-character-grid .character-item
-    {
-        width:122px
-    }
-
-    .wk_namespace ul.single-character-grid .character-item:nth-child(even)
-    {
-        width:123px
-    }
-
-    .wk_namespace ul.single-character-grid .character-item:nth-child(6n)
-    {
-        width:124px
-    }
-
-}
 
 @media (max-width: 767px)
 {

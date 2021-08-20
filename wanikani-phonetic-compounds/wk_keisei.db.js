@@ -204,11 +204,9 @@ function KeiseiDB()
 
         genWKRadicalToPhon: function()
         {
-            Object.keys(this.phonetic_db).forEach(
-                function(phon) {
-                    const data = this.phonetic_db[phon];
-
-                    this.wkradical_to_phon[data[`wk-radical`]] = phon;
+            Object.entries(this.phonetic_db).forEach(
+                function([phon, data]) {
+                    this.wkradical_to_phon[data[`wk-id`]] = phon;
                     this.wkradical_to_phon[phon] = phon;
                 },
                 this
