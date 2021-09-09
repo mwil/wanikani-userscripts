@@ -147,8 +147,8 @@ function WK_Niai()
 
         $(`#niai_similar_grid`).html(char_list.map(this.gen_item_chargrid).join(``));
 
-        if (false && unsafeWindow.wkof)
-            this.wkof_fix_info(similar_list);
+        if (typeof wkof === `object`)
+            this.update_wk_cache(similar_list);
 
         if (!$(`#niai_badges_btn i`).hasClass(`icon-remove-circle`))
         {
@@ -191,9 +191,9 @@ function WK_Niai()
 
         this.ndb = new NiaiDB();
 
-        if ($(`li.dropdown.levels`).length)
+        if (options[`Current Level`])
         {
-            this.settings.user_level = parseInt($(`li.levels a span`).text());
+            this.settings.user_level = options[`Current Level`];
             GM_setValue(`user_level`, this.settings.user_level);
         }
 
