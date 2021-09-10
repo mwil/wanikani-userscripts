@@ -40,6 +40,13 @@
     font-size: 16px;
 }
 
+.wk_namespace li[class$="_meaning"] {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 0 5px;
+}
+
 .wk_namespace ul.single-character-grid li[id|=kanji],
 .wk_namespace ul.multi-character-grid  li[id|=kanji] {
     background-color:#f100a1;
@@ -93,7 +100,7 @@
 .wk_namespace ul.single-character-grid li.character-item.locked,
 .wk_namespace ul.single-character-grid li.character-item.notInWK,
 .wk_namespace ul.multi-character-grid  li.character-item.locked {
-    background-image:url("https://cdn-staging.wanikani.com/assets/default-v2/stripes-5e8494366c1615da046bd0f587cfeef6786e7ba17863df1329767ca3b89140e0.png");
+    background-image:url("https://cdn.wanikani.com/assets/default-v2/stripes-901d93ece56dde9dac14fbbd8363cb53599460bc350251140b631660865fd9be.png");
     background-repeat:repeat
 }
 

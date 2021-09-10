@@ -3,6 +3,7 @@
 function NiaiDB()
 {
     this.override_db = {};
+    this.wkof_items = null;
 }
 
 
@@ -17,8 +18,26 @@ function NiaiDB()
         {
             this.override_db = override_db;
 
-            // if (wkof)
-            //     wkof.include(`ItemData`);
+            if (typeof wkof === `object`)
+                this.wkof_items = this.load_wkof_items();
+        },
+
+        load_wkof_items: async function()
+        {
+            const wkof_config_meaning = {
+                wk_items: {
+                    options: {
+                        assignments: true
+                    },
+                    filters: {
+                        item_type: 'kan'
+                    }
+                }
+            };
+            wkof.include(`ItemData`);
+            await wkof.ready(`ItemData`);
+            let items = await wkof.ItemData.get_items(wkof_config_meaning);
+            return wkof.ItemData.get_index(items, `slug`);
         },
 
         isKanjiInWK: function(kanji)
@@ -122,62 +141,17 @@ function NiaiDB()
 
     // Use the WK Open Framework to replace the offine DB of Niai
     // #########################################################################
-    WK_Niai.prototype.update_wk_cache = function()
+    WK_Niai.prototype.update_wk_cache = async function(similar_list)
     {
-        const wkof_config_locked = {
-            wk_items: {
-                options: {},
-                filters: {
-                    srs: {value: 'lock', invert: true},
-                    item_type: 'kan'
-                }
+        let index = await this.ndb.wkof_items;
+        similar_list.forEach((sim_kanji) => {
+            let item = index[sim_kanji];
+            if (item) {
+                $(`li[id$="${sim_kanji}"]`).toggleClass(`locked`, !item.assignments || item.assignments.srs_stage === -1);
+                $(`li[id$="${sim_kanji}"] li.niai_meaning`).text(item.data.meanings[0].meaning);
+                $(`li[id$="${sim_kanji}"] span.character`).attr(`title`, `WK Level: ${item.data.level}`);
             }
-        };
-
-        const wkof_config_meaning = {
-            wk_items: {
-                options: {},
-                filters: {
-                    item_type: 'kan'
-                }
-            }
-        };
-
-        const _fix_info = function(items)
-        {
-            const type_items = wkof.ItemData.get_index(items, `slug`);
-
-            similar_list.forEach((sim_kanji) => {
-                if (sim_kanji in type_items)
-                    $(`li[id$="${sim_kanji}"]`).removeClass(`locked`);
-                else
-                    $(`li[id$="${sim_kanji}"]`).addClass(`locked`);
-            });
-        };
-
-        // Retrieve the latest meanings directly from WK
-        const _fix_meanings = function(items)
-        {
-            const type_items = wkof.ItemData.get_index(items, `slug`);
-
-            similar_list.forEach((sim_kanji) => {
-                if (sim_kanji in type_items)
-                {
-                    $(`li[id$="${sim_kanji}"] li.niai_meaning`)
-                        .text(type_items[sim_kanji].data.meanings[0].meaning);
-                }
-            });
-        };
-
-        wkof.ready(`ItemData`)
-            .then(()=>
-                    wkof.ItemData.get_items(wkof_config_locked)
-                        .then(_fix_info)
-            )
-            .then(()=>
-                    wkof.ItemData.get_items(wkof_config_meaning)
-                        .then(_fix_meanings)
-            );
+        });
     };
     // #########################################################################
 }
