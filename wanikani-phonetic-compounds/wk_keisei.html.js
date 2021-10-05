@@ -46,18 +46,18 @@
         // Control buttons on the right of the section header
         const $view_btn = $(`<span class="btn-group"></span>`)
                           .append(`<a class="btn disabled" id="keisei_head_moreinfo">
-                                       <i class="icon-collapse-top"></i>
+                                       <i class="fa fa-caret-square-o-up"></i>
                                    </a>`)
                           .append(`<a class="btn" id="keisei_head_visibility">
-                                      <i class="icon-eye-open"></i>
+                                      <i class="fa fa-eye"></i>
                                    </a>`);
 
         const $main_btn = $(`<span class="btn-group"></span>`)
                           .append(`<a class="btn" id="keisei_head_settings" data-toggle="modal" data-target="#keisei_modal_settings">
-                                        <i class="icon-gear"></i>
+                                        <i class="fa fa-gear"></i>
                                    </a>`)
                           .append(`<a class="btn" id="keisei_head_info" data-toggle="modal" data-target="#keisei_modal_info">
-                                        <i class="icon-question"></i>
+                                        <i class="fa fa-question"></i>
                                    </a>`);
 
         const $head_grp = $(`<span></span>`)
@@ -115,11 +115,11 @@
     {
         $(`#keisei_main_fold`).toggle();
 
-        $(`#keisei_head_visibility i`).toggleClass(`icon-eye-open`);
-        $(`#keisei_head_visibility i`).toggleClass(`icon-eye-close`);
+        $(`#keisei_head_visibility i`).toggleClass(`fa-eye`);
+        $(`#keisei_head_visibility i`).toggleClass(`fa-eye-slash`);
 
         // if (!$(`#keisei_main_fold`).is(`:visible`) &&
-            // !$(`#keisei_head_moreinfo i`).hasClass(`icon-collapse`))
+            // !$(`#keisei_head_moreinfo i`).hasClass(`fa-caret-square-o-down`))
             // this.toggleMoreInfoFold();
 
         return false;
@@ -132,11 +132,11 @@
     {
         $(`#keisei_more_fold`).toggle();
 
-        $(`#keisei_head_moreinfo i`).toggleClass(`icon-collapse`);
-        $(`#keisei_head_moreinfo i`).toggleClass(`icon-collapse-top`);
+        $(`#keisei_head_moreinfo i`).toggleClass(`fa-caret-square-o-down`);
+        $(`#keisei_head_moreinfo i`).toggleClass(`fa-caret-square-o-up`);
 
         // if ((!$(`#keisei_main_fold`).is(`:visible`) &&
-            // !$(`#keisei_head_moreinfo i`).hasClass(`icon-collapse`)))
+            // !$(`#keisei_head_moreinfo i`).hasClass(`fa-caret-square-o-down`)))
             // this.toggleMainFold();
         //
         return false;

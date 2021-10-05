@@ -21,7 +21,7 @@
                         .addClass(`dropdown-toggle`)
                         .appendTo($keisei_li)
                         .html(`<span lang="ja" style="display: block;">声符</span>Phonetics
-                               <i class="icon-chevron-down"></i>`);
+                               <i class="fa fa-chevron-down"></i>`);
 
         const $drop_menu = $(`<ul></ul>`)
                            .addClass(`dropdown-menu`)
