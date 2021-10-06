@@ -47,17 +47,17 @@
 
         const $view_btn = $(`<span class="btn-group"></span>`)
                           .append(`<a class="btn" id="niai_grid_visibility">
-                                      <i class="icon-eye-open"></i>
+                                      <i class="fa fa-eye"></i>
                                   </a>`);
         // The note-niai part (at front!!) is crucial to stop enter keypresses
         // to go to the next page during reviews and lessons
         const $db_btn = $(`<span class="btn-group"></span>`)
                         .append(`<a class="btn" id="niai_badges_btn">
-                                    <i class="icon-remove-circle"></i>
+                                    <i class="fa fa-times-circle-o"></i>
                                 </a>`)
                         .append(`<span id="add_kanji_dropdown">
                                      <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                                         <span class="icon-plus"></span>
+                                         <span class="fa fa-plus"></span>
                                      </a>
                                      <ul class="note-niai dropdown-menu text-center">
                                         <li>
@@ -76,19 +76,19 @@
                                                 <textarea id="niai_add_similar_input" maxlength="1" rows="1" class="span2" type="text" placeholder="Enter Kanji Here"></textarea>
                                             </span>
                                         </li>
-                                        <li><a id="add_kanji_btn"><i class="icon-fixed-width icon-plus"></i> Add To Similar Kanji</a></li>
+                                        <li><a id="add_kanji_btn"><i class="fa fa-fw fa-plus"></i> Add To Similar Kanji</a></li>
                                      </ul>
                                  </span>`)
                         .append(`<a class="btn disabled" id="niai_reset_similar_btn">
-                                    <i class="icon-undo"></i>
+                                    <i class="fa fa-undo"></i>
                                 </a>`);
 
         const $head_btn = $(`<span class="btn-group"></span>`)
                           .append(`<a class="btn" id="niai_head_settings_btn" data-toggle="modal" data-target="#niai_modal_settings">
-                                        <i class="icon-gear"></i>
+                                        <i class="fa fa-gear"></i>
                                    </a>`)
                           .append(`<a class="btn" id="niai_head_info_btn" data-toggle="modal" data-target="#niai_modal_info">
-                                        <i class="icon-question"></i>
+                                        <i class="fa fa-question"></i>
                                    </a>`);
 
         const $head_grp = $(`<span></span>`)
@@ -120,8 +120,8 @@
     {
         $(`#niai_main_fold`).toggle();
 
-        $(`#niai_grid_visibility i`).toggleClass(`icon-eye-open`);
-        $(`#niai_grid_visibility i`).toggleClass(`icon-eye-close`);
+        $(`#niai_grid_visibility i`).toggleClass(`fa-eye`);
+        $(`#niai_grid_visibility i`).toggleClass(`fa-eye-slash`);
 
         return false;
     };
@@ -132,8 +132,8 @@
     {
         $(`.delete-badge`).toggle();
 
-        $(`#niai_badges_btn i`).toggleClass(`icon-circle-blank`);
-        $(`#niai_badges_btn i`).toggleClass(`icon-remove-circle`);
+        $(`#niai_badges_btn i`).toggleClass(`fa-circle-o`);
+        $(`#niai_badges_btn i`).toggleClass(`fa-times-circle-o`);
 
         return false;
     };
@@ -148,8 +148,8 @@
         const kanji = wkItemInfo.currentState.characters;
 
         $(`#niai_reset_similar_btn`).toggleClass(`active`);
-        $(`#niai_reset_similar_btn i`).toggleClass(`icon-undo`);
-        $(`#niai_reset_similar_btn i`).toggleClass(`icon-exclamation-sign`);
+        $(`#niai_reset_similar_btn i`).toggleClass(`fa-undo`);
+        $(`#niai_reset_similar_btn i`).toggleClass(`fa-exclamation-circle`);
 
         if (!$(`#niai_reset_similar_btn`).hasClass(`active`))
         {

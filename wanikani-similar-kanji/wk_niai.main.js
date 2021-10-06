@@ -47,13 +47,13 @@ function WK_Niai()
         if (this.settings.minify)
         {
             $(`#niai_main_fold`).hide();
-            $(`#niai_grid_visibility i`).attr(`class`, `icon-eye-close`);
+            $(`#niai_grid_visibility i`).attr(`class`, `fa fa-eye-slash`);
         }
 
         if (!this.settings.edit_mode)
         {
             $(`.delete-badge`).hide();
-            $(`#niai_badges_btn i`).attr(`class`, `icon-circle-blank`);
+            $(`#niai_badges_btn i`).attr(`class`, `fa fa-circle-o`);
         }
 
         // #####################################################################
@@ -150,10 +150,10 @@ function WK_Niai()
         if (typeof wkof === `object`)
             this.update_wk_cache(similar_list);
 
-        if (!$(`#niai_badges_btn i`).hasClass(`icon-remove-circle`))
+        if (!$(`#niai_badges_btn i`).hasClass(`fa-times-circle-o`))
         {
             $(`.delete-badge`).hide();
-            $(`#niai_badges_btn i`).attr(`class`, `icon-circle-blank`);
+            $(`#niai_badges_btn i`).attr(`class`, `fa fa-circle-o`);
         }
 
         if (kanji in this.override_db)

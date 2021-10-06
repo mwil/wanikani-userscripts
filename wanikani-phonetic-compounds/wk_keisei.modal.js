@@ -31,25 +31,25 @@
                     <div class="modal-body">
                         <p>
                             <div class="btn-group-lg text-center">
-                                <a class="btn" id="keisei_settings_btn_debug"><i class="icon-gear"></i> Toggle Debug Mode</a>
-                                <a class="btn" id="keisei_settings_btn_clearDB"><i class="icon-signout"></i> Reset Markers</a>
+                                <a class="btn" id="keisei_settings_btn_debug"><i class="fa fa-gear"></i> Toggle Debug Mode</a>
+                                <a class="btn" id="keisei_settings_btn_clearDB"><i class="fa fa-sign-out"></i> Reset Markers</a>
                             </div>
                         </p>
                         <p>
                             <div class="btn-group-lg text-center">
-                                <a class="btn" id="keisei_settings_btn_minify"><i class="icon-eye-open"></i> Toggle Mini Mode</a>
-                                <a class="btn" id="keisei_settings_btn_fullinfo"><i class="icon-collapse"></i> Toggle Full Info Mode</a>
-                                <a class="btn" id="keisei_settings_btn_fuzzykana"><i class="icon-circle-blank"></i> Toggle Dakuten Mode</a>
+                                <a class="btn" id="keisei_settings_btn_minify"><i class="fa fa-eye"></i> Toggle Mini Mode</a>
+                                <a class="btn" id="keisei_settings_btn_fullinfo"><i class="fa fa-caret-square-o-down"></i> Toggle Full Info Mode</a>
+                                <a class="btn" id="keisei_settings_btn_fuzzykana"><i class="fa fa-circle-o"></i> Toggle Dakuten Mode</a>
                             </div>
                         </p>
                         <p>
                             <div class="btn-group-lg text-center">
-                                <a class="btn" id="keisei_settings_btn_onlywk"><i class="icon-cny"></i> Show Only Kanji in Wanikani</a>
+                                <a class="btn" id="keisei_settings_btn_onlywk"><i class="fa fa-filter"></i> Show Only Kanji in Wanikani</a>
                             </div>
                         </p>
                         <p>
                             <div class="btn-group-lg text-center">
-                                <a class="btn btn-large" id="keisei_settings_btn_withbeta"><i class="icon-thumbs-up-alt"></i> Enable Beta Features</a>
+                                <a class="btn btn-large" id="keisei_settings_btn_withbeta"><i class="fa fa-thumbs-o-up"></i> Enable Beta Features</a>
                             </div>
                         </p>
                     </div>
@@ -92,18 +92,18 @@
 
         if (this.settings.minify)
             $(`#keisei_settings_btn_minify i`)
-                .removeClass(`icon-eye-open`)
-                .addClass(`icon-eye-close`);
+                .removeClass(`fa-eye`)
+                .addClass(`fa-eye-slash`);
 
         if (this.settings.fullinfo)
             $(`#keisei_settings_btn_fullinfo i`)
-                .removeClass(`icon-collapse`)
-                .addClass(`icon-collapse-top`);
+                .removeClass(`fa-caret-square-o-down`)
+                .addClass(`fa-caret-square-o-up`);
 
         if (this.settings.fuzzykana)
             $(`#keisei_settings_btn_fuzzykana i`)
-                .removeClass(`icon-circle-blank`)
-                .addClass(`icon-quote-right`);
+                .removeClass(`fa-circle-o`)
+                .addClass(`fa-quote-right`);
 
         $(`#keisei_settings_btn_debug`).on(`click`, this.toggleDebug.bind(this));
         $(`#keisei_settings_btn_minify`).on(`click`, this.toggleMinify.bind(this));
@@ -177,8 +177,8 @@
         this.settings.minify = !this.settings.minify;
 
         $(`#keisei_settings_btn_minify`).toggleClass(`active`);
-        $(`#keisei_settings_btn_minify i`).toggleClass(`icon-eye-open`);
-        $(`#keisei_settings_btn_minify i`).toggleClass(`icon-eye-close`);
+        $(`#keisei_settings_btn_minify i`).toggleClass(`fa-eye`);
+        $(`#keisei_settings_btn_minify i`).toggleClass(`fa-eye-slash`);
 
         if ($(`#keisei_main_fold`).is(`:visible`) === this.settings.minify)
             this.toggleMainFold();
@@ -195,8 +195,8 @@
         this.settings.fullinfo = !this.settings.fullinfo;
 
         $(`#keisei_settings_btn_fullinfo`).toggleClass(`active`);
-        $(`#keisei_settings_btn_fullinfo i`).toggleClass(`icon-collapse-top`);
-        $(`#keisei_settings_btn_fullinfo i`).toggleClass(`icon-collapse`);
+        $(`#keisei_settings_btn_fullinfo i`).toggleClass(`fa-caret-square-o-up`);
+        $(`#keisei_settings_btn_fullinfo i`).toggleClass(`fa-caret-square-o-down`);
 
         if ($(`#keisei_more_fold`).is(`:visible`) !== this.settings.fullinfo)
             this.toggleMoreInfoFold();
@@ -213,8 +213,8 @@
         this.settings.fuzzykana = !this.settings.fuzzykana;
 
         $(`#keisei_settings_btn_fuzzykana`).toggleClass(`active`);
-        $(`#keisei_settings_btn_fuzzykana i`).toggleClass(`icon-circle-blank`);
-        $(`#keisei_settings_btn_fuzzykana i`).toggleClass(`icon-quote-right`);
+        $(`#keisei_settings_btn_fuzzykana i`).toggleClass(`fa-circle-o`);
+        $(`#keisei_settings_btn_fuzzykana i`).toggleClass(`fa-quote-right`);
 
         this.populateCharGrid(`#keisei_phonetic_grid`, this.currentSubject);
 
@@ -245,8 +245,8 @@
         this.settings.withbeta = !this.settings.withbeta;
 
         $(`#keisei_settings_btn_withbeta`).toggleClass(`active`);
-        // $(`#keisei_settings_btn_withbeta i`).toggleClass(`icon-circle-blank`);
-        // $(`#keisei_settings_btn_withbeta i`).toggleClass(`icon-quote-right`);
+        // $(`#keisei_settings_btn_withbeta i`).toggleClass(`fa-circle-o`);
+        // $(`#keisei_settings_btn_withbeta i`).toggleClass(`fa-quote-right`);
 
         if (!$(`.dropdown.phonetic`).length && this.settings.withbeta)
             this.addNavItem();
@@ -263,8 +263,8 @@
     WK_Keisei.prototype.toggleClearDB = function(event)
     {
         $(`#keisei_settings_btn_clearDB`).toggleClass(`active`);
-        $(`#keisei_settings_btn_clearDB i`).toggleClass(`icon-warning-sign`);
-        $(`#keisei_settings_btn_clearDB i`).toggleClass(`icon-signout`);
+        $(`#keisei_settings_btn_clearDB i`).toggleClass(`fa-exclamation-triangle`);
+        $(`#keisei_settings_btn_clearDB i`).toggleClass(`fa-sign-out`);
 
         if (!$(`#keisei_settings_btn_clearDB`).hasClass(`active`))
         {

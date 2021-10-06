@@ -78,7 +78,7 @@ function WK_Keisei()
         if (this.settings.minify)
         {
             $(`#keisei_main_fold`).hide();
-            $(`#keisei_head_visibility i`).attr(`class`, `icon-eye-close`);
+            $(`#keisei_head_visibility i`).attr(`class`, `fa fa-eye-slash`);
         }
     };
     // #########################################################################
@@ -200,18 +200,18 @@ function WK_Keisei()
             if (this.settings.fullinfo)
             {
                 $(`#keisei_more_fold`).show();
-                $(`#keisei_head_moreinfo i`).attr(`class`, `icon-collapse-top`);
+                $(`#keisei_head_moreinfo i`).attr(`class`, `fa fa-caret-square-o-up`);
             }
             else
             {
                 $(`#keisei_more_fold`).hide();
-                $(`#keisei_head_moreinfo i`).attr(`class`, `icon-collapse`);
+                $(`#keisei_head_moreinfo i`).attr(`class`, `fa fa-caret-square-o-down`);
             }
         }
         else
         {
             $(`#keisei_head_moreinfo`).addClass(`disabled`);
-            $(`#keisei_head_moreinfo i`).attr(`class`, `icon-collapse`);
+            $(`#keisei_head_moreinfo i`).attr(`class`, `fa fa-caret-square-o-down`);
         }
     };
     // #########################################################################

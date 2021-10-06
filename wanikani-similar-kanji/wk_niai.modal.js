@@ -31,19 +31,19 @@
                     <div class="modal-body">
                         <p>
                             <div class="btn-group-lg text-center">
-                                <a class="btn" id="niai_settings_btn_debug"><i class="icon-gear"></i> Toggle Debug Mode</a>
-                                <a class="btn" id="niai_settings_btn_clearDB"><i class="icon-signout"></i> Clear Override DB</a>
+                                <a class="btn" id="niai_settings_btn_debug"><i class="fa fa-gear"></i> Toggle Debug Mode</a>
+                                <a class="btn" id="niai_settings_btn_clearDB"><i class="fa fa-sign-out"></i> Clear Override DB</a>
                             </div>
                         </p>
                         <p>
                             <div class="btn-group-lg text-center">
-                                <a class="btn" id="niai_settings_btn_minify"><i class="icon-eye-open"></i> Toggle Mini Mode</a>
-                                <a class="btn" id="niai_settings_btn_edit_mode"><i class="icon-circle-blank"></i> Toggle Edit Mode</a>
+                                <a class="btn" id="niai_settings_btn_minify"><i class="fa fa-eye"></i> Toggle Mini Mode</a>
+                                <a class="btn" id="niai_settings_btn_edit_mode"><i class="fa fa-circle-o"></i> Toggle Edit Mode</a>
                             </div>
                         </p>
                         <p>
                             <div class="btn-group-lg text-center">
-                                <a class="btn" id="niai_settings_btn_use_alt"><i class="icon-minus-sign-alt"></i> Original Sources</a>
+                                <a class="btn" id="niai_settings_btn_use_alt"><i class="fa fa-minus-square"></i> Original Sources</a>
                             </div>
                         </p>
                         <p class="text-center">
@@ -83,24 +83,24 @@
         if (this.settings.minify) {
             $(`#niai_settings_btn_minify`).addClass(`active`);
             $(`#niai_settings_btn_minify i`)
-                .removeClass(`icon-eye-open`)
-                .addClass(`icon-eye-close`);
+                .removeClass(`fa-eye`)
+                .addClass(`fa-eye-slash`);
         }
 
         if (this.settings.edit_mode)
         {
             $(`#niai_settings_btn_edit_mode`).addClass(`active`);
             $(`#niai_settings_btn_edit_mode i`)
-                .removeClass(`icon-circle-blank`)
-                .addClass(`icon-remove-circle`);
+                .removeClass(`fa-circle-o`)
+                .addClass(`fa-times-circle-o`);
         }
 
         if (this.settings.use_alt)
         {
             $(`#niai_settings_btn_use_alt`).addClass(`active`);
             $(`#niai_settings_btn_use_alt i`)
-                .removeClass(`icon-minus-sign-alt`)
-                .addClass(`icon-plus-sign-alt`);
+                .removeClass(`fa-minus-square`)
+                .addClass(`fa-plus-square`);
         }
 
         $(`#niai_settings_input_min_score`).val(this.settings.min_score);
@@ -139,8 +139,8 @@
         this.settings.minify = !this.settings.minify;
 
         $(`#niai_settings_btn_minify`).toggleClass(`active`);
-        $(`#niai_settings_btn_minify i`).toggleClass(`icon-eye-open`);
-        $(`#niai_settings_btn_minify i`).toggleClass(`icon-eye-close`);
+        $(`#niai_settings_btn_minify i`).toggleClass(`fa-eye`);
+        $(`#niai_settings_btn_minify i`).toggleClass(`fa-eye-slash`);
 
         if ($(`#niai_main_fold`).is(`:visible`) === this.settings.minify)
             this.toggleMainFold();
@@ -157,8 +157,8 @@
         this.settings.edit_mode = !this.settings.edit_mode;
 
         $(`#niai_settings_btn_edit_mode`).toggleClass(`active`);
-        $(`#niai_settings_btn_edit_mode i`).toggleClass(`icon-circle-blank`);
-        $(`#niai_settings_btn_edit_mode i`).toggleClass(`icon-remove-circle`);
+        $(`#niai_settings_btn_edit_mode i`).toggleClass(`fa-circle-o`);
+        $(`#niai_settings_btn_edit_mode i`).toggleClass(`fa-times-circle-o`);
 
         if ($(`.delete-badge`).is(`:visible`) !== this.settings.edit_mode)
             this.toggleBadges();
@@ -176,8 +176,8 @@
         this.settings.use_alt = !this.settings.use_alt;
 
         $(`#niai_settings_btn_use_alt`).toggleClass(`active`);
-        $(`#niai_settings_btn_use_alt i`).toggleClass(`icon-minus-sign-alt`);
-        $(`#niai_settings_btn_use_alt i`).toggleClass(`icon-plus-sign-alt`);
+        $(`#niai_settings_btn_use_alt i`).toggleClass(`fa-minus-square`);
+        $(`#niai_settings_btn_use_alt i`).toggleClass(`fa-plus-square`);
 
         this.populateNiaiSection(kanji);
 
@@ -193,8 +193,8 @@
         const kanji = wkItemInfo.currentState.characters;
 
         $(`#niai_settings_btn_clearDB`).toggleClass(`active`);
-        $(`#niai_settings_btn_clearDB i`).toggleClass(`icon-warning-sign`);
-        $(`#niai_settings_btn_clearDB i`).toggleClass(`icon-signout`);
+        $(`#niai_settings_btn_clearDB i`).toggleClass(`fa-exclamation-triangle`);
+        $(`#niai_settings_btn_clearDB i`).toggleClass(`fa-sign-out`);
 
         if (!$(`#niai_settings_btn_clearDB`).hasClass(`active`))
         {
