@@ -213,7 +213,7 @@ function WK_Niai()
         // page is ready and we can access the subject of the page.
         let wkItemInfo = (window.unsafeWindow || window).wkItemInfo;
         if (wkItemInfo) {
-            wkItemInfo.on(`itemPage,lessonQuiz,review`).forType(`kanji`).under(`reading`).spoiling(`meaning,reading`).notify(this.injectNiaiSection.bind(this));
+            wkItemInfo.on(`itemPage,lessonQuiz,review,extraStudy`).forType(`kanji`).under(`reading`).spoiling(`meaning,reading`).notify(this.injectNiaiSection.bind(this));
             wkItemInfo.on(`lesson`).forType(`kanji`).under(`examples`).notify(this.injectNiaiSection.bind(this));
         }
         // #####################################################################
