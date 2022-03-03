@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Wanikani Niai Similar Kanji
-// @version     1.3.14
+// @version     1.3.15
 // @author      acm
 // @description Adds a visually similar kanji section to content pages, reviews, and lessons
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
@@ -9,9 +9,11 @@
 // @include     *://www.wanikani.com/kanji/*
 // @include     *://www.wanikani.com/review/session*
 // @include     *://www.wanikani.com/lesson/session*
+// @include     *://www.wanikani.com/extra_study/session*
 // @include     *://preview.wanikani.com/kanji/*
 // @include     *://preview.wanikani.com/review/session*
 // @include     *://preview.wanikani.com/lesson/session*
+// @include     *://preview.wanikani.com/extra_study/session*
 //
 // @updateURL   https://github.com/mwil/wanikani-userscripts/raw/master/wanikani-similar-kanji/wk_niai.user.js
 // @downloadURL https://github.com/mwil/wanikani-userscripts/raw/master/wanikani-similar-kanji/wk_niai.user.js
