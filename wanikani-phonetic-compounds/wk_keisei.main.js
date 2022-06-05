@@ -542,8 +542,8 @@ function WK_Keisei()
         // page is ready and we can access the subject of the page.
         let wkItemInfo = (window.unsafeWindow || window).wkItemInfo;
         if (wkItemInfo) {
-            wkItemInfo.forType(`kanji`).under(`reading`).spoiling(`meaning,reading`).notify(this.injectKeiseiSection.bind(this));
-            wkItemInfo.forType(`radical`).under(`meaning`).notify(this.injectKeiseiSection.bind(this));
+            wkItemInfo.forType(`kanji`).under(`reading`).spoiling(`meaning,reading`).notifyWhenVisible(this.injectKeiseiSection.bind(this));
+            wkItemInfo.forType(`radical`).under(`meaning`).notifyWhenVisible(this.injectKeiseiSection.bind(this));
         }
         // #####################################################################
     };
