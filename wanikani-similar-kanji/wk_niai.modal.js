@@ -34,7 +34,7 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h3 class="modal-title">
                             Settings &mdash; Niai Visually Similar Kanji for&nbsp;
-                            <form id="niai_head_kanji_from" style="display:inline-block" onsubmit="false">
+                            <form id="niai_head_kanji_form" style="display:inline-block" onsubmit="return false">
                                 <input id="niai_head_kanji_input" type="text" lang="ja" value="${
                                     kan
                                 }" style="all:unset; cursor:pointer">
@@ -71,7 +71,7 @@
             </div>`
         );
 
-        $settings_modal.on('submit', '#niai_head_kanji_input', (ev) => {
+        $settings_modal.on('submit', '#niai_head_kanji_form', (ev) => {
             ev.preventDefault();
             const [elInput] = ev.target.elements;
             const [k] = elInput.value
