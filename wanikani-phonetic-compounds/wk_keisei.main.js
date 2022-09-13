@@ -90,6 +90,7 @@ function WK_Keisei()
     {
         // Cleanup in case of repopulation
         $(`#keisei_explanation`).empty();
+        $(`#keisei_main_phonetic_grid`).empty();
 
         // #####################################################################
         if (subject.rad)
@@ -125,7 +126,6 @@ function WK_Keisei()
                 $(`#keisei_explanation`).append(
                     this.error_msg(subject,
                         `The requested information is not in the Keisei database!`));
-                $(`#keisei_main_phonetic_grid`).empty();
                 return;
             }
 
