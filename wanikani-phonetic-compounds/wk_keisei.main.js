@@ -88,6 +88,9 @@ function WK_Keisei()
     // #########################################################################
     WK_Keisei.prototype.populateKeiseiSection = function(subject)
     {
+        // Cleanup in case of repopulation
+        $(`#keisei_explanation`).empty();
+
         // #####################################################################
         if (subject.rad)
             if (subject.phon)
