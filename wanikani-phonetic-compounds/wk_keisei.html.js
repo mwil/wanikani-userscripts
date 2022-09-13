@@ -76,10 +76,10 @@
             .on('submit', (ev) => {
                 ev.preventDefault();
                 const [elInput] = ev.target.elements;
-                const [v] = elInput.value
+                const [k] = elInput.value
                     .replace(/[\p{scx=Hiragana}\p{scx=Katakana}\w\s]/gu, '')
                     .trim();
-                if (v) {
+                if (k) {
                     this.populateKeiseiSection({
                         kan: k,
                         phon: wk_keisei.kdb.getKPhonetic(k),
