@@ -67,7 +67,7 @@
                           .append($main_btn);
 
         const $head_kanji_input = $('<form style="display:inline-block">')
-            .css('display', 'inline-block')
+            .attr('id', 'keisei_head_kanji_input')
             .append(
                 $(`<input type="text" lang="ja" value="${
                     this.currentSubject.kan || ''
@@ -75,7 +75,7 @@
             )
             .on('submit', (ev) => {
                 ev.preventDefault();
-                const [elInput] = elForm.elements;
+                const [elInput] = ev.target.elements;
                 const [v] = elInput.value
                     .replace(/[\p{scx=Hiragana}\p{scx=Katakana}\w\s]/gu, '')
                     .trim();
