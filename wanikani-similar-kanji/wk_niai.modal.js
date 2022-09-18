@@ -21,12 +21,25 @@
         $(`body`).append($settings_modal);
         $(`body`).append($info_modal);
 
+        let kan = '';
+        let wkItemInfo = (window.unsafeWindow || window).wkItemInfo;
+        if (wkItemInfo && wkItemInfo.currentState.type === 'kanji') {
+            kan = wkItemInfo.currentState.characters;
+        }
+
         $settings_modal.html(
            `<div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h3 class="modal-title">Settings &mdash; Niai Visually Similar Kanji</h3>
+                        <h3 class="modal-title">
+                            Settings &mdash; Niai Visually Similar Kanji for&nbsp;
+                            <form id="niai_head_kanji_form" style="all:unset; display:inline-block" onsubmit="return false">
+                                <input id="niai_head_kanji_input" type="text" lang="ja" value="${
+                                    kan
+                                }" style="all:unset; cursor:pointer">
+                            </form>
+                        </h3>
                     </div>
                     <div class="modal-body">
                         <p>
@@ -57,6 +70,17 @@
                 </div>
             </div>`
         );
+
+        $settings_modal.on('submit', '#niai_head_kanji_form', (ev) => {
+            ev.preventDefault();
+            const [elInput] = ev.target.elements;
+            const [k] = elInput.value
+                .replace(/[\p{scx=Hiragana}\p{scx=Katakana}\w\s]/gu, '')
+                .trim();
+            if (k) {
+                this.populateNiaiSection(k, '');
+            }
+        });
 
         if (this.settings.debug)
             $(`#niai_settings_btn_debug`).addClass(`active`);

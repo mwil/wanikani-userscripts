@@ -66,7 +66,29 @@
                           .append($view_btn)
                           .append($main_btn);
 
-        const $head = $(`<h2>Phonetic-Semantic Composition</h2>`)
+        const $head_kanji_input = $('<form style="all:unset; display:inline-block">')
+            .attr('id', 'keisei_head_kanji_input')
+            .append(
+                $(`<input type="text" lang="ja" value="${
+                    this.currentSubject.kan || ''
+                }" style="all:unset; cursor:pointer">`)
+            )
+            .on('submit', (ev) => {
+                ev.preventDefault();
+                const [elInput] = ev.target.elements;
+                const [k] = elInput.value
+                    .replace(/[\p{scx=Hiragana}\p{scx=Katakana}\w\s]/gu, '')
+                    .trim();
+                if (k) {
+                    this.populateKeiseiSection({
+                        kan: k,
+                        phon: wk_keisei.kdb.getKPhonetic(k),
+                    });
+                }
+            });
+
+        const $head = $(`<h2>Phonetic-Semantic Composition of&nbsp;</h2>`)
+                      .append($head_kanji_input)
                       .append($head_grp)
                       .appendTo($section);
 
