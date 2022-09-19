@@ -79,7 +79,7 @@
             if (k) {
                 this.populateKeiseiSection({
                     kan: k,
-                    phon: wk_keisei.kdb.getKPhonetic(k),
+                    phon: this.kdb.getKPhonetic(k) || k
                 });
             }
         });

@@ -53,10 +53,8 @@ function WK_Keisei()
         // #####################################################################
         let keiseiSection = this.createKeiseiSection()[0].children;
 
-        const appender = (injectorState.injector.on === 'itemPage' ? injectorState.injector.append : injectorState.injector.appendSubsection)
-            .bind(injectorState.injector);
-
-        let section = appender([...keiseiSection[0].childNodes], [keiseiSection[1], keiseiSection[2]], {injectImmediately: true});
+        // const appender = (injectorState.on === 'itemPage' ? injectorState.injector.append : injectorState.injector.appendSubsection); // if h2 for itemPage
+        let section = injectorState.injector.appendSubsection([...keiseiSection[0].childNodes], [keiseiSection[1], keiseiSection[2]], {injectImmediately: true});
         if (!section) return;
         section.classList.add(GM_info.script.namespace, `col1`);
         section.id = `keisei_section`;
