@@ -21,7 +21,7 @@
                             .appendTo(`body`)
                             .hide();
 
-        const kan = this.currentSubject.kan;
+        const { kan } = this.currentSubject || {};
 
         $settings_modal.html(
            `<div class="modal-dialog">
