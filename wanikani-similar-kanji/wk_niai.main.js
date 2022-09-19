@@ -42,7 +42,6 @@ function WK_Niai()
         section.classList.add(GM_info.script.namespace, `col1`);
         section.id = `niai_section`;
 
-        $(`#niai_head_kanji_input`).val(injectorState.characters);
         this.populateNiaiSection(injectorState.characters, injectorState.on);
 
         if (this.settings.minify)
@@ -56,6 +55,16 @@ function WK_Niai()
             $(`.delete-badge`).hide();
             $(`#niai_badges_btn i`).attr(`class`, `fa fa-circle-o`);
         }
+
+        // #####################################################################
+        if (injectorState.characters) {
+            $('#niai_head_kanji_form').css('display', 'inline-block');
+            $('#niai_head_kanji_form input').val(injectorState.characters);
+        } else {
+            $('#niai_head_kanji_form').css('display', 'none');
+            $('#niai_head_kanji_form input').val('');
+        }
+        // #####################################################################
 
         // #####################################################################
         $(`#niai_grid_visibility`).on(`click`, this.toggleMainFold.bind(this));

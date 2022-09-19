@@ -30,11 +30,9 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h3 class="modal-title">
                             Settings &mdash; Keisei Phonetic-Semantic Composition
-                            <form id="keisei_head_kanji_form" style="all:unset; display:${kan ? 'inline-block' : 'none'}" onsubmit="return false">
+                            <form id="keisei_head_kanji_form" style="all:unset; display:none" onsubmit="return false">
                                 &nbsp;for&nbsp;
-                                <input id="keisei_head_kanji_input" type="text" lang="ja" value="${
-                                    kan
-                                }" style="all:unset; cursor:pointer">
+                                <input id="keisei_head_kanji_input" type="text" lang="ja" style="all:unset; cursor:pointer">
                             </form>
                         </h3>
                     </div>

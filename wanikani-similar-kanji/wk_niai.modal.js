@@ -21,12 +21,6 @@
         $(`body`).append($settings_modal);
         $(`body`).append($info_modal);
 
-        let kan = '';
-        let wkItemInfo = (window.unsafeWindow || window).wkItemInfo;
-        if (wkItemInfo && wkItemInfo.currentState.type === 'kanji') {
-            kan = wkItemInfo.currentState.characters;
-        }
-
         $settings_modal.html(
            `<div class="modal-dialog">
                 <div class="modal-content">
@@ -34,11 +28,9 @@
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h3 class="modal-title">
                             Settings &mdash; Niai Visually Similar Kanji
-                            <form id="niai_head_kanji_form" style="all:unset; display:inline-block" onsubmit="return false">
+                            <form id="niai_head_kanji_form" style="all:unset; display:none" onsubmit="return false">
                                 &nbsp;for&nbsp;
-                                <input id="niai_head_kanji_input" type="text" lang="ja" value="${
-                                    kan
-                                }" style="all:unset; cursor:pointer">
+                                <input id="niai_head_kanji_input" type="text" lang="ja" style="all:unset; cursor:pointer">
                             </form>
                         </h3>
                     </div>

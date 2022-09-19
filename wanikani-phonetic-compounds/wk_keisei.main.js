@@ -82,6 +82,16 @@ function WK_Keisei()
             $(`#keisei_main_fold`).hide();
             $(`#keisei_head_visibility i`).attr(`class`, `fa fa-eye-slash`);
         }
+
+        // #####################################################################
+        if (subject.kan) {
+            $('#keisei_head_kanji_form').css('display', 'inline-block');
+            $('#keisei_head_kanji_form input').val(subject.kan);
+        } else {
+            $('#keisei_head_kanji_form').css('display', 'none');
+            $('#keisei_head_kanji_form input').val('');
+        }
+        // #####################################################################
     };
     // #########################################################################
 
