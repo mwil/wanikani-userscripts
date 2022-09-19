@@ -42,6 +42,7 @@ function WK_Niai()
         section.classList.add(GM_info.script.namespace, `col1`);
         section.id = `niai_section`;
 
+        $(`#niai_head_kanji_input`).val(injectorState.characters);
         this.populateNiaiSection(injectorState.characters, injectorState.on);
 
         if (this.settings.minify)

@@ -21,6 +21,12 @@
         $(`body`).append($settings_modal);
         $(`body`).append($info_modal);
 
+        let kan = '';
+        let wkItemInfo = (window.unsafeWindow || window).wkItemInfo;
+        if (wkItemInfo && wkItemInfo.currentState.type === 'kanji') {
+            kan = wkItemInfo.currentState.characters;
+        }
+
         $settings_modal.html(
            `<div class="modal-dialog">
                 <div class="modal-content">
