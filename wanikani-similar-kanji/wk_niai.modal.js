@@ -32,11 +32,11 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h3 class="modal-title">
+                        <h3 class="modal-title" style="display:flex; flex-direction:row">
                             Settings &mdash; Niai Visually Similar Kanji
-                            <form id="niai_head_kanji_form" style="all:unset; display:none" onsubmit="return false">
+                            <form id="niai_head_kanji_form" style="all:unset; flex-grow:1; flex-direction:row; display:none" onsubmit="return false">
                                 &nbsp;for&nbsp;
-                                <input id="niai_head_kanji_input" type="text" lang="ja" style="all:unset; cursor:pointer; width:1.5em">
+                                <input id="niai_head_kanji_input" type="text" lang="ja" size="1" style="all:unset; cursor:pointer; flex-grow:1">
                             </form>
                         </h3>
                     </div>

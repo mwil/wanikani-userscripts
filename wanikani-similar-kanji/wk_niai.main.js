@@ -59,7 +59,7 @@ function WK_Niai()
 
         // #####################################################################
         if (injectorState.characters) {
-            $('#niai_head_kanji_form').css('display', 'inline-block');
+            $('#niai_head_kanji_form').css('display', 'flex');
             $('#niai_head_kanji_form input').val(injectorState.characters);
         } else {
             $('#niai_head_kanji_form').css('display', 'none');

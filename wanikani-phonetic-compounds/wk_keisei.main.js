@@ -85,7 +85,7 @@ function WK_Keisei()
 
         // #####################################################################
         if (subject.kan) {
-            $('#keisei_head_kanji_form').css('display', 'inline-block');
+            $('#keisei_head_kanji_form').css('display', 'flex');
             $('#keisei_head_kanji_form input').val(subject.kan);
         } else {
             $('#keisei_head_kanji_form').css('display', 'none');
