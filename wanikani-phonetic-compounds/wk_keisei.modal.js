@@ -10,6 +10,7 @@
                                 .attr(`id`, `keisei_modal_settings`)
                                 .attr(`role`, `dialog`)
                                 .addClass(`${GM_info.script.namespace} modal fade`)
+                                .css('width', '650px')
                                 .appendTo(`body`)
                                 .hide();
 
