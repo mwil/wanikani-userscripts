@@ -10,7 +10,6 @@
                                 .attr(`id`, `keisei_modal_settings`)
                                 .attr(`role`, `dialog`)
                                 .addClass(`${GM_info.script.namespace} modal fade`)
-                                .css('width', '650px')
                                 .appendTo(`body`)
                                 .hide();
 
@@ -21,8 +20,6 @@
                             .appendTo(`body`)
                             .hide();
 
-        const { kan } = this.currentSubject || {};
-
         $settings_modal.html(
            `<div class="modal-dialog">
                 <div class="modal-content">
@@ -32,7 +29,7 @@
                             Settings &mdash; Keisei Phonetic-Semantic Composition
                             <form id="keisei_head_kanji_form" style="all:unset; display:none" onsubmit="return false">
                                 &nbsp;for&nbsp;
-                                <input id="keisei_head_kanji_input" type="text" lang="ja" style="all:unset; cursor:pointer">
+                                <input id="keisei_head_kanji_input" type="text" lang="ja" style="all:unset; cursor:pointer; width:1.5em">
                             </form>
                         </h3>
                     </div>

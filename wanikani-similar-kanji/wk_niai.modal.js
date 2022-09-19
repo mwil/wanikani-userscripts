@@ -30,7 +30,7 @@
                             Settings &mdash; Niai Visually Similar Kanji
                             <form id="niai_head_kanji_form" style="all:unset; display:none" onsubmit="return false">
                                 &nbsp;for&nbsp;
-                                <input id="niai_head_kanji_input" type="text" lang="ja" style="all:unset; cursor:pointer">
+                                <input id="niai_head_kanji_input" type="text" lang="ja" style="all:unset; cursor:pointer; width:1.5em">
                             </form>
                         </h3>
                     </div>
