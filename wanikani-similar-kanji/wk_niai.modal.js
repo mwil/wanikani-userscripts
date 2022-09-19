@@ -80,7 +80,7 @@
                 focusedInput.select();
                 focusedInput = null;
             }, 100);
-        });
+        }).on(`keydown`, (ev) => ev.stopPropagation());;
 
         $kanji_form.on('submit', (ev) => {
             ev.preventDefault();
@@ -92,8 +92,6 @@
                 this.populateNiaiSection(k, '');
             }
         });
-
-        $settings_modal.on(`keydown`, (ev) => ev.stopPropagation());
 
         if (this.settings.debug)
             $(`#niai_settings_btn_debug`).addClass(`active`);

@@ -75,7 +75,7 @@
                 focusedInput.select();
                 focusedInput = null;
             }, 100);
-        });
+        }).on(`keydown`, (ev) => ev.stopPropagation());
 
         $kanji_form.on('submit', (ev) => {
             ev.preventDefault();
@@ -90,8 +90,6 @@
                 });
             }
         });
-
-        $settings_modal.on(`keydown`, (ev) => ev.stopPropagation());
 
         $info_modal.html(
            `<div class="modal-dialog">
