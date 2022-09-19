@@ -73,11 +73,12 @@
         const $kanji_form = $settings_modal.find('#niai_head_kanji_form');
 
         let focusedInput;
-        $kanji_form.find('input').on('focus', () => {
-            if (focusedInput === this) return;
-            focusedInput = this;
+        $kanji_form.find('input').on('focus', (ev) => {
+            if (focusedInput === ev.target) return;
+            focusedInput = ev.target;
             setTimeout(() => {
                 focusedInput.select();
+                focusedInput = null;
             }, 100);
         });
 
