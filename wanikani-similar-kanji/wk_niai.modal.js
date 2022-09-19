@@ -70,7 +70,18 @@
             </div>`
         );
 
-        $settings_modal.on('submit', '#niai_head_kanji_form', (ev) => {
+        const $kanji_form = $settings_modal.find('#niai_head_kanji_form');
+
+        let focusedInput;
+        $kanji_form.find('input').on('focus', () => {
+            if (focusedInput === this) return;
+            focusedInput = this;
+            setTimeout(() => {
+                focusedInput.select();
+            }, 100);
+        });
+
+        $kanji_form.on('submit', (ev) => {
             ev.preventDefault();
             const [elInput] = ev.target.elements;
             const [k] = elInput.value
