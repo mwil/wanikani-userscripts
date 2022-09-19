@@ -20,13 +20,22 @@
                             .appendTo(`body`)
                             .hide();
 
+        const kan = this.currentSubject.kan;
 
         $settings_modal.html(
            `<div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h3 class="modal-title">Settings &mdash; Keisei Phonetic-Semantic Composition</h3>
+                        <h3 class="modal-title">
+                            Settings &mdash; Keisei Phonetic-Semantic Composition
+                            <form id="keisei_head_kanji_form" style="all:unset; display:${kan ? 'inline-block' : 'none'}" onsubmit="return false">
+                                &nbsp;for&nbsp;
+                                <input id="keisei_head_kanji_input" type="text" lang="ja" value="${
+                                    kan
+                                }" style="all:unset; cursor:pointer">
+                            </form>
+                        </h3>
                     </div>
                     <div class="modal-body">
                         <p>
@@ -59,6 +68,20 @@
                 </div>
             </div>`
         );
+
+        $settings_modal.on('submit', '#keisei_head_kanji_form', (ev) => {
+            ev.preventDefault();
+            const [elInput] = ev.target.elements;
+            const [k] = elInput.value
+                .replace(/[\p{scx=Hiragana}\p{scx=Katakana}\w\s]/gu, '')
+                .trim();
+            if (k) {
+                this.populateKeiseiSection({
+                    kan: k,
+                    phon: wk_keisei.kdb.getKPhonetic(k),
+                });
+            }
+        });
 
         $info_modal.html(
            `<div class="modal-dialog">

@@ -33,8 +33,9 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
                         <h3 class="modal-title">
-                            Settings &mdash; Niai Visually Similar Kanji for&nbsp;
+                            Settings &mdash; Niai Visually Similar Kanji
                             <form id="niai_head_kanji_form" style="all:unset; display:inline-block" onsubmit="return false">
+                                &nbsp;for&nbsp;
                                 <input id="niai_head_kanji_input" type="text" lang="ja" value="${
                                     kan
                                 }" style="all:unset; cursor:pointer">
