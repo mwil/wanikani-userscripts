@@ -79,6 +79,8 @@
             }
         });
 
+        $settings_modal.on(`keydown`, (ev) => ev.stopPropagation());
+
         $info_modal.html(
            `<div class="modal-dialog">
                 <div class="modal-content">

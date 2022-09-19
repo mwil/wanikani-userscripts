@@ -81,6 +81,8 @@
             }
         });
 
+        $settings_modal.on(`keydown`, (ev) => ev.stopPropagation());
+
         if (this.settings.debug)
             $(`#niai_settings_btn_debug`).addClass(`active`);
 
