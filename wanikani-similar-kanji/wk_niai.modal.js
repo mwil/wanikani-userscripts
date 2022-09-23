@@ -32,12 +32,11 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h3 class="modal-title">
-                            Settings &mdash; Niai Visually Similar Kanji for&nbsp;
-                            <form id="niai_head_kanji_form" style="all:unset; display:inline-block" onsubmit="return false">
-                                <input id="niai_head_kanji_input" type="text" lang="ja" value="${
-                                    kan
-                                }" style="all:unset; cursor:pointer">
+                        <h3 class="modal-title" style="display:flex; flex-direction:row">
+                            Settings &mdash; Niai Visually Similar Kanji
+                            <form id="niai_head_kanji_form" style="all:unset; flex-grow:1; flex-direction:row; display:none" onsubmit="return false">
+                                &nbsp;for&nbsp;
+                                <input id="niai_head_kanji_input" type="text" lang="ja" size="1" style="all:unset; cursor:pointer; flex-grow:1">
                             </form>
                         </h3>
                     </div>
@@ -71,7 +70,19 @@
             </div>`
         );
 
-        $settings_modal.on('submit', '#niai_head_kanji_form', (ev) => {
+        const $kanji_form = $settings_modal.find('#niai_head_kanji_form');
+
+        let focusedInput;
+        $kanji_form.find('input').on('focus', (ev) => {
+            if (focusedInput === ev.target) return;
+            focusedInput = ev.target;
+            setTimeout(() => {
+                focusedInput.select();
+                focusedInput = null;
+            }, 100);
+        }).on(`keydown`, (ev) => ev.stopPropagation());;
+
+        $kanji_form.on('submit', (ev) => {
             ev.preventDefault();
             const [elInput] = ev.target.elements;
             const [k] = elInput.value

@@ -52,6 +52,8 @@ function WK_Keisei()
 
         // #####################################################################
         let keiseiSection = this.createKeiseiSection()[0].children;
+
+        // const appender = (injectorState.on === 'itemPage' ? injectorState.injector.append : injectorState.injector.appendSubsection); // if h2 for itemPage
         let section = injectorState.injector.appendSubsection([...keiseiSection[0].childNodes], [keiseiSection[1], keiseiSection[2]], {injectImmediately: true});
         if (!section) return;
         section.classList.add(GM_info.script.namespace, `col1`);
@@ -80,6 +82,16 @@ function WK_Keisei()
             $(`#keisei_main_fold`).hide();
             $(`#keisei_head_visibility i`).attr(`class`, `fa fa-eye-slash`);
         }
+
+        // #####################################################################
+        if (subject.kan) {
+            $('#keisei_head_kanji_form').css('display', 'flex');
+            $('#keisei_head_kanji_form input').val(subject.kan);
+        } else {
+            $('#keisei_head_kanji_form').css('display', 'none');
+            $('#keisei_head_kanji_form input').val('');
+        }
+        // #####################################################################
     };
     // #########################################################################
 

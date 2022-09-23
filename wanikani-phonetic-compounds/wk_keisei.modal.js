@@ -20,13 +20,18 @@
                             .appendTo(`body`)
                             .hide();
 
-
         $settings_modal.html(
            `<div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h3 class="modal-title">Settings &mdash; Keisei Phonetic-Semantic Composition</h3>
+                        <h3 class="modal-title" style="display:flex; flex-direction:row">
+                            Settings &mdash; Keisei Phonetic-Semantic Composition
+                            <form id="keisei_head_kanji_form" style="all:unset; flex-grow:1; flex-direction:row; display:none" onsubmit="return false">
+                                &nbsp;for&nbsp;
+                                <input id="keisei_head_kanji_input" type="text" lang="ja" size="1" style="all:unset; cursor:pointer; flex-grow:1">
+                            </form>
+                        </h3>
                     </div>
                     <div class="modal-body">
                         <p>
@@ -59,6 +64,32 @@
                 </div>
             </div>`
         );
+
+        const $kanji_form = $settings_modal.find('#keisei_head_kanji_form');
+
+        let focusedInput;
+        $kanji_form.find('input').on('focus', (ev) => {
+            if (focusedInput === ev.target) return;
+            focusedInput = ev.target;
+            setTimeout(() => {
+                focusedInput.select();
+                focusedInput = null;
+            }, 100);
+        }).on(`keydown`, (ev) => ev.stopPropagation());
+
+        $kanji_form.on('submit', (ev) => {
+            ev.preventDefault();
+            const [elInput] = ev.target.elements;
+            const [k] = elInput.value
+                .replace(/[\p{scx=Hiragana}\p{scx=Katakana}\w\s]/gu, '')
+                .trim();
+            if (k) {
+                this.populateKeiseiSection({
+                    kan: k,
+                    phon: this.kdb.getKPhonetic(k) || k
+                });
+            }
+        });
 
         $info_modal.html(
            `<div class="modal-dialog">

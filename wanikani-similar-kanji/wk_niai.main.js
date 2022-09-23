@@ -58,6 +58,16 @@ function WK_Niai()
         }
 
         // #####################################################################
+        if (injectorState.characters) {
+            $('#niai_head_kanji_form').css('display', 'flex');
+            $('#niai_head_kanji_form input').val(injectorState.characters);
+        } else {
+            $('#niai_head_kanji_form').css('display', 'none');
+            $('#niai_head_kanji_form input').val('');
+        }
+        // #####################################################################
+
+        // #####################################################################
         $(`#niai_grid_visibility`).on(`click`, this.toggleMainFold.bind(this));
         $(`#niai_badges_btn`).on(`click`, this.toggleBadges.bind(this));
         $(`#niai_reset_similar_btn`).on(`click`, this.resetSimilarKanji.bind(this));
