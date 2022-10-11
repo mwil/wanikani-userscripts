@@ -5,12 +5,15 @@
     margin:0 0 10px 25px
 }
 
-.wk_namespace h2 {
+.wk_namespace h2,
+.wk_namespace h3 {
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    align-items: center
 }
 
-.wk_namespace h2 .btn-group:first-child {
+.wk_namespace h2 .btn-group:first-child,
+.wk_namespace h3 .btn-group:first-child {
     margin-left: auto
 }
 
@@ -145,6 +148,7 @@
     position:relative;
     width:116px;
     color:#ffffff;
+    padding:0;
     text-align:center
 }
 

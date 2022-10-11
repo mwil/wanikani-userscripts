@@ -595,9 +595,13 @@ function WK_Keisei()
 
 // #############################################################################
 // #############################################################################
-var wk_keisei = new WK_Keisei();
+let promise = typeof wkof !== `undefined` ? (wkof.include(`Jquery`), wkof.ready(`Jquery`)) : new Promise(r => r());
 
-wk_keisei.init();
-wk_keisei.run();
+promise.then(() => {
+    const wk_keisei = new WK_Keisei();
+
+    wk_keisei.init();
+    wk_keisei.run();
+});
 // #############################################################################
 // #############################################################################
