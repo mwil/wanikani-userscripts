@@ -202,9 +202,9 @@ function WK_Niai()
 
         this.ndb = new NiaiDB();
 
-        if (options[`Current Level`])
+        if (typeof options !== `undefined` || typeof analyticsOptions !== `undefined`)
         {
-            this.settings.user_level = options[`Current Level`];
+            this.settings.user_level = (typeof options !== `undefined` ? options : analyticsOptions)[`Current Level`];
             GM_setValue(`user_level`, this.settings.user_level);
         }
 
@@ -263,9 +263,13 @@ function WK_Niai()
 
 // #############################################################################
 // #############################################################################
-const wk_niai = new WK_Niai();
+let promise = typeof wkof !== `undefined` ? (wkof.include(`Jquery`), wkof.ready(`Jquery`)) : new Promise(r => r());
 
-wk_niai.init();
-wk_niai.run();
+promise.then(() => {
+    const wk_niai = new WK_Niai();
+
+    wk_niai.init();
+    wk_niai.run();
+});
 // #############################################################################
 // #############################################################################
