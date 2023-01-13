@@ -117,13 +117,31 @@ function WK_Niai()
         if (this.settings.use_alt)
             use_sources = [...this.settings.alt_sources, ...use_sources];
 
-        const similar_list = [kanji,
-                              ...this.ndb.getSimilar(kanji,
-                                                     this.settings.user_level,
-                                                     use_sources,
-                                                     this.settings.min_score)];
-        let char_list = [];
+        // sort similar kanji by level
+        var similar_kanji = this.ndb.getSimilar(kanji,this.settings.user_level,use_sources,this.settings.min_score);
+        similar_kanji.sort(function(kanjiA,kanjiB) {
+            // kanjis not in DB should be shown last
+            const kanjiA_inDB = this.ndb.isKanjiInDB(kanjiA);
+            const kanjiB_inDB = this.ndb.isKanjiInDB(kanjiB);
+            if (!kanjiA_inDB && !kanjiB)
+                return 0;
+            else if (kanjiA_inDB && !kanjiB)
+                return -1;
+            else if (!kanjiA_inDB && kanjiB)
+                return 1;
+            
+            // sort by ascending level
+            const kanjiA_level = this.ndb.getInfo(kanjiA).level;
+            const kanjiB_level = this.ndb.getInfo(kanjiB).level;
+            if (kanjiA_level < kanjiB_level)
+                return -1;
+            if (kanjiA_level > kanjiB_level)
+                return 1;
+            return 0;
+        });
 
+        const similar_list = [kanji,...similar_kanji];
+        let char_list = [];
         similar_list.forEach(
             function(sim_kanji, i)
             {
