@@ -119,15 +119,15 @@ function WK_Niai()
         else if (!kanjiA_inDB && kanjiB_inDB)
             return 1;
         
-        // treat kanji not in WK as a level over 60
-        const kanjiA_inWK = this.ndb.isKanjiInWK(kanjiA);
-        const kanjiB_inWK = this.ndb.isKanjiInWK(kanjiB);
-        if (!kanjiA_inWK && !kanjiB_inWK)
-            return 0;
-        else if (kanjiA_inWK && !kanjiB_inWK)
-            return -1;
-        else if (!kanjiA_inWK && kanjiB_inWK)
-            return 1;
+        // // treat kanji not in WK as a level over 60
+        // const kanjiA_inWK = this.ndb.isKanjiInWK(kanjiA);
+        // const kanjiB_inWK = this.ndb.isKanjiInWK(kanjiB);
+        // if (!kanjiA_inWK && !kanjiB_inWK)
+        //     return 0;
+        // else if (kanjiA_inWK && !kanjiB_inWK)
+        //     return -1;
+        // else if (!kanjiA_inWK && kanjiB_inWK)
+        //     return 1;
         
         // sort by ascending level
         const kanjiA_level = this.ndb.getInfo(kanjiA).level;
@@ -173,15 +173,15 @@ function WK_Niai()
         else if (!kanjiA_inDB && kanjiB_inDB)
             return 1;
 
-        // treat kanji not in WK as locked "for ever" -> show last
-        const kanjiA_inWK = this.ndb.isKanjiInWK(kanjiA);
-        const kanjiB_inWK = this.ndb.isKanjiInWK(kanjiB);
-        if (!kanjiA_inWK && !kanjiB_inWK)
-            return 0;
-        else if (kanjiA_inWK && !kanjiB_inWK)
-            return -1;
-        else if (!kanjiA_inWK && kanjiB_inWK)
-            return 1;
+        // // treat kanji not in WK as locked "for ever" -> show last
+        // const kanjiA_inWK = this.ndb.isKanjiInWK(kanjiA);
+        // const kanjiB_inWK = this.ndb.isKanjiInWK(kanjiB);
+        // if (!kanjiA_inWK && !kanjiB_inWK)
+        //     return 0;
+        // else if (kanjiA_inWK && !kanjiB_inWK)
+        //     return -1;
+        // else if (!kanjiA_inWK && kanjiB_inWK)
+        //     return 1;
 
         // kanjis locked should be shown last
         const kanjiA_islocked = this.ndb.isKanjiLocked(kanjiA,this.settings.user_level);
@@ -192,6 +192,7 @@ function WK_Niai()
             return 1;
         else if (!kanjiA_islocked && kanjiB_islocked)
             return -1;
+        return 0;
     };
 
     // #########################################################################
