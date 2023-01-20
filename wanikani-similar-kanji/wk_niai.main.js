@@ -208,6 +208,7 @@ function WK_Niai()
         var similar_kanji = this.ndb.getSimilar(kanji,this.settings.user_level,use_sources,this.settings.min_score);
         similar_kanji.sort(sort_by_score.bind(this));
         // similar_kanji.sort(sort_by_level.bind(this));
+        similar_kanji.sort(sort_by_locked_status.bind(this));
 
         const similar_list = [kanji,...similar_kanji];
         let char_list = [];
