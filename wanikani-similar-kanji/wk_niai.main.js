@@ -189,9 +189,9 @@ function WK_Niai()
         if (!kanjiA_islocked && !kanjiB_islocked)
             return 0;
         else if (kanjiA_islocked && !kanjiB_islocked)
-            return -1;
-        else if (!kanjiA_islocked && kanjiB_islocked)
             return 1;
+        else if (!kanjiA_islocked && kanjiB_islocked)
+            return -1;
     };
 
     // #########################################################################
@@ -206,7 +206,7 @@ function WK_Niai()
 
         // sort similar kanji by: score, level, ...
         var similar_kanji = this.ndb.getSimilar(kanji,this.settings.user_level,use_sources,this.settings.min_score);
-        similar_kanji.sort(sort_by_score.bind(this));
+        // similar_kanji.sort(sort_by_score.bind(this)); // DB is already sorted by score, therefore no need to do it again
         // similar_kanji.sort(sort_by_level.bind(this));
         similar_kanji.sort(sort_by_locked_status.bind(this));
 
