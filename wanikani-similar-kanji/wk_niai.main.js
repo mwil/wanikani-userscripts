@@ -109,14 +109,24 @@ function WK_Niai()
 
     const sort_by_level = function(kanjiA,kanjiB)
     {
-        // kanjis not in DB should be shown last
+        // kanjis not in DB -> move to end
         const kanjiA_inDB = this.ndb.isKanjiInDB(kanjiA);
         const kanjiB_inDB = this.ndb.isKanjiInDB(kanjiB);
-        if (!kanjiA_inDB && !kanjiB)
+        if (!kanjiA_inDB && !kanjiB_inDB)
             return 0;
-        else if (kanjiA_inDB && !kanjiB)
+        else if (kanjiA_inDB && !kanjiB_inDB)
             return -1;
-        else if (!kanjiA_inDB && kanjiB)
+        else if (!kanjiA_inDB && kanjiB_inDB)
+            return 1;
+        
+        // treat kanji not in WK as a level over 60
+        const kanjiA_inWK = this.ndb.isKanjiInWK(kanjiA);
+        const kanjiB_inWK = this.ndb.isKanjiInWK(kanjiB);
+        if (!kanjiA_inWK && !kanjiB_inWK)
+            return 0;
+        else if (kanjiA_inWK && !kanjiB_inWK)
+            return -1;
+        else if (!kanjiA_inWK && kanjiB_inWK)
             return 1;
         
         // sort by ascending level
@@ -131,16 +141,16 @@ function WK_Niai()
 
     const sort_by_score = function(kanjiA,kanjiB)
     {
-        // kanjis not in DB should be shown last
+        // kanjis not in DB -> move to end
         const kanjiA_inDB = this.ndb.isKanjiInDB(kanjiA);
         const kanjiB_inDB = this.ndb.isKanjiInDB(kanjiB);
-        if (!kanjiA_inDB && !kanjiB)
+        if (!kanjiA_inDB && !kanjiB_inDB)
             return 0;
-        else if (kanjiA_inDB && !kanjiB)
+        else if (kanjiA_inDB && !kanjiB_inDB)
             return -1;
-        else if (!kanjiA_inDB && kanjiB)
+        else if (!kanjiA_inDB && kanjiB_inDB)
             return 1;
-        
+
         // sort by descending score
         const kanjiA_score = this.ndb.getInfo(kanjiA).score;
         const kanjiB_score = this.ndb.getInfo(kanjiB).score;
@@ -149,6 +159,39 @@ function WK_Niai()
         if (kanjiA_score > kanjiB_score)
             return -1;
         return 0;
+    };
+
+    const sort_by_locked_status = function(kanjiA,kanjiB)
+    {
+        // kanjis not in DB -> move to end
+        const kanjiA_inDB = this.ndb.isKanjiInDB(kanjiA);
+        const kanjiB_inDB = this.ndb.isKanjiInDB(kanjiB);
+        if (!kanjiA_inDB && !kanjiB_inDB)
+            return 0;
+        else if (kanjiA_inDB && !kanjiB_inDB)
+            return -1;
+        else if (!kanjiA_inDB && kanjiB_inDB)
+            return 1;
+
+        // treat kanji not in WK as locked "for ever" -> show last
+        const kanjiA_inWK = this.ndb.isKanjiInWK(kanjiA);
+        const kanjiB_inWK = this.ndb.isKanjiInWK(kanjiB);
+        if (!kanjiA_inWK && !kanjiB_inWK)
+            return 0;
+        else if (kanjiA_inWK && !kanjiB_inWK)
+            return -1;
+        else if (!kanjiA_inWK && kanjiB_inWK)
+            return 1;
+
+        // kanjis locked should be shown last
+        const kanjiA_islocked = this.ndb.isKanjiLocked(kanjiA,this.settings.user_level);
+        const kanjiB_islocked = this.ndb.isKanjiLocked(kanjiB,this.settings.user_level);
+        if (!kanjiA_islocked && !kanjiB_islocked)
+            return 0;
+        else if (kanjiA_islocked && !kanjiB_islocked)
+            return -1;
+        else if (!kanjiA_islocked && kanjiB_islocked)
+            return 1;
     };
 
     // #########################################################################
