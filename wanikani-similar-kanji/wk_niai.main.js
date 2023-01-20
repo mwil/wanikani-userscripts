@@ -163,8 +163,8 @@ function WK_Niai()
 
         // sort similar kanji by: score, level, ...
         var similar_kanji = this.ndb.getSimilar(kanji,this.settings.user_level,use_sources,this.settings.min_score);
-        similar_kanji.sort((kanjiA,kanjiB) => sort_by_score(kanjiA,kanjiB).bind(this));
-        // similar_kanji.sort((kanjiA,kanjiB) => sort_by_level(kanjiA,kanjiB).bind(this));
+        similar_kanji.sort(sort_by_score.bind(this));
+        // similar_kanji.sort(sort_by_level.bind(this));
 
         const similar_list = [kanji,...similar_kanji];
         let char_list = [];
