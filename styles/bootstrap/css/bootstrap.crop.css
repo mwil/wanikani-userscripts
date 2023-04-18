@@ -1,6 +1,6 @@
 
 .wk_namespace .btn-group {
-    position:relative;display:inline-block;*display:inline;*zoom:1;font-size:0;vertical-align:middle;white-space:nowrap;*margin-left:.3em
+    position:relative;display:inline-block;*display:inline;*zoom:1;font-size:0;vertical-align:middle;white-space:nowrap;margin-left:auto
 }
 
 .wk_namespace .btn-group:first-child {
