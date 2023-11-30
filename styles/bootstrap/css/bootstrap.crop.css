@@ -348,7 +348,8 @@
     font-weight: normal;
     line-height: 20px;
     color: #333;
-    white-space: nowrap
+    white-space: nowrap;
+    cursor: pointer;
 }
 
 .wk_namespace .dropdown-menu>li>a:hover,
