@@ -99,8 +99,8 @@ function NiaiDB()
 
                             if (!this.isKanjiInDB(sim_kanji))
                             {
-                                console.log("Ignoring", kanji, ", not in DB yet!");
-                                return;
+                                console.log("Ignoring", sim_kanji, ", not in DB yet!");
+                                return; // equivalent to continue
                             }
 
                             const old_score = (sim_kanji in similar_kanji ?
