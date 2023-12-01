@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Wanikani Niai Similar Kanji
-// @version     1.3.30
+// @version     1.3.32
 // @author      acm
 // @description Adds a visually similar kanji section to content pages, reviews, and lessons
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
@@ -22,7 +22,7 @@
 //
 // @resource    niai_style     https://raw.githubusercontent.com/mwil/wanikani-userscripts/7e1d846282c6d962fbe28b6e3a8c0b50a61220c9/wanikani-similar-kanji/css/wk_niai.css
 //
-// @resource    chargrid       https://raw.githubusercontent.com/mwil/wanikani-userscripts/7e1d846282c6d962fbe28b6e3a8c0b50a61220c9/styles/css/chargrid.css
+// @resource    chargrid       https://raw.githubusercontent.com/mwil/wanikani-userscripts/363e9df4f60015b1d33ca61e653572ac232b0080/styles/css/chargrid.css
 // @resource    bootstrapcss   https://raw.githubusercontent.com/mwil/wanikani-userscripts/45e295823c7d6d40630ddd14c95a78df093fb296/styles/bootstrap/css/bootstrap.crop.css
 //
 // @resource    bootstrap-js   https://raw.githubusercontent.com/mwil/wanikani-userscripts/8ee517737d604f1df0ff103a33b69f1f07218815/styles/bootstrap/js/bootstrap.js
@@ -31,9 +31,9 @@
 // @require     https://greasyfork.org/scripts/430565-wanikani-item-info-injector/code/WaniKani%20Item%20Info%20Injector.user.js?version=1276693
 //
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/45e295823c7d6d40630ddd14c95a78df093fb296/wanikani-similar-kanji/wk_niai.db.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/8ee517737d604f1df0ff103a33b69f1f07218815/wanikani-similar-kanji/wk_niai.modal.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/0691a2c5d05338606f731ea9f98e0b2dbd18c784/wanikani-similar-kanji/wk_niai.modal.js
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/45e295823c7d6d40630ddd14c95a78df093fb296/wanikani-similar-kanji/wk_niai.html.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/45e295823c7d6d40630ddd14c95a78df093fb296/wanikani-similar-kanji/wk_niai.main.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/0691a2c5d05338606f731ea9f98e0b2dbd18c784/wanikani-similar-kanji/wk_niai.main.js
 //
 // @grant       GM_log
 // @grant       GM_getValue
