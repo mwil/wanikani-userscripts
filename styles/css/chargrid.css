@@ -123,8 +123,8 @@
     text-decoration: none;
 }
 
-.wk_niai ul.single-character-grid li.character-item a::after,
-.wk_niai ul.multi-character-grid li.character-item a::after {
+.wk_namespace ul.single-character-grid li.character-item a::after,
+.wk_namespace ul.multi-character-grid li.character-item a::after {
     content: "";
     position: absolute;
     top: 0;
