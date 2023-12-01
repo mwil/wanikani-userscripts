@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name        Wanikani Niai Similar Kanji
-// @version     1.3.29
+// @version     1.3.30
 // @author      acm
 // @description Adds a visually similar kanji section to content pages, reviews, and lessons
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
 // @namespace   wk_niai
 //
-// @match        https://www.wanikani.com/*
-// @match        https://preview.wanikani.com/*
+// @match       https://www.wanikani.com/*
+// @match       https://preview.wanikani.com/*
 //
 // @updateURL   https://github.com/mwil/wanikani-userscripts/raw/master/wanikani-similar-kanji/wk_niai.user.js
 // @downloadURL https://github.com/mwil/wanikani-userscripts/raw/master/wanikani-similar-kanji/wk_niai.user.js
@@ -20,9 +20,9 @@
 // @resource    manual_db      https://raw.githubusercontent.com/mwil/wanikani-userscripts/8ee517737d604f1df0ff103a33b69f1f07218815/wanikani-similar-kanji/db/manual_esc.json
 // @resource    lookup_db      https://raw.githubusercontent.com/mwil/wanikani-userscripts/8ee517737d604f1df0ff103a33b69f1f07218815/wanikani-similar-kanji/db/lookup_esc.json
 //
-// @resource    niai_style     https://raw.githubusercontent.com/mwil/wanikani-userscripts/45e295823c7d6d40630ddd14c95a78df093fb296/wanikani-similar-kanji/css/wk_niai.css
+// @resource    niai_style     https://raw.githubusercontent.com/mwil/wanikani-userscripts/7e1d846282c6d962fbe28b6e3a8c0b50a61220c9/wanikani-similar-kanji/css/wk_niai.css
 //
-// @resource    chargrid       https://raw.githubusercontent.com/mwil/wanikani-userscripts/45e295823c7d6d40630ddd14c95a78df093fb296/styles/css/chargrid.css
+// @resource    chargrid       https://raw.githubusercontent.com/mwil/wanikani-userscripts/7e1d846282c6d962fbe28b6e3a8c0b50a61220c9/styles/css/chargrid.css
 // @resource    bootstrapcss   https://raw.githubusercontent.com/mwil/wanikani-userscripts/45e295823c7d6d40630ddd14c95a78df093fb296/styles/bootstrap/css/bootstrap.crop.css
 //
 // @resource    bootstrap-js   https://raw.githubusercontent.com/mwil/wanikani-userscripts/8ee517737d604f1df0ff103a33b69f1f07218815/styles/bootstrap/js/bootstrap.js
