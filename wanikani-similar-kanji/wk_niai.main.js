@@ -108,7 +108,7 @@ function WK_Niai()
     };
 
     // #########################################################################
-    WK_Niai.prototype.populateNiaiSection = function(kanji, curPage)
+    WK_Niai.prototype.populateNiaiSection = function(kanji, curPage = this.wkItemInfoRef.currentState.on)
     {
         $(`#niai_similar_grid`).empty();
 
@@ -172,8 +172,10 @@ function WK_Niai()
         else
             $(`#niai_reset_similar_btn`).addClass(`disabled`);
 
-        if (curPage !== `itemInfo`)
+        if (curPage !== `itemPage`)
             $(`.niai_similar_link`).attr(`target`, `_blank`);
+        else
+            $(`.niai_similar_link:not(li.notInWK a)`).attr(`data-turbo-frame`, `_blank`);
 
         $(`li.notInWK a`).attr(`target`, `_blank`);
         // #####################################################################
@@ -227,10 +229,10 @@ function WK_Niai()
         // #####################################################################
         // Main hook, WK Item Info Injector will kick off this script once the
         // page is ready and we can access the subject of the page.
-        let wkItemInfo = (window.unsafeWindow || window).wkItemInfo;
-        if (wkItemInfo) {
-            wkItemInfo.on(`itemPage,lessonQuiz,review,extraStudy`).forType(`kanji`).under(`reading`).spoiling(`meaning,reading`).notifyWhenVisible(this.injectNiaiSection.bind(this));
-            wkItemInfo.on(`lesson`).forType(`kanji`).under(`examples`).notifyWhenVisible(this.injectNiaiSection.bind(this));
+        this.wkItemInfoRef = (window.unsafeWindow || window).wkItemInfo;
+        if (wkItemInfoRef) {
+            wkItemInfoRef.on(`itemPage,lessonQuiz,review,extraStudy`).forType(`kanji`).under(`reading`).spoiling(`meaning,reading`).notifyWhenVisible(this.injectNiaiSection.bind(this));
+            wkItemInfoRef.on(`lesson`).forType(`kanji`).under(`examples`).notifyWhenVisible(this.injectNiaiSection.bind(this));
         }
         // #####################################################################
     };
