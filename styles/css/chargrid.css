@@ -123,6 +123,20 @@
     text-decoration: none;
 }
 
+.wk_niai ul.single-character-grid li.character-item a::after,
+.wk_niai ul.multi-character-grid li.character-item a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #0000;
+    pointer-events: none;
+    border: 1px solid;
+    border-color: #FFF6 #0000 #3336 #FFF6;
+}
+
 .wk_namespace ul.single-character-grid li.character-item ul,
 .wk_namespace ul.multi-character-grid li.character-item ul {
     margin: 0;
