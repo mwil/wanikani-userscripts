@@ -230,9 +230,9 @@ function WK_Niai()
         // Main hook, WK Item Info Injector will kick off this script once the
         // page is ready and we can access the subject of the page.
         this.wkItemInfoRef = (window.unsafeWindow || window).wkItemInfo;
-        if (wkItemInfoRef) {
-            wkItemInfoRef.on(`itemPage,lessonQuiz,review,extraStudy`).forType(`kanji`).under(`reading`).spoiling(`meaning,reading`).notifyWhenVisible(this.injectNiaiSection.bind(this));
-            wkItemInfoRef.on(`lesson`).forType(`kanji`).under(`examples`).notifyWhenVisible(this.injectNiaiSection.bind(this));
+        if (this.wkItemInfoRef) {
+            this.wkItemInfoRef.on(`itemPage,lessonQuiz,review,extraStudy`).forType(`kanji`).under(`reading`).spoiling(`meaning,reading`).notifyWhenVisible(this.injectNiaiSection.bind(this));
+            this.wkItemInfoRef.on(`lesson`).forType(`kanji`).under(`examples`).notifyWhenVisible(this.injectNiaiSection.bind(this));
         }
         // #####################################################################
     };
