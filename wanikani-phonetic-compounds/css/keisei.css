@@ -66,18 +66,12 @@
 .wk_namespace ul.multi-character-grid li[id|=phonetic] {
     background-color: #0a2;
     background-image: linear-gradient(to bottom, #0c4, #092);
-    border-top: #0c4;
-    border-bottom: #092;
-    border-left: #0c4;
 }
 
 .wk_namespace ul.single-character-grid li[id|=nonphonetic],
 .wk_namespace ul.multi-character-grid li[id|=nonphonetic] {
     background-color: #f04;
     background-image: linear-gradient(to bottom, #f04, #c04);
-    border-top: #f04;
-    border-bottom: #c04;
-    border-left: #f04;
 }
 
 .wk_namespace .keisei_spaced_chargrid {

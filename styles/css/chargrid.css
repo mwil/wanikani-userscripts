@@ -100,7 +100,7 @@
 .wk_namespace ul.multi-character-grid li.character-item {
     display: inline-block;
     position: relative;
-    width: 116px;
+    width: 112px;
     color: var(--color-character-text, #fff);
     text-align: center;
 }
