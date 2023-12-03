@@ -181,7 +181,7 @@ function WK_Niai()
     // #########################################################################
 
     // #########################################################################
-    WK_Niai.prototype.init = function()
+    WK_Niai.prototype.init = async function()
     {
         GM_addStyle(GM_getResourceText(`niai_style`)
                         .replace(/\.wk_namespace/g, `#niai_section#niai_section#niai_section#niai_section`));
@@ -209,7 +209,7 @@ function WK_Niai()
             } :
             function() {};
 
-        this.ndb.init(this.override_db);
+        await this.ndb.init(this.override_db);
 
         this.log(`The script element is:`, GM_info);
         this.log("The override db is", this.override_db);
@@ -263,8 +263,7 @@ let promise = typeof wkof !== `undefined` ? (wkof.include(`Jquery`), wkof.ready(
 promise.then(() => {
     const wk_niai = new WK_Niai();
 
-    wk_niai.init();
-    wk_niai.run();
+    wk_niai.init().then(() => wk_niai.run());
 });
 // #############################################################################
 // #############################################################################

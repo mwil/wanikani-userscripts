@@ -14,12 +14,12 @@ function NiaiDB()
     NiaiDB.prototype = {
         constructor: NiaiDB,
 
-        init: function(override_db)
+        init: async function(override_db)
         {
             this.override_db = override_db;
 
             if (typeof wkof === `object`)
-                this.wkof_items = this.load_wkof_items();
+                this.wkof_items = await this.load_wkof_items();
         },
 
         load_wkof_items: async function()
@@ -43,8 +43,10 @@ function NiaiDB()
         isKanjiInWK: function(kanji)
         {
             // WK started adding new kanji, treat unknown kanji gracefully
-            if (!this.isKanjiInDB(kanji))
+            if (!this.isKanjiInDB(kanji) && !(kanji in this.wkof_items))
                 return false;
+            else if (!this.isKanjiInDB(kanji) && (kanji in this.wkof_items))
+                return true;
 
             return (this.lookup_db[kanji].level !== 99);
         },
@@ -57,21 +59,59 @@ function NiaiDB()
         isKanjiLocked: function(kanji, level)
         {
             if (this.isKanjiInDB(kanji))
-                return (this.lookup_db[kanji].level > level);
-            else
-                return true;
+                return (this.lookup_db[kanji].level === 99 || this.wkof_items[kanji].data.level > level);
+            else if (kanji in this.wkof_items)
+                return (this.wkof_items[kanji].data.level > level);
+
+            return true;
         },
 
         getInfo: function(kanji)
         {
-            if (!this.isKanjiInDB(kanji))
+            if (!this.isKanjiInDB(kanji) && !(kanji in this.wkof_items))
                 return {"meanings": "Not in DB!", "readings": "&nbsp;", level: "N/A"};
+            else if (!this.isKanjiInDB(kanji) && (kanji in this.wkof_items)) {
+                // we need to build the k_info object from the open framework data
+                let k_data = this.wkof_items[kanji].data;
+                let k_info = {
+                    kunyomi: [],
+                    onyomi: [],
+                    nanori: [],
+                    important_reading: ''
+                };
 
-            let k_info = this.lookup_db[kanji];
+                for (const reading_info of k_data.readings) {
+                    switch (reading_info.type) {
+                        case 'kunyomi':
+                            k_info.kunyomi.push(reading_info.reading);
+                            if (reading_info.primary) k_info.important_reading = 'kunyomi';
+                            break;
+                        case 'onyomi':
+                            k_info.onyomi.push(reading_info.reading);
+                            if (reading_info.primary) k_info.important_reading = 'onyomi';
+                            break;
+                        case 'nanori':
+                            k_info.nanori.push(reading_info.reading);
+                            if (reading_info.primary) k_info.important_reading = 'nanori';
+                            break;
+                        default:
+                            break;
+                    }
+                }
 
-            k_info.readings = k_info[k_info.important_reading];
+                k_info.level = k_data.level;
+                k_info.meanings = k_data.meanings.map(m => m.meaning);
+                k_info.readings = k_info[k_info.important_reading];
 
-            return k_info;
+                return k_info;
+            }
+            else {
+                let k_info = this.lookup_db[kanji];
+
+                k_info.readings = k_info[k_info.important_reading];
+
+                return k_info;
+            }
         },
 
         getSimilar: function(kanji, level, sources, min_score)
@@ -142,9 +182,9 @@ function NiaiDB()
 
     // Use the WK Open Framework to replace the offine DB of Niai
     // #########################################################################
-    WK_Niai.prototype.update_wk_cache = async function(similar_list)
+    WK_Niai.prototype.update_wk_cache = function(similar_list)
     {
-        let index = await this.ndb.wkof_items;
+        let index = this.ndb.wkof_items;
         similar_list.forEach((sim_kanji) => {
             let item = index[sim_kanji];
             if (item) {
