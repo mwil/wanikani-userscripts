@@ -148,6 +148,7 @@ function NiaiDB()
             let item = index[sim_kanji];
             if (item) {
                 $(`li[id$="${sim_kanji}"]`).toggleClass(`locked`, !item.assignments?.unlocked_at);
+                $(`li[id$="${sim_kanji}"] li.niai_reading`).text(item.data.readings.find(ri => ri.primary).reading);
                 $(`li[id$="${sim_kanji}"] li.niai_meaning`).text(item.data.meanings[0].meaning);
                 $(`li[id$="${sim_kanji}"] span.character`).attr(`title`, `WK Level: ${item.data.level}`);
             }
