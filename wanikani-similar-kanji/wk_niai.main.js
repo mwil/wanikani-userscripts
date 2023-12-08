@@ -204,14 +204,8 @@ function WK_Niai()
 
         this.ndb = new NiaiDB();
 
-        // NOTE: options does not seem to be defined, and analyticsOptions is defined but has only the api key as a value, no current level
-        //       so this section will always run, set settings.user_level to 99, then use open framework to get the actual level
-        if (typeof options !== `undefined` || typeof analyticsOptions !== `undefined`)
-        {
-            this.settings.user_level = (typeof options !== `undefined` ? options : analyticsOptions)[`Current Level`] ?? this.settings.user_level;
-            if (this.settings.user_level > 60) {
-                this.settings.user_level = wkof.user.level;
-            }
+        if (this.settings.user_level > 60 || this.settings.user_level < wkof.user.level) {
+            this.settings.user_level = wkof.user.level;
             GM_setValue(`user_level`, this.settings.user_level);
         }
 
