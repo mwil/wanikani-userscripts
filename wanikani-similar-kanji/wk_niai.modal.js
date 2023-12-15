@@ -89,7 +89,7 @@
                 .replace(/[\p{scx=Hiragana}\p{scx=Katakana}\w\s]/gu, '')
                 .trim();
             if (k) {
-                this.populateNiaiSection(k, '');
+                this.populateNiaiSection(k);
             }
         });
 

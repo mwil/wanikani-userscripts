@@ -21,7 +21,7 @@ function WK_Niai()
             {"id": "override_db",    "base_score": 0.0}
         ],
         "user_level": 99,
-        "min_score": 0.4
+        "min_score": 0.3
     };
 }
 // #############################################################################
@@ -37,7 +37,7 @@ function WK_Niai()
         this.log(`Injecting similar kanji section (callback works).`);
 
         let niaiSection = this.createNiaiSection()[0].children;
-        let section = injectorState.injector.append([...niaiSection[0].childNodes], niaiSection[1], {injectImmediately: true, sectionName: `Visually Similar Kanji`});
+        let section = injectorState.injector.append([...niaiSection[0].childNodes], niaiSection[1], {injectImmediately: true, sectionName: `Niai Visually Similar Kanji`});
         if (!section) return;
         section.classList.add(GM_info.script.namespace, `col1`);
         section.id = `niai_section`;
@@ -108,7 +108,7 @@ function WK_Niai()
     };
 
     // #########################################################################
-    WK_Niai.prototype.populateNiaiSection = function(kanji, curPage)
+    WK_Niai.prototype.populateNiaiSection = function(kanji, curPage = this.wkItemInfoRef.currentState.on)
     {
         $(`#niai_similar_grid`).empty();
 
@@ -172,8 +172,10 @@ function WK_Niai()
         else
             $(`#niai_reset_similar_btn`).addClass(`disabled`);
 
-        if (curPage !== `itemInfo`)
+        if (curPage !== `itemPage`)
             $(`.niai_similar_link`).attr(`target`, `_blank`);
+        else
+            $(`.niai_similar_link:not(li.notInWK a)`).attr(`data-turbo-frame`, `_blank`);
 
         $(`li.notInWK a`).attr(`target`, `_blank`);
         // #####################################################################
@@ -189,7 +191,7 @@ function WK_Niai()
     WK_Niai.prototype.init = function()
     {
         GM_addStyle(GM_getResourceText(`niai_style`)
-                        .replace(/\.wk_namespace/g, `#niai_section#niai_section#niai_section#niai_section`));
+                        .replace(/\.wk_namespace/g, `#niai_section`));
 
         this.settings.debug      = GM_getValue(`debug`)      || false;
         this.settings.minify     = GM_getValue(`minify`)     || false;
@@ -202,9 +204,8 @@ function WK_Niai()
 
         this.ndb = new NiaiDB();
 
-        if (typeof options !== `undefined` || typeof analyticsOptions !== `undefined`)
-        {
-            this.settings.user_level = (typeof options !== `undefined` ? options : analyticsOptions)[`Current Level`];
+        if (this.settings.user_level > 60 || this.settings.user_level < wkof.user.level) {
+            this.settings.user_level = wkof.user.level;
             GM_setValue(`user_level`, this.settings.user_level);
         }
 
@@ -222,10 +223,10 @@ function WK_Niai()
         // #####################################################################
         // Main hook, WK Item Info Injector will kick off this script once the
         // page is ready and we can access the subject of the page.
-        let wkItemInfo = (window.unsafeWindow || window).wkItemInfo;
-        if (wkItemInfo) {
-            wkItemInfo.on(`itemPage,lessonQuiz,review,extraStudy`).forType(`kanji`).under(`reading`).spoiling(`meaning,reading`).notifyWhenVisible(this.injectNiaiSection.bind(this));
-            wkItemInfo.on(`lesson`).forType(`kanji`).under(`examples`).notifyWhenVisible(this.injectNiaiSection.bind(this));
+        this.wkItemInfoRef = (window.unsafeWindow || window).wkItemInfo;
+        if (this.wkItemInfoRef) {
+            this.wkItemInfoRef.on(`itemPage,lessonQuiz,review,extraStudy`).forType(`kanji`).under(`reading`).spoiling(`meaning,reading`).notifyWhenVisible(this.injectNiaiSection.bind(this));
+            this.wkItemInfoRef.on(`lesson`).forType(`kanji`).under(`examples`).notifyWhenVisible(this.injectNiaiSection.bind(this));
         }
         // #####################################################################
     };
@@ -235,13 +236,10 @@ function WK_Niai()
     WK_Niai.prototype.run = function()
     {
         // Add scripts with guarding namespace (selecting class/id)
-        let bootstrapcss = GM_getResourceText(`bootstrapcss`);
-        GM_addStyle(bootstrapcss
-                        .replace(/\.wk_namespace/g, `#niai_section#niai_section#niai_section#niai_section`));
-        GM_addStyle(bootstrapcss
+        GM_addStyle(GM_getResourceText(`bootstrapcss`)
                         .replace(/wk_namespace/g, GM_info.script.namespace));
         GM_addStyle(GM_getResourceText(`chargrid`)
-                        .replace(/\.wk_namespace/g, `#niai_section#niai_section#niai_section#niai_section`));
+                        .replace(/wk_namespace/g, GM_info.script.namespace));
 
         // #####################################################################
         // Add parts of bootstrap for the modal pages (settings, etc.)
@@ -263,7 +261,7 @@ function WK_Niai()
 
 // #############################################################################
 // #############################################################################
-let promise = typeof wkof !== `undefined` ? (wkof.include(`Jquery`), wkof.ready(`Jquery`)) : new Promise(r => r());
+let promise = typeof wkof !== `undefined` ? (wkof.include(`Jquery, Apiv2`), wkof.ready(`Jquery, Apiv2`)) : new Promise(r => r());
 
 promise.then(() => {
     const wk_niai = new WK_Niai();

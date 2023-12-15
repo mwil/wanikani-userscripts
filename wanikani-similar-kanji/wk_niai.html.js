@@ -72,7 +72,6 @@
                                         </li>
                                         <li class="divider"></li>
                                         <li><span class="input-prepend" style="margin-bottom: 0;">
-                                                <span class="add-on">漢</span>
                                                 <textarea id="niai_add_similar_input" maxlength="1" rows="1" class="span2" type="text" placeholder="Enter Kanji Here"></textarea>
                                             </span>
                                         </li>
@@ -99,7 +98,7 @@
             .append($view_btn)
             .append($head_btn);
 
-        const $head = $(`<h2>Visually Similar Kanji</h2>`)
+        const $head = $(`<h2>Niai Visually Similar Kanji</h2>`)
                       .append($head_grp);
 
         $section.append($head);
