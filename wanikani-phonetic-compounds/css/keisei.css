@@ -49,8 +49,9 @@
     color: darkorange;
 }
 
-.wk_namespace .keisei_alternative_reading {
+/*.wk_namespace .keisei_alternative_reading {
 }
+*/
 
 .wk_namespace .keisei_main_reading {
     font-weight: bold;
@@ -62,35 +63,15 @@
 
 /* #f0a -> 0c4, #dd0093 -> 092 */
 .wk_namespace ul.single-character-grid li[id|=phonetic],
-.wk_namespace ul.multi-character-grid  li[id|=phonetic]
-{
-    background-color:#0a2;
-    background-image:-moz-linear-gradient(top, #0c4, #092);
-    background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#0c4), to(#092));
-    background-image:-webkit-linear-gradient(top, #0c4, #092);
-    background-image:-o-linear-gradient(top, #0c4, #092);
-    background-image:linear-gradient(to bottom, #0c4, #092);
-    background-repeat:repeat-x;
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF00CC44', endColorstr='#FF009922', GradientType=0);
-    border-top:1px solid #0c4;
-    border-bottom:1px solid #092;
-    border-left:1px solid #0c4
+.wk_namespace ul.multi-character-grid li[id|=phonetic] {
+    background-color: #0a2;
+    background-image: linear-gradient(to bottom, #0c4, #092);
 }
 
 .wk_namespace ul.single-character-grid li[id|=nonphonetic],
-.wk_namespace ul.multi-character-grid  li[id|=nonphonetic]
-{
-    background-color:#f04;
-    background-image:-moz-linear-gradient(top, #f04, #c04);
-    background-image:-webkit-gradient(linear, 0 0, 0 100%, from(#f04), to(#c04));
-    background-image:-webkit-linear-gradient(top, #f04, #c04);
-    background-image:-o-linear-gradient(top, #f04, #c04);
-    background-image:linear-gradient(to bottom, #f04, #c04);
-    background-repeat:repeat-x;
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFF0044', endColorstr='#FFCC0044', GradientType=0);
-    border-top:1px solid #f04;
-    border-bottom:1px solid #c04;
-    border-left:1px solid #f04
+.wk_namespace ul.multi-character-grid li[id|=nonphonetic] {
+    background-color: #f04;
+    background-image: linear-gradient(to bottom, #f04, #c04);
 }
 
 .wk_namespace .keisei_spaced_chargrid {
@@ -102,6 +83,7 @@
 .wk_namespace .keisei_phonetic_grid {
     display: flex;
     flex-direction: row;
+    margin-top: 15px;
     padding-bottom: 10px;
     margin-bottom: 6px;
     border-bottom: 1px solid #d5d5d5;
@@ -111,7 +93,15 @@
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    margin-right: 10px !important;
+    margin-right: 20px !important;
+}
+
+.wk_namespace .keisei_phongrid_header li.character-item {
+    height: fit-content;
+}
+
+.wk_namespace .keisei_phongrid_header li.character-item {
+    height: fit-content;
 }
 
 .wk_namespace .keisei_phongrid_compounds {
@@ -120,8 +110,7 @@
     flex-wrap: wrap;
 }
 
-@media (max-width: 767px)
-{
+@media (max-width: 767px) {
     .wk_namespace .keisei_phonetic_grid,
     .wk_namespace .keisei_spaced_chargrid {
         flex-direction: column;
@@ -138,7 +127,7 @@
     }
 }
 
-html#main .navbar .nav li.phonetic.dropdown.open>.dropdown-toggle {
+html#main .navbar .nav li.phonetic.dropdown.open > .dropdown-toggle {
     background-color: #0c4;
 }
 
@@ -146,14 +135,14 @@ html#main .navbar .phonetic .dropdown-menu {
     background-color: #0a2;
 }
 
-html#main .navbar .nav>li.phonetic>.dropdown-menu:after {
+html#main .navbar .nav > li.phonetic > .dropdown-menu:after {
     border-bottom: 8px solid #0a2;
 }
 
-html#main .navbar .nav>li.phonetic>a:hover>span:first-child {
+html#main .navbar .nav > li.phonetic > a:hover > span:first-child {
     border-color: #0a2;
 }
 
-html#main .navbar .nav>li.phonetic>a:hover {
+html#main .navbar .nav > li.phonetic > a:hover {
     color: #0a2;
 }
