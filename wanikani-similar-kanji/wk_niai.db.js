@@ -58,10 +58,10 @@ function NiaiDB()
 
         isKanjiLocked: function(kanji, level)
         {
-            if (this.isKanjiInDB(kanji))
-                return (this.lookup_db[kanji].level === 99 || this.wkof_items[kanji].data.level > level);
-            else if (kanji in this.wkof_items)
+            if (kanji in this.wkof_items)
                 return (this.wkof_items[kanji].data.level > level);
+            else if (this.isKanjiInDB(kanji))
+                return (this.lookup_db[kanji].level === 99 || this.wkof_items[kanji].data.level > level);
 
             return true;
         },
@@ -70,7 +70,7 @@ function NiaiDB()
         {
             if (!this.isKanjiInDB(kanji) && !(kanji in this.wkof_items))
                 return {"meanings": "Not in DB!", "readings": "&nbsp;", level: "N/A"};
-            else if (!this.isKanjiInDB(kanji) && (kanji in this.wkof_items)) {
+            else if (kanji in this.wkof_items) { // if it's in wkof fetch we don't care about local db info
                 // we need to build the k_info object from the open framework data
                 let k_data = this.wkof_items[kanji].data;
                 let k_info = {
@@ -105,7 +105,7 @@ function NiaiDB()
 
                 return k_info;
             }
-            else {
+            else { // not in wkof fetch, must be in local db
                 let k_info = this.lookup_db[kanji];
 
                 k_info.readings = k_info[k_info.important_reading];
