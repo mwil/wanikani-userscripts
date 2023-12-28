@@ -139,8 +139,8 @@ function NiaiDB()
 
                             if (!this.isKanjiInDB(sim_kanji))
                             {
-                                console.log("Ignoring", kanji, ", not in DB yet!");
-                                return;
+                                console.log("Ignoring", sim_kanji, ", not in DB yet!");
+                                return; // equivalent to continue
                             }
 
                             const old_score = (sim_kanji in similar_kanji ?
@@ -189,6 +189,7 @@ function NiaiDB()
             let item = index[sim_kanji];
             if (item) {
                 $(`li[id$="${sim_kanji}"]`).toggleClass(`locked`, !item.assignments?.unlocked_at);
+                $(`li[id$="${sim_kanji}"] li.niai_reading`).text(item.data.readings.find(ri => ri.primary).reading);
                 $(`li[id$="${sim_kanji}"] li.niai_meaning`).text(item.data.meanings[0].meaning);
                 $(`li[id$="${sim_kanji}"] span.character`).attr(`title`, `WK Level: ${item.data.level}`);
             }

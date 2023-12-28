@@ -6,8 +6,8 @@
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
 // @namespace   wk_niai
 //
-// @match        https://www.wanikani.com/*
-// @match        https://preview.wanikani.com/*
+// @match       https://www.wanikani.com/*
+// @match       https://preview.wanikani.com/*
 //
 // @updateURL   https://github.com/mwil/wanikani-userscripts/raw/master/wanikani-similar-kanji/wk_niai.user.js
 // @downloadURL https://github.com/mwil/wanikani-userscripts/raw/master/wanikani-similar-kanji/wk_niai.user.js
@@ -20,20 +20,20 @@
 // @resource    manual_db      https://raw.githubusercontent.com/mwil/wanikani-userscripts/8ee517737d604f1df0ff103a33b69f1f07218815/wanikani-similar-kanji/db/manual_esc.json
 // @resource    lookup_db      https://raw.githubusercontent.com/mwil/wanikani-userscripts/8ee517737d604f1df0ff103a33b69f1f07218815/wanikani-similar-kanji/db/lookup_esc.json
 //
-// @resource    niai_style     https://raw.githubusercontent.com/mwil/wanikani-userscripts/8ee517737d604f1df0ff103a33b69f1f07218815/wanikani-similar-kanji/css/wk_niai.css
+// @resource    niai_style     https://raw.githubusercontent.com/mwil/wanikani-userscripts/7e1d846282c6d962fbe28b6e3a8c0b50a61220c9/wanikani-similar-kanji/css/wk_niai.css
 //
-// @resource    chargrid       https://raw.githubusercontent.com/mwil/wanikani-userscripts/9e2c7070a8f277dcb372d2e04c60136cea14f81a/styles/css/chargrid.css
-// @resource    bootstrapcss   https://raw.githubusercontent.com/mwil/wanikani-userscripts/3ecdbcadd04d0832ab98540eea5f918489841f41/styles/bootstrap/css/bootstrap.crop.css
+// @resource    chargrid       https://raw.githubusercontent.com/mwil/wanikani-userscripts/0e0833ee8175b903d34108210759c1a457408833/styles/css/chargrid.css
+// @resource    bootstrapcss   https://raw.githubusercontent.com/mwil/wanikani-userscripts/45e295823c7d6d40630ddd14c95a78df093fb296/styles/bootstrap/css/bootstrap.crop.css
 //
 // @resource    bootstrap-js   https://raw.githubusercontent.com/mwil/wanikani-userscripts/8ee517737d604f1df0ff103a33b69f1f07218815/styles/bootstrap/js/bootstrap.js
 // @resource    b-dropdown-js  https://raw.githubusercontent.com/mwil/wanikani-userscripts/8ee517737d604f1df0ff103a33b69f1f07218815/styles/bootstrap/js/bootstrap-dropdown.js
 //
 // @require     https://greasyfork.org/scripts/430565-wanikani-item-info-injector/code/WaniKani%20Item%20Info%20Injector.user.js?version=1276693
 //
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/c1cf36cbd7789613544bd7c0a47123e74434662a/wanikani-similar-kanji/wk_niai.db.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/8ee517737d604f1df0ff103a33b69f1f07218815/wanikani-similar-kanji/wk_niai.modal.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/8ee517737d604f1df0ff103a33b69f1f07218815/wanikani-similar-kanji/wk_niai.html.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/28b40b5fc3765f48c368874d9cde2d4cf51a9830/wanikani-similar-kanji/wk_niai.main.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/e57d0de325d2c020da8723df1bac4c0035dc88db/wanikani-similar-kanji/wk_niai.db.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/0691a2c5d05338606f731ea9f98e0b2dbd18c784/wanikani-similar-kanji/wk_niai.modal.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/45e295823c7d6d40630ddd14c95a78df093fb296/wanikani-similar-kanji/wk_niai.html.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/b5f681f7f94aaa48caa6927a3a5c6a17d39739d8/wanikani-similar-kanji/wk_niai.main.js
 //
 // @grant       GM_log
 // @grant       GM_getValue
