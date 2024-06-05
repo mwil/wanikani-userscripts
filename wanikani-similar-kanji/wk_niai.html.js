@@ -29,7 +29,7 @@
 
         let idBase = "custom-icon-v" + Icons.VERSION_NUM + "__";
         let [firstIcon, secondIcon] = iconPair;
-        let currentIconName = containerEl.querySelector(`use`)?.getAttribute("href").replace('#'+idBase,'');
+        let currentIconName = $(containerEl).find(`use`)?.attr("href").replace('#'+idBase,'');
 
         if (!currentIconName) {
             console.error(`Could not retrieve the SVG element that is meant to be a child of the following element:\n${containerEl}`);
