@@ -29,7 +29,7 @@
 
         let idBase = "custom-icon-v" + Icons.VERSION_NUM + "__";
         let [firstIcon, secondIcon] = iconPair;
-        let currentIconName = containerEl.children?.[0]?.getAttribute("id").replace(idBase,'');
+        let currentIconName = containerEl.querySelector(`use`)?.getAttribute("href").replace('#'+idBase,'');
 
         if (!currentIconName) {
             console.error(`Could not retrieve the SVG element that is meant to be a child of the following element:\n${containerEl}`);
@@ -62,7 +62,7 @@
     {
         // Get the current version of the Custom Icons library that is assigned to the window
         const { Icons } = window.unsafeWindow || window;
-        
+
         const $section = $(`<section></section>`)
                          .attr(`id`, `niai_section`)
                          .attr(`style`, style)
