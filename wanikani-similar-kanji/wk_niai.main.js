@@ -105,13 +105,13 @@ function initializeCustomIcons()
 {
     "use strict";
 
-    // Get the current version of the Custom Icons library that is assigned to the window
-    const { Icons } = window.unsafeWindow || window;
-
     WK_Niai.prototype.injectNiaiSection = function(injectorState)
     {
         // #####################################################################
         this.log(`Injecting similar kanji section (callback works).`);
+
+        // Get the current version of the Custom Icons library that is assigned to the window
+        const { Icons } = window.unsafeWindow || window;
 
         let niaiSection = this.createNiaiSection()[0].children;
         let section = injectorState.injector.append([...niaiSection[0].childNodes], niaiSection[1], {injectImmediately: true, sectionName: `Niai Visually Similar Kanji`});

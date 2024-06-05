@@ -6,8 +6,6 @@
 {
     "use strict";
 
-    const { Icons } = window.unsafeWindow || window;
-
     // Character item to be included in a character grid
     // #########################################################################
     WK_Niai.prototype.gen_item_chargrid =
@@ -27,6 +25,8 @@
     // Function to swap a custom icon with another icon
     // #########################################################################
     WK_Niai.prototype.toggleIcon = function(containerEl, iconPair) {
+        const { Icons } = window.unsafeWindow || window;
+
         let idBase = "custom-icon-v" + Icons.VERSION_NUM + "__";
         let [firstIcon, secondIcon] = iconPair;
         let currentIconName = containerEl.children?.[0]?.getAttribute("id").replace(idBase,'');
@@ -57,12 +57,12 @@
 {
     "use strict";
 
-    // Get the current version of the Custom Icons library that is assigned to the window
-    const { Icons } = window.unsafeWindow || window;
-
     // #########################################################################
     WK_Niai.prototype.createNiaiSection = function(style)
     {
+        // Get the current version of the Custom Icons library that is assigned to the window
+        const { Icons } = window.unsafeWindow || window;
+        
         const $section = $(`<section></section>`)
                          .attr(`id`, `niai_section`)
                          .attr(`style`, style)
