@@ -6,7 +6,7 @@
 {
     "use strict";
 
-    const { Icons } = unsafeWindow || window;
+    const { Icons } = window.unsafeWindow || window;
 
     // Character item to be included in a character grid
     // #########################################################################
@@ -58,7 +58,7 @@
     "use strict";
 
     // Get the current version of the Custom Icons library that is assigned to the window
-    const { Icons } = unsafeWindow || window;
+    const { Icons } = window.unsafeWindow || window;
 
     // #########################################################################
     WK_Niai.prototype.createNiaiSection = function(style)
