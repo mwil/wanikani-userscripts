@@ -31,7 +31,7 @@ function WK_Niai()
     "use strict";
 
     // Get the current version of the Custom Icons library that is assigned to the window
-    const { Icons } = window.unsafeWindow || window;
+    const { Icons } = unsafeWindow || window;
 
     // Add all but one of the icons we will be needing; circle-exclamation is more than a single path, so we will insert that manually
     // Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.
@@ -106,7 +106,7 @@ function WK_Niai()
     "use strict";
 
     // Get the current version of the Custom Icons library that is assigned to the window
-    const { Icons } = window.unsafeWindow || window;
+    const { Icons } = unsafeWindow || window;
 
     WK_Niai.prototype.injectNiaiSection = function(injectorState)
     {
@@ -238,7 +238,7 @@ function WK_Niai()
         if (typeof wkof === `object`)
             this.update_wk_cache(similar_list);
 
-        const { Icons } = window.unsafeWindow || window;
+        const { Icons } = unsafeWindow || window;
 
         let iconIdBase = "custom-icon-v" + Icons.VERSION_NUM + "__";
 
