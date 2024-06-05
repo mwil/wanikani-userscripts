@@ -26,12 +26,12 @@ function WK_Niai()
 }
 // #############################################################################
 
-(function()
+function initializeCustomIcons()
 {
     "use strict";
 
     // Get the current version of the Custom Icons library that is assigned to the window
-    const { Icons } = unsafeWindow || window;
+    const { Icons } = window.unsafeWindow || window;
 
     // Add all but one of the icons we will be needing; circle-exclamation is more than a single path, so we will insert that manually
     // Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.
@@ -98,7 +98,7 @@ function WK_Niai()
     <path xmlns="http://www.w3.org/2000/svg" d="M12,5a1,1,0,0,0-1,1v8a1,1,0,0,0,2,0V6A1,1,0,0,0,12,5Z"/>
     <rect xmlns="http://www.w3.org/2000/svg" x="11" y="17" width="2" height="2" rx="1"/>`;
     customSVGSprites.innerHTML += `<symbol id="${idBase}circle-exclamation" viewbox="0 0 24 24" width="512" height="512">${svgContent}</symbol>`;
-})();
+}
 
 // #############################################################################
 (function()
@@ -106,7 +106,7 @@ function WK_Niai()
     "use strict";
 
     // Get the current version of the Custom Icons library that is assigned to the window
-    const { Icons } = unsafeWindow || window;
+    const { Icons } = window.unsafeWindow || window;
 
     WK_Niai.prototype.injectNiaiSection = function(injectorState)
     {
@@ -238,7 +238,7 @@ function WK_Niai()
         if (typeof wkof === `object`)
             this.update_wk_cache(similar_list);
 
-        const { Icons } = unsafeWindow || window;
+        const { Icons } = window.unsafeWindow || window;
 
         let iconIdBase = "custom-icon-v" + Icons.VERSION_NUM + "__";
 
@@ -273,6 +273,8 @@ function WK_Niai()
     {
         GM_addStyle(GM_getResourceText(`niai_style`)
                         .replace(/\.wk_namespace/g, `#niai_section`));
+
+        initializeCustomIcons();
 
         this.settings.debug      = GM_getValue(`debug`)      || false;
         this.settings.minify     = GM_getValue(`minify`)     || false;
