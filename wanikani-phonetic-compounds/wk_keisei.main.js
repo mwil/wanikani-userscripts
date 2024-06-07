@@ -160,7 +160,7 @@ function initializeCustomIcons()
         if (this.settings.minify)
         {
             $(`#keisei_main_fold`).hide();
-            $(`#keisei_head_visibility`).find(`svg`).replaceWith(Icons.cusomIconTxt('eye-slash'));
+            $(`#keisei_head_visibility`).find(`svg`).replaceWith(Icons.customIconTxt('eye-slash'));
         }
 
         // #####################################################################
@@ -298,18 +298,18 @@ function initializeCustomIcons()
             if (this.settings.fullinfo)
             {
                 $(`#keisei_more_fold`).show();
-                $(`#keisei_head_moreinfo`).html(Icons.cusomIconTxt('square-caret-o-up'));
+                $(`#keisei_head_moreinfo`).html(Icons.customIconTxt('square-caret-o-up'));
             }
             else
             {
                 $(`#keisei_more_fold`).hide();
-                $(`#keisei_head_moreinfo`).html(Icons.cusomIconTxt('square-caret-o-down'));
+                $(`#keisei_head_moreinfo`).html(Icons.customIconTxt('square-caret-o-down'));
             }
         }
         else
         {
             $(`#keisei_head_moreinfo`).addClass(`disabled`);
-            $(`#keisei_head_moreinfo`).html(Icons.cusomIconTxt('square-caret-o-down'));
+            $(`#keisei_head_moreinfo`).html(Icons.customIconTxt('square-caret-o-down'));
         }
     };
     // #########################################################################
