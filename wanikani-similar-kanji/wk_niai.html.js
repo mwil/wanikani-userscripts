@@ -32,15 +32,15 @@
         let currentIconName = $(containerEl).find(`use`)?.attr("href").replace('#'+idBase,'');
 
         if (!currentIconName) {
-            console.error(`Could not retrieve the SVG element that is meant to be a child of the following element:\n${containerEl}`);
+            console.error(`Could not retrieve the SVG element that is meant to be a child of the following element:\n${$(containerEl).get()[0]}`);
             return;
         }
 
         if (currentIconName === firstIcon) {
-            $(containerEl).html(Icons.customIconTxt(secondIcon));
+            $(containerEl).find(`svg`).replaceWith(Icons.customIconTxt(secondIcon));
         }
         else if (currentIconName === secondIcon) {
-            $(containerEl).html(Icons.customIconTxt(firstIcon));
+            $(containerEl).find(`svg`).replaceWith(Icons.customIconTxt(firstIcon));
         }
         else {
             console.error(`Name mismatch. Could not find icon with name ${firstIcon} or ${secondIcon} on element with id "${currentIconName}".`);
