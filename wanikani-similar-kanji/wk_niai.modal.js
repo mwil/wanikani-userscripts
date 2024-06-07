@@ -119,19 +119,19 @@
 
         if (this.settings.minify) {
             $(`#niai_settings_btn_minify`).addClass(`active`);
-            this.toggleIcon($(`#niai_settings_btn_minify`), ['eye', 'eye-slash']);
+            $(`#niai_settings_btn_minify`).find(`svg`).replaceWith(Icons.customIconTxt('eye-slash'));
         }
 
         if (this.settings.edit_mode)
         {
             $(`#niai_settings_btn_edit_mode`).addClass(`active`);
-            this.toggleIcon($(`#niai_settings_btn_edit_mode`), ['circle-o', 'circle-xmark']);
+            $(`#niai_settings_btn_edit_mode`).find(`svg`).replaceWith(Icons.customIconTxt('circle-xmark'));
         }
 
         if (this.settings.use_alt)
         {
             $(`#niai_settings_btn_use_alt`).addClass(`active`);
-            this.toggleIcon($(`#niai_settings_btn_use_alt`), ['square-minus', 'square-plus']);
+            $(`#niai_settings_btn_use_alt`).find(`svg`).replaceWith(Icons.customIconTxt('square-plus'));
         }
 
         $(`#niai_settings_input_min_score`).val(this.settings.min_score);
