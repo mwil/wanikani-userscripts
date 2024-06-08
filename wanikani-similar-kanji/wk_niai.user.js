@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Wanikani Niai Similar Kanji
-// @version     1.3.38
+// @version     1.3.47
 // @author      acm
 // @description Adds a visually similar kanji section to content pages, reviews, and lessons
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
@@ -29,11 +29,12 @@
 // @resource    b-dropdown-js  https://raw.githubusercontent.com/mwil/wanikani-userscripts/8ee517737d604f1df0ff103a33b69f1f07218815/styles/bootstrap/js/bootstrap-dropdown.js
 //
 // @require     https://greasyfork.org/scripts/430565-wanikani-item-info-injector/code/WaniKani%20Item%20Info%20Injector.user.js?version=1380162
+// @require     https://greasyfork.org/scripts/489759-wk-custom-icons/code/CustomIcons.js?version=1386034
 //
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/e57d0de325d2c020da8723df1bac4c0035dc88db/wanikani-similar-kanji/wk_niai.db.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/0691a2c5d05338606f731ea9f98e0b2dbd18c784/wanikani-similar-kanji/wk_niai.modal.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/45e295823c7d6d40630ddd14c95a78df093fb296/wanikani-similar-kanji/wk_niai.html.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/b5f681f7f94aaa48caa6927a3a5c6a17d39739d8/wanikani-similar-kanji/wk_niai.main.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/da109658a2fb2ae98aac23199f89c3a0862d096a/wanikani-similar-kanji/wk_niai.modal.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/da109658a2fb2ae98aac23199f89c3a0862d096a/wanikani-similar-kanji/wk_niai.html.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/da109658a2fb2ae98aac23199f89c3a0862d096a/wanikani-similar-kanji/wk_niai.main.js
 //
 // @grant       GM_log
 // @grant       GM_getValue
