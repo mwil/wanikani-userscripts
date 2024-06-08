@@ -20,12 +20,12 @@ function WK_Keisei()
 // #############################################################################
 
 // #############################################################################
-function initializeCustomIcons()
+function initializeCustomIcons(Icons)
 {
     "use strict";
 
     // Get the current version of the Custom Icons library that is assigned to the window
-    const { Icons } = window.unsafeWindow || window;
+    // const { Icons } = window.unsafeWindow || window;
 
     // Add all but one of the icons we will be needing; circle-exclamation is more than a single path, so we will insert that manually
     // Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.
@@ -604,7 +604,7 @@ function initializeCustomIcons()
             console.log(`Do we have Icons?`);
             console.log(window.Icons);
             
-            initializeCustomIcons();
+            initializeCustomIcons(window.Icons);
         }
         catch (err) {
             console.error(err.message);
