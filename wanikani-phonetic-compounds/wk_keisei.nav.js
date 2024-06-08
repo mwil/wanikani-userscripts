@@ -10,7 +10,7 @@
     // #########################################################################
     WK_Keisei.prototype.addNavItem = function(event)
     {
-        const { Icons } = window.unsafeWindow || window;
+        const Icons = window.unsafeWindow?.Icons ?? window.Icons;
 
         const $keisei_li = $(`<li></li>`)
                            .attr(`data-dropdown`, ``)

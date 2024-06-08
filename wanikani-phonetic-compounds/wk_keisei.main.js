@@ -20,12 +20,12 @@ function WK_Keisei()
 // #############################################################################
 
 // #############################################################################
-function initializeCustomIcons(Icons)
+function initializeCustomIcons()
 {
     "use strict";
 
     // Get the current version of the Custom Icons library that is assigned to the window
-    // const { Icons } = window.unsafeWindow || window;
+    const Icons = window.unsafeWindow?.Icons ?? window.Icons;
 
     // Add all but one of the icons we will be needing; circle-exclamation is more than a single path, so we will insert that manually
     // Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.
@@ -114,7 +114,7 @@ function initializeCustomIcons(Icons)
         // #####################################################################
         const subject = {rad: null, kan: null, voc: null};
 
-        const { Icons } = window.unsafeWindow || window;
+        const Icons = window.unsafeWindow?.Icons ?? window.Icons;
 
         this.log(`Injecting phonetic section (callback works).`);
 
@@ -184,7 +184,7 @@ function initializeCustomIcons(Icons)
         $(`#keisei_explanation`).empty();
         $(`#keisei_main_phonetic_grid`).empty();
 
-        const { Icons } = window.unsafeWindow || window;
+        const Icons = window.unsafeWindow?.Icons ?? window.Icons;
 
         // #####################################################################
         if (subject.rad)

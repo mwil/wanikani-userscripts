@@ -6,7 +6,7 @@
     // #########################################################################
     WK_Niai.prototype.injectModals = function()
     {
-        const { Icons } = window.unsafeWindow || window;
+        const Icons = window.unsafeWindow?.Icons ?? window.Icons;
 
         const $settings_modal = $(`<div></div>`)
                                 .attr(`id`, `niai_modal_settings`)

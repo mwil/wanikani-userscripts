@@ -24,7 +24,7 @@
     // Function to swap a custom icon with another icon
     // #########################################################################
     WK_Keisei.prototype.toggleIcon = function(containerEl, iconPair) {
-        const { Icons } = window.unsafeWindow || window;
+        const Icons = window.unsafeWindow?.Icons ?? window.Icons;
 
         let idBase = "custom-icon-v" + Icons.VERSION_NUM + "__";
         let [firstIcon, secondIcon] = iconPair;
@@ -65,7 +65,7 @@
     // #########################################################################
     WK_Keisei.prototype.createKeiseiSection = function(style)
     {
-        const { Icons } = window.unsafeWindow || window;
+        const Icons = window.unsafeWindow?.Icons ?? window.Icons;
         
         const $section = $(`<section></section>`)
                          .attr(`id`, `keisei_section`)

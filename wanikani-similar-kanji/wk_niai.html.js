@@ -25,7 +25,7 @@
     // Function to swap a custom icon with another icon
     // #########################################################################
     WK_Niai.prototype.toggleIcon = function(containerEl, iconPair) {
-        const { Icons } = window.unsafeWindow || window;
+        const Icons = window.unsafeWindow?.Icons ?? window.Icons;
 
         let idBase = "custom-icon-v" + Icons.VERSION_NUM + "__";
         let [firstIcon, secondIcon] = iconPair;
@@ -61,7 +61,7 @@
     WK_Niai.prototype.createNiaiSection = function(style)
     {
         // Get the current version of the Custom Icons library that is assigned to the window
-        const { Icons } = window.unsafeWindow || window;
+        const Icons = window.unsafeWindow?.Icons ?? window.Icons;
 
         const $section = $(`<section></section>`)
                          .attr(`id`, `niai_section`)
