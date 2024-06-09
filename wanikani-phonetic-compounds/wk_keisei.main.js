@@ -25,7 +25,7 @@ function initializeCustomIcons()
     "use strict";
 
     // Get the current version of the Custom Icons library that is assigned to the window
-    const { Icons } = window.unsafeWindow || window;
+    const Icons = window.unsafeWindow?.Icons ?? window.Icons;
 
     // Add all but one of the icons we will be needing; circle-exclamation is more than a single path, so we will insert that manually
     // Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.
@@ -114,7 +114,7 @@ function initializeCustomIcons()
         // #####################################################################
         const subject = {rad: null, kan: null, voc: null};
 
-        const { Icons } = window.unsafeWindow || window;
+        const Icons = window.unsafeWindow?.Icons ?? window.Icons;
 
         this.log(`Injecting phonetic section (callback works).`);
 
@@ -184,7 +184,7 @@ function initializeCustomIcons()
         $(`#keisei_explanation`).empty();
         $(`#keisei_main_phonetic_grid`).empty();
 
-        const { Icons } = window.unsafeWindow || window;
+        const Icons = window.unsafeWindow?.Icons ?? window.Icons;
 
         // #####################################################################
         if (subject.rad)
@@ -600,8 +600,16 @@ function initializeCustomIcons()
     {
         GM_addStyle(GM_getResourceText(`keisei_style`)
                         .replace(/wk_namespace/g, GM_info.script.namespace));
-        
-        initializeCustomIcons();
+        try {
+            console.log(`Do we have Icons?`);
+            console.log(window.Icons);
+            
+            initializeCustomIcons(window.Icons);
+        }
+        catch (err) {
+            console.error(err.message);
+            console.error(err.stack);
+        }
 
         // Recover the settings from GM value storage, or use defaults
         // _.forEach(this.settings, (is_set, setting) => {

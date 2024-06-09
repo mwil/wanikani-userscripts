@@ -32,7 +32,7 @@ function initializeCustomIcons()
     "use strict";
 
     // Get the current version of the Custom Icons library that is assigned to the window
-    const { Icons } = window.unsafeWindow || window;
+    const Icons = window.unsafeWindow?.Icons ?? window.Icons;
 
     // Add all but one of the icons we will be needing; circle-exclamation is more than a single path, so we will insert that manually
     // Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.
@@ -114,7 +114,7 @@ function initializeCustomIcons()
         this.log(`Injecting similar kanji section (callback works).`);
 
         // Get the current version of the Custom Icons library that is assigned to the window
-        const { Icons } = window.unsafeWindow || window;
+        const Icons = window.unsafeWindow?.Icons ?? window.Icons;
 
         let niaiSection = this.createNiaiSection()[0].children;
         let section = injectorState.injector.append([...niaiSection[0].childNodes], niaiSection[1], {injectImmediately: true, sectionName: `Niai Visually Similar Kanji`});
@@ -241,7 +241,7 @@ function initializeCustomIcons()
         if (typeof wkof === `object`)
             this.update_wk_cache(similar_list);
 
-        const { Icons } = window.unsafeWindow || window;
+        const Icons = window.unsafeWindow?.Icons ?? window.Icons;
 
         let iconIdBase = "custom-icon-v" + Icons.VERSION_NUM + "__";
 

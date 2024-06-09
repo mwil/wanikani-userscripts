@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        WaniKani Keisei Phonetic-Semantic Composition
-// @version     1.8.36
+// @version     1.8.39
 // @author      acm
 // @description Adds information to Wanikani about kanji that use Phonetic-Semantic Composition.
 // @license     GPL version 3 or any later version; http://www.gnu.org/copyleft/gpl.html
@@ -29,10 +29,10 @@
 //
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/8ee517737d604f1df0ff103a33b69f1f07218815/wanikani-phonetic-compounds/wk_keisei.db.js
 // @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/8ee517737d604f1df0ff103a33b69f1f07218815/wanikani-phonetic-compounds/wk_keisei.strings.en.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/3220871c7f4b360141dead920c5ece3fb7ee7f17/wanikani-phonetic-compounds/wk_keisei.modal.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/3220871c7f4b360141dead920c5ece3fb7ee7f17/wanikani-phonetic-compounds/wk_keisei.html.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/3220871c7f4b360141dead920c5ece3fb7ee7f17/wanikani-phonetic-compounds/wk_keisei.nav.js
-// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/3220871c7f4b360141dead920c5ece3fb7ee7f17/wanikani-phonetic-compounds/wk_keisei.main.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/af9db995f755fb45573f25e33da59ad4975d4820/wanikani-phonetic-compounds/wk_keisei.modal.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/af9db995f755fb45573f25e33da59ad4975d4820/wanikani-phonetic-compounds/wk_keisei.html.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/af9db995f755fb45573f25e33da59ad4975d4820/wanikani-phonetic-compounds/wk_keisei.nav.js
+// @require     https://raw.githubusercontent.com/mwil/wanikani-userscripts/af9db995f755fb45573f25e33da59ad4975d4820/wanikani-phonetic-compounds/wk_keisei.main.js
 //
 // @grant       GM_log
 // @grant       GM_getValue
