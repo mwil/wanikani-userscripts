@@ -137,9 +137,9 @@ function NiaiDB()
                             let score = source.base_score +
                                         (hasScore ? sim_info.score : 0.0);
 
-                            if (!this.isKanjiInDB(sim_kanji))
+                            if (!this.isKanjiInDB(sim_kanji) && !this.isKanjiInWK(sim_kanji))
                             {
-                                console.log("Ignoring", sim_kanji, ", not in DB yet!");
+                                console.log("Ignoring", sim_kanji, ", not in DB or WK yet!");
                                 return; // equivalent to continue
                             }
 
