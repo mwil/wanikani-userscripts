@@ -197,17 +197,12 @@ function initializeCustomIcons()
         if (this.settings.use_alt)
             use_sources = [...this.settings.alt_sources, ...use_sources];
 
-        const similar_list = [kanji,
-                              ...this.ndb.getSimilar(kanji,
-                                                     this.settings.user_level,
-                                                     use_sources,
-                                                     this.settings.min_score)];
+        const similar_list = [kanji,...this.ndb.getSimilar(kanji,this.settings.user_level,use_sources,this.settings.min_score)];
         let char_list = [];
-
         similar_list.forEach(
             function(sim_kanji, i)
             {
-                if (!this.ndb.isKanjiInDB(sim_kanji))
+                if (!this.ndb.isKanjiInDB(sim_kanji) && !this.ndb.isKanjiInWK(sim_kanji))
                     return;
 
                 const sim_info = this.ndb.getInfo(sim_kanji);
@@ -272,7 +267,7 @@ function initializeCustomIcons()
     // #########################################################################
 
     // #########################################################################
-    WK_Niai.prototype.init = function()
+    WK_Niai.prototype.init = async function()
     {
         GM_addStyle(GM_getResourceText(`niai_style`)
                         .replace(/\.wk_namespace/g, `#niai_section`));
@@ -301,7 +296,7 @@ function initializeCustomIcons()
             } :
             function() {};
 
-        this.ndb.init(this.override_db);
+        await this.ndb.init(this.override_db);
 
         this.log(`The script element is:`, GM_info);
         this.log("The override db is", this.override_db);
@@ -352,8 +347,7 @@ let promise = typeof wkof !== `undefined` ? (wkof.include(`Jquery, Apiv2`), wkof
 promise.then(() => {
     const wk_niai = new WK_Niai();
 
-    wk_niai.init();
-    wk_niai.run();
+    wk_niai.init().then(() => wk_niai.run());
 });
 // #############################################################################
 // #############################################################################
