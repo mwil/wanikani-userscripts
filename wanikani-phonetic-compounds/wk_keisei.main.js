@@ -600,8 +600,16 @@ function initializeCustomIcons()
     {
         GM_addStyle(GM_getResourceText(`keisei_style`)
                         .replace(/wk_namespace/g, GM_info.script.namespace));
-        
-        initializeCustomIcons();
+        try {
+            console.log(`Do we have Icons?`);
+            console.log(window.Icons);
+            
+            initializeCustomIcons(window.Icons);
+        }
+        catch (err) {
+            console.error(err.message);
+            console.error(err.stack);
+        }
 
         // Recover the settings from GM value storage, or use defaults
         // _.forEach(this.settings, (is_set, setting) => {
