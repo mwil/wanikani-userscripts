@@ -128,7 +128,7 @@ function initializeCustomIcons()
         if (this.settings.minify)
         {
             $(`#niai_main_fold`).hide();
-            $("niai_grid_visibility").html(Icons.customIconTxt("eye-slash"));
+            $("#niai_grid_visibility").html(Icons.customIconTxt("eye-slash"));
         }
 
         if (!this.settings.edit_mode)
