@@ -20,7 +20,7 @@
 // @resource    manual_db      https://raw.githubusercontent.com/mwil/wanikani-userscripts/8ee517737d604f1df0ff103a33b69f1f07218815/wanikani-similar-kanji/db/manual_esc.json
 // @resource    lookup_db      https://raw.githubusercontent.com/mwil/wanikani-userscripts/8ee517737d604f1df0ff103a33b69f1f07218815/wanikani-similar-kanji/db/lookup_esc.json
 //
-// @resource    niai_style     https://raw.githubusercontent.com/mwil/wanikani-userscripts/0a8aedf168b4f522e618b6f7cc1caa179417da97/wanikani-similar-kanji/css/wk_niai.css
+// @resource    niai_style     https://raw.githubusercontent.com/mwil/wanikani-userscripts/7e1d846282c6d962fbe28b6e3a8c0b50a61220c9/wanikani-similar-kanji/css/wk_niai.css
 //
 // @resource    chargrid       https://raw.githubusercontent.com/mwil/wanikani-userscripts/0e0833ee8175b903d34108210759c1a457408833/styles/css/chargrid.css
 // @resource    bootstrapcss   https://raw.githubusercontent.com/mwil/wanikani-userscripts/45e295823c7d6d40630ddd14c95a78df093fb296/styles/bootstrap/css/bootstrap.crop.css
