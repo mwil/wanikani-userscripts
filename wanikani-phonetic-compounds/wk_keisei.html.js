@@ -20,6 +20,33 @@
             </a>
         </li>`;
     // #########################################################################
+
+    // Function to swap a custom icon with another icon
+    // #########################################################################
+    WK_Keisei.prototype.toggleIcon = function(containerEl, iconPair) {
+        const Icons = window.unsafeWindow?.Icons ?? window.Icons;
+
+        let idBase = "custom-icon-v" + Icons.VERSION_NUM + "__";
+        let [firstIcon, secondIcon] = iconPair;
+        let currentIconName = $(containerEl).find(`use`)?.attr("href").replace('#'+idBase,'');
+
+        if (!currentIconName) {
+            console.error(`Could not retrieve the SVG element that is meant to be a child of the following element:\n${$(containerEl).get()[0]}`);
+            return;
+        }
+
+        if (currentIconName === firstIcon) {
+            $(containerEl).find(`svg`).replaceWith(Icons.customIconTxt(secondIcon));
+        }
+        else if (currentIconName === secondIcon) {
+            $(containerEl).find(`svg`).replaceWith(Icons.customIconTxt(firstIcon));
+        }
+        else {
+            console.error(`Name mismatch. Could not find icon with name ${firstIcon} or ${secondIcon} on element with id "${currentIconName}".`);
+            return;
+        }
+    };
+    // #########################################################################
 }
 )();
 // #############################################################################
@@ -38,6 +65,8 @@
     // #########################################################################
     WK_Keisei.prototype.createKeiseiSection = function(style)
     {
+        const Icons = window.unsafeWindow?.Icons ?? window.Icons;
+        
         const $section = $(`<section></section>`)
                          .attr(`id`, `keisei_section`)
                          .attr(`style`, style)
@@ -46,18 +75,18 @@
         // Control buttons on the right of the section header
         const $view_btn = $(`<span class="btn-group"></span>`)
                           .append(`<a class="btn disabled" id="keisei_head_moreinfo">
-                                       <i class="fa fa-caret-square-o-up"></i>
+                                      ${Icons.customIconTxt("square-caret-o-up")}
                                    </a>`)
                           .append(`<a class="btn" id="keisei_head_visibility">
-                                      <i class="fa fa-eye"></i>
+                                      ${Icons.customIconTxt("eye")}
                                    </a>`);
 
         const $main_btn = $(`<span class="btn-group"></span>`)
                           .append(`<a class="btn" id="keisei_head_settings" data-toggle="modal" data-target="#keisei_modal_settings">
-                                        <i class="fa fa-gear"></i>
+                                        ${Icons.customIconTxt("settings")}
                                    </a>`)
                           .append(`<a class="btn" id="keisei_head_info" data-toggle="modal" data-target="#keisei_modal_info">
-                                        <i class="fa fa-question"></i>
+                                        ${Icons.customIconTxt("question")}
                                    </a>`);
 
         const $head_grp = $(`<span></span>`)
@@ -115,8 +144,7 @@
     {
         $(`#keisei_main_fold`).toggle();
 
-        $(`#keisei_head_visibility i`).toggleClass(`fa-eye`);
-        $(`#keisei_head_visibility i`).toggleClass(`fa-eye-slash`);
+        this.toggleIcon($(`#keisei_head_visibility`), ['eye', 'eye-slash']);
 
         // if (!$(`#keisei_main_fold`).is(`:visible`) &&
             // !$(`#keisei_head_moreinfo i`).hasClass(`fa-caret-square-o-down`))
@@ -132,8 +160,7 @@
     {
         $(`#keisei_more_fold`).toggle();
 
-        $(`#keisei_head_moreinfo i`).toggleClass(`fa-caret-square-o-down`);
-        $(`#keisei_head_moreinfo i`).toggleClass(`fa-caret-square-o-up`);
+        this.toggleIcon($(`#keisei_head_moreinfo`), ['square-caret-o-up', 'square-caret-o-down']);
 
         // if ((!$(`#keisei_main_fold`).is(`:visible`) &&
             // !$(`#keisei_head_moreinfo i`).hasClass(`fa-caret-square-o-down`)))

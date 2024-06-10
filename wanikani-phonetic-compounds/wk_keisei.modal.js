@@ -6,6 +6,8 @@
     // #########################################################################
     WK_Keisei.prototype.injectModals = function()
     {
+        const Icons = window.unsafeWindow?.Icons ?? window.Icons;
+
         const $settings_modal = $(`<div></div>`)
                                 .attr(`id`, `keisei_modal_settings`)
                                 .attr(`role`, `dialog`)
@@ -36,25 +38,25 @@
                     <div class="modal-body">
                         <p>
                             <div class="btn-group-lg text-center">
-                                <a class="btn" id="keisei_settings_btn_debug"><i class="fa fa-gear"></i> Toggle Debug Mode</a>
-                                <a class="btn" id="keisei_settings_btn_clearDB"><i class="fa fa-sign-out"></i> Reset Markers</a>
+                                <a class="btn" id="keisei_settings_btn_debug">${Icons.customIconTxt("settings")} Toggle Debug Mode</a>
+                                <a class="btn" id="keisei_settings_btn_clearDB">${Icons.customIconTxt("right-from-bracket")} Reset Markers</a>
                             </div>
                         </p>
                         <p>
                             <div class="btn-group-lg text-center">
-                                <a class="btn" id="keisei_settings_btn_minify"><i class="fa fa-eye"></i> Toggle Mini Mode</a>
-                                <a class="btn" id="keisei_settings_btn_fullinfo"><i class="fa fa-caret-square-o-down"></i> Toggle Full Info Mode</a>
-                                <a class="btn" id="keisei_settings_btn_fuzzykana"><i class="fa fa-circle-o"></i> Toggle Dakuten Mode</a>
+                                <a class="btn" id="keisei_settings_btn_minify">${Icons.customIconTxt("eye")} Toggle Mini Mode</a>
+                                <a class="btn" id="keisei_settings_btn_fullinfo">${Icons.customIconTxt("square-caret-o-down")} Toggle Full Info Mode</a>
+                                <a class="btn" id="keisei_settings_btn_fuzzykana">${Icons.customIconTxt("circle-o")} Toggle Dakuten Mode</a>
                             </div>
                         </p>
                         <p>
                             <div class="btn-group-lg text-center">
-                                <a class="btn" id="keisei_settings_btn_onlywk"><i class="fa fa-filter"></i> Show Only Kanji in Wanikani</a>
+                                <a class="btn" id="keisei_settings_btn_onlywk">${Icons.customIconTxt("filter")} Show Only Kanji in Wanikani</a>
                             </div>
                         </p>
                         <p>
                             <div class="btn-group-lg text-center">
-                                <a class="btn btn-large" id="keisei_settings_btn_withbeta"><i class="fa fa-thumbs-o-up"></i> Enable Beta Features</a>
+                                <a class="btn btn-large" id="keisei_settings_btn_withbeta">${Icons.customIconTxt("thumbs-o-up")} Enable Beta Features</a>
                             </div>
                         </p>
                     </div>
@@ -122,19 +124,13 @@
         });
 
         if (this.settings.minify)
-            $(`#keisei_settings_btn_minify i`)
-                .removeClass(`fa-eye`)
-                .addClass(`fa-eye-slash`);
+            $(`#keisei_settings_btn_minify`).find(`svg`).replaceWith(Icons.customIconTxt("eye-slash"));
 
         if (this.settings.fullinfo)
-            $(`#keisei_settings_btn_fullinfo i`)
-                .removeClass(`fa-caret-square-o-down`)
-                .addClass(`fa-caret-square-o-up`);
+            $(`#keisei_settings_btn_fullinfo`).find(`svg`).replaceWith(Icons.customIconTxt("square-caret-o-up"));
 
         if (this.settings.fuzzykana)
-            $(`#keisei_settings_btn_fuzzykana i`)
-                .removeClass(`fa-circle-o`)
-                .addClass(`fa-quote-right`);
+            $(`#keisei_settings_btn_fuzzykana`).find(`svg`).replaceWith(Icons.customIconTxt("quote-right"));
 
         $(`#keisei_settings_btn_debug`).on(`click`, this.toggleDebug.bind(this));
         $(`#keisei_settings_btn_minify`).on(`click`, this.toggleMinify.bind(this));
@@ -208,8 +204,7 @@
         this.settings.minify = !this.settings.minify;
 
         $(`#keisei_settings_btn_minify`).toggleClass(`active`);
-        $(`#keisei_settings_btn_minify i`).toggleClass(`fa-eye`);
-        $(`#keisei_settings_btn_minify i`).toggleClass(`fa-eye-slash`);
+        this.toggleIcon($(`#keisei_settings_btn_minify`), ['eye', 'eye-slash']);
 
         if ($(`#keisei_main_fold`).is(`:visible`) === this.settings.minify)
             this.toggleMainFold();
@@ -226,8 +221,7 @@
         this.settings.fullinfo = !this.settings.fullinfo;
 
         $(`#keisei_settings_btn_fullinfo`).toggleClass(`active`);
-        $(`#keisei_settings_btn_fullinfo i`).toggleClass(`fa-caret-square-o-up`);
-        $(`#keisei_settings_btn_fullinfo i`).toggleClass(`fa-caret-square-o-down`);
+        this.toggleIcon($(`#keisei_settings_btn_fullinfo`), ['square-caret-o-up', 'square-caret-o-down']);
 
         if ($(`#keisei_more_fold`).is(`:visible`) !== this.settings.fullinfo)
             this.toggleMoreInfoFold();
@@ -244,8 +238,7 @@
         this.settings.fuzzykana = !this.settings.fuzzykana;
 
         $(`#keisei_settings_btn_fuzzykana`).toggleClass(`active`);
-        $(`#keisei_settings_btn_fuzzykana i`).toggleClass(`fa-circle-o`);
-        $(`#keisei_settings_btn_fuzzykana i`).toggleClass(`fa-quote-right`);
+        this.toggleIcon($(`#keisei_settings_btn_fuzzykana`), ['circle-o', 'quote-right']);
 
         this.populateCharGrid(`#keisei_phonetic_grid`, this.currentSubject);
 
@@ -294,8 +287,7 @@
     WK_Keisei.prototype.toggleClearDB = function(event)
     {
         $(`#keisei_settings_btn_clearDB`).toggleClass(`active`);
-        $(`#keisei_settings_btn_clearDB i`).toggleClass(`fa-exclamation-triangle`);
-        $(`#keisei_settings_btn_clearDB i`).toggleClass(`fa-sign-out`);
+        this.toggleIcon($(`#keisei_settings_btn_clearDB`), ['triangle-exclamation', 'right-from-bracket']);
 
         if (!$(`#keisei_settings_btn_clearDB`).hasClass(`active`))
         {

@@ -10,6 +10,8 @@
     // #########################################################################
     WK_Keisei.prototype.addNavItem = function(event)
     {
+        const Icons = window.unsafeWindow?.Icons ?? window.Icons;
+
         const $keisei_li = $(`<li></li>`)
                            .attr(`data-dropdown`, ``)
                            .addClass(`dropdown phonetic`)
@@ -21,7 +23,7 @@
                         .addClass(`dropdown-toggle`)
                         .appendTo($keisei_li)
                         .html(`<span lang="ja" style="display: block;">声符</span>Phonetics
-                               <i class="fa fa-chevron-down"></i>`);
+                               ${Icons.customIconTxt('chevron-down')}`);
 
         const $drop_menu = $(`<ul></ul>`)
                            .addClass(`dropdown-menu`)

@@ -21,6 +21,33 @@
             </a>
         </li>`;
     // #########################################################################
+
+    // Function to swap a custom icon with another icon
+    // #########################################################################
+    WK_Niai.prototype.toggleIcon = function(containerEl, iconPair) {
+        const Icons = window.unsafeWindow?.Icons ?? window.Icons;
+
+        let idBase = "custom-icon-v" + Icons.VERSION_NUM + "__";
+        let [firstIcon, secondIcon] = iconPair;
+        let currentIconName = $(containerEl).find(`use`)?.attr("href").replace('#'+idBase,'');
+
+        if (!currentIconName) {
+            console.error(`Could not retrieve the SVG element that is meant to be a child of the following element:\n${$(containerEl).get()[0]}`);
+            return;
+        }
+
+        if (currentIconName === firstIcon) {
+            $(containerEl).find(`svg`).replaceWith(Icons.customIconTxt(secondIcon));
+        }
+        else if (currentIconName === secondIcon) {
+            $(containerEl).find(`svg`).replaceWith(Icons.customIconTxt(firstIcon));
+        }
+        else {
+            console.error(`Name mismatch. Could not find icon with name ${firstIcon} or ${secondIcon} on element with id "${currentIconName}".`);
+            return;
+        }
+    };
+    // #########################################################################
 }
 )();
 // #############################################################################
@@ -33,6 +60,9 @@
     // #########################################################################
     WK_Niai.prototype.createNiaiSection = function(style)
     {
+        // Get the current version of the Custom Icons library that is assigned to the window
+        const Icons = window.unsafeWindow?.Icons ?? window.Icons;
+
         const $section = $(`<section></section>`)
                          .attr(`id`, `niai_section`)
                          .attr(`style`, style)
@@ -47,17 +77,17 @@
 
         const $view_btn = $(`<span class="btn-group"></span>`)
                           .append(`<a class="btn" id="niai_grid_visibility">
-                                      <i class="fa fa-eye"></i>
+                                      ${Icons.customIconTxt("eye")}
                                   </a>`);
         // The note-niai part (at front!!) is crucial to stop enter keypresses
         // to go to the next page during reviews and lessons
         const $db_btn = $(`<span class="btn-group"></span>`)
                         .append(`<a class="btn" id="niai_badges_btn">
-                                    <i class="fa fa-times-circle-o"></i>
+                                    ${Icons.customIconTxt("circle-xmark")}
                                 </a>`)
                         .append(`<span id="add_kanji_dropdown">
                                      <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-                                         <span class="fa fa-plus"></span>
+                                         ${Icons.customIconTxt("plus")}
                                      </a>
                                      <ul class="note-niai dropdown-menu text-center">
                                         <li>
@@ -75,19 +105,19 @@
                                                 <textarea id="niai_add_similar_input" maxlength="1" rows="1" class="span2" type="text" placeholder="Enter Kanji Here"></textarea>
                                             </span>
                                         </li>
-                                        <li><a id="add_kanji_btn"><i class="fa fa-fw fa-plus"></i> Add To Similar Kanji</a></li>
+                                        <li><a id="add_kanji_btn">${Icons.customIconTxt("plus")} Add To Similar Kanji</a></li>
                                      </ul>
                                  </span>`)
                         .append(`<a class="btn disabled" id="niai_reset_similar_btn">
-                                    <i class="fa fa-undo"></i>
+                                    ${Icons.customIconTxt("undo")}
                                 </a>`);
 
         const $head_btn = $(`<span class="btn-group"></span>`)
                           .append(`<a class="btn" id="niai_head_settings_btn" data-toggle="modal" data-target="#niai_modal_settings">
-                                        <i class="fa fa-gear"></i>
+                                        ${Icons.customIconTxt("settings")}
                                    </a>`)
                           .append(`<a class="btn" id="niai_head_info_btn" data-toggle="modal" data-target="#niai_modal_info">
-                                        <i class="fa fa-question"></i>
+                                        ${Icons.customIconTxt("question")}
                                    </a>`);
 
         const $head_grp = $(`<span></span>`)
@@ -119,8 +149,7 @@
     {
         $(`#niai_main_fold`).toggle();
 
-        $(`#niai_grid_visibility i`).toggleClass(`fa-eye`);
-        $(`#niai_grid_visibility i`).toggleClass(`fa-eye-slash`);
+        this.toggleIcon($("#niai_grid_visibility"), ["eye", "eye-slash"]);
 
         return false;
     };
@@ -131,8 +160,7 @@
     {
         $(`.delete-badge`).toggle();
 
-        $(`#niai_badges_btn i`).toggleClass(`fa-circle-o`);
-        $(`#niai_badges_btn i`).toggleClass(`fa-times-circle-o`);
+        this.toggleIcon($("#niai_badges_btn"), ["circle-o", "circle-xmark"]);
 
         return false;
     };
@@ -147,8 +175,8 @@
         const kanji = wkItemInfo.currentState.characters;
 
         $(`#niai_reset_similar_btn`).toggleClass(`active`);
-        $(`#niai_reset_similar_btn i`).toggleClass(`fa-undo`);
-        $(`#niai_reset_similar_btn i`).toggleClass(`fa-exclamation-circle`);
+
+        this.toggleIcon($("#niai_reset_similar_btn"), ["undo", "circle-exclamation"]);
 
         if (!$(`#niai_reset_similar_btn`).hasClass(`active`))
         {
