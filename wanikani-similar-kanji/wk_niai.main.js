@@ -187,6 +187,81 @@ function initializeCustomIcons()
         return result;
     };
 
+    const sort_by_level = function(kanjiA,kanjiB)
+    {
+        // kanjis not in DB -> move to end
+        const kanjiA_inDB = this.ndb.isKanjiInDB(kanjiA);
+        const kanjiB_inDB = this.ndb.isKanjiInDB(kanjiB);
+        if (!kanjiA_inDB && !kanjiB_inDB)
+            return 0;
+        else if (kanjiA_inDB && !kanjiB_inDB)
+            return -1;
+        else if (!kanjiA_inDB && kanjiB_inDB)
+            return 1;
+
+        // sort kanji by ascending level
+        // note: treat kanjis not in WK as level over 60
+        const kanjiA_level = this.ndb.isKanjiInWK(kanjiA) ? this.ndb.getInfo(kanjiA).level : 99;
+        const kanjiB_level = this.ndb.isKanjiInWK(kanjiB) ? this.ndb.getInfo(kanjiB).level : 99;
+        if (kanjiA_level < kanjiB_level)
+            return -1;
+        else if (kanjiA_level > kanjiB_level)
+            return 1;
+        else
+        {
+            // both kanjis have same level, so sort them by score
+            const kanjiA_score = this.ndb.getInfo(kanjiA).score;
+            const kanjiB_score = this.ndb.getInfo(kanjiB).score;
+            if (kanjiA_score < kanjiB_score)
+                return 1;
+            if (kanjiA_score > kanjiB_score)
+                return -1;
+            return 0;
+        }
+    };
+
+    const sort_by_locked_score = function(kanjiA,kanjiB)
+    {
+        // kanjis not in DB -> move to end
+        const kanjiA_inDB = this.ndb.isKanjiInDB(kanjiA);
+        const kanjiB_inDB = this.ndb.isKanjiInDB(kanjiB);
+        if (!kanjiA_inDB && !kanjiB_inDB)
+            return 0;
+        else if (kanjiA_inDB && !kanjiB_inDB)
+            return -1;
+        else if (!kanjiA_inDB && kanjiB_inDB)
+            return 1;
+
+        // kanjis locked should be shown last
+        // note: treat kanjis not in WK as locked too
+        const kanjiA_islocked = this.ndb.isKanjiInWK(kanjiA) ? this.ndb.isKanjiLocked(kanjiA,this.settings.user_level) : true;
+        const kanjiB_islocked = this.ndb.isKanjiInWK(kanjiB) ? this.ndb.isKanjiLocked(kanjiB,this.settings.user_level) : true;
+        const kanjiA_score = this.ndb.getInfo(kanjiA).score;
+        const kanjiB_score = this.ndb.getInfo(kanjiB).score;
+        if (!kanjiA_islocked && !kanjiB_islocked)
+        {
+            // both kanjis are unlocked, so sort them by score
+            if (kanjiA_score < kanjiB_score)
+                return 1;
+            if (kanjiA_score > kanjiB_score)
+                return -1;
+            return 0;
+        }
+        else if (kanjiA_islocked && !kanjiB_islocked)
+            return 1; // move locked kanji to end
+        else if (!kanjiA_islocked && kanjiB_islocked)
+            return -1; // move locked kanji to end
+        else
+        {
+            // both kanjis are locked, so sort them by score
+            if (kanjiA_score < kanjiB_score)
+                return 1;
+            if (kanjiA_score > kanjiB_score)
+                return -1;
+            return 0;
+        }
+    };
+
     // #########################################################################
     WK_Niai.prototype.populateNiaiSection = function(kanji, curPage = this.wkItemInfoRef.currentState.on)
     {
@@ -197,13 +272,13 @@ function initializeCustomIcons()
         if (this.settings.use_alt)
             use_sources = [...this.settings.alt_sources, ...use_sources];
 
-        const similar_list = [kanji,
-                              ...this.ndb.getSimilar(kanji,
-                                                     this.settings.user_level,
-                                                     use_sources,
-                                                     this.settings.min_score)];
-        let char_list = [];
+        // sort similar kanji by: score, level, ...
+        var similar_kanji = this.ndb.getSimilar(kanji,this.settings.user_level,use_sources,this.settings.min_score);
+        similar_kanji.sort(sort_by_locked_score.bind(this));
+        // similar_kanji.sort(sort_by_locked_level.bind(this));
 
+        const similar_list = [kanji,...similar_kanji];
+        let char_list = [];
         similar_list.forEach(
             function(sim_kanji, i)
             {
