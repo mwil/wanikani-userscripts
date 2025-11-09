@@ -289,7 +289,7 @@
             }
         );
 
-        if (!found && this.ndb.isKanjiInDB(new_kanji))
+        if (!found && (this.ndb.isKanjiInWK(new_kanji) || this.ndb.isKanjiInDB(new_kanji)))
             this.override_db[kanji].push({"kan": new_kanji, "score": 1.0});
 
         GM_setValue(`override_db`, JSON.stringify(this.override_db));
